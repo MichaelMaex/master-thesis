@@ -1,0 +1,150 @@
+While we have seen how a scheme over $K$ can be a analytified to obtain a Berkobich space, the real building blocks of these spaces are affinoid algebras, which rougly are completed finite type algebras. 
+These are also crucial for defining the structure sheaf on Berkovich spaces. 
+
+\subsection{Banach Algebras} \label{sec:banach_algebras}
+\begin{definition}
+	A $K$-banach space is a $K$-vector space equipped with a norm that is complete with respect to that norm. 
+\end{definition}
+
+\begin{definition}
+	Let $A, B$ be $K$-banach spaces. 
+	A $K$-vector space morphism $\phi: A \to B$ is \emph{bounded} if there is some $C\in \R$ such that $\|\phi(a)\|\le C \|a\| $. 
+\end{definition}
+
+\begin{lemma}
+	A morphism $A \to B$ is bounded if and only if it is continuous. 
+\end{lemma}
+
+\begin{definition}
+	A Banach $K$-algebra, $A$, is a commutative, associative, unital $K$-algebra with a submultiplicative norm that is a Banach $K$-algebra.
+\end{definition}
+\begin{definition}
+	Let $A$ be a $K$-algebra. 
+	Two norms $\|\cdot \|_1, \|\cdot \|_2$on $A$ are called equivalent if and only if they induce the same topology. 
+
+	This means that there are non-zero constants $C, C'$ such that for every $ a\in A$ we have $C\|a\|_1 \le \|a\|_2 \le C'\|a\|_1$. 
+\end{definition}
+
+\begin{definition}
+	Let $A$ be an $k$ banach algebra nd $I$ be a closed\todo{do we need closed here} ideal in $A$. 
+	Then we define the \emph{residue norm} on $A / I$ as 
+	\begin{align*}
+		\|\cdot \|_\text{res} : A / I &\longrightarrow \R \\
+		a + I &\longmapsto \inf_{x \in a + I} \|x\|
+	.\end{align*}
+\end{definition}
+
+To describe the cateogory of $K$-banach algebras we still need morphisms.
+\begin{definition}
+	Let $A, B$ be $K$-banach algbras. 
+	A $K$-algebra morphism $\phi: A \to B$ is \emph{admissible} if $\phi$ is bounded (continuous) if induced map $A / \ker \phi \to \im \phi$ is a homeomorphism, where $A / \ker \phi$ is equipped with the residue norm and $\im \phi$ with subspace norm of $B$. 
+\end{definition}
+
+
+\subsection{Affinoid algebras} \label{sec:affinoid_algebras}
+We need restrict the category of banach algebras to those that are ``finitely generated'' in some appropriate sense. 
+
+\begin{definition}
+	[2.1.2, \cite{conrad2008several}]
+	Let $A$ non-archimedean ring and $r_1, \ldots, r_n$ some positive real numbers. We define \[
+		A \left<r_1^{-1}t_1, \ldots, r_{n}^{-1} t_n \right> = \left\{\sum_{\nu \in \N^{n}}^{} a_\nu t^{\nu} \in A[[t_1,\ldots, t_n]]\st a_\nu r^{\nu} \to 0, \text{ as } \nu \to \infty\right\} 
+	.\] 
+\end{definition}
+This can be thought of as the completing of the polynomial ring $A[x_1, \ldots, x_n]$ with the norm defined as 
+\begin{equation}\label{eq:norm_tate}
+	\left\| \sum_{\nu \in \N^{n}} a_\nu y^{\nu}\right\| = \max_{\nu \in \N^{n}} \|a_\nu r^{\nu}\|
+\end{equation}
+This gives a similarly defined norm on $A\left<y_1, \ldots, y_n \right>$, but there are many other interesting norms on $A \left<y_1, \ldots, y_n \right>$, as we will discover. 
+
+\begin{definition}
+	A \emph{Tate algebra} in $n$ variables is the ring \[
+		T_n(K) = K\left<T_1, \ldots, T_n \right>
+	,\]
+	equipped with the norm as in \eqref{eq:norm_tate}.
+\end{definition}
+
+
+\begin{definition}
+	A affinoid algebra is a $K$-algebra $A$ with such that there is an admissible surjective morphism $f: T_n(K) \to A$ for. 
+\end{definition}
+This means that $A$ can be written as $K\left<T_1, \ldots, T_n \right> / I$ where $I$ is some closed ideal.
+This does not mean that $A$ necessarily comes equipped with the residue norm, but this doesn't matter as the open mapping theorem shows that the norm on $A$ must be equivalent to residue norm.
+\subsection{Affinoid domains} \label{sec:affinoid_domains}
+
+there are different types of affinoid domains that we often encounter. 
+
+\begin{definition}[multiple definitions in \cite{conrad2008several}]
+		there are \emph{weierstrass domains, laurent domains} and \emph{rational domains}. 
+	\begin{description}
+		\item[weierstrass domain] let $a_1, \ldots, a_n$ be in $a$. 
+			\[
+				a\left<a_1, \ldots, a_n \right> := \frac{a\left<x_1, \ldots, x_n \right>}{(x_1-a_1, \ldots, x_n - a_n)}
+			.\] 
+			unlike for polynomial rings, this is not an evaulation map. you should think of this as forcing the $a_i$'s to become powerbounded. 
+		\item [laurent domains]
+			let $a_1, \ldots, a_n, b_1, \ldots, b_m \in a$ the \[
+				a\left<a_1, \ldots, a_n, b_1^{-1}, \ldots, b_m^{-1} \right> := \frac{a\left<x_1, \ldots, x_n,y_1, \ldots, y_m  \right>}{(x_1 - a_1, \ldots, x_n - a_n, b_1 y_1 - 1, \ldots, b_m y_m - 1)}
+			.\] 
+		\item[rational domain] with $a_1, \ldots, a_n, a' \in a$ with no common zeros, i.e. there is no $\mathfrak{m} $ that contains both of these elements.   
+			\[
+				a \left<\frac{a_1}{a}, \ldots, \frac{a_n}{a'} \right> := \frac{a\left<x_1, \ldots, x_n \right>}{(a' x_1 - a_1, \ldots, a' x_n - a_n)}
+			.\] 
+			this is essentially the affinoid version of localisation.
+			but it does more than just make $a'$ invertible. 
+			is also makes $\frac{a_i}{ a'}$ act like it is power bounded in some sense. 
+		\item 
+	\end{description}
+
+\end{definition}
+many authors define these domains by describing their space of points, be it max spec or the berkovich functor. 
+the following lemma gives shows that we can use these descriptions interchangeably
+\begin{lemma}
+	[2.1.8 in \cite{conrad2008several}]
+	suppose $a$ is a $k$-affinoid algebra and $a_1, \ldots, a_n, a_0 \in a$ be elements with no common zero (i.e. at no point in $ x \in \maxspec a$ are all $a_{i} \in \mathfrak{m}$).
+	 then a map of $k$-affinoid algebras $\phi: a \to b$ factors through $a \left<\frac{a_1}{a_0}, \ldots, \frac{a_n}{a_0} \right>$ like in the diagram \[
+	 \begin{tikzcd}
+		 a \left<\frac{a_1}{a_0}, \ldots, \frac{a_n}{a_0} \right> \drar[dashed]  \\
+		 a \uar \rar[']{\phi} & b
+	 \end{tikzcd}
+	 \] 
+	 if and only if  $m\phi: \maxspec b \to \maxspec a$ factors through the subset $x \in m(a)$ such that $|a_j(x)| \le |a'(x)|$ for all $j$. 
+\end{lemma}
+
+\subsection{admissible opens, covers and $g$-topology} \label{sec:admissible_opens,_covers_and_g-topology}
+
+\begin{definition}
+	[2.2.6, \cite{conrad2008several}]
+	let $a$ be a  $k$ affinoid algebra. 
+	a subset $u$ of $\maxspec(a)$ is an \emph{admissible open} if is has a cover $\{u_i\} $ of affinoid subdomains $u_i$ satisfying the following property: 
+	for any map of $k$-affinoid algebras $\phi: a \to b$ such that the induced map $f: m(b) \to m(a)$ lands in $u$, the pullback of the cover $\{f^{-1}(u_i)\} $ has a finite subcovering. 
+
+
+	a covering $v = \bigcup_{i \in  i} v_i$ is an \emph{admissible cover} if for any any map $\phi:a \to b$  of $k$-affinoid algebras that the image of  $f: m(b) \to m(a)$ lies in $v$, the pullback cover $\{f^{-1}(v_i)\} $ has a refinement by a covering consisting of finitely many affinoid subdomains.  
+\end{definition}
+\begin{proof}
+	\todo{look at this proof}
+\end{proof}
+
+we need this to define the notion of a $g$-topology, which is a grothendieck topology on the set $\maxspec(a)$. 
+i'm pretty sure later we will scrap $\maxspec$ in favour of the berkovich space.
+
+
+
+\todo{Look at temkins notes for Gerritzen-Grauert, paper in mathematische analen.}
+Let $K$ be a complete non-archimedean algebraically closed field. 
+
+\begin{definition}
+	
+\end{definition}
+
+\begin{definition}
+	Tate algebra \todo{strict or non-strict?}
+\end{definition}
+\begin{definition}
+	Affinoid algebra \todo{strict or non-strict}
+\end{definition}
+
+\begin{definition}
+	Berkovich spectrum?
+\end{definition}
+

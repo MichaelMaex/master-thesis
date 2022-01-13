@@ -1,0 +1,177 @@
+% ---------- Titelblad Masterproef Faculteit Wetenschappen -----------
+% Dit document is opgesteld voor compilatie met pdflatex.  Indien je
+% wilt compileren met latex naar dvi/ps, dien je de figuren naar
+% (e)ps-formaat om te zetten.
+%                           -- december 2012
+% -------------------------------------------------------------------
+\RequirePackage{fix-cm}
+\documentclass[12pt,a4paper,oneside]{book}
+
+% --------------------- In te laden pakketten -----------------------
+% Deze kan je eventueel toevoegen aan de pakketten die je al inlaadt
+% als je dit titelblad integreert met de rest van thesis.
+% -------------------------------------------------------------------
+\usepackage{graphicx,xcolor,textpos}
+\usepackage{helvet}
+
+% -------------------- Pagina-instellingen --------------------------
+% Indien je deze wijzigt, zal het titelblad ook wijzigen.  Dit dien je
+% dan manueel aan te passen.
+% --------------------------------------------------------------------
+
+\topmargin -10mm
+\textwidth 160truemm
+\textheight 240truemm
+\oddsidemargin 0mm
+\evensidemargin 0mm
+
+% ------------------- textpos-instellingen ---------------------------
+% Enkele andere instellingen voor het voorblad.
+% --------------------------------------------------------------------
+
+\definecolor{green}{RGB}{172,196,0}
+\definecolor{bluetitle}{RGB}{29,141,176}
+\definecolor{blueaff}{RGB}{0,0,128}
+\definecolor{blueline}{RGB}{82,189,236}
+\setlength{\TPHorizModule}{1mm}
+\setlength{\TPVertModule}{1mm}
+
+\begin{document}
+
+% ---------------------- Voorblad ------------------------------------
+% Vergeet niet de tekst aan te passen:
+% - Titel en, indien van toepassing, ondertitel
+%          voor eventuele formules in de titel of ondertitel
+%          gebruik je  \form{$...$}
+% - Je naam
+% - Je (co)promotor, begeleider (indien van toepassing)
+% - Je opleiding
+% - Het academiejaar
+% --------------------------------------------------------------------
+\thispagestyle{empty}
+\newcommand{\form}[1]{\scalebox{1.087}{\boldmath{#1}}}
+\sffamily
+%
+\begin{textblock}{191}(-24,-11)
+\colorbox{green}{\hspace{123mm}\ \parbox[c][18truemm]{68mm}{\textcolor{white}{FACULTEIT WETENSCHAPPEN}}}
+\end{textblock}
+%
+\begin{textblock}{70}(-18,-19)
+\textblockcolour{}
+\includegraphics*[height=19.8truemm]{LogoKULeuven}
+\end{textblock}
+%
+\begin{textblock}{160}(-6,63)
+\textblockcolour{}
+\vspace{-\parskip}
+\flushleft
+\fontsize{40}{42}\selectfont \textcolor{bluetitle}{The Berkovich Geometry of Hyperelliptic Curves}\\[1.5mm]
+%\fontsize{20}{22}\selectfont Ondertitel \form{$S=\pi r^2$\textsl{(facultatief)}}
+\end{textblock}
+%
+\begin{textblock}{79}(50,103)
+\textblockcolour{}
+\vspace{-\parskip}
+\flushleft
+\fbox{\parbox{79mm}{De achtergrond kan wit blijven of je kan een afbeelding invoegen (maximum hoogte 10 cm, breedte variabel, denk aan auteursrechten\ldots). GEEN logo's (je kan binnenin de masterproef logo's gebruiken, maar niet op de voor- of achterpagina). \textit{Verwijder deze tekstkader.}}}
+\end{textblock}
+%
+\begin{textblock}{160}(8,153)
+\textblockcolour{}
+\vspace{-\parskip}
+\flushright
+\fontsize{14}{16}\selectfont \textbf{Michaël MAEX}
+\end{textblock}
+%
+\begin{textblock}{70}(-6,191)
+\textblockcolour{}
+\vspace{-\parskip}
+\flushleft
+Promotor: Prof. J. Nicaise\\[-2pt]
+\textcolor{blueaff}{Affiliatie \textsl{(facultatief)}}\\[5pt]
+%Co-promotor: \textsl{(facultatief)}\\[-2pt]
+%\textcolor{blueaff}{Affiliatie \textsl{(facultatief)}}\\[5pt]
+%Begeleider: \textsl{(facultatief)}\\[-2pt]
+%\textcolor{blueaff}{Affiliatie \textsl{(facultatief)}}\\
+\end{textblock}
+%
+\begin{textblock}{160}(8,191)
+\textblockcolour{}
+\vspace{-\parskip}
+\flushright
+Proefschrift ingediend tot het\\[4.5pt]
+behalen van de graad van\\[4.5pt]
+Master of Science in Xxx\\
+\end{textblock}
+%
+\begin{textblock}{160}(8,232)
+\textblockcolour{}
+\vspace{-\parskip}
+\flushright
+Academiejaar 20XX-20XX
+\end{textblock}
+%
+\begin{textblock}{191}(-24,248)
+{\color{blueline}\rule{550pt}{5.5pt}}
+\end{textblock}
+%
+\vfill
+\newpage
+
+% Als je het titelblad wil integreren met de rest van je thesis,
+% kan je hieronder verder.
+% ----------------------- Eerste pagina's -------------------------
+% Hier kan je inhoudsopgave, voorwoord en dergelijke kwijt.
+% -----------------------------------------------------------------
+\rmfamily
+\setcounter{page}{0}
+\pagenumbering{roman}
+
+
+\newpage
+% ----------------------- Eigenlijke thesis -----------------------
+% Vanaf de inleiding/het eerste hoofdstuk.
+% -----------------------------------------------------------------
+\setcounter{page}{0}
+\pagenumbering{arabic}
+
+
+\newpage
+% ----------------------- Achterblad ------------------------------
+% Vergeet niet de tekst aan te passen:
+% - Afdeling
+% - Adres van de afdeling
+% - Telefoon en faxnummer
+% -----------------------------------------------------------------
+\thispagestyle{empty}
+\sffamily
+%
+\begin{textblock}{191}(113,-11)
+{\color{blueline}\rule{160pt}{5.5pt}}
+\end{textblock}
+%
+\begin{textblock}{191}(168,-11)
+{\color{blueline}\rule{5.5pt}{59pt}}
+\end{textblock}
+%
+\begin{textblock}{183}(-24,-11)
+\textblockcolour{}
+\flushright
+\fontsize{7}{7.5}\selectfont
+\textbf{AFDELING}\\
+Straat nr bus 0000\\
+3000 LEUVEN, BELGI\"{E}\\
+tel. + 32 16 00 00 00\\
+fax + 32 16 00 00 00\\
+www.kuleuven.be\\
+\end{textblock}
+%
+\begin{textblock}{191}(154,-7)
+\textblockcolour{}
+\includegraphics*[height=16.5truemm]{sedes}
+\end{textblock}
+%
+\begin{textblock}{191}(-20,235)
+{\color{bluetitle}\rule{544pt}{55pt}}
+\end{textblock}
+\end{document}

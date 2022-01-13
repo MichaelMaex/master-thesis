@@ -1,0 +1,38 @@
+\documentclass[a4paper]{article}
+\input{preamble.tex}
+
+\title{Writeup Intersection Theory}
+\begin{document}
+	
+\maketitle
+
+The following theorem gives a good overview of some ``axioms'' of intersection theory over a basefield. 
+Intersection theory for fibered surfaces is similar, but has other limitations. Nonetheless this serves as a good starting off point. 
+
+\begin{theorem}
+	[thm 1.50 \cite{kollar}]
+	Suppose $S$ is a smooth projective surface over $k$ with divisors $C, D$. 
+	Then there exists a pairing $(\underline\quad \cdot \underline\quad): \divisor(S) \times \divisor(S) \to \Z$ with the following properties, that also uniquely define the pairing (1-6)
+	\begin{enumerate}
+		\item $(C \cdot  D) \in \Z$ it is bilinear and symmetric. 
+		\item The pairing factors through linear equivalence, i.e. if $C_1 \sim C_2$ then $(C_1 \cdot D) = (C_2 \cdot  D)$. 
+		\item If $C, D$ are efficitive divisors with finite intersection $C \cap D$ then \[
+				(C \cdot  D) = \sum_{p \in C \cap D} \dim_k \frac{\mathcal{O}_{S, p}}{(f_p, g_p)}
+		\]
+		where $f_p, g_p$ are the equations locally cutting out $C, D$ respectively. 
+	\end{enumerate}
+	The following properties concern how intersection numbers behave under birational maps, and thus are very useful in the theory of models of curves. 
+	\begin{enumerate}
+		\setcounter{enumi}{3}
+		\item Let $h: S' \to S$ be a birational morphism. Then the intersection number doesn't change after pullback \[
+				(h^* C \cdot  h^* D) = (C\cdot D)
+		.\] 
+		\item Let $h: S' \to S$ be a birational morphism and $E \subset S'$ an $h$-exceptional divisor, i.e.\ $h$ takes $E$ to a point. 
+			Then $(h^* C \cdot E) = 0$. 
+		\item Let $h: S' \to S$ be the blow-up of a smooth $k$-point and $E \subset  S'$ the exceptional divisor. 
+			Then $(E \cdot E) = - 1$. 
+	\end{enumerate}
+\end{theorem}
+
+\printbibliography
+\end{document}

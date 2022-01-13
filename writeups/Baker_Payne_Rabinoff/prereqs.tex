@@ -1,0 +1,441 @@
+
+\section{Basic valuation theory} \label{sec:basic_valuation_theory}
+
+Let $R$ be any ring. On rings like $\Z$ and $\Q$ we have ways of measuring how low \emph{large} each element is. We even have such functions on polynomials using the degree map. Depending on which properties these functions satisfy such ``measuring'' functions are called absolute values, norms or valuations. 
+\begin{definition}
+	Let $R$ be a ring. A \emph{absolute value on $R$} is a function $|\cdot |: R \to \R^{+}$ satisfying for all $a, b \in R$
+	\begin{enumerate}
+		\item $|a| = 0 \iff a = 0$ 
+		\item $|a \cdot b| = |a| \cdot |b|$ 
+		\item $|a + b| \le |a| + |b|$
+	\end{enumerate}
+\end{definition}
+Note that $R$ is not the zero ring, then $|1| = 1$ because $|1|^2 = |1| $ and $|1|\ne 0 $. 
+\begin{example}
+	The usual definition of absolute value on $\Z, \Q, \R$ is an absolute value. 
+\end{example}
+\begin{example}
+	On any ring we can define the trivial absolute value as \[
+	 |a| = \begin{cases}
+		 1 & a \ne 0 \\
+		 0 & a = 0
+	 \end{cases}
+	.\] 
+\end{example}
+\begin{example}
+	A weirder absolute value on $\Z$ is the \emph{$p$-adic absolute value}, where $p$ is a prime. 
+	Its defined as $|a|_p = p^{-n}$ where $n$ is the largest integers such that $p^{n} \divides a$, if $a \ne 0$ and $|0|_p = 0$. 
+
+
+	This $p$-adic absolute value can be extended to an absolute value on $\Q$ by defining $|a / b|_p = \frac{|a|_p}{|b|_p}$. Let $\frac{a}{b}$ be any fraction. 
+	I like to think about this in the following way. 
+	Factor out the largest powers of $p$ out of $a$ and $b$ and write $a = p^{n} a', b = p^{m} b'$. Then $\frac{a}{ b} = p^{n - m} \frac{a'}{ b'}$ and $|a / b|_p = p^{m - n}$. 
+	So the $p$-adic absolute values only cares about what powers of $p$ occur and doesn't care about numbers coprime to $p $.
+\end{example}
+As we will see in \cref{sec:berkovich_spectrum_of_Z}, we have esssentially listed all absolute values on $\Z$ and $\Q$ as examples above.  
+
+Absolute values are a special case of (semi)norms
+\begin{definition}
+	Let $R$ be any ring. A \emph{seminorm on $R$} is a function $\|\cdot \|: R \to \R^{+}$ satisfying for all $a, b \in R$ 
+	\begin{enumerate}
+		\item $\|0\| = 0, \|1\| = 1$
+		\item $\|a \cdot b\| \le \|a \| \cdot \|b\|$ 
+		\item $\|a + b\| \le \|a + b\|$ 
+	\end{enumerate}
+	Condition $2$ is called the submultiplicativity of $|\cdot |$ and condition 3 is called the triangle inequality. Both of these can be made stronger. 
+
+	A seminorm is called \emph{multiplicative} if it also satisfies a stronger vrersion of 2. 
+	\begin{enumerate}
+		\item [4.]  $\|a \cdot  b\| = \|a \| \cdot \|b\|$
+	\end{enumerate}
+	A seminorm that is only satisfies $2$ is sometimes called a \emph{submultiplicative seminorm} if we need to stress that is doesn't have to multiplicative. 
+\end{definition}
+
+\begin{definition}
+	The \emph{kernel} of a seminorm $\|\cdot \|: R \to \R^{+}$ is defined as \[
+		\ker(\|\cdot \|) = \{a \in \R \st \|a\| = 0\} 
+	.\] 
+\end{definition}
+\begin{remark}\label{rem:ker_norm_ideal}
+	Let $\|\cdot \|$ be a norm on $R$. Then $\ker \|\cdot \|$ is an ideal of $R$. If $\|\cdot \|$ is multiplicative then $\ker \|\cdot \|$ is even a prime ideal!
+	\todo{should I write a proof for this?}
+\end{remark}
+
+\begin{definition}
+	Let $R$ be a ring and $\|\cdot \|$ are seminorm. 
+	Then $\|\cdot \|$ is called a \emph{norm} if $\ker \|\cdot \| = 0$, i.e.\ $\|a\| = 0 \iff a = 0$. 
+\end{definition}
+
+So an absolute value is a multiplicative norm. 
+
+\begin{lemma}
+	Any seminorm $\|\cdot \|$ on a field $F$ is a norm, i.e.\ has trivial kernel. 
+\end{lemma}
+\begin{proof}
+	We have that $\|1\| = 1$. So $1 \not\in \ker \|\cdot \|$ and thus $\ker \|\cdot \|$ is an ideal of $F$ different from $F$. 
+	As $F$ is a field this means that $\ker \|\cdot \| = (0)$. So $\|\cdot \|$ is norm. 
+\end{proof}
+
+\begin{definition}
+	A (semi)norm $\|\cdot \|$ on $R$ is called \emph{non-archimedean} if it satisies the following stronger version of the triangle inequality, \[
+	\forall a, b \in \R: \|a + b\| \le \max \{\|a\|, \|b\|\} 
+	.\] 
+
+	Confusingly a \emph{Archimedean (semi)norm} is a norm that is not non-archimedean.
+\end{definition}
+
+\begin{exercise}[\cite{nicaiseNONARCHIMEDEANGEOMETRY}]
+	Let $k$ be a field.
+	Show that a absolute value  $|\cdot |$ on $k$ is non-Archemedean if and only if the image of $\Z$ in $k$ is bounded. 
+\end{exercise}
+\begin{proof}
+	Suppose $|\cdot |$ is non-archimedean. Then for any positive integers $n$ we have \[
+	|n| = \left|\sum_{i = 1}^{n} 1 \right| \le \max \{1, 1, \ldots, 1\}  = 1
+	.\] 
+	And for negative integers we have $|n| = |-n| \le 1$. So $\|\cdot \|$ is bounded on the image of $\Z$ by $1$. 
+
+
+	Suppose that $|\cdot |$ is bounded on the image of $\Z$ by $c$. 
+	Let $x, y \in k$. Then \[
+		|(x + y)^{n}| = \left| \sum_{i = 0}^{n} \binom{i}{n} x ^{i} y ^{n-i}\right| \le n\cdot c \max(x, y)^{n}
+	.\] 
+	So \[
+		|x + y| \le \sqrt[n]{c\cdot n}  \max(x, y)
+	.\] 
+	Taking $n \to \infty$ yields the non-archimedean triangle inequality. 
+\end{proof}
+
+\begin{remark}
+	Suppose $R$ is non-archimedean and we have $a, b \in R$ such that $\|a\| \ne \|b\|$ then the triangle inequality is an equality \[
+	\|a + b\| = \max \{\|a\|, \|b\|\} 
+	.\] 
+	So in some sense equality is the generic case. 
+\end{remark}
+It may sound like a really strong property to have, and that not many norms will be non-archimedean. 
+But as you will see in this thesis, most norms that pop up are non-archimedean. 
+In fact that $p$-adic norms are non-archimedian. 
+
+
+\begin{definition}
+	equivalent norm\todo{define this}
+\end{definition}
+
+Find
+\begin{remark}
+	dictionary norm $\leftrightarrow$ valuation
+\end{remark} 
+
+\todo{is this necessary?}
+
+\subsection{Non-Archimedean rings and fields} \label{sec:non-archimedean_rings_and_fields}
+
+
+\begin{theorem}\label{thm:norm_finite_field_ext}
+	If $L$ is a finite \todo{should this be algebraic?} field extension of an non-archimedean field $K$, then there is a unique extension of the norm of $K$ to $L$ and this extension is also non-archimedean.
+	\todo{find reference, this is not even true. $K$ needs to be complete }
+\end{theorem}
+
+\begin{corollary}
+	If $K$ is a complete non-archimedean field then the norm of  $K$ extends uniquely to its algebraic closure $\overline{K}$.
+\end{corollary}
+\begin{proof}
+	Recall that \[
+	\overline{K} = \varprojlim_{L \supset K} L
+	.\] 
+	where $L$ ranges over all algebraic extensions of $K$. 
+	As all these algebraic extensions have unique norms extending  the norm on $K$ and for $L_1 \supset L_2 \supset K$ the norm on  $L_1$ must restrict to norm on $L_2$ by uniqueness, it is clear that the norm functions $L \to \R^{+}$ glue to a map $\|\cdot \|: \overline{K} \to \R^{+}$. 
+
+	It is easy to verify that this is a norm on $\overline{K}$ extending the norm on $K$. 
+\end{proof}
+
+\begin{definition}
+	Let $R$ be a non-archimedean ring. Then we write 
+	\begin{align*}
+		R^{0} &= \{a \in k \st |k| \le 1\}  \\
+		R^{00} &=  \{a \in k \st |k| < 1\}  \\
+		\tilde R &= R^{0} / R^{00}
+	.\end{align*}
+\end{definition}
+If $k$ is a field then $k^{0}$ is a valuation ring and $ k^{00}$ is its maximal ideal. 
+
+\subsection{Ultrametric spaces} \label{sec:ultrametric_spaces}
+
+\begin{definition}
+	A \emph{ultrametric space} is a topological spaces $(X, d)$ where the metric satisfies the non-archimedean triangle inequality. 
+	\[
+		d(x, y) \le \max \{d(x, z) ,d(z, y)\}, \quad \forall x, y ,z \in X
+	.\] 
+\end{definition}
+\begin{exericise}
+	If $d(x,z) \ne d(z,y)$ the inequality is an equality. 
+\end{exericise}
+\begin{corollary}
+	Any point of a ball (open or closed) is a center for that ball. 
+\end{corollary}
+\begin{corollary}
+	If two balls have non-empty intersection that one must be included in the other. 
+\end{corollary}
+\begin{corollary}
+	The topology of $X$ is totally disconneced. 
+\end{corollary}
+
+Non-archimedean fields are ultrametric spaces with the metric $d(x, y) = |x - y|$. 
+
+\section{Berkovich Spaces} \label{sec:berkovich_spaces}
+
+\subsection{Berkovich spectrum of a ring} \label{sec:berkovich_spectrum_of_a_ring}
+
+\begin{definition}
+	Let $A$ be a ring. Then we define \[
+		\mathcal{M} (A) = \{x: A \to \R^{+} \st \text{multiplicative seminorm on } A\} 
+	.\] 
+	This comes with equipped with the coarsest topology such that for every $a \in A$ the map $\mathcal{M} (A) \to \R^{+}: \|\cdot \|_x \mapsto \|f\|_x $ is continuous. 
+
+	We will almost always deal with a relative case where $A$ is a $K$ algebra over some real valued field. In this case adjust the definition \[
+		\mathcal{M} (A) = \{x : A \to \R^{ + }  \mid \text{multiplicative seminorm on }A \text{ extending the norm on } K\} 
+	.\] 
+	Again $\mathcal{M} (A)$ comes with the coarsest topology making all maps $\mathcal{M} (A) \to \R^{+}: x \mapsto \|a\|_x, \forall a \in A$ continuous. 
+\end{definition}
+
+\subsection{Toy example: The Berkovich spectrum of $\Z$} \label{sec:toy_example:_the_berkovich_spectrum_of_Z}
+
+\begin{theorem}
+	[Ostrowski]
+	Any (multiplicative) norm on  $\Z$ is either
+	\begin{itemize}
+		\item  trivial
+		\item equivalent to  $|\cdot |$
+		\item equivalent to $|\cdot |_p$
+	\end{itemize}
+\end{theorem}
+
+We can make the list a bit more extensive. 
+\begin{corollary}
+	Any norm on $\Z$ is either  
+\end{corollary}
+
+
+
+
+Suppose $X$ be a scheme over $K$, and let $n = \dim X$. 
+Then the 
+\begin{definition}
+	The \emph{Berkovich analitification} of a scheme $X$ over  $K$, as a set is \[
+		X\an = \{(x, |\cdot |)  \mid x\in X, |\cdot | \text{ a norm on } k(x) \text{ extending the norm on }K \} 
+	.\] 
+	\todo{does this need to be smooth and proper and connected?}
+
+	This comes equipped with a cannonical projection map $i: X\an \to X, (x, |\cdot |) \mapsto  x$.
+	
+	$X\an $ comes with a topology which we define to be the coarsest topology such that 
+	\begin{itemize}
+		\item $i: X\an \to X$ is continuous, i.e. $X\an$ is a finer space than  $X$. 
+		\item For every open $U \subset X$ and $f \in \mathcal{O}_X(U)$ the map  \[
+				|f|: i^{-1}(U) \to \R^{+}: (x, |\cdot |) \mapsto  |f(x)|
+		\] 
+		is continuous.
+	\end{itemize}
+
+	\todo{give definition of Berkovich analitification, maybe find an earlier reference than \cite{nicaiseBerkovichSkeletaBirational2016}}
+\end{definition}
+\begin{remark}
+	Later we will consider other topologies on $X\an$, which will be necessary to turn $X\an $ into a ringed space. 
+	There topologies will not be topologies like we know it. They will be Grothendieck topologies, where which unlike ordinary topologies restrict the notion of a cover. 
+\end{remark}
+\begin{remark}
+	If $X$ is the spectrum of some $K$-algebra $A$, i.e. $X = \spec A$, then at topological spaces \todo{I think, maybe just as sets} we have \[
+		X^{\an} = \mathcal{M} (A)
+	.\] 
+
+	\todo{prove this, maybe check whether this is true first}
+\end{remark}
+
+
+
+\subsection{Berkovich spectrum of $\Z$ or $\Q$} \label{sec:berkovich_spectrum_of_Z}
+
+On $\Z$ we we know a couple norms. There of course is the trivial norm, which I will denote by $|\cdot |_0$ which is defined as \[
+|n|_0 = \begin{cases}
+	1 & n \ne 0 \\
+	0 & n = 0
+\end{cases}
+.\]  
+There is the absolute value norm defined as $|n| = \mathrm{abs}(n)$. You're also familiar with the $p$-adic norms, 
+
+
+
+\subsection{Berkovich specturm of $\aff^{1}_K$} \label{sec:berkovich_specturm_of_affine_line}
+
+\todo{Show the description of type I, II, III, IV points and space of disks}
+
+
+
+
+\section{Alternative description of schemes and Berkovich spaces} \label{sec:alternative_description_of_schemes_and_berkovich_spaces}
+
+Let $A$ be any ring. Can we describe the points in $\spec A$ without using prime ideals? It turns out we can!
+To see this, pick any ideal prime ideal $\mathfrak{p} \in \spec A$. Then $\frac{A}{\mathfrak{p} }$ is a domain, which gives us a map from $A$ to a field as follows, \[
+	A \to \frac{A}{\mathfrak{p} } \to Q\left( \frac{A}{\mathfrak{p} } \right) = k(\mathfrak{p} )
+.\] 
+\todo{Ask Johannes or Art for a reference for this}
+
+\subsection{Reduction map} \label{sec:reduction_map}
+
+\section{Affinoid algebras} \label{sec:affinoid_algebras}
+
+While we have seen how a scheme over $K$ can be a analytified to obtain a Berkobich space, the real building blocks of these spaces are affinoid algebras, which rougly are completed finite type algebras. 
+These are also crucial for defining the structure sheaf on Berkovich spaces. 
+
+\subsection{Banach Algebras} \label{sec:banach_algebras}
+\begin{definition}
+	A $K$-banach space is a $K$-vector space equipped with a norm that is complete with respect to that norm. 
+\end{definition}
+
+\begin{definition}
+	Let $A, B$ be $K$-banach spaces. 
+	A $K$-vector space morphism $\phi: A \to B$ is \emph{bounded} if there is some $C\in \R$ such that $\|\phi(a)\|\le C \|a\| $. 
+\end{definition}
+
+\begin{lemma}
+	A morphism $A \to B$ is bounded if and only if it is continuous. 
+\end{lemma}
+
+\begin{definition}
+	A Banach $K$-algebra, $A$, is a commutative, associative, unital $K$-algebra with a submultiplicative norm that is a Banach $K$-algebra.
+\end{definition}
+\begin{definition}
+	Let $A$ be a $K$-algebra. 
+	Two norms $\|\cdot \|_1, \|\cdot \|_2$on $A$ are called equivalent if and only if they induce the same topology. 
+
+	This means that there are non-zero constants $C, C'$ such that for every $ a\in A$ we have $C\|a\|_1 \le \|a\|_2 \le C'\|a\|_1$. 
+\end{definition}
+
+\begin{definition}
+	Let $A$ be an $k$ banach algebra nd $I$ be a closed\todo{do we need closed here} ideal in $A$. 
+	Then we define the \emph{residue norm} on $A / I$ as 
+	\begin{align*}
+		\|\cdot \|_\text{res} : A / I &\longrightarrow \R \\
+		a + I &\longmapsto \inf_{x \in a + I} \|x\|
+	.\end{align*}
+\end{definition}
+
+To describe the cateogory of $K$-banach algebras we still need morphisms.
+\begin{definition}
+	Let $A, B$ be $K$-banach algbras. 
+	A $K$-algebra morphism $\phi: A \to B$ is \emph{admissible} if $\phi$ is bounded (continuous) if induced map $A / \ker \phi \to \im \phi$ is a homeomorphism, where $A / \ker \phi$ is equipped with the residue norm and $\im \phi$ with subspace norm of $B$. 
+\end{definition}
+
+
+\subsection{Affinoid algebras} \label{sec:affinoid_algebras}
+We need restrict the category of banach algebras to those that are ``finitely generated'' in some appropriate sense. 
+
+\begin{definition}
+	[2.1.2, \cite{conrad2008several}]
+	Let $A$ non-archimedean ring and $r_1, \ldots, r_n$ some positive real numbers. We define \[
+		A \left<r_1^{-1}t_1, \ldots, r^{n}^{-1} t_n \right> = \left\{\sum_{\nu \in \N^{n}}^{} a_\nu t^{\nu} \in A[[t_1,\ldots, t_n]]\st a_\nu r^{\nu} \to 0, \text{ as } \nu \to \infty\right\} 
+	.\] 
+\end{definition}
+This can be thought of as the completing of the polynomial ring $A[x_1, \ldots, x_n]$ with the norm defined as 
+\begin{equation}\label{eq:norm_tate}
+	\left\| \sum_{\nu \in \n^{n}} a_\nu y^{\nu}\right\| = \max_{\nu \in \n^{n}} \|a_\nu r^{\nu}\|
+\end{equation}
+This gives a similarly defined norm on $A\left<y_1, \ldots, y_n \right>$, but there are many other interesting norms on $A \left<y_1, \ldots, y_n \right>$, as we will discover. 
+
+\begin{definition}
+	A \emph{Tate algebra} in $n$ variables is the ring \[
+		T_n(K) = K\left<T_1, \ldots, T_n \right>
+	,\]
+	equipped with the norm as in \eqref{eq:norm_tate}.
+\end{definition}
+
+
+\begin{definition}
+	A affinoid algebra is a $K$-algebra $A$ with such that there is an admissible surjective morphism $f: T_n(K) \to A$ for. 
+\end{definition}
+This means that $A$ can be written as $K\left<T_1, \ldots, T_n \right> / I$ where $I$ is some closed ideal.
+This does not mean that $A$ necessarily comes equipped with the residue norm, but this doesn't matter as the open mapping theorem shows that the norm on $A$ must be equivalent to residue norm.
+\subsection{Affinoid domains} \label{sec:affinoid_domains}
+
+there are different types of affinoid domains that we often encounter. 
+
+\begin{definition}[multiple definitions in \cite{conrad2008several}]
+		there are \emph{weierstrass domains, laurent domains} and \emph{rational domains}. 
+	\begin{description}
+		\item[weierstrass domain] let $a_1, \ldots, a_n$ be in $a$. 
+			\[
+				a\left<a_1, \ldots, a_n \right> := \frac{a\left<x_1, \ldots, x_n \right>}{(x_1-a_1, \ldots, x_n - a_n)}
+			.\] 
+			unlike for polynomial rings, this is not an evaulation map. you should think of this as forcing the $a_i$'s to become powerbounded. 
+		\item [laurent domains]
+			let $a_1, \ldots, a_n, b_1, \ldots, b_m \in a$ the \[
+				a\left<a_1, \ldots, a_n, b_1^{-1}, \ldots, b_m^{-1} \right> := \frac{a\left<x_1, \ldots, x_n,y_1, \ldots, y_m  \right>}{(x_1 - a_1, \ldots, x_n - a_n, b_1 y_1 - 1, \ldots, b_m y_m - 1)}
+			.\] 
+		\item[rational domain] with $a_1, \ldots, a_n, a' \in a$ with no common zeros, i.e. there is no $\mathfrak{m} $ that contains both of these elements.   
+			\[
+				a \left<\frac{a_1}{a}, \ldots, \frac{a_n}{a'} \right> := \frac{a\left<x_1, \ldots, x_n \right>}{(a' x_1 - a_1, \ldots, a' x_n - a_n)}
+			.\] 
+			this is essentially the affinoid version of localisation.
+			but it does more than just make $a'$ invertible. 
+			is also makes $\frac{a_i}{ a'}$ act like it is power bounded in some sense. 
+		\item 
+	\end{description}
+
+\end{definition}
+many authors define these domains by describing their space of points, be it max spec or the berkovich functor. 
+the following lemma gives shows that we can use these descriptions interchangeably
+\begin{lemma}
+	[2.1.8 in \cite{conrad2008several}]
+	suppose $a$ is a $k$-affinoid algebra and $a_1, \ldots, a_n, a_0 \in a$ be elements with no common zero (i.e. at no point in $ x \in \maxspec a$ are all $a_{i} \in \mathfrak{m}$).
+	 then a map of $k$-affinoid algebras $\phi: a \to b$ factors through $a \left<\frac{a_1}{a_0}, \ldots, \frac{a_n}{a_0} \right>$ like in the diagram \[
+	 \begin{tikzcd}
+		 a \left<\frac{a_1}{a_0}, \ldots, \frac{a_n}{a_0} \right> \drar[dashed]  \\
+		 a \uar \rar[']{\phi} & b
+	 \end{tikzcd}
+	 \] 
+	 if and only if  $m\phi: \maxspec b \to \maxspec a$ factors through the subset $x \in m(a)$ such that $|a_j(x)| \le |a'(x)|$ for all $j$. 
+\end{lemma}
+
+\subsection{admissible opens, covers and $g$-topology} \label{sec:admissible_opens,_covers_and_g-topology}
+
+\begin{definition}
+	[2.2.6, \cite{conrad2008several}]
+	let $a$ be a  $k$ affinoid algebra. 
+	a subset $u$ of $\maxspec(a)$ is an \emph{admissible open} if is has a cover $\{u_i\} $ of affinoid subdomains $u_i$ satisfying the following property: 
+	for any map of $k$-affinoid algebras $\phi: a \to b$ such that the induced map $f: m(b) \to m(a)$ lands in $u$, the pullback of the cover $\{f^{-1}(u_i)\} $ has a finite subcovering. 
+
+
+	a covering $v = \bigcup_{i \in  i} v_i$ is an \emph{admissible cover} if for any any map $\phi:a \to b$  of $k$-affinoid algebras that the image of  $f: m(b) \to m(a)$ lies in $v$, the pullback cover $\{f^{-1}(v_i)\} $ has a refinement by a covering consisting of finitely many affinoid subdomains.  
+\end{definition}
+\begin{proof}
+	\todo{look at this proof}
+\end{proof}
+
+we need this to define the notion of a $g$-topology, which is a grothendieck topology on the set $\maxspec(a)$. 
+i'm pretty sure later we will scrap $\maxspec$ in favour of the berkovich space.
+
+
+
+\todo{Look at temkins notes for Gerritzen-Grauert, paper in mathematische analen.}
+Let $K$ be a complete non-archimedean algebraically closed field. 
+
+\begin{definition}
+	
+\end{definition}
+
+\begin{definition}
+	Tate algebra \todo{strict or non-strict?}
+\end{definition}
+\begin{definition}
+	Affinoid algebra \todo{strict or non-strict}
+\end{definition}
+
+\begin{definition}
+	Berkovich spectrum?
+\end{definition}
+
+
+
+\section{What comes next} \label{sec:what_comes_next}
+
+Tate elliptic curves
+

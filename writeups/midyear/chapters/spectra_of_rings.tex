@@ -1,0 +1,98 @@
+
+\subsection{Berkovich spectrum of a ring} \label{sec:berkovich_spectrum_of_a_ring}
+
+\begin{definition}
+	Let $A$ be a ring. Then we define \[
+		\mathcal{M} (A) = \{x: A \to \R^{+} \st \text{multiplicative seminorm on } A\} 
+	.\] 
+	This comes with equipped with the coarsest topology such that for every $a \in A$ the map $\mathcal{M} (A) \to \R^{+}: \|\cdot \|_x \mapsto \|f\|_x $ is continuous. 
+
+	We will almost always deal with a relative case where $A$ is a $K$ algebra over some real valued field. In this case adjust the definition \[
+		\mathcal{M} (A) = \{x : A \to \R^{ + }  \mid \text{multiplicative seminorm on }A \text{ extending the norm on } K\} 
+	.\] 
+	Again $\mathcal{M} (A)$ comes with the coarsest topology making all maps $\mathcal{M} (A) \to \R^{+}: x \mapsto \|a\|_x, \forall a \in A$ continuous. 
+\end{definition}
+
+\subsection{Toy example: The Berkovich spectrum of $\Z$} \label{sec:toy_example:_the_berkovich_spectrum_of_Z}
+
+\begin{theorem}
+	[Ostrowski]
+	Any (multiplicative) norm on  $\Z$ is either
+	\begin{itemize}
+		\item  trivial
+		\item equivalent to  $|\cdot |$
+		\item equivalent to $|\cdot |_p$
+	\end{itemize}
+\end{theorem}
+
+We can make the list a bit more extensive. 
+\begin{corollary}
+	Any norm on $\Z$ is either  
+\end{corollary}
+
+
+
+
+Suppose $X$ be a scheme over $K$, and let $n = \dim X$. 
+Then the 
+\begin{definition}
+	The \emph{Berkovich analitification} of a scheme $X$ over  $K$, as a set is \[
+		X\an = \{(x, |\cdot |)  \mid x\in X, |\cdot | \text{ a norm on } k(x) \text{ extending the norm on }K \} 
+	.\] 
+	\todo{does this need to be smooth and proper and connected?}
+
+	This comes equipped with a cannonical projection map $i: X\an \to X, (x, |\cdot |) \mapsto  x$.
+	
+	$X\an $ comes with a topology which we define to be the coarsest topology such that 
+	\begin{itemize}
+		\item $i: X\an \to X$ is continuous, i.e. $X\an$ is a finer space than  $X$. 
+		\item For every open $U \subset X$ and $f \in \mathcal{O}_X(U)$ the map  \[
+				|f|: i^{-1}(U) \to \R^{+}: (x, |\cdot |) \mapsto  |f(x)|
+		\] 
+		is continuous.
+	\end{itemize}
+
+	\todo{give definition of Berkovich analitification, maybe find an earlier reference than \cite{nicaiseBerkovichSkeletaBirational2016}}
+\end{definition}
+\begin{remark}
+	Later we will consider other topologies on $X\an$, which will be necessary to turn $X\an $ into a ringed space. 
+	There topologies will not be topologies like we know it. They will be Grothendieck topologies, where which unlike ordinary topologies restrict the notion of a cover. 
+\end{remark}
+\begin{remark}
+	If $X$ is the spectrum of some $K$-algebra $A$, i.e. $X = \spec A$, then at topological spaces \todo{I think, maybe just as sets} we have \[
+		X^{\an} = \mathcal{M} (A)
+	.\] 
+
+	\todo{prove this, maybe check whether this is true first}
+\end{remark}
+
+
+
+\subsection{Berkovich spectrum of $\Z$ or $\Q$} \label{sec:berkovich_spectrum_of_Z}
+
+On $\Z$ we we know a couple norms. There of course is the trivial norm, which I will denote by $|\cdot |_0$ which is defined as \[
+|n|_0 = \begin{cases}
+	1 & n \ne 0 \\
+	0 & n = 0
+\end{cases}
+.\]  
+There is the absolute value norm defined as $|n| = \mathrm{abs}(n)$. You're also familiar with the $p$-adic norms, 
+
+
+
+\subsection{Berkovich specturm of $\aff^{1}_K$} \label{sec:berkovich_specturm_of_affine_line}
+
+\todo{Show the description of type I, II, III, IV points and space of disks}
+
+
+
+
+\section{Alternative description of schemes and Berkovich spaces} \label{sec:alternative_description_of_schemes_and_berkovich_spaces}
+
+Let $A$ be any ring. Can we describe the points in $\spec A$ without using prime ideals? It turns out we can!
+To see this, pick any ideal prime ideal $\mathfrak{p} \in \spec A$. Then $\frac{A}{\mathfrak{p} }$ is a domain, which gives us a map from $A$ to a field as follows, \[
+	A \to \frac{A}{\mathfrak{p} } \to Q\left( \frac{A}{\mathfrak{p} } \right) = k(\mathfrak{p} )
+.\] 
+\todo{Ask Johannes or Art for a reference for this}
+
+\subsection{Reduction map} \label{sec:reduction_map}

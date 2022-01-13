@@ -1,0 +1,55 @@
+\documentclass[a4paper]{article}
+\input{../preamble.tex}
+
+\title{Mid year report: Berkovich Geometry}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\pagebreak
+
+\section{Introduction} \label{sec:introduction}
+
+A powerful tool to study complex varieties is the analitification functor, which turns a variety over $\C$ into a complex manifold, that then can be studied using analitic method. 
+Other rings that are well suited for analysis are the $p$-adic fields $\Q_p$ or more generally non-archimedean fields. 
+So the question arises whether a similar analytification functor can be constructed for  varieties over non-archimedean fields. 
+
+Tate constructed the theory of rigid spaces as suitible analytic spaces. But they're various topological problems that makes them less than ideal. For example they are totally disconnected. To solve these problems Tate restricted the set of open and covers on these spaces. 
+
+Berkovich proposed another approach by adding many more points to the rigid space to resolve various problem. 
+The resulting topological spacse are very well behaved. For connected schemes they are path connected, compact. Even more, the analitification of a curve has the structure of a profinite real graph. 
+
+For the thesis the main interest is not to do analysis on Berkovich spaces of varities, but rather to study the relation between the berkovich space of a curve and its semi-stable models as outlined in \cite{bakerStructureNonarchimedeanAnalytic2013}
+
+This text is a based on various roughly analogous introductionary text on Berkovich geometry \cite{bakerarizona,temkinIntroductionBerkovichAnalytic2010,nicaiseNONARCHIMEDEANGEOMETRY,boschLecturesFormalRigid2014}. 
+
+\section{Basic valuation theory} \label{sec:basic_valuation_theory}
+
+\input{chapters/valuations.tex}
+
+\section{Berkovich Spaces of rings} \label{sec:berkovich_spaces}
+\input{chapters/spectra_of_rings.tex}
+
+
+\section{Affinoid algebras} \label{sec:affinoid_algebras}
+
+\input{chapters/affinoid.tex}
+
+
+\section{Berkovich analytification of schemes} \label{sec:berkovich_analytification_of_schemes}
+\input{chapters/analytification.tex}
+
+
+\section{Analytification of Curves} \label{sec:analytification_of_curves}
+
+
+\section{What comes next} \label{sec:what_comes_next}
+
+Tate elliptic curves
+
+\printbibliography
+	
+\end{document}

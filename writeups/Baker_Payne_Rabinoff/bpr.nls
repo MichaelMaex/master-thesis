@@ -1,0 +1,11 @@
+
+\begin{thenomenclature} 
+\nomgroup{A}
+  \item [{\(\mathfrak{m}_R  \)}]\begingroup maximal ideal of $R$\nomeqref {0}\nompageref{1}
+  \item [{\(\R^{+} \)}]\begingroup the non-negative real numbers\nomeqref {0}\nompageref{1}
+  \item [{\(k \)}]\begingroup residue field of $R$\nomeqref {0}\nompageref{1}
+  \item [{\(K\)}]\begingroup Algebraiclly closed field, complete wrt.\ a nonarchimedian valuation\nomeqref {0}\nompageref{1}
+  \item [{\(R \)}]\begingroup valuation ring of $K$\nomeqref {0}\nompageref{1}
+  \item [{\(v \)}]\begingroup valuation on $K$\nomeqref {0}\nompageref{1}
+
+\end{thenomenclature}

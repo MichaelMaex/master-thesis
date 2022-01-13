@@ -1,0 +1,309 @@
+\documentclass[a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+%\usepackage[dutch]{babel}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{geometry}
+\usepackage{tikz-cd}
+\usepackage{mdframed}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{todonotes}
+\usepackage{libertine}
+
+% bib(la)tex
+\usepackage[backend=biber]{biblatex}
+\addbibresource{references.bib}
+
+% figure support
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage{todonotes}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\newcommand{\incfig}[1]{%
+	\def\svgwidth{\columnwidth}
+	\import{./figures/}{#1.pdf_tex}
+}
+
+\pdfsuppresswarningpagegroup=1
+
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\ltr}{\par \noindent \framebox[1\width]{ $\implies$ } \hspace{.2cm}}
+\newcommand{\rtl}{\par \noindent \framebox[1\width]{ $\impliedby$ } \hspace{.2cm} }
+\newenvironment{exercise}{
+\begin{mdframed}
+}
+{
+\end{mdframed}
+}
+
+\DeclareMathOperator{\coker}{coker}
+\DeclareMathOperator{\id}{Id}
+\DeclareMathOperator{\im}{Im}
+\DeclareMathOperator{\divisor}{Div}
+\DeclareMathOperator{\spec}{Spec}
+\DeclareMathOperator{\maxspec}{MaxSpec}
+\DeclareMathOperator{\proj}{Proj}
+
+\newcommand{\into}{\hookrightarrow}
+\newcommand{\onto}{\twoheadrightarrow}
+
+\theoremstyle{definition}
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{definition}{Definition}
+\newtheorem*{proposition}{Proposition}
+\newtheorem*{corollary}{Corollary}
+\newtheorem{question}{Question}
+
+\author{Micha\"el Maex}
+\date{\today}
+\title{Important theorems}
+\begin{document}
+
+\maketitle
+{\color{red} I will just copy verbatim into this document if I do not feel like rephrasing. Be carefull when copying from here with regards to plagiarism.}
+\tableofcontents
+
+\pagebreak
+\chapter{Non-archimedian geometry} \label{chap:non-archimedian_geometry}
+\section{Affinoid algebras} \label{sec:affinoid_algebras}
+Affinoid algebras are a type of rings, which are complete with respect to their norm. 
+They will form the basis building block of a theory that mimics the scheme theory of ordinary rings. 
+
+\subsection{Basics on norms} \label{sec:basics_on_norms}
+\begin{definition}
+	Let $k$ be normed field and $A$ a $k$-algebra. 
+	A \emph{seminorm} on $A$ is a map $\|*\|:A \to \R_{> 0}$ such that for all $x, y \in A$ and $\lambda \in k$
+	\begin{itemize}
+		\item  $\|0\| = 0$. 
+		\item $\|1\| = 1$ 
+		\item $\|\lambda \cdot x\| = |\lambda| \cdot \|x\|$
+		\item $\|x + y\| \le \|x\| + \|y\|$
+		\item $\|x \cdot y\| \le \|x\| \cdot  \|y\|$
+	\end{itemize}
+	
+
+	If a seminorm satisfies $\|x\| = 0 \implies x = 0$ then it is called a \emph{norm}.
+
+	If a seminorm satisies $\|x \cdot  y\| = \|x\| \cdot \|y\|$ we say it is multiplicative. 
+
+\end{definition}
+
+\begin{definition}
+	[2.1.2, \cite{conrad2008several}]
+	let $(a, \|\cdot\|)$ be a $k$-banach algebra. (usually we take $a = k$). 
+	the tate algebra over $a$ in $n$-variables \[
+	a \left<y_1, \ldots, y_n \right> = \left\{\sum_{\nu \in \n^{n}}^{} a_\nu y^{\nu} \st a_\nu \to 0, \text{ as } \nu \to \infty\right\} 
+	.\] 
+
+	this can be thought of as the completing of the polynomial ring $a[x_1, \ldots, x_n]$ with the norm defined as \[
+	\left\| \sum_{\nu \in \n^{n}} a_\nu y^{\nu}\right\| = \max_{\nu \in \n^{n}} \|a_\nu\|
+	.\] 
+	this naturally gives a similarly defined norm on $a\left<y_1, \ldots, y_n \right>$,but there are many other interesting norms on $a \left<y_1, \ldots, y_n \right>$. 
+\end{definition}
+
+\subsection{affinoid domains} \label{sec:affinoid_domains}
+
+there are different types of affinoid domains that we often encounter. 
+
+\begin{definition}[multiple definitions in \cite{conrad2008several}]
+		there are \emph{weierstrass domains, laurent domains} and \emph{rational domains}. 
+	\begin{description}
+		\item[weierstrass domain] let $a_1, \ldots, a_n$ be in $a$. 
+			\[
+				a\left<a_1, \ldots, a_n \right> := \frac{a\left<x_1, \ldots, x_n \right>}{(x_1-a_1, \ldots, x_n - a_n)}
+			.\] 
+			unlike for polynomial rings, this is not an evaulation map. you should think of this as forcing the $a_i$'s to become powerbounded. 
+		\item [laurent domains]
+			let $a_1, \ldots, a_n, b_1, \ldots, b_m \in a$ the \[
+				a\left<a_1, \ldots, a_n, b_1^{-1}, \ldots, b_m^{-1} \right> := \frac{a\left<x_1, \ldots, x_n,y_1, \ldots, y_m  \right>}{(x_1 - a_1, \ldots, x_n - a_n, b_1 y_1 - 1, \ldots, b_m y_m - 1)}
+			.\] 
+		\item[rational domain] with $a_1, \ldots, a_n, a' \in a$ with no common zeros, i.e. there is no $\mathfrak{m} $ that contains both of these elements.   
+			\[
+				a \left<\frac{a_1}{a}, \ldots, \frac{a_n}{a'} \right> := \frac{a\left<x_1, \ldots, x_n \right>}{(a' x_1 - a_1, \ldots, a' x_n - a_n)}
+			.\] 
+			this is essentially the affinoid version of localisation.
+			but it does more than just make $a'$ invertible. 
+			is also makes $\frac{a_i}{ a'}$ act like it is power bounded in some sense. 
+		\item 
+	\end{description}
+
+\end{definition}
+many authors define these domains by describing their space of points, be it max spec or the berkovich functor. 
+the following lemma gives shows that we can use these descriptions interchangeably
+\begin{lemma}
+	[2.1.8 in \cite{conrad2008several}]
+	suppose $a$ is a $k$-affinoid algebra and $a_1, \ldots, a_n, a_0 \in a$ be elements with no common zero (i.e. at no point in $ x \in \maxspec a$ are all $a_{i} \in \mathfrak{m}$).
+	 then a map of $k$-affinoid algebras $\phi: a \to b$ factors through $a \left<\frac{a_1}{a_0}, \ldots, \frac{a_n}{a_0} \right>$ like in the diagram \[
+	 \begin{tikzcd}
+		 a \left<\frac{a_1}{a_0}, \ldots, \frac{a_n}{a_0} \right> \drar[dashed]  \\
+		 a \uar \rar[']{\phi} & b
+	 \end{tikzcd}
+	 \] 
+	 if and only if  $m\phi: \maxspec b \to \maxspec a$ factors through the subset $x \in m(a)$ such that $|a_j(x)| \le |a'(x)|$ for all $j$. 
+\end{lemma}
+
+\subsection{admissible opens, covers and $g$-topology} \label{sec:admissible_opens,_covers_and_g-topology}
+
+\begin{definition}
+	[2.2.6, \cite{conrad2008several}]
+	let $a$ be a  $k$ affinoid algebra. 
+	a subset $u$ of $\maxspec(a)$ is an \emph{admissible open} if is has a cover $\{u_i\} $ of affinoid subdomains $u_i$ satisfying the following property: 
+	for any map of $k$-affinoid algebras $\phi: a \to b$ such that the induced map $f: m(b) \to m(a)$ lands in $u$, the pullback of the cover $\{f^{-1}(u_i)\} $ has a finite subcovering. 
+
+
+	a covering $v = \bigcup_{i \in  i} v_i$ is an \emph{admissible cover} if for any any map $\phi:a \to b$  of $k$-affinoid algebras that the image of  $f: m(b) \to m(a)$ lies in $v$, the pullback cover $\{f^{-1}(v_i)\} $ has a refinement by a covering consisting of finitely many affinoid subdomains.  
+\end{definition}
+\begin{proof}
+	\todo{look at this proof}
+\end{proof}
+
+we need this to define the notion of a $g$-topology, which is a grothendieck topology on the set $\maxspec(a)$. 
+i'm pretty sure later we will scrap $\maxspec$ in favour of the berkovich space.
+
+
+
+
+\section{Models} \label{sec:models}
+
+
+This will be mostly theorems from \cite{liu}, \cite{silvermanarithmetic}.
+
+
+\begin{definition}
+	[fibered surface, 8.3.1 \cite{liu}]
+	A \emph{fibered surface} is a integral, projective, flat $S$ scheme, $X \to S$ of dimension 2 with $S$ a dedekind scheme. 
+\end{definition}
+\begin{definition}
+	[arithmetic surface, 8.3.14 \cite{liu}]
+We will call a regular fibered surface $X \to S$ over a Dedekind scheme $S$ of dimension $1$ an \emph{arithmetic surface}.
+\end{definition}
+
+\begin{theorem}
+	[Adjuction formula, 9.1.37 \cite{liu}] 
+	Let $X \to S$ be a regular fibered surface, $s \in S$ a closed point, and $E \in \divisor_s(X)$	such that $0 < E \le X_s$ (the second inequality an empty condition if $\dim S =0$). 
+	Then we have \[
+		\omega_{E / k(s)} \simeq (\mathcal{O}_X(E) \otimes \omega_{X / s})|_E
+	,\] 
+	and if $K_{X / S}$ is a canonical divisor, \[
+		p_a(E) = 1 + \frac{1}{2}(E^2 + K_{X / S} \cdot E)
+	.\] 
+
+\end{theorem}
+
+The following seems to be a quite technical result, but Art marked it, so I guess it will be useful. 
+\begin{lemma}
+	[9.4.29 \cite{liu}]
+	Let $\pi: W \to S = \spec A$ be a fibrede surface such that $W_\eta = E$, that $O := \overline{\{o\} }$ is contained in the smooth locus of $W$,
+	and that $W_s$ is integral for every $s \in S$. 
+	Let us consider $O$ as as a Cartier divisor on $W$. 
+	Then the following properties are true. 
+	\begin{enumerate}
+		\item [(a)] for any $n \ge 2$, $\mathcal{O} _W(n O)$ is generated by its global sections. 
+		\item [(b)] 
+			The fheas $\mathcal{L}  = R^{1}\pi_*\mathcal{O} _W$ is invertible on $S$. 
+			Let us suppose that it is free. 
+			For any $n \ge 2$, there exists an exact sequence \[
+				0 \to \pi_* \mathcal{O} _W((n -1)O) \to \pi_* \mathcal{O}_W(nO) \to \mathcal{L} ^{\otimes n} \to 0
+			,\] 
+			$\pi_* \mathcal{O}_W(n) $ is free of rank $n$, and the cannonical homomorphism \[
+				\bigoplus_{2a + 3b \le n}(\pi_* \mathcal{O}_W(2O)) ^{ \otimes a} \otimes (\pi_* \mathcal{O}_W(3O)) ^{\otimes b} \to \pi_* O_W(nO)
+			\] 
+			is surjective. 
+	\end{enumerate}
+\end{lemma}
+
+Definition of a \emph{minimal model}
+\begin{definition}[9.4.33 \cite{liu}]
+	Let $W $ be a Weierstraß model of $E$ over $S = \spec A$ with discriminant $\Delta_W \in A / A^*$. 
+	We sya that $W$ is \emph{minimal} at $s$ if $\nu_s(\Delta_W)$ is the smallest among the valuations of the discriminats of the integral equation of $E$. 
+
+	We say that the integer $\nu_s(\Delta_W)$ is the \emph{minimal discriminant} of $E$ at $s$. 
+
+	$W$ is \emph{minimal} if it is minimal at every $s \in S$. 
+
+\end{definition}
+
+\begin{definition}[10.1.1 \cite{liu}]
+	Let $S$ be a one-dimensional Dedekind scheme, with function field $K$.  
+	Let $C$ be a normal, projective, connected curve over $K$. 
+	Then a model of  $C$ is a fibred surface $\mathcal{C}  \to S$ such that there is an isomorphism $f: \mathcal{C} _\eta \simeq C$ over $K$. 
+	I.e. the following diagram \[
+	\begin{tikzcd}
+		C \rar{f} \dar \ar[phantom]{dr}{\times }& \mathcal{C}  \dar \\
+		K \rar & S
+	\end{tikzcd}
+	\] 
+	is cartesian. 
+	Note, the morphism $f$ is part of the model. 
+
+	A morphism of two models $\mathcal{C} , \mathcal{C} '$ of $C$ is a morphism of $S$-schemes $\mathcal{C}  \to \mathcal{C} '$ such that the following diagram commutes
+	\[
+	\begin{tikzcd}[row sep =small ]
+		& \mathcal{C}  \ar{dd} \\
+		C \ar{ur} \ar{dr} \\
+		& \mathcal{C} '
+	\end{tikzcd}
+	.\] 
+\end{definition}
+
+\begin{proposition}
+	[VII.2.1 \cite{silvermanarithmetic}]
+	There is an exact sequence of abelian groups \[
+		0 \to E_1(K) \to E_0(K) \to \tilde E_\text{ns} (k) \to 0
+	,\] 
+	where  the right hand map is reduction modulo $\pi$ and 
+	\begin{align*}
+		E_0(K ) &= \{P \in E(K) \mid \tilde  P \in \tilde E_\text{ns} (k)\}\\
+		E_1(K) &= \{P \in E(K)  \mid \tilde P = \tilde O\}  
+	.\end{align*}
+\end{proposition}
+
+\begin{proposition}
+	[10.1.8 \cite{liu}]
+	Let us suppose $S $ is affine. Lec $C$ be a smooth projective curve of genus $g$ over $K$. 
+	Then $C$ admits a relatively  minimal regular model (resp. a regular model with normal crossings) over  $S$. 
+	If, moreover, $g \ge 1$ then $C$ admits a unique minimal regular model $C_\text{min}$, and a unique minimal regular model with normal crossings. 
+	\todo{Using $C$ and $\mathcal{C} $ for two different curves is a horrible idea.}
+\end{proposition}
+
+\begin{lemma}
+	[9.3.20 \cite{liu}]
+	Let $Y \to S $ be a normal fibered surface. Let us supopse that $Y$ admits two regular models $X_1, X_2$ wihotu relation of domination between them. 
+	Then there exists a regular model $Z$ of $Y$ that dominates the $X_i$ and an exceptional divisor $E_1$ on $Z$ contained in the exceptional locus of $Z \to X_1$ (in other words, the image of $E_1$ in $X_1$ is a point) such that 
+	\begin{enumerate}
+		\item Either the image of $E_1$ in $X_2$ is still an exceptional divisor. 
+		\item or there exists another exceptional divisor $E_2$ on $Z$ and an integer $\mu \ge 1$ with $(E_1 + \mu E_2)^2 \ge 0$. 
+	\end{enumerate}
+\end{lemma}
+
+
+\begin{corollary}
+	[3.27 in \cite{liu}]
+	Let $\pi: X \to S$ be a minimal arithmetic surface whose generic fiber is an ellpitic curve. 
+	Then $\pi_* \omega_{X / S}$ is an invertible sheaf on $S$, and the canonical homomorphism $\pi^* \pi_* \omega_{X / S} \to \omega_{X / S}$ is an isomorphism. 
+\end{corollary}
+
+\pagebreak
+\printbibliography
+
+\chapter{Elementary questions} \label{chap:elementary_}
+\begin{question}
+	Does residue norm preserve multiplicativity?
+	Does it preserve sub-multiplicativity?
+\end{question}
+\begin{question}
+	Is de definitie van een admissible cover makkelijker in  berkovich space? Want de grote waarde van de admissible covers in rigid context is de space connected maken.
+\end{question}
+
+
+\end{document}

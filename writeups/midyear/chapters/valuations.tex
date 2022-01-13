@@ -1,0 +1,180 @@
+Let $R$ be any ring. On rings like $\Z$ and $\Q$ we have ways of measuring how low \emph{large} each element is. We even have such functions on polynomials using the degree map. Depending on which properties these functions satisfy such ``measuring'' functions are called absolute values, norms or valuations. 
+\begin{definition}
+	Let $R$ be a ring. A \emph{absolute value on $R$} is a function $|\cdot |: R \to \R^{+}$ satisfying for all $a, b \in R$
+	\begin{enumerate}
+		\item $|a| = 0 \iff a = 0$ 
+		\item $|a \cdot b| = |a| \cdot |b|$ 
+		\item $|a + b| \le |a| + |b|$
+	\end{enumerate}
+\end{definition}
+Note that $R$ is not the zero ring, then $|1| = 1$ because $|1|^2 = |1| $ and $|1|\ne 0 $. 
+\begin{example}
+	The usual definition of absolute value on $\Z, \Q, \R$ is an absolute value. 
+\end{example}
+\begin{example}
+	On any ring we can define the trivial absolute value as \[
+	 |a| = \begin{cases}
+		 1 & a \ne 0 \\
+		 0 & a = 0
+	 \end{cases}
+	.\] 
+\end{example}
+\begin{example}
+	A weirder absolute value on $\Z$ is the \emph{$p$-adic absolute value}, where $p$ is a prime. 
+	Its defined as $|a|_p = p^{-n}$ where $n$ is the largest integers such that $p^{n} \divides a$, if $a \ne 0$ and $|0|_p = 0$. 
+
+
+	This $p$-adic absolute value can be extended to an absolute value on $\Q$ by defining $|a / b|_p = \frac{|a|_p}{|b|_p}$. Let $\frac{a}{b}$ be any fraction. 
+	I like to think about this in the following way. 
+	Factor out the largest powers of $p$ out of $a$ and $b$ and write $a = p^{n} a', b = p^{m} b'$. Then $\frac{a}{ b} = p^{n - m} \frac{a'}{ b'}$ and $|a / b|_p = p^{m - n}$. 
+	So the $p$-adic absolute values only cares about what powers of $p$ occur and doesn't care about numbers coprime to $p $.
+\end{example}
+As we will see in \cref{sec:berkovich_spectrum_of_Z}, we have esssentially listed all absolute values on $\Z$ and $\Q$ as examples above.  
+
+Absolute values are a special case of (semi)norms
+\begin{definition}
+	Let $R$ be any ring. A \emph{seminorm on $R$} is a function $\|\cdot \|: R \to \R^{+}$ satisfying for all $a, b \in R$ 
+	\begin{enumerate}
+		\item $\|0\| = 0, \|1\| = 1$
+		\item $\|a \cdot b\| \le \|a \| \cdot \|b\|$ 
+		\item $\|a + b\| \le \|a + b\|$ 
+	\end{enumerate}
+	Condition $2$ is called the submultiplicativity of $|\cdot |$ and condition 3 is called the triangle inequality. Both of these can be made stronger. 
+
+	A seminorm is called \emph{multiplicative} if it also satisfies a stronger vrersion of 2. 
+	\begin{enumerate}
+		\item [4.]  $\|a \cdot  b\| = \|a \| \cdot \|b\|$
+	\end{enumerate}
+	A seminorm that is only satisfies $2$ is sometimes called a \emph{submultiplicative seminorm} if we need to stress that is doesn't have to multiplicative. 
+\end{definition}
+
+\begin{definition}
+	The \emph{kernel} of a seminorm $\|\cdot \|: R \to \R^{+}$ is defined as \[
+		\ker(\|\cdot \|) = \{a \in \R \st \|a\| = 0\} 
+	.\] 
+\end{definition}
+\begin{remark}\label{rem:ker_norm_ideal}
+	Let $\|\cdot \|$ be a norm on $R$. Then $\ker \|\cdot \|$ is an ideal of $R$. If $\|\cdot \|$ is multiplicative then $\ker \|\cdot \|$ is even a prime ideal!
+	\todo{should I write a proof for this?}
+\end{remark}
+
+\begin{definition}
+	Let $R$ be a ring and $\|\cdot \|$ are seminorm. 
+	Then $\|\cdot \|$ is called a \emph{norm} if $\ker \|\cdot \| = 0$, i.e.\ $\|a\| = 0 \iff a = 0$. 
+\end{definition}
+
+So an absolute value is a multiplicative norm. 
+
+\begin{lemma}
+	Any seminorm $\|\cdot \|$ on a field $F$ is a norm, i.e.\ has trivial kernel. 
+\end{lemma}
+\begin{proof}
+	We have that $\|1\| = 1$. So $1 \not\in \ker \|\cdot \|$ and thus $\ker \|\cdot \|$ is an ideal of $F$ different from $F$. 
+	As $F$ is a field this means that $\ker \|\cdot \| = (0)$. So $\|\cdot \|$ is norm. 
+\end{proof}
+
+\begin{definition}
+	A (semi)norm $\|\cdot \|$ on $R$ is called \emph{non-archimedean} if it satisies the following stronger version of the triangle inequality, \[
+	\forall a, b \in \R: \|a + b\| \le \max \{\|a\|, \|b\|\} 
+	.\] 
+
+	Confusingly a \emph{Archimedean (semi)norm} is a norm that is not non-archimedean.
+\end{definition}
+
+\begin{exercise}[\cite{nicaiseNONARCHIMEDEANGEOMETRY}]
+	Let $k$ be a field.
+	Show that a absolute value  $|\cdot |$ on $k$ is non-Archemedean if and only if the image of $\Z$ in $k$ is bounded. 
+\end{exercise}
+\begin{proof}
+	Suppose $|\cdot |$ is non-archimedean. Then for any positive integers $n$ we have \[
+	|n| = \left|\sum_{i = 1}^{n} 1 \right| \le \max \{1, 1, \ldots, 1\}  = 1
+	.\] 
+	And for negative integers we have $|n| = |-n| \le 1$. So $\|\cdot \|$ is bounded on the image of $\Z$ by $1$. 
+
+
+	Suppose that $|\cdot |$ is bounded on the image of $\Z$ by $c$. 
+	Let $x, y \in k$. Then \[
+		|(x + y)^{n}| = \left| \sum_{i = 0}^{n} \binom{i}{n} x ^{i} y ^{n-i}\right| \le n\cdot c \max(x, y)^{n}
+	.\] 
+	So \[
+		|x + y| \le \sqrt[n]{c\cdot n}  \max(x, y)
+	.\] 
+	Taking $n \to \infty$ yields the non-archimedean triangle inequality. 
+\end{proof}
+
+\begin{remark}
+	Suppose $R$ is non-archimedean and we have $a, b \in R$ such that $\|a\| \ne \|b\|$ then the triangle inequality is an equality \[
+	\|a + b\| = \max \{\|a\|, \|b\|\} 
+	.\] 
+	So in some sense equality is the generic case. 
+\end{remark}
+It may sound like a really strong property to have, and that not many norms will be non-archimedean. 
+But as you will see in this thesis, most norms that pop up are non-archimedean. 
+In fact that $p$-adic norms are non-archimedian. 
+
+
+\begin{definition}
+	equivalent norm\todo{define this}
+\end{definition}
+
+Find
+\begin{remark}
+	dictionary norm $\leftrightarrow$ valuation
+\end{remark} 
+
+\todo{is this necessary?}
+
+\subsection{Non-Archimedean rings and fields} \label{sec:non-archimedean_rings_and_fields}
+
+
+\begin{theorem}\label{thm:norm_finite_field_ext}
+	If $L$ is a finite \todo{should this be algebraic?} field extension of an non-archimedean field $K$, then there is a unique extension of the norm of $K$ to $L$ and this extension is also non-archimedean.
+	\todo{find reference, this is not even true. $K$ needs to be complete }
+\end{theorem}
+
+\begin{corollary}
+	If $K$ is a complete non-archimedean field then the norm of  $K$ extends uniquely to its algebraic closure $\overline{K}$.
+\end{corollary}
+\begin{proof}
+	Recall that \[
+	\overline{K} = \varprojlim_{L \supset K} L
+	.\] 
+	where $L$ ranges over all algebraic extensions of $K$. 
+	As all these algebraic extensions have unique norms extending  the norm on $K$ and for $L_1 \supset L_2 \supset K$ the norm on  $L_1$ must restrict to norm on $L_2$ by uniqueness, it is clear that the norm functions $L \to \R^{+}$ glue to a map $\|\cdot \|: \overline{K} \to \R^{+}$. 
+
+	It is easy to verify that this is a norm on $\overline{K}$ extending the norm on $K$. 
+\end{proof}
+
+\begin{definition}
+	Let $R$ be a non-archimedean ring. Then we write 
+	\begin{align*}
+		R^{0} &= \{a \in k \st |k| \le 1\}  \\
+		R^{00} &=  \{a \in k \st |k| < 1\}  \\
+		\tilde R &= R^{0} / R^{00}
+	.\end{align*}
+\end{definition}
+If $k$ is a field then $k^{0}$ is a valuation ring and $ k^{00}$ is its maximal ideal. 
+
+\subsection{Ultrametric spaces} \label{sec:ultrametric_spaces}
+
+\begin{definition}
+	A \emph{ultrametric space} is a topological spaces $(X, d)$ where the metric satisfies the non-archimedean triangle inequality. 
+	\[
+		d(x, y) \le \max \{d(x, z) ,d(z, y)\}, \quad \forall x, y ,z \in X
+	.\] 
+\end{definition}
+\begin{exercise}
+	If $d(x,z) \ne d(z,y)$ the inequality is an equality. 
+\end{exercise}
+\begin{corollary}
+	Any point of a ball (open or closed) is a center for that ball. 
+\end{corollary}
+\begin{corollary}
+	If two balls have non-empty intersection that one must be included in the other. 
+\end{corollary}
+\begin{corollary}
+	The topology of $X$ is totally disconneced. 
+\end{corollary}
+
+Non-archimedean fields are ultrametric spaces with the metric $d(x, y) = |x - y|$. 
+

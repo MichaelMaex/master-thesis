@@ -1,0 +1,77 @@
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{geometry}
+\usepackage{tikz-cd}
+\usepackage{mdframed}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{cleveref}
+
+\usepackage[backend = biber, style = alphabetic]{biblatex}
+\addbibresource{../references.bib}
+
+% figure support
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage[textsize=tiny]{todonotes}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\newcommand{\incfig}[1]{%
+	\def\svgwidth{\columnwidth}
+	\import{./figures/}{#1.pdf_tex}
+}
+
+\pdfsuppresswarningpagegroup=1
+
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\pro}{\mathbb{P}}
+\newcommand{\aff}{\mathbb{A}}
+\newcommand{\ltr}{\par \noindent \framebox[1\width]{ $\implies$ } \hspace{.2cm}}
+\newcommand{\rtl}{\par \noindent \framebox[1\width]{ $\impliedby$ } \hspace{.2cm} }
+
+\DeclareMathOperator{\coker}{coker}
+\DeclareMathOperator{\id}{Id}
+\DeclareMathOperator{\im}{Im}
+\DeclareMathOperator{\spec}{Spec}
+\DeclareMathOperator{\maxspec}{MaxSpec}
+\DeclareMathOperator{\proj}{Proj}
+\DeclareMathOperator{\red}{red}
+\DeclareMathOperator{\trop}{Trop}
+\DeclareMathOperator{\divisor}{Div}
+
+\newcommand{\into}{\hookrightarrow}
+\newcommand{\onto}{\twoheadrightarrow}
+\newcommand{\divides}{\mid}
+\newcommand{\notdivides}{\nmid}
+\newcommand{\Gan}{\ensuremath{\mathbb{G} _m ^{\mathrm{an}}}}
+\newcommand{\an}{{}^{\text{an}}}
+
+\newcommand{\st}{%
+  \nonscript\;
+  \ifnum\currentgrouptype=16
+    \,\middle|\,
+  \else
+    \,|\,
+  \fi
+  \nonscript\;}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{remark}[definition]{Remark}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{example}[definition]{Example}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{claim}[definition]{Claim}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{exercise}[definition]{Exercise}
+\newtheorem{corollary}[definition]{Corollary}
+
+
+\author{Micha\"el Maex}
