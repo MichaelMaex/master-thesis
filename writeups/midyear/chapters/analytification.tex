@@ -1,0 +1,36 @@
+
+Suppose $X$ be a scheme over $K$, and let $n = \dim X$. 
+Then the 
+\begin{definition}
+	The \emph{Berkovich analitification} of a scheme $X$ over  $K$, as a set is \[
+		X\an = \{(x, |\cdot |)  \mid x\in X, |\cdot | \text{ a norm on } k(x) \text{ extending the norm on }K \} 
+	.\] 
+	\todo{does this need to be smooth and proper and connected?}
+
+	This comes equipped with a cannonical projection map $i: X\an \to X, (x, |\cdot |) \mapsto  x$.
+	
+	$X\an $ comes with a topology which we define to be the coarsest topology such that 
+	\begin{itemize}
+		\item $i: X\an \to X$ is continuous, i.e. $X\an$ is a finer space than  $X$. 
+		\item For every open $U \subset X$ and $f \in \mathcal{O}_X(U)$ the map  \[
+				|f|: i^{-1}(U) \to \R^{+}: (x, |\cdot |) \mapsto  |f(x)|
+		\] 
+		is continuous.
+	\end{itemize}
+
+	\todo{give definition of Berkovich analitification, maybe find an earlier reference than \cite{nicaiseBerkovichSkeletaBirational2016}}
+\end{definition}
+
+\begin{proposition}
+	[universal property] 
+	\todo{write}
+\end{proposition}
+
+
+\begin{remark}
+	If $X$ is the spectrum of some $K$-algebra $A$, i.e. $X = \spec A$, then at topological spaces \todo{I think, maybe just as sets} we have \[
+		X^{\an} = \mathcal{M} (A)
+	.\] 
+
+	\todo{prove this, maybe check whether this is true first}
+\end{remark}

@@ -53,7 +53,9 @@ Absolute values are a special case of (semi)norms
 	.\] 
 \end{definition}
 \begin{remark}\label{rem:ker_norm_ideal}
-	Let $|\cdot |$ be a norm on $R$. Then $\ker |\cdot |$ is an ideal of $R$. If $|\cdot |$ is multiplicative then $\ker |\cdot |$ is even a prime ideal!
+	Let $ |\cdot |$ be a norm on $R$. Then $\ker |\cdot |$ is an ideal of $R$. If $|\cdot |$ is multiplicative then $\ker |\cdot |$ is even a prime ideal!
+
+	In some sense seminorms are analogous to ideals and and multiplicative seminorsm are analogous to prime ideals. 
 \end{remark}
 \begin{proof}
 	Let $a, b \in \ker |\cdot |, c \in R$. Then $0 \le |a + b| \le |a|+|b| = 0$. So  $a + b \in \ker |\cdot |$. 
@@ -109,6 +111,11 @@ So an absolute value is a multiplicative norm.
 	.\] 
 	Taking $n \to \infty$ yields the non-archimedean triangle inequality. 
 \end{proof}
+
+\begin{corollary}
+	Let $A \subset  B$ an inclusion of rings  equipped with multiplicative such that the norm on $B$ extends the norm on $A$. 
+	Then $A$ is non-archimedean if and only if $B$ is non-archimedean. 
+\end{corollary}
 
 \begin{remark}
 	Suppose $R$ is non-archimedean and we have $a, b \in R$ such that $|a| \ne |b|$ then the triangle inequality is an equality \[
@@ -173,7 +180,7 @@ These are typically called valuationas.
 \begin{theorem}
 	[Krasner's Lemma]
 	Let $K$ be a non-archimedean algebraically closed field. 
-	Then the completion of $\hat{K}$ is algebraically closed as well. 
+	Then its completion, $\widehat K$ is algebraically closed as well. 
 \end{theorem}
 \begin{proof}
 	This follows from the continuity of roots. See \cite[][lem A.6]{boschLecturesFormalRigid2014} for a detailed argument. 
@@ -199,6 +206,16 @@ This is useful because Berkovich geometry works best when the base field is alge
 \end{definition}
 If $k$ is a field then $k^{0}$ is a valuation ring and $ k^{00}$ is its maximal ideal. 
 
+We will useally write $K$ for a non-arcimedean field, $R = K^{0}$ for its valuation ring, $k = \tilde K$ for its residue field. 
+
+\begin{definition}
+	Let $K$ be a non-archimedean ring. 
+	The \emph{value group of $K$} is \[
+	|K| = \{|a| \st \} 
+	.\] 
+\end{definition}
+
+
 \subsection{Ultrametric spaces} \label{sec:ultrametric_spaces}
 
 \begin{definition}
@@ -207,9 +224,13 @@ If $k$ is a field then $k^{0}$ is a valuation ring and $ k^{00}$ is its maximal 
 		d(x, y) \le \max \{d(x, z) ,d(z, y)\}, \quad \forall x, y ,z \in X
 	.\] 
 \end{definition}
-\begin{exercise}
+\begin{exercise\c}
 	If $d(x,z) \ne d(z,y)$ the inequality is an equality. 
 \end{exercise}
+\begin{proof}
+	Suppose WLOG $d(x, z) \ge d(z,y)$, so $d(x, y) \le \max \{d(x, z), d(z,y)\} = d(x, z) $. 
+	Then $d(x, z) \le \max \{d(x, y), d(y,z)\}$. So $d(x, z) \le d(x, y) \le d(x, z)$. So we find equality.
+\end{proof}
 \begin{corollary}
 	Any point of a ball (open or closed) is a center for that ball. 
 \end{corollary}

@@ -41,6 +41,32 @@ To describe the cateogory of $K$-banach algebras we still need morphisms.
 \end{definition}
 
 
+To an affinoid algebra we can also associate a Berkovich space, which will be sligtly differently defined than the berkovich norm for any space, because we need to introduce the concept of a bounded norm.
+
+\begin{definition}
+	Let $(A, \|\cdot \|)$ be a Banach $K$-algebra. Another norm $\|\cdot \|'$ on $A$ \emph{bounded}  if there is some constant $C$ such that  $\|a\|' \le C \|a\|$ for all $a \in A$. 
+\end{definition}
+
+\begin{remark}
+	If $\|\cdot \|'$ is multiplicative then we may assume the constant $C$ to be $1$. 
+	I.e.\ a multiplicative norm $\|\cdot \|'$ is bounded if and only if  for all $a \in A: \|a\|' \le \|a\|$. 
+\end{remark}
+\begin{proof}
+	For any $n \in \N, a \in A$ we find $\|a^{n}\|' \le C \|a^{n}\| \le C \|a\|^{n}$. 
+	Taking the $n$ 'th root yields \[
+		\|a\|' \le \sqrt[n]{C} \|a\|
+	.\] 
+	Taking the limit $n \to \infty$ yields the desired inequality. 
+\end{proof}
+
+\begin{definition}
+	Let $(A, \|\cdot \|)$ be a Banach $K$-algebra. 
+	The Berchovich spectrum (as a topological space) is \[
+		\mathcal{M} (A) = \{x: A \to\R^{+} \st x \text{ is a bounded multiplicative seminorm}\} 
+	\] 
+	equipped with the coarsest topology that makes all maps $\mathcal{M} (A) \to \R: x \mapsto |a|_x$ continuous. 
+
+\end{definition}
 \subsection{Affinoid algebras} \label{sec:affinoid_algebras}
 We need restrict the category of banach algebras to those that are ``finitely generated'' in some appropriate sense. 
 
@@ -69,7 +95,10 @@ This gives a similarly defined norm on $A\left<y_1, \ldots, y_n \right>$, but th
 \end{definition}
 This means that $A$ can be written as $K\left<T_1, \ldots, T_n \right> / I$ where $I$ is some closed ideal.
 This does not mean that $A$ necessarily comes equipped with the residue norm, but this doesn't matter as the open mapping theorem shows that the norm on $A$ must be equivalent to residue norm.
+
 \subsection{Affinoid domains} \label{sec:affinoid_domains}
+
+In order to turn $\mathcal{M} (A)$ into a ringed space and define a structure sheaf we need an analogue of affine opens. \todo{finish this centense} 
 
 there are different types of affinoid domains that we often encounter. 
 
