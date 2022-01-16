@@ -1,5 +1,7 @@
-While we have seen how a scheme over $K$ can be a analytified to obtain a Berkobich space, the real building blocks of these spaces are affinoid algebras, which rougly are completed finite type algebras. 
-These are also crucial for defining the structure sheaf on Berkovich spaces. 
+
+In this section we'll describe the category of $K$-analytic spaces, which is where the Berkovich spaces of schemes will live. 
+The main building blocks of these spaces are affinoind algebras which are a type of complete $K$-algebras. 
+These will also crucial for defining the structure sheaf on Berkovich spaces. 
 
 \subsection{Banach Algebras} \label{sec:banach_algebras}
 \begin{definition}
@@ -98,33 +100,46 @@ This does not mean that $A$ necessarily comes equipped with the residue norm, bu
 
 \subsection{Affinoid domains} \label{sec:affinoid_domains}
 
-In order to turn $\mathcal{M} (A)$ into a ringed space and define a structure sheaf we need an analogue of affine opens. \todo{finish this centense} 
+In order to turn $\mathcal{M} (A)$ into a ringed space and define a structure sheaf we need an analogue of affine opens on which we know what the sections of the structure sheaf should be. 
+We will describe these domains by a universal property that also characterises 
 
-there are different types of affinoid domains that we often encounter. 
+\begin{definition}
+	Let $\mathcal{M} (A)$ be the Berkovich spectrum of a affinoid algebra. 
+	An affinoid domain is a subset $V \subset  \mathcal{M} (A)$ together with bounded morphism of $K$-banach algebras $f:A \to A_V$ such that image of the induced map $\phi:\mathcal{M} (A_V) \to \mathcal{M} (A)$ is $V$ and every bounded $K$-banach algebra morphism $A \to B$ such that the image of $\mathcal{M} (B)$ in $\mathcal{M} (A)$ is contined in $V$ factors through $A_V$ \[
+	\begin{tikzcd}
+		A \ar{rr}{\phi} \ar{dr}& & A_V \ar[dashed]{dl} \\
+				& B
+	\end{tikzcd}
+	.\] 
+\end{definition}
 
+
+It is not easy to describe the affinoid domains for a given $\mathcal{M} (A)$ as explicitly as in the case of $\spec$ for rings. 
+But there are a couple explicit ones that will be "enough" to develep the theory. 
 \begin{definition}[multiple definitions in \cite{conrad2008several}]
-		there are \emph{weierstrass domains, laurent domains} and \emph{rational domains}. 
+		There are \emph{weierstrass domains, laurent domains} and \emph{rational domains}. 
 	\begin{description}
-		\item[weierstrass domain] let $a_1, \ldots, a_n$ be in $a$. 
+		\item[Weierstrass domain] let $a_1, \ldots, a_n$ be in $a$. 
 			\[
 				a\left<a_1, \ldots, a_n \right> := \frac{a\left<x_1, \ldots, x_n \right>}{(x_1-a_1, \ldots, x_n - a_n)}
 			.\] 
 			unlike for polynomial rings, this is not an evaulation map. you should think of this as forcing the $a_i$'s to become powerbounded. 
-		\item [laurent domains]
+		\item [Laurent domains]
 			let $a_1, \ldots, a_n, b_1, \ldots, b_m \in a$ the \[
 				a\left<a_1, \ldots, a_n, b_1^{-1}, \ldots, b_m^{-1} \right> := \frac{a\left<x_1, \ldots, x_n,y_1, \ldots, y_m  \right>}{(x_1 - a_1, \ldots, x_n - a_n, b_1 y_1 - 1, \ldots, b_m y_m - 1)}
 			.\] 
-		\item[rational domain] with $a_1, \ldots, a_n, a' \in a$ with no common zeros, i.e. there is no $\mathfrak{m} $ that contains both of these elements.   
+		\item[Rational domain] with $a_1, \ldots, a_n, a' \in a$ with no common zeros, i.e. there is no $\mathfrak{m} $ that contains both of these elements.   
 			\[
 				a \left<\frac{a_1}{a}, \ldots, \frac{a_n}{a'} \right> := \frac{a\left<x_1, \ldots, x_n \right>}{(a' x_1 - a_1, \ldots, a' x_n - a_n)}
 			.\] 
-			this is essentially the affinoid version of localisation.
-			but it does more than just make $a'$ invertible. 
-			is also makes $\frac{a_i}{ a'}$ act like it is power bounded in some sense. 
+			This is essentially the affinoid version of localisation.
+			But it does more than just make $a'$ invertible. 
+			It also makes $\frac{a_i}{ a'}$ act like it is power bounded in some sense. 
 		\item 
 	\end{description}
 
 \end{definition}
+\todo{rewrite this}
 many authors define these domains by describing their space of points, be it max spec or the berkovich functor. 
 the following lemma gives shows that we can use these descriptions interchangeably
 \begin{lemma}
