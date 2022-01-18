@@ -4,6 +4,7 @@ The main building blocks of these spaces are affinoind algebras which are a type
 These will also crucial for defining the structure sheaf on Berkovich spaces. 
 
 \subsection{Banach Algebras} \label{sec:banach_algebras}
+\todo{define completed tensor product}
 \begin{definition}
 	A $K$-banach space is a $K$-vector space equipped with a norm that is complete with respect to that norm. 
 \end{definition}
@@ -61,14 +62,62 @@ To an affinoid algebra we can also associate a Berkovich space, which will be sl
 	Taking the limit $n \to \infty$ yields the desired inequality. 
 \end{proof}
 
-\begin{definition}
+\begin{definition}\label{def:spectrum_banach_algebra}
 	Let $(A, \|\cdot \|)$ be a Banach $K$-algebra. 
 	The Berchovich spectrum (as a topological space) is \[
 		\mathcal{M} (A) = \{x: A \to\R^{+} \st x \text{ is a bounded multiplicative seminorm}\} 
 	\] 
 	equipped with the coarsest topology that makes all maps $\mathcal{M} (A) \to \R: x \mapsto |a|_x$ continuous. 
-
 \end{definition}
+
+\begin{proposition}\label{prop:norm_spectrum_extends_base_field}
+	Every norm in $\mathcal{M} (A)$ extends the norm on $K$. 
+\end{proposition}
+\begin{proof}
+	Suppose $(A, \|\cdot \|)$ is a Banach $K$-algebra. 
+	Let $x \in \mathcal{M} (A)$ be a norm. 
+	Then for any $\lambda \in K, \lambda \ne 0$ we have $|\lambda|_x \le  \|\lambda\cdot 1\| = |\lambda| \cdot \|1\| = |\lambda|$. 
+	Similarly $|\lambda|_x^{-1} = |\lambda^{-1}|_x  \le |\lambda^{-1}| = |\lambda|^{-1}$. 
+	From this it follows that $|\lambda_x| = |\lambda|$
+\end{proof}
+
+
+\begin{proposition}
+	$\mathcal{M} (A)$ is non-empty. 
+	In particularly for every maximal ideal $\mathfrak{m}  \subset  A$ there is a norm $x \in \mathcal{M} (A)$ such that $\ker x = \mathfrak{m} $.
+\end{proposition}
+\begin{proof}
+	Let $\mathfrak{m}$ be a maximal ideal of $A$. 
+	Then $\frac{A}{\mathfrak{m} }$ with at least one submultiplicative norm induced by the norm on  $A$. 
+	So the set of submultiplicative norms on  $A/\mathfrak{m} $ is non-empty and may be partially ordered by $|\cdot |_1 \le |\cdot |_2$ if $|a|_1 \le |a|_2$ for all $a \in A / \mathfrak{m} $. 
+
+	So by Zorn's lemma there is a minimal such norm $|\cdot |_\text{min} $ on $\mathcal{A}  / \mathfrak{m} $. 
+	I claim that this norm is multiplicative. 
+	First we will show that $|\cdot |_\text{min} $ is power multiplicative. 
+	Define $\rho(a) = \lim_{n \to \infty} \sqrt[n]{|a^{n}|_\text{min} } $. Then $\rho$ is powermultiplicative and $\rho \le |\cdot |_\text{min} $. Hence $\rho = |\cdot |_\text{min} $. 
+	\todo{ask johannes whether this is correct}
+
+	Now we can easily show that $|\cdot |_\text{min} $ is multiplicative. 
+	Let $f, g \ne 0$ be elements in $A / \mathfrak{m} $, then \[
+		|fg| \le |f|\cdot |g| \le (|f^{-1}| \cdot |g^{-1}|)^{-1} \le |(fg)^{-1}|^{-1} = |fg|. 
+	\]
+	We can now pull back $|\cdot |_\text{min} $ to $A$ which yields the desired norm. 
+\end{proof}
+
+\begin{corollary}\label{cor:non_vanish_invertible}
+	An element $a \in A$ is invertible if and only if $|a|_x > 0, \forall x \in \mathcal{M} (A)$.
+\end{corollary}
+\begin{proof}
+	\ltr
+	Suppose $a $ is invertible. Then for any  $x \in \mathcal{M} (A)$ we have that $1 = |1|_x = |a^{-1}a|_x = |a|_x |a^{-1}|_x$, from which it is clear tha $|a|_x \ne 0$. 
+
+	\rtl Suppose $a$ is not invertible. Then there is some maximal $\mathfrak{m}  $ ideal containing $a$. 
+	By the previous proposition there is some $x \in \mathcal{M} (A)$ such that $\ker x = \mathfrak{m} $ and thus $|a|_x = 0$. 
+\end{proof}
+
+\begin{proposition}
+	The topology on $\mathcal{M} (A)$ is haussdorf and compact. \todo{check the conditions and give a proof}
+\end{proposition}
 \subsection{Affinoid algebras} \label{sec:affinoid_algebras}
 We need restrict the category of banach algebras to those that are ``finitely generated'' in some appropriate sense. 
 
@@ -93,7 +142,10 @@ This gives a similarly defined norm on $A\left<y_1, \ldots, y_n \right>$, but th
 
 
 \begin{definition}
-	A affinoid algebra is a $K$-algebra $A$ with such that there is an admissible surjective morphism $f: T_n(K) \to A$ for. 
+	A affinoid algebra is a $K$-algebra $A$ with such that there is an admissible surjective morphism $f: K\left<\underline r ^{-1} \underline T \right> \to A$ for some $\underline r = (r_1, \ldots, r_n)$. 
+
+	An affinoid algebra is said to be \emph{strict} if it admists such morphism with $r_i  \in |K^{\times }|$ for all $i$. 
+	For any group $H$, with $|K^{\times }| \subset  H \subset \R^{ +}$ the algebra $A$ is said to be \emph{$H$-strict} if and it admists such morphism with $r_i \in H$ for $i$. 
 \end{definition}
 This means that $A$ can be written as $K\left<T_1, \ldots, T_n \right> / I$ where $I$ is some closed ideal.
 This does not mean that $A$ necessarily comes equipped with the residue norm, but this doesn't matter as the open mapping theorem shows that the norm on $A$ must be equivalent to residue norm.
@@ -105,32 +157,39 @@ We will describe these domains by a universal property that also characterises
 
 \begin{definition}
 	Let $\mathcal{M} (A)$ be the Berkovich spectrum of a affinoid algebra. 
-	An affinoid domain is a subset $V \subset  \mathcal{M} (A)$ together with bounded morphism of $K$-banach algebras $f:A \to A_V$ such that image of the induced map $\phi:\mathcal{M} (A_V) \to \mathcal{M} (A)$ is $V$ and every bounded $K$-banach algebra morphism $A \to B$ such that the image of $\mathcal{M} (B)$ in $\mathcal{M} (A)$ is contined in $V$ factors through $A_V$ \[
+	An ($H$-strict) affinoid domain is a (closed)\todo{Do we need to require closed here?} subset $V \subset  \mathcal{M} (A)$ together with bounded morphism of ($H$-strict) affinoid domain algebras $f:A \to A_V$ \emph{representing} $V$.
+	This means that 
+	\begin{itemize}
+		\item the image of the induced map $\phi:\mathcal{M} (A_V) \to \mathcal{M} (A)$ is $V$ 
+		\item every bounded $K$-banach algebra morphism $A \to B$ such that the image of $\mathcal{M} (B)$ in $\mathcal{M} (A)$ is contined in $V$ factors through $A_V$ \[
 	\begin{tikzcd}
 		A \ar{rr}{\phi} \ar{dr}& & A_V \ar[dashed]{dl} \\
 				& B
 	\end{tikzcd}
 	.\] 
+	\end{itemize}
 \end{definition}
 
 
 It is not easy to describe the affinoid domains for a given $\mathcal{M} (A)$ as explicitly as in the case of $\spec$ for rings. 
 But there are a couple explicit ones that will be "enough" to develep the theory. 
 \begin{definition}[multiple definitions in \cite{conrad2008several}]
+	\todo{change this to temkins definition}
+	Let $A$ be an $K$-affinoid algebra. 
 		There are \emph{weierstrass domains, laurent domains} and \emph{rational domains}. 
 	\begin{description}
-		\item[Weierstrass domain] let $a_1, \ldots, a_n$ be in $a$. 
+		\item[Weierstrass domain] Let $a_1, \ldots, a_n$ be in $A$ and $r_1, \ldots, r_n \in H$. 
 			\[
-				a\left<a_1, \ldots, a_n \right> := \frac{a\left<x_1, \ldots, x_n \right>}{(x_1-a_1, \ldots, x_n - a_n)}
+				A\left<r_1^{-1}a_1, \ldots, r_n^{-1}a_n \right> := \frac{a\left<r^{-1}x_1, \ldots, r^{-1}_nx_n \right>}{(x_1-a_1, \ldots, x_n - a_n)}
 			.\] 
-			unlike for polynomial rings, this is not an evaulation map. you should think of this as forcing the $a_i$'s to become powerbounded. 
+			Unlike for polynomial rings, this is not an evaulation map. You should think of this as forcing the $a_i$'s to become powerbounded. 
 		\item [Laurent domains]
-			let $a_1, \ldots, a_n, b_1, \ldots, b_m \in a$ the \[
-				a\left<a_1, \ldots, a_n, b_1^{-1}, \ldots, b_m^{-1} \right> := \frac{a\left<x_1, \ldots, x_n,y_1, \ldots, y_m  \right>}{(x_1 - a_1, \ldots, x_n - a_n, b_1 y_1 - 1, \ldots, b_m y_m - 1)}
+			Let $a_1, \ldots, a_n, b_1, \ldots, b_m \in A$ and $r_1,\ldots, r_n, s_1, \ldots, s_m \in H$then \[
+				A\left<r_1^{-1}a_1, \ldots, r_n^{-1}a_n, s^{-1}_1b_1^{-1}, \ldots, s^{-1}_mb_m^{-1} \right> := \frac{A\left<r^{-1}_1x_1, \ldots, r^{-1}_nx_n,s^{-1}_1y_1, \ldots,s_m^{-1} y_m  \right>}{(x_1 - a_1, \ldots, x_n - a_n, b_1 y_1 - 1, \ldots, b_m y_m - 1)}
 			.\] 
-		\item[Rational domain] with $a_1, \ldots, a_n, a' \in a$ with no common zeros, i.e. there is no $\mathfrak{m} $ that contains both of these elements.   
+		\item[Rational domain] With $a_1, \ldots, a_n, a' \in A$ with no common zeros, i.e. there is no $\mathfrak{m} $ that contains both of these elements and $r_1, \ldots, r_n \in H$. 
 			\[
-				a \left<\frac{a_1}{a}, \ldots, \frac{a_n}{a'} \right> := \frac{a\left<x_1, \ldots, x_n \right>}{(a' x_1 - a_1, \ldots, a' x_n - a_n)}
+				A \left<r_1^{-1}\frac{a_1}{a'}, \ldots, r_n^{-1}\frac{a_n}{a'} \right> := \frac{A\left<r_1^{-1}x_1, \ldots, r_n^{-1}x_n \right>}{(a' x_1 - a_1, \ldots, a' x_n - a_n)}
 			.\] 
 			This is essentially the affinoid version of localisation.
 			But it does more than just make $a'$ invertible. 
@@ -139,20 +198,164 @@ But there are a couple explicit ones that will be "enough" to develep the theory
 	\end{description}
 
 \end{definition}
-\todo{rewrite this}
-many authors define these domains by describing their space of points, be it max spec or the berkovich functor. 
-the following lemma gives shows that we can use these descriptions interchangeably
-\begin{lemma}
-	[2.1.8 in \cite{conrad2008several}]
-	suppose $a$ is a $k$-affinoid algebra and $a_1, \ldots, a_n, a_0 \in a$ be elements with no common zero (i.e. at no point in $ x \in \maxspec a$ are all $a_{i} \in \mathfrak{m}$).
-	 then a map of $k$-affinoid algebras $\phi: a \to b$ factors through $a \left<\frac{a_1}{a_0}, \ldots, \frac{a_n}{a_0} \right>$ like in the diagram \[
-	 \begin{tikzcd}
-		 a \left<\frac{a_1}{a_0}, \ldots, \frac{a_n}{a_0} \right> \drar[dashed]  \\
-		 a \uar \rar[']{\phi} & b
-	 \end{tikzcd}
-	 \] 
-	 if and only if  $m\phi: \maxspec b \to \maxspec a$ factors through the subset $x \in m(a)$ such that $|a_j(x)| \le |a'(x)|$ for all $j$. 
-\end{lemma}
+
+It is clear that Weierstrass domains and Laurent domains are specific types of rational domains. 
+\begin{proposition}
+	Let $A$ be a an ($H$-strict) affinoid ring and $a_1, \ldots, a_n, a' \in A$ without common zero.
+	Then the map $A \to A\left<\frac{a_1}{a'}, \ldots, \frac{a_n}{a'} \right>$ represents the domain \[
+		\mathcal{M} \left(A \left<r^{-1}_1\frac{a_1}{a'}, \ldots, r^{-1}_n\frac{a_n}{a'}\right> \right) = \{x \in \mathcal{M} (A) \st |a_i|_x \le r_i|a'|, \forall i \in 1, \ldots, n\} 
+	.\] 
+\end{proposition}
+\begin{proof}
+	Lets denote the domain as above by $V$. 
+	Let $f:A \to B$ be an admissible morphism such that for the reduced morphism $\phi: \mathcal{M} (B) \to \mathcal{M} (A)$ the image $\im \phi \subset  V$.
+	Note that because there are no common zeroes, this means that $|a'|_x \ne 0$ for all $x \in V$. 
+	So $|f(a')|_{y} \ne 0$ for all $y \in \mathcal{M} (B)$. 
+	Hence $f(a')$ is invertible in $B$ by \cref{cor:non_vanish_invertible}. 
+
+	Recall that \[
+	A\left<r^{-1}_1\frac{a_1}{a'}, \ldots, r_n^{-1}\frac{a_n}{a'} \right> = \frac{A\left<r_1^{-1}x_1, \ldots, r_n^{-1}x_n \right>}{(a' x_1 - a_1, \ldots, a' x_n - a_n)}
+	.\] 
+
+	So to define a map to $B$ that extends the map $f$ from $A$ we need to define the images $x_i$. 
+	We need to be able to quotient this map from by the ideal generated by $a'x_i - a_i$. 
+	So its clear that the only way to define this map is like:
+	\begin{align*}
+		g: A\left<x_1, \ldots, x_n \right> &\longrightarrow B \\
+		x_i &\longmapsto f(a_i) / f(a')
+	.\end{align*}
+	This is well defined as $f(a')$ is invertible and $|f(a_i) / f(a')|_x = |a_i|_{\phi(x)} / |a'|_{\phi(x)} \le 1$ as $\phi(x) \in V$. 
+	So $f(a_i) / f(a')$ is powerbound. \todo{write a lemma or something that shows this is correct reasoning. }
+	We can easily check that $a'x_i - a_i \in \ker g$ for every $i$. Hence this defines a map $A \left<\frac{a_1}{a'}, \ldots, \frac{a_n}{a'} \right>$ as desired. 
+\end{proof}
+
+While we don't know what general affinoid domains look like, the following theorem shows that we can get by with just rational domains. 
+\begin{proposition}
+	[Gerritzen-Grauert Theorem]
+	A $H$-affinoid domain $V \subset  \mathcal{M} (A)$ is a finite union of $H$-strict rational domains in $X$.
+\end{proposition}
+\begin{proof}
+	There are many very techincal proofs that depend on the theory of rigid geometry (a predecessor of Berkovich geometry).
+	The easiest proof and one that is enterely in the language of berkovich geometry is one by Temkin \cite{temkinNewProofGerritzenGrauert2005}.
+\end{proof}
+
+
+\subsection{Interlude: $G$-topologies} \label{sec:interlude_g_topologies}
+
+In the next section we will turn $\mathcal{M} (A)$ into a ringed space. 
+But we will not do this with the cannonical topology as defined in \cref{def:spectrum_banach_algebra}. 
+In fact the topology that we will use is not a ordinary topology at all. 
+It will be a $G$-topology, which is a notion somewhere in between an ordinary topology and a Grothendieck site. 
+For a $G$ topology on $X$
+the category of opens will still be a collection of subsets of $X$ with inclusion maps, closed under \todo{finite or infinite} union and (finite) intersection. 
+But the set of covers may be restricted. 
+In this section we will follow \cite[][sec. 9.1.]{siegfriedboschNonArchimedeanAnalysisSystematic1984}
+
+\begin{definition}
+	[$G$-topology]
+	Let $X$ be a set. 
+	A $G$-topology $\mathcal{T} $ on $X $ consists of 
+	\begin{itemize}
+		\item  a collection $S$ of sets in $X$ we are called \emph{admissible opens},
+		\item for every admissible open $U \in S$ a set $\cov U$ consisting set theoretic covers of $U$ by admissible opens,
+	\end{itemize}
+	which are subject to the following conditions:
+	\begin{enumerate}
+		\item $S$ is closed under finite intersections
+		\item For any admissible open $U$ is $\{U\}$ and admissible cover of $U$.
+		\item If $\{U_i\}_{i \in I} \in \Cov U $ and for each $U_i$ there is a an cover $\{V_{i, j}\}_{j \in J_i} \in \cov U_i$ then $\{V_{ij}\} _{i \in I, j \in J}$ is a an admissible cover of $U$
+		\item If  $U, V$ are admissible opens with $V \subset  U$ and given an admissible cover $\{U_i\}_{i \in I} $ of $U$, then $\{V \cap U_i\} _{i \in I}$ is an admissible cover of $V$. 
+	\end{enumerate}
+\end{definition}
+\begin{example}
+	\begin{itemize}
+		\item Any topological space is a $G$-topological space by letting $S$ be the set of opens and the for any open  $U$ define $\cov U$ to be all the set theoretic covers. 
+		\item A less obvious $G$-topological way is the following. 
+			Let $X$ be any topological space. 
+			Let $S$ be the set of closed sets in $X$ and let the admissible covers be the finite set theoretic covers. 
+	\end{itemize}
+\end{example}
+This last example is somewhat related to the topology that we will eventually define on $\mathcal{M} (A)$. 
+Most definitions for topological spaces carry straight over to $G$-topological spaces, for example: 
+\begin{definition}
+	These definitions should not be suprising, but take note how reduced structure of $G$-topologies forces us to be slightly more precise.  
+	\begin{itemize}
+		\item  Let $X, Y$ be $G$-topological spaces. 
+			A function $f: X \to Y$ is called \emph{continuous} if every inverse of an admissible open in $X$ is an admissible open, and every inverese of an admissible cover $\{U_i\} $ of $U$ gives an admissible cover $\{f^{-1}(U_i)\} $ of $f^{-1}(U)$. 
+		\item A $G$-topological space $X$ is \emph{compact} if $X$ itself is an admissibl open and every admissible cover of $X$ can be reduced to a finite admissible cover. 
+		\item A $G$-topological space $X$ is \emph{disconnected} if there is a an admissible cover $\{U_i\} _{i \in I}$ of $X$ such that there we can split the index set $I = I_1 \sqcup I_2$  such that \[
+				\left(\bigcup_{i \in  I_1} U_i\right)\cap \left( \bigcup_{i \in I_2}  \right)  = \emptyset, \text{ and } \bigcup_{i \in I_1} U_i, \bigcup_{i \in I_2} U_i \text{ are nonempty}
+		.\] 
+	\end{itemize}
+\end{definition}
+
+Sometimes we wish to have slightly more structure on our $G$ topologies.
+\begin{definition}
+	Let $\mathcal{T} $ be a $G$-topology a set $X$. 
+	We define the properties $(G_0), (G_1)$ and $(G_2)$ as follows 
+	\begin{enumerate}
+	\item[($G_1$)] $\emptyset$ and $X$ are admissible open subsets in $X$.  
+	\item [($G_1$)] Let  $U$ be an admissible open and $V \subset  U$ any subset. 
+		Suppose that there is a cover $\{U_i\} _{i \in I} $ of $U$ such that $V \cap U_i$ is admissible for any $i \in I$. 
+		Then $V$ is an admissible open. 
+	\item[($G_2$)]
+		Let $U$ be an admissible open and  $\{U_{i}\}_{i \in I}$ be a set theoretic covering such that each $U_i$ is an admissible open. 
+		Suppose that $\{U_i\}  _{i \in I}$ has an admissible refinement. Then $\{U_{i}\} _{i \in I}$ is an admissible cover of $U$. 
+	\end{enumerate}
+\end{definition}
+
+Property $(G_0)$ is just something we are used to from ordinary topological spaces. 
+Property $(G_1)$ states that whether a set is admissible may be checked locally and property $(G_2)$ states that whether a cover is admissible may be checked locally. 
+These last two are crucial to impose when we eventually want to glue  $G$-topological spaces, as they assure that the topology is defined locally. 
+
+$G$-topologies contain just the right amount of information to define a sheaf theory. 
+\begin{definition}
+	Let $(X, \mathcal{T} )$ be a $G$-topological space.
+	A \emph{presheaf on $X$} with values in a category $\mathcal{C} $ is a functor $\mathcal{F} :S^{\text{op}} \to \mathcal{S} $. 
+
+	A presheaf $\mathcal{F} $ is called a \emph{sheaf} if for any admissible open  $U$ and cover $\{U_i\}_i $ of $U$ the sequence \[
+	\begin{tikzcd}
+		\mathcal{F} (U) \rar & \prod_{i \in I} \mathcal{F} (U_i) \rar[shift left]\rar[shift right] & \prod_{i, j \in I} \mathcal{F} (U_{i} \cap U_j)
+	\end{tikzcd}
+	\] 
+	is exact. 
+	\todo{what assumptions do we exactly need on the category $\mathcal{C}$?}
+\end{definition}
+So a $G$-topological space defines a \emph{topos}. 
+One may wonder if we can refine a $G$-topological space so it satisfied extra desired properties while preserving the associated topos. 
+
+Given a certain subcategory $\mathfrak{S} $ of $G$-topological spaces, there is a construction that refines all topologies on all objects in $\mathfrak{S} $ into ones that satisfy $(G_1)$ and $(G_2)$, while preserving all the topoi. 
+
+\begin{definition}
+	Let $(X, \mathcal{T}) \in \mathfrak{S} $ be an object and $\{U_i\} _{i \in I}$ any set theoretic covering of any subset $U \subset  X$. 
+	We say  $\{U_i\} _{i \in I}$ is \emph{compatible} if for any morphism in $\mathcal{S}, \phi: Y \to X $ and for any admissible open $V \subset  Y$ with $\phi(V) \subset  U$ the covering $\{\phi^{-1}(U_i) \cap V\} _{i \in I}$ of $V$ can be refined by an admissible cover in $Y$. 
+\end{definition}
+
+\todo{refer to the right results}
+
+\begin{definition}
+	For any object $(X, \mathcal{T}) \in \mathfrak{S} $ we may define a new $G$-topology $\mathcal{T} '$ where the admissible opens are all sets that admit a compatible cover and the covers are all compatible covers. 
+\end{definition}
+
+
+\subsubsection{pasting $G$-topological spaces} \label{sec:pasting_$g$-topological_spaces}
+\todo{Do I need this section?}
+
+
+
+
+\subsection{The structure sheaf on $\mathcal{M} (A)$} \label{sec:the_structure_sheaf_on_ma}
+
+First we need to define a $G$-topology. In this section it doesn't really matter whether we work with strict or $H$-strict or non-strict affinoid algebras. So we will work in the most general case and let all algebras be non-strict unless specified otherwise.  
+
+\begin{definition}
+	Let $A$ be a affinoid algebra. 
+	The \emph{weak $G$-topology} on $\mathcal{M} (A)$ is the topology where the admissible opens are the affinoid domains and the covers are finite set theoretic covers of affinoid domains. 
+\end{definition}
+
+We can define a presheaf $\mathcal{O}_X$ on $X =\mathcal{M} (A)$ with the weak  $G$-topology by defining $\mathcal{O}_X(V) = \mathcal{A} _V$ for any affinoid domain $V$ represented by $\mathcal{A}_V$.
+The restiction maps are given by the defining property of affinoid domains.
+
 
 \subsection{admissible opens, covers and $g$-topology} \label{sec:admissible_opens,_covers_and_g-topology}
 
@@ -177,18 +380,4 @@ i'm pretty sure later we will scrap $\maxspec$ in favour of the berkovich space.
 \todo{Look at temkins notes for Gerritzen-Grauert, paper in mathematische analen.}
 Let $K$ be a complete non-archimedean algebraically closed field. 
 
-\begin{definition}
-	
-\end{definition}
-
-\begin{definition}
-	Tate algebra \todo{strict or non-strict?}
-\end{definition}
-\begin{definition}
-	Affinoid algebra \todo{strict or non-strict}
-\end{definition}
-
-\begin{definition}
-	Berkovich spectrum?
-\end{definition}
 
