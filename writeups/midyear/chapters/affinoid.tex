@@ -356,6 +356,59 @@ First we need to define a $G$-topology. In this section it doesn't really matter
 We can define a presheaf $\mathcal{O}_X$ on $X =\mathcal{M} (A)$ with the weak  $G$-topology by defining $\mathcal{O}_X(V) = \mathcal{A} _V$ for any affinoid domain $V$ represented by $\mathcal{A}_V$.
 The restiction maps are given by the defining property of affinoid domains.
 
+This presheaf turns out to be a sheaf, which will follow from the following theorem. 
+\begin{theorem}[Tate's acyclity theorem]\label{thm:tate_acyclity}
+	Let $X = \mathcal{M} (A)$ and $\{V_i\} $ be a admissible cover of $X$. 
+	Then for any finite finite banach $A$ module, $M$ the Čech complex \[
+		0 \to M \to \prod_{i} M \otimes_A A_{V_i} \to \prod_{i, j} M \otimes_A A_{V_i} \otimes_A A_{V_j} \to \ldots
+	\] 
+	is exact. 
+\end{theorem}
+\begin{proof}
+	For a full proof see \cite[][prop.\ 2.2.5]{berkovichSpectralTheoryAnalytic2012}. 
+	The entire proof boils down to reducing this to the case of a Laurant covering $A\left<f \right>, A\left<f^{-1} \right>$ of $A$ for some $f \in A$. and showing that \[
+		0 \to A \to A\left<f \right>\times  A\left<f^{-1} \right> \to A\left<f, f^{-1} \right> \to 0
+	.\]  
+	is exact. 
+	\todo{Does it make sense to give a proof of this?}
+\end{proof}
+
+\begin{lemma}
+	If $V_1, V_2$ are affinoid domains represented by $A_{V_1}, A_{V_2}$ then $V_1 \cap V_2$ is an affinoid domain represented by $A_{V_1} \widehat\otimes_A A_{V_2}$. 
+\end{lemma}
+\begin{proof}
+	\todo{write proof}
+\end{proof}
+
+\begin{corollary}
+	The presheaf $\mathcal{O}_X$ is a sheaf on the weak $G$-topology of $X$.
+\end{corollary}
+\begin{proof}
+	Let $V$ be an affinoid domain and $\{V_i\} $ a finite cover. 
+	Taking $M = A_V$ in \cref{thm:tate_acyclity} yields \[
+	0 \to A_V \to \prod_{i } A_V \otimes_A A_{V_i} \to \prod_{i,g} A_V \otimes A_{V_i} \otimes A_{V_j}
+	.\] 
+	Rewriting each term yields that \[
+	0 \to A_V \to \prod_i A_{V_i} \to \prod_{i, j} A_{V_i \cap V_j}
+	\] 
+	is exact. Which is exactly the sheaf condition. 
+\end{proof}
+
+We can now refine the $G$-topology on $X$. 
+
+\begin{definition}\label{def:admissible_open_cover}
+	A subset $V \subset X = \mathcal{M} (A)$ is \emph{admissible} if it has a cover $\{V_i\} $ of affinoid subdomains $u_i$ satisyfing the following property:
+	For any bounded map of $k$-affinoid algebras $f: A \to B$ such that the induced morphism  $\phi: \mathcal{M} (B)$ lands in $V$, the pullback of the cover $\{\phi^{-1}(U_i)\} $ has a finite subcover. 
+
+	A cover $\{U_i\} $ of $V$ is an \emph{admissible cover} if for any bounded map of affinoid algebras $f:A \to B$ such that $\phi: \mathcal{M} (B) \to \mathcal{M} (A)$ lies in $V$, the pullkback of the cover $\{f^{-1}(U_i)\} $ has a refinement by a  covering consisting of finitely many affinoid subdomains. 
+\end{definition}
+
+\begin{definition}\label{def:strong_g_topology}
+	The \emph{strong $G$-topology} on $X = \mathcal{M} (A)$ is the $G$-topology where the sets are the admissible opens and the covers are the admissible covers. 
+\end{definition}
+
+Note that this is exactly the refinement as discussed in \cref{sec:interlude_g_topologies}. 
+It satisfies the properties $(G_0), (G_1)$ and $(G_2)$. 
 
 \subsection{admissible opens, covers and $g$-topology} \label{sec:admissible_opens,_covers_and_g-topology}
 
