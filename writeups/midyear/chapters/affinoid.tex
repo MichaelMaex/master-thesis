@@ -157,11 +157,11 @@ We will describe these domains by a universal property that also characterises
 
 \begin{definition}
 	Let $\mathcal{M} (A)$ be the Berkovich spectrum of a affinoid algebra. 
-	An ($H$-strict) affinoid domain is a (closed)\todo{Do we need to require closed here?} subset $V \subset  \mathcal{M} (A)$ together with bounded morphism of ($H$-strict) affinoid domain algebras $f:A \to A_V$ \emph{representing} $V$.
+	An ($H$-strict) affinoid domain is a closed\todo{Do we need to require closed here?} subset $V \subset  \mathcal{M} (A)$ together with bounded morphism of ($H$-strict) affinoid domain algebras $f:A \to A_V$ \emph{representing} $V$.
 	This means that 
 	\begin{itemize}
 		\item the image of the induced map $\phi:\mathcal{M} (A_V) \to \mathcal{M} (A)$ is $V$ 
-		\item every bounded $K$-banach algebra morphism $A \to B$ such that the image of $\mathcal{M} (B)$ in $\mathcal{M} (A)$ is contined in $V$ factors through $A_V$ \[
+		\item every bounded $K$-banach algebra morphism $A \to B$ such that the image of $\mathcal{M} (B)$ in $\mathcal{M} (A)$ is contined in $V$ factors in a unique way through $A_V$ \[
 	\begin{tikzcd}
 		A \ar{rr}{\phi} \ar{dr}& & A_V \ar[dashed]{dl} \\
 				& B
@@ -172,7 +172,7 @@ We will describe these domains by a universal property that also characterises
 
 
 It is not easy to describe the affinoid domains for a given $\mathcal{M} (A)$ as explicitly as in the case of $\spec$ for rings. 
-But there are a couple explicit ones that will be "enough" to develep the theory. 
+But there are a couple explicit ones that will be "enough" to develop the theory. 
 \begin{definition}[multiple definitions in \cite{conrad2008several}]
 	\todo{change this to temkins definition}
 	Let $A$ be an $K$-affinoid algebra. 
@@ -247,8 +247,7 @@ But we will not do this with the cannonical topology as defined in \cref{def:spe
 In fact the topology that we will use is not a ordinary topology at all. 
 It will be a $G$-topology, which is a notion somewhere in between an ordinary topology and a Grothendieck site. 
 For a $G$ topology on $X$
-the category of opens will still be a collection of subsets of $X$ with inclusion maps, closed under \todo{finite or infinite} union and (finite) intersection. 
-But the set of covers may be restricted. 
+the category of opens will still be a collection of subsets of $X$ with inclusion maps, closed under finite intersection (but not union). But the set of covers may be restricted. 
 In this section we will follow \cite[][sec. 9.1.]{siegfriedboschNonArchimedeanAnalysisSystematic1984}
 
 \begin{definition}
@@ -263,7 +262,7 @@ In this section we will follow \cite[][sec. 9.1.]{siegfriedboschNonArchimedeanAn
 	\begin{enumerate}
 		\item $S$ is closed under finite intersections
 		\item For any admissible open $U$ is $\{U\}$ and admissible cover of $U$.
-		\item If $\{U_i\}_{i \in I} \in \Cov U $ and for each $U_i$ there is a an cover $\{V_{i, j}\}_{j \in J_i} \in \cov U_i$ then $\{V_{ij}\} _{i \in I, j \in J}$ is a an admissible cover of $U$
+		\item If $\{U_i\}_{i \in I} \in \cov U $ and for each $U_i$ there is a an cover $\{V_{i, j}\}_{j \in J_i} \in \cov U_i$ then $\{V_{ij}\} _{i \in I, j \in J}$ is a an admissible cover of $U$
 		\item If  $U, V$ are admissible opens with $V \subset  U$ and given an admissible cover $\{U_i\}_{i \in I} $ of $U$, then $\{V \cap U_i\} _{i \in I}$ is an admissible cover of $V$. 
 	\end{enumerate}
 \end{definition}
@@ -289,59 +288,6 @@ Most definitions for topological spaces carry straight over to $G$-topological s
 	\end{itemize}
 \end{definition}
 
-Sometimes we wish to have slightly more structure on our $G$ topologies.
-\begin{definition}
-	Let $\mathcal{T} $ be a $G$-topology a set $X$. 
-	We define the properties $(G_0), (G_1)$ and $(G_2)$ as follows 
-	\begin{enumerate}
-	\item[($G_1$)] $\emptyset$ and $X$ are admissible open subsets in $X$.  
-	\item [($G_1$)] Let  $U$ be an admissible open and $V \subset  U$ any subset. 
-		Suppose that there is a cover $\{U_i\} _{i \in I} $ of $U$ such that $V \cap U_i$ is admissible for any $i \in I$. 
-		Then $V$ is an admissible open. 
-	\item[($G_2$)]
-		Let $U$ be an admissible open and  $\{U_{i}\}_{i \in I}$ be a set theoretic covering such that each $U_i$ is an admissible open. 
-		Suppose that $\{U_i\}  _{i \in I}$ has an admissible refinement. Then $\{U_{i}\} _{i \in I}$ is an admissible cover of $U$. 
-	\end{enumerate}
-\end{definition}
-
-Property $(G_0)$ is just something we are used to from ordinary topological spaces. 
-Property $(G_1)$ states that whether a set is admissible may be checked locally and property $(G_2)$ states that whether a cover is admissible may be checked locally. 
-These last two are crucial to impose when we eventually want to glue  $G$-topological spaces, as they assure that the topology is defined locally. 
-
-$G$-topologies contain just the right amount of information to define a sheaf theory. 
-\begin{definition}
-	Let $(X, \mathcal{T} )$ be a $G$-topological space.
-	A \emph{presheaf on $X$} with values in a category $\mathcal{C} $ is a functor $\mathcal{F} :S^{\text{op}} \to \mathcal{S} $. 
-
-	A presheaf $\mathcal{F} $ is called a \emph{sheaf} if for any admissible open  $U$ and cover $\{U_i\}_i $ of $U$ the sequence \[
-	\begin{tikzcd}
-		\mathcal{F} (U) \rar & \prod_{i \in I} \mathcal{F} (U_i) \rar[shift left]\rar[shift right] & \prod_{i, j \in I} \mathcal{F} (U_{i} \cap U_j)
-	\end{tikzcd}
-	\] 
-	is exact. 
-	\todo{what assumptions do we exactly need on the category $\mathcal{C}$?}
-\end{definition}
-So a $G$-topological space defines a \emph{topos}. 
-One may wonder if we can refine a $G$-topological space so it satisfied extra desired properties while preserving the associated topos. 
-
-Given a certain subcategory $\mathfrak{S} $ of $G$-topological spaces, there is a construction that refines all topologies on all objects in $\mathfrak{S} $ into ones that satisfy $(G_1)$ and $(G_2)$, while preserving all the topoi. 
-
-\begin{definition}
-	Let $(X, \mathcal{T}) \in \mathfrak{S} $ be an object and $\{U_i\} _{i \in I}$ any set theoretic covering of any subset $U \subset  X$. 
-	We say  $\{U_i\} _{i \in I}$ is \emph{compatible} if for any morphism in $\mathcal{S}, \phi: Y \to X $ and for any admissible open $V \subset  Y$ with $\phi(V) \subset  U$ the covering $\{\phi^{-1}(U_i) \cap V\} _{i \in I}$ of $V$ can be refined by an admissible cover in $Y$. 
-\end{definition}
-
-\todo{refer to the right results}
-
-\begin{definition}
-	For any object $(X, \mathcal{T}) \in \mathfrak{S} $ we may define a new $G$-topology $\mathcal{T} '$ where the admissible opens are all sets that admit a compatible cover and the covers are all compatible covers. 
-\end{definition}
-
-
-\subsubsection{pasting $G$-topological spaces} \label{sec:pasting_$g$-topological_spaces}
-\todo{Do I need this section?}
-
-
 
 
 \subsection{The structure sheaf on $\mathcal{M} (A)$} \label{sec:the_structure_sheaf_on_ma}
@@ -357,7 +303,7 @@ We can define a presheaf $\mathcal{O}_X$ on $X =\mathcal{M} (A)$ with the weak  
 The restiction maps are given by the defining property of affinoid domains.
 
 This presheaf turns out to be a sheaf, which will follow from the following theorem. 
-\begin{theorem}[Tate's acyclity theorem]\label{thm:tate_acyclity}
+\begin{theorem}[Tate's acyclicity theorem]\label{thm:tate_acyclicity}
 	Let $X = \mathcal{M} (A)$ and $\{V_i\} $ be a admissible cover of $X$. 
 	Then for any finite finite banach $A$ module, $M$ the Čech complex \[
 		0 \to M \to \prod_{i} M \otimes_A A_{V_i} \to \prod_{i, j} M \otimes_A A_{V_i} \otimes_A A_{V_j} \to \ldots
@@ -385,7 +331,7 @@ This presheaf turns out to be a sheaf, which will follow from the following theo
 \end{corollary}
 \begin{proof}
 	Let $V$ be an affinoid domain and $\{V_i\} $ a finite cover. 
-	Taking $M = A_V$ in \cref{thm:tate_acyclity} yields \[
+	Taking $M = A_V$ in \cref{thm:tate_acyclicity} yields \[
 	0 \to A_V \to \prod_{i } A_V \otimes_A A_{V_i} \to \prod_{i,g} A_V \otimes A_{V_i} \otimes A_{V_j}
 	.\] 
 	Rewriting each term yields that \[
@@ -396,41 +342,6 @@ This presheaf turns out to be a sheaf, which will follow from the following theo
 
 We can now refine the $G$-topology on $X$. 
 
-\begin{definition}\label{def:admissible_open_cover}
-	A subset $V \subset X = \mathcal{M} (A)$ is \emph{admissible} if it has a cover $\{V_i\} $ of affinoid subdomains $u_i$ satisyfing the following property:
-	For any bounded map of $k$-affinoid algebras $f: A \to B$ such that the induced morphism  $\phi: \mathcal{M} (B)$ lands in $V$, the pullback of the cover $\{\phi^{-1}(U_i)\} $ has a finite subcover. 
 
-	A cover $\{U_i\} $ of $V$ is an \emph{admissible cover} if for any bounded map of affinoid algebras $f:A \to B$ such that $\phi: \mathcal{M} (B) \to \mathcal{M} (A)$ lies in $V$, the pullkback of the cover $\{f^{-1}(U_i)\} $ has a refinement by a  covering consisting of finitely many affinoid subdomains. 
-\end{definition}
-
-\begin{definition}\label{def:strong_g_topology}
-	The \emph{strong $G$-topology} on $X = \mathcal{M} (A)$ is the $G$-topology where the sets are the admissible opens and the covers are the admissible covers. 
-\end{definition}
-
-Note that this is exactly the refinement as discussed in \cref{sec:interlude_g_topologies}. 
-It satisfies the properties $(G_0), (G_1)$ and $(G_2)$. 
-
-\subsection{admissible opens, covers and $g$-topology} \label{sec:admissible_opens,_covers_and_g-topology}
-
-\begin{definition}
-	[2.2.6, \cite{conrad2008several}]
-	let $a$ be a  $k$ affinoid algebra. 
-	a subset $u$ of $\maxspec(a)$ is an \emph{admissible open} if is has a cover $\{u_i\} $ of affinoid subdomains $u_i$ satisfying the following property: 
-	for any map of $k$-affinoid algebras $\phi: a \to b$ such that the induced map $f: m(b) \to m(a)$ lands in $u$, the pullback of the cover $\{f^{-1}(u_i)\} $ has a finite subcovering. 
-
-
-	a covering $v = \bigcup_{i \in  i} v_i$ is an \emph{admissible cover} if for any any map $\phi:a \to b$  of $k$-affinoid algebras that the image of  $f: m(b) \to m(a)$ lies in $v$, the pullback cover $\{f^{-1}(v_i)\} $ has a refinement by a covering consisting of finitely many affinoid subdomains.  
-\end{definition}
-\begin{proof}
-	\todo{look at this proof}
-\end{proof}
-
-we need this to define the notion of a $g$-topology, which is a grothendieck topology on the set $\maxspec(a)$. 
-i'm pretty sure later we will scrap $\maxspec$ in favour of the berkovich space.
-
-
-
-\todo{Look at temkins notes for Gerritzen-Grauert, paper in mathematische analen.}
-Let $K$ be a complete non-archimedean algebraically closed field. 
 
 
