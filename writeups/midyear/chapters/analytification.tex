@@ -1,3 +1,7 @@
+There are two kinds of algebro-geometric objects that have Berkovich spaces associated to them. 
+The first one is the analytification of a variety over $K$, analogous to analytification of complex varieties like we discussed in the introduction. 
+The second is that there is a natural interpretation of the formal fibre of a formal scheme over $R = \mathcal{O}_K = \{a \in K \st |a| \le 1\} $ as a berkovich space. 
+
 
 \subsection{Analytification of Vartieties} \label{sec:analytfication_of_vartieties}
 
@@ -84,5 +88,39 @@ See \cref{fig:berk_projective_line}.
 
 \subsection{The generic fiber of formal schemes} \label{sec:the_generic_fiber_of_formal_schemes}
 
+Recall that $R = \mathcal{O}_K = \{a \in K \mid a\} $, which is a topological ring with the metric induced by the norm. 
+Let $\pi$ be a pseudo-uniformizer for $R$ and $I = (\pi)$. 
+Then $\{I^{n}\}_n$ gives a system of neighborhoods around zero, and $R$ is complete with respect to this topology. 
+This means that $R$ is an adic ring, which is useful if we want to use the language of formal schemes. 
+
+We first need to restric the class of rings we consider. 
+
+\begin{definition}\label{def:topologically_finite_presentation_algebra}
+	A \emph{topologically finitely presented} $R$-algebra is a quotient \[
+		R\left<x_1, \ldots, x_n \right> / \mathfrak{a} 
+	,\] where $\mathfrak{a}  = (f_1, \ldots, f_m)$ is a finitely generated ideal. 
+
+	A formal scheme that is locally isomorphic to $\spf A$ for some toplogogically finite prestented $R$-algebra is called a \emph{topologically finitely presented} $R$ formal scheme. 
+	\todo{check if we need any properties like separated}
+\end{definition}
+
+Given such a topologically finitely presented ring $A = \frac{R \left<x_1, \ldots, x_n \right>}{(f_1, \ldots, f_m)}$ we can tensor it with $K$ to get its ``generic fiber'' which is an affinoid algebra \[
+A \otimes _R K = \frac{K \left<x_1, \ldots, x_n \right>}{(f_1, \ldots, f_m)}
+.\]  
+This suggest the following functor $\spf A \mapsto \mathcal{M} (A \otimes_R K)$. 
+Indeed this functor glues to give a functor from the topologicically finitely presented $R$ formal schemes to the category of $K$-analytic spaces. 
+
+\begin{definition}\label{def:generic_fibre_of_formal_scheme}
+Given a topologically finitely presented formal schemes $\mathfrak{X} $ we call the resulting $K$-analytic space the \emph{generic fibre of  $\mathfrak{X} $} and denote it by $\mathfrak{X} _\eta$. 
+\end{definition}
+
+Later we will extend the construction of the generic fibre to the larger class of \emph{special formal schemes}.
+\begin{definition}\label{def:special_r_algebra}
+	A \emph{special} $R$-algebra is a $R$-algebra of the form \[
+		\frac{A\left<x_1, \ldots, x_n \right>[[y_1, \ldots, y_m]]}{(f_1, \ldots, f_\ell)}
+	.\] 
+\end{definition}
+
+\todo{say something about the reduction map}
 
 
