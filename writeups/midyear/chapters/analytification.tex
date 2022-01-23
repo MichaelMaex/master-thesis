@@ -1,8 +1,17 @@
 
-Suppose $X$ be a scheme over $K$, and let $n = \dim X$. 
-Then the 
+\subsection{Analytfication of Vartieties} \label{sec:analytfication_of_vartieties}
+
+
+Suppose $X$ be a scheme, locally of finite type over $K$.  We want define an analytification functor that takes such schemes to $K$-analytic spaces.  
 \begin{definition}
-	The \emph{Berkovich analitification} of a scheme $X$ over  $K$, as a set is \[
+	Let  $X$ be a locally finite $K$-scheme. 
+	We define $X\an$ to be the unique $K$-analytic space, together with a morphism of ringed spaces $i: X\an \to X$ such for any good $K$-analytic space $Y$ and morphism of locally ringed spaces $Y \to X$ factors uniquely through $i: X\an \to X$. 
+\end{definition}
+So $X\an$ represents the functor from $K$-analytic spaces $Y \mapsto \hom(Y, X)$ where the hom-set is in the category of locally ringed spaces. 
+
+This universal property is very useful, but it would be nice to have an more concrete understanding of the analytification of a $K$-variety. 
+\begin{definition}
+	The \emph{Berkovich analitification} of a locally finite type scheme $X$ over  $K$, as a set is \[
 		X\an = \{(x, |\cdot |)  \mid x\in X, |\cdot | \text{ a norm on } k(x) \text{ extending the norm on }K \} 
 	.\] 
 	\todo{does this need to be smooth and proper and connected?}
@@ -21,16 +30,20 @@ Then the
 	\todo{give definition of Berkovich analitification, maybe find an earlier reference than \cite{nicaiseBerkovichSkeletaBirational2016}}
 \end{definition}
 
-\begin{proposition}
-	[universal property] 
-	\todo{write}
-\end{proposition}
-
-
 \begin{remark}
-	If $X$ is the spectrum of some $K$-algebra $A$, i.e. $X = \spec A$, then at topological spaces \todo{I think, maybe just as sets} we have \[
+	If $X$ is an affine scheme $X = \spec A$ over $K$, then this construction agrees with our adhoc definition from \cref{sec:berkovich_spaces}.
+	\[
 		X^{\an} = \mathcal{M} (A)
 	.\] 
-
-	\todo{prove this, maybe check whether this is true first}
 \end{remark}
+
+
+\begin{example}
+	Berkovich affine line and projective line. 
+	\todo{work this out}
+\end{example}
+
+\subsection{The generic fiver of formal schemes} \label{sec:the_generic_fiver_of_formal_schemes}
+
+
+

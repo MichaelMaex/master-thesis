@@ -53,9 +53,7 @@ Absolute values are a special case of (semi)norms
 	.\] 
 \end{definition}
 \begin{remark}\label{rem:ker_norm_ideal}
-	Let $ |\cdot |$ be a norm on $R$. Then $\ker |\cdot |$ is an ideal of $R$. If $|\cdot |$ is multiplicative then $\ker |\cdot |$ is even a prime ideal!
-
-	In some sense seminorms are analogous to ideals and and multiplicative seminorsm are analogous to prime ideals. 
+	Let $ |\cdot |$ be a norm on $R$. Then $\ker |\cdot |$ is an prime ideal of $R$. If $|\cdot |$ is multiplicative then $\ker |\cdot |$ is even a prime ideal!
 \end{remark}
 \begin{proof}
 	Let $a, b \in \ker |\cdot |, c \in R$. Then $0 \le |a + b| \le |a|+|b| = 0$. So  $a + b \in \ker |\cdot |$. 
@@ -67,6 +65,15 @@ Absolute values are a special case of (semi)norms
 	Hence either $|a| = 0$ or  $|b|=0$. 
 	So either  $a \in \ker |\cdot |$ or $b \in \ker |\cdot |$. 
 \end{proof}
+
+In some sense seminorms are analogous to ideals and and multiplicative seminorsm are analogous to prime ideals. This is will be the basis of Berkovich spectra of Rings.
+Like the ordinary $\spec$ functor we can define the space of all multiplicative norms on a ring. 
+But hold your horses trying to define a suitable zarisky topology on this space. 
+That won't work. 
+In fact we will need two different topologies on this space for the theory to work. 
+Don't worry, this is a feature, not a bug. 
+One topology will have all the nice properties you can think of: Haussdorf, compact, path-connected, locally contractible, \ldots while the other one is great for sheaf theory. 
+
 
 \begin{definition}
 	Let $R$ be a ring and $|\cdot |$ are seminorm. 

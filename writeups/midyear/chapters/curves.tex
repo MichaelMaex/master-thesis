@@ -1,0 +1,112 @@
+Any Berkovich analitification $X\an$ of a smooth connected proper curve can be considered the as a union of Berkovich open balls and open annuli. 
+Hence its worth to discuss these objects. 
+These can be described as affinoid domains in $\aff^{1}\an$. \todo{write section on affinoid algebras. }
+
+\begin{definition}
+	The \emph{tropicalisation map} is the map 
+	\begin{align*}
+		\trop :  \mathcal{M} (K[T]) &\longrightarrow \R \cup \{\infty\}  \\
+		x &\longmapsto -\log( \|T\|_x)
+	.\end{align*}
+	Here $\mathcal{M} (K[T])$ is the Berkovich affine line and equals $\aff^{1}_K\an$. 
+\end{definition}
+Intuitively you should think of this map as giving the inverse logarithmic distance from the origin of $\aff^{1}\an$. 
+To visiualise this. This function if $\infty$ at $0$ and linearly with slope 1 increases along the path till $\infty$ (the extra point on the Berkovich projective line). 
+The whole of $\aff^{1}\an $ retracts on this line, and takes the value of the point where it contracts to. Hence off the line between $0$ and $\infty$  $\trop$ is locally constant. 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{affine-line-ball-annuli}
+    \caption{affine line ball annuli}
+    \label{fig:affine-line-ball-annuli}
+\end{figure}
+
+
+\begin{definition}
+	Let $r \in |K^{\times }|$. The \emph{standard closed ball} of radius $r$ is $B(r) = \trop^{-1}([-\log r, \infty])$, i.e. $B(a) = \{x \in \aff^{1}\an \st \|T\|_x \le r\} $. 
+\end{definition}
+The standard closed ball is also the Berkovich spectrum of the tate algebra \[
+K\left<r^{-1}t \right> = \left\{\sum_{n = 0}^{\infty} a_n ^{n} \st r ^{n} \|a_n\| \to 0 \text{ as } n \to \infty \right\} 
+.\] 
+\begin{definition}
+	Again let $a \in |K^{\times }|$. 
+	The \emph{standard open ball} of radius $r$ is $B(a)_+ = \trop^{-1}((-\log r, \infty])$, i.e.\ $B(a) = \{x \in \aff^{1}\an \st \|T\|_x <  r\} $.
+\end{definition}
+
+\begin{definition}
+	Let $r, s \in |K^{\times }|$. 
+	The \emph{standard closed annulus with outer radius  $r$ and inner radius  $s$}  is $S(s, r) = \trop^{-1}([-\log r, -\log s])$, i.e.\ $S(s, r) = \{x \in \aff^{1}\an \st s \le \|T\|_x \le r\} $.
+
+	The \emph{modulus} of this annulus is $s r^{-1}$. 
+\end{definition}
+The standard closed annulis is also the Berkovich specturm of the affinoid algebra \[
+	K\left<r^{-1}t, st^{-1} \right> = \left\{\sum_{n \in \Z}^{} a_n ^{n} \st r^{n}|a_n| \to 0 \text{ as } n \to +\infty, s^n |a_n| \to 0 \text{ as } n \to - \infty\right\} 
+.\] 
+If $r = 1$ then we write $S(s) = S(s,1)$. 
+\begin{definition}
+	The \emph{standard open annulus of outer radius $r$ and inner radious $s$} is $S(s,r)_+ = \trop^{-1}((-\log s, -\log r))$. 
+	I.e.\ $S(s,r)_+ = \{x \in \aff^{1}\an \st s < \|T\|_x < r\} $
+
+	Similarly to the closed annulus we define the \emph{modulus} of this ball to be $s r^{-1}$. 
+\end{definition}
+
+
+Finally we define a domain that is not quite an annulus as defined above, but is very similar to one. 
+\begin{definition}
+	Let $r \in |K^{\times }|$. The \emph{standard punctured open ball of radius $r$ } is $S(0, a)_+ = \trop^{-1}((-\log a, \infty))$. 
+	The \emph{standard punctured open ball of radious $r^{-1}$ around $\infty$} is $S(a, \infty)_+ = \trop^{-1}((-\infty, -\log a))$. 
+
+	By definition we say these are annuli of modulus $\infty$. 
+\end{definition}
+
+All closed balls are isomorphic. Similarly all open balls are isomorphic. 
+Two open (resp. closed) annuli/punctured balls are isomorpic if and only if they have the same modulus. 
+
+\begin{remark}
+	If we just remove $0$ from $\aff^{1}\an$ (and thus also $\infty$ of $\pro^{1}\an$) we gain obtain something similar to an annulus. But the outer radius is $\infty$ and the inner radius is $0$. 
+	Note that this is also $\mathbb G^{\mathrm{an}}_m$, which how we will usually denote this space. 
+\end{remark}
+
+
+
+Why do we need proposition 2.2? \todo{figure out why this is relevant}
+
+\subsection{The skeleton of a standard generalized annulus} \label{sec:the_skeleton_of_a_standard_generalized_annulus}
+We define a section of the tropicalision map, which gives the line between $0$ and $\infty$ (or what lives in it the specific annulus). 
+\begin{align*}
+	\sigma: \R &\longrightarrow \mathbf G_m^{\mathrm{an}} \\
+	r &\longmapsto \left[f \mapsto \sup_{z \in B(0,\exp(-r))} |f(z)|\right]
+.\end{align*}
+In the description of $\aff^{1}\an$ as a space of closed disks, this sections is a line made by disks with center $0$ of variying radius.
+
+
+The following proposition helps us understand maps between annuli. 
+\begin{proposition}
+	[2.2 in paper]
+	Let $a \in R, a \ne 0$.
+	\begin{enumerate}
+		\item 
+			The units in $K \left<a t^{-1}, t \right>$ are functions of the form 
+			\begin{equation}\label{eq:unit_annuli}
+				f(t) = \alpha t ^{d}(1 + g(t))
+			\end{equation}
+			where $\alpha \in K^{\times }, d \in \Z$ and $|g|_\text{sup}  < 1$.
+			\todo{Either understands Thuilliers proof or some other proof}
+		\item Let $f(t)$ be a unit as in \eqref{eq:unit_annuli} with  $d > 0$.
+			Then the morphism $\phi:S(a) \to \Gan$ induced by $K[x, x^{-1}] \to K\left<a t^{-1}, t \right> : x \mapsto \phi(t)$, factorst through a finite flat morphism $S(a) \to S(\alpha a^{d}, \alpha)$ of degree $d$. 
+
+			Similarly if $f(t)$ is such a unit but with $d <0$ then the map $\phi: S(a) \to \Gan$ factors through $S(a) \to S(\alpha, \alpha a^{d})$ of degree $-d$. 
+
+		\item If $d = 0$ is then the morphism $\phi: S(a) \to \Gan$ factors through a morphism $S(a) \to S(\alpha, \alpha)$ which is not finite. 
+	\end{enumerate}
+
+\end{proposition}
+\begin{proof}
+	\begin{itemize}
+		\item \todo{Either refere to Thuillier again, or use the alternative proof Johannes suggested}
+			Let $u$ be invertible with inverse 
+		\item We can reduce to the case where $\alpha = 1$ and $d > 0$. \todo{Why?}
+
+	\end{itemize}
+\end{proof}
+
