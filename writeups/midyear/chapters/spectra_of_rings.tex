@@ -174,25 +174,17 @@ Let $a \in K$ be any point. Then we can define a line \begin{equation}\label{eq:
 \end{equation}
 
 
-Because in a ultrametric space any point in a ball is a centre of ball, we see that for any two points $a, b$ the lines $l_a, l_b$ consinde for any $r \ge |a - b|$. 
+Because in an ultrametric space any point in a ball is a centre of ball, we see that for any two points $a, b$ the lines $\ell_a, \ell_b$ consinde for any $r \ge |a - b|$. 
 So $\aff_K^{1,\text{an}}$ is not only connected, it is path connected!
 
 We have been missing a few points on $\aff_K^{1, \text{an}}$. 
 The Berkovich classification theorem gives all points. 
-
-
-
-
-
-\todo{flesh this out}
-
-
 \begin{theorem}
 	[Berkovich Classifiaction theorem, \cite{bakerarizona}] \todo{find reference in Berkovich's paper}
-	The points $x \in \aff_K^{1,\text{an}}$ is given by decreasing sequences of closed disks $B_n = B(a_n, r_n)$ in $K$ by the formula \[
+	Any point $x \in \aff_K^{1,\text{an}}$ is given by decreasing sequences of closed disks $B_n = B(a_n, r_n)$ in $K$ by the formula \[
 	|f|_x = \lim_{n \to \infty} |f|_{B_n}
 	.\] 
-	and two such sequences $B_n, B'_n$ define the same norm if and only if:
+	Morover, two such sequences $B_n, B'_n$ define the same norm if and only if:
 	 \begin{itemize}
 		\item Both sequences have the same non-emtpy intersection, i.e.\ $\bigcap_{n = 1}^{\infty} B_n = \bigcap_{n = 1}^{\infty} B_n' \ne \emptyset$. 
 			In this case the intersection $B = \bigcap_{n \in N} B_n$ is a closed disk (possibly a point) and $x = |\cdot |_B$. 
@@ -290,15 +282,24 @@ This also allows us to classify points, because either both $E_{\mathcal{H} (x) 
 		\item $x$ is of type 4 if $\mathcal{H} (x) \subsetneq K$ and  $F_{\mathcal{H} (x) / K} = E_{\mathcal{H} (x) / K} = 0$.
 	\end{itemize}
 \end{proposition}
-\begin{proof}
-	\todo{I believe this for type 1,2,3 but how do i see tyep 4? Just elimination?}
-\end{proof}
 
+Type IV points are not rare. It might be counter intuitive that in a complete ring there exists a decreasing sequence of closed disks that has empty intersection. 
+But in practice almost all fields have type  IV points. 
+The trick is that the radii of these disks do not converge to $0$. 
+\begin{example}[type IV point]\label{ex:type4point}
+	Let $K = \C_p$ for some prime $p$. 
+	Define 
+	\begin{align*}
+		a_n &= \sum_{i = 1}^{n} p^{-\frac{1}{n}}\\
+		r_n &= p^{\frac{1}{n + 1}} \\
+		B_n &= B(a_n, r_n) 
+.\end{align*}
+Then $|a_n - a_{n + 1}| = r_n$ and $r_{n + 1} \le r_n$ so the $B_{n + 1} \subset B_n$ and the sequence $(B_n)_n$ is decreasing. 
+Now we have to show that the intersection $B = \bigcap_{i = 1} ^{\infty} B_n$ is non-empty. 
 
-\todo{picture of the affine line}
-
-\begin{example}[type 4 point]\label{ex:type4point}
-	\todo{work out an example}
+Let $x \in \C_p$. Then $x = \sum_{i = 0}^{m} b_i$ where $m$ is either finite or $m$ is infinite $b_i$ is a decreasing sequence such that $|b_i| \to 0$. Suppose that  $x \in B$, then $x \in B_n$ for every $n$, and thus we see that  $b_i = p^{\frac{-1}{i}}$ for any $i = 1, \ldots, n$.  
+This is true for any $n $, so in particular we find that $b_i = p^{-\frac{1}{i}}$ for any $i$ .
+But this contradicts that $b_i$ is unbounded. 
 \end{example}
 
 
@@ -307,7 +308,7 @@ This also allows us to classify points, because either both $E_{\mathcal{H} (x) 
 
 
 
-\todo{Show the description of type I, II, III, IV points and space of disks}
+
 
 
 

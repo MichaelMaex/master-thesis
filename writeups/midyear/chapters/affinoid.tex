@@ -53,12 +53,10 @@ There is also a good way to equip the tensor product of Banach $K$-algebras with
 		\|x\| = \inf \left\{\max_{i = 1}^{n} |a_i||b_i|  \st n \in \N, a_i \in A, b_i \in B, x = \sum_{i = 1}^{n} a_i \otimes_C b_i\right\} 
 	\] 
 	for any $x \in A \otimes_C B$. 
-	\todo{this might be wrong wrong}
 \end{definition}
-\todo{check whether this is always well defined}
 
 \begin{proposition}\label{prop:universal_prop_complete_tensor}
-	The clompleted tensor product is the pushout of the diagram $A \leftarrow C \to B$ in the category of  $K$-Banach algebras. I.e.\ it satisfies the universal property that for any  $D$ and morphism $A \to D$,  $B \to D$ making the square with $C$ commute there exists a unique map $A \widehat\otimes_C B \to D$ making the diagram commute\[
+	The completed tensor product is the pushout of the diagram $A \leftarrow C \to B$ in the category of  $K$-Banach algebras. I.e.\ it satisfies the universal property that for any  $D$ and morphism $A \to D$,  $B \to D$ making the square with $C$ commute there exists a unique map $A \widehat\otimes_C B \to D$ making the diagram commute\[
 	\begin{tikzcd}
 		C \rar \dar & A \dar \ar[bend left]{rdd} \\
 		B \rar \ar[bend right]{drr} &  A \widehat{\otimes}_C B \ar[dashed]{dr}{\exists !} \\
@@ -67,7 +65,7 @@ There is also a good way to equip the tensor product of Banach $K$-algebras with
 	.\] 
 \end{proposition}
 \begin{proof}
-	\todo{find a reference for this}
+	See \cite[][section 2.1.7]{siegfriedboschNonArchimedeanAnalysisSystematic1984}. 
 \end{proof}
 
 \subsection{Berkovich spectra of Banach algebras} \label{sec:berkovich_spectra_of_banach_algebras}
