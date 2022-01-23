@@ -10,7 +10,7 @@ Suppose $X$ be a scheme, locally of finite type over $K$.  We want define an ana
 So $X\an$ represents the functor from $K$-analytic spaces $Y \mapsto \hom(Y, X)$ where the hom-set is in the category of locally ringed spaces. 
 
 This universal property is very useful, but it would be nice to have an more concrete understanding of the analytification of a $K$-variety. 
-\begin{definition}
+\begin{definition}\label{def:berkovich_analytification_explicit}
 	The \emph{Berkovich analitification} of a locally finite type scheme $X$ over  $K$, as a set is \[
 		X\an = \{(x, |\cdot |)  \mid x\in X, |\cdot | \text{ a norm on } k(x) \text{ extending the norm on }K \} 
 	.\] 
@@ -29,21 +29,60 @@ This universal property is very useful, but it would be nice to have an more con
 
 	\todo{give definition of Berkovich analitification, maybe find an earlier reference than \cite{nicaiseBerkovichSkeletaBirational2016}}
 \end{definition}
+\todo{is there some definition that also gives $G$-topology and structure sheaf?}
 
 \begin{remark}
 	If $X$ is an affine scheme $X = \spec A$ over $K$, then this construction agrees with our adhoc definition from \cref{sec:berkovich_spaces}.
 	\[
 		X^{\an} = \mathcal{M} (A)
-	.\] 
+	\] 
+	by mapping a norm $x \in \mathcal{M} (A)$ onto $(\ker x, x')$ where $x'$ is the norm on $\kappa(\ker x)$ induced by $x$. 
+
+	We will continue to write $\mathcal{M} (A)$ for the Berkovich analytification of $\spec A$, only this time it inclused the structure sheaf. 
 \end{remark}
 
+Like the analytification of Complex varieties there are cetrain GAGA results, which shows that under specific conditions all information is preserved by passing to the Berkovich analytification. 
+\todo{write more on GAGA results}
 
-\begin{example}
-	Berkovich affine line and projective line. 
-	\todo{work this out}
+
+\begin{example}[The Berkovic Affine line $\aff^{1, \text{an}}_K$]
+	We already discussed the topology of $\aff^{1, \text{an}}_K$ in \cref{sec:the_berkovich_spectrum_of_z}. 
+	But we can now discuss how $\aff^{1, \text{an}}$ behaves as a $K$-analytic space as well. 
+
+	For any $r$ there is a natural inclusion $K[T] \into K\left<r^{-1} T \right>$ and this inclusion is dense. 
+	Hence any (semi)norm on $K\left<r^{-1}T \right>$ is uniquely determined by its restriction to $K[T]$.
+	Conversely any (semi)norm $|\cdot |_x$ on  $K[T]$ extends to a bounded (semi)norm $K\left<r^{-1}T \right>$ if and only if $r^{-1}|T|_x < 1$, i.e. $|T|_x \le r$. 
+
+	This shows (that as sets at least)
+	\[
+		\aff^{1, \text{an}}_K = \bigcup_{r = 1} ^{\infty} \mathcal{M} (K\left<r^{-1} T \right>)
+	.\] 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{affine-line-as-union-of-disks}
+    \caption{Affine line as union of disks}
+    \label{fig:affine-line-as-union-of-disks}
+\end{figure}
 \end{example}
 
-\subsection{The generic fiver of formal schemes} \label{sec:the_generic_fiver_of_formal_schemes}
+\begin{example}
+	[Berkovich Projective line]
+	We can construct the analytification of $\pro^{1}_K$ the same way we construct its spectrum. 
+Describe an affine cover $K[T], K[T^{-1}]$ and glue the spaces $\mathcal{M} (K[T]), \mathcal{M} (K[T^{-1})$ along $\mathcal{M} (K[T, T^{-1}])$. 
+Using the description in \cref{def:berkovich_analytification_explicit} we see that $\mathcal{M} (K[T, T^{-1}]) = \aff^{1, \text{an}}_K \setminus \{0\} $.
+See \cref{fig:berk_projective_line}. 
+\end{example}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{figures/projective_line}
+	\caption{The Berkovich projective constructed by gluing two copies of $\aff^{1, \text{an}}_K$}
+	\label{fig:berk_projective_line}
+\end{figure}
+
+
+\subsection{The generic fiber of formal schemes} \label{sec:the_generic_fiber_of_formal_schemes}
 
 
 
