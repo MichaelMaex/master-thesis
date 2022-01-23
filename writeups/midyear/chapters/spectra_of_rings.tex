@@ -169,7 +169,9 @@ Anthor way to define a norm is by choosing closed disk $B(a, r) = \{x \in K \st 
 So the space of closed discs in $K$, which includes points, aka discs of radius zero embeds as well in $\mathcal{M} (K[T])$. 
 As we will see in a second these will make up almost all of the points on $\mathcal{M} (K[T])$. 
 This means that $\mathcal{M}(K[T])$ is connected. 
-Let $a \in K$ be any point. Then we can define a line $l_a: [0, \infty) \to  \aff_K^{1, \text{an}}: r\mapsto B(a, r)$. 
+Let $a \in K$ be any point. Then we can define a line \begin{equation}\label{eq:line_in_A_1}
+	\ell_a: [0, \infty) \to  \aff_K^{1, \text{an}}: r\mapsto B(a, r)
+\end{equation}
 
 
 Because in a ultrametric space any point in a ball is a centre of ball, we see that for any two points $a, b$ the lines $l_a, l_b$ consinde for any $r \ge |a - b|$. 
@@ -237,6 +239,16 @@ As you can see our previous discussion has excluded type four points. We will se
 	 .\]   
 	 Taking the limit yields $\lim_{i \to \infty} |T- b| _{B(a_i, \rho_{i})} = |T - b|_x$.
 \end{proof}
+
+Using the Berkovich classification theorem, the properties about ultrametric spaces from \cref{sec:ultrametric_spaces} and a little imagination you can see that the $\mathcal{M} (K[T])$ looks something like \cref{fig:affine_line}. 
+Points of type I-IV are highlighted in green. Note that the closed points of the curve $\spec K[T]$ are contained in  $\aff_K^{1,\text{an}}$ as exactly the type I points. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figures/affine_line}
+	\caption{The Berkovich affine line $\aff_K^{1, \text{an}} = \mathcal{M} (K[T])$, with the line $\ell_0$ from \cref{eq:line_in_A_1}}
+	\label{fig:affine_line}
+\end{figure}
 
 There are other ways of recognizing type 1, 2, 3 and 4 points, which will generalize better, when we look at berkovich spectra of other curves. One is topological and the other one is purely algebraic. 
 
