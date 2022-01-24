@@ -33,6 +33,20 @@ Note that $R$ is not the zero ring, then $|1| = 1$ because $|1|^2 = |1| $ and $|
 \end{example}
 As we will see in \cref{sec:the_berkovich_spectrum_of_z}, we have esssentially listed all absolute values on $\Z$ and $\Q$ as examples above.  
 
+\begin{proposition}
+	A ring $R$ with an absolute value is a metric space with metric $d(x, y) = |x - y|$. 
+\end{proposition}
+\begin{definition}
+	A ring $R$ with absolute value is \emph{complete} if all Cauchy sequences are covergent. 
+\end{definition}
+\begin{definition}
+	Any ring $R$ with absolute value can be completed, which is defined as \[
+		\widehat{R} = \{(a_n)_n \text{ Cauchy sequence in } R\} / \sim
+	\] 
+	where two sequence $(a_n)_n, (b_n)_n$ are equivalent if $(a_n - b_n)_n \to 0$ as $n \to \infty$.
+	Given  $a, b \in R$ with representivis $(a_n)_n, (b_n)_n$, the addition and multiplication are defined as $a + b = [(a_n + b_n)], a\cdot b = [(a_n \cdot b_n)]$. 
+\end{definition}
+
 Absolute values are a special case of (semi)norms
 \begin{definition}
 	Let $R$ be any ring. A \emph{seminorm on $R$} is a function $|\cdot |: R \to \R^{+} \cup \{0\} $ satisfying for all $a, b \in R$ 
@@ -54,6 +68,7 @@ Sometimes we will stress the fact that a (semi)norm might not be multiplicative 
 \begin{proof}
 	We have $|a|^2 = |a^2| = |-a|^2$. As all norms are positive we find that $|a| = |-a|$. 
 \end{proof}
+
 
 \begin{definition}
 	The \emph{kernel} of a seminorm $|\cdot |: R \to \R^{+}$ is defined as \[
