@@ -1,7 +1,14 @@
-Any Berkovich analitification $X\an$ of a smooth connected proper curve can be considered the as a union of Berkovich open balls and open annuli. 
+Any Berkovich analitification $X\an$ of a smooth connected proper curve can be decomposed into two types of $K$-analytic spaces, \emph{Berkovich balls} and \emph{annuli}.
+In fact these decompositions in such pieces are in correspondence with the semi-stable formal models of $X\an$. 
+In this section based on \cite[sec.\ 2]{bakerStructureNonarchimedeanAnalytic2013} will define these  
 Hence its worth to discuss these objects. 
-These can be described as affinoid domains in $\aff^{1}\an$. \todo{write section on affinoid algebras. }
-
+These can be described as affinoid domains in $\aff^{1}\an$, which is handy because we've discussed $\aff^{1}\an$ in quite some detail already.  
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figures/ball_annulus}
+	\caption{A Berkovich ball and Annulus}
+	\label{fig:ball_annulus}
+\end{figure}
 \begin{definition}
 	The \emph{tropicalisation map} is the map 
 	\begin{align*}
@@ -10,16 +17,9 @@ These can be described as affinoid domains in $\aff^{1}\an$. \todo{write section
 	.\end{align*}
 	Here $\mathcal{M} (K[T])$ is the Berkovich affine line and equals $\aff^{1}_K\an$. 
 \end{definition}
-Intuitively you should think of this map as giving the inverse logarithmic distance from the origin of $\aff^{1}\an$. 
-To visiualise this. This function if $\infty$ at $0$ and linearly with slope 1 increases along the path till $\infty$ (the extra point on the Berkovich projective line). 
-The whole of $\aff^{1}\an $ retracts on this line, and takes the value of the point where it contracts to. Hence off the line between $0$ and $\infty$  $\trop$ is locally constant. 
+Intuitively you should think of this map as giving the inverse logarithmic distance from the origin of $\aff^{1}\an$ on the line $\ell_0$ (recall \cref{eq:line_in_A_1}).  
+The whole of $\aff^{1}\an $ retracts on this line, and takes the value of the point where it contracts to. Hence off the line $\ell_0$ the function $\trop$ is locally constant. 
 
-\begin{figure}[ht]
-    \centering
-    \incfig{affine-line-ball-annuli}
-    \caption{affine line ball annuli}
-    \label{fig:affine-line-ball-annuli}
-\end{figure}
 
 
 \begin{definition}
@@ -50,6 +50,12 @@ If $r = 1$ then we write $S(s) = S(s,1)$.
 	Similarly to the closed annulus we define the \emph{modulus} of this ball to be $s r^{-1}$. 
 \end{definition}
 
+\begin{figure}[ht]
+    \centering
+    \incfig{affine-line-ball-annuli}
+    \caption{Balls and annuli as domains in $\aff^{1, \text{an}}_K$}
+    \label{fig:affine-line-ball-annuli}
+\end{figure}
 
 Finally we define a domain that is not quite an annulus as defined above, but is very similar to one. 
 \begin{definition}
@@ -59,8 +65,9 @@ Finally we define a domain that is not quite an annulus as defined above, but is
 	By definition we say these are annuli of modulus $\infty$. 
 \end{definition}
 
-All closed balls are isomorphic. Similarly all open balls are isomorphic. 
+All closed balls with $r \in |K^{\times }|$ are isomorphic. Similarly all open balls with $r \in |K^{\times }|$ are isomorphic. 
 Two open (resp. closed) annuli/punctured balls are isomorpic if and only if they have the same modulus. 
+\question{Is dit waar? Neem $s \not\in |K^{\times }|$, dan zijn $S(s, 2s)$ en $S(1, 2)$ toch niet isomorf?}
 
 \begin{remark}
 	If we just remove $0$ from $\aff^{1}\an$ (and thus also $\infty$ of $\pro^{1}\an$) we gain obtain something similar to an annulus. But the outer radius is $\infty$ and the inner radius is $0$. 
@@ -68,45 +75,10 @@ Two open (resp. closed) annuli/punctured balls are isomorpic if and only if they
 \end{remark}
 
 
-
-Why do we need proposition 2.2? \todo{figure out why this is relevant}
-
-\subsection{The skeleton of a standard generalized annulus} \label{sec:the_skeleton_of_a_standard_generalized_annulus}
-We define a section of the tropicalision map, which gives the line between $0$ and $\infty$ (or what lives in it the specific annulus). 
-\begin{align*}
-	\sigma: \R &\longrightarrow \mathbf G_m^{\mathrm{an}} \\
-	r &\longmapsto \left[f \mapsto \sup_{z \in B(0,\exp(-r))} |f(z)|\right]
-.\end{align*}
-In the description of $\aff^{1}\an$ as a space of closed disks, this sections is a line made by disks with center $0$ of variying radius.
-
-
-The following proposition helps us understand maps between annuli. 
-\begin{proposition}
-	[2.2 in paper]
-	Let $a \in R, a \ne 0$.
-	\begin{enumerate}
-		\item 
-			The units in $K \left<a t^{-1}, t \right>$ are functions of the form 
-			\begin{equation}\label{eq:unit_annuli}
-				f(t) = \alpha t ^{d}(1 + g(t))
-			\end{equation}
-			where $\alpha \in K^{\times }, d \in \Z$ and $|g|_\text{sup}  < 1$.
-			\todo{Either understands Thuilliers proof or some other proof}
-		\item Let $f(t)$ be a unit as in \eqref{eq:unit_annuli} with  $d > 0$.
-			Then the morphism $\phi:S(a) \to \Gan$ induced by $K[x, x^{-1}] \to K\left<a t^{-1}, t \right> : x \mapsto \phi(t)$, factorst through a finite flat morphism $S(a) \to S(\alpha a^{d}, \alpha)$ of degree $d$. 
-
-			Similarly if $f(t)$ is such a unit but with $d <0$ then the map $\phi: S(a) \to \Gan$ factors through $S(a) \to S(\alpha, \alpha a^{d})$ of degree $-d$. 
-
-		\item If $d = 0$ is then the morphism $\phi: S(a) \to \Gan$ factors through a morphism $S(a) \to S(\alpha, \alpha)$ which is not finite. 
-	\end{enumerate}
-
+Note that annuli have a special line running between two boundary points, where all the rest of the annulus branches of from. This line is called the \emph{skeleton} and it is not just an artefact of how we decided to draw the annulus, as it can be described in the following way. 
+\begin{proposition}[prop.\ 2.2.5 in \cite{thuillierTheoriePotentielCourbes2005}]
+	The skeleton of a annulus are exactly the points that lay not an affinoid isomorpic to an a closed ball.  
 \end{proposition}
-\begin{proof}
-	\begin{itemize}
-		\item \todo{Either refere to Thuillier again, or use the alternative proof Johannes suggested}
-			Let $u$ be invertible with inverse 
-		\item We can reduce to the case where $\alpha = 1$ and $d > 0$. \todo{Why?}
 
-	\end{itemize}
-\end{proof}
+The notion of a skeleton can be extended to the analytificiation of any curve, and these skeleta will be crucial in the study of curves and their models. 
 
