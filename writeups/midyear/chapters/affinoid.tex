@@ -180,15 +180,24 @@ This gives a similarly defined norm on $A\left<y_1, \ldots, y_n \right>$, but th
 Similarly to polynomial rings, these tate algebras are \emph{free} in a sense made precise by the following proposition. 
 \begin{proposition}\label{prop:universal_property_tate_algebars}
 	Take $r_1, \ldots, r_n \in \R^{ +}$ and let $A$ be a $K$-banach algebra. 
-	Then the map
+	The map
 	\begin{align*}
-		\hom(K\left<\underline r^{-1} \underline T \right> &\longrightarrow \prod_i A_{\le r_i}  \\
+		\Phi: \hom(K\left<\underline r^{-1} \underline T \right>, A) &\longrightarrow \prod_i A_{\le r_i}  \\
 		f &\longmapsto (f(T_1), \ldots, f(T_n))
 	\end{align*}
 	is a well defined isomorphism. 
+	The hom-set is in the category of $K$-Banach algebras
 \end{proposition}
 \begin{proof}
-	\todo{write proof, or tell the reader this makes an excellent exercise}
+	Lets first check that the map is well defined. 
+	Let $f: K\left<\underline r^{-1} \underline T \right> \to A$ be such a map. 
+	We need to check that $|f(T_i)| \le r_i$. 
+	Suppose that  $|f(T_i)| > r_i$, then there is some $a \in K$ such that $|f(T_i)| > |a| > r_i$ ( $K$ is algebraically closed so the value group is dense). 
+	We know that $(a^{-1}T_i)^{m} \mapsto 0$ as $m \to 0$, but $|a f(T_i)| \to \infty $, which contradicts the continuity of $f$. 
+
+
+	As $K[\underline T]$ is dense in $K\left<\underline r^{-1} \underline T \right>$, $f$ is uniquely determined by its restriction to $K$. So $\Phi$ is injective.
+	To check that $\Phi$ is surjective, it is sufficient to note that for any $a = \sum_{\nu \in \N^{n}}^{} a_\nu \underline T^{\nu}$ with $r^{\nu} |a_\nu| \to 0$ the series $\sum_{\nu \in \N^{n}} a_\nu f(T^{\nu})$ is convergent in $A$. 
 \end{proof}
 
 
@@ -430,7 +439,7 @@ The $G$-topology and the structure sheaf can be slightly refined to allow finite
 
 
 This structure sheaf can also be used to define a structure sheaf on the cannonical topology as well. 
-\begin{definition}
+\begin{definition}\label{def:structuresheaf_cannonical_topology}
 	Let $X = \mathcal{M} (A)$. Then we can define a sheaf on $\mathcal{O}_X$ on $X$ via \[
 		\mathcal{O}_X\left( U \right)  = \varprojlim_{V \subset U} \mathcal{O}_X(V)
 	\]   
@@ -444,13 +453,15 @@ It is a grave abuse of notation to use $\mathcal{O}_X$ for both the structure sh
 It is imporant keep in mind that there are two topologies with their respective structure sheaf, namely a locally ringed space $(X, \mathcal{O}_X)$ and a locally ringed $G$-topological space $(X_G, \mathcal{O}_{X_G})$. 
 
 
-\subsection{$K$-analitic spaces} \label{sec:k_analitic_spaces}
+\subsection{$K$-analytic spaces} \label{sec:k_analytic_spaces}
 
 The Berkovich spectra of ($H$-strict) $K$-affinoid algebras can be glued together to obtain ($H$-strict) $K$-anlytic spaces, similar to how schemes are made out of spectra of rings. 
 However, the precise construction of this is more subtle than it looks at first glance and is therefore omitted from this document. 
 They will be discussed in the final version of my thesis. 
 
+For now it is important to know the following:
 A \emph{good} $K $-analytic space, is a $K$-analytic space where every point $x$ has a neighborhood isomorphic to $\mathcal{M} (A)$ for some $K$-affinoid algebra $A$. 
+On good  $K$-analytic spaces we can turn the structure sheaf on the $G$-topology into one on the ordinary topology, as in  \cref{def:structuresheaf_cannonical_topology}. 
 
 For ordinary $K$-analytic spaces we only require that some finite union affinoid domains containing $x$ is neighborhood of $x$. 
 
