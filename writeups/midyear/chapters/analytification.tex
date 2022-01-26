@@ -26,7 +26,7 @@ This universal property is very useful, but it would be nice to have an more con
 		X\an = \{(x, |\cdot |)  \mid x\in X, |\cdot | \text{ a norm on } \kappa(x) \text{ extending the norm on }K \} 
 	.\] 
 
-	This comes equipped with a cannonical projection map $i: X\an \to X, (x, |\cdot |) \mapsto  x$.
+	This comes equipped with a canonical projection map $i: X\an \to X, (x, |\cdot |) \mapsto  x$.
 	
 	$X\an $ comes with a topology which we define to be the coarsest topology such that 
 	\begin{itemize}
@@ -47,7 +47,7 @@ This universal property is very useful, but it would be nice to have an more con
 		X^{\an} = \mathcal{M} (A)
 	\] 
 
-	We will continue to write $\mathcal{M} (A)$ for the Berkovich analytification of $\spec A$, only this time it inclused the structure sheaf. 
+	We will continue to write $\mathcal{M} (A)$ for the Berkovich analytification of $\spec A$, only this time it includes the structure sheaf. 
 \end{remark}
 
 
@@ -84,7 +84,7 @@ This universal property is very useful, but it would be nice to have an more con
 	So \[
 		\spec A \an = \bigcup_{r= 1} ^{\infty} \mathcal{M} \left(\frac{K \left<r^{-1} T_1, \ldots, r^{-1} T_n \right>}{(f_1, \ldots, f_n)}\right)
 	.\] 
-	For general varities one can consider an affine cover by finite type algebras and glue their analytifications. 
+	For general varieties one can consider an affine cover by finite type algebras and glue their analytification. 
 	For a more detailed exposition of this construction see \cite{berkovichSpectralTheoryAnalytic2012}. 
 \end{example}
 
@@ -104,7 +104,7 @@ See \cref{fig:berk_projective_line}.
 \end{figure}
 
 
-Like the analytification of complex varieties there are cetrain GAGA results, which shows that under specific conditions all information is preserved by passing to the Berkovich analytification. 
+Like the analytification of complex varieties there are certain GAGA results, which shows that under specific conditions all information is preserved by passing to the Berkovich analytification. 
 Once one has setup the right definitions of smooth, flat, unramified, étale and open immersion for $K$-analytic spaces one can show the following:
 \begin{theorem}
 	Let $f: Y \to X$  be a morphism of $K$-varieties. Then $f\an: Y \an \to X\an$ has any of the following properties if and only $\phi$ has: flat, unramified, étale, smooth, separated, injective, surjective, open immersion, isomorphism and monomorphism. 
@@ -118,8 +118,8 @@ Once one has setup the right definitions of smooth, flat, unramified, étale and
 \begin{theorem}
 	The topology of $X\an$ reveals a lot of the ``topological'' properties of the scheme $X$. 
 	\begin{itemize}
-		\item $X$ is separtated if and only if $X\an$ is Haussdorf. 
-		\item $X$ is proper if and only if $X\an$ is Haussdorf and compact. 
+		\item $X$ is separated if and only if $X\an$ is Hausdorff. 
+		\item $X$ is proper if and only if $X\an$ is Hausdorff and compact. 
 		\item  $X$ is connected if and only if $X\an$ is path-connected. 
 		\item The Krull dimension of  $X$ is equal to the topological dimension of $X\an$. 
 	\end{itemize}
@@ -134,17 +134,17 @@ For more on the GAGA results see \cite[][sec.\ 3.4]{berkovichSpectralTheoryAnaly
 
 Recall that $R = \mathcal{O}_K = \{a \in K \mid |a| \le 1\} $, which is a topological ring with the metric induced by the norm. 
 Let $\pi$ be a pseudo-uniformizer for $R$ and $I = (\pi)$. 
-Then $\{I^{n}\}_n$ gives a system of neighborhoods around zero, and $R$ is complete with respect to this topology. 
+Then $\{I^{n}\}_n$ gives a system of neighbourhoods around zero, and $R$ is complete with respect to this topology. 
 This means that $R$ is an adic ring, which is useful if we want to use the language of formal schemes. 
 
-We first need to restric the class of rings and formal schemes we consider. 
+We first need to restrict the class of rings and formal schemes we consider. 
 \begin{definition}\label{def:topologically_finite_presentation_algebra}
 	\begin{itemize}
 		\item 
 	A \emph{topologically finitely presented} $R$-algebra is a quotient \[
 		R\left<x_1, \ldots, x_n \right> / \mathfrak{a} 
 	,\] where $\mathfrak{a}  = (f_1, \ldots, f_m)$ is a finitely generated ideal. 
-\item A formal scheme that is locally isomorphic to $\spf A$ for some toplogogically finite prestented $R$-algebra is called a \emph{locally finite type} $R$ formal scheme. 
+\item A formal scheme that is locally isomorphic to $\spf A$ for some topologically finite presented $R$-algebra is called a \emph{locally finite type} $R$ formal scheme. 
 	\end{itemize}
 
 \end{definition}
@@ -153,7 +153,7 @@ Given such a topologically finitely presented ring $A = \frac{R \left<x_1, \ldot
 A \otimes _R K = \frac{K \left<x_1, \ldots, x_n \right>}{(f_1, \ldots, f_m)}
 .\]  
 This suggest the following functor $\spf A \mapsto \mathcal{M} (A \otimes_R K)$. 
-Indeed this functor glues to give a functor from the topologicically finitely presented $R$ formal schemes to the category of $K$-analytic spaces. 
+Indeed this functor glues to give a functor from the topologically finitely presented $R$ formal schemes to the category of $K$-analytic spaces. 
 
 \begin{definition}\label{def:generic_fibre_of_formal_scheme}
 Given a topologically finitely presented formal schemes $\mathfrak{X} $ we call the resulting $K$-analytic space the \emph{generic fibre of  $\mathfrak{X} $} and denote it by $\mathfrak{X} _\eta$. 
@@ -162,8 +162,8 @@ Given a topologically finitely presented formal schemes $\mathfrak{X} $ we call 
 \begin{definition}
 	Let $X$ be a $K$-variety. 
 	\begin{itemize}
-		\item A formal model of $X$ is a locally finite type formal $R$-scheme together with an isomrophism $X\an \cong \mathfrak{X}_{\eta}$.
-		\item A formal model $\mathfrak{X}  $ of $X$ is \emph{semistable} if its special fibre $\mathfrak{X} _s = \mathfrak{X} \times_R \spec k$ is a conneced reduced curve whosesingularities are ordinary double points. 
+		\item A formal model of $X$ is a locally finite type formal $R$-scheme together with an isomorphism $X\an \cong \mathfrak{X}_{\eta}$.
+		\item A formal model $\mathfrak{X}  $ of $X$ is \emph{semistable} if its special fibre $\mathfrak{X} _s = \mathfrak{X} \times_R \spec k$ is a connected reduced curve whose singularities are ordinary double points. 
 	\end{itemize}
 \end{definition}
 
