@@ -1,18 +1,16 @@
-
-
-I will introduce a preliminary definition of the Berkovich spectrum of a ring, which for now will just be a topolgoical space. 
-It will serve build intuition for Berkovich spaces by exploring the Berkovich spectrum of two rings $\Z$ and $K[T]$ where $K$ is a complete algebraically closed field. 
+I will introduce a preliminary definition of the Berkovich spectrum of a ring, which for now will just be a topological space. 
+It will serve to build intuition for Berkovich spaces by exploring the Berkovich spectrum of two rings $\Z$ and $K[T]$ where $K$ is a complete algebraically closed field, with non-trivial absolute value. 
 
 \begin{definition}
-	Let $A$ be a ring. Then we define \[
+	Let $A$ be a ring. We define \[
 		\mathcal{M} (A) = \{x: A \to \R^{+} \st \text{multiplicative seminorm on } A\} 
 	.\] 
-	This comes equipped with the coarsest topology such that for every $a \in A$ the map $\mathcal{M} (A) \to [0, \infty) : \|\cdot \|_x \mapsto \|f\|_x $ is continuous. 
+	This comes equipped with the coarsest topology such that for every $f \in A$ the map $\mathcal{M} (A) \to [0, \infty) : \|\cdot \|_x \mapsto \|f\|_x $ is continuous. 
 
 	We will almost always deal with a relative case where $A$ is a $k$-algebra over some real valued field $K$. In this case adjust the definition \[
 		\mathcal{M} (A) = \{x : A \to \R^{ + }  \mid \text{multiplicative seminorm on }A \text{ extending the norm on } K\} 
 	.\] 
-	Again $\mathcal{M} (A)$ comes with the coarsest topology making all maps $\mathcal{M} (A) \to [0, \infty): x \mapsto \|a\|_x, \forall a \in A$ continuous. 
+	Again $\mathcal{M} (A)$ comes with the coarsest topology making all maps $\mathcal{M} (A) \to [0, \infty): x \mapsto \|f\|_x, \forall f \in A$ continuous. 
 \end{definition}
 We think of $\mathcal{M} (A)$ as a geometric space and thus its elements are points, usually denoted by a letter, like $x$. 
 For an element $f \in A$ we write $|f|_x$ or $x(f)$ for  $f$ evaluated in the norm $x$. 
@@ -55,7 +53,7 @@ For any point $x$ the map $\chi_x: A \to \mathcal{H} (x)$ gives a minimal repres
 \end{remark}
 
 \begin{proposition}\label{prop:spec_ring_haussdorf}
-	Let $R$ be a ring then $\mathcal{M} (R)$ is Haussdorf. 
+	Let $R$ be a ring then $\mathcal{M} (R)$ is Hausdorff. 
 \end{proposition}
 \begin{proof}
 	Let $x, y \in \mathcal{M} (R)$ be two different points. 
@@ -67,9 +65,9 @@ For any point $x$ the map $\chi_x: A \to \mathcal{H} (x)$ gives a minimal repres
 
 
 \subsection{The Berkovich spectrum of $\Z$} \label{sec:the_berkovich_spectrum_of_z}
-Classyfing all norms on $\Z$ was already done by Ostrowski.
+Classifying all norms on $\Z$ was already done by Ostrowski.
 \begin{theorem}[Ostrowski]\label{thm:ostrowksi}
-	Any multiplicative norm $|\cdot |'$ on $\Z$ is either
+	Any multiplicative norm on $\Z$ is either
 	\begin{itemize}
 		\item \emph{the trivial norm} \[
 				|\cdot |_0: n \mapsto \begin{cases}
@@ -100,11 +98,12 @@ So for every $p \in \{\text{primes}\} \cup \{\infty\} $ we find a continuous fam
 \] 
 for $\epsilon \in [0, 1]$ if $p = \infty$ and else $\epsilon \in [0, \infty]$. 
 When $\epsilon = 0$ these all give the trivial norm. 
-So these rays glue together at at point and the Berkovich space $\mathcal{M} (\Z)$ looks like \cref{fig:berkovich-space-of-z}.
-We have to be careful with the topology here. 
-While each of branches is homemorphic to a closed interval, they are not glued together along an open. 
+So these rays glue together at the point $|\cdot |_0$ of trivial norm.
+Hence the Berkovich space $\mathcal{M} (\Z)$ looks like \cref{fig:berkovich-space-of-z}.
+We have to be careful with the topology here.
+While each of branches is homeomorphic to a closed interval, they are not glued together along an open.
 So the topology is not uniquely determined by the topology of each branch separately.
-In fact, any open containing the point $|\cdot |_0$ has to contain all but finitely many of the branches. 
+In fact, any open containing the point $|\cdot |_0$ has to contain all but finitely many of the branches.
 
 \begin{figure}[h]
     \centering
@@ -124,7 +123,7 @@ It is a good exercise to verify that
 While it may seem like the completed residue field of different norms can be the same, it is actually not as they will be equipped with different norms.  
 
 
-\subsection{Berkovich specturm of $\aff^{1}_K$} \label{sec:berkovich_specturm_of_affine_line}
+\subsection{Berkovich spectrum of $\aff^{1}_K$} \label{sec:berkovich_specturm_of_affine_line}
 
 
 For the rest of this document we will let $K$ be a fixed complete algebraically closed non-archimedean field with non-trivial absolute value. We write 
@@ -138,26 +137,26 @@ Note that $k$ is automatically algebraically closed as well.
 \medskip
 
 We will describe the Berkovich space of the polynomials in one variable  $\mathcal{M} (K[T])$ where $K$ like usual is an algebraically closed, complete field which is not trivially-valued. 
-We will call this $\aff_K^{1}\an$, the analityfication of the affine line. 
+We will call this $\aff_K^{1}\an$, the \emph{analytification of the affine line}, or sometimes the \emph{Berkovich affine line}. 
 
 One way to find norms on $K[T]$ would taking a point $a \in K$ and define $|f|_a = |f(a)|_K$ where $|\cdot |_K$ is the norm on $K$. 
-So there is a natural embedding $K \into \mathcal{M}(K[T])$ and we often implicitly identify these points.  
+So there is a natural embedding $K \into \mathcal{M}(K[T])$ and we will implicitly identify these points.  
 
 Another way to define a norm is by choosing a closed disk $B(a, r) = \{x \in K \st |x - a| \le r\} $ with center $a$, and radius $r$ and define \[
 	|f|_{B(a, r)} = \sup_{x \in B(a, r)} |f(x)|
 .\] 
 \begin{claim}
 	The norm $|f|_{B(a, r)}$ as defined above is a well defined multiplicative seminorm extending the norm on $K$. 
-	If $r \in |K|$ then the sumpremum is a maximum and the maximum is obtained for some point on the boundary of $B(a, r)$.
+	If $r \in |K|$ then the supremum is a maximum and the maximum is obtained for some point on the boundary of $B(a, r)$.
 \end{claim}
 \begin{proof}
 	Let $f = \sum_{i = 0}^{n} a_i T^{i}$. 
 	Then for $x \in B(a, r)$ we have $|x| \le |a| + r$. 
 	So  $|f(x)| \le  \sum_{i = 0}^{n} |a_i| |x|^{i} \le \sum_{i = 0}^{n}|a_i| (|a| + r)^{i} $. 
-	This last bound is indenpent of $x$. Hence the supremem exists. 
+	This last bound is indecent of $x$. Hence the supremum exists. 
 
 	Non-archimedean triangle inequality and extending the norm on $K$ is easily checked. 
-	The multiplicativity is a little bit more suttle. 
+	The multiplicatively is a little bit more subtle. 
 
 	Without loss of generality we may translate the disk such that $a = 0$. 
 	Lets assume for now that $r \in |K|$.
@@ -166,12 +165,12 @@ Another way to define a norm is by choosing a closed disk $B(a, r) = \{x \in K \
 	Clearly the seminorm is multiplicative for elements in  $K$, i.e.\ for every $\lambda \in K, f \in K[t]: |\lambda \cdot f|_{B(a, r)} = |\lambda|\cdot |f|_{B(a, r)}$.  Let $f, g \in K[T]$, which we may rescale by an element of $K$, such that the largest coefficient of $f, g$ has norm $1$. In particular this means that $|f|_{B(0,1)}, |g|_{B(0,1)} \le 1$. 
 	Then $f, g \in R[T]$ and their  reductions modulo  $\pi$ $\overline{f}, \overline{g} \in k[T]$ are nonzero.
 	So $\overline{f}, \overline{g}$ have only a finite number of roots. In particular these is some $\overline{a} \in k$, represented by $a \in R$ such that $\overline{f}(\overline{a}) \ne 0, \overline{f}(\overline{a})\ne 0$. 
-	Hence $f(a), g(a) \in R = B(0, 1)$ an $|f(a)| = |g(a)| = 1$. 
-	So the supremem is obtained in $a$ for both polynomials and the norm is multiplicative as the supremem for $f\cdot g$ will also be obtained in $a$. 
+	So $f(a), g(a) \in R = B(0, 1)$ and $|f(a)| = |g(a)| = 1$. 
+	So the supremum is obtained in $a$ for both polynomials and the norm is multiplicative as the supremem for $f\cdot g$ will also be obtained in $a$. 
 \end{proof}
 
 \begin{remark}\label{rem:norm_disk}
-	From the proof above it follows that if $f = \sum_{i = 0}^{n} b_i (T-a)^{i}$ is the taylor expansion of $f$ around $a$ then for any $r$
+	From the proof above it follows that if $f = \sum_{i = 0}^{n} b_i (T-a)^{i}$ is the Taylor expansion of $f$ around $a$ then for any $r$
 	\[
 		|f|_{B(a, r)} = \max_{i}\{  |b_i|r^{i}\}
 	.\] 
@@ -181,25 +180,25 @@ Another way to define a norm is by choosing a closed disk $B(a, r) = \{x \in K \
 
 So the space of closed discs in $K$, which includes points (discs of radius zero), embeds as well in $\mathcal{M} (K[T])$. 
 As we will see in a second these will make up almost all of the points on $\mathcal{M} (K[T])$. 
-Ingoring these missed points, this means that $\mathcal{M}(K[T])$ is connected. 
+If we ignore these missing points for a moment, this means that $\mathcal{M}(K[T])$ is connected. 
 Indeed, let $a \in K$ be any point. Then we can define a line \begin{equation}\label{eq:line_in_A_1}
 	\ell_a: [0, \infty) \to  \aff_K^{1, \text{an}}: r\mapsto B(a, r)
 \end{equation}
-Because in an ultrametric space any point in a ball is a centre of ball, we see that for any two points $a, b$ the lines $\ell_a, \ell_b$ consinde for any $r \ge |a - b|$. 
+Because in an ultrametric space any point in a ball is a centre of ball, we see that for any two points $a, b$ the lines $\ell_a, \ell_b$ coincide for any $r \ge |a - b|$. 
 So $\aff_K^{1,\text{an}}$ is not only connected, it is path connected!
 
 We have been missing a few points on $\aff_K^{1, \text{an}}$. 
 The Berkovich classification theorem gives all points. 
 \begin{theorem}
-	[Berkovich Classification theorem, \cite{bakerarizona}] 
-	Any point $x \in \aff_K^{1,\text{an}}$ is given by decreasing sequences of closed disks $B_n = B(a_n, r_n)$ in $K$ by the formula \begin{equation}\label{eq:norm_disk_polynomial}
+	[Berkovich classification theorem, \cite{bakerarizona}] 
+	Any point $x \in \aff_K^{1,\text{an}}$ is given by a decreasing sequences of closed disks $B_n = B(a_n, r_n)$ in $K$ by the formula \begin{equation}\label{eq:norm_disk_polynomial}
 	|f|_x = \lim_{n \to \infty} |f|_{B_n}
 	.\end{equation}
-	Morover, two such sequences $B_n, B'_n$ define the same norm if and only if:
+	Moreover, two such sequences $B_n, B'_n$ define the same norm if and only if:
 	 \begin{itemize}
 		\item Both sequences have the same non-emtpy intersection, i.e.\ $\bigcap_{n = 1}^{\infty} B_n = \bigcap_{n = 1}^{\infty} B_n' \ne \emptyset$. 
 			In this case the intersection $B = \bigcap_{n \in N} B_n$ is a closed disk (possibly a point) and $x = |\cdot |_B$. 
-		\item Both sequences have empty intersection, i.e.\ $\bigcap_{n = 1}^{\infty} B_n = \bigcap_{n = 1}^{\infty} B_n' = \emptyset$  and for every $n$ there are $m, m'> n$ such that $B_n \supset  B'_{m'}$  and $B'_n \supset B_m $.
+		\item Both sequences have empty intersection, i.e.\ $\bigcap_{n = 1}^{\infty} B_n = \bigcap_{n = 1}^{\infty} B_n' = \emptyset$  and for every $n$ there is an $m$ such that $B'_m \subset  B_n$  and $B_m \subset  B'_n$.
 	\end{itemize}
 	This means that we can classify the points in $\aff ^{1,\text{an}}_K$ into four types depending on $B = \bigcap_{n \in \N} B_n$. 
 	\begin{description}
@@ -216,7 +215,7 @@ As you can see our previous discussion has excluded type four points. We will se
 
 	Let $x \in \aff_K^{1, \text{an}}$ be a multiplicative seminorm on $K[T]$. 
 	As  $K$ is algebraically closed every polynomial factors into linear factors $(T-a)$. 
-	Hence $x$ is uniquely detemrined by its value $|T-a|_x$ for each $a \in K$. 
+	Hence $x$ is uniquely determined by its value $|T-a|_x$ for each $a \in K$. 
 	We will write $\rho_a = |T-a|_x$.
 	Let  $a, b \in K$ such that $\rho_a \le \rho_b$. 
 	Then  \begin{equation}\label{eq:proof_berk_class_1}
@@ -257,7 +256,7 @@ There are other ways of recognizing type I, II, III and IV points, which will ge
 
 \begin{proposition}
 	Let $x \in \aff_K^{1,\text{an}}$. 
-	Let $C = \pi_0(\aff_K^{1, \an}\setminus \{ x\} )$ be the set of connected components the punctured affine line. 
+	Let $C = \pi_0(\aff_K^{1, \an}\setminus \{ x\} )$ be the set of connected components of the punctured affine line. 
 	\begin{itemize}
 		\item If $x$ is of type I  or IV then $C$ has only one element.
 		\item If $x$ is of type II then there a natural morphism $C \simeq k \cup \{\infty\} $. Recall that $k = \tilde K = K^{o} / K^{oo} $. 
@@ -274,13 +273,13 @@ The algebraic way to classify the points of $\aff_K^{1,\text{an}}$ is by using A
 	.\] 
 \end{definition}
 
-\begin{theorem}[Abhyankar inequality]
-	Let $K \subset H \subset L$ be non-archimeadean rings extending each others norm. Assume that $L$ is algebraic over $\hat{H}$ and that $H$ is of trancendence degree $n$ over $K$. Then \[
+\begin{theorem}[Abhyankar's inequality]
+	Let $K \subset H \subset L$ be non-archimedean rings extending each others norm. Assume that $L$ is algebraic over $\hat{H}$ and that $H$ is of transcendence degree $n$ over $K$. Then \[
 	E_{L / K} + F_{L / K}  \le n
 	.\] 
 \end{theorem}
 
-If $x \in \aff_K^{1, \text{an}}$ is a norm (not a seminorm) then its residue field $\mathcal{H} (x)$ is a completion on $K(T)$ with respect to the norm induced by $x$. As $K(T)$ is of trancendence degree 1 Abhyankar's inequality states that \[
+If $x \in \aff_K^{1, \text{an}}$ is a norm (not a seminorm) then its residue field $\mathcal{H} (x)$ is a completion on $K(T)$ with respect to the norm induced by $x$. As $K(T)$ is of transcendence degree 1 Abhyankar's inequality states that \[
 	E_{\mathcal{H} (x) / K} + F_{\mathcal{H} (x) / K} \le 1
 .\] 
 This also allows us to classify points, because either both $E_{\mathcal{H} (x) / K}, F_{\mathcal{H} (x) / K}$ are zero, or exactly one is $1$. 
