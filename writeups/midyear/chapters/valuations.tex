@@ -1,6 +1,6 @@
 On rings like $\Z$ and $\Q$ and $\C$ the absolute value function gives away of measuring how low \emph{large} each element is. 
-We can axiomatize proterties of an absolute value function and look for them on arbitrary rings. 
-These types of functions are called (semi)norms, absolute values or valuations, depending on the specific propreties and context.  
+We can axiomatize properties of an absolute value function and look for them on arbitrary rings. 
+These types of functions are called (semi)norms, absolute values or valuations, depending on the specific proprieties and context.  
 \begin{definition}
 	Let $R$ be a ring. A \emph{absolute value on $R$} is a function $|\cdot |: R \to \R^{+} \cup \{0\} $ satisfying for all $a, b \in R$
 	\begin{enumerate}
@@ -31,36 +31,36 @@ Note that $R$ is not the zero ring, then $|1| = 1$ because $|1|^2 = |1| $ and $|
 	Factor out the largest powers of $p$ out of $a$ and $b$ and write $a = p^{n} a', b = p^{m} b'$. Then $\frac{a}{ b} = p^{n - m} \frac{a'}{ b'}$ and $|a / b|_p = p^{m - n}$. 
 	So the $p$-adic absolute values only cares about what powers of $p$ occur and doesn't care about numbers coprime to $p $.
 \end{example}
-As we will see in \cref{sec:the_berkovich_spectrum_of_z}, we have esssentially listed all absolute values on $\Z$ and $\Q$ as examples above.  
+As we will see in \cref{sec:the_berkovich_spectrum_of_z}, we have essentially listed all absolute values on $\Z$ and $\Q$ as examples above.  
 
 \begin{proposition}
 	A ring $R$ with an absolute value is a metric space with metric $d(x, y) = |x - y|$. 
 \end{proposition}
 \begin{definition}
-	A ring $R$ with absolute value is \emph{complete} if all Cauchy sequences are covergent. 
+	A ring $R$ with absolute value is \emph{complete} if all Cauchy sequences are convergent. 
 \end{definition}
 \begin{definition}
 	Any ring $R$ with absolute value can be completed, which is defined as \[
 		\widehat{R} = \{(a_n)_n \text{ Cauchy sequence in } R\} / \sim
 	\] 
 	where two sequence $(a_n)_n, (b_n)_n$ are equivalent if $(a_n - b_n)_n \to 0$ as $n \to \infty$.
-	Given  $a, b \in R$ with representivis $(a_n)_n, (b_n)_n$, the addition and multiplication are defined as $a + b = [(a_n + b_n)], a\cdot b = [(a_n \cdot b_n)]$. 
+	Given  $a, b \in \widehat{R}$ with representatives $(a_n)_n, (b_n)_n$, the addition and multiplication are defined as $a + b = [(a_n + b_n)_n], a\cdot b = [(a_n \cdot b_n)_n]$. 
 \end{definition}
 
 Absolute values are a special case of (semi)norms
 \begin{definition}
-	Let $R$ be any ring. A \emph{seminorm on $R$} is a function $|\cdot |: R \to \R^{+} \cup \{0\} $ satisfying for all $a, b \in R$ 
+	Let $R$ be any ring. A \emph{seminorm on $R$} is a function $|\cdot |: R \to \R^{+} \cup \{0\} $ satisfying for all $a, b \in R$:
 	\begin{enumerate}
-		\item $|0| = 0, |1| = 1$ 
-		\item $|a \cdot b| \le |a| \cdot |b|$  (submultiplicativity)
-		\item $|a + b| \le |a| + |b|$ (triangle inequality)
+		\item $|0| = 0, |1| = 1$,
+		\item $|a \cdot b| \le |a| \cdot |b|$  (submultiplicativity),
+		\item $|a + b| \le |a| + |b|$ (triangle inequality).
 	\end{enumerate}
 	A seminorm is called \emph{multiplicative} if it also satisfies a stronger version of 2. 
 	\begin{enumerate}
-		\item [4.]  $|a \cdot  b| = |a| \cdot |b|$
+		\item [4.]  $|a \cdot  b| = |a| \cdot |b|$.
 	\end{enumerate}
 \end{definition}
-Sometimes we will stress the fact that a (semi)norm might not be multiplicative and call it a \emph{submultiplicative norm}. 
+Sometimes we will stress the fact that a seminorm might not be multiplicative and call it a \emph{submultiplicative norm}. 
 
 \begin{lemma}
 	If $|\cdot |$ is a multiplicative seminorm on $R$ then  $|a | = |-a|$ for all $a \in R$. 
@@ -94,8 +94,8 @@ Like the ordinary $\spec$ functor we can define the space of all multiplicative 
 Unfortunately you can't just copy all constructions we know for $\spec$. 
 For example, we can't define a Zarisky topology on this set. 
 In fact we will need two different topologies on this space for the theory to work. 
-Don't worry, this is a feature, not a bug. 
-One topology will have all the nice properties you can think of: Haussdorf, compact, path-connected, locally contractible, \ldots while the other one is great for sheaf theory. 
+Don't worry, this is a feature, not a bug! 
+One topology will have all the nice properties you can think of: Hausdorff, (locally) compact, path-connected, locally contractible, \ldots while the other one is great for sheaf theory. 
 
 
 \begin{definition}
@@ -115,15 +115,14 @@ So an absolute value is a multiplicative norm.
 
 \subsection{Non-Archimedean rings and fields} \label{sec:non-archimedean_rings_and_fields}
 \begin{definition}
-	A (semi)norm $|\cdot |$ on $R$ is called \emph{non-archimedean} if it satisies the following stronger version of the triangle inequality, \[
-	\forall a, b \in \R: |a + b| \le \max \{|a|, |b|\} 
+	A (semi)norm $|\cdot |$ on $R$ is called \emph{non-archimedean} if it satisfies the following stronger version of the triangle inequality, \[
+	\forall a, b \in R: |a + b| \le \max \{|a|, |b|\} 
 	.\] 
-
-	Confusingly a \emph{Archimedean (semi)norm} is a norm that is not non-archimedean.
+	Confusingly a \emph{archimedean (semi)norm} is a norm that is not non-archimedean.
 \end{definition}
 
 \begin{definition}
-	A \emph{non-archimedean ring} (resp.\ \emph{field}) is a ring (resp.\ field) equipped with multiplicative non-archimedean norm. 
+	A \emph{non-archimedean ring} (resp.\ \emph{field}) is a ring (resp.\ field) equipped with a multiplicative non-archimedean norm. 
 \end{definition}
 
 \begin{exercise}[\cite{nicaiseNONARCHIMEDEANGEOMETRY}]
@@ -167,7 +166,7 @@ So an absolute value is a multiplicative norm.
 \end{proof}
 The non-archimedean triangle inequality sounds like a really strong property and thus it might seem that not many norms will be non-archimedean. 
 But as you will see in this thesis, most norms that pop up are non-archimedean. 
-In fact the only complete valued fields with archimedean norms are $\R$ and $\C$.\footnote{This is a consequence of Gel'fand-Mazur theorem and Ostowki's classification (see \cref{thm:ostrowksi}) of norms on $\Q$.}
+In fact the only complete valued fields with archimedean norms are $\R$ and $\C$.\footnote{This is a consequence of Gel'fand-Mazur theorem and Ostrowki's classification (see \cref{thm:ostrowksi}) of norms on $\Q$.}
 
 
 
@@ -186,7 +185,7 @@ These are typically called valuations.
 \end{definition}
 
 \begin{remark}
-	Note that there is essentially no difference between a non-archimedean absolute value and a valuation because because they are in bijective correspondence with one another.  For absolute value $|\cdot |$ defines a valution $x \mapsto -\log |x|$ and given a valution $v$ one defines a non-archimedean absolute value $x\mapsto e^{- v(x)}$. 
+	Note that there is essentially no difference between a non-archimedean absolute value and a valuation because because they are in bijective correspondence with one another.  Any absolute value $|\cdot |$ defines a valuation $x \mapsto -\log |x|$ and given a valuation $v$ one defines a non-archimedean absolute value $x\mapsto e^{- v(x)}$. 
 \end{remark}
 
 
@@ -205,10 +204,11 @@ These are typically called valuations.
 \end{corollary}
 \begin{proof}
 	Recall that \[
-	\overline{K} = \varprojlim_{L \supset K} L
-	.\] 
+	\overline{K} = \varinjlim_{L \supset K} L
+	,\] 
 	where $L$ ranges over all algebraic extensions of $K$. 
-	As all these algebraic extensions have unique norms extending  the norm on $K$ and for $L_1 \supset L_2 \supset K$ the norm on  $L_1$ must restrict to norm on $L_2$ by uniqueness, it is clear that the norm functions $L \to \R^{+}$ glue to a map $\|\cdot \|: \overline{K} \to \R^{+}$. 
+	As all these algebraic extensions have unique norms extending  the norm on $K$ and for $L_1 \supset L_2 \supset K$ the norm on  $L_1$ must restrict to norm on $L_2$ by uniqueness. 
+	It is clear that the norm functions $L \to \R^{+} \cup \{0\} $ glue to a map $\|\cdot \|: \overline{K} \to \R^{+} \cup \{0\} $. 
 
 	It is easy to verify that this is a norm on $\overline{K}$ extending the norm on $K$. 
 \end{proof}
@@ -222,7 +222,7 @@ These are typically called valuations.
 	This follows from the continuity of roots. See \cite[][lem A.6]{boschLecturesFormalRigid2014} for a detailed argument. 
 \end{proof}
 
-This show that we can cannonically turn any non-archimedean field $K$ into an algebraically closed and complete field in a cannonical way by considering $\widehat{\overline{K}}$, which is first taking the algebraic closure of $K$ and then completing it. 
+This shows that we can canonically turn any non-archimedean field $K$ into an algebraically closed and complete field in a canonical way by considering $\widehat{\overline{K}}$, which is first taking the algebraic closure of $K$ and then completing it. 
 
 \begin{definition}
 	For a prime $p$ we define the \emph{p-adic complex numbers} as \[
@@ -233,16 +233,16 @@ This show that we can cannonically turn any non-archimedean field $K$ into an al
 This is useful because Berkovich geometry works best when the base field is algebraically closed and complete. 
 
 \begin{definition}
-	Let $R$ be a non-archimedean ring. Then we write 
+	Let $R$ be a non-archimedean ring. We write 
 	\begin{align*}
 		R^{o} &= \{a \in k \st |k| \le 1\}  \\
 		R^{oo} &=  \{a \in k \st |k| < 1\}  \\
 		\widetilde R &= R^{o} / R^{oo}
 	.\end{align*}
 \end{definition}
-If $k$ is a field then $k^{0}$ is a valuation ring and $ k^{00}$ is its maximal ideal. 
 
-We will useally write $K$ for a non-arcimedean field, $R = K^{0}$ for its valuation ring, $k = \widetilde K$ for its residue field. 
+If $k$ is a field then $k^{0}$ is a valuation ring and $ k^{00}$ is its maximal ideal. 
+We will usually write $K$ for a non-archimedean field with non-trivial norm, $R = K^{0}$ for its valuation ring, $k = \widetilde K$ for its residue field. 
 
 \begin{definition}
 	Let $K$ be a non-archimedean field. 
@@ -261,9 +261,9 @@ We will useally write $K$ for a non-arcimedean field, $R = K^{0}$ for its valuat
 		d(x, y) \le \max \{d(x, z) ,d(z, y)\}, \quad \forall x, y ,z \in X
 	.\] 
 \end{definition}
-\begin{exercise}
+\begin{lemma}
 	If $d(x,z) \ne d(z,y)$ the inequality is an equality. 
-\end{exercise}
+\end{lemma}
 \begin{proof}
 	Suppose without loss of generality that $d(x, z) \ge d(z,y)$, so $d(x, y) \le \max \{d(x, z), d(z,y)\} = d(x, z) $. 
 	Then $d(x, z) \le \max \{d(x, y), d(y,z)\}$. So $d(x, z) \le d(x, y) \le d(x, z)$. So we find equality.
