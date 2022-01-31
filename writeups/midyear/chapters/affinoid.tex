@@ -50,7 +50,7 @@ To describe the category of $K$-Banach algebras we still need morphisms.
 
 There is also a good way to equip the tensor product of Banach $K$-algebras with a submultiplicative norm, turning is again into a Banach $K$-algebra.
 \begin{definition}
-	Let $A, B, C$ be Banach $K$-algebras with morphisms  $C\to A, C \to B$. Then the \emph{completed tensor product}, written $A \widehat \otimes_C B$, is the ring $A \otimes_C B$ with norm defined by \[
+	Let $A, B, C$ be Banach $K$-algebras with morphisms  $C\to A, C \to B$. Then the \emph{completed tensor product}, written $A \widehat \otimes_C B$, is the completion of the ordinary tensor product $A \otimes_C B$ with norm defined by \[
 		\|x\| = \inf \left\{\max_{i = 1}^{n} |a_i||b_i|  \st n \in \N, a_i \in A, b_i \in B, x = \sum_{i = 1}^{n} a_i \otimes_C b_i\right\} 
 	\] 
 	for any $x \in A \otimes_C B$. 
@@ -126,7 +126,16 @@ Note that due to \cref{rem:uniqueness_norm_banach_algebra}, the space $\mathcal{
 	I claim that this norm is multiplicative. 
 	First we will show that $|\cdot |_\text{min} $ is power multiplicative. 
 	Define $\rho(a) = \lim_{n \to \infty} \sqrt[n]{|a^{n}|_\text{min} } $. Then $\rho$ is powermultiplicative and $\rho \le |\cdot |_\text{min} $. Hence $\rho = |\cdot |_\text{min} $. 
-	Now we will show that $|f^{-1}| = |f|^{-1}$ for any $f \ne 0$. 
+
+	Now we will show that $|f^{-1}|_\text{min}  = |f|^{-1}_\text{min} $ for any $f \ne 0$. 
+	Suppose that this isn't the case. Let  $r = |f^{-1}|^{-1} < |f|$. 
+	Define \[
+	B = \left\{b = \sum_{i = 0}^{\infty} a_i T^{i}\st \|b\|  =\sup |b_i|_\text{min}  r^{i} < \infty\right\} 
+	.\] 
+	We will see in the next section that this is a Banach algebra. Then $(T - f)^{-1} = f^{-1}\sum_{i = 0}^{\infty} (f^{-1} T)^{i} \not\in B $. So $T - f$ is not invertible, and in particular $(T - f)$ is a closed ideal. 
+	Hence we can define $A' = B / (T - f)$ equipped with the residue norm. 
+	This gives contractive morphisms  $A \to B \to A'$ and we can pull back the norm on $\|\cdot \|$ on $A'$ to $A$. 
+	Note that $\|f\| = \|T\|  \le  r < f$. So $\|\cdot \|$ contradicts the minimity of $|\cdot |_\text{min} $
 	\question{Is er een mannier om te zien dat dit waar is voor de spectrale norm? Er staat iets redelijk uitgebreid in \cite[][thm.\ 1.2.1]{berkovichSpectralTheoryAnalytic2012}, maar het lijkt me alsof het eenvoudiger kan aangezien powermultiplicative ook eenvoudiger kon.}
 
 	Now we can easily show that $|\cdot |_\text{min} $ is multiplicative. 
@@ -187,7 +196,7 @@ Similarly to polynomial rings, these Tate algebras are \emph{free} in a sense ma
 		f &\longmapsto (f(T_1), \ldots, f(T_n))
 	\end{align*}
 	is a well defined isomorphism. 
-	The hom-set is in the category of $K$-Banach algebras
+	Here the hom-set is in the category of $K$-Banach algebras and $A_{\le r} = \{a \in A \st (r^{-n}|a^{n}|)_n \text{ is bounded}\} $
 \end{proposition}
 \begin{proof}
 	Lets first check that the map is well defined. 
@@ -216,7 +225,7 @@ This does not mean that $A$ necessarily comes equipped with the residue norm, bu
 	Affinoid algebras are Noetherian and all ideals are closed. 
 \end{proposition}
 \begin{proof}
-	\todo{find reference. This is stated as fact 3.1.2.1 in \cite{temkinIntroductionBerkovichAnalytic2010} but without proof or reference to proof}	
+	See \cite[][chap.\ 6 prop.\ 3]{siegfriedboschNonArchimedeanAnalysisSystematic1984} for the case of strict affinoid algebras and \cite[][prop.\ 2.1.3]{berkovichSpectralTheoryAnalytic2012} for how to extend that result general affinoid algebras. 
 \end{proof}
 
 \subsection{Affinoid domains} \label{sec:affinoid_domains}
@@ -382,10 +391,10 @@ First we need to define a $G$-topology. In this section it doesn't really matter
 
 \begin{definition}
 	Let $A$ be an affinoid algebra. 
-	The \emph{weak $G$-topology} on $\mathcal{M} (A)$ is the topology where the admissible opens are the affinoid domains and the covers are finite set theoretic covers of affinoid domains. 
+	The \emph{$G$-topology} on $\mathcal{M} (A)$ is the topology where the admissible opens are the affinoid domains and the covers are finite set theoretic covers of affinoid domains. 
 \end{definition}
 
-We can define a presheaf $\mathcal{O}_X$ on $X =\mathcal{M} (A)$ with the weak  $G$-topology by defining $\mathcal{O}_X(V) = \mathcal{A} _V$ for any affinoid domain $V$ represented by $\mathcal{A}_V$.
+We can define a presheaf $\mathcal{O}_X$ on $X =\mathcal{M} (A)$ with the $G$-topology by defining $\mathcal{O}_X(V) = \mathcal{A} _V$ for any affinoid domain $V$ represented by $\mathcal{A}_V$.
 The restiction maps are given by the defining property of affinoid domains.
 
 This presheaf turns out to be a sheaf, which will follow from the following theorem. 
@@ -407,7 +416,7 @@ This presheaf turns out to be a sheaf, which will follow from the following theo
 
 
 \begin{corollary}
-	The presheaf $\mathcal{O}_X$ is a sheaf on the weak $G$-topology of $X$.
+	The presheaf $\mathcal{O}_X$ is a sheaf on the $G$-topology of $X$.
 \end{corollary}
 \begin{proof}
 	Let $V$ be an affinoid domain and $\{V_i\} $ a finite cover. 
@@ -427,16 +436,12 @@ The $G$-topology and the structure sheaf can be slightly refined to allow finite
 	We write $S(X)$ for the set of \emph{special sets} on $X$. 
 \end{definition}
 
-\begin{proposition}
+\begin{definition}
 	$S(X)$ with finite covers defines a $G$-topology on $X$. 
 	The structure sheaf  $\mathcal{O}_X$ on $X$ can be extended to a sheaf on $S(X)$ by defining \[
 		\mathcal{O}_X(V) = \ker\left(\prod_i A_{V_i} \to \prod_{ij} A_{V_{ij}}\right)
 	.\] 
-\end{proposition}
-\begin{proof}
-	That this is well defined is a consequence of Tate's acyclicity theorem (\ref{thm:tate_acyclicity}). 
-	\todo{Either work this out or find a source that is earlier than Wojteks thesis}
-\end{proof}
+\end{definition}
 
 
 This structure sheaf can also be used to define a structure sheaf on the canonical topology as well. 
@@ -446,9 +451,6 @@ This structure sheaf can also be used to define a structure sheaf on the canonic
 	\]   
 	where $V$ runs over all the special sets.
 \end{definition}
-\begin{proof}
-	\todo{find a proof that this still is a sheaf to reference. Too bulky to work out}
-\end{proof}
 This turns $X$ into a locally ringed topological space. 
 It is a grave abuse of notation to use $\mathcal{O}_X$ for both the structure sheaf on the $G$-topology of $X$ as well as the canonical topology. 
 It is important keep in mind that there are two topologies with their respective structure sheaf, namely a locally ringed space $(X, \mathcal{O}_X)$ and a locally ringed $G$-topological space $(X_G, \mathcal{O}_{X_G})$. 

@@ -148,12 +148,15 @@ Another way to define a norm is by choosing a closed disk $B(a, r) = \{x \in K \
 \begin{claim}
 	The norm $|f|_{B(a, r)}$ as defined above is a well defined multiplicative seminorm extending the norm on $K$. 
 	If $r \in |K|$ then the supremum is a maximum and the maximum is obtained for some point on the boundary of $B(a, r)$.
+	Moreover, if  $f = \sum_{i = 0}^{n} b_i (T-a)^{i}$ is the Taylor expansion of $f$ around $a$ then for any $r \in [0, \infty)$ the norm can be computed as \begin{equation}\label{eq:norm_disk_taylor}
+		|f|_{B(a, r)} = \max_{i}\{  |b_i|r^{i}\}
+	.\end{equation} 
 \end{claim}
 \begin{proof}
 	Let $f = \sum_{i = 0}^{n} a_i T^{i}$. 
 	Then for $x \in B(a, r)$ we have $|x| \le |a| + r$. 
 	So  $|f(x)| \le  \sum_{i = 0}^{n} |a_i| |x|^{i} \le \sum_{i = 0}^{n}|a_i| (|a| + r)^{i} $. 
-	This last bound is indecent of $x$. Hence the supremum exists. 
+	This last bound is independent of $x$. Hence the supremum exists. 
 
 	Non-archimedean triangle inequality and extending the norm on $K$ is easily checked. 
 	The multiplicatively is a little bit more subtle. 
@@ -166,16 +169,13 @@ Another way to define a norm is by choosing a closed disk $B(a, r) = \{x \in K \
 	Then $f, g \in R[T]$ and their  reductions modulo  $\pi$ $\overline{f}, \overline{g} \in k[T]$ are nonzero.
 	So $\overline{f}, \overline{g}$ have only a finite number of roots. In particular these is some $\overline{a} \in k$, represented by $a \in R$ such that $\overline{f}(\overline{a}) \ne 0, \overline{f}(\overline{a})\ne 0$. 
 	So $f(a), g(a) \in R = B(0, 1)$ and $|f(a)| = |g(a)| = 1$. 
+	In particular \cref{eq:norm_disk_taylor} holds. 
 	So the supremum is obtained in $a$ for both polynomials and the norm is multiplicative as the supremem for $f\cdot g$ will also be obtained in $a$. 
+
+
+	To obtain the result also holds for $r \not\in |K^{\times }|$, we use that any such disk $B(a, r)$ can be written as an inceasing union of closed disks with radii in the value group. The result now follows from the continuity of \cref{eq:norm_disk_taylor} and the continuity of multiplication. 
 \end{proof}
 
-\begin{remark}\label{rem:norm_disk}
-	From the proof above it follows that if $f = \sum_{i = 0}^{n} b_i (T-a)^{i}$ is the Taylor expansion of $f$ around $a$ then for any $r$
-	\[
-		|f|_{B(a, r)} = \max_{i}\{  |b_i|r^{i}\}
-	.\] 
-\end{remark}
-\question{Heeft dit een rigoreuser bewijs nodig?}
 
 
 So the space of closed discs in $K$, which includes points (discs of radius zero), embeds as well in $\mathcal{M} (K[T])$. 
@@ -261,10 +261,15 @@ There are other ways of recognizing type I, II, III and IV points, which will ge
 		\item If $x$ is of type I  or IV then $C$ has only one element.
 		\item If $x$ is of type II then there a natural morphism $C \simeq k \cup \{\infty\} $. Recall that $k = \tilde K = K^{o} / K^{oo} $. 
 			So $x$ is an branch point where infinitely many branches connect. 
-		\item If $x = |\cdot |_{B(a, r)}$ is of type III then $|C| = 0$. The two components are all disks containing $B(a, r)$ and all disks contained in $B(a, b)$. 
+		\item If $x = |\cdot |_{B(a, r)}$ is of type III then $|C| = 2$. One component consists of all disks contained in $B(a, r)$, (and type IV points corresponding to decreasing sequences of disks in $B(a,r)$) and the other one are all the leftover points. 
 	\end{itemize}
-\end{proposition}\question{Heeft het zin om hier een bewijs van te geven?}
-\question{Zou het zinvoller zijn om tangents te definieeren als equivalentie klassen van paden vertrekkend uit een punt?}
+\end{proposition}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/type2_type3.pdf}
+	\caption{Recognizing type II and type III points by connected components/tangent directions}
+	\label{fig:figures-type2_type3-pdf}
+\end{figure}
 The algebraic way to classify the points of $\aff_K^{1,\text{an}}$ is by using Abhyankar's inequality. 
 \begin{definition}
 	Let $K \subset L$ be a non-archimedean field extension. 
@@ -297,7 +302,7 @@ Type IV points are not rare. It might be counter intuitive that in a complete ri
 But in practice almost all fields have type  IV points. 
 The trick is that the radii of these disks do not converge to $0$. 
 \begin{example}[type IV point]\label{ex:type4point}
-	Let $K = \C_p$ for some prime $p$. 
+	Let $K = (\Q_p[\sqrt[2]{p} ,\sqrt[3]{p}, \sqrt[4]{p},\ldots])^{\wedge}  $ for some prime $p$. 
 	Define 
 	\begin{align*}
 		a_n &= \sum_{i = 1}^{n} p^{-\frac{1}{n}}\\
@@ -307,8 +312,11 @@ The trick is that the radii of these disks do not converge to $0$.
 Then $|a_n - a_{n + 1}| = r_n$ and $r_{n + 1} \le r_n$ so the $B_{n + 1} \subset B_n$ and the sequence $(B_n)_n$ is decreasing. 
 Now we have to show that the intersection $B = \bigcap_{i = 1} ^{\infty} B_n$ is non-empty. 
 
-Let $x \in \C_p$. Then $x = \sum_{i = 0}^{m} b_i$ where $m$ is either finite or $m$ is infinite $b_i$ is a decreasing sequence such that $|b_i| \to 0$. Suppose that  $x \in B$, then $x \in B_n$ for every $n$, and thus we see that  $b_i = p^{\frac{-1}{i}}$ for any $i = 1, \ldots, n$.  
+Let $x \in \C_p$. Then $x = \sum_{i = 0}^{m} b_i p^{c_i}$ where $m$ is either finite or $m = \infty, |b_i| = 1$ and $c_i$ is an increasing sequence such that $c_i \to \infty $. Suppose that  $x \in B$, then $x \in B_n$ for every $n$, and thus we see that  $b_i = p^{\frac{-1}{i}}$ for any $i = 1, \ldots, n$.  
 This is true for any $n $, so in particular we find that $b_i = p^{-\frac{1}{i}}$ for any $i$ .
 But this contradicts that $b_i$ is unbounded. 
+
+Unfortunately the field in this example is non algebaicially closed. 
+The algebraically closed field $\C_p$ also has type IV points, but the proof is a bit more subtle. See \cite[][sec. 3.4]{robertCoursePadicAnalysis2000}.
 \todo{Make this more rigorous}
 \end{example}
