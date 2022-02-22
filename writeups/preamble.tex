@@ -15,8 +15,9 @@
 % figure support
 \usepackage{import}
 \usepackage{xifthen}
-\usepackage[textsize=tiny,colorinlistoftodos,obeyDraft]{todonotes}
+\usepackage[textsize=tiny,colorinlistoftodos]{todonotes}
 \newcommand{\question}[1]{\todo[color=green!40]{#1}}
+\newcommand{\todoin}[1]{\todo[inline, noinlinepar]{#1}}
 \usepackage{pdfpages}
 \usepackage{transparent}
 \newcommand{\incfig}[1]{%
@@ -50,6 +51,7 @@
 \DeclareMathOperator{\trdeg}{TrDeg}
 \DeclareMathOperator{\divisor}{Div}
 \DeclareMathOperator{\cov}{Cov}
+\DeclareMathOperator{\eval}{eval}
 
 \newcommand{\into}{\hookrightarrow}
 \newcommand{\onto}{\twoheadrightarrow}
