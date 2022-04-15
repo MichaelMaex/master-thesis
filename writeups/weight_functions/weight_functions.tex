@@ -1,0 +1,106 @@
+\section{Recap on Berkovich analytification of varieties} \label{sec:recap_on_berkovich_analytification}
+
+Let $K$ be a complete (non trivial)\todo{is this required} non-archimedean field, e.g. $K= \F_p, \C_p, \C\llbracket t \rrbracket$
+We write $R$ for the ring of integers and $k$ for the residue field of $R$. 
+
+\begin{definition}\label{def:berkovich_analytification_explicit}
+	The \emph{Berkovich analitification} of a locally finite type scheme $X$ over  $K$, as a set is \[
+		X\an = \{(x, |\cdot |)  \mid x\in X, |\cdot | \text{ a norm on } \kappa(x) \text{ extending the norm on }K \} 
+	.\] 
+
+	This comes equipped with a canonical projection map $i: X\an \to X, (x, |\cdot |) \mapsto  x$.
+	$X\an $ comes with a topology which we define to be the coarsest topology such that 
+	\begin{itemize}
+		\item $i: X\an \to X$ is continuous, i.e. $X\an$ is a finer space than  $X$. 
+		\item For every open $U \subset X$ and $f \in \mathcal{O}_X(U)$ the map  \[
+				|f|: i^{-1}(U) \to \R^{+}: (x, |\cdot |) \mapsto  |f(x)|
+		\] 
+		is continuous.
+	\end{itemize}
+\end{definition}
+
+\begin{definition}
+	The \emph{birational points} of $X\an$ is  $X\bir = i ^{-1}(\eta_X)$ where $\eta_X$ is the generic point of $X$. 
+\end{definition}
+These are called the birational points of $X\an$ because they are schared by the analytifications of all varities birational to $X$.
+
+\section{Recap on Models and Skeleta} \label{sec:recap_on_models_and_skeleta}
+Let $X$ be a smooth connected $n$-dimensional $K$-variety. 
+We will not assume that the scheme or the model is proper. 
+\begin{definition}
+	A model of $X$ is a flat separated finite type $R$-scheme $\mathscr X$, together with an isomorphism $X \simeq \mathscr X_K$.
+
+	The model $\mathscr X$ is called a \emph{strict normal crossings divisor (sncd)}-model if its special fibre $\mathscr X_k$ is a strict normal crossings divisor of $\mathscr X$. 
+\end{definition}
+
+In a previous document I've constructed the reduction map $\pi: X\an \to \mathscr X_k$. 
+There it was essential to assume that that $\mathscr X$ is proper, in order make sure that any map $\mathcal{H} (x) \to X$ extends to a map $\mathcal{H} ^{o}(x) \to \mathscr X$. 
+If $\mathscr X$ is not proper, such an extension does not always exist hence the reduction map is only defined on a subset of $X\an$. 
+\begin{definition}
+	A point $x \in X\an $ is called a \emph{center} if the map $\mathcal{H} (x) \to X$ extends to $\mathcal{H}^{o} (x) \to \mathscr X$. 
+	Note that this is unique by the valuative criterion of properness. 
+
+	We write $\widehat{\mathscr X}_\eta$ for the set of all centers of $X\an$. 
+\end{definition}
+
+So the reduction map is defined from $\pi: \hat{\mathscr X}_\eta \to \mathscr X_k$. 
+
+It turns out that $\hat{\mathscr X}_\eta$ is exactly the generic fibre of the completion of $\mathscr X$ introduced in a previous document. 
+
+
+\subsection{Divisorial and monomial points} \label{sec:divisorial_and_monomial_points}
+
+Let $\mathscr X_k = \sum_{i \in I} N_i E_i$ be the decomposition of $\mathscr X$ in its irreducible parts, and let $e_i$ be the generic point of $E_i$. 
+As stated in \cite[thm 2.2.4]{berkovichSpectralTheoryAnalytic2012}, we know that the $e_i$ have unique inverses. 
+We call $\pi^{-1}(e_i)$ the \emph{divisorial point} associated to $(\mathscr X, E_i)$.
+\begin{definition}
+	The \emph{divisorial points of $X\an$}, denoted by  $X^{\text{div}}$ is the set of all points that are the inverse of a generic point of irreducible component of a model of $X$. 
+\end{definition}
+\todo{give better characterisaton of divisorial points}
+
+The monomial points are a way to interpolate between divisorial points. 
+Let $J \subset  I$ such that $E_J := \bigcap_{j \in J} E_j \ne 0$.
+Let $\xi$ be a generic point of $E_J$.
+
+Let $f_i$ be local equations cutting out $E_i$.
+Then we can choose an affine neighborhood $A = R[X_1, \ldots, X_m] / \left(\prod_{j \in J} f_j\right)$. 
+Note that this means that the uniformizer can be expressed as $\pi = \prod_j f_j^{N_j}$. 
+We can choose a map $R[Y_j, j \in J] \onto A, Y_j \mapsto f_j$, which is surjective by the chinese remainder theorem. \todo{check whether this is true?} 
+We can now equip $R[Y_j, j\in J]$ with the norm such that $|Y_j| = \alpha_j$, and equip $A$ with the residue norm.\todo{why is this multiplicative? Why is $|f_i| = \alpha_i$?}
+If $\sum_j \alpha_j \cdot N_j = 1$ this means that with respect to this norm  $|\pi| = 1$ and hence extend the norm on $R$. 
+Now taking the 
+
+
+\subsection{The skeleton associated to a model} \label{sec:the_skeleton_associated_to_a_model}
+
+\section{What is a weight function} \label{sec:what_is_a_weight_function}
+
+\subsection{Definition} \label{sec:definition}
+
+\subsubsection{Arbitrary dimension} \label{sec:arbitrary_dimension}
+
+\subsubsection{Curves} \label{sec:curves}
+Let $\omega \in \omega_{X / K}^{\otimes m}$, i.e.\ a global section of some tensor power of the cannonical bundle. 
+Now choose a divisorial point $x \in X\an$ associated to a model and divisor $(\mathscr X, E)$. 
+Let $N$ be the multiplicity of $E$ in $\mathscr X_k$. 
+The section $\omega$ extend to a global section of $\omega_{\mathscr X / R} ^{ \otimes m}$ on the model, also denoted by $\omega$. 
+Then we define \[
+	\wt_{\omega}\left(x  \right)  = \frac{\omega \cdot E + m}{N}
+,\] 
+where $\omega \cdot E$ is the intersection number \question{How does this work in higher dimension? In section 3.3 of \cite{nicaiseBerkovichSkeletaBirational2016} is it written as the multiplicity of $E$ in $\divisor_{\mathscr X}(\omega)$. What does that precisely mean?}
+One can show that this is independent of the choise of model and divisor $(\mathscr X, E)$.  
+
+\begin{definition}
+	A divisorial point $x \in X^{\text{div}}$ is called \emph{$\omega$-essential} if has minial weight, i.e. \[
+		\wt_\omega(x) = \inf \{\wt_\omega(x) | x \in X^{\text{div}}\} 
+	.\] 
+	The \emph{skeleton $\sk(X, \omega)$} is the closure of all $\omega$-essential points.  
+\end{definition}
+
+Maybe definitions?
+
+\subsection{Intuition} \label{sec:intuition}
+
+
+\section{Important properties} \label{sec:important_properties}
+

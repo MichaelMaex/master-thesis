@@ -8,6 +8,8 @@
 \usepackage{microtype}
 \usepackage{hyperref}
 \usepackage{cleveref}
+\usepackage{stmaryrd}
+\usepackage{mathrsfs}
 
 \usepackage[backend = biber, style = alphabetic]{biblatex}
 \addbibresource{../references.bib}
@@ -26,6 +28,9 @@
 }
 
 \pdfsuppresswarningpagegroup=1
+
+\newcommand{\shorthat}[1]{\hat{#1}}
+\renewcommand{\hat}[1]{\widehat{#1}}
 
 
 \newcommand{\N}{\mathbb{N}}
@@ -52,6 +57,10 @@
 \DeclareMathOperator{\divisor}{Div}
 \DeclareMathOperator{\cov}{Cov}
 \DeclareMathOperator{\eval}{eval}
+\DeclareMathOperator{\wt}{wt}
+\DeclareMathOperator{\sk}{Sk}
+
+
 
 \newcommand{\into}{\hookrightarrow}
 \newcommand{\onto}{\twoheadrightarrow}
@@ -59,6 +68,8 @@
 \newcommand{\notdivides}{\nmid}
 \newcommand{\Gan}{\ensuremath{\mathbb{G} _m ^{\mathrm{an}}}}
 \newcommand{\an}{{}^{\text{an}}}
+\newcommand{\bir}{{}^{\text{bir}}}
+
 \newcommand{\cox}{\widehat{\otimes}}
 
 \newcommand{\st}{%
