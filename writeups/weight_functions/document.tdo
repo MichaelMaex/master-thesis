@@ -8,3 +8,11 @@
 \contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ why is this multiplicative? Why is $|f_i| = \alpha _i$?}{3}{section*.6}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {todo}{\color@fb@x {}{black}{}{green!40}{\leavevmode {\color {green!40}o}}\ How does this work in higher dimension? In section 3.3 of \cite {nicaiseBerkovichSkeletaBirational2016} is it written as the multiplicity of $E$ in $\divisor _{\mathscr X}(\omega )$. What does that precisely mean?}{3}{section*.7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {todo}{\color@fb@x {}{black}{}{yellow!70}{\leavevmode {\color {yellow!70}o}}\ It seems essential here that $K$ is a discretely valued. Can we salvage this in this algebraically closed case?}{5}{section*.8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ replace this with the easier argument form page 3 \cite {liuModelsCurvesFinitea}}{5}{section*.9}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {todo}{\color@fb@x {}{black}{}{green!40}{\leavevmode {\color {green!40}o}}\ why? I think we need the fact that $f$ is tamely ramified here. }{5}{section*.10}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color {orange}o}}\ Clearly we're missing somethign here.}{5}{section*.11}% 

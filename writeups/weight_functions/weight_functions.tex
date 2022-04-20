@@ -104,3 +104,131 @@ Maybe definitions?
 
 \section{Important properties} \label{sec:important_properties}
 
+
+\section{Weight functions, (hyper) elliptic curves and more} \label{sec:weight_functions,_(hyper)_elliptic_curves_and_more}
+
+Let $R$ be a complete DVR with fraction field $K$. 
+Suppose $K$ is algebraically closed (for now). 
+Let $C$ be a complete curve over $K$, together with a degree $n$ map $f: C\to \pro^{1}_K$, which has tame ramification. 
+\begin{proposition}
+Let $\omega \in \Omega _{\pro^{1}_K}^{\otimes n}(f_* R_f)$ a global section. 
+Then  $f^* \omega \in \Omega^{\otimes n}_{C}$ and \[
+\wt_{f^* \omega} = \wt_{\omega} \circ f^{\text{an}}
+.\] 
+\end{proposition}
+
+\begin{proof}
+	By the theory of weight functions it is sufficient to show that they are same on divisorial points, on some skeleton. 
+
+	Let $x$ be a divisorial piont of $C\an$.
+	Let $\mathscr{P} $ be an snc-model of $\pro^{1}_K$ such that the corresponding skeleton of $\mathscr P$ contains $f\an (x)$. 
+	Then there is a induced morphism $\spec K(C) \to C \to P^{1}_K \into K$
+	Let $\mathscr{C}'$ be the normalisation of $\mathcal{P} $ in $\spec K(C)$. 
+	This is an $R$-scheme.
+	As normalisation is local and  $C$ is complete this means that $\mathcal{C}' _\eta \simeq C$. 
+	So hence $\mathscr{C}' $ is a model of $C$ and it fits into the commutate  diagram \[
+	\begin{tikzcd}
+		C \rar[hookrightarrow] \dar{f} & \mathscr C '\dar{\phi} \\
+		\pro^{1}_K \rar[hookrightarrow] & \mathscr P
+	\end{tikzcd}
+	.\] 
+	Where $\mathscr C' \to \mathscr P$ is dominant (even surjective). 
+	Unfortunately  $\mathscr C'$ is not guaranteed to be a snc-model. 
+	But by blowing up we may resolve the singularities and replace it with $\mathscr C$. 
+	
+	We now want to compare the weight functions 
+
+
+\end{proof}
+
+
+\subsection{Lets do all this again under simpler assumptions} \label{sec:lets_do_all_this_again_under_simpler_assumptions}
+
+Let $R$ be a complete DVR with fraction field $K$. 
+
+\begin{lemma}\label{lem:char_div_point}
+	Let $X\an$ be a $K$-variety of dimension $n$. 
+	The divisorial points of $X\an$ are precisely the discrete valuations $v$ on $K(X)$ that extend the valuation on $K$ and such that the $\trdeg [(K(X),v)^{\sim}, k] = n-1$.
+\end{lemma}
+\begin{proof}
+	Let $x = (\mathscr X, E)$ be a divisorial point in $X\an$ corresponding to a model $\mathscr X$ with irreducible component $E$ in the special fibre.
+	Let $\xi$ be the generic point of $E$. 
+	Then clearly $(K(X), v_x)^{\sim} = (\mathcal{O}_{\xi, \mathscr X})^{\sim} = K(E)$ and hence the trancendence degree is going to be  $\dim E = n-1$.
+
+	The converse is given by \cite[lem 2.45]{kollarBirationalGeometryAlgebraic1998}. 
+\end{proof}
+\begin{lemma}\label{lem:im_type_ii}
+	If $f: X \to Y$ is a finite map and $x \in X\an$. Then
+	\[
+		x \in X^\text{div} \iff f(x) \in Y^\text{div}
+	.\] 
+\end{lemma}
+\begin{proof}
+	The map being finite means that $K(X)$ is a finite extension of $K(Y)$ and that $v_{f(x)}$ is the restriction of $v_x$ to $K(Y)$. 
+	Then the residue fields of $K(X), K(Y)$ wrt.\ $v_x, v_{f(x)}$ are a finite extension \stacks{09E5}, hence of the same trancendence degree over $k$. 
+	The claim now follows from \cref{lem:char_div_point}.
+\end{proof}
+\begin{remark}
+	In the case of curves we can give a more topolgical argument for \cref{lem:im_type_ii}. 
+	A divisorial point $x \in X\an$ is precisely a point with an infinite number of tangent directions, i.e.\ a branch point.
+	The map $f\an: X\an \to Y\an $ is a finite branched cover. So topologically $f(x)$ is also such a branch point, hence divisorial. 	
+\end{remark}
+
+\begin{proposition}
+Let $E$ be an elliptic curve  over $K$, together with a degree $2$ map $f: E \to \pro^{1}_K$ which has tame ramification (i.e. $\ch K \ne 2$). 
+Let $R_f$ be the ramification divisor of $f$. 
+	Let $\omega $ a global section of $\Omega_{\pro^{1}_K}^{\otimes 2}(-f_* R_f)$ (which we consider as a subsheaf of $\Omega_{\pro^{1}_K}$). 
+	Then $f^* \omega$ is a global section of $\Omega_{E}^{\otimes 2}$ and \[
+	\wt_{f^*\omega} = \wt_{\omega} \circ f\an
+	.\] 
+\end{proposition}
+\begin{remark}
+	I'm pretty sure the most general (tame) version of this is as follows. 
+	Let $f: X \to Y $ be a morphism of smooth connected, projective curves over $K$ of degree $n$ with ramification divisor $R_f$. 
+	Let $\omega \in \Omega_Y^{\otimes n}(-R_f)$, then \[
+	\wt_{f^* \omega} = \wt_{\omega} \circ f\an
+	.\] 
+\end{remark}
+\begin{proof}
+	Lets first verify that $f^* \omega \in \Omega_E^{\otimes 2}$. 
+	By definition of $R_f$ we have that $\Omega_E = f^*\Omega_{\pro ^{1}} \otimes R_f$.
+	Hence 
+	\begin{align*}
+		f^* (\Omega_{\pro^{1}}^{\otimes 2}(-f_* R_f)) &= f^*(\Omega_{\pro^{1}})^{\otimes 2} \otimes f^*f_*(-R_f) \\
+							      &= \Omega_{E}^{\otimes 2} \otimes \mathcal{O}(2 R_f) \otimes \mathcal{O}(-2 R_f) \\
+							      &= \Omega_E 
+	.\end{align*}
+
+	As $X$ lies dense in in $X\an$ (with the metric topology) and the both the left and right hand side are continuious with respect to the metric topology, it follows that it suffices to obtain equality for $x \in X^\text{div}$.
+
+	Let $x$ be a divisorial point in $E\an$. 
+	Then $f(x)$ is divisorial in $\pro_K^{1}$. 
+	Let $\mathscr{P} $ be a snc-model of $(\pro_K^{1},f_* R_f)$ whose skeleton contains $X$.
+	Recall that because $E$ is a complete curve, hense $E$ is the normalisation of $\pro^{1}_K$.
+	Let $N(\mathscr P, K(E))$ be the normalisation of $\mathscr P$ in $K(E)$. 
+	Then this fits into a commutative diagram where the columns are relative localizations.
+	As localisation is local we see that the map $E \to N(\mathscr P, K(E))$ is an isomorphism, so  $N(\mathscr P, K(E))$ is a model of $E$. 
+	\[
+	\begin{tikzcd}
+		\spec K(E) \rar[equals] \dar[hookrightarrow]  & \spec K(E) \dar\\
+		E \rar[hookrightarrow] \dar{f} & N(\mathscr P, K(E)) \dar{\phi} \\
+		\pro^{1}_K \rar[hookrightarrow] & \mathscr P
+	\end{tikzcd}
+	.\] 
+	By \stacks{0335}  $\mathscr P$ is nagata.\comment{It seems essential here that $K$ is a discretely valued. Can we salvage this in this algebraically closed case?}
+	So by \stacks{0AVK} the morphism $\phi: N(\mathscr P, K(E)) \to \mathscr P$ is finite, hence projective. \todo{replace this with the easier argument form page 3 \cite{liuModelsCurvesFinitea}}
+	So $N(\mathscr P, K(E))$ is a proper normal model of $E$. 
+	It's crossings are locally complete intersections so  \question{why? I think we need the fact that $f$ is tamely ramified here. }
+	\todo{Clearly we're missing somethign here.}
+
+	Let call $\mathscr E$ the model that we eventually end up with. 
+	Let $G$ be an irreducible component of $\mathscr E_s $ occuring with multiplicity $M$, which dominates a irreducible component $F$ of $\mathscr P_s$ occuring with multiplicity $N$. 
+	The morphism $\phi$ is finite, hence its étale on an open dense subscheme of the special fibre.
+	So for the purposes of computing the multiplicity of $F, G$ in $\divisor_\mathscr P ^{\text{log}}(\omega), \divisor _{\mathscr E}^{\text{ log}}(f^*\omega)$ we may assume that $\phi$ is étale. Let $\nu, \mu$ be their respective multiplicities. 
+	Hence $f^*_s K_F = K_G$ and $(K_{\mathscr P} + F) = K_F$ by adjunction.
+	So locally we have \[
+		\nu f^*(F) = \divisor_{\mathscr E} ^{\text{log}} (f^*\omega) = \mu\cdot G  = \mu \frac{N}{M} f^* (F)  
+	.\]
+	Hence $\frac{\nu}{ N} = \frac{\mu}{M}$ whence $\wt_{f^*\omega}(F) = \wt_\omega(G)$. 
+\end{proof}
+
