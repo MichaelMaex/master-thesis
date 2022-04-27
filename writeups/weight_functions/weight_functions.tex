@@ -218,6 +218,7 @@ Let $R_f$ be the ramification divisor of $f$.
 	By \stacks{0335}  $\mathscr P$ is nagata.\comment{It seems essential here that $K$ is a discretely valued. Can we salvage this in this algebraically closed case?}
 	So by \stacks{0AVK} the morphism $\phi: N(\mathscr P, K(E)) \to \mathscr P$ is finite, hence projective. \todo{replace this with the easier argument form page 3 \cite{liuModelsCurvesFinitea}}
 	So $N(\mathscr P, K(E))$ is a proper normal model of $E$. 
+	I
 	It's crossings are locally complete intersections so  \question{why? I think we need the fact that $f$ is tamely ramified here. }
 	\todo{Clearly we're missing somethign here.}
 
@@ -231,4 +232,82 @@ Let $R_f$ be the ramification divisor of $f$.
 	.\]
 	Hence $\frac{\nu}{ N} = \frac{\mu}{M}$ whence $\wt_{f^*\omega}(F) = \wt_\omega(G)$. 
 \end{proof}
+
+\section{Elliptic curves as hyper elliptic curves} \label{sec:elliptic_curves_as_hyper_elliptic_curves}
+
+Let $\lambda \in K$. Then we can write $E$ as given by the equation $y^2 = x\cdot (x-1)\cdot (x-\lambda) = x^3 + (-\lambda - 1) x^2 + \lambda x$. 
+Hence in the standard notation we have  \[
+a_2= -1-\lambda, \quad a_4 = \lambda, \quad a_1 = a_3 = a_5 = a_6 = 0
+.\] 
+Hence \[
+b_2 = -4 -4\lambda, \quad b_4 = -2-2\lambda, \quad b_6 = 0\]
+\[
+	b_8 =\frac{b_2 b_6 - b_4^2}{4} =  (-1-\lambda)^2 = \lambda^2 + 2\lambda + 1
+.\] 
+Thus 
+\begin{align*}
+	\Delta &= -b_2^2 b_8 - 8b_4^3 \\
+	       &= -(4+ 4\lambda)^2(1+\lambda)^2 - 8 (2 + 2\lambda)^3 \\
+	       &= (-16 -16)(1+  \\
+	       &= 16t^4 - 96t^3 + 16t^2
+.\end{align*} 
+\begin{align*}
+	j &=  \frac{256t^6 - 3840t^5 + 19968t^4 - 39680t^3 + 19968t^2 - 3840t + 256}{t^4 - 6t^3 + t^2} \\
+\end{align*}
+
+\begin{definition}
+	Let $f: X \to Y$ be a degree 2 map of curves, and  $\phi: X\an \to Y\an$ be its analytification.
+	Then we say call the set  $B_\phi = \{y \in Y\an  \mid |\phi^{-1}(y)| = 1\} $ the \emph{(topological) branch locus} of $\phi$ and $\mathrm{Ram}_\phi = \phi^{-1} B_\phi$ the \emph{topological ramfication locus}. 
+\end{definition}
+
+To understand the reduction type of $E$ it is important to understand the branch locus of $\phi: E\an \to \pro^{1, \text{an}}$. 
+
+\begin{lemma}\label{lem:convergence_square_root_base}
+	If $\ch k \ne 2$ then the powerseries \[
+		\sqrt{1 + x}  = \sum_{i = 0}^{\infty} \frac{(-1)^{n}(2n)!}{(1-2n)(n!)^2(4^{n})} x^{n}
+	\]
+	converges if $|x| < 1$. 
+\end{lemma}
+\begin{lemma}\label{lem:convergence_square_root_general}
+	Suppose $K$ is algebraically closed and . 
+	Let $b \in K$ and $D = D(a, r) = \mathcal{M} (\mathcal{A} )$ be an open ball in $\pro^{1}_K$ that does not contain the zariski closed point $b$.  
+	Then $x-b$ has a square root in $\mathcal{A} $.
+	\question{what if $K$ is not algebraically closed?}
+\end{lemma}
+\begin{proof}
+	Note that $|a - b| \ge r$ and $|x-b| < r$. 
+	We write 
+	\begin{align*}
+		x - b &= (x - a) - (b-a)\\
+		      &= (a - b) \cdot \left( 1 + \frac{x - a}{a - b} \right)  \\
+	.\end{align*}
+	And \[
+		\sqrt{a-b} \cdot  \sqrt{1 + \frac{x - a}{a - b}} 
+	.\]
+	converges in $D$ because $|\frac{x - a}{a - b}| < 1$ by \cref{lem:convergence_square_root_base}. 
+\end{proof}
+We write $\Gamma_\lambda$ for the convex hull of $0, 1, \infty, \lambda$ in $\pro^{1, \text{an}}_K$. 
+There are three different ways that $\Gamma_\lambda$ can look, depending on $|\lambda|$, as can be seen in \cref{fig:gamma_lambda_types}.
+\begin{figure}[ht]
+    \centering
+    \incfig{gamma-lambda-types}
+    \caption{The different shapes of $\Gamma_\lambda$ (in red) depending on $|\lambda|$.}
+    \label{fig:gamma_lambda_types}
+\end{figure}
+
+\begin{corollary}
+	For every point in $a \in \pro^{1, \text{an}_K}$ outside of $\Gamma_\lambda$ we have a neighbourhood $D \sqcup D$ such that $f^{-1}(D) \simeq D$. 
+	Let $D = \mathcal{M} (\mathcal{A} )$ be a disk around $a$ not containing $0, 1, \infty, \lambda$. 
+	Then $g:= x(x-1)(x-\lambda)$ has a square root in $A$ by \cref{lem:convergence_square_root_general}. 
+	So \[
+	\phi^{-1}(D) = \mathcal{M} \left( \frac{\mathcal{A} \left<y \right>}{y^2 - g} \right) = \mathcal{M} \left( \frac{\mathcal{A} \left<y \right>}{(y - \sqrt{g} )} \times \frac{\mathcal{A} \left<y \right>}{(y + \sqrt{g} )} \right) \simeq D \sqcup D\] 
+\end{corollary}
+\begin{corollary}
+	The branch locus $B_\phi$ is contained in $\Gamma_\lambda$. 
+\end{corollary}
+\comment{This argument generalizes to hyper elliptic curves.}
+Now we're left to understand what part of $\Gamma_\lambda$ is the branch locus. 
+From now on we'll assume that $|\lambda| \le 1$.
+Now we'll argue 
+
 
