@@ -1,0 +1,83 @@
+\section{Weight functions under morphisms of curves} \label{sec:weight_functions_under_morphisms_of_curves}
+
+\begin{lemma}
+	Let $\mathscr{E} \to \mathscr{P}$ be a morphism of morphism of models of $E$ and $P$ extending the map $f: E \to P$ such that the special fibres of $\mathscr E, \mathscr P$ consists one irreducible component $F, G$ with multiplicity $M, N$ respectively. 
+	Suppose that the map $\psi: F \to G$ is purely inseparable of degree $f^{i}$.
+	\[
+	\begin{tikzcd}
+		E \dar{f} \rar[hookrightarrow] & \mathscr E \dar{\phi} \rar[hookleftarrow] &  F \dar{\psi} \\
+		P \rar[hookrightarrow] & \mathscr P \rar[hookleftarrow] &  G
+	\end{tikzcd}
+	.\] 
+	Let $K_E = f^* K_P$ and $K_{\mathscr E}, K_{\mathscr P}$ be the extensions of $K_E, K_P$ in $\omega_\mathscr E, \omega_\mathscr P$ respectively. 
+	Then \todo{Yeah, then what?}
+\end{lemma}
+\begin{proof}
+	First note that $\mathscr{E} _s = \phi^* \mathscr{P} _s$. Hence 
+	\begin{equation}\label{eq:lem_insep_ext_pulback_irred}
+		\frac{M}{N} F = f^* G
+	.\end{equation} 
+	As the morphism $\psi$ purely inseparable of degree $f^{i}$ we have 
+	\begin{equation}\label{eq:insep_ext_can_bundle}
+		f^{i} K_F = \psi^* K_G
+	.\end{equation}
+	Also recall the adjunction formula 
+	\begin{equation}\label{eq:adjunction_insep_ext}
+		(K_\mathscr E + F)|_F = K_F, \quad (K_\mathscr P + G)|_ G = K_G 
+	\end{equation}
+	The ramification divisor $\ram_\phi$ is defined as \[
+		\ram_\phi= \phi^* K_\mathscr P - K_\mathscr E
+	.\] 
+	By looking at the generic fibre we see that the horizontal component of $\ram _\phi$ is just $\overline{\ram_f}$. 
+	The vertical component is $a\cdot F$ for some $a \in \Z$. 
+	So 
+	\begin{equation}
+		\ram_\phi = \overline{\ram_f} + a \cdot F
+	\end{equation}
+	In order to compute $\ram_\phi$ we need to find $a$ and we do this by resticting to the reduced special fibres. 
+	\begin{align*}
+		0 &= (\ram_\phi + K_\mathscr E - \phi^* K_{\mathscr P})|_F\\
+		  &= \overline{\ram_f}|_F + a\cdot F|_F + K_\mathscr E|_F - \psi^*(K_\mathscr P|_G) \\
+		  &= \overline{\ram_f}|_F + (a-1) \cdot F|_F + K_F - \psi^*(K_G - G|_G) & \text{using \eqref{eq:adjunction_insep_ext}}\\
+		  &= \overline{\ram _f}|_F + (a - 1)\cdot F|_F + (1-f^{i})\cdot K_F + (\phi^* G)|_F & \text{using \eqref{eq:insep_ext_can_bundle}} \\
+		  &= \overline{\ram_f}|_F + \left(a-1 + \frac{M}{N}\right) \cdot F|_F + (1 - f^{i}) \cdot K_F  & \text{using \eqref{eq:lem_insep_ext_pulback_irred}}
+	.\end{align*}
+	To find $a$ we can look at the degrees. 
+	So we get 
+	\begin{align*}
+		0 &= \left( \overline{\ram_f}, F \right) + \left(a - 1 + \frac{M}{N}\right) \left(F, F\right) + (1-f^{i}) (2g_F -2) \\
+		\iff a &= \frac{(\overline{\ram_f}, F) + (1-f^{i})(2g_F -2)  }{(F, F)} + 1 - \frac{M}{N}
+	\end{align*}
+	where $g_F$ is the genus of $F$ and $(\overline{\ram_f})$ can be intepreted as the number of ramification points that specialize to $F$. 
+
+
+	Now lets see what this does to the weight functions at $F$. 
+	We have 
+	\begin{align*}
+		\wt_{f^* K_P}(F) &= \frac{\mult_F K_{\mathscr E} + 1}{M} \\
+		&= \frac{\mult_F f^*K_{\mathscr P} - \mult_F \ram_\phi + 1}{M} \\
+		&= \frac{\frac{M}{N}\mult_G K_{\mathscr P} - a + 1}{M} \\
+		&= \frac{\mult_G K_{\mathscr P} + 1}{N} - \frac{a - 1 + M / N}{M} \\
+		&= \wt_{K_P}(G) - \frac{(\overline{\ram_f}, F) + (1 - f^{i})(2g_F - 2)}{(F, F)\cdot M} 
+	.\end{align*}
+\end{proof}
+	\todo{I don't think the ramification divisor should end up on the final formula}
+\begin{definition}
+	Let $f: X \to Y$ be a map of smooth projective curves and $\omega$ be a pluricanonical form. 
+	We define the \emph{weight difference} of $f, \omega$ for $\omega$ a rational section of $Y$ to be \[
+		\wt_{\omega} \circ f\an - \wt_{f^* \omega} 
+	.\] 
+\end{definition}
+\begin{remark}
+	The weight function is indepentent of  $\omega$???? \todo{I think this is true?}
+\end{remark}
+
+\begin{corollary}
+	Let $f: X \to Y$ be a galois cover of degree $d$ between projective smooth connected curves over $K$, such that $\ch K \nmid d$.  
+	Then the weight difference is of $f$ is zero, hence \[
+	\wt_{f^* \omega} = \wt_{\omega} \circ f\an  
+	.\] 
+\end{corollary}
+
+
+
