@@ -102,7 +102,7 @@ Maybe definitions?
 \subsection{Intuition} \label{sec:intuition}
 
 
-\section{Important properties} \label{sec:important_properties}
+
 
 
 \section{Weight functions, (hyper) elliptic curves and more} \label{sec:weight_functions,_(hyper)_elliptic_curves_and_more}
@@ -149,11 +149,13 @@ Let $R$ be a complete DVR with fraction field $K$.
 \begin{lemma}\label{lem:char_div_point}
 	Let $X\an$ be a $K$-variety of dimension $n$. 
 	The divisorial points of $X\an$ are precisely the discrete valuations $v$ on $K(X)$ that extend the valuation on $K$ and such that the $\trdeg [(K(X),v)^{\sim}, k] = n-1$.
+	Moreover, the ramification of $K$ in $(K(X), v)$ is precisely the multiplicity of the irreducible component corresponding to that valuation.
 \end{lemma}
 \begin{proof}
 	Let $x = (\mathscr X, E)$ be a divisorial point in $X\an$ corresponding to a model $\mathscr X$ with irreducible component $E$ in the special fibre.
 	Let $\xi$ be the generic point of $E$. 
 	Then clearly $(K(X), v_x)^{\sim} = (\mathcal{O}_{\xi, \mathscr X})^{\sim} = K(E)$ and hence the trancendence degree is going to be  $\dim E = n-1$.
+	\todo{prove last part}
 
 	The converse is given by \cite[lem 2.45]{kollarBirationalGeometryAlgebraic1998}. 
 \end{proof}
@@ -173,6 +175,38 @@ Let $R$ be a complete DVR with fraction field $K$.
 	A divisorial point $x \in X\an$ is precisely a point with an infinite number of tangent directions, i.e.\ a branch point.
 	The map $f\an: X\an \to Y\an $ is a finite branched cover. So topologically $f(x)$ is also such a branch point, hence divisorial. 	
 \end{remark}
+
+
+\begin{proposition}\label{prop:balancing}
+	Let $f: X \to Y$ a degree $d$ map of smooth projective curves, and write $\phi: X\an \to Y\an$. 
+	Let $x \in X\an$ be any point \todo{does this have to be birational, or divisorial?}. 
+	Then \[
+		d = \sum_{z \in \phi^{-1}(\phi(x))} e_z f_z 
+	\]
+	where $e_z$ is the ramification of $\mathcal{H} (\phi(x)) \subset  \mathcal{H} (z)$ and $f_z = \left[\widetilde{\mathcal{H} (z)}: \widetilde{\mathcal{H} (\phi(x))}\right]$
+\end{proposition}
+\begin{proof}
+	\todo{Find a proof for this}
+\end{proof}
+
+\begin{corollary}\label{cor:balancing_galois}
+	In the context of the previous proposition. 
+	If $f$ is a \emph{galois cover}, then this simplifies to \begin{equation}
+		d = |\phi^{-1}(\phi(x))|\cdot  e\cdot f = |\phi^{-1}(\phi(x))|\cdot  e \cdot f^{s} \cdot  f^{i}
+	\end{equation} 
+	where $e$ is the ramfication of $\mathcal{H} (\phi(x))$ in $\mathcal{H}(x) $ and $f, f^{s}, f^{i}$ are the extension degree, seperable extension degree and inseparable extension degree of $\widetilde{\mathcal{H} (z)} / \widetilde{\mathcal{H} (\phi(x))}$.
+\end{corollary}
+\begin{proof}
+	This follows from \cref{prop:balancing} and the fact that the galois morphism induces an isomorphism on the completed residue fields of the points in $\phi^{-1}(\phi(x))$.
+\end{proof}
+
+If $d$ is prime then there are four options. Let $F, G$ be the irreducible components corresponding to $x, \phi(X)$ in models of $X, Y$ with multiplicity $M, N$ respectively
+\begin{enumerate}
+	\item $|\phi(\phi(x))| = d$: Then the map $F \simeq G$ is an isomorphism and $M = N$.
+	\item $e = d$: The map $F \simeq G$ and $M = d\cdot N$. 
+	\item $f^{s} = d$: The map $F \to G$ is a degree $d$ map and is ramified over $\overline{\ram_f}$. Also $M = N$. 
+	\item  $f^{i} = d$
+\end{enumerate}
 
 \begin{proposition}
 Let $E$ be an elliptic curve  over $K$, together with a degree $2$ map $f: E \to \pro^{1}_K$ which has tame ramification (i.e. $\ch K \ne 2$). 
