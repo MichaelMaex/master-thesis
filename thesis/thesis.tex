@@ -8,15 +8,37 @@
 \tableofcontents
 \chapter*{Acknowledgements} \label{chap:acknowledgements}
 
+\setcounter{chapter}{-1}
+\chapter{Wishlist and structure} \label{chap:wishlist}
+The valuation theory and Kodaira-Neron chapters should include all the necessary AG background beyond basic scheme theory. 
+\begin{enumerate}
+	\item Introduction
+	\item Valutation theory and DVR's
+	\item Models, intersections and Kodaira-Neron
+\end{enumerate}
+
 
 \setcounter{page}{0}
 \pagenumbering{arabic}
 
 \chapter{Introduction} \label{chap:introduction}
+%\input{chapters/introduction.tex}
 
-\chapter{Motivation} \label{chap:motivation}
+\chapter{Valuation Theory} \label{chap:valuation_theory}
+\import{chapters/valuation_theory/}{valuation_theory.tex}
 
-\chapter{Affinoid algebras} \label{chap:affinoid_algerbas}
 
+\chapter[Intersection theory]{Intersection Theory and Kodaira Neron Classification of Elliptic Curves} \label{chap:intersection_theory} 
+\import{chapters/intersection_theory/}{intersection_theory.tex}
+
+\chapter{Introduction to Berkovich Geometry} \label{chap:affinoid_algerbas}
+%\input{chapters/berkovich_geometry/berkovich_geometry.tex}
+
+
+\chapter{Weight functions} \label{chap:weight_functions}
+
+
+\pagebreak
+\printbibliography
 
 \end{document}

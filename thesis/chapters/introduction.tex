@@ -1,0 +1,29 @@
+What makes algebraic geometry over $\C$ different from algebraic geometry over other fields is that there is an analytification functor that turn $\C$-varieties into $\C$-analytic spaces, i.e.\ complex manifolds that may have singularities. 
+If we restrict this functor to the category of proper  $\C$-varieties, this functor is even fully faithful. This fact and a collection of results that act as a dictionary between the algebraic and analytic world are collectively known as the GAGA principles. 
+They lead to an interesting interplay between complex analysis and algebraic geometry, which gives rise to topics like Hodge theory. 
+
+A analysis is not limited to $\C$. In fact the only thing we need to work out a theory of analysis is a normed field, preferably a complete normed field. 
+If this field is not $\C$ or $\R$ then it has to be either trivially valued or non-archimedean. \todo{find a citation for this}
+The best known examples of these are the $p$-adic rationals $\Q_p$. 
+There is in fact an entire theory of $p$-adic analysis. 
+
+Varieties over $p$-adic fields and rings lay at the heart of arithmetic geometry. 
+So it is a natural question to ask whether $p$-adic varieties, or more generally varieties over complete non-archimedean fields can be ``analytified'' in a suitable way, giving us an interplay between algebraic geometry and analysis that has been very fruitful in complex geometry. 
+
+The first question that needs to be resolved, is what such an analytic space might be.
+Over $\C$ we already had a theory of complex manifolds.
+But if we try to construct $p$-adic manifolds, we quickly run into a problem.
+The topology of $\Q_p$ or any non-archimedean field, is totally disconnected. 
+This means that $p$-adic manifolds are very non-rigid and in particular the principle of analytic continuation fails. 
+We will use $K$ to mean any complete non-archimedean field. Think $K = \Q_p$ or $K = \C((t))$. 
+
+In 1960\todo{source} Tate was was the first one propose a solution. 
+His idea was to still work with $p$-adic manifolds, but replace the topology, by $G$-topology. 
+This is somewhat like an ordinary topology, but not al set theoretic covers of opens are topological covers. 
+The topological covers are called admissible.
+This works, but it hides a lot of the topology of the space in set of covers, which is difficult to grasp.
+
+In 1990 Berkovich proposed his theory of $K$-analytic spaces - often called Berkovich spaces - which solves the disconnectedness problem by adding extra points to the space, which connect the disconnected components. 
+The resulting space actually is a very nice topological space - hausdorff, locally compact, path-connected, \ldots - which is in stark contrast to the topology of $K$ itself.  
+
+

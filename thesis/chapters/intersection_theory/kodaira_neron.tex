@@ -1,0 +1,196 @@
+This document is almost entirely based on \cite[][\S 8]{silvermanAdvancedTopicsArithmetic1994}.
+
+\section{Notation} \label{sec:notation}
+
+Throughout the document $R$ will be a discrete valuation ring with maximal ideal $\mathfrak{m} $, such that the residue field $k := R / \mathfrak{m} $ is algebraically closed and $K$ is the fraction field of $R$. 
+
+If $E / K$ is an elliptic curve and $\mathcal{C}  / R$ is a proper regular model, then we write $\mathcal{C} _s = \mathcal{C}  \times \frac{R}{\mathfrak{m} } = \mathcal{C} \times k $ for the special fibre. 
+As a divisor, we can consider $\mathcal{C}_s$ as a sum of its irreducible components $F_i$ 
+\begin{equation}\label{eq:decomposition_fibre}
+	\mathcal{C}_s = \sum_{i = 0}^{r} n_i F_i
+\end{equation}
+where $r$ is the number of irreducible compoments and $n_i$ is the multiplicity of $F_i$ in $\mathcal{C} _s$. 
+
+\section{Axioms of Intersection theory (on elliptic curves)} \label{sec:axioms_of_intersection_theory}
+
+The important results of the intersection theory of arithemetic surves, in particular elliptic curves over over a local ring, gathered here, without developing the whole theory in this document. 
+
+\begin{proposition}
+	[8.1 in \cite{silvermanAdvancedTopicsArithmetic1994}]
+	\label{prop:irred_comp_of_prop_model}
+	Let $\mathcal{C} / R$  be a proper regular model of an elliptic curve $E / K$. Then 
+	\begin{enumerate}
+		\item At least one of the $n_i$ is equal to 1. 
+		\item $K_{\mathcal{C} } \cdot F_i = 0 $ for irreducible componetents $F_i$ in $\mathcal{C} _s$. 
+			Here $K_{\mathcal{C} }$ is a cannonical divisor. 
+		\item If $r = 1$ (i.e.\ the special fibre is irreducible) then $F_1^2 = \mathcal{C} _s^2 = 0$ and $p_a (F_1) = 1$. 
+		\item If $r \ge 2$ (i.e. the special fibre is reducible) then for each irreducible component $F_i$ we have \[
+		F_i^2 = -2, F_i \simeq \pro^{1}_k \text{ and } \sum_{1 \le j \le r, j \ne i}^{} n_j F_j\cdot  F_i = 2 n_i
+		.\]   
+	\end{enumerate}
+\end{proposition}
+Note that point 4 is a consequence of the fact $\mathcal{C} _s \cdot F_i = 0$.  \todo{add reference of this fact}.
+
+
+\section{The Kodaira-Néron Classification} \label{sec:the_kodaira-néron_classification}
+
+The goals is to prove the following theorem
+\begin{theorem}[thm 8.2 in \cite{silvermanAdvancedTopicsArithmetic1994}]
+	Let $E / K$ be a an elliptic curve and $\mathcal{C}  / R$ be a minimal proper regular model for $E / K$.
+	Then the special fibre $\mathcal{C} _s = \mathcal{S}  \times_R k$ of $\mathcal{C} $ is of one of the following \emph{types}
+	\begin{description}
+		\item[$\text{I}_0$] $\mathcal{C} _s$ is a nonsingular curve of genus 1. 
+		\item[$\text{I}_1$ ] $\mathcal{C} _s$ is a rational curve with node. 
+		\item[$\text{I}_n$ ] $\mathcal{C} _s$ consists of of $n$-nonsingular 
+		\item[\ldots]
+	\end{description}
+\end{theorem}
+
+We start with the usual decomposition of the special fibre as in \eqref{eq:decomposition_fibre} \[
+	\mathcal{C}_s = \sum_{i = 0}^{r} n_i F_i
+.\]  
+By point 1 of \cref{prop:irred_comp_of_prop_model} and reordening the fibres we may assume that $n_1 = 1$ and that $F_1$ contains the image of $0 \in E (K)$ under the reduction map. We will distinguish a lot of different cases and find a different type each time.  
+\subsection{$\mathcal{C} _s$ is irreducible, i.e. $r = 1$} \label{sec:C_s_is_irreducible,_i.e._r_=_1}
+We have $\mathcal{C} _s = n_1 F_1 = F_1$. Then by point 3 of \cref{prop:irred_comp_of_prop_model} we see that  $\mathcal{C} _s$ is a irreducible curve of genus one. 
+Then from general theory of curves of genus 1 we see that $\mathcal{C} _p$ is either smooth, has a cusp or has a node, which give type $\text{I}_0, \text{I}_1$ and $\text{II}$ respectively. \todo{Show that this is true, or give a good reference. 
+Apparantly its in V.3.7 of \cite{hartshorneAlgebraicGeometry1977}. Silverman gives another agument, but it requires that we know that a minimal model is given by a minimal Weierstrass equation}. 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{type-i2-iii}
+    \caption{Type $\text{I}_0 \text{, I}_0$ and $\text{II}$}
+    \label{fig:type-i2-iii}
+\end{figure}
+
+\bigskip
+In what follows we will consider cases where $r \ge 2$. We will make frequent use the formula 
+\begin{equation}\label{eq:sum_intersections}
+	\sum_{1 \le j \le r, j \ne i}^{} n_j F_i \cdot F_j = 2 n_i
+\end{equation}
+The main clue is that all the terms in this sequence are non negative, which will really restrict the how large the $n_j$ 's and intersection numbers  $F_i \cdot  F_j$ will become.
+Recall that we also have that $n_1 = 1$ and that $\mathcal{C} _s$ is connected. We may relabel such that $F_2$ intersects $F_1$, i.e.\  $F_1 \cdot F_2 $ 
+\todo{Check that this is really true, and something with the link to extended dynkin diagrams.}
+Essentially the rest of the proof is using combinatorics to find which cases are possible, similar to proofs of A, (B, C), D, E classifications once one has obtained the right symmetric form.  
+
+
+
+\subsection{$\mathcal{C} _s$ has two irreducible components, i.e.\ $r  = 2$} \label{sec:C_s_has_two_irreducible_components}
+In this case we have $\mathcal{C} _s = F_1 + n_2$. 
+Plugging this into \eqref{eq:sum_intersections} with $i = 1$ and  $i = 2$ gives us \[
+n_2 F_1 \cdot F_2 = 2, \qquad F_1 \cdot F_2 = 2 n_2
+.\] 
+From this we easily see that 
+ \[
+F_1 \cdot F_2 = 2, \qquad n_2 = 1
+.\] 
+So $F_1$ intersects $F_2$ twice. Either in two different points or in a single point. This gives Type  $\text{I}_2$ or Type $\text{III}$ respectively. 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{type-i-and-iii}
+    \caption{type $\text{I}_2$ and III}
+    \label{fig:type-i-and-iii}
+\end{figure}
+
+
+\subsection{$\mathcal{C} _s$ has more irreducible components, i.e.\ $r \ge 3$} \label{sec:S_s_has_more_irreducible_components}
+
+In this case we claim that curves intersect at most once, i.e. 
+\begin{claim}
+\[
+	F_i \cdot F_j \le 1 \text{ for all }  1 \le i, j \le r, i \ne j
+\]
+\end{claim}
+\begin{proof}
+	$\mathcal{C} _s$ is connect and has atleast three irreducible components. 
+	So there is a third distinct component $F_k$ that intersects $F_i$ or $F_j$. Suppose WLOG $F_k \cdot F_i \ge 1$. 
+	Using \eqref{eq:sum_intersections} on both  $i, j$ yields \[
+	n_j F_i \cdot F_j < n_j F_i \cdot  F_k + n_k F_i \cdot  F_k \le 2n, \qquad n_i F_i \cdot F_j \le 2 n_j
+	.\] 
+	Multiplying both inequalities and canceling $n_i n_j$ from both sides yields $(F_i \cdot  F_j)^2 < 4$, from which we see that $F_i \cdot  F_j = 1$ or $F_i \cdot F_j = 0$. 
+\end{proof}
+
+Recall that we assume that $F_1$ intersects $F_2$. So $F_1 \cdot  F_2 = 1$. 
+Again using  \eqref{eq:sum_intersections} with $i = 1$ we see that \[
+n_2 = n_2 F_1 \cdot F_2 \le 2n_1 = 2
+.\] 
+So $n_2$ is either $1$ or $2$. We split again intro two cases. 
+\subsubsection{$n_2 = 1$} 
+In this case we will find that $\mathcal{C} _s$ is of type $\text{I}_r$ or $\text{IV}$. This follows if we can show any compoment $F_j$ has multiplicity $n_j$ and intersects exactly two other components (i.e. the dual graph can't split). 
+
+We already know that $F_1 \cdot F_2 = 1$ so $F_2$ intersects $F_1$ once. Using the same formula with $i = 2$ again gives us \[
+	\underbrace{n_1 F_1\cdot F_2}_{1} + \sum_{j = 3}^{r}  n_j F_j \cdot F_2 = 2
+.\] 
+Hence $F_2$ intersects exactly one new component (not $F_1$). We are free to reorder and call that component $F_3$. Then we also read that $n_3 = 1$.  
+
+Now we continue by induction. Suppose that for a string of components, $F_1, F_2, \ldots, F_m$ we have that all components have multiplicity $1$, i.e.\ $n_1 = \ldots = n_{m} = 1$ and that each inner component ($F_2, \ldots, F_{m -1}$) exactly intersects each of its neighbours once. 
+Then applying the formula \eqref{eq:sum_intersections} to $F_m$ we see that \[
+	\underbrace{n_{m -1} F_{m - 1} \cdot F_m}_1 + \sum_{j= 1, j\ne m}^{r} n_j F_j \cdot F_m  = 2
+.\] 
+So again $F_m$ intersects exactly one component that we are free to call $F_{m + 1}$ and $n_{m + 1} = 1$. 
+
+Eventually we find an $F_m$ that already occurs in the string, and hence the components of the string form a circle. Because $\mathcal{C} _s$ is connected, this is the whole special fibre.  Hence $\mathcal{C} _s $ is of type $\text{IV}$ or $\text{I}_{r}$. 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{type-iv-and-ir}
+    \caption{type IV and $\text{I}_r$}
+    \label{fig:type-iv-and-ir}
+\end{figure}
+
+\subsubsection{$n_2 = 2$} 
+We are getting pretty comfortable with the yoga of this calculation,  using \eqref{eq:sum_intersections} and renaming components as necessary. So from now on I will stop referring the formula explicitly each time and take the liberty to label new components with increasing integers.
+
+This we apply it to $F_1$ and find \[
+	\underbrace{n_1 F_1 \cdot  F_2}_{2} + \sum_{j = 3}^{r} n_j F_j\cdot F_1 = 2
+.\] 
+So we see that $F_1$ cannot intersect any other component. 
+Lets figure out what $F_2$ might intersect. 
+\[
+	\underbrace{n_1 F_1 \cdot F_2}_1 + \sum_{j = 3}^{r} n_j F_j \cdot F_2 = 4
+.\] 
+We find three possibilities
+\begin{itemize}
+	\item $F_2$ intersects three new components once $F_3, F_4, F_5$ with $n_3 = n_4 = n_5 = 1$. 
+		Then the formula gives \[
+			\underbrace{n_2F_2 \cdot  F_3}_{2} + \sum_{j \ne 2,3}^{}n_j F_j \cdot  F_3 = 2 
+		.\] 
+		So $F_3$ and similarly $F_4, F_5$ intersect no new components. So we end up in 
+\end{itemize}
+
+
+
+\section{Overview} \label{sec:overview}
+The following gives an overview on how the classification works. 
+
+
+Let $\mathcal{C} _s = \sum_{i = 0}^{r} n_i F_i $
+
+
+\noindent If $r = 1 $, i.e. $\mathcal{C} _s = F_1$:
+\begin{itemize}
+	\item $F_1$ is smooth: Type $\text{I}_0$
+	\item $F_1$ has one node: Type $\text{I}_1$
+	\item $F_1$ has one cusp: Type $\text{II}$
+\end{itemize}
+If $r = 2$, i.e.\ $\mathcal{C} _s = F_1 + n_2 F_2$:
+\begin{itemize}
+	\item $F_1, F_2$ intersect tangentially: Type $\text{III}$ 
+	\item $F_1, F_2$ intersect transversally: Type $\text{I}_2$
+\end{itemize}
+If $r \ge 3$
+ \begin{itemize}
+	\item  $n_2 = 1$
+		\begin{itemize}
+			\item There is a point where more than 2 components intersect: Type IV
+			\item Else: Type $\text{I}_r$
+		\end{itemize}
+	\item $n_2 = 2$
+		\begin{itemize}
+			\item $F_2$ intersects 4 components: $\text{I}^*_0$
+			\item  $F_2$ intersects 3 components: $\text{I}^*_{r - 5}$
+			\item $F_2$ intersects 2 components: $\text{II}^*$ or $\text{III}^*$ 
+		\end{itemize}
+\end{itemize}
+
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="svg8" inkscape:version="0.92.4 (unknown)" sodipodi:docname="figure.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 680.3 133.9"
+	 style="enable-background:new 0 0 680.3 133.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st1{font-family:'MyriadPro-Regular';}
+	.st2{font-size:12px;}
+</style>
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1.0" id="base" inkscape:current-layer="layer1" inkscape:cx="284.27627" inkscape:cy="182.72055" inkscape:document-units="mm" inkscape:guide-bbox="true" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:window-height="995" inkscape:window-maximized="1" inkscape:window-width="2520" inkscape:window-x="20" inkscape:window-y="65" inkscape:zoom="0.99437388" pagecolor="#ffffff" showborder="true" showgrid="false" showguides="true" width="200mm">
+	<inkscape:grid  dotted="false" empspacing="4" id="grid815" spacingx="10" spacingy="10" type="xygrid" units="mm">
+		</inkscape:grid>
+</sodipodi:namedview>
+<g id="layer1" transform="translate(0,-177)" inkscape:groupmode="layer" inkscape:label="Layer 1">
+</g>
+<path class="st0" d="M116.9,85.6c11.9-30,40.7-50,72.8-50.7c32.9-0.6,63.2,19.3,75.7,50.1"/>
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1.0" id="base" inkscape:current-layer="layer1" inkscape:cx="284.27627" inkscape:cy="182.72055" inkscape:document-units="mm" inkscape:guide-bbox="true" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:window-height="995" inkscape:window-maximized="1" inkscape:window-width="2520" inkscape:window-x="20" inkscape:window-y="65" inkscape:zoom="0.99437388" pagecolor="#ffffff" showborder="true" showgrid="false" showguides="true" width="200mm">
+	<inkscape:grid  dotted="false" empspacing="4" id="grid815" spacingx="10" spacingy="10" type="xygrid" units="mm">
+		</inkscape:grid>
+</sodipodi:namedview>
+<g id="layer1_1_" transform="translate(0,-177)" inkscape:groupmode="layer" inkscape:label="Layer 1">
+</g>
+<path class="st0" d="M265.3,22.6c-11.9,30-40.7,50-72.8,50.7c-32.9,0.6-63.2-19.3-75.7-50.1"/>
+<text transform="matrix(1 0 0 1 121.542 15.6883)" class="st1 st2">1</text>
+<text transform="matrix(1 0 0 1 129.7056 87.9761)" class="st1 st2">1</text>
+<path class="st0" d="M405.7,86.1c11.9-19.8,40.7-33,72.8-33.4c32.9-0.4,63.2,12.7,75.7,33"/>
+<path class="st0" d="M554.1,19.2c-11.9,19.8-40.7,33-72.8,33.4c-32.9,0.4-63.2-12.7-75.7-33"/>
+<text transform="matrix(1 0 0 1 419.0543 15.7189)" class="st1 st2">1</text>
+<text transform="matrix(1 0 0 1 426.6228 86.0681)" class="st1 st2">1</text>
+<text transform="matrix(1 0 0 1 150.6646 127.5002)" class="st1 st2">Type $\text{I}_2$</text>
+<text transform="matrix(1 0 0 1 438.7603 127.5003)" class="st1 st2">Type $\text{III}$</text>
+</svg>

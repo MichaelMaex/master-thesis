@@ -1,0 +1,85 @@
+%% Creator: Inkscape 1.0beta2 (2b71d25, 2019-12-03), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'first-examples-of-models.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{510.22499084bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.40011762)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{first-examples-of-models.pdf}}%
+    \put(0.08799633,0.35395328){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\pro^1_K$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{first-examples-of-models.pdf}}%
+    \put(0.01690284,0.06102956){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\spec K$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{first-examples-of-models.pdf}}%
+    \put(0.25347215,0.35395284){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr P$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{first-examples-of-models.pdf}}%
+    \put(0.253472,0.0921601){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\spec R$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{first-examples-of-models.pdf}}%
+    \put(0.25735676,0.28867252){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr P_\eta$\end{tabular}}}}%
+    \put(0.36291563,0.31501987){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr P_s$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{first-examples-of-models.pdf}}%
+    \put(0.27731222,0.04171397){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\eta$\end{tabular}}}}%
+    \put(0.37552154,0.04171485){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathfrak m$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{first-examples-of-models.pdf}}%
+    \put(0.57333677,0.35348025){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{first-examples-of-models.pdf}}%
+    \put(0.53317993,0.06102883){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\spec K$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{first-examples-of-models.pdf}}%
+    \put(0.7697491,0.09216068){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\spec R$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{first-examples-of-models.pdf}}%
+    \put(0.79358917,0.04171456){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\eta$\end{tabular}}}}%
+    \put(0.89179863,0.04171397){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathfrak m$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{first-examples-of-models.pdf}}%
+    \put(0.76798002,0.35347996){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr E$\end{tabular}}}}%
+    \put(0.80149965,0.30528416){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr E_\eta$\end{tabular}}}}%
+    \put(0.89625534,0.30528416){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr E_s$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{first-examples-of-models.pdf}}%
+  \end{picture}%
+\endgroup%

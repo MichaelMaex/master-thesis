@@ -1,0 +1,87 @@
+\subsection{More on $G$-topologies} \label{sec:more_on_Gtopologies}
+Sometimes we wish to have slightly more structure on our $G$ topologies.
+\begin{definition}
+	Let $\mathcal{T} $ be a $G$-topology a set $X$. 
+	We define the properties $(G_0), (G_1)$ and $(G_2)$ as follows 
+	\begin{enumerate}
+	\item[($G_1$)] $\emptyset$ and $X$ are admissible open subsets in $X$.  
+	\item [($G_1$)] Let  $U$ be an admissible open and $V \subset  U$ any subset. 
+		Suppose that there is a cover $\{U_i\} _{i \in I} $ of $U$ such that $V \cap U_i$ is admissible for any $i \in I$. 
+		Then $V$ is an admissible open. 
+	\item[($G_2$)]
+		Let $U$ be an admissible open and  $\{U_{i}\}_{i \in I}$ be a set theoretic covering such that each $U_i$ is an admissible open. 
+		Suppose that $\{U_i\}  _{i \in I}$ has an admissible refinement. Then $\{U_{i}\} _{i \in I}$ is an admissible cover of $U$. 
+	\end{enumerate}
+\end{definition}
+
+Property $(G_0)$ is just something we are used to from ordinary topological spaces. 
+Property $(G_1)$ states that whether a set is admissible may be checked locally and property $(G_2)$ states that whether a cover is admissible may be checked locally. 
+These last two are crucial to impose when we eventually want to glue  $G$-topological spaces, as they assure that the topology is defined locally. 
+
+$G$-topologies contain just the right amount of information to define a sheaf theory. 
+\begin{definition}
+	Let $(X, \mathcal{T} )$ be a $G$-topological space.
+	A \emph{presheaf on $X$} with values in a category $\mathcal{C} $ is a functor $\mathcal{F} :S^{\text{op}} \to \mathcal{S} $. 
+
+	A presheaf $\mathcal{F} $ is called a \emph{sheaf} if for any admissible open  $U$ and cover $\{U_i\}_i $ of $U$ the sequence \[
+	\begin{tikzcd}
+		\mathcal{F} (U) \rar & \prod_{i \in I} \mathcal{F} (U_i) \rar[shift left]\rar[shift right] & \prod_{i, j \in I} \mathcal{F} (U_{i} \cap U_j)
+	\end{tikzcd}
+	\] 
+	is exact. 
+	\todo{what assumptions do we exactly need on the category $\mathcal{C}$?}
+\end{definition}
+So a $G$-topological space defines a \emph{topos}. 
+One may wonder if we can refine a $G$-topological space so it satisfied extra desired properties while preserving the associated topos. 
+
+Given a certain subcategory $\mathfrak{S} $ of $G$-topological spaces, there is a construction that refines all topologies on all objects in $\mathfrak{S} $ into ones that satisfy $(G_1)$ and $(G_2)$, while preserving all the topoi. 
+
+\begin{definition}
+	Let $(X, \mathcal{T}) \in \mathfrak{S} $ be an object and $\{U_i\} _{i \in I}$ any set theoretic covering of any subset $U \subset  X$. 
+	We say  $\{U_i\} _{i \in I}$ is \emph{compatible} if for any morphism in $\mathcal{S}, \phi: Y \to X $ and for any admissible open $V \subset  Y$ with $\phi(V) \subset  U$ the covering $\{\phi^{-1}(U_i) \cap V\} _{i \in I}$ of $V$ can be refined by an admissible cover in $Y$. 
+\end{definition}
+
+\todo{refer to the right results}
+
+\begin{definition}
+	For any object $(X, \mathcal{T}) \in \mathfrak{S} $ we may define a new $G$-topology $\mathcal{T} '$ where the admissible opens are all sets that admit a compatible cover and the covers are all compatible covers. 
+\end{definition}
+
+
+\subsubsection{pasting $G$-topological spaces} \label{sec:pasting_$g$-topological_spaces}
+\todo{Do I need this section?}
+
+\begin{definition}\label{def:admissible_open_cover}
+	A subset $V \subset X = \mathcal{M} (A)$ is \emph{admissible} if it has a cover $\{V_i\} $ of affinoid subdomains $u_i$ satisyfing the following property:
+	For any bounded map of $k$-affinoid algebras $f: A \to B$ such that the induced morphism  $\phi: \mathcal{M} (B)$ lands in $V$, the pullback of the cover $\{\phi^{-1}(U_i)\} $ has a finite subcover. 
+
+	A cover $\{U_i\} $ of $V$ is an \emph{admissible cover} if for any bounded map of affinoid algebras $f:A \to B$ such that $\phi: \mathcal{M} (B) \to \mathcal{M} (A)$ lies in $V$, the pullkback of the cover $\{f^{-1}(U_i)\} $ has a refinement by a  covering consisting of finitely many affinoid subdomains. 
+\end{definition}
+
+\begin{definition}\label{def:strong_g_topology}
+	The \emph{strong $G$-topology} on $X = \mathcal{M} (A)$ is the $G$-topology where the sets are the admissible opens and the covers are the admissible covers. 
+\end{definition}
+
+Note that this is exactly the refinement as discussed in \cref{sec:interlude_g_topologies}. 
+It satisfies the properties $(G_0), (G_1)$ and $(G_2)$, and this is the topology we will use later to glue these spaces together. 
+
+\begin{proposition}
+	The structure sheaf on $\mathcal{O}_X$ on the weak topology of $X = \mathcal{M} (A)$ extends to a structure sheaf on the strong topology on $X$, by defining \[
+		\mathcal{O}_X(V) = \ker\left(\prod_{i} A_{V_i} \to \prod_{i,j} A_{V_i \cap V_j}\right)
+	,\]
+	for $V$ an admissible open and $\{V_i\} $ an admissible cover by affinoid domains. 
+\end{proposition}
+
+\section{This might be very wrong} \label{sec:this_might_be_very_wrong}
+
+\begin{definition}
+	A good $K$-analytic space $X$, is a set $X$ equipped with 
+	\begin{itemize}
+		\item a locally Haussdorf topology
+		\item a $G$ topology staisfying $(G_0),(G_1)$ and $(G_2)$. 
+		\item A structure sheaf $\mathcal{O}_X$ on the $G$-topology with values in the category of $K$-banach algebras with bounded morphisms.
+	\end{itemize}
+	such that for any $x$ there exists a neighborhood (not necessarily open) $V$ of $x$ such $V \simeq \mathcal{M} (A_V)$ for some affinoid algebra $A_V$, where the isomorphism is on both topologies and structure sheaf. 
+\end{definition}
+
+

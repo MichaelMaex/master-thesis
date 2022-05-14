@@ -1,0 +1,100 @@
+\begin{definition}
+	Let $\mathscr X$ be a $R$-scheme. 
+	Then we define 
+	\begin{align*}
+		\mathscr X_\eta &:= \mathscr X_K = \mathscr X \times_R \spec K \\
+		\mathscr X_s &:= \mathscr X_k = \mathscr X \times_R \spec k 
+	.\end{align*}
+	We say that $\mathscr X_\eta$ is the \emph{generic fibre of $\mathscr X$} and that $\mathscr X_s$ is the \emph{special fibre of $X$}. 
+\end{definition}
+\begin{definition}
+	Let $X$ be a finite type scheme over $K$.  
+	A model of $X$ is a flat, separated, finite type $R$-scheme, $\mathscr X$ together with an isomorphism $i: \mathscr X_\eta \simeq X$.
+	\todo{check the details of this definition}
+\end{definition}
+Alternatively we may consider $i$ as open immersion $X\into \mathscr X$. 
+We will almost always omit specifying the isomorphism, as it is usually clear from the context. 
+Depending on the context we will almost always work with specific types models like requiring $\mathscr X$ to be proper or regular or normal.
+
+\begin{example}\label{ex:first_models}
+	\begin{enumerate}
+		\item Let $\pro^{1}_K = \proj(K[x, y])$ be the projective line. 
+			Then $\mathscr P = \proj\left(\frac{R[x, y, z]}{(x\cdot z - \pi y^2)}\right)$ is a model of $\pro^{1}_K$. 
+			The special fibre is $\proj\left( \frac{k[x, y, z]}{(xz)} \right) $ which consists of two irreducible components, each isomorphic to $\pro^{1}_k$.  
+		\item Let $E$ be the elliptic curve given by the Weierstrass equation \[
+				y^2 = x (x +1)(x-\pi)
+		.\] 
+		Then $\mathscr E = \proj \left( \frac{K[x, y, z]}{(zy^2 - x(x+z)(x-\pi z)} \right) $ is a model of $E$ and the special fibre is given by the Weierstrass equation $y^2 = x^2 (x+1)$, hence it is a node. 
+	\end{enumerate}
+	See \cref{fig:first_examples_of_models}.
+\end{example}
+
+\begin{figure}[h]
+    \centering
+    \incfig{first-examples-of-models}
+    \caption{The models from \cref{ex:first_models}.}
+    \label{fig:first_examples_of_models}
+\end{figure}
+\todo{figure out why this is rendering incorrectly}
+
+\begin{definition}
+	Let $i_1: X \into \mathscr X_1$, $i_2: X \into \mathscr X_2$ be two models of $X$. 
+	Then a morphism of models of $X$ is a morphism of $R$-schemes $f: \mathscr X_1 \to \mathscr X_2$ such that \[
+	\begin{tikzcd}
+		\mathscr X_1 \ar{rr}{f} & & \mathscr X_2 \\
+					& X \ar[hookrightarrow]{ul}{i_1}  \ar[hookrightarrow]{ur}{i_2}
+	\end{tikzcd}
+	\] 
+	commutes.
+\end{definition}
+
+\begin{example}\label{ex:morphism_models_1}
+	The most common way to construct morphisms of models is by blowing up closed subschemes in the special fibre. 
+	Let $E, \mathscr E$ be the elliptic curve and model from \cref{ex:first_models}. 
+	Suppose that $\ch k \ne 2$. 
+	Let $\xi$ be the singular point of $\mathscr E _s$, with coordinates $(x, y,\pi) = (0,0,0)$. 
+	Then  $\mathscr E' := \bl_\xi \mathscr E $ is another model of $E$ and the morphism $p:\mathscr E' \to \mathscr E $ is a morphism of models. 
+	In this case one can show that the exceptional divisor of $\mathscr E' \to \mathscr E$ is a rational curve of multiplicity $1$ which intersects the strict tranform of $\mathscr E _s$ in two different points. 
+	See \cref{fig:morphism_models_blowup_1}.
+\end{example}
+
+\begin{figure}[h]
+    \centering
+    \incfig{morphism-models-blowup-1}
+    \caption{The morphism between models of an elliptic curve from \cref{ex:morphism_models_1}.}
+    \label{fig:morphism_models_blowup_1}
+\end{figure}
+
+
+\todo{something on domination and contraction}
+
+\todo{regular models}
+\subsection{Strict normal crossings models} \label{sec:strict_normal_crossings_models}
+\todo{snc-models}
+
+\begin{definition}
+	Let $D$ be an effective cartier divisor on a regular Noetherian scheme $X$. 	Let $x \in X$ be a closed point. 
+	We say that $D$ has \emph{normal crossings at $x$ } if there are $f_1, \ldots, f_n$ with $n = \dim \mathcal{O}_{X, x}$ such that $\mathfrak{m} _x \mathcal{O}_{X, x} = (f_1, \ldots, f_n)$ and $\mathcal{O}(-D)_{x} = (f_1^{r_1}, \ldots, f_m^{r_m})$ for some $0 \le m \le n$ and $r_i \in \Z_{> 0}$. 
+
+	We say $D$ has \emph{normal crossings} or $D$ is a \emph{normal crossings divisor} if $D$ has normal crossings at every closed point  $x \in X$. 
+
+	Morever  $D$ has \emph{strict normal crossings} or $D$ is a \emph{strict normal crossings divisor} if $D$ has normal crossings and every irreducible component of $D$ is regular. 
+\end{definition}
+Normal crossings and strict normal crossings often get abreviated as \emph{nc} or \emph{snc} respectively.
+You should think of a normal crossings at $x$ as all components of $D$ meeting transversally at $x$. 
+Strictness ensures that there are no ``hidden crossings'' which exist étale locally on a component, e.g.\ a node (see \cref{fig:normal_crossings_divisors}).
+
+\begin{figure}[ht]
+    \centering
+    \incfig{normal-crossings-divisors}
+    \caption{Recognizing (strict) normal crossings divisors}
+    \label{fig:normal_crossings_divisors}
+\end{figure}
+\begin{definition}
+	A \emph{(strict) normal crossings model} or \emph{(scn-model) nc-model}  of $X$ is a regular model $\mathscr X$ such that $\mathscr X_s = V(\pi) \subset  \mathscr X$ is a (strict) normal crossings divisor. 
+\end{definition}
+\todo{minimal models}
+\todo{what types and properties of morphisms do i need to introduce?}
+
+
+

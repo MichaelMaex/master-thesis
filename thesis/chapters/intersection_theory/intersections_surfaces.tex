@@ -1,0 +1,102 @@
+
+\todo{some introduction here}
+Let $X$ be regular Noetherian connected scheme of dimension 2. 
+\begin{definition}
+	Suppose $D, E$ are effective cartier divisors on $X$ that do not share any irreducible components, cut out by the sheaf of ideals $\mathcal{I} _D, \mathcal{I} _E$ respectively.
+
+	Let $x \in X$ be closed point. Then the \emph{intersection number of $D, E$ in $x$} is \[
+		i_x(D, E) = \length_{\mathcal{O}_{X, x}} \frac{\mathcal{O}_{X, x}}{\mathcal{I}_{D,x} + \mathcal{I}_{E,x}} 
+	.\]  
+\end{definition}
+
+This functions counts how many times $ D$ and $E$ intersect in $x$. 
+As you may expect when  $x$ not in the support of $D$ (resp. $E$), then $i_x(D, E) = 0$. 
+Indeed, in that case the inclusion $\mathcal{I}_{D, x} \subset  \mathcal{O}_{X, x}$ (resp. $\mathcal{I} _{E, x}\subset \mathcal{O}_{X,x}$) is an isomorphism. 
+Hence $\mathcal{I}_{D, x} + \mathcal{I} _{E, x} = \mathcal{O}_{X, x}$ and the lenght is $0$ and the module of which the length we need to compute is trivial. 
+
+If $x \in \supp D \cap \supp E$ then by the Nullstellensatz we have that $\mathfrak{m} _x \subset  \sqrt{\mathcal{I} _{D, x} + \mathcal{I} _{E, x}} $. 
+Hence ${\mathcal{O}_{X, x}} \frac{\mathcal{O}_{X, x}}{\mathcal{I}_{D,x} + \mathcal{I}_{E,x}}$ is Artinian, thus $i_x(E, D)$ is finite. 
+\todo{why is it non-zero in this case?}. 
+
+\begin{definition}\label{def:intersection_number_effective}
+	Let $D, E$ be effective cartier divisors on $X$ that do not share any irreducible components.
+	Then we define the \emph{intersection number of $D, E$} to be \[
+		D\cdot E = \sum_{x \in X_\text{cl} }i_x (D, E)
+	.\] 
+\end{definition}
+As $\supp D \cap \supp E$ is finite, the terms in the sum above are $0$ for all but finitely many points. Hence $D\cdot E$ is a finite integer. 
+\begin{example}
+	Let $F$ be any field and $X = \spec K[x, y]$. 
+	Let  $D = V(y)$ and $E = V(y - x^r)$ for some $r \ge 1$
+	Then  $\supp D \cap \supp E = \{(0, 0)\} $ and $\mathcal{I} _{D, (0,0)} + \mathcal{I} _{E, (0,0)} = (y, y-x^r) = (y, x^r)$.
+	So \[
+		i_{(0,0)}(D, E) = \length \frac{K[x, y]_{(0, 0)}}{(y, x^{r})} = r
+	.\] 
+	As this is the only intersection point also have that $D\cdot E = r$. 
+\end{example}
+
+\begin{lemma}\label{lem:intersection_surfaces_restriction_mult_1}
+	Let $D, B$ be effective cartier divisors with no common components. And let $i: D \into X, j: E \into X$ be the corresponding closed immersions in $X$. 
+	Let $x \in E$. Then  
+	\begin{align*}
+		i_x(D, E) &= \mult_x D|_E   \\
+		(D\cdot E) &= \deg D|_E 
+	.\end{align*}
+\end{lemma}
+\begin{proof}
+	Without loss of generality it suffices to show that $i_x(D, E) = \mult_x D|_E$. Then $(D\cdot E) =\deg D|_E$ follows from the definition of the degree.  
+	We have \[
+		i_x(D, E) = \length \frac{\mathcal{O}_{X, x}}{\mathcal{I} _{D, x} + \mathcal{I} _{E, x}} =\length \frac{\mathcal{O}_{E, x}}{\mathcal{O}(-D|_E)_x} = \mult_x D|_E \\
+	.\] 
+\end{proof}
+\begin{lemma}
+	Let $D, F$ be effective cartier divisors that do not share any components with a effective cartier divisor $E$. Let $x \in E$
+	Then  \[
+		i_x (D + F, E) = i_x(D, E) + i_x(F, E), \quad (D + F) \cdot E = D\cdot E + F \cdot E
+	.\] 
+\end{lemma}
+\begin{proof}
+	Using \cref{lem:intersection_surfaces_restriction_mult_1} we see that 
+	\begin{align*}
+		i_x (D + F, E) &= \mult_x (D + F)|_E = \mult_x (D|_E + F|_E) \\
+			       &= \mult_x D|_E + \mult_x F|_E \\
+			       &= i_x(D + F, E) 
+	.\end{align*}
+	From this $(D + F) \cdot E = D\cdot E + F \cdot E$ follows.
+\end{proof}
+
+\todo{put the results from \cite{liuAlgebraicGeometryArithmetic2002} 9.1.9 abound recognising normal crossings with intersection numbers somewhere}
+
+\begin{definition}
+	Let $D, E$ be divisors (not necessarily effective) without common components. 
+	Let $E = E_1 - E_2$ and $D = D_1 - D_2$ such that $E_1, E_2, D_1, D_2$ are effective divisors with piarwise no common components. 
+	Then we can extend the \cref{def:intersection_number_effective} 
+	\[
+	D\cdot E = D_1 \cdot E_1 - D_2 \cdot E_1 - D_1 \cdot E_2 + D_2 \cdot  E_2
+	.\] 
+	The map $(D, E )\mapsto D\cdot E$ is bilinear where it is defined and is called the \emph{intersection pairing}.
+\end{definition}
+
+To extend the set of pairs of divisors on which the intersection pairing is defined, as well as prove nice properties of it we need to add extra assumptions to the scheme $X$. 
+
+
+\todo{check the precise conditions in the following two lemmas}
+\begin{lemma}[moving lemma]
+	Let $X$ be a connected, normal, separated, Noetherian scheme, and $D, E$ a divisor on $X$. 
+	Then there is a $f \in K(X)$ such that $D + (f)$ and $E$ do not share any components. 
+\end{lemma}
+\begin{proof}
+	See \cite[]{liuAlgebraicGeometryArithmetic2002}
+\end{proof}
+
+\begin{lemma}
+	Suppose that moverover $X$ is proper. 
+	Let  $D$ be any divisor and $f \in K(X)$ be such that $D$ and $(f)$ do not share any components. 
+	Then $(f)\cdot D = 0$. 
+\end{lemma}
+\begin{proof}
+	
+\end{proof}
+
+
+
