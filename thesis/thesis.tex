@@ -6,6 +6,7 @@
 \pagenumbering{roman}
 \newpage
 \tableofcontents
+\listoftodos
 \chapter*{Acknowledgements} \label{chap:acknowledgements}
 
 \setcounter{chapter}{-1}
@@ -22,17 +23,20 @@ The valuation theory and Kodaira-Neron chapters should include all the necessary
 \pagenumbering{arabic}
 
 \chapter{Introduction} \label{chap:introduction}
-%\input{chapters/introduction.tex}
+\input{chapters/introduction.tex}
 
 \chapter{Valuation Theory} \label{chap:valuation_theory}
 \import{chapters/valuation_theory/}{valuation_theory.tex}
 
 
-\chapter[Intersection theory]{Intersection Theory and Kodaira Neron Classification of Elliptic Curves} \label{chap:intersection_theory} 
+
+\chapter{Models and Intersection Theory} \label{chap:models_and_intersection_theory}
 \import{chapters/intersection_theory/}{intersection_theory.tex}
 
+\chapter{Kodaira-Neron Classification of Elliptic curves} \label{chap:kodaira-neron_classification_of_elliptic_curves}
+
 \chapter{Introduction to Berkovich Geometry} \label{chap:affinoid_algerbas}
-%\input{chapters/berkovich_geometry/berkovich_geometry.tex}
+%\import{chapters/berkovich_geometry/}{berkovich_geometry.tex}
 
 
 \chapter{Weight functions} \label{chap:weight_functions}
