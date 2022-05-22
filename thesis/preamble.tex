@@ -52,7 +52,10 @@
 	\def\svgwidth{\columnwidth}
 	\subimport{./figures/}{#1.pdf_tex}
 }
-
+\newcommand{\incfigsmall}[1]{%
+	\def\svgwidth{.15\columnwidth}
+	\subimport{./figures/}{#1.pdf_tex}
+}
 \pdfsuppresswarningpagegroup=1
 
 
@@ -88,11 +91,12 @@
 \DeclareMathOperator{\wt}{wt}
 \DeclareMathOperator{\sk}{Sk}
 \DeclareMathOperator{\ch}{char}
-\DeclareMathOperator{\ram}{Ram}
+\DeclareMathOperator{\ra	m}{Ram}
 \DeclareMathOperator{\mult}{mult}
 \DeclareMathOperator{\bl}{Bl}
 \DeclareMathOperator{\length}{length}
 \DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\ram}{Ram}
 
 
 
@@ -115,6 +119,8 @@
   \fi
   \nonscript\;}
 
+\newcommand{\step}[1]{\par\noindent\textit{Step #1.} \;}
+
 \theoremstyle{definition}
 \newtheorem{definition}{Definition}[section]
 \newtheorem*{notation}{Notation}
@@ -126,6 +132,7 @@
 \newtheorem{proposition}[definition]{Proposition}
 \newtheorem{exercise}[definition]{Exercise}
 \newtheorem{corollary}[definition]{Corollary}
+\newtheorem{problem}[definition]{Problem}
 
 \newcommand{\stacks}[1]{\cite[\href{https://stacks.math.columbia.edu/tag/#1}{Tag #1}]{stacks-project}}
 

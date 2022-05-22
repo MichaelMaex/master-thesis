@@ -65,7 +65,30 @@ Depending on the context we will almost always work with specific types models l
     \label{fig:morphism_models_blowup_1}
 \end{figure}
 
+Morphisms of models are birational morphisms, as they are isomorphisms on the generic fibre. So if $\mathscr C_1, \mathscr C_2$ are models of $C$, then a morphisms of models $f: \mathscr C_1 \to \mathscr C_2$ is necessarily unique, if it exists. 
+
+\begin{definition}
+	Let $\mathscr C_1, \mathscr C_2$ be models of $C$. 
+	Then we say that $\mathscr C_1$ \emph{dominates} $\mathscr C_2$ if there is a surjective morphism of models $\mathscr C_1 \to \mathscr C_2$.
+\end{definition}
+
+If $\mathscr C_1 $ dominates $\mathscr C_2$, and both are proper then we can blowup a closed point in $\mathscr C_2$, where the map is not locally isomorphic, to add an one of the exceptional divisors of $\mathscr C_1$ to $\mathscr C_2$. 
+Repeating this operation we eventually get the whole of $\mathscr C_1$. 
+This leads to the following theorem. The details of this construction can be found in \cite[sec.\ 9.1.2]{liuAlgebraicGeometryArithmetic2002}.
+\begin{theorem}[factorisation theorem]\label{thm:factorisation_theorem}
+	Let $\mathscr C_1, \mathscr C_2$ be two proper models a curve $C$ such that $f: \mathscr C_1 \to \mathscr C_2$ dominates. 
+	Then $f$ can be decomposed into a sequence of blowups in closed points. 
+\end{theorem}
+
+Domination induces a partial order on the models of $\mathscr C$. 
+\begin{definition}
+	Let $C$ be a curve and $\mathscr C_1, \mathscr C_2$ be two models of $C$. 
+	If $\mathscr C_1$ dominates $\mathscr C_2$ then we say $\mathscr C_2 \le \mathscr C_1$
+\end{definition}
+
 \todo[inline]{reduction map}
+
+One can think about models as a way of taking looking at varieties modulo $\pi$. 
 
 
 \todo{something on domination and contraction}
