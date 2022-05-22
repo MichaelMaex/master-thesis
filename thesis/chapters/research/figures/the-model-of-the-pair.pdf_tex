@@ -1,0 +1,95 @@
+%% Creator: Inkscape 1.0beta2 (2b71d25, 2019-12-03), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'the-model-of-the-pair.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{510.22499084bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.41422901)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{the-model-of-the-pair.pdf}}%
+    \put(0.61620284,0.39074981){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr P’$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{the-model-of-the-pair.pdf}}%
+    \put(0.65884006,0.35020857){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr P’_\eta$\end{tabular}}}}%
+    \put(0.7563053,0.35066073){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr P’_s$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{the-model-of-the-pair.pdf}}%
+    \put(0.63944729,0.30508569){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\infty$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{the-model-of-the-pair.pdf}}%
+    \put(0.63944788,0.26967866){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$1$\end{tabular}}}}%
+    \put(0.77176818,0.31401116){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$G$\end{tabular}}}}%
+    \put(0.77176818,0.04714596){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$F$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{the-model-of-the-pair.pdf}}%
+    \put(0.63944788,0.11183742){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\lambda$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{the-model-of-the-pair.pdf}}%
+    \put(0.63944803,0.07433014){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{the-model-of-the-pair.pdf}}%
+    \put(0.70425576,0.30894531){\color[rgb]{0.89019608,0.0627451,0.0745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\overline{\delta}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{the-model-of-the-pair.pdf}}%
+    \put(0.16182875,0.39074951){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr P$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{the-model-of-the-pair.pdf}}%
+    \put(0.20446597,0.35020828){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr P_\eta$\end{tabular}}}}%
+    \put(0.3019312,0.35066043){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr P_s$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{the-model-of-the-pair.pdf}}%
+    \put(0.1850732,0.30508539){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\infty$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{the-model-of-the-pair.pdf}}%
+    \put(0.1850732,0.27294002){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$1$\end{tabular}}}}%
+    \put(0.31739409,0.31401087){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\tilde G$\end{tabular}}}}%
+    \put(0.31739409,0.04714581){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\tilde F$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{the-model-of-the-pair.pdf}}%
+    \put(0.18507379,0.11183712){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\lambda$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{the-model-of-the-pair.pdf}}%
+    \put(0.18507349,0.0775915){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{the-model-of-the-pair.pdf}}%
+    \put(0.24988152,0.30894502){\color[rgb]{0.89019608,0.0627451,0.0745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\overline{\delta}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{the-model-of-the-pair.pdf}}%
+    \put(0.40722313,0.20410539){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}desingularisation\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{the-model-of-the-pair.pdf}}%
+    \put(0.31082934,0.18636351){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\vdots$\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

@@ -1,0 +1,122 @@
+Using Tate's algorithm we can find the anwer to \cref{prob:main_problem} without studying the map $\phi: E\an \to \pro^{1, \text{an}}_K$. 
+While the goal is to eliminate the use of tate's algorithm and find as much information about $E$ by studying its berkovich geometry, 
+it is useful to know what we expect to find, to guide our intuition and make conjectures. 
+
+Let $E$ be the curve defined by \eqref{eq:weierstrass_problem}. 
+Then using the notation from \cite[p.364]{silvermanAdvancedTopicsArithmetic1994} we have \[
+a_2 = -1 - \lambda,\quad a_4 = \lambda, \quad a_1, a_3, a_5, a_6 = 0
+.\] 
+And \[
+b_2 = -4 \lambda - 4, \quad b_4 = 2\lambda, \quad b_6 = 0, \quad b_8 = -\lambda ^2
+.\] 
+The discriminant and $j$-invariant are given by \[
+	\Delta = 16\lambda^4 - 32\cdot \lambda^3 + 16\lambda^2 = 16 \lambda^2(\lambda - 1)^2
+.\] 
+Additionally we let $n = v(\lambda)$.
+So $\lambda = u \cdot \pi^{n}$ for some unit $u$ of $R$.
+\todo{do we need the $j$ invaraiant?}
+
+\subsection{$\ch k$ is not 2} \label{sec:char_k_is_not_2}
+We first treat the case where the characteristic of the residue field $k$ is different from 2. 
+We label the steps in Tate's algorithm as in \cite[sec.\ IV.9]{silvermanAdvancedTopicsArithmetic1994}.
+
+\step 1 
+We have that $|\Delta| = |\lambda|^2 |1-\lambda|^2 = |\lambda|^2 $. 
+So $\pi \mid \Delta$ if and only if  $|\lambda| < 1$. 
+So if  $n = 0$ we find that $E$ is of type $\mathrm I_0$. 
+We now continue under the assumption that $n > 0$, i.e $\pi \mid \lambda$. 
+
+\step 2 
+The reduction of the weierstrass model is given by the equation $y^2 = x^2 (x - 1)$ over $k$. 
+So the sinuglar point is already at $(0, 0)$ and we may continue the algorithm without coordinate change. 
+As $\pi \nmid 4, \pi \mid \lambda$, we see that $\pi \nmid b_2 = -4\lambda - 4$. 
+So $E$ has reduction type $I_m$ with \[
+	m = v(\Delta) = v(16 \lambda^2 (\lambda - 1)^2)  = 2v(\lambda) = 2n
+.\]
+This concludes Tates algorithm and we obtain the following result. 
+
+\begin{proposition}
+	Suppose $\ch k \ne 2$ and $E$ be as in \cref{prob:main_problem}. 
+	Then $E$ has reduction type $\mathrm I_{2n}$ with $n = v(\lambda)$. 
+\end{proposition}
+
+\subsection{$\ch k$ is 2} \label{sec:char_k_is_2}
+Again we label the steps as in \cite[sec.\ IV.9]{silvermanAdvancedTopicsArithmetic1994}.
+
+\step 1 
+We have that $|\Delta| = |2|^{4} |\lambda|^2 |1-\lambda^2| = 2^{-4}|\lambda|^2$.
+As $|\lambda|\le 1$, we find that $|\Delta| \le |2|^{-4} < 1$. 
+Hence $\pi \mid \Delta$. So $E$ is not of type $\mathrm I_0$ and we must continue to step 2.
+
+\step 2
+As $\pi \mid 2$ and $2 \mid b_2 = -4 - 4\lambda$ we find that $\pi \mid b_2$. 
+Suppose that $n \ge 0$. We will handle the case where $n = 0$ later. 
+Then the reduced curve is given by $y^2 = x^2(x+1)$ which is singular in $(0, 0)$. 
+So we can continue to step  $3$ without changing coordinates. 
+
+\step 3
+We have $a_6 = 0$, hence $\pi^2 \mid a_6$ and we continue on to step 4.
+
+\step 4
+Recall that  $b_8 = -\lambda^2$. 
+If  $n = 1$, then $\pi^3 \nmid b_8$ so we find that $E$ is of type $\mathrm{III}$.
+If  $n > 1$, then $\pi^3 \mid b_8$, so we have to continue to step 5.
+
+\step 5
+Recall $b_6 = 0$. So $\pi^3 \imd b_6$ and we have to continue to step 6.
+
+\step 6
+The coordinate transformation $y' = y + x$ yields the weierstrass equation  \[
+	y'^2 - 2xy'  = x^3 + (-2 - \lambda)x^2 + \lambda x
+\]
+The new values of $a_i$ are \[
+a_1 = -2,\quad a_2 = -2 -\lambda,\quad a_4 = \lambda,\quad a_3,a_6 =0
+,\] 
+which satisfy \[
+\pi \mid a_1,\quad \pi\mid a_2,\quad  \pi^2 \mid a_3,\quad \pi^2 \mid a_4,\quad \pi^3 \mid a_6
+.\] 
+Take the polynomial \[
+	P(T) = T^3 + \pi^{-1}(-2 -\lambda ) T^2 + \pi^{-2}\lambda T 
+\] 
+If $n = 2$, then $\pi^{-2}\lambda \not\equiv 0 \mod \pi$. 
+So $P(T)$ has no double roots over $k$.
+Hence $E$ has has type $I_0^*$. 
+If $n >0$, then $\pi^{-2} \lambda \equiv 0 \mod \pi$.
+So $0$ is a double root of $P(T)$ over $k$. 
+We continue to step 7.
+
+\step 7
+If $P(T)$ has double root  $0$ and simple root $1$. 
+So  $E$ has reduction type $\mathrm I_m^*$ for some $m$.
+To determine $m$ we have to follow the subprocedure as $\ch k = 2$.
+
+Consider the family of polynomails \[
+	P_i(T) = T^2 - 
+.\] 
+
+
+
+
+
+
+
+
+
+
+\bigskip
+Now suppose that $n = 0$.  
+The reduced curve is given by \[
+	\overline{f}(x, y) = y^2 - x (x-1)(x-\overline{\lambda}) = y^2 + x^3 + (1 + \overline{\lambda})x^2 + \overline{\lambda}x
+\]
+We have $\partial_y \overline{f} = 2y = 0, \partial_x \overline{f} = 3x^2 + \overline{\lambda} = x^2 + \overline{\lambda}$. 
+So the singular component has $x$-coordinate $\sqrt{\overline{\lambda}} $, and then the $y$-coordinate must be $\sqrt{} $
+So the curve is singular at the point $(,\sqrt{\overline{\lambda / 3}}) $
+
+
+
+
+
+
+
+
+

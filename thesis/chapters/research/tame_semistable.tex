@@ -1,0 +1,49 @@
+In this section we answer \cref{prob:main_problem} when $k$ has characteristic different from $2$, under the assumption that $E$ has semi-simple reduction, i.e.\  $E$ has is of type $I_m$ for some $m \ge 0$. 
+
+\begin{remark}
+	The assumption that $E$ has semi-stable reduction is valid as this is what fe found \cref{sec:char_k_is_2} by means of Tate's algorithm. 
+	I do not know of a Berkovich geometry explanation for this.  
+	The assumption also isn't valid for in the case where we choose $|\lambda| > 1$ (see \cref{fig:configurations_of_gamma_lambda}).
+	If $|\lambda| > 1$, i.e.\ $v(\lambda) < 0$ then
+	explicit computations of examples suggest that  $E$ has semistable reduction if $v(\lambda)$ is even and $E$ is of type $I^*_n$ if $n$ is odd. 
+	I do not know of an explanation via Berkovich geometry of this. 
+\end{remark}
+
+\begin{lemma}\label{lem:semistable_skeleton}
+	Let $\mathscr C$ be minimal snc-model of curve $C$ with semistable reduction.
+	Then $\mathscr C$ has no inessential components. 
+\end{lemma}
+\begin{proof}
+	Recall that $\mathscr C$ the minimal resolution of the minimal regular model $\mathscr C_\text{reg} $ of $C$. 
+	Suppose for the sake of contradiction that  $C$ has inessential components.
+	Then there is ``leaf''  $F$ which is a rational curve in $\mathrsc C_s$. 
+	If $F$ dominates a component $F'$ in $\mathscr C_\text{reg} $ then $F'$ is also a rational curve of multiplicity $1$ which intersects has self intersection $-1$,  which would contradict the minimality of  $\mathscr C _\text{reg} $ by Castelnouovo's criterion \cref{thm:castelnuovo}. 
+
+	Suppose now that $F$ does not dominate a component in $\mathscr C_\text{reg} $.
+	Then it is the $F$ is the exceptional divisor of a blowup in a smooth point of a intermediate model $\mathscr C \to \mathscr C' \to \mathscr C$. 
+	Then $\mathscr C'$ is also snc, which contradicts the minimality of $\mathscr C$. 
+\end{proof}
+\begin{corollary}
+	Let $\mathscr C$ be the minimal snc-model of $C$. 
+	Then the leaves of the dual graph  $\Delta (\mathscr C)$ have genus greater than $0$. 
+\end{corollary}
+
+Recall \cref{lemma:genus_semistable} which states that the betti-number of $\Delta(C)$ plus the genus of vertices equals $g(C)$. 
+
+In the case of $E$ this leaves two options. 
+\begin{lemma}
+	Let $E$ be an elliptic curve with semi-stable reduction and $\mathscr E$ be its minimal semistable model. 
+	Then $\Delta(\mathscr E) = \sk(\mathscr E) = \sk(E)$ is either 
+	\begin{enumerate}
+		\item a circle with every vertex of genus $0$,
+		\item a single point of genus  $1$. 
+	\end{enumerate}
+\end{lemma}
+\begin{proof}
+	The fact $\sk(\mathscr E) = \sk(E)$ follows from \cref{lem:semistable_skeleton}. 
+	We know that $\Delta(E)$ is homotopic to either a circle, or a point of genus $1$. 
+	As it has no leaves of genus $0$ and is finite, this means that $\Delta(E)$ is either a circle or a point of genus 1, which proofs the claim.
+\end{proof}
+
+
+
