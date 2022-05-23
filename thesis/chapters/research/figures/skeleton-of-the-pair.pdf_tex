@@ -54,7 +54,7 @@
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{skeleton-of-the-pair.pdf}}%
-    \put(0.17750125,0.35399208){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Gamma_\lambda = \sk(\mathscr P, \delta)$\end{tabular}}}}%
+    \put(0.19047127,0.35399208){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Gamma_\lambda = \sk(\mathscr P, \delta)$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{skeleton-of-the-pair.pdf}}%
     \put(0.25233368,0.17614995){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$b$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{skeleton-of-the-pair.pdf}}%
@@ -63,6 +63,6 @@
     \put(0.6504751,0.17621874){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$b$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{skeleton-of-the-pair.pdf}}%
     \put(0.70465443,0.12613804){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$a$\end{tabular}}}}%
-    \put(0.61625828,0.35399222){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sk(\mathscr P)$\end{tabular}}}}%
+    \put(0.63698311,0.35399222){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sk(\mathscr P)$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

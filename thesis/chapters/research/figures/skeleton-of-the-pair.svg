@@ -1613,7 +1613,7 @@
 	<path class="st1" d="M468.3,145.3c0-0.1,0.5-0.2,1.1-0.2c0.6,0,1.1,0.1,1.1,0.2V176c0,0.1-0.5,0.2-1.1,0.2c-0.6,0-1.1-0.1-1.1-0.2
 		V145.3z"/>
 </g>
-<text transform="matrix(1 0 0 1 120.7541 24.7792)" class="st3 st4">$\Gamma_\lambda = \sk(\mathscr P, \delta)$</text>
+<text transform="matrix(1 0 0 1 129.5776 24.7792)" class="st3 st4">$\Gamma_\lambda = \sk(\mathscr P, \delta)$</text>
 <circle cx="199" cy="146.8" r="3.8"/>
 <rect x="167.8" y="133.4" class="st5" width="25.7" height="18.6"/>
 <text transform="matrix(1 0 0 1 171.6626 145.7652)" class="st3 st4">$b$</text>
@@ -1626,5 +1626,5 @@
 <circle cx="469.6" cy="175.2" r="3.8"/>
 <rect x="478.9" y="167.3" class="st5" width="25.7" height="18.6"/>
 <text transform="matrix(1 0 0 1 479.3764 179.7883)" class="st3 st4">$a$</text>
-<text transform="matrix(1 0 0 1 419.2405 24.7791)" class="st3 st4">$\sk(\mathscr P)$</text>
+<text transform="matrix(1 0 0 1 433.3396 24.7791)" class="st3 st4">$\sk(\mathscr P)$</text>
 </svg>
