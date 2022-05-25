@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="svg8" inkscape:version="0.92.4 (unknown)" sodipodi:docname="figure.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 680.3 330"
+	 style="enable-background:new 0 0 680.3 330;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#C1180D;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#005293;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#737171;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:#030304;}
+	.st4{font-family:'ArialMT';}
+	.st5{font-size:12px;}
+	.st6{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st7{font-family:'MyriadPro-Regular';}
+	.st8{fill:#005293;}
+	.st9{fill:#C1180D;}
+	.st10{fill:none;stroke:#020203;stroke-miterlimit:10;}
+	.st11{fill:#020203;}
+	.st12{fill:none;stroke:#727070;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st13{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
+	.st14{font-size:2.0113px;}
+</style>
+<path class="st0" d="M95,286.5c0.7-1.1,10-14.2,26.8-14c16.5,0.1,25.5,12.9,26.3,14"/>
+<path class="st1" d="M95,286.5c0.7,1.1,10,14.2,26.8,14c16.5-0.1,25.5-12.9,26.3-14"/>
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1.0" id="base" inkscape:current-layer="layer1" inkscape:cx="284.27627" inkscape:cy="182.72055" inkscape:document-units="mm" inkscape:guide-bbox="true" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:window-height="995" inkscape:window-maximized="1" inkscape:window-width="2520" inkscape:window-x="20" inkscape:window-y="65" inkscape:zoom="0.99437388" pagecolor="#ffffff" showborder="true" showgrid="false" showguides="true" width="200mm">
+	<inkscape:grid  dotted="false" empspacing="4" id="grid815" spacingx="10" spacingy="10" type="xygrid" units="mm">
+		</inkscape:grid>
+</sodipodi:namedview>
+<g id="layer1" transform="translate(0,-177)" inkscape:groupmode="layer" inkscape:label="Layer 1">
+</g>
+<rect x="56.5" y="36.6" class="st2" width="148" height="167.8"/>
+<text transform="matrix(1 0 0 1 68.8728 27.5562)" class="st3 st4 st5">$\mathscr E$</text>
+<text transform="matrix(1 0 0 1 95.3527 56.0088)" class="st3 st4 st5">$\mathscr E_\eta$</text>
+<text transform="matrix(1 0 0 1 151.0171 56.0085)" class="st3 st4 st5">$\mathscr E_s$</text>
+<path class="st6" d="M146.2,66.6c6.2,6.4,28.6,31.2,28.3,68.1c-0.3,36.1-22,60.2-28.3,66.7"/>
+<path class="st6" d="M170.5,66.6c-6.2,6.4-28.6,31.2-28.3,68.1c0.3,36.1,22,60.2,28.3,66.7"/>
+<path class="st6" d="M78.8,133.6c0-6.8,0.4-13.8,2.1-20.4c0.7-3,1.7-6.5,4-8.7c2.5-2.5,5.6-1,7.8,1c2.5,2.2,4.4,5.3,7.2,7.1
+	c3.3,2.1,5.5-1.5,6.8-4.1c3-5.9,4.7-12.6,6.5-18.9c1.9-6.7,3.5-13.5,5.1-20.3c0.2-0.8,0.4-1.6,0.6-2.4 M78.8,133.6
+	c0,6.9,0.5,13.9,2.2,20.6c0.8,3,1.9,6.9,4.5,8.9c2.7,1.9,5.6-0.1,7.6-2c2.3-2.2,4.2-5.2,7-6.8c3.2-1.8,5.4,2,6.6,4.5
+	c3.1,6.2,4.9,13.2,6.7,19.9c1.8,6.7,3.5,13.5,5,20.2c0.2,0.9,0.4,1.8,0.6,2.6"/>
+<text transform="matrix(1 0 0 1 120.4292 137.7292)" class="st7 st5">$E_1$</text>
+<text transform="matrix(1 0 0 1 177.409 137.7291)" class="st7 st5">$E_2$</text>
+<circle cx="95" cy="286.5" r="2.9"/>
+<circle cx="148.1" cy="286.5" r="2.9"/>
+<circle class="st8" cx="158.3" cy="186.1" r="2.9"/>
+<circle class="st9" cx="158.2" cy="81.9" r="2.9"/>
+<text transform="matrix(1 0 0 1 68.1636 290.264)" class="st7 st5">$E_1$</text>
+<text transform="matrix(1 0 0 1 155.1496 290.2639)" class="st7 st5">$E_2$</text>
+<text transform="matrix(1 0 0 1 107.9956 243.0272)" class="st7 st5">$\Delta(\mathscr E)$</text>
+<path class="st10" d="M311.1,64.4c5.7,12.6,14,35.6,14.1,65.4c0.1,30.3-8.4,53.6-14.1,66.3"/>
+<text transform="matrix(1 0 0 1 286.8806 23.8371)" class="st11 st4 st5">$\mathscr P$</text>
+<line class="st10" x1="356.9" y1="75.3" x2="394.9" y2="190"/>
+<line class="st10" x1="353.8" y1="192.3" x2="403.3" y2="72.4"/>
+<text transform="matrix(1 0 0 1 301.8658 52.2897)" class="st11 st4 st5">$\mathscr P_\eta$</text>
+<text transform="matrix(1 0 0 1 369.7799 52.2897)" class="st11 st4 st5">$\mathscr P_s$</text>
+<rect x="286.8" y="32.9" class="st12" width="137.8" height="167.8"/>
+<text transform="matrix(1 0 0 1 339.544 95.2699)" class="st7 st5">$E_1$</text>
+<text transform="matrix(1 0 0 1 394.9438 110.5465)" class="st7 st5">$E_2$</text>
+<circle cx="326.3" cy="283.2" r="2.9"/>
+<circle cx="379.5" cy="283.2" r="2.9"/>
+<text transform="matrix(1 0 0 1 299.4961 286.8823)" class="st7 st5">$E_1$</text>
+<text transform="matrix(1 0 0 1 386.482 286.8822)" class="st7 st5">$E_2$</text>
+<text transform="matrix(1 0 0 1 326.3255 241.0277)" class="st7 st5">$\Delta(\mathscr P)$</text>
+<line class="st6" x1="326.3" y1="283.2" x2="379.5" y2="283.2"/>
+<line class="st13" x1="-6.1" y1="213" x2="693.2" y2="213"/>
+<line class="st13" x1="243.9" y1="12.1" x2="243.9" y2="324.3"/>
+<line class="st13" x1="23.8" y1="9.7" x2="23.8" y2="324.3"/>
+<text transform="matrix(6.123234e-17 -1 1 6.123234e-17 15.2847 123.532)" class="st7 st5">model</text>
+<text transform="matrix(6.123234e-17 -1 1 6.123234e-17 15.2847 315.8142)" class="st7 st5">dual graph</text>
+<rect x="515.8" y="33.1" class="st2" width="148" height="167.8"/>
+<text transform="matrix(1 0 0 1 528.1774 24.0333)" class="st3 st4 st5">$\mathscr E’$</text>
+<text transform="matrix(1 0 0 1 554.6572 52.4859)" class="st3 st4 st5">$\mathscr E’_\eta$</text>
+<text transform="matrix(1 0 0 1 603.5351 52.4857)" class="st3 st4 st5">$\mathscr E’_s$</text>
+<path class="st6" d="M538.1,130c0-6.8,0.4-13.8,2.1-20.4c0.7-3,1.7-6.5,4-8.7c2.5-2.5,5.6-1,7.8,1c2.5,2.2,4.4,5.3,7.2,7.1
+	c3.3,2.1,5.5-1.5,6.8-4.1c3-5.9,4.7-12.6,6.5-18.9c1.9-6.7,3.5-13.5,5.1-20.3c0.2-0.8,0.4-1.6,0.6-2.4 M538.1,130
+	c0,6.9,0.5,13.9,2.2,20.6c0.8,3,1.9,6.9,4.5,8.9c2.7,1.9,5.6-0.1,7.6-2c2.3-2.2,4.2-5.2,7-6.8c3.2-1.8,5.4,2,6.6,4.5
+	c3.1,6.2,4.9,13.2,6.7,19.9c1.8,6.7,3.5,13.5,5,20.2c0.2,0.9,0.4,1.8,0.6,2.6"/>
+<line class="st6" x1="630.9" y1="69.6" x2="604.9" y2="95.6"/>
+<line class="st6" x1="636.3" y1="75.1" x2="610.4" y2="101.1"/>
+<line class="st6" x1="605.8" y1="85.7" x2="631.8" y2="111.7"/>
+<line class="st6" x1="631.8" y1="105.6" x2="605.8" y2="131.5"/>
+<line class="st6" x1="605.8" y1="125" x2="631.8" y2="150.9"/>
+<line class="st6" x1="631" y1="185.9" x2="605.1" y2="159.9"/>
+<line class="st6" x1="636.5" y1="180.4" x2="610.5" y2="154.5"/>
+<line class="st6" x1="606" y1="169.8" x2="631.9" y2="143.8"/>
+<text transform="matrix(1 0 0 1 625.2104 65.9184)" class="st7 st5">$\scriptstyle{E_1}$</text>
+<text transform="matrix(1 0 0 1 638.046 77.1267)" class="st7 st5">$\scriptstyle{E_2}$</text>
+<text transform="matrix(1 0 0 1 638.0461 183.4003)" class="st7 st5">$\scriptstyle{E_3}$</text>
+<text transform="matrix(1 0 0 1 631.578 195.1854)" class="st7 st5">$\scriptstyle{E_4}$</text>
+<line class="st13" x1="469.2" y1="12.1" x2="469.2" y2="324.3"/>
+<text transform="matrix(1 0 0 1 623.3583 98.6891)" class="st7 st5">$\scriptstyle{F_1}$</text>
+<text transform="matrix(1 0 0 1 623.4971 125.154)" class="st7 st5">$\scriptstyle{F_2}$</text>
+<text transform="matrix(1 0 0 1 625.2104 137.9268)" class="st7 st5">$\scriptstyle{F_3}$</text>
+<text transform="matrix(1 0 0 1 623.3577 163.9592)" class="st7 st5">$\scriptstyle{F_4}$</text>
+<circle cx="533.5" cy="261.3" r="2.9"/>
+<line class="st6" x1="533.5" y1="261.3" x2="554.1" y2="281.9"/>
+<circle cx="533.2" cy="302.5" r="2.9"/>
+<line class="st6" x1="533.2" y1="302.5" x2="553.8" y2="281.9"/>
+<circle cx="554" cy="281.8" r="2.9"/>
+<line class="st6" x1="554.2" y1="281.8" x2="575.5" y2="281.8"/>
+<circle cx="575.3" cy="281.8" r="2.9"/>
+<line class="st6" x1="575.5" y1="281.8" x2="596.8" y2="281.8"/>
+<circle cx="596.6" cy="281.8" r="2.9"/>
+<line class="st6" x1="596.8" y1="281.8" x2="618.1" y2="281.8"/>
+<circle cx="618" cy="281.8" r="2.9"/>
+<circle cx="638.6" cy="261.2" r="2.9"/>
+<line class="st6" x1="638.6" y1="261.2" x2="618" y2="281.8"/>
+<circle cx="638.8" cy="302.4" r="2.9"/>
+<line class="st6" x1="638.8" y1="302.4" x2="618.2" y2="281.8"/>
+<text transform="matrix(1 0 0 1 507.2748 263.3625)" class="st7 st5">$\scriptstyle{E_1}$</text>
+<text transform="matrix(1 0 0 1 506.5383 305.9944)" class="st7 st5">$\scriptstyle{E_2}$</text>
+<text transform="matrix(1 0 0 1 645.7237 263.9511)" class="st7 st5">$\scriptstyle{E_3}$</text>
+<text transform="matrix(1 0 0 1 645.7236 305.1591)" class="st7 st5">$\scriptstyle{E_4}$</text>
+<text transform="matrix(1 0 0 1 551.0768 274.2755)" class="st7 st14">$\scriptstyle{F_1}$</text>
+<text transform="matrix(1 0 0 1 572.4069 274.2755)" class="st7 st14">$\scriptstyle{F_2}$</text>
+<text transform="matrix(1 0 0 1 593.7379 274.2755)" class="st7 st14">$\scriptstyle{F_3}$</text>
+<text transform="matrix(1 0 0 1 607.4773 299.6393)" class="st7 st14">$\scriptstyle{F_4}$</text>
+<text transform="matrix(1 0 0 1 562.3438 241.0277)" class="st3 st4 st5">$\Delta(\mathscr E’)$</text>
+</svg>

@@ -72,13 +72,12 @@
 </g>
 <text transform="matrix(1 0 0 1 535.7417 30.9797)" class="st0 st1 st2">$\mathscr C$</text>
 <text transform="matrix(1 0 0 1 538.3844 75.3899)" class="st0 st1 st2">$\mathscr C_\eta$</text>
-<text transform="matrix(1 0 0 1 598.6458 56.7957)" class="st0 st1 st2">$\mathscr C_s$</text>
 <rect x="535.7" y="39" class="st3" width="119.4" height="146"/>
 <path class="st4" d="M571.4,56.1c-12.4,22.8-11.7,37.7-8.3,47.3c3.7,10.4,10.1,13.7,13.2,24.7c4.1,14.8-1.9,29.5-8,40.2"/>
 <line class="st4" x1="598.6" y1="56.8" x2="635.4" y2="137"/>
 <text transform="matrix(1 0 0 1 626.3192 109.9414)" class="st8 st7 st2">$x$</text>
 <g>
-	<text transform="matrix(1 0 0 1 590.3303 171.0641)" class="st0 st1 st2">$F,m$</text>
+	<text transform="matrix(1 0 0 1 604.7459 165.8732)" class="st0 st1 st2">$F,m$</text>
 </g>
 <g>
 	<g>
@@ -97,7 +96,7 @@
 </g>
 <line class="st4" x1="598.6" y1="159.1" x2="631.6" y2="87.5"/>
 <circle class="st8" cx="622.2" cy="108.4" r="2.1"/>
-<text transform="matrix(1 0 0 1 622.1727 150.0271)" class="st1 st2">$G, m$</text>
+<text transform="matrix(1 0 0 1 604.7456 60.1403)" class="st1 st2">$G, m$</text>
 <text transform="matrix(1 0 0 1 420.1203 109.5682)" class="st8 st7 st2">$E, m+ n$</text>
 <g>
 	<text transform="matrix(1 0 0 1 444.211 65.8718)" class="st0 st1 st2">$\tilde G,n$</text>

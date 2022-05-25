@@ -1,0 +1,66 @@
+In \cref{sec:}\todo{link back to the correct part of previous chapter} we made a distinction between four types of points on the analytification of curves. 
+In our context we can also find related but different classification of points for varieties over arbitrary dimension. 
+
+\begin{definition}
+	The \emph{birational points} of $X\an$ is  $X\bir = i ^{-1}(\eta_X)$ where $\eta_X$ is the generic point of $X$. 
+\end{definition}
+These are called the birational points of $X\an$ because they are schared by the analytifications of all varities birational to $X$.
+
+In the previous \cref{sec:}\todo{link back to previous chapter}, we constructed the reduction map $X\an \to \mathscr X$. 
+There it was essential to assume that that $\mathscr X$ is proper, in order make sure that any map $\mathcal{H} (x) \to X$ extends to a map $\mathcal{H} ^{o}(x) \to \mathscr X$. 
+If $\mathscr X$ is not proper, such an extension does not always exist hence the reduction map is only defined on a subset of $X\an$. 
+\begin{definition}
+	Given a model $\mathscr X$ of $X$ a point $x \in X\an $ is called a \emph{center} if the map $\mathcal{H} (x) \to X$ extends to $\mathcal{H}^{o} (x) \to \mathscr X$. 
+	Note that this is unique by the valuative criterion of properness. 
+	We write $\widehat{\mathscr X}_\eta$ for the set of all centers of $X\an$. 
+\end{definition}
+
+If $\mathscr X$ is a regular model of $X$ and $\mathscr X_k = \sum_{i \in I} N_i E_i$ be the decomposition of $\mathscr X$ in its irreducible parts, and let $e_i$ be the generic point of $E_i$. 
+As stated in \cite[thm 2.2.4]{berkovichSpectralTheoryAnalytic2012}, we know that the $e_i$ have unique inverses. 
+We call $\pi^{-1}(e_i)$ the \emph{divisorial point} associated to $(\mathscr X, E_i)$.
+\begin{definition}
+	The \emph{divisorial points of $X\an$}, denoted by  $X^{\text{div}}$ is the set of all points that are the inverse of a generic point of irreducible component of a model of $X$. 
+\end{definition} 
+Alternatively we can think of divisorial points in the following way. 
+As  $\mathscr X$ is regular we know that $\mathcal{O}_{e_i, \mathscr X}$ is a one-dimensional local ring, i.e.\ a discrete valuation ring, where the valuation (up to scaling) is given by \[
+	v_{e_i}\left( f \right)  = c\cdot \ord_{E_i} f
+\] 
+where $\ord_{E_i} f$ is the multiplicity of $E_i$ in $(f)$. 
+As we know that  $\ord_{E_i} \pi = N_i$, choosing $c = \frac{1}{N_i}$ makes it so that $v_{e_i}(\pi) = 1$. 
+Hence extending $v_{e_i}$ to $\mathrm{Frac}(\mathcal{O}_{e_i, \mathscr X}) = K(X)$ yields a valuation that extends the valuation on $K$. 
+So this gives a point in $X\bir$. 
+
+We find that $X^{\text{div}} \subset X\bir$. 
+\begin{lemma}
+	The divisorial points $X^{\text{div}}$ are dense in $X\bir$  
+\end{lemma}
+\begin{proof}
+	See \cite[prop.\ 2.4.9]{mustataWeightFunctionsNonArchimedean2015}
+\end{proof}
+
+The divisorial points can also be characterised by their valution without involving models. 
+\begin{lemma}\label{lem:char_div_point}
+	Let $X\an$ be a $K$-variety of dimension $n$. 
+	The divisorial points of $X\an$ are precisely the discrete valuations $v$ on $K(X)$ that extend the valuation on $K$ and such that the $\trdeg [(K(X),v)^{\sim}, k] = n-1$.
+	Moreover, the ramification of $K$ in $(K(X), v)$ is precisely the multiplicity of the irreducible component corresponding to that valuation.
+\end{lemma}
+\begin{proof}
+	Let $x = (\mathscr X, E)$ be a divisorial point in $X\an$ corresponding to a model $\mathscr X$ with irreducible component $E$ in the special fibre.
+	Let $\xi$ be the generic point of $E$. 
+	Then clearly $(K(X), v_x)^{\sim} = (\mathcal{O}_{\xi, \mathscr X})^{\sim} = K(E)$ and hence the trancendence degree is going to be  $\dim E = n-1$.
+	\todo{prove last part}
+
+	The converse is given by \cite[lem 2.45]{kollarBirationalGeometryAlgebraic1998}. 
+\end{proof}
+
+\begin{remark}
+	 If $C$ is a curve, then the divisorial points in $C\an$ are precicely the type $2$ points. 
+\end{remark}
+\begin{proof}
+	This is a consequence of \cref{def:type_points_curve} and \cref{lem:char_div_point}.
+	Let $x$ be a birational point.
+	Then $\trdeg[(K(X),x)^{\sim} ] = n-1 = 0 $ if and only if $F_{\mathcal{H} (x) / k} = 0$. \todo{something is wrong here}
+	Also $v_x$ is discrete if and only if $E_{\mathcal{H} (x) / k}= 0$. 
+\end{proof}
+
+

@@ -3,59 +3,21 @@ Let $E$ be an elliptic curve over $K$.
 
 The minimal regular model determines the reduction type of $E$. 
 The minimal regular model also determines the minimal snc-model $\mathscr E_\text{min} $, which inturn determines $\sk(\mathscr E_\text{min} )$ and the essential skeleton $\sk(E)$. 
-So we may wonder whether we can determine the reduction type of $E$ by studying the $E\an$, in particular the essential skeleton $\sk(E)$.
+So we may wonder whether we can determine the reduction type of $E$ by studying $E\an$, in particular the essential skeleton $\sk(E)$.
 \Cref{tab:skeleton_by_kodaira_neron} gives the essential skeleton of $E$ by reduction type. 
-The topology of $\sk E$ we can distinguish three sets of reduction types 
+Only considering the topology of $\sk E$ we can distinguish three sets of reduction types 
 \begin{description}
 	\item[point] $\mathrm I_0, \mathrm{II}, \mathrm{III},\mathrm{IV}, \mathrm{I}_0^*$ 
 	\item[line] $\mathrm{II}^*, \mathrm{III}^*, \mathrm{I}_n^*$ for some $n > 0$
 	\item[circle]  $\mathrm{I}_1, \mathrm{I}_n$ for some  $n > 0$
 	\item[three fan] $\mathrm {IV}^*$
 \end{description}
-By taking account more information of the skeleton like the lenghts, the genus of points, or the multiplicity of points, it is possible to divide these lists finer.
-In particular the length of $\sk(E)$ is known, it is possible to find the $n$ in the reduction types $I_n$ and $I_n^*$. 
+By taking account more information of the skeleton like the lenghts, the genus of points, or the multiplicity of points, it is possible we can make a distinction between more types.
+In particular the length of $\sk(E)$ is known, it is possible to find the $n$ in the reduction types $\mathrm I_n$ and $\mathrm I_n^*$. 
 
 
-\begin{table}[t]
-	\centering
-	\caption{The minimal regular model, minimal scn model $\mathscr E_\text{min} $, skeleton induced by $\mathscr E_\text{min} $ and the essential skeleton.
-	Inessential components of the $\mathscr E_\text{min} $ are coloured green. Components with multiplicity greater than one have their multiplicities labeled in blue. 
-Points in the skeleton with genus greater than 0 are also labeled in blue. 
-Lengts of line segments and circles in the skeleta are labeled in black.}
-	\label{tab:skeleton_by_kodaira_neron}
-	\begin{tabular}{c|c|c|c|c}
-		type & minimal regular model	& miniman snc-model &  $\sk(\mathscr E_\text{min} )$ & $\sk(E)$ \\
-		\hline
-		$\mathrm{I}_0$ & \incfigsmall{reg-i-0} & \incfigsmall{reg-i-0} & 
-		\incfigsmall{i0-sk-snc} & \incfigsmall{i0-sk-snc} \\
-		\hline 
-		$\mathrm I_1$  & \incfigsmall{i1-reg} & \incfigsmall{i1-snc} & \incfigsmall{i1-sk-snc} & \incfigsmall{i1-sk-snc} \\
-		\hline
-		$\mathrm I_n$ & \incfigsmall{in-reg} & 
-		\incfigsmall{in-reg} & \incfigsmall{in-sk-scn} & \incfigsmall{in-sk-scn} \\
-		\hline
-		$\mathrm{II}$ &  \incfigsmall{ii-reg} & \incfigsmall{ii-snc} & \incfigsmall{ii-sk-snc} & \incfigsmall{ii-sk}
- \\ 
-		\hline 
-		$\mathrm{III}$ &  \incfigsmall{iii-reg} & \incfigsmall{iii-snc}   & \incfigsmall{ii-sk-snc}  &  \incfigsmall{ii-sk}
-\\
-		\hline 
-		$\mathrm{I}_0^*$ &  \incfigsmall{i0s-reg}&  \incfigsmall{i0s-snc} &  & \incfigsmall{ii-sk} \\
-		\hline 
-		$\mathrm{I}_n^*$ \\
-		\hline 
-		$\mathrm{IV}^*$ \\
-		\hline 
-		$\mathrm{III}^*$ \\
-		\hline 
-		$\mathrm{II}^*$ \\
-		\hline 
-	\end{tabular}
-\end{table}
-\todo{finish this table on a brain dead moment. fix I1 }
-
-So the question becomes: given an elliptic curve $E$ over $K$, can we get infomration of $\sk(E)$ like, the topology, lenghts, geni,\ldots without computing an snc model of  $E$?
-There is only one curve, of which we know can study the berkovich analytification without resorting to models, $\pro^{1}_K$.
+So the question becomes the following. Given an elliptic curve $E$ over $K$, can we get infomration of $\sk(E)$ like, the topology, lenghts, geni,\ldots without computing an snc model of  $E$?
+There is only one curve, of which we know how to understand its Berkovich analytification without using models, $\pro^{1}_K$.
 As elliptic curves are hyper elliptic, there is a degree $2$ morphism $f: E \to \pro^{1}_K$. 
 So our hope is that by studying the analytification of this morphism $\phi: E\an \to \pro^{1, \text{an}}_K$ we can recover information on the essential skeleton of $E\an$. 
 We will limit ourselves to the following setting.
@@ -68,13 +30,53 @@ We will limit ourselves to the following setting.
 	Let $f: E \to \pro^{1}_K$ given by projection to the $x$-axis, which a degree 2 morphism ramified over $4$ points. 
 	What is $\sk E$? What is the reduction type of $E$?
 \end{problem}
+\setlength{\LTcapwidth}{5.7in}
+\begin{longtable}{c|c|c|c|c}
+		\caption{The minimal regular model, minimal scn model $\mathscr E_\text{min} $, skeleton induced by $\mathscr E_\text{min} $ and the essential skeleton.
+	Inessential components of the $\mathscr E_\text{min} $ are coloured green. Components with multiplicity greater than one have their multiplicities labeled in blue. 
+Points in the skeleton with genus greater than 0 are also labeled in blue. 
+Lengts of line segments and circles in the skeleta are labeled in black.}
+	\label{tab:skeleton_by_kodaira_neron}
+	\\
+	type & minimal regular model	& miniman snc-model &  $\sk(\mathscr E_\text{min} )$ & $\sk(E)$ \\
+	\hline
+	$\mathrm{I}_0$ & \incfigsmall{reg-i-0} & \incfigsmall{reg-i-0} & 
+	\incfigsmall{i0-sk-snc} & \incfigsmall{i0-sk-snc} \\
+	\hline 
+	$\mathrm I_1$  & \incfigsmall{i1-reg} & \incfigsmall{i1-snc} & \incfigsmall{i1-sk-snc} & \incfigsmall{i1-sk-snc} \\
+	\hline
+	$\mathrm I_n$ & \incfigsmall{in-reg} & 
+	\incfigsmall{in-reg} & \incfigsmall{in-sk-scn} & \incfigsmall{in-sk-scn} \\
+	\hline
+	$\mathrm{II}$ &  \incfigsmall{ii-reg} & \incfigsmall{ii-snc} & \incfigsmall{ii-sk-snc} & \incfigsmall{ii-sk}
+ \\ 
+	\hline 
+	$\mathrm{III}$ &  \incfigsmall{iii-reg} & \incfigsmall{iii-snc}   & \incfigsmall{iii-sk-snc}  &  \incfigsmall{ii-sk}
+\\
+	\hline 
+	$\mathrm{IV}$ &  \incfigsmall{iv-reg} & \incfigsmall{iv-snc}   & \incfigsmall{iv-sk-snc}  &  \incfigsmall{ii-sk}
+\\
+	\hline 
+	$\mathrm{I}_0^*$ &  \incfigsmall{i0s-reg}&  \incfigsmall{i0s-snc} & \incfigsmall{i0s-sk-snc} & \incfigsmall{ii-sk} \\
+	\hline 
+	$\mathrm{I}_n^*$ & \incfigsmall{ins-reg} &\incfigsmall{ins-snc}  &\incfigsmall{ins-sk-snc} &\incfigsmall{ins-sk}\\
+	\hline 
+	$\mathrm{IV}^*$ & \incfigsmall{ivs-reg} & \incfigsmall{ivs-snc}  & \incfigsmall{ivs-sk-snc} & \incfigsmall{ii-sk-snc} \\
+	\hline 
+	$\mathrm{III}^*$ & \incfigsmall{iiis-reg} & \incfigsmall{iiis-snc} &\incfigsmall{iiis-sk-snc} &\incfigsmall{iiis-sk}\\
+	\hline 
+	$\mathrm{II}^*$ & \incfigsmall{iis-snc} & \incfigsmall{iiis-snc} &\incfigsmall{iis-sk-snc} &\incfigsmall{iis-sk}\\
+	\hline 
+\end{longtable}
+
+
 
 Requiring that $E$ is of the from in \eqref{eq:weierstrass_problem} puts some implicit assumptions on $E$ and the map $f: E \to \pro^{1}_K$.
 In particular it forces the ramification points of $f$ to be defined over $K$, which as we will see in \cref{sec:expectations} limits the reduction types that can occur. 
 
-The assumption that $|\lambda| \le 1, |1 - \lambda| = 1$ has the following berkovich geometry interpretation.
+The assumption that $|\lambda| \le 1, |1 - \lambda| = 1$ has the following Berkovich geometry interpretation.
 We can consider $0, 1, \lambda, \infty$ as closed points of $\pro^{1}_K$, and thus also as type 1 points in $\pro^{1, \text{an}}_K$.
-Let  $\Gamma_\lambda$ be the convex hull of the points $0, 1, \lambda, \infty$ in $\pro^{1}_K$. 
+Let  $\Gamma_\lambda$ be the convex hull of the points $0, 1, \lambda, \infty$ in $\pro^{1, \text{an}}_K$. 
 Then  $\Gamma_\lambda$ can have 4 different configurations depending on $|\lambda|$ and $|1-\lambda|$. 
 Our assumptions enfore that $\Gamma_\lambda$ is of one of the first two configurations from \cref{fig:configurations_of_gamma_lambda}.
 \begin{figure}[ht]
@@ -83,7 +85,7 @@ Our assumptions enfore that $\Gamma_\lambda$ is of one of the first two configur
     \caption{configurations of $\Gamma_\lambda$ (in red)}
     \label{fig:configurations_of_gamma_lambda}
 \end{figure}
-If  $\Gamma_\lambda$ is not of the second configuration (as in \cref{fig:configurations_of_gamma_lambda}) then we may by move to any other of the 3 remaining configurations by a möbius transformation on $\pro^{1}_K$, taking $\lambda$ to $\lambda'$. 
+If  $\Gamma_\lambda$ is not of the second configuration (as in \cref{fig:configurations_of_gamma_lambda}) then we may move to any other of the 3 remaining configurations by a Möbius transformation on $\pro^{1}_K$, taking $\lambda$ to $\lambda'$. 
 This will induce an isomorphism $E_L \to E'_L$ where $E'$ is the elliptic curve defined by $y^2 = x(x-1)(x-\lambda')$ and $L$ is a finite extension of $K$. 
 Note  that $L$ cannot always be takeng to be $K$ itself
 \footnote{Take the curves $E: y^2 = x(x -1)(x-3)$ and $E': y^2 = x(x-1)(x-1 /3)$ defined over $K = \hat{\Q_3^{\text{un}}}$.

@@ -1,6 +1,6 @@
 %% Creator: Inkscape 1.0beta2 (2b71d25, 2019-12-03), www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'i0s-reg copy.pdf' (pdf, eps, ps)
+%% Accompanies image file 'ins-sk-snc.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{92.47500229bp}%
+    \setlength{\unitlength}{198.15000916bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,10 +50,14 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.41524736)%
+  \begin{picture}(1,0.32967447)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{i0s-reg copy.pdf}}%
-    \put(0.85924493,0.14088808){\color[rgb]{0.18039216,0.31764706,0.62745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{ins-sk-snc.pdf}}%
+    \put(0.87274675,0.21161543){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{1/2}$\end{tabular}}}}%
+    \put(0.4314099,0.18922216){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{n / 2}$\end{tabular}}}}%
+    \put(0.87274751,0.05356887){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{1/2}$\end{tabular}}}}%
+    \put(-0.00000016,0.09381339){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{1/2}$\end{tabular}}}}%
+    \put(-0.00000091,0.21516804){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{1/2}$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

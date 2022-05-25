@@ -9,6 +9,7 @@
 \usepackage{amsmath, amssymb, amsthm}
 \usepackage{tikz-cd}
 \usepackage{mdframed}
+\usepackage{longtable}
 %\usepackage{microtype}
 \usepackage{hyperref}
 \usepackage{cleveref}
@@ -76,6 +77,7 @@
 
 \DeclareMathOperator{\coker}{coker}
 \DeclareMathOperator{\id}{Id}
+
 \DeclareMathOperator{\im}{Im}
 \DeclareMathOperator{\spec}{Spec}
 \DeclareMathOperator{\maxspec}{MaxSpec}
@@ -99,6 +101,8 @@
 \DeclareMathOperator{\ram}{Ram}
 \DeclareMathOperator{\val}{val}
 \DeclareMathOperator{\minloc}{minloc}
+\DeclareMathOperator{\ord}{ord}
+\DeclareMathOperator{\lcm}{lcm}
 
 
 
@@ -121,7 +125,7 @@
   \fi
   \nonscript\;}
 
-\newcommand{\step}[1]{\par\noindent\textit{Step #1.} \;}
+\newcommand{\step}[1]{\medskip \par\noindent\textit{Step #1.} \;}
 
 \theoremstyle{definition}
 \newtheorem{definition}{Definition}[section]
@@ -135,8 +139,9 @@
 \newtheorem{exercise}[definition]{Exercise}
 \newtheorem{corollary}[definition]{Corollary}
 \newtheorem{problem}[definition]{Problem}
+\newmdenv[linecolor=black,innertopmargin=1em,innerbottommargin=1em]{tateconclusion}
 
-\newcommand{\stacks}[1]{\cite[\href{https://stacks.math.columbia.edu/tag/#1}{Tag #1}]{stacks-project}}
+\newcommand{\stacks}[1]{\cite[\href {https://stacks.math.columbia.edu/tag/#1}{Tag #1}]{stacks-project}}
 
 
 

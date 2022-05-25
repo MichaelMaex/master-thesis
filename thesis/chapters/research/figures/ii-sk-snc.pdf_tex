@@ -54,8 +54,8 @@
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{ii-sk-snc.pdf}}%
-    \put(0.58643177,0.43056769){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$1/6$\end{tabular}}}}%
-    \put(0.25143289,0.06416053){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$1/6$\end{tabular}}}}%
-    \put(0.33072316,0.70162642){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$1/6$\end{tabular}}}}%
+    \put(0.58643177,0.43056769){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{1/6}$\end{tabular}}}}%
+    \put(0.25143289,0.06416053){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{1/6}$\end{tabular}}}}%
+    \put(0.33072316,0.70162642){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{1/6}$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

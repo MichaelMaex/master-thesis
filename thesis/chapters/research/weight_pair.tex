@@ -1,5 +1,5 @@
 Recall $\Gamma_\lambda$ from \cref{fig:configurations_of_gamma_lambda}. 
-Let $\delta = f_* \ram f$ which as a divisor on $\pro^{1}_K$ is the sum of the points on $\pro^{1}_K$ corresponding to $0, 1, \lambda, \infty$. 
+Let $\delta = f_* (\ram_f)$ which as a divisor on $\pro^{1}_K$ is the sum of the points on $\pro^{1}_K$ corresponding to $0, 1, \lambda, \infty$. 
 \subsection{Finding a minimal scn model} \label{sec:finding_a_minimal_scn_model}
 We can build a snc-model $\mathscr P$ of the pair $(\pro^{1}_K, \delta)$, i.e.\ $\mathscr P_s + \overline{\delta}$ is a strict normal crossings divisor, such that the associated skeleton $\sk(\mathscr P, \delta)$ in $\pro^{1}_K$ is exactly $\Gamma_\lambda$. 
 The skeleton associated to a pair is defined in \cite[§3.2.1]{bakerWeightFunctionsBerkovich2016}.
@@ -55,12 +55,13 @@ So geometrically $\Delta(\mathscr P)$ is a line of length $n$ if $n > 0$ and a p
 Let $a, b$ the start and end points of the line, corresponding to the components $\tilde F$ and $\tilde G$ respectively. If $n = 0$ (i.e. $\Delta(\mathscr P)$ is a point) then we let $a = b = \sk(\mathscr P)$. 
 
 Then the paths from $0$ and  $\lambda$ to $\sk(\mathscr P)$ come together at $b$. We see this because $0$ and $\lambda$ both reduce to points on $\tilde G$. 
-As they reduce to different points, they paths to $\sk(\mathscr P)$ come it at $b$ from different tangent directions. 
+As they reduce to different points, the paths to $\sk(\mathscr P)$ come in at $b$ from different tangent directions. 
 Similarly the paths from $0$ and $\infty$ to $\sk(\mathscr P)$ come together at $a$.
 
 So $\sk(\mathscr P, \delta)$ consists of the paths running running between every pair of $0, 1, \lambda, \infty$. Thus $\Gamma_\lambda \subset \sk(\mathscr P, \delta)$ as $\Gamma_\lambda$ is the convex hull of $0, 1, \lambda, \infty$.
-As $\sk(\mathscr P, \delta)$ only leaves are $0, 1, \lambda, \infty$ we also get the converse $\Gamma_\lambda \subset  \sk(\mathscr P, \delta)$. 
+As  the only leaves of $\sk(\mathscr P, \delta)$ are $0, 1, \lambda, \infty$ we also get the converse $\Gamma_\lambda \subset  \sk(\mathscr P, \delta)$. 
 So we found a snc-model $\mathscr P$ of $(\pro^{1}_K, \delta)$ such the associated skeleton equals $\Gamma_\lambda$. 
+See \cref{fig:skeleton_of_the_pair}
 
 \begin{figure}[ht]
     \centering
@@ -69,24 +70,24 @@ So we found a snc-model $\mathscr P$ of $(\pro^{1}_K, \delta)$ such the associat
     \label{fig:skeleton_of_the_pair}
 \end{figure}
 
-\subsection{$\sk(\mathscr P)$ is a Kontsevich-Soibelman skeleton} \label{sec:$\sk(\mathscr_p)$_is_a_kontsevich-soibelman_skeleton}
+\subsection{$\sk(\mathscr P)$ is a Kontsevich-Soibelman skeleton} \label{sec:sk_P_is_a_kontsevich-soibelman_skeleton}
 
 \begin{lemma}\label{lem:unique_form_pair}
 	There is a rational section $\omega$ of $\Omega_{\pro^{1}_K}^{\otimes 2}$ with poles at  $0, 1, \lambda, \infty$ and no other zeros or other poles. 
 	Moreover this rational section is unique up to multiplication by $K$ and the poles are of order 1. 
 \end{lemma}
 \begin{proof}
-	The statement is equivalent to showing that $\dim_K H^{0}(\Omega_{\pro^{1}_K}^{\otimes 2}(\delta))  = 1$.
+	The statement is equivalent to showing that $\dim_K H^{0}\left(\Omega_{\pro^{1}_K}^{\otimes 2}(\delta)\right)  = 1$.
 	We have that $\Omega_{\pro^{1}_K} \simeq \mathcal{O}(-2)$ and $\mathcal{O}(\delta) \simeq \mathcal{O}(\deg \delta) = \mathcal{O}(4)$.
 	So \[
 		\Omega_{\pro^{1}_K} (\delta) \simeq \mathcal{O}(-1)^{\otimes 2} \otimes \mathcal{O}(4) \simeq \mathcal{O}\left(0 \right)  = \mathcal{O}_X
 	.\] 
-	Hence $H^{0}(\Omega_{\pro^{1}_K}^{\otimes 2}(\delta)$ is a $1$-dimensional $K$-vectorspace. 
+	Hence $H^{0}\left(\Omega_{\pro^{1}_K}^{\otimes 2}(\delta)\right)$ is a $1$-dimensional $K$-vectorspace. 
 \end{proof}
 
 The proof of the following two results depend heavily on \cite[thm.\ 3.2.3]{bakerWeightFunctionsBerkovich2016}. 
 	The metric on $\mathbb{H}(\pro^{1}_K)$ we defined in \cref{sec:}\todo{fill in the section/definition} (the stable metric) differs from the metric in used in \cite{bakerWeightFunctionsBerkovich2016} (the potential metric). 
-	However, as we are interested in computing the minimal locus of $\wt_\omega$ by looking at its slopes, the spefic matters in our calculations. 
+	However in our specific application the difference does not matter as we are interested in computing the minimal locus of $\wt_\omega$ by looking at its slopes, for which only the sign is important.
 	So in the next two proof I'll use the potential metric instead of rescaling the slopes.
 
 	The first lemma is a slight refinement of \cite[prop.\ 4.4.4]{mustataWeightFunctionsNonArchimedean2015} in the context of curves.
@@ -97,14 +98,14 @@ The proof of the following two results depend heavily on \cite[thm.\ 3.2.3]{bake
 		\wt_\omega(x) \ge \wt_\omega(\rho_{\mathscr C}(x))
 	\] 
 	with equality if and only if $x \in \sk(\mathscr C)$. 
-	\todo{define the reduction map in this sense}
+	%\todo{define the reduction map in this sense}
 \end{lemma}
 \begin{proof}
 	If $\red_{\mathscr C}(x)$ does not lie in the closure of $\mathrm{Pole}_\omega$ then the result follows from \cite[prop.\ 4.4.4.(2)]{mustataWeightFunctionsNonArchimedean2015} and the denseness of divisorial points. 
 
-	If $\red_{\mathscr C}(x)$ lies in the closure of some pole $z \in \mathrm{Pole}_\omega$. 
+	If $\red_{\mathscr C}(x)$ lies in the closure of some pole $z \in \mathrm{Pole}_\omega$ and $x \not\in \sk(\mathscr C)$. 
 	Let $\ell: [0, a] \to X\an$ be the path running from $\sk \mathscr C$ to $x$, parametrised by length. 
-	By assumption this path coincides with the path $m: [0, \infty) : X\an$ from $\mathscr C$ to $z$, also parametrized by $\length$.
+	By assumption this path coincides with the path $m: [0, \infty) \to X\an$ from $\mathscr C$ to $z$, also parametrized by $\length$.
 	Let $\epsilon$ be the length where $m, \ell$ branch. 
 	The slope on  $\ell|_{[0, \epsilon]}$ is positive by \cite[thm.\ 3.2.3.(2)]{bakerWeightFunctionsBerkovich2016} , hence $\wt_\omega \ell(\epsilon) > \wt_\omega \red_{\mathscr C}(x)$.
 	If $\epsilon = a$ we are done. 

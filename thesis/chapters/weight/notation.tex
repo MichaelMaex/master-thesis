@@ -1,0 +1,30 @@
+Let $R$ be a complete discrete valuation ring with fraction field $K$ and algebraically closude residue field $k$. 
+The main examples for $K$ to keep in mind are finite extensions of $\C((t))$ and $ \hat{\Q_p^{\text{un}}}, \hat{\F_p}((t))$.  
+Let $\pi$ be a uniformiser for $R$ and the valuation on $R$ and $K$ is scaled such that $v(\pi) = 1$. 
+The norm on $R$ and $K$ is given by $|x| = \exp(-v(\pi))$. 
+
+Throughout the chapter we let $X$ be a smooth $K$-variety. 
+Any curve will be smooth, proper, geometrically connected, 1-dimensional $K$-variety, usually denoted by $C$. 
+If any of these assumptions are not needed in a theory it will be explicitely stated. 
+
+Models are always regular and proper and are usually denoted by $\mathscr X, \mathscr C$ for $X, C$ respectively.  
+
+The theory does not use the analytic structure on Berkovich spaces. 
+So from now on we will use the following simpler definition of the Berkovich analytification. 
+
+\begin{definition}\label{def:berkovich_analytification_explicit}
+	The \emph{Berkovich analitification} of a locally finite type scheme $X$ over  $K$, as a set is \[
+		X\an = \{(x, |\cdot |)  \mid x\in X, |\cdot | \text{ a norm on } \kappa(x) \text{ extending the norm on }K \} 
+	.\] 
+
+	This comes equipped with a canonical projection map $i: X\an \to X, (x, |\cdot |) \mapsto  x$.
+	$X\an $ comes with a topology which we define to be the coarsest topology such that 
+	\begin{itemize}
+		\item $i: X\an \to X$ is continuous, i.e. $X\an$ is a finer space than  $X$. 
+		\item For every open $U \subset X$ and $f \in \mathcal{O}_X(U)$ the map  \[
+				|f|: i^{-1}(U) \to \R^{+}: (x, |\cdot |) \mapsto  |f(x)|
+		\] 
+		is continuous.
+	\end{itemize}
+\end{definition}
+

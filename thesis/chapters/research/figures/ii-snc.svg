@@ -23,5 +23,7 @@
 <line class="st0" x1="140.6" y1="14.2" x2="140.6" y2="127.2"/>
 <text transform="matrix(1 0 0 1 158.3743 70.7305)" class="st2 st3 st4">6</text>
 <text transform="matrix(1 0 0 1 146.0078 25.0777)" class="st2 st3 st4">3</text>
-<text transform="matrix(1 0 0 1 95.9551 23.1728)" class="st2 st3 st4">2</text>
+<g>
+	<text transform="matrix(1 0 0 1 95.9551 23.1728)" class="st2 st3 st4">2</text>
+</g>
 </svg>

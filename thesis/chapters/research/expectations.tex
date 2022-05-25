@@ -1,122 +1,274 @@
 Using Tate's algorithm we can find the anwer to \cref{prob:main_problem} without studying the map $\phi: E\an \to \pro^{1, \text{an}}_K$. 
-While the goal is to eliminate the use of tate's algorithm and find as much information about $E$ by studying its berkovich geometry, 
+While the goal is to eliminate the use of Tate's algorithm and find as much information about $E$ by studying its Berkovich geometry, 
 it is useful to know what we expect to find, to guide our intuition and make conjectures. 
 
 Let $E$ be the curve defined by \eqref{eq:weierstrass_problem}. 
 Then using the notation from \cite[p.364]{silvermanAdvancedTopicsArithmetic1994} we have \[
 a_2 = -1 - \lambda,\quad a_4 = \lambda, \quad a_1, a_3, a_5, a_6 = 0
-.\] 
-And \[
+,\] 
+and \[
 b_2 = -4 \lambda - 4, \quad b_4 = 2\lambda, \quad b_6 = 0, \quad b_8 = -\lambda ^2
 .\] 
-The discriminant and $j$-invariant are given by \[
+The discriminant is given by \[
 	\Delta = 16\lambda^4 - 32\cdot \lambda^3 + 16\lambda^2 = 16 \lambda^2(\lambda - 1)^2
 .\] 
 Additionally we let $n = v(\lambda)$.
 So $\lambda = u \cdot \pi^{n}$ for some unit $u$ of $R$.
 \todo{do we need the $j$ invaraiant?}
 
-\subsection{$\ch k$ is not 2} \label{sec:char_k_is_not_2}
+\subsection{Tate's algorithm when $\ch k$ is not 2} \label{sec:char_k_is_not_2}
 We first treat the case where the characteristic of the residue field $k$ is different from 2. 
 We label the steps in Tate's algorithm as in \cite[sec.\ IV.9]{silvermanAdvancedTopicsArithmetic1994}.
 
 \step 1 
 We have that $|\Delta| = |\lambda|^2 |1-\lambda|^2 = |\lambda|^2 $. 
 So $\pi \mid \Delta$ if and only if  $|\lambda| < 1$. 
-So if  $n = 0$ we find that $E$ is of type $\mathrm I_0$. 
+We find the following. 
+\begin{tateconclusion}
+	If  $n = 0$, then $E$ is of type $\mathrm I_0$. 
+\end{tateconclusion}
 We now continue under the assumption that $n > 0$, i.e $\pi \mid \lambda$. 
 
 \step 2 
-The reduction of the weierstrass model is given by the equation $y^2 = x^2 (x - 1)$ over $k$. 
+The reduction of the Weierstrass model is given by the equation $y^2 = x^2 (x - 1)$ over $k$. 
 So the sinuglar point is already at $(0, 0)$ and we may continue the algorithm without coordinate change. 
 As $\pi \nmid 4, \pi \mid \lambda$, we see that $\pi \nmid b_2 = -4\lambda - 4$. 
 So $E$ has reduction type $I_m$ with \[
 	m = v(\Delta) = v(16 \lambda^2 (\lambda - 1)^2)  = 2v(\lambda) = 2n
 .\]
-This concludes Tates algorithm and we obtain the following result. 
+\begin{tateconclusion}
+	If $n > 1$ then $E$ is of type $\mathrm I_{2n}$.
+\end{tateconclusion}
+This concludes Tates algorithm and we summarise our findings in the following proposition. 
 
 \begin{proposition}
 	Suppose $\ch k \ne 2$ and $E$ be as in \cref{prob:main_problem}. 
 	Then $E$ has reduction type $\mathrm I_{2n}$ with $n = v(\lambda)$. 
 \end{proposition}
 
-\subsection{$\ch k$ is 2} \label{sec:char_k_is_2}
+\subsection{Tate's algorithm when $\ch k$ is 2}  \label{sec:char_k_is_2}
+
+Before starting Tate's algorithm we first perform coordinate change on $E$ in order to reduce it to a minimal Weierstrass model instantly and avoid getting stuck in an arbitrarily long loop inside Tate's algorithm. 
+Recall that the curve in \cref{prob:main_problem} is given by \[
+	E: y^2 = x(x-1)(x-\lambda) = x^3 + (-1 -\lambda) x^2 + \lambda x, \quad \lambda = u \cdot \pi^{n}, 2 = v\cdot \pi^{v(2)}
+.\] 
+\begin{notation}
+	We write $\lambda_i = \pi^{-i} \lambda = u\cdot \pi ^{n -i}$ and $2_i = \pi^{-i}2 = v \cdot \pi^{v(2) - i}$
+\end{notation}
+We first substitute $y' = y + x$. 
+Hence we obtain the curve Weierstrass equation \[
+	E: y'^2 - 2xy' = x^3 + (-2-\lambda) x^2 + \lambda x
+.\] 
+Now we want to reduce the Weierstrass equation by substituting $(x', y') = (\pi^{2i} x'', \pi^{3i}y'')$ for $i \ge 0$ as large as possible, such that the coefficients still lay in $R$. 
+We easily see that \[
+	i =  \min\left(v(2), \left\lfloor \frac{v(2 + \lambda)}{2} \right\rfloor,  \left\lfloor \frac{v(\lambda)}{4} \right\rfloor\right) = \min\left(v(2), \left\lfloor \frac{v(2 + \lambda)}{2} \right\rfloor,  \left\lfloor \frac{n}{4} \right\rfloor\right) 
+\]
+If we assume that $v(\lambda + 2) = \min(v(\lambda), v(2))$ (e.g.\ when $n \ne v(2)$), then we further see that \[
+	i = \min\left(v(2), \left\lfloor \frac{\min (v(2), n)}{2} \right\rfloor,  \left\lfloor \frac{n}{4} \right\rfloor\right)  = \min\left(\left\lfloor \frac{v(2)}{2}\right\rfloor, \left\lfloor \frac{n}{4} \right\rfloor \right)
+.\] 
+From now on we'll assume that that $n \ne v(2)$. 
+Tate's algorithm requires a more complex coordinate change if $n = v(2)$ and sadly there was insufficient time to work out this case. 
+
+So the equation becomes (ommiting the dubble primes after $x, y$) \[
+	E: y^2 - 2_i xy = x^3 + (-2_{2i} - \lambda_{2i})x^2 + \lambda_{4i}x
+.\] 
+Then \[
+a_1 = 2_i, \quad a_2 = -2_{2i} - \lambda_{2i}, \quad a_4 =  \lambda_{4i}, \quad a_3, a_6 = 0 
+.\] 
+Also 
+\[
+	b_2 = -2_{2i}^2 (\lambda + 1), \quad b_4 = 2_{2i}\lambda_{2i}, \quad b_6 = 0,\quad  b_8 = -\lambda_{4i}^2
+.\] 
+And the discriminant is \[
+	\Delta = \pi^{-12i} 2^{4}\cdot \lambda^2(1 - \lambda)^2
+.\] 
+Note that \[
+	v(\Delta) = 4\cdot v(2)+ 2n - 12 \min\left(\left\lfloor \frac{v(2)}{2}\right\rfloor, \left\lfloor \frac{n}{4} \right\rfloor \right)
+\]
+
 Again we label the steps as in \cite[sec.\ IV.9]{silvermanAdvancedTopicsArithmetic1994}.
 
 \step 1 
-We have that $|\Delta| = |2|^{4} |\lambda|^2 |1-\lambda^2| = 2^{-4}|\lambda|^2$.
-As $|\lambda|\le 1$, we find that $|\Delta| \le |2|^{-4} < 1$. 
-Hence $\pi \mid \Delta$. So $E$ is not of type $\mathrm I_0$ and we must continue to step 2.
+We know that $2_{2i} \in R$. Thus $\pi \mid 2_i$ and $\pi \mid \Delta$. 
+So we must continue to step 2.
 
+We now split up in two cases, $n > 2v(2)$ and $n < 2v(2)$. 
+Lets consider the case  $n > 2v(2)$ first 
 \step 2
-As $\pi \mid 2$ and $2 \mid b_2 = -4 - 4\lambda$ we find that $\pi \mid b_2$. 
-Suppose that $n \ge 0$. We will handle the case where $n = 0$ later. 
-Then the reduced curve is given by $y^2 = x^2(x+1)$ which is singular in $(0, 0)$. 
-So we can continue to step  $3$ without changing coordinates. 
+If $v(2)$ is even, then $i = v(2) / 2$. 
+So the reduction of $E$ has the equation \[
+	\tilde E: y^2 = x^3  + \overline{2_{2i}} x^2  = x^3 + vx^2 
+.\]
+We see that $\tilde E$ is singular at $(0,0)$. 
+So there is no need to change coordinates.
+Then $\pi \nmid b_2$ and we find the following.  
+\begin{tateconclusion}
+	If $n > 2v(2)$ and  $2 \mid v(2)$ then $E$ is of type $\mathrm I_m$ with $m = v(\Delta) = 4v(2) + 2v(\lambda) - 12 i = 2v(\lambda) - 2v(2)$.
+\end{tateconclusion}
 
-\step 3
-We have $a_6 = 0$, hence $\pi^2 \mid a_6$ and we continue on to step 4.
+We continue under the assumption that $v(2)$ is odd. 
+Then then $i = (v(2)-1) / 2$ and the reduction of $E$ looks like 
+\[
+\tilde E: y^2 = x^3 
+.\] 
+We see that  $\tilde E$ is singular $(0, 0)$. 
+Then $\pi \mid b_2$ so we have to continue to step 3. 
+
+\step 3 
+Recall $a_6 = 0$. So $\pi^2 \mid a_6$ and we continue to step 4. 
 
 \step 4
-Recall that  $b_8 = -\lambda^2$. 
-If  $n = 1$, then $\pi^3 \nmid b_8$ so we find that $E$ is of type $\mathrm{III}$.
-If  $n > 1$, then $\pi^3 \mid b_8$, so we have to continue to step 5.
+We compute \[
+	v(b_8) = 2n - 4i = 2n - 2v(2) + 2 
+\]
+As $n > 2 v(2) $ we see that \[
+	v(b_8) = 4v(2) - v(2) + 2 > 2v(2) + 2 \ge 4
+.\] 
+So $\pi^3\mid b_8$ and we continue to step 5.
 
-\step 5
-Recall $b_6 = 0$. So $\pi^3 \mid b_6$ and we have to continue to step 6.
+\step 5 
+Recall that $b_6 = 0$. So $\pi^3 \mid b_6$ and we continue to step 6. 
 
 \step 6
-The coordinate transformation $y' = y + x$ yields the weierstrass equation  \[
-	y'^2 - 2xy'  = x^3 + (-2 - \lambda)x^2 + \lambda x
-\]
-The new values of $a_i$ are \[
-a_1 = -2,\quad a_2 = -2 -\lambda,\quad a_4 = \lambda,\quad a_3,a_6 =0
+We have $v(a_1) = v(2) - (v(2) -1)/ 2 > 0$, thus $\pi \mid a_1$. 
+Also $v(a_2) = v(2) - 2i = 1 > 0$, thus $\pi \mid a_2$. 
+We have $a_3 = 0$, hence $\pi^2 \mid a_3$. 
+We compute $v(a_4) = n - 4i = n - 2v(2) + 2 > 2$. Thus  $\pi^2 \mid a_4$. 
+Trivially $\pi^3 \mid a_6 = 0$. 
+
+So there is no need to change coordinates in this step. 
+The polynomial is given by \[
+	P(T) = T^3 + \overline{\pi^{-1} -2_{2i}}T^2 
 ,\] 
-which satisfy \[
-\pi \mid a_1,\quad \pi\mid a_2,\quad  \pi^2 \mid a_3,\quad \pi^2 \mid a_4,\quad \pi^3 \mid a_6
-.\] 
-Take the polynomial \[
-	P(T) = T^3 + \pi^{-1}(-2 -\lambda ) T^2 + \pi^{-2}\lambda T 
-\] 
-If $n = 2$, then $\pi^{-2}\lambda \not\equiv 0 \mod \pi$. 
-So $P(T)$ has no double roots over $k$.
-Hence $E$ has has type $I_0^*$. 
-If $n >0$, then $\pi^{-2} \lambda \equiv 0 \mod \pi$.
-So $0$ is a double root of $P(T)$ over $k$. 
-We continue to step 7.
+where $\overline{\pi^{-1} -2_{2i}}$ is non-zero. 
+So $P(T)$ has double root $0$ and single root $\overline{\pi^{-1} -2_{2i}}$.
+In particular, it has no distinct roots so we continue to step 7.
 
 \step 7
-If $P(T)$ has double root  $0$ and simple root $1$. 
-So  $E$ has reduction type $\mathrm I_m^*$ for some $m$.
-To determine $m$ we have to follow the subprocedure as $\ch k = 2$.
+The polynomial  $P(T)$ has double root at $0$ and distinct single root. 
+So $E$ is of type $\mathrm I_m^*$. 
+To determine $m$ we have to follow the subprocedure as $\ch k = 2$. 
 
-Consider the family of polynomails \[
-	P_i(T) = T^2 - 
+Consider the families of polynomials 
+\begin{align*}
+	F_j(Y) &= Y^3 + \pi^{-i-2} a_3 Y - pi^{-2i-3} a_6 = Y^2 \\
+	G_j(X) &= -\pi^{-1}(-2_{2i} - \lambda_{2i}) X^2 + \pi^{-3 - j}\lambda_{4i} X
+,\end{align*}
+Note that $G_j$ has double root in $0$ for every $j$.  
+for $j = 0, 1,2, \ldots$.
+As long as $3 + j + 4i \le n$ we find that $G_i(X)$ has coefficients in $R$. 
+If $j + 3 + 4i <  n$ we obtain that $G_i(X) \equiv v X^2 \mod \pi$ has double root in $0$, for some unit  $v$.
+If $3 + j + 4i = n$ we obtain that $G_i(X) \equiv v X^2 + uX$. Recall that $\lambda = u \cdot \pi^{n}$. 
+So $G_j$ has distinct roots. 
+This occurs is exactly when $j = n - 3 - 4i = n - 1 - 2v(2)$. 
+At this point we are $2(j + 1)$ steps into the subprocedure. 
+So we find that 
+\begin{tateconclusion}
+	If $n > 2v(2)$ and $2\nmid v(2)$ then $E$ is of type $\mathrm I_m^*$ with  $m = 2(j + 1) = 2n - 4v(2)$.
+\end{tateconclusion}
+
+
+\medskip
+
+That concludes the case where $n > 2v(2)$. 
+We now move to the case where $n < 2v(2)$. 
+In this case $i = \left\lfloor \frac{n}{4} \right\rfloor$.
+
+\step 2
+Note that $\pi\mid 2_{2i}$ so $\pi\mid b_2$. 
+The reduction of $E$ is 
+\[
+\tilde E: y^2 = x^3 +  \overline{\lambda_{4i}}x
 .\] 
+If $n \equiv 0 \mod 4$ then $v(\lambda_{4i}) = 0$ and $\overline{\lambda_{4i}} = \overline{u}$. 
+Then $\tilde E$ is singular at $(0, \sqrt{\overline{u}})$. 
+So we must perform the translation $y' = y + \sqrt{u} $ this results in $a_6 = u$. 
+So briefly going into step $3$ we see that $\pi^2 \nmid a_6$ and find 
+\begin{tateconclusion}
+	If $n < 2v(2)$ and $n \equiv 0 \mod 4$ then $E$ is of type $\mathrm{II}$. 
+\end{tateconclusion}
+
+We continue step 2 under the assumption that $n \not\equiv 0 \mod 4$ then $v(\lambda_{4i}) = n - 4 \left\lfloor \frac{n}{4} \right\rfloor >  0$. 
+Then $\tilde E$ is singular at $(0, 0)$. And we do not need to do a coordinate transformation. 
 
 
 
+\step 3
+Recall that $a_6 = 0$. So trivially $\pi^3 \mid a_6$ and we move on to step 4.
 
+\step 4
+Trivially $\pi^3 \mid b_6 = 0$ so we continue with step 5.
 
+\step 5
+If $n \equiv 1$ then $v(\lambda_{4i}) = 1$. So $\pi^3 \nmid b_8 = - \lambda_{4i}^2$. 
+The algorithm terminates and states the following. 
+\begin{tateconclusion}
+	If $n < 2v(2)$ and $n \equiv 1 \mod 4$ then $E$ is of type  $\mathrm {IV}$. 
+\end{tateconclusion}
+We continue under the assumption that $n \equiv 2$ or $n \equiv 3 \mod 4$. 
 
+\step 6
+We easily see that $\pi \mid a_1, a_2$ and trivially $\pi^2 \mid a_3, \pi^3 \mid a_6$ as $a_3 = a_6 = 0$. 
+As we assume $n \equiv 2$ or $n \equiv 3 \mod 4$ then $\pi^2 \mid a_4$. 
+So we don't need to change coordinates. 
 
+The polynomial $P(T)$ is \[
+	P(T) = T^3  -\pi^{-1}(2_{2i} - \lambda_{2i})T^2 + \pi^{-2}\lambda_{4i} T
+.\] 
+If $n \equiv 3 \mod 4$ then $\overline{\pi^{-2} \lambda_{4i}} = 0$. 
+So $P(T)$ has atleast double root $0$.
+If $n = 2v(2) + 1$ then  $P(T) = T^3 - vT^2$. So $P(T)$ has a double root $0$ and single root $u$. 
+If $n > 2v(2) + 1$ then $P(T) = T^3$ and has triple root $0$. 
 
+If $n \equiv 2 \mod 4$ then $\pi^{-2} \lambda_{4i} = u$. 
+Note that $n = 2v(2) +1 $ is impossible as $n$ is even. So $\overline{\pi^{-1} (2_{2i} - \lambda_{2i})} = 0$ and we find that \[
+	P(T) = T^3 + u T
+.\] 
+Then $P(T)$ has double root $\sqrt{u} $ and single root $0$ over $k$.
 
+There is no case in $P(T)$ has distint roots. So we move to step 7.
 
-\bigskip
-Now suppose that $n = 0$.  
-The reduced curve is given by \[
-	\overline{f}(x, y) = y^2 - x (x-1)(x-\overline{\lambda}) = y^2 + x^3 + (1 + \overline{\lambda})x^2 + \overline{\lambda}x
-\]
-We have $\partial_y \overline{f} = 2y = 0, \partial_x \overline{f} = 3x^2 + \overline{\lambda} = x^2 + \overline{\lambda}$. 
-So the singular component has $x$-coordinate $\sqrt{\overline{\lambda}} $, and then the $y$-coordinate must be $\sqrt{} $
-So the curve is singular at the point $(,\sqrt{\overline{\lambda / 3}}) $
+\step 7
+As computed in step 6 there we find that the following. 
+\begin{tateconclusion}
+	If $n \equiv 2 \mod 4$ or $n \equiv 3 \mod 4 \wedge n = 2v(2) - 1$ then $E$ is of type $I_m^*$ for some $m$. 
+\end{tateconclusion}
+\todo{compute $m$ in this case}
+If  $n \equiv 3 \mod 4$ and $n > 2v(2) - 1$ then $P(T)$ has tripple root $0$ and we continue to step 8.
 
+\step 8
+As $a_3, a_6 = 0$ we see that $Y^2 + a_{3,2} Y - a_{6, 4} = 0$ which has double root $0$. 
+So we continue with step 9. 
 
+\step 9
+Suppose that $ \pi^{4} \mid a_4 = \lambda_{4i}$ then $i \ne \left\lfloor \frac{n}{4} \right\rfloor$.
+So we find that $\pi^{4} \nmid a_4$. 
+\begin{tateconclusion}
+	If $n < 2v(2), n\equiv 3 \mod 4$ and $n < 2v(2) - 1$ then $E$ is of type $\mathrm{II}^*$. 
+\end{tateconclusion}
 
+This concludes the case where $\ch k = 2$. 
+We recap our findings in the following proposition.
 
-
-
-
-
-
+\begin{proposition}
+	Suppose $\ch k = 2$ and $E$ is as in \cref{prob:main_problem} and $n:= v(\lambda) \ne 2v(2)$
+	then $E$ has the type
+	\begin{itemize}
+		\item if $n > 2v(2)$
+			\begin{itemize}
+				\item and $v(2)$ is even: $\mathrm I_{2n -2 v(2)}$
+				\item and $v(2)$ is odd: $\mathrm I_{2n - 4v(2)}^*$
+			\end{itemize}
+		\item if $n < 2v(2)$ 
+			\begin{itemize}
+				\item and $n \equiv 0 \mod 4$:  $\mathrm {II}$
+				\item and  $n \equiv 1 \mod 4$:  $\mathrm {IV}$
+				\item and $n \equiv 2 \mod 4$:  $\mathrm I^*_m$ for some $m > 0$
+				\item and $n\equiv 3 \mod 3$: 
+					\begin{itemize}
+						\item $n = 2v(2) - 1$:  $\mathrm I_m^*$ for some $m > 0$ 
+						\item $n < 2v(2) - 1$: $\mathrm {II}^*$
+					\end{itemize}
+			\end{itemize}
+	\end{itemize}
+\end{proposition}

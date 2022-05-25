@@ -1,0 +1,129 @@
+In the previous section we saw that given a regular model $\mathscr X$ of $X$, we can find divisorial points in $X\an$ that correspond to the irreducible components on the special fiber.  
+Moreover, if $\mathscr X$ is an snc-model, then we can find a sort of interpolations of these divisorial points along these intersections. 
+These will be the \emph{monomial points}. 
+We will sketch the construction of these monomial points and why they are useful in the context of curves. 
+
+\subsection{The dual graph of a model of a curve} \label{sec:the_dual_graph_of_a_model_of_a_curve}
+\begin{definition}
+	Let $\mathscr C$ be a snc-model of a curve $C$.
+	Let $E_1, \ldots, E_r$ be the irreducible components in the special fiber, occuring with multiplicity $N_1, \ldots, N_r$ respectively. 
+	Then the \emph{dual graph of $\mathscr C$}, written $\Delta(\mathscr C)$, is the graph with vertices $V = \{E_i\}_{i = 1}^{r} $ and the edges between $E_i, E_j$ are the intersection points of $E_i$ with $E_j$. 
+\end{definition}
+As the model is snc, the intersection number in an intersection point is  $1$. 
+So if $i \ne j$ then $E_i$ and $E_j$ are connected by $E_i \cdot E_j$ edges in $\Delta$
+\begin{example}\label{ex:first_dual_graph}
+	\begin{enumerate}
+		\item Consider an elliptic cuver $E$ over $K$ of reduction type $\mathrm I_2$ and let $\mathscr E$ be the minimal snc model, which incidentally is the same as the minimal regular model. 
+			Then the dual graph $\Delta(\mathscr E)$ consists of two points and two edges between them.
+		\item Let $\mathsc P$ be the model of $\pro_K^{1}$ from \cref{ex:first_model}. 
+			Then the dual graph consits of two points with a line in between. 
+		\item Let $E'$ be again an elliptic curve, this time of reduction type $\mathrm I_3^*$. 
+			And let $\mathscr E'$ be its minimal regular model (which is snc). 
+			Then the dual graph has the shape of an H. See \cref{fig:example_dual_graph}.
+
+	\end{enumerate}
+\end{example}
+
+\begin{figure}[h]
+    \centering
+    \incfig{example-dual-graph}
+    \caption{The models and dual graphs from \cref{ex:first_dual_graph}}
+    \label{fig:example_dual_graph}
+\end{figure}
+
+We can equip the dual graph $\Delta(\mathscr C) $ with extra information. 
+To every vertex (i.e.\ irreducible component  $E$ of $\mathscr C_s$) we attach the pair $(N(E), g(E))$ consisting of the multiplicity of $E$ and in $\mathscr C_s$ and the genus of $E$ as a $k$-curve with reduced scheme structure. 
+So in the third example in \cref{fig:example_dual_graph} the points $E_1, \ldots, E_4$ would be labeled with $(1, 0)$ and $F_1, \ldots, F_4$ with $(2, 0)$. 
+
+We can add even more structure to $\Delta(\mathscr C)$ in the form of a metric. 
+\begin{definition}
+Let $e$ be an edge connecting $E_i, E_j$, which are irreducible components of multiplicity $N_i, N_j$ respectively. 
+Then we define the \emph{length of $e$ }  \[
+	\ell(e) = \frac{1}{\lcm (N_i, N_j)}
+.\] 
+\end{definition}
+
+This allows us to turn $\Delta(\mathscr C)$ into into a metric space by having the vertices $v_i$ be points and for every edge  $e$ connecting $v_i, v_j$ we glue the interval $[0, \len(e)]$ (a metric space of lenght $\ell(e)$) along the end points to $v_i, v_j$. 
+The metric on $\Delta(\mathscr C)$ is then given by the shortest path metric. 
+So $\Delta(\mathscr E )$ from \cref{fig:example_dual_graph} would be a circle of length 2 and $\Delta (\mathscr P)$ a line of length $1$. 
+But the line connecting $F_1, F_2$ in $\Delta(\mathscr E')$ would only be $1 /2$ long. 
+\begin{definition}
+	The metric/topological space described above is written as $|\Delta(\mathscr C)|$. 
+\end{definition}
+
+\subsection{The skeleton: embedding the dual graph into $C^{\mathrm{an}}$}\label{sec:skeleton}
+The following theorem is the main reason why snc models are useful when studyingBerkovich geometry. 
+\begin{theorem}
+	Let $\mathscr C$ be a scn-model of a curve $C$. 
+	Then there is a natural embedding \[
+		\sk_{\mathscr C}:|\Delta(\mathscr C)| \into \mathscr C\an
+	,\]
+	such that for any irreducible component $F$ of $\mathscr C_s$,  $\sk_{\mathscr C}(E)$ is the divisorial point associated to $F$. 
+\end{theorem}
+\begin{proof}
+	A rigorous proof can be found in \cite[3.1.4]{mustataWeightFunctionsNonArchimedean2015}.
+	We will give a sketch of the argument. 
+	Let $\mathscr C = \sum_{i= 1}^{r} N_i F_i$ be the decomposition into irrerducible components. 
+	We know that the images of the vertices $F_1, \ldots, F_r$ of $\Delta(\mathscr C)$ must be.
+	What is missing is the map on the edges. 
+
+	Let $e$ be an edge connecting vertices $F_i, F_j$. 
+	Recall that $e$ corresponds to an intersection $\xi \in \mathscr C_s$ that belongs to both to $F_i$ and $F_j$. 
+	We the idea is construct a family of norms/valuations on $\mathscr \mathcal{O}_{\xi, \mathscr C}$ that interpolate between the divisorial points associated to $F_i, F_j$. Then we can extend these norms the faction field $K(C)$. 
+
+	Let $f_i, f_j$ be local equations cutting out $F_i, F_j$ in a neighborhood of  $\xi$. 
+	Then $t_i, t_j$ are a regular system generating the maximal ideal of $\mathcal{O}_{\xi, \mathscr C}. $ 
+	They satisfy \[
+		t_i ^{N_i} t _j^{N_j} = \pi
+	\] 
+	where $\pi$ is a uniformiser of $ R$ as $\pi$ cuts out $F_i, F_j$ with multiplicity $N_i, N_j$ respectively.  
+	Let $0 \le \alpha_i \le 1 / N_i,   0 \le \alpha_j \le 1 / N_j$ be real numbers such that \begin{equation}\label{eq:barycentic_alphas}
+		N_i\cdot \alpha_i + N_j \cdot \alpha_j = 1
+	.\end{equation}
+	
+	Now we can define a norm on $\mathcal{O}_{\xi, \mathscr C}$. 
+	Let  $f$ be any function in $\mathcal{O}_{\xi, \mathscr C}$. 
+	Considering $f$ as a element in the completion $\hat{\mathcal{O}_{\xi, \mathscr C}}$ we can write $f$ as powes series expansion in $t_i, t_j$  \[
+		f = \sum_{\ell, m}^{} a_{\ell, m} t_i ^{\ell} t_j^{m}
+	.\] 
+	On this powerseries we can define a valuation similar to the valuation we defined  for affinoid algebras as \[
+		v_{\alpha_i, \alpha_j}(f) = \inf_{\alpha_{\ell, m} \ne 0}{\alpha_i \ell + \alpha_j m}
+	.\] 
+	One can show that this does not depend the chosen powerseries expansion and that it is a well defined valuation. 
+	As we required \eqref{eq:barycentic_alphas} we have that  $v_{\alpha_i, \alpha_j}(\pi) = 1$ so this valutation extends the valuation on $K$. 
+\end{proof}
+\begin{definition}
+	The points that are in the image of some edge of $|\Delta(\mathscr C)|$ are called \emph{monomial points}. 
+	The set of monomial points in $C\an$ is written as  $C^{\text{mon}}$. 
+\end{definition}
+\begin{definition}
+	Let $\mathscr C$ be a snc-model of a curve $C$. 
+	Then the \emph{skeleton} associated to $\mathscr C$ is the image of the of the embedding $|\Delta(\mathscr C)|$ in $C\an$. 
+	\[
+		\sk(\mathscr C) = \im \sk_{\mathscr C}
+	.\] 
+\end{definition}
+
+\begin{remark}
+	It is possible to generalize this construction to higher dimensional varieties. 
+	Then the dual graph has to be replaced by a dual complex and the monomial points interpolate between more divisorial points along a simplex.
+	This is worked out in detail in \cite{mustataWeightFunctionsNonArchimedean2015}. 
+	However, we only need the theory for curves. 
+\end{remark}
+
+
+\subsection{Dual graphs and blowups} \label{sec:dual_graphs_and_blowups}
+We can study how the dual graphs of models behave under blowing up the points of the special fiber.
+Essentially this is translating \cref{lem:blowup_snc} to the language of dual graphs.
+We first consider what happens when we blowup a smooth point $x$ in $\mathscr C_s$.
+
+\begin{figure}[ht]
+    \centering
+    \incfig{blowup-smooth-point-skeleton}
+    \caption{The dual graph after blowing up in a smooth point on the special fiber of an snc-model. }
+    \label{fig:blowup-smooth-point-skeleton}
+\end{figure}
+
+
+
+
