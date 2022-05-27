@@ -1,0 +1,16 @@
+\begin{lemma}\label{lem:im_type_ii}
+	If $f: X \to Y$ is a finite map and $x \in X\an$. Then
+	\[
+		x \in X^\text{div} \iff f(x) \in Y^\text{div}
+	.\] 
+\end{lemma}
+\begin{proof}
+	The map being finite means that $K(X)$ is a finite extension of $K(Y)$ and that $v_{f(x)}$ is the restriction of $v_x$ to $K(Y)$. 
+	Then the residue fields of $K(X), K(Y)$ wrt.\ $v_x, v_{f(x)}$ are a finite extension \stacks{09E5}, hence of the same trancendence degree over $k$. 
+	The claim now follows from \cref{lem:char_div_point}.
+\end{proof}
+\begin{remark}
+	In the case of curves we can give a more topolgical argument for \cref{lem:im_type_ii}. 
+	A divisorial point $x \in X\an$ is precisely a point with an infinite number of tangent directions, i.e.\ a branch point.
+	The map $f\an: X\an \to Y\an $ is a finite branched cover. So topologically $f(x)$ is also such a branch point, hence divisorial. 	
+\end{remark}

@@ -1,0 +1,92 @@
+%% Creator: Inkscape 1.0beta2 (2b71d25, 2019-12-03), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'blowup-intersection-poins-skeleton.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{510.22499084bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.48022934)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0.25370323,0.43950333){\color[rgb]{0.00784314,0.00784314,0.00784314}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C’ = \bl_x \mathscr C$\end{tabular}}}}%
+    \put(0.27781156,0.40057859){\color[rgb]{0.00784314,0.00784314,0.00784314}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C’_\eta$\end{tabular}}}}%
+    \put(0.34960004,0.4005783){\color[rgb]{0.00784314,0.00784314,0.00784314}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C’_s$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{blowup-intersection-poins-skeleton.pdf}}%
+    \put(0.53981333,0.43943131){\color[rgb]{0.00784314,0.00784314,0.00784314}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C$\end{tabular}}}}%
+    \put(0.56453522,0.40248966){\color[rgb]{0.00784314,0.00784314,0.00784314}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C_\eta$\end{tabular}}}}%
+    \put(0.63227578,0.4024901){\color[rgb]{0.00784314,0.00784314,0.00784314}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C_s$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{blowup-intersection-poins-skeleton.pdf}}%
+    \put(0.69126299,0.34406397){\color[rgb]{0.74509804,0.11764706,0.10196078}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle x$\end{tabular}}}}%
+    \put(0.67248848,0.29264121){\color[rgb]{0.00784314,0.00784314,0.00784314}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{F_2}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{blowup-intersection-poins-skeleton.pdf}}%
+    \put(0.35450288,0.35308601){\color[rgb]{0.74509804,0.11764706,0.10196078}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{E}$\end{tabular}}}}%
+    \put(0.65072676,0.36887376){\color[rgb]{0.00784314,0.00784314,0.00784314}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{F_1}$\end{tabular}}}}%
+    \put(0.64733619,0.21982304){\color[rgb]{0.00784314,0.00784314,0.00784314}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{F_3}$\end{tabular}}}}%
+    \put(0.39055374,0.29853964){\color[rgb]{0.00784314,0.00784314,0.00784314}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{F_2}$\end{tabular}}}}%
+    \put(0.38586977,0.37317304){\color[rgb]{0.00784314,0.00784314,0.00784314}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{F_1}$\end{tabular}}}}%
+    \put(0.3646678,0.21767472){\color[rgb]{0.00784314,0.00784314,0.00784314}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{F_3}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{blowup-intersection-poins-skeleton.pdf}}%
+    \put(0.69355713,0.09505837){\color[rgb]{0.00784314,0.00784314,0.00784314}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$F_2$\end{tabular}}}}%
+    \put(0.70855566,0.02940572){\color[rgb]{0.00784314,0.00784314,0.00784314}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$F_3$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{blowup-intersection-poins-skeleton.pdf}}%
+    \put(0.57162254,0.06715994){\color[rgb]{0.00784314,0.00784314,0.00784314}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$F_1$\end{tabular}}}}%
+    \put(0.55768589,0.14741101){\color[rgb]{0.11372549,0.11372549,0.10588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Delta(\mathscr{C})$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{blowup-intersection-poins-skeleton.pdf}}%
+    \put(0.48683744,0.1009937){\color[rgb]{0.11372549,0.11372549,0.10588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$i$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{blowup-intersection-poins-skeleton.pdf}}%
+    \put(0.48683773,0.04630106){\color[rgb]{0.11372549,0.11372549,0.10588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$r$\end{tabular}}}}%
+    \put(0.28894768,0.14893108){\color[rgb]{0.11372549,0.11372549,0.10588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Delta(\mathscr{C}’)$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{blowup-intersection-poins-skeleton.pdf}}%
+    \put(0.40329047,0.09036309){\color[rgb]{0.00784314,0.00784314,0.00784314}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$F_2$\end{tabular}}}}%
+    \put(0.41800898,0.02517597){\color[rgb]{0.00784314,0.00784314,0.00784314}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$F_3$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{blowup-intersection-poins-skeleton.pdf}}%
+    \put(0.28135617,0.06246393){\color[rgb]{0.00784314,0.00784314,0.00784314}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$F_1$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{blowup-intersection-poins-skeleton.pdf}}%
+    \put(0.32475615,0.10632487){\color[rgb]{0.74509804,0.11764706,0.10196078}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E$\end{tabular}}}}%
+  \end{picture}%
+\endgroup%
