@@ -72,9 +72,9 @@
     \put(0.55188065,0.22967103){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{F_3}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{blowup-smooth-point-skeleton.pdf}}%
     \put(0.57604337,0.33023608){\color[rgb]{0,0.56078431,0.82745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{x’}$\end{tabular}}}}%
-    \put(0.13831398,0.45139057){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C’’ = \bl_{x’} \mathscr C’$\end{tabular}}}}%
-    \put(0.16242232,0.41246568){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C’_\eta$\end{tabular}}}}%
-    \put(0.23421064,0.41246539){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C’’_s$\end{tabular}}}}%
+    \put(0.13831398,0.45139057){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}${\mathscr C’}’ = \bl_{x’} \mathscr C’$\end{tabular}}}}%
+    \put(0.16242232,0.41246568){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}${\mathscr C’}_\eta$\end{tabular}}}}%
+    \put(0.23421064,0.41246539){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}${\mathscr C’}’_s$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{blowup-smooth-point-skeleton.pdf}}%
     \put(0.21948979,0.28601382){\color[rgb]{0.74901961,0.12156863,0.10196078}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{E}$\end{tabular}}}}%
     \put(0.27516581,0.31042673){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{F_2}$\end{tabular}}}}%
@@ -87,7 +87,7 @@
     \put(0.87132295,0.0322718){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$F_3$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=8]{blowup-smooth-point-skeleton.pdf}}%
     \put(0.72289623,0.04444907){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$F_1$\end{tabular}}}}%
-    \put(0.74489887,0.15940733){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Delta{\mathscr{C}}$\end{tabular}}}}%
+    \put(0.74489887,0.15940733){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Delta(\mathscr{C})$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=9]{blowup-smooth-point-skeleton.pdf}}%
     \put(0.65797575,0.11298957){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$i$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=10]{blowup-smooth-point-skeleton.pdf}}%
@@ -97,7 +97,7 @@
     \put(0.607142,0.03371645){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$F_3$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=12]{blowup-smooth-point-skeleton.pdf}}%
     \put(0.45871542,0.04589358){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$F_1$\end{tabular}}}}%
-    \put(0.47616067,0.16092724){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Delta{\mathscr{C}’}$\end{tabular}}}}%
+    \put(0.47616067,0.16092724){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Delta(\mathscr{C}’)$\end{tabular}}}}%
     \put(0.47401382,0.12015023){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=13]{blowup-smooth-point-skeleton.pdf}}%
     \put(0.37183919,0.10739909){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$i’$\end{tabular}}}}%
@@ -108,8 +108,8 @@
     \put(0.29370278,0.03786257){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$F_3$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=16]{blowup-smooth-point-skeleton.pdf}}%
     \put(0.1452762,0.05003984){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$F_1$\end{tabular}}}}%
-    \put(0.1672787,0.16499809){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Delta{\mathscr{C}’’}$\end{tabular}}}}%
-    \put(0.1605746,0.12429649){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E$\end{tabular}}}}%
+    \put(0.1672787,0.16499809){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Delta({\mathscr{C}’}’)$\end{tabular}}}}%
+    \put(0.1605746,0.12429649){\color[rgb]{0.74901961,0.12156863,0.10196078}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=17]{blowup-smooth-point-skeleton.pdf}}%
     \put(0.2574207,0.12429649){\color[rgb]{0,0.56078431,0.82745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E’$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=18]{blowup-smooth-point-skeleton.pdf}}%

@@ -129,7 +129,7 @@
 
 \theoremstyle{definition}
 \newtheorem{definition}{Definition}[section]
-\newtheorem*{notation}{Notation}
+\newtheorem{notation}[definition]{Notation}
 \newtheorem{remark}[definition]{Remark}
 \newtheorem{theorem}[definition]{Theorem}
 \newtheorem{example}[definition]{Example}
@@ -139,9 +139,9 @@
 \newtheorem{exercise}[definition]{Exercise}
 \newtheorem{corollary}[definition]{Corollary}
 \newtheorem{problem}[definition]{Problem}
-\newmdenv[linecolor=black,innertopmargin=1em,innerbottommargin=1em]{tateconclusion}
+\newmdenv[linecolor=black,innertopmargin=1em,innerbottommargin=1em, rightmargin=1em, , leftmargin=1em]{tateconclusion}
 
-\newcommand{\stacks}[1]{\cite[\href {https://stacks.math.columbia.edu/tag/#1}{Tag #1}]{stacks-project}}
+\newcommand{\stacks}[1]{\cite[\href{https://stacks.math.columbia.edu/tag/#1}{Tag #1}]{stacks-project}}
 
 
 

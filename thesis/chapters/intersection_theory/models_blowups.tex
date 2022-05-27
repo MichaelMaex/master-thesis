@@ -80,14 +80,17 @@ We can recognize whether a model has normal crossings by looking at the intersec
 	It also follows that $F, G$ are regular at $x$.
 \end{proof}
 
-\begin{theorem}
+\begin{theorem}\label{thm:desingularisation}
 	Let $\mathscr C$ be a regular projective model of a curve $C$.
 	Then there exists a snc-model $\mathscr C'$ of $C$ with dominating morphism of models $\mathscr C' \to \mathscr C$. 
+	Moreover $\mathscr C'$ can be chosen to be the minimal snc-model dominating $\mathscr C$. 
+	Then $\mathscr C'$ is called the \emph{minimal desingularisation of $\mathscr C$}. 
 \end{theorem}
 \begin{proof}
 	This follows from embedded resolution. 
 	The idea is to repeatedly blow up points in $\mathscr C$ to make all irreducible components regular, and all intersections normal crossings. 
 	See \cite[sec.\ 9.2.4]{liuAlgebraicGeometryArithmetic2002} for more details.
+	That a minimal desingularisation exists is the content of \cite[prop.\ 9.3.32]{liuAlgebraicGeometryArithmetic2002}.
 \end{proof}
 Via the factorisation theorem we also see that this desingularisation can be obtained via finite sequence of blowups in closed points. 
 
@@ -118,5 +121,11 @@ Via the factorisation theorem we also see that this desingularisation can be obt
 
 
 
-\todo[inline]{minimal snc model}
+\todo[inline]{minimal regular model}
+\begin{theorem}\label{thm:minimal_snc_model}
+	Let $C$ be a curve with  $g(C) > 0$, then $C$ has a minimal snc-model $\mathscr C_\text{min} $, i.e.\ any snc-model $\mathscr C$ dominates $\mathscr C_\text{min} $. 
+\end{theorem}
+\begin{proof}
+	See \cite[prop.\ 9.3.36]{liuAlgebraicGeometryArithmetic2002}.
+\end{proof}
 

@@ -15,7 +15,7 @@ So if $i \ne j$ then $E_i$ and $E_j$ are connected by $E_i \cdot E_j$ edges in $
 	\begin{enumerate}
 		\item Consider an elliptic cuver $E$ over $K$ of reduction type $\mathrm I_2$ and let $\mathscr E$ be the minimal snc model, which incidentally is the same as the minimal regular model. 
 			Then the dual graph $\Delta(\mathscr E)$ consists of two points and two edges between them.
-		\item Let $\mathsc P$ be the model of $\pro_K^{1}$ from \cref{ex:first_model}. 
+		\item Let $\mathscr P$ be the model of $\pro_K^{1}$ from \cref{ex:first_model}. 
 			Then the dual graph consits of two points with a line in between. 
 		\item Let $E'$ be again an elliptic curve, this time of reduction type $\mathrm I_3^*$. 
 			And let $\mathscr E'$ be its minimal regular model (which is snc). 
@@ -43,7 +43,7 @@ Then we define the \emph{length of $e$ }  \[
 .\] 
 \end{definition}
 
-This allows us to turn $\Delta(\mathscr C)$ into into a metric space by having the vertices $v_i$ be points and for every edge  $e$ connecting $v_i, v_j$ we glue the interval $[0, \len(e)]$ (a metric space of lenght $\ell(e)$) along the end points to $v_i, v_j$. 
+This allows us to turn $\Delta(\mathscr C)$ into into a metric space by having the vertices $v_i$ be points and for every edge  $e$ connecting $v_i, v_j$ we glue the interval $[0, \ell(e)]$ (a metric space of lenght $\ell(e)$) along the end points to $v_i, v_j$. 
 The metric on $\Delta(\mathscr C)$ is then given by the shortest path metric. 
 So $\Delta(\mathscr E )$ from \cref{fig:example_dual_graph} would be a circle of length 2 and $\Delta (\mathscr P)$ a line of length $1$. 
 But the line connecting $F_1, F_2$ in $\Delta(\mathscr E')$ would only be $1 /2$ long. 
@@ -110,20 +110,181 @@ The following theorem is the main reason why snc models are useful when studying
 	This is worked out in detail in \cite{mustataWeightFunctionsNonArchimedean2015}. 
 	However, we only need the theory for curves. 
 \end{remark}
+\todo[inline]{example of skeleta, mostly elliptic curves}
 
 
 \subsection{Dual graphs and blowups} \label{sec:dual_graphs_and_blowups}
 We can study how the dual graphs of models behave under blowing up the points of the special fiber.
 Essentially this is translating \cref{lem:blowup_snc} to the language of dual graphs.
-We first consider what happens when we blowup a smooth point $x$ in $\mathscr C_s$.
+Let $x$ be a closed point in the special fiber and $\mathscr C' = \bl_{x} \mathscr C$, and $E$ be the exceptional divisor in $\mathscr C'$.
+
+We first consired what happens if $x $ is a smooth point of $\mathscr C_s$. 
+Let $F$ be the irreducible component of $\mathscr C_s$ that contains $x$ and $N$ be the multiplicity of $F$. 
+Then $E$ is a rational curve of multiplicity $N$, which only intersects $\tilde F$ in one point. 
+The strict transforms of the components in $\mathscr C$ all intersects each other in the same way in $\mathscr C'$. 
+So in the dual graph we have to add one vertex $E$ labeled $(N, 0)$ (multiplicity and genus) which is connected to $F$ by one edge.
+
+There are two natural maps between $|\Delta(\mathscr C)|$ and $|\Delta(\mathscr C')|$. 
+\[
+\begin{tikzcd}
+	{|\Delta(\mathscr C')|} \rar[hookleftarrow, shift left]{i} \rar[twoheadrightarrow, shift right, ']{r} & {|\Delta(\mathscr C)|} 
+\end{tikzcd}
+.\] 
+An isometric inclusion $i$ and a deformation retraction $r$ that retracts the edge between  $E$ and $F$. 
+Note that $r \circ i = \id_{|\Delta(\mathscr C)|}$ and that the maps are a homotopy equivalence. 
+See \cref{fig:blowup_smooth_point_skeleton}. 
 
 \begin{figure}[ht]
     \centering
     \incfig{blowup-smooth-point-skeleton}
     \caption{The dual graph after blowing up in a smooth point on the special fiber of an snc-model. }
-    \label{fig:blowup-smooth-point-skeleton}
+    \label{fig:blowup_smooth_point_skeleton}
 \end{figure}
 
+\begin{remark}
+	Blowing up $ F$ in another point $x'$ results in an extra edge on the dual graph. 
+	Embedding this in $C\an$, this edge lays in another tangent direction at$F$ in $C\an$. 
+	So we see that every closed point  on  $F$ gives a tangent direction at the divisorial point $F$. 
+	With the theorem we see later, we see that conversely every tangent direction also corresponds to a closed point on $F$. 
+\end{remark}
+
+
+\medskip
+
+We now consider what happens if $x$ is an intersection point of $\mathscr C$. 
+Let $F, G$ be the components that contain $x$, of multiplicity $M, N$ respectively. 
+Then the strict transforms $\tilde F, \tilde G$ no longer intersect in $x$, but they both intersect the exceptional divisor $E$ in one point. 
+Recall that $E$ is a rational curve of multiplicity $M + N$ (\cref{lem:blowup_snc}). 
+So in the dual graph $\Delta(\mathscr C')$ the edge $e$ between $F, G$ corresponding to $x$ is replaced by an edge $e_1$, from $F$ to $E$ and an edge $e_2$ from $E$ to $G$. 
+Note that \[
+	\ell(e) = \frac{1}{\lcm(M, N)} = \frac{1}{\lcm(M, M + N)} + \frac{1}{\lcm(M+ N, N)} = \ell(e_1) + \ell(e_2)
+.\]  
+So in the dual graph we have put an extra vertex on the edge $e$ and turning it into two edge, while keeping the total length the same.
+See \cref{fig:blowup_intersection_points_skeleton}. 
+So again we find an isometry $i$ and a retraction $r$
+\[
+\begin{tikzcd}
+	{|\Delta(\mathscr C')|} \rar[hookleftarrow, shift left]{i} \rar[twoheadrightarrow, shift right, ']{r} & {|\Delta(\mathscr C)|} 
+\end{tikzcd}
+.\] 
+In this case the retraction is just the inverse as $i$ is actually an isometry. 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{blowup-intersection-poins-skeleton}
+    \caption{blowup intersection poins skeleton}
+    \label{fig:blowup_intersection_points_skeleton}
+\end{figure}
+
+Now let $f:\mathscr C' \to \mathscr C$ be any dominating map between snc-models of $C$. 
+By the factorisation theorem \cref{thm:factorisation_theorem} we find that $f$ can be decomposed by a sequence of blowups in closed points. 
+\[
+\mathscr C' = \mathscr C_n \to \mathscr C_{n-1} \to \ldots \to \mathscr C_0 = \mathscr C
+.\] 
+With corresponding isometric inclusions and retractions 
+\[
+\begin{tikzcd}
+	{|\Delta(\mathscr C_{j})|} \rar[hookleftarrow, shift left]{i_j} \rar[twoheadrightarrow, shift right, ']{r_j} & {|\Delta(\mathscr C_{j-1})|} 
+\end{tikzcd}
+.\] 
+Composing these inclusions and retractions we find the following proposition
+\begin{proposition}\label{prop:inclusion_retraction_dual_graph}
+	Let $f:\mathscr C' \to \mathscr C$ be any dominating map between snc-models of a curve $C$. 
+	Then there is a natural isometric inclusion $i$ and deformation retraction $r$
+\[
+\begin{tikzcd}
+	{|\Delta(\mathscr C')|} \rar[hookleftarrow, shift left]{i} \rar[twoheadrightarrow, shift right, ']{r} & {|\Delta(\mathscr C)|} 
+\end{tikzcd}
+,\] 
+	which is are homotopy equivalences
+\end{proposition}
+
+The inclusion $i: |\Delta(\mathscr C)| \into |\Delta(\mathscr C')|$ is compatible with the embedding into $C\an$, which we make precise in the following theorem. 
+\begin{proposition}
+	Let $f:\mathscr C' \to \mathscr C$ be any dominating map between snc-models of a curve $C$ and $i$ the inclusion $i: |\Delta(\mathscr C)| \into |\Delta(\mathscr C')|$. 
+	Then the following diagram commutes \[
+	\begin{tikzcd}
+		& C\an \\
+		{|\Delta(\mathscr C)|} \ar[hookrightarrow]{ur}{\sk_{\mathscr C}}
+\ar[hookrightarrow]{rr}{i} & & {|\Delta(\mathscr C')|} \ar[hookrightarrow]{ul}[']{\sk_{\mathscr C'}}
+	\end{tikzcd}
+	.\] 
+	In particular there is an inclusion of skeleta $\sk(\mathscr C) \subset  \sk(\mathscr C')$, which is compatible with the metrics and $\sk(\mathscr C)$ is a deformation retract of  $\sk(\mathscr C')$. 
+\end{proposition}
+
+By the previous proposition all the results we have about $|\Delta(\mathscr C)|$ actually also work with  $\sk(\mathscr C)$. 
+\todo{this is not very precies language}
+
+\begin{corollary}
+	Let $C$ be a curve with  $g(C) > 0$, $\mathscr C$ any snc-model of $C$ and $\mathscr C_\text{min} $ the minimal snc-model. 
+	Then there is an isometric inclusion $i$ and deformation retraction $r$
+\[
+\begin{tikzcd}
+	\sk(\mathscr C_\text{min} ) \rar[hookleftarrow, shift left]{i} \rar[twoheadrightarrow, shift right, ']{r} & \sk(\mathscr C) 
+\end{tikzcd}
+.\] 
+In particular $\sk(\mathscr C_\text{min} )$ has the same homotopy type as every other skeleton of $C$. 
+\end{corollary}
+\begin{proof}
+	This is \cref{prop:inclusion_retraction_dual_graph} together with \cref{thm:minimal_snc_model}.
+\end{proof}
+
+\subsection{Skeleta span $C^{\mathrm{an}}$} \label{sec:skeleta_span_C_an}
+
+In the previous sections we have seen that snc-models of $C$ give pieces (skeleta) of $C\an$. 
+If we want to use these models to understand the geometry of $C\an$ it is desireable that we can obtain all or most of $C\an$ as by looking at skeleta. 
+This is the case and is made precise in the following proposition. 
+\begin{proposition}\label{prop:skeleta_curve_limits}
+	Let $C$ be a curve. Then 
+	\begin{align*}
+		\mathbb H(C) &= \bigcup_{\mathscr C \text{ snc-model}} \sk(\mathscr C) \\
+		C\an &= \varprojlim_{\mathscr C \text{ snc-model}} \sk(\mathscr C)
+	,\end{align*}
+	where $\mathbb{H}(C)$ as a set are the type 2 and 3 points of $C\an$ and the projective limit is taken over the ordered system of snc-models of $C$ and the maps are the deformations retractions from \cref{prop:inclusion_retraction_dual_graph}.
+\end{proposition}
+\begin{proof}
+	See \cite[§2.2.2 and  lem.\ 2.3.2]{bakerWeightFunctionsBerkovich2016}
+\end{proof}
+\begin{remark}
+	While $\mathbb{H}(C)$ and $C\an$ are almost the same set, their topologies are different. 
+	The difference comes down to the following. 
+	Let $x$ be a branch point (i.e.\ divisorial/type 2 point).
+	Then a neighborhood $U \subset C\an$ of $x$ must entirely contain all but finitely many branches, whereas a neighborhood $V \subset \mathbb{H}(C)$ must just be an open when restricted to any skeleton $\sk(\mathscr C)$ (a finite graph). 
+\end{remark}
+
+The union in \cref{prop:skeleta_curve_limits} is actually a injective limit over the same ordered system of snc-models, but the maps here are the inclusions. 
+As these inclusions are isometries, the metrics on the skeleta $\sk(\mathscr C)$ induce a metric on $\mathbb{H}(C)$, which is called the \emph{stable metric}. 
+
+\begin{remark}
+	The \emph{stable metric} is not the only metric on $\mathbb{H}(C)$. 
+	In \cite{bakerWeightFunctionsBerkovich2016} they define another metric, the \emph{potential metric} which seems to be better suited to some applications. 
+\end{remark}
+
+\begin{remark}
+	The stabe metric does not generalize to analytifications of higher dimensional varities. 
+	On a 1 dimensional topological space, a path metric is equivalent to giving a measure. 
+	So saying that $\mathbb{H}(C)$ is a metric space is slightly misleading as it is infact the measure that generalises to higher dimensions. 
+\end{remark}
+
+Let $C$ be a curve and $\mathscr C$ be a snc-model of $C$. 
+As $C\an$ is a filtered limit of spaces which when large enough retract to $\sk(\mathscr C)$ (\cref{prop:skeleta_curve_limits,prop:inclusion_retraction_dual_graph}), the following theorem is believable, albeit not entirely trivial to prove. 
+\begin{proposition}\label{prop:retract_analytification_skeleton}
+	Let $\mathscr C$ be a snc-model of a curve $C$. 
+	Then there is a deformation retract $\rho_{\mathscr C}: C\an \to \sk(\mathscr C)$. 
+	\question{is this actually a deformation retraction, or just a retraction? 
+	It must be a deformation retract, otherwise the inclusion would not be a homotopy equivalence. }
+\end{proposition}
+\begin{proof}
+	See \cite[§2.2.2]{bakerWeightFunctionsBerkovich2016}.
+\end{proof}
+
+The metric induces a piecewise affine linear structure on $\mathbb{H}(C)$. 
+\begin{definition}
+	Let $f: \mathbb{H}(C) \to \R$ be a function. 
+	Then $f$ is \emph{piecewise linear} $f \circ \ell$  is a piecewise linear function for every line $\ell: [a, b] \into \mathbb{H}(C)$ parametrised by length. 
+
+	We say that $f$ is \emph{$\Z$-affine linear} (resp.\ \emph{$\Q$-afine linear}) if moreover the slopes $f \circ \ell$ are in $\Z $ (resp.\ $\Q$)
+\end{definition}
 
 
 

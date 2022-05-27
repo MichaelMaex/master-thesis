@@ -73,9 +73,9 @@
 </g>
 <circle class="st9" cx="387.8" cy="104.3" r="2.1"/>
 <text transform="matrix(1 0 0 1 391.8823 105.8404)" class="st9 st1 st2">$\scriptstyle{x’}$</text>
-<text transform="matrix(1 0 0 1 94.095 23.419)" class="st0 st1 st2">$\mathscr C’’ = \bl_{x’} \mathscr C’$</text>
-<text transform="matrix(1 0 0 1 110.4959 49.8996)" class="st0 st1 st2">$\mathscr C’_\eta$</text>
-<text transform="matrix(1 0 0 1 159.3335 49.8998)" class="st0 st1 st2">$\mathscr C’’_s$</text>
+<text transform="matrix(1 0 0 1 94.095 23.419)" class="st0 st1 st2">${\mathscr C’}’ = \bl_{x’} \mathscr C’$</text>
+<text transform="matrix(1 0 0 1 110.4959 49.8996)" class="st0 st1 st2">${\mathscr C’}_\eta$</text>
+<text transform="matrix(1 0 0 1 159.3335 49.8998)" class="st0 st1 st2">${\mathscr C’}’_s$</text>
 <rect x="94.1" y="31.5" class="st3" width="123.3" height="158"/>
 <path class="st4" d="M129.7,60.7c-12.4,22.8-11.7,37.7-8.3,47.3c3.7,10.4,10.1,13.7,13.2,24.7c4.1,14.8-1.9,29.5-8,40.2"/>
 <line class="st4" x1="186.7" y1="132.9" x2="162.7" y2="173.3"/>
@@ -110,7 +110,7 @@
 <g>
 	<text transform="matrix(1 0 0 1 491.7863 300.2613)" class="st0 st1 st14">$F_1$</text>
 </g>
-<text transform="matrix(1 0 0 1 506.7547 222.0552)" class="st1 st2">$\Delta{\mathscr{C}}$</text>
+<text transform="matrix(1 0 0 1 506.7547 222.0552)" class="st1 st2">$\Delta(\mathscr{C})$</text>
 <g>
 	<g>
 		<line class="st15" x1="436.6" y1="261.4" x2="476.9" y2="261.4"/>
@@ -147,7 +147,7 @@
 <g>
 	<text transform="matrix(1 0 0 1 312.0641 299.2786)" class="st0 st1 st14">$F_1$</text>
 </g>
-<text transform="matrix(1 0 0 1 323.9321 221.0212)" class="st1 st2">$\Delta{\mathscr{C}’}$</text>
+<text transform="matrix(1 0 0 1 323.9321 221.0212)" class="st1 st2">$\Delta(\mathscr{C}’)$</text>
 <text transform="matrix(1 0 0 1 322.4716 248.7618)" class="st1 st2">$E$</text>
 <line class="st4" x1="365.7" y1="272.2" x2="349.9" y2="244.5"/>
 <g>
@@ -186,8 +186,8 @@
 <g>
 	<text transform="matrix(1 0 0 1 98.8314 296.4579)" class="st0 st1 st14">$F_1$</text>
 </g>
-<text transform="matrix(1 0 0 1 113.7997 218.2518)" class="st1 st2">$\Delta{\mathscr{C}’’}$</text>
-<text transform="matrix(1 0 0 1 109.2389 245.9411)" class="st1 st2">$E$</text>
+<text transform="matrix(1 0 0 1 113.7997 218.2518)" class="st1 st2">$\Delta({\mathscr{C}’}’)$</text>
+<text transform="matrix(1 0 0 1 109.2389 245.9411)" class="st6 st1 st2">$E$</text>
 <line class="st4" x1="152.4" y1="269.4" x2="136.6" y2="241.7"/>
 <g>
 	<text transform="matrix(1 0 0 1 175.1233 245.9411)" class="st9 st1 st2">$E’$</text>
