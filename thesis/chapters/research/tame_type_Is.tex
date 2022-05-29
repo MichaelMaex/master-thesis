@@ -1,0 +1,62 @@
+We now consider what happens in the hypothetical case that $E$ has reduction of type $I_m^*$ for some $m$. 
+As we've discussed in \cref{rem:justification_semistable}, this does not happen in the context of \cref{prob:main_problem}, but it does happen when $n < 0$, i.e. $|\lambda| > 1$.  
+In this case we can construct a similar model to $\mathscr P$, whose dual graph is the middle line in the case in the case $|\lambda| > 1$ from \cref{fig:configurations_of_gamma_lambda}. 
+
+
+\begin{lemma}\label{lem:divisorial_points_Is}
+	Let $x$ be a divisorial point in $\sk(E)$. 
+	Then  \[
+		N(x) \ge 2
+	,\] 
+	with equality if and only if $x$ is one of the vertices in $\sk(\mathscr E_\text{min} )$ where $\mathscr E_\text{min} $ is the minimal regular model of $E$. 
+\end{lemma}
+\begin{proof}
+	Let $\Delta$ be the the dual graph of the essential components of $\mathscr E_\text{min} $. 
+	Recall that $\Delta$ consists of $m + 1$ vertices of multiplicity $2$ and that there is a natural isomorphism $ |\Delta| \simeq \sk(E)$. 
+
+	Let $x$ be a divisorial point on $\sk(E)$.
+	Then $x$ can be obtained as a vertex of a model $\mathscr E$ by repeatedly blowing up the intersection points in $\mathscr E_\text{min} $ between components in $\sk(E)$. 
+	Every exceptional divisor of such blowup will have multiplicity strictly greater than $2$. 
+	So $x$ has multiplicity $2$ if it was one of the original vertices in $\Delta$, and multiplicity strictly greater than $2$ if not. 
+\end{proof}
+
+\begin{proposition}\label{prop:m_when_E_type_Is}
+	Suppose that $|v(\lambda)| = n$ and $E$ is of type $I_m^*$, then $m = 2n$. 
+\end{proposition}
+\begin{proof}
+	We start of locally so $\mathscr P'$ be a the non-proper model of $\pro^{1}_K$ that only contains to adjacent irreducible components $F, G$ of  $\mathscr P$.
+	Let $x, y $ be the corresponding divisorial points in $\pro^{1, \text{an}}_K$. 
+	Then $x, y$ are of multiplicity $1$, hence $\phi^{-1}(x), \phi^{-1}(y) \subset  \sk(E)$ are finite sets of points of multiplicity $1$ or $2$. 
+	\Cref{lem:divisorial_points_Is} tells us that the points in $\phi^{-1}(x)$ are exactly of multiplicity 2, thus correspond to essential components in $\mathscr E_\text{min} $.
+	From this we also see that $\phi^{-1}(x)$ is a point. 
+	Similarly $\phi^{-1}(y)$ is a point of multiplicity 2 corresponding to an essential component in $\mathscr E$. 
+
+	Let $g: N(\mathscr P') \to \mathscr P'$ be the normalisation of $\mathscr P'$ in $K(E)$.
+	From the computations above we see that $N(\mathscr P')_s$ contains two irreducible components, the strict transforms of $F, G$, both of multiplicity $2$. 
+	We can see that $N(\mathscr P')$ is not regular. 
+	Indeed if it was regular, by the adjunction formula we find that \[
+		2 = 2F\cdot G =  (g^* F)\cdot (g^* G) =  (2 \tilde F) \cdot  (2 \tilde G)  \ge 4
+	,\] 
+	which clearly is a contradiction. 
+	This tells us that $\tilde F, \tilde G$ are not adjacent in $\mathscr E_\text{min} $. 
+	Let $H_1, \ldots, H_r$ be the missing components between $\tilde F, \tilde G$ of $\mathscr E_\text{min} $. 
+	Let $\mathscr E'$ be the (non-proper) model of $E$ containig $\tilde F, H_1, \ldots, H_r, \tilde G$. See \cref{fig:models_proof_is}.
+	
+\begin{figure}[ht]
+    \centering
+    \incfig{models-proof-is}
+    \caption{The models and skeleta in the proof of \cref{prop:m_when_E_type_Is}.}
+    \label{fig:models_proof_is}
+\end{figure}
+Then the images of $\phi(H_1), \ldots, \phi(H_r)$ are distinct divisorial points of multiplicity $1$ or $2$.
+By \cref{lem:number_divisorial_points} we know that $\sk(\mathscr P')$ has only 3 points such points, two of which are $x, y$. 
+Hence $r = 1$. 
+
+This concludes the local computation. Globally this means the following. 
+So we see that there is one component of degree 2 in $\mathscr E_\text{min} $ for every irreducible component of $\mathscr P$, and one for every intersection point. 
+Hence there are $n + 1 + n = 2n + 1$ components of multiplicity $2$ in $\mathscr E_\text{min} $ from which it follows that $m = 2n$.  
+
+
+	 
+\end{proof}
+

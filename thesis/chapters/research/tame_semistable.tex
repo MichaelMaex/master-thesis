@@ -1,7 +1,7 @@
 In this section we answer \cref{prob:main_problem} when $k$ has characteristic different from $2$, under the assumption that $E$ has semi-simple reduction, i.e.\  $E$ is of type $\mathrm I_m$ for some $m \ge 0$. 
 
-\begin{remark}
-	The assumption that $E$ has semi-stable reduction is valid as this is what fe found \cref{sec:char_k_is_2} by means of Tate's algorithm. 
+\begin{remark}\label{rem:justification_semistable}
+	The assumption that $E$ has semi-stable reduction is valid as this is what we have found \cref{sec:char_k_is_2} by means of Tate's algorithm. 
 	However assumption also isn't valid for in the case where we choose $|\lambda| > 1$ (see \cref{fig:configurations_of_gamma_lambda}).
 	If $|\lambda| > 1$, i.e.\ $v(\lambda) < 0$ then
 	explicit computations of examples suggest that  $E$ has semistable reduction if $v(\lambda)$ is even and $E$ is of type $I^*_n$ if $n$ is odd. 
@@ -23,13 +23,13 @@ In this section we answer \cref{prob:main_problem} when $k$ has characteristic d
 	Then $\mathscr C'$ is also snc, which contradicts the minimality of $\mathscr C$. 
 \end{proof}
 \begin{corollary}
-	Let $\mathscr C$ be the minimal snc-model of $C$. 
+	Let $\mathscr C$ be ithe minimal snc-model of $C$. 
 	Then the leaves of the dual graph  $\Delta (\mathscr C)$ have genus greater than $0$. 
 \end{corollary}
 
-Recall \cref{lemma:genus_semistable} which states that the betti-number of $\Delta(C)$ plus the genus of vertices equals $g(C)$. 
+Recall \cref{lemma:genus_semistable} which states that the Betti-number of $\Delta(C)$ plus the genus of vertices equals $g(C)$. 
 In the case of $E$ this leaves two options. 
-\begin{lemma}
+\begin{lemma}\label{lem:point_or_circle}
 	Let $E$ be an elliptic curve with semi-stable reduction and $\mathscr E$ be its minimal semistable model. 
 	Then $\Delta(\mathscr E) = \sk(\mathscr E) = \sk(E)$ is either 
 	\begin{enumerate}
@@ -43,5 +43,31 @@ In the case of $E$ this leaves two options.
 	As it has no leaves of genus $0$ and is finite, this means that $\Delta(E)$ is either a circle or a point of genus 1, which proofs the claim.
 \end{proof}
 
+\begin{lemma}
+	Let $E$ be as in \cref{prob:main_problem}. 
+	Then $\sk(E)$ is a circle if $n > 0$ and $\sk(E)$ is a point if $n = 0$. 
+\end{lemma}
+\begin{proof}
+	Recall that $\phi: E\an \to \pro^{1, \text{an}}_K$ is a finite map and that $\sk(E) = \sk(\mathscr P)$ with $\mathscr P$ the model from \cref{sec:finding_a_minimal_snc_model}.
+	Suppose that $\sk(E)$ is a circle. 
+	Then $\phi(\sk(E))= \sk(\mathscr P)$ is a not a point. 
+	Hence $n \ne 0$. 
+	Conversely, suppose that $\sk(E)$ is a point. 
+	Then $\phi(\sk(E)) = \sk(\mathscr P)$ is a point, and thus $n  = 0$. 
+\end{proof}
+
+The only left to do is determine the length of the circle $\sk(C)$ when 
 
 
+
+
+
+We will need the following techinical theorem. \todo{we probably wont}
+\begin{theorem}
+	Let $\mathscr C$ be a semistable model of a curve $C$ over $K$. 
+	Let $g: C' = C \times _{K} \hat{\overline{K}} \to C $ be the base change to the completed algebraic closure and $\mathscr C' = \mathscr C \times _{R} \mathcal{O}\left(\hat{\overline{K}}\right)$. 
+	
+	Then the morphism 
+	
+
+\end{theorem}

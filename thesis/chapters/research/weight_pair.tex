@@ -1,6 +1,6 @@
 Recall $\Gamma_\lambda$ from \cref{fig:configurations_of_gamma_lambda}. 
 Let $\delta = f_* (\ram_f)$ which as a divisor on $\pro^{1}_K$ is the sum of the points on $\pro^{1}_K$ corresponding to $0, 1, \lambda, \infty$. 
-\subsection{Finding a minimal scn model} \label{sec:finding_a_minimal_scn_model}
+\subsection{Finding a minimal snc-model} \label{sec:finding_a_minimal_snc_model}
 We can build a snc-model $\mathscr P$ of the pair $(\pro^{1}_K, \delta)$, i.e.\ $\mathscr P_s + \overline{\delta}$ is a strict normal crossings divisor, such that the associated skeleton $\sk(\mathscr P, \delta)$ in $\pro^{1}_K$ is exactly $\Gamma_\lambda$. 
 The skeleton associated to a pair is defined in \cite[§3.2.1]{bakerWeightFunctionsBerkovich2016}.
 
@@ -40,7 +40,7 @@ Let $\mathscr P$ be the minimal desingularisation of $\mathscr P'$.
 By \cite[cor.\ 9.3.25]{liuAlgebraicGeometryArithmetic2002} we find that $\mathscr P$ is $\mathscr P'$ where the intersection point is replaced by a chain of $n-1$ rational curves of multiplicity 1 and self intersection $-2$.  
 So $\mathscr P$ is a chain of $n + 1$ rational curves. See \cref{fig:model_of_the_pair}. 
 
-This is in fact the minimal snc-model of $(\pro^{1}_K, \delta)$ as the middle components can't be contracted and contracting $\tilde F$ or $\tilde G$ to get $\mathscr P''$, would cause either $0, \lambda$ or $1, \infty$ to be reduced to the same piont. Hence $\delta + \mathscr P''_s$ would no longer be an snc-divisor. 
+This is in fact the minimal snc-model of $(\pro^{1}_K, \delta)$ as the middle components can't be contracted and contracting $\tilde F$ or $\tilde G$ to get $\mathscr P''$, would cause either $0, \lambda$ or $1, \infty$ to be reduced to the same point. Hence $\delta + \mathscr P''_s$ would no longer be an snc-divisor. 
 \begin{figure}[h]
     \centering
     \incfig{the-model-of-the-pair}
@@ -82,7 +82,7 @@ See \cref{fig:skeleton_of_the_pair}
 	So \[
 		\Omega_{\pro^{1}_K} (\delta) \simeq \mathcal{O}(-1)^{\otimes 2} \otimes \mathcal{O}(4) \simeq \mathcal{O}\left(0 \right)  = \mathcal{O}_X
 	.\] 
-	Hence $H^{0}\left(\Omega_{\pro^{1}_K}^{\otimes 2}(\delta)\right)$ is a $1$-dimensional $K$-vectorspace. 
+	Hence $H^{0}\left(\Omega_{\pro^{1}_K}^{\otimes 2}(\delta)\right)$ is a $1$-dimensional $K$-vector space. 
 \end{proof}
 
 The proof of the following two results depend heavily on \cite[thm.\ 3.2.3]{bakerWeightFunctionsBerkovich2016}. 
@@ -93,7 +93,7 @@ The proof of the following two results depend heavily on \cite[thm.\ 3.2.3]{bake
 	The first lemma is a slight refinement of \cite[prop.\ 4.4.4]{mustataWeightFunctionsNonArchimedean2015} in the context of curves.
 	\begin{lemma}\label{lem:well_behaved_pole_weight}
 	Let $C$ be a curve over $K$ and $\omega$ be a $m$-pluricanonical form.
-	Let $\mathrm{Pole}_\omega$ be the divisor that contains all points of $\omega$ and $\mathscr C$ a snc model of the pair $(\mathscr C, \omega)$.  
+	Let $\mathrm{Pole}_\omega$ be the divisor that contains all points of $\omega$ and $\mathscr C$ a snc-model of the pair $(\mathscr C, \omega)$.  
 	If all the poles of $\omega$ are of degree less than $m$, then for all $x \in \pro^{1, \text{an}}_K$ \[
 		\wt_\omega(x) \ge \wt_\omega(\rho_{\mathscr C}(x))
 	\] 

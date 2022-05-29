@@ -1,25 +1,27 @@
 We might ask ourselves what a good notion for a minimal skeleton might be. 
-A wishlist of good properties for such a skeleton $\sk(X)$ is the following. 
+A wish list of good properties for such a skeleton $\sk(X)$ is the following. 
 \begin{itemize}
-	\item The minimal skeleton needs to capture all information about the ``shape'' of $X\an$. So the inclusion $\sk(X) \into X\an$ to be a homotopy equivalence and it has to contain all all divisorial points whose associated minimal component is not rational.
+	\item The minimal skeleton needs to capture all information about the ``shape'' of $X\an$. 
+		This means that the inclusion $\sk(X) \into X\an$ is a homotopy equivalence and it has to contain all all divisorial points whose associated minimal component is not rational.
 		\todo{explain better why this is important}
-	\item The $\sk(X)$ is cannonical. 
-	\item The $\sk(X)$ is well behaved under (nice) base change. 
+	\item $\sk(X)$ is canonical. 
+	\item $\sk(X)$ is well behaved under (nice) base change. 
 \end{itemize}
-For a curve $C$ of postive genus there is a canonical minimal skeleton $\sk(\mathscr C_\text{min} )$, with $\mathscr C_\text{min} $ the minimal snc-model.
+For a curve $C$ of positive genus there is a canonical minimal skeleton $\sk(\mathscr C_\text{min} )$, with $\mathscr C_\text{min} $ the minimal snc-model.
 However, this does not generalize to higher dimensions as not every variety has a minimal snc-model. 
-The $\sk(\mathscr C_\text{min})$ is also not functorial under base change. 
+Another drawback is that $\sk(\mathscr C_\text{min})$ is not functorial under base change. 
 
-In \cite{mustataWeightFunctionsNonArchimedean2015} Mustaţă and Nicaise construct what they call the \emph{essential skeleton} for any variety with semi-ample cannonical bundle.
-In particular every curve of non-zero genus. 
-The essential skeleton is cannonical, contains the shape of $X\an$ in the sense of the first wish and it pullsback under tame base-change.  
+In \cite{mustataWeightFunctionsNonArchimedean2015} Mustaţă and Nicaise construct what they call the \emph{essential skeleton} for any variety with a semi-ample canonical line bundle.
+In particular, this includes every curve of non-zero genus. 
+The essential skeleton is canonical, contains the shape of $X\an$ in the sense of the first wish and it pulls back under tame base-change. 
+As we will see at the end of this section is even has some nice properties under some morphisms between curves. 
 The main tool in defining it are weight functions. 
 
 \subsection{Weight functions} \label{sec:weight_functions}
-Given a variety $X$, a weight function is a piecewise $\Z$-affine linear function corresponding to a rational section $\omega$ of the cannonical linebundle. 
-They are important to study skeleta because if $\omega$ is a regular section then the associated weight function $\wt_\omega$ is strictly increasing away from every skeleton associated to a snc-model. 
+Given a variety $X$, a weight function is a piecewise $\Z$-affine linear function corresponding to a rational section $\omega$ of the canonical line bundle. 
+They are an important tool to study skeleta because if $\omega$ is a regular section then the associated weight function $\wt_\omega$ is strictly increasing away from every skeleton associated to a snc-model. 
 So the minimal locus $\minloc \wt_\omega$ has to be contained in every skeleton of $X$. 
-This gives us a way of identyfing pieces of a skeleton. 
+This gives us a way of identifying pieces of a skeleton. 
 Taking all these pieces together is the essential skeleton. 
 We will only work in the context of curves. 
 
@@ -28,68 +30,64 @@ We will only work in the context of curves.
 	We define the \emph{log-cannonical bundle of $C$} to be \[
 		\Omega_{\mathscr C}^{\text{log}}  = \Omega_{\mathscr C / R}^{\text{can}}(\mathscr C_{s, \text{red}})
 	,\] 
-	where $\Omega_{\mathscr C} ^{\text{can}}$ is the cannonical bundle of $\mathscr C$ and $\mathscr C_{s, \text{red}}$ is the divisor on $\mathscr C$ that contains every irreducible component of $\mathscr C_s$ with multiplicity $1$.  
+	where $\Omega_{\mathscr C} ^{\text{can}}$ is the canonical bundle of $\mathscr C$ and $\mathscr C_{s, \text{red}}$ is the divisor on $\mathscr C$ that contains every irreducible component of $\mathscr C_s$ with multiplicity $1$.  
 \end{definition}
 
-Note that the restiction of $\Omega_{\mathscr C}^{\log}$ to the generic fibre is the cannonical bundle on $C$. 
+Note that the restriction of $\Omega_{\mathscr C}^{\log}$ to the generic fibre is the canonical bundle on $C$. 
 
 \begin{remark}
-	The log-cannonical bundle is actually a the analogue of the cannonincal bundle for log schemes. 
-	In this case the the $\mathscr C$ has a log structure induced by the special fibre. 
+	The log-canonical bundle is actually the analogue of the canonical bundle for log schemes. 
+	In this case the $\mathscr C$ has a log structure induced by the special fibre. 
 	But for our purposes we can work with the explicit definition above. 
 \end{remark}
 \begin{definition}
 	Let $C $ be a curve.
-	The $m$-pluricannonical line bundle is the $n$-th tensor power of the ordinary cannonical linebundle, $\Omega_{C / K}^{\otimes m }$. 
-	A \emph{$m$-pluricannonical form}  is a non-zero global section $\Omega_{C / K}^{\otimes m }$
+	The $m$-pluricanonical line bundle is the $n$-th tensor power of the ordinary canonical line bundle, $\Omega_{C / K}^{\otimes m }$. 
+	A \emph{$m$-pluricannonical form}  is a non-zero global section of $\Omega_{C / K}^{\otimes m }$
 \end{definition}
 \begin{notation}
-	Let $D$ be a cartier divisor on a scheme $X$, and let $F$ be a prime divisor on $D$. 
-	Then we write $\mult_{F}(D)$ is the coefficient of $F$ in $D$. 
+	Let $D$ be a Cartier divisor on a scheme $X$, and let $F$ be a prime divisor on $D$. 
+	Then we write $\mult_{F}(D)$ for the coefficient of $F$ in $D$. 
 \end{notation}
 
 We first define the weight function on a divisorial point and then use a sort of expansion by continuity to define it on the whole of $C\an$. 
 \begin{definition}\label{def:weight_function_divisorial_point}
 	Let $C$ and $\omega$ be rational section of $\Omega_{C / K}^{\otimes m}$.
-	Let $x$ be a divisorial point in $C\an$ and $\mathscr C$ be a regular model  with a irreducible component $F$ of multplicity $N$ corresponding to $x$. 
+	Let $x$ be a divisorial point in $C\an$ and $\mathscr C$ be a regular model  with a irreducible component $F$ of multiplicity $N$ corresponding to $x$. 
 	Let $\omega'$ be the unique extension of $\omega$ to a rational section of $(\Omega_{\mathscr C} ^{\text{log}})^{\otimes m}$, then we define the \emph{weight of $\omega$ at $x$} to be \[
 		\wt_\omega(x) = \frac{\mult_F(\divisor(\omega'))}{N}
 	.\] 
 \end{definition}
 
 \begin{remark}
-	If one doens't like to work with the log-cannonical bundle, we can use an alternative definition that puts a minor error term in the definition of the weight. 
+	If one does not like to work with the log-canonical bundle, we can use an alternative definition that puts a minor error term in the definition of the weight. 
 	Let $\omega"$ be the extension of $\omega$ to $(\Omega_{\mathscr C / R}^{\text{can}})^{\otimes m}$. Then \[
 		\wt_{\omega} = \frac{\mult_F(\divisor (\omega")) + m}{N}
 	.\] 
 \end{remark}
-One can prove that this definition is indepent of the model $\mathscr C$ chosen. 
+One can prove that this definition is independent of the model $\mathscr C$ chosen. 
 We extend the weight function to $\mathbb{H}(C)$ as follows 
 \begin{definition}\label{def:weight_function}
 	Let $C$ be a curve and $\omega$ a rational section of $\Omega_{C / K}^{\otimes m}$. 
-	Then we define the \emph{weight function} $\wt_{\omega}: \mathbb{H}(C) \to \R$ to be the unique such that 
+	Then we define the \emph{weight function} $\wt_{\omega}: \mathbb{H}(C) \to \R$ to be the unique function such that 
 	\begin{itemize}
-		\item $\wt_{\omega}$ is continuous with respect to the metric topology on $\mathbb{H}(C)$, \question{is this truely equivalent to whats written in Baker Nicaise?}
+		\item The restriction $\wt_{\omega}|_{\sk(\mathscr C)}$ is continuous with respect to the metric topology on $\sk(\mathscr C)$ for any snc-model $\mathscr C$, 
 		\item on divisorial points $x$ the $\wt_{\omega}(x)$ agrees with \cref{def:weight_function_divisorial_point}.
 	\end{itemize}
 \end{definition}
 
 The weight function can even be extended to the entirety of $C\an$, but then it may take $\pm \infty$ as values on the type 1 points. See \cite[§4.5.4]{mustataWeightFunctionsNonArchimedean2015}
 
-\begin{proposition}
-	Let $\mathscr C$ be snc-model of a curve $C$ and $\omega$ a $m$-pluricannnical rational section. 
-	Then $\wt_\omega \circ \sk_{\mathscr C}: |\Delta(\mathscr C)| \to \R$ is linear on the edges. 
-\end{proposition}
 
 Various tools and techniques for computing weight functions on curves can be found in \cite{bakerWeightFunctionsBerkovich2016}. 
 These will be useful in \cref{chap:a_berkovich_approach_to_classifying_elliptic_curves}. 
 
 \subsection{The essential skeleton $\sk(C)$}\label{sec:the_essential_skeleton_sk_c$}
 
-Weight functions are interesting for studying models because when $\omega$ is a $m$-pluricannonical form, i.e.\ a non-zero global section, then $\wt_\omega$ is strictly increasing away from any skeleton associated to a snc-model. 
+Weight functions are interesting for studying models because when $\omega$ is a $m$-pluricanonical form, i.e.\ a non-zero global section, then $\wt_\omega$ is strictly increasing away from any skeleton associated to a snc-model. 
 This is made precise in the following theorem. 
 \begin{proposition}\label{prop:weight_function_increase}
-	Let $\mathscr C$ be a snc-model of a curve $C$ and $\omega$ be $m$-pluricannical form on $C$ (i.e. a global section).
+	Let $\mathscr C$ be a snc-model of a curve $C$ and $\omega$ be $m$-pluricanonical form on $C$ (i.e. a global section).
 	Let $\rho_{\mathscr C}: C\an \to \sk(\mathscr C)$ be the retract from \cref{prop:retract_analytification_skeleton}. 
 	Let $x \in C\an $ be any point. 
 	Then \[
@@ -102,14 +100,14 @@ This is made precise in the following theorem.
 \end{proof}
 
 \begin{definition}[Kontsevich–Soibelman skeleton]\label{def:KS_skeleton}
-	Let $\mathscr C $ be curve and $\omega$ a rational pluricannonical form. 
+	Let $\mathscr C $ be curve and $\omega$ a rational pluricanonical form. 
 	Then we define the \emph{Kontsevich-Soibelman skeleton of $\omega$} to be \[
 		\sk(C, \omega) = \minloc \wt_{\omega}
 	.\]  
-	Here $\minloc f$ (the minimal locus) is the set where the function $f$ attians its infiumum.
+	Here $\minloc f$ (the minimal locus) is the set where the function $f$ attains its infiumum.
 \end{definition}
 \begin{lemma}
-	Let $\omega$ be a $m$-pluricannonical form and $\mathscr C$ a snc-model of $C$. 
+	Let $\omega$ be a $m$-pluricanonical form and $\mathscr C$ a snc-model of $C$. 
 	Then $\sk(C, \omega) \subset  \sk(\mathscr C)$
 \end{lemma}
 \begin{proof}
@@ -127,37 +125,51 @@ The solution to this is to take the union of many Kontsevich-Soibelman skeleton.
 	Then the \emph{essential skeleton of $C$} is \[
 		\sk(C) = \bigcup_{\omega} \sk(C, \omega)
 	\] 
-	where $\omega$ runs over all $m$-pluricanonical forms for all $m > 1$. 
+	where $\omega$ runs over all $m$-pluricanonical forms of $C$ for all $m > 1$. 
 \end{definition}
 
 \begin{remark}
-	While weight functions are defined for \emph{rational sections} of the pluricannonical linebunde $\Omega_{C / K}^{\otimes m}$, when we define the essential skeleton we consider the weight functiosn where $\omega$ is a \emph{form}, i.e. a global section of $\Omega_{C / K} ^{\otimes m}$. 
+	While weight functions are defined for \emph{rational sections} of the pluricanonical line bundle $\Omega_{C / K}^{\otimes m}$, when we define the essential skeleton we consider the weight functions where $\omega$ is a \emph{form}, i.e. a global section of $\Omega_{C / K} ^{\otimes m}$. 
 	So it is important to make the distinction between \emph{rational sections} and \emph{forms}.
 \end{remark}
 
 It is not at all clear from the definition that the essential skeleton actually captures the shape of $C\an$, i.e. has the same homotopy type and contains all the points of non-zero genus. 
-If $C = \pro^{1}_K$ then $\sk(C)$ is emptry because there are no pluricannonical sections. Indeed the $m$-th pluricannonincal linebundle is isomorphic to  $\mathcal{O}(-2m)$, which does not have global sections. 
-But for curves of non-zero genus he cannonincal linebundle is is ample and thus $\sk(C)$ is nonzero. 
+If $C = \pro^{1}_K$ then $\sk(C)$ is empty because there are no pluricanonical sections. Indeed the $m$-th pluricanonical line bundle is isomorphic to  $\mathcal{O}(-2m)$, which does not have global sections. 
+But for curves of non-zero genus he canonical line bundle is is semi-ample and thus $\sk(C)$ is non-zero. 
 
 If $C$ is a curve of genus $g(C) > 0$ then there is a way of obtaining $\sk(C)$ from $\sk(\mathscr C_\text{min} )$, where $\mathscr C _\text{min}$ is the minimal regular model and removing some superfluous tails or rational curves.  
 
 \begin{definition}
 	Let $\mathscr C$ be a snc-model for a curve $C$. 
-	An irreducible component $F$ of $\mathscr C_s$ (vertex in $\Delta(\mathscr C)$) is called \emph{inessesential}, if in the dual graph it belongs to a path of vertices $v_1, \ldots, v_n$ of genus $0$ with the valency of $v(v_1) = 1$, $v(v_{2}) = 2, \ldots, v(v_{n-1}) = 2, v(v_n) > 2$ and $F \ne v_n$. 
+	An irreducible component $F$ of $\mathscr C_s$ (vertex in $\Delta(\mathscr C)$) is called \emph{inessesential}, if in the dual graph it belongs to a path of vertices $v_1, \ldots, v_n$ of genus $0$ with the valency $v(v_1) = 1$, $v(v_{2}) = 2, \ldots, v(v_{n-1}) = 2, v(v_n) > 2$ and $F \ne v_n$. 
 	Conversely a component/vertex if called \emph{essential} if it is not inessential. 
 \end{definition}
-\todo[inline]{figure with examples of inessential components}
+See \cref{fig:inessential_components} for some examples of the essential and inessential vertices on a dual graph. 
+
+\begin{figure}[h]
+    \centering
+    \incfig{inessential-components}
+    \caption{Some hypothetical dual gaphs with the inssential components coloured red. 
+    The numbers next to the vertices are the genus of that component if it differs form zero.}
+    \label{fig:inessential_components}
+\end{figure}
 
 \begin{theorem}
-	Let $C$ be a curve with genus $g(C) > 0$ and let $\mathscr C_\text{min} $ be the minimal scn-model of $C$. 
+	Let $C$ be a curve with genus $g(C) > 0$ and let $\mathscr C_\text{min} $ be the minimal snc-model of $C$. 
 	Let $\Delta'$ be the complete subgraph of $\Delta(\mathscr C_\text{min} )$ with the essential vertices. 
 	Then the essential skeleton is the image of $|\Delta'|$\[
 		\sk(C) = \sk_{\mathscr C_\text{min} }(|\Delta'|)
 	.\] 
 \end{theorem}
 \begin{proof}
-	The proof is insightful as to obtain this one needs to understand how handle weight functions, but unfortunately it is too long to put in this thesis. 
-	The interested reader in encouraged to look at \cite[thm 3.3.13]{bakerWeightFunctionsBerkovich2016}. 
+	The proof is insightful as to obtain this result one needs to understand the relation between weight functions and the pluricanonical forms.
+	Unfortunately it is too long to put in this thesis. 
+	The interested reader is encouraged to look at \cite[thm 3.3.13]{bakerWeightFunctionsBerkovich2016}. 
 \end{proof}
-\todo[inline]{examples}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\textwidth]{chapters/weight/figures/essential_skeleton_elliptic.pdf}
+	\caption{Artistic renderings of the analytification of a elliptic curve of typ $\mathrm I_n, n \ge 1$ (left) and $\mathrm I_n^*, n \ge 1$ (right) with the essential skeleton in blue and the inessential bits of  $\sk(\mathscr E_\text{min} )$ in red. }
+	\label{fig:}
+\end{figure}
 

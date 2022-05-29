@@ -1,4 +1,4 @@
-Using Tate's algorithm we can find the anwer to \cref{prob:main_problem} without studying the map $\phi: E\an \to \pro^{1, \text{an}}_K$. 
+Using Tate's algorithm we can find the answer to \cref{prob:main_problem} without studying the map $\phi: E\an \to \pro^{1, \text{an}}_K$. 
 While the goal is to eliminate the use of Tate's algorithm and find as much information about $E$ by studying its Berkovich geometry, 
 it is useful to know what we expect to find, to guide our intuition and make conjectures. 
 
@@ -14,7 +14,6 @@ The discriminant is given by \[
 .\] 
 Additionally we let $n = v(\lambda)$.
 So $\lambda = u \cdot \pi^{n}$ for some unit $u$ of $R$.
-\todo{do we need the $j$ invaraiant?}
 
 \subsection{Tate's algorithm when $\ch k$ is not 2} \label{sec:char_k_is_not_2}
 We first treat the case where the characteristic of the residue field $k$ is different from 2. 
@@ -27,11 +26,11 @@ We find the following.
 \begin{tateconclusion}
 	If  $n = 0$, then $E$ is of type $\mathrm I_0$. 
 \end{tateconclusion}
-We now continue under the assumption that $n > 0$, i.e $\pi \mid \lambda$. 
+We now continue under the assumption that $n > 0$, i.e.\ $\pi \mid \lambda$. 
 
 \step 2 
 The reduction of the Weierstrass model is given by the equation $y^2 = x^2 (x - 1)$ over $k$. 
-So the sinuglar point is already at $(0, 0)$ and we may continue the algorithm without coordinate change. 
+So the singular point is already at $(0, 0)$ and we may continue the algorithm without coordinate change. 
 As $\pi \nmid 4, \pi \mid \lambda$, we see that $\pi \nmid b_2 = -4\lambda - 4$. 
 So $E$ has reduction type $I_m$ with \[
 	m = v(\Delta) = v(16 \lambda^2 (\lambda - 1)^2)  = 2v(\lambda) = 2n
@@ -39,7 +38,7 @@ So $E$ has reduction type $I_m$ with \[
 \begin{tateconclusion}
 	If $n > 1$ then $E$ is of type $\mathrm I_{2n}$.
 \end{tateconclusion}
-This concludes Tates algorithm and we summarise our findings in the following proposition. 
+This concludes Tate's algorithm and we summarise our findings in the following proposition. 
 
 \begin{proposition}
 	Suppose $\ch k \ne 2$ and $E$ be as in \cref{prob:main_problem}. 
@@ -69,7 +68,7 @@ If we assume that $v(\lambda + 2) = \min(v(\lambda), v(2))$ (e.g.\ when $n \ne v
 From now on we'll assume that that $n \ne v(2)$. 
 Tate's algorithm requires a more complex coordinate change if $n = v(2)$ and sadly there was insufficient time to work out this case. 
 
-So the equation becomes (ommiting the dubble primes after $x, y$) \[
+So the equation becomes (omitting the double primes after $x, y$) \[
 	E: y^2 - 2_i xy = x^3 + (-2_{2i} - \lambda_{2i})x^2 + \lambda_{4i}x
 .\] 
 Then \[
@@ -216,7 +215,7 @@ The polynomial $P(T)$ is \[
 	P(T) = T^3  -\pi^{-1}(2_{2i} - \lambda_{2i})T^2 + \pi^{-2}\lambda_{4i} T
 .\] 
 If $n \equiv 3 \mod 4$ then $\overline{\pi^{-2} \lambda_{4i}} = 0$. 
-So $P(T)$ has atleast double root $0$.
+So $P(T)$ has at least double root $0$.
 If $n = 2v(2) + 1$ then  $P(T) = T^3 - vT^2$. So $P(T)$ has a double root $0$ and single root $u$. 
 If $n > 2v(2) + 1$ then $P(T) = T^3$ and has triple root $0$. 
 
@@ -226,7 +225,7 @@ Note that $n = 2v(2) +1 $ is impossible as $n$ is even. So $\overline{\pi^{-1} (
 .\] 
 Then $P(T)$ has double root $\sqrt{u} $ and single root $0$ over $k$.
 
-There is no case in $P(T)$ has distint roots. So we move to step 7.
+There is no case in $P(T)$ has distinct roots. So we move to step 7.
 
 \step 7
 As computed in step 6 there we find that the following. 
@@ -234,7 +233,7 @@ As computed in step 6 there we find that the following.
 	If $n \equiv 2 \mod 4$ or $n \equiv 3 \mod 4 \wedge n = 2v(2) - 1$ then $E$ is of type $I_m^*$ for some $m$. 
 \end{tateconclusion}
 \todo{compute $m$ in this case}
-If  $n \equiv 3 \mod 4$ and $n > 2v(2) - 1$ then $P(T)$ has tripple root $0$ and we continue to step 8.
+If  $n \equiv 3 \mod 4$ and $n > 2v(2) - 1$ then $P(T)$ has triple root $0$ and we continue to step 8.
 
 \step 8
 As $a_3, a_6 = 0$ we see that $Y^2 + a_{3,2} Y - a_{6, 4} = 0$ which has double root $0$. 

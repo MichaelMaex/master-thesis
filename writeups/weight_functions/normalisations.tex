@@ -1,0 +1,73 @@
+Let $E: y^2 = x(x-1)(x-2^{n})$ be an elliptic curve over $\Q_2$. 
+We divide the image of the essential skeleton $E\an$ in $\pro^{1, \text{an}}$ into annuli $A_i$, with $i = 0, \ldots, n - 1$, where the models are given by the rings \[
+	B_i = R\left[2^{i}x,\frac{1}{2^{i-1} x}\right] = \frac{R[s_i, t_i]}{(s_i t_i -2)}, \quad s_i = 2^{i} x, t_i = \frac{1}{2^{i-1} x}
+.\] 
+To compute the normalisation in $K(E)$ we can try to add \begin{equation}\label{eq:a}
+	2^{a}\frac{y}{x} \text{ or }2^{a} \frac{y}{x^2}
+\end{equation}
+for $a$ as small as possible. 
+We have
+\begin{align*}
+	\left(2^{a}\frac{y}{x}\right)^2 &= \frac{2^{2a}(x-1)(x-2^{n})}{x} \\
+					&=  2^{2a}(x-1)(1 - 2^{n + i -1} t_i) \text{ or } 2^{2a}(2^{i-1}t_i - 1)(x - 2^{n})\\
+					&= 2^{2a - i}(s_i-2^{i})(1 - 2^{n + i - 1}t_i) \text{ or } 2^{2a - i}(2^{i-1} t_i - 1)(s_i - 2^{n + i}) \\
+					&= 2^{2a -i}(s_i - 2^{i} - 2^{n + 2i -1} t_i + 2^{n + i -1}s_i t_i) \text{ or } 2^{2a - i}(-s_i + 2^{n + i} + 2^{i -1}s_i t_i - 2^{n + 2i -1}t_i)\\
+					&= 2^{2a - i}(s_i - 2^{i} - 2^{n + i} + 2^{n + 2i -1}t_i) \text{ or } 2^{2a - i}(-s_i + 2^{n + i} + 2^{i} - 2^{n + 2i -1}t_i) \\
+.\end{align*}
+This polynomial has coefficients in $R$ if $2a-i  \ge 0$. 
+Hence if $i $ is even then we find that $2^{i / 2}\frac{y}{x}$ is in $B_i'$. 
+If $i$ is odd we find that $2^{\frac{i + 1}{2}}$ is in $B_i'$. 
+
+Similarly we have 
+\begin{align*}
+	\left(2^{a} \frac{y}{x^2} \right) ^2 &= 2^{a}\frac{1}{x}\left(1 - \frac{1}{x}\right)\left(1 - \frac{2^{n}}{x}\right) \\
+					     &=  2^{2a + i - 1} t_i(1 - 2^{i-1}t_i)\cdot (1 - 2^{n + i-1} t_i) \\
+.\end{align*}
+Suppose $i > 0$ then the right hand side belongs to $R$ if and only if  $2a + i - 1 \ge 0$. 
+So if  $i$ is odd then we choose $a$ to be at least $\frac{1-i}{2}$, hence $2^{\frac{1-i}{2}} \frac{y}{x^2} \in B_i '$. 
+If $i$ is even then we choose $a$ to be at least $\frac{2-i}{2}$, hence $2^{1-\frac{i}{2}}\frac{y}{x^2} \in B_i'$.
+
+
+
+
+\subsection{If $i$ is even } \label{sec:if_i_is_even_and_i_g_0}
+Then we can write $2^{1-\frac{i}{2}}\frac{y}{x^2} =  t_i\cdot \frac{2^{i / 2}y}{x}$. So we conjecture that \begin{align*}
+	B_i' &= R\left[2^{i}x, \frac{1}{2^{i-1}x}, 2^{i / 2} \frac{y}{x}\right] \\
+	     &= \frac{R[s_i, t_i, u_i]}{(s_it_i - 2, u_i^2 - (2^{i-1}t - 1)(s_i  - 2^{n + i}))} 
+.\end{align*} 
+Then the special fibre is given by 
+\begin{align*}
+	\frac{k[s_i, t_i, u_i]}{(s_it_i, u_i^2- s_i +  t)}
+.\end{align*}
+If $s_i = 0$ then we get the component $u_i^2 = 0$.
+If $t_i = 0$ then we get the component $u_i^2 - s_i = 0$.
+
+\subsection{If $i$ is odd} \label{sec:if_i_is_odd}
+
+Then we can write $2^{\frac{i + 1}{2}}\frac{y}{x} = s_i \cdot 2^{\frac{1-i}{2}} \frac{y}{x^2}$. 
+So we conjecture that \begin{align*}
+	B_i' &= R\left[2^{i} x, \frac{1}{2^{i-1}x}, 2^{\frac{1-i}{2}\frac{y}{x^2}}\right] \\
+	     &= \frac{R[s_i, t_i, v_i]}{(s_i t_i -2,v_i^2 - t_i(1-2^{i-1}t_i)(1-2^{n + i -1}t_i))} \\
+.\end{align*} 
+Then the special fibre is given by \[
+	\frac{k[s_i, t_i, v_i]}{(s_i t_i, v_i^2 - t_i (1 - \delta_{i,1}t_i))}
+.\] 
+If $s_i = 0$ we get the component $v_i^2 + t_i + \delta_{i, 1} t_i^2$. 
+If $t_i = 0$ we get the component $v_i^2 = 0$
+
+\section{Bedenkingen} \label{sec:bedenkingen}
+
+Ik denk niet dat de bekomen ringen normaal zijn, maar ik weet niet welke extra breuken we moeten toevoegen. 
+Ik verwacht iets in de aard van $x / y$ en dat er ergens in de de minimale veelterm van die breuk een coefficient $2^{n-i}$ ofzo zal voorkomen.
+We verwachten een zekere symmetrie als we een projectieve transformatie $0 \leftrightarrow \infty, 1 \leftrightarrow \lambda$ toepassen op $\pro^{1}$. 
+
+Een paar zaken wijzen toch op het gedrag dat we verwachten.  
+Als we ons veld uitbreiden naar bv $L = \Q_2(\sqrt{2}) $, dan heb je bij het vinden van $a$ in \eqref{eq:a} niet het probleem dat je moet opsplitsen in het geval $i$ even of oneven. Dus moeten we zowel $2^{\frac{1-i}{2}}\frac{y}{x^2}$ en $2^{\frac{i /2}{\frac{y}{x}}}$ toevoegen. 
+Wat hopelijk er voor zal zorgen dat we 4 componenten van multipliciteit 1 verwachten als $i$ groot genoeg is (maar niet te dicht bij $n $). 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{multiple-figures-test}
+    \caption{multiple figures test}
+    \label{fig:multiple-figures-test}
+\end{figure}

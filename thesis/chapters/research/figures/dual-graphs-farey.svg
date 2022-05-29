@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="svg8" inkscape:version="0.92.4 (unknown)" sodipodi:docname="figure.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 680.3 215.3"
+	 style="enable-background:new 0 0 680.3 215.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st1{font-family:'MyriadPro-Regular';}
+	.st2{font-size:12px;}
+</style>
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1.0" id="base" inkscape:current-layer="layer1" inkscape:cx="284.27627" inkscape:cy="182.72055" inkscape:document-units="mm" inkscape:guide-bbox="true" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:window-height="995" inkscape:window-maximized="1" inkscape:window-width="2520" inkscape:window-x="20" inkscape:window-y="65" inkscape:zoom="0.99437388" pagecolor="#ffffff" showborder="true" showgrid="false" showguides="true" width="200mm">
+	<inkscape:grid  dotted="false" empspacing="4" id="grid815" spacingx="10" spacingy="10" type="xygrid" units="mm">
+		</inkscape:grid>
+</sodipodi:namedview>
+<g id="layer1" transform="translate(0,-177)" inkscape:groupmode="layer" inkscape:label="Layer 1">
+</g>
+<circle cx="198.8" cy="37.7" r="2.6"/>
+<line class="st0" x1="198.8" y1="37.7" x2="459.1" y2="37.7"/>
+<circle cx="459.1" cy="37.7" r="2.6"/>
+<text transform="matrix(1 0 0 1 196.1948 31.6889)" class="st1 st2">1</text>
+<text transform="matrix(1 0 0 1 456.4892 31.6891)" class="st1 st2">1</text>
+<text transform="matrix(0.3541 0 0 1 150.6753 35.052)" class="st1 st2">$\Delta{\mathscr C_1}$</text>
+<circle cx="198.8" cy="66.2" r="2.6"/>
+<line class="st0" x1="198.8" y1="66.2" x2="459.1" y2="66.2"/>
+<circle cx="459.1" cy="66.2" r="2.6"/>
+<text transform="matrix(1 0 0 1 196.1948 60.2552)" class="st1 st2">1</text>
+<text transform="matrix(1 0 0 1 456.4892 60.2554)" class="st1 st2">1</text>
+<text transform="matrix(0.3541 0 0 1 150.6753 63.6183)" class="st1 st2">$\Delta{\mathscr C_2}$</text>
+<circle cx="328.9" cy="66.2" r="2.6"/>
+<text transform="matrix(1 0 0 1 326.3419 60.255)" class="st1 st2">2</text>
+<circle cx="198.8" cy="95.3" r="2.6"/>
+<line class="st0" x1="198.8" y1="95.3" x2="459.1" y2="95.3"/>
+<circle cx="459.1" cy="95.3" r="2.6"/>
+<text transform="matrix(1 0 0 1 196.1948 89.3347)" class="st1 st2">1</text>
+<text transform="matrix(1 0 0 1 456.4892 89.3349)" class="st1 st2">1</text>
+<text transform="matrix(0.3541 0 0 1 150.6753 92.6979)" class="st1 st2">$\Delta{\mathscr C_3}$</text>
+<circle cx="328.9" cy="95.3" r="2.6"/>
+<text transform="matrix(1 0 0 1 326.3419 89.3345)" class="st1 st2">2</text>
+<circle cx="275.2" cy="95.3" r="2.6"/>
+<text transform="matrix(1 0 0 1 272.337 89.3351)" class="st1 st2">3</text>
+<circle cx="382.3" cy="95.6" r="2.6"/>
+<text transform="matrix(1 0 0 1 379.4374 89.6252)" class="st1 st2">3</text>
+<circle cx="198.8" cy="125.3" r="2.6"/>
+<line class="st0" x1="198.8" y1="125.3" x2="459.1" y2="125.3"/>
+<circle cx="459.1" cy="125.3" r="2.6"/>
+<text transform="matrix(1 0 0 1 196.1948 119.2934)" class="st1 st2">1</text>
+<text transform="matrix(1 0 0 1 456.4892 119.2936)" class="st1 st2">1</text>
+<text transform="matrix(0.3541 0 0 1 150.6753 122.6565)" class="st1 st2">$\Delta{\mathscr C_4}$</text>
+<circle cx="328.9" cy="125.3" r="2.6"/>
+<text transform="matrix(1 0 0 1 326.3419 119.2932)" class="st1 st2">2</text>
+<circle cx="275.2" cy="125.3" r="2.6"/>
+<text transform="matrix(1 0 0 1 272.337 119.2938)" class="st1 st2">3</text>
+<circle cx="382.3" cy="125.5" r="2.6"/>
+<text transform="matrix(1 0 0 1 379.4374 119.5839)" class="st1 st2">3</text>
+<circle cx="236" cy="125.3" r="2.6"/>
+<text transform="matrix(1 0 0 1 233.1052 119.2936)" class="st1 st2">4</text>
+<circle cx="420.9" cy="125.5" r="2.6"/>
+<text transform="matrix(1 0 0 1 417.9635 119.2931)" class="st1 st2">4</text>
+<circle cx="198.8" cy="154.9" r="2.6"/>
+<line class="st0" x1="198.8" y1="154.9" x2="459.1" y2="154.9"/>
+<circle cx="459.1" cy="154.9" r="2.6"/>
+<text transform="matrix(1 0 0 1 196.1948 148.935)" class="st1 st2">1</text>
+<text transform="matrix(1 0 0 1 456.4892 148.9352)" class="st1 st2">1</text>
+<text transform="matrix(0.3541 0 0 1 150.6753 152.2981)" class="st1 st2">$\Delta{\mathscr C_5}$</text>
+<circle cx="328.9" cy="154.9" r="2.6"/>
+<text transform="matrix(1 0 0 1 326.3419 148.9348)" class="st1 st2">2</text>
+<circle cx="275.2" cy="154.9" r="2.6"/>
+<text transform="matrix(1 0 0 1 272.337 148.9353)" class="st1 st2">3</text>
+<circle cx="382.3" cy="155.2" r="2.6"/>
+<text transform="matrix(1 0 0 1 379.4374 149.2254)" class="st1 st2">3</text>
+<circle cx="236" cy="154.9" r="2.6"/>
+<text transform="matrix(1 0 0 1 233.1052 148.9352)" class="st1 st2">4</text>
+<circle cx="420.9" cy="155.2" r="2.6"/>
+<text transform="matrix(1 0 0 1 417.9635 148.9347)" class="st1 st2">4</text>
+<circle cx="221.5" cy="154.9" r="2.6"/>
+<text transform="matrix(1 0 0 1 218.9061 148.9348)" class="st1 st2">5</text>
+<circle cx="434" cy="155.2" r="2.6"/>
+<text transform="matrix(1 0 0 1 431.4062 149.2257)" class="st1 st2">5</text>
+<circle cx="302" cy="155.2" r="2.6"/>
+<text transform="matrix(1 0 0 1 299.4062 149.2255)" class="st1 st2">5</text>
+<circle cx="355.6" cy="154.9" r="2.6"/>
+<text transform="matrix(1 0 0 1 353.0361 148.9355)" class="st1 st2">5</text>
+<circle cx="198.8" cy="184.5" r="2.6"/>
+<line class="st0" x1="198.8" y1="184.5" x2="459.1" y2="184.5"/>
+<circle cx="459.1" cy="184.5" r="2.6"/>
+<text transform="matrix(1 0 0 1 196.1947 178.4968)" class="st1 st2">1</text>
+<text transform="matrix(1 0 0 1 456.4891 178.497)" class="st1 st2">1</text>
+<text transform="matrix(0.3541 0 0 1 150.6752 181.86)" class="st1 st2">$\Delta{\mathscr C_6}$</text>
+<circle cx="328.9" cy="184.5" r="2.6"/>
+<text transform="matrix(1 0 0 1 326.3418 178.4966)" class="st1 st2">2</text>
+<circle cx="275.2" cy="184.5" r="2.6"/>
+<text transform="matrix(1 0 0 1 272.3369 178.4972)" class="st1 st2">3</text>
+<circle cx="382.3" cy="184.8" r="2.6"/>
+<text transform="matrix(1 0 0 1 379.4373 178.7873)" class="st1 st2">3</text>
+<circle cx="236" cy="184.5" r="2.6"/>
+<text transform="matrix(1 0 0 1 233.1051 178.4971)" class="st1 st2">4</text>
+<circle cx="420.9" cy="184.8" r="2.6"/>
+<text transform="matrix(1 0 0 1 417.9634 178.4965)" class="st1 st2">4</text>
+<circle cx="221.5" cy="184.5" r="2.6"/>
+<text transform="matrix(1 0 0 1 218.906 178.4967)" class="st1 st2">5</text>
+<circle cx="434" cy="184.8" r="2.6"/>
+<text transform="matrix(1 0 0 1 431.4061 178.7875)" class="st1 st2">5</text>
+<circle cx="302" cy="184.8" r="2.6"/>
+<text transform="matrix(1 0 0 1 299.4061 178.7874)" class="st1 st2">5</text>
+<circle cx="355.6" cy="184.5" r="2.6"/>
+<text transform="matrix(1 0 0 1 353.036 178.4973)" class="st1 st2">5</text>
+<circle cx="209.6" cy="184.5" r="2.6"/>
+<text transform="matrix(1 0 0 1 206.991 178.4966)" class="st1 st2">6</text>
+<circle cx="447.7" cy="184.8" r="2.6"/>
+<text transform="matrix(1 0 0 1 445.0538 178.7874)" class="st1 st2">6</text>
+<text transform="matrix(1 0 0 1 326.342 208.5523)" class="st1 st2">$\vdots$</text>
+</svg>

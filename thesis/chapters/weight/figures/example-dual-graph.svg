@@ -39,14 +39,14 @@
 	c3.3,2.1,5.5-1.5,6.8-4.1c3-5.9,4.7-12.6,6.5-18.9c1.9-6.7,3.5-13.5,5.1-20.3c0.2-0.8,0.4-1.6,0.6-2.4 M78.8,133.6
 	c0,6.9,0.5,13.9,2.2,20.6c0.8,3,1.9,6.9,4.5,8.9c2.7,1.9,5.6-0.1,7.6-2c2.3-2.2,4.2-5.2,7-6.8c3.2-1.8,5.4,2,6.6,4.5
 	c3.1,6.2,4.9,13.2,6.7,19.9c1.8,6.7,3.5,13.5,5,20.2c0.2,0.9,0.4,1.8,0.6,2.6"/>
-<text transform="matrix(1 0 0 1 120.4292 137.7292)" class="st7 st5">$E_1$</text>
-<text transform="matrix(1 0 0 1 177.409 137.7291)" class="st7 st5">$E_2$</text>
+<text transform="matrix(1 0 0 1 120.4292 137.7292)" class="st7 st5">$F_1$</text>
+<text transform="matrix(1 0 0 1 177.409 137.7291)" class="st7 st5">$F_2$</text>
 <circle cx="95" cy="286.5" r="2.9"/>
 <circle cx="148.1" cy="286.5" r="2.9"/>
 <circle class="st8" cx="158.3" cy="186.1" r="2.9"/>
 <circle class="st9" cx="158.2" cy="81.9" r="2.9"/>
-<text transform="matrix(1 0 0 1 68.1636 290.264)" class="st7 st5">$E_1$</text>
-<text transform="matrix(1 0 0 1 155.1496 290.2639)" class="st7 st5">$E_2$</text>
+<text transform="matrix(1 0 0 1 68.1636 290.264)" class="st7 st5">$F_1$</text>
+<text transform="matrix(1 0 0 1 155.1496 290.2639)" class="st7 st5">$F_2$</text>
 <text transform="matrix(1 0 0 1 107.9956 243.0272)" class="st7 st5">$\Delta(\mathscr E)$</text>
 <path class="st10" d="M311.1,64.4c5.7,12.6,14,35.6,14.1,65.4c0.1,30.3-8.4,53.6-14.1,66.3"/>
 <text transform="matrix(1 0 0 1 286.8806 23.8371)" class="st11 st4 st5">$\mathscr P$</text>
@@ -55,12 +55,12 @@
 <text transform="matrix(1 0 0 1 301.8658 52.2897)" class="st11 st4 st5">$\mathscr P_\eta$</text>
 <text transform="matrix(1 0 0 1 369.7799 52.2897)" class="st11 st4 st5">$\mathscr P_s$</text>
 <rect x="286.8" y="32.9" class="st12" width="137.8" height="167.8"/>
-<text transform="matrix(1 0 0 1 339.544 95.2699)" class="st7 st5">$E_1$</text>
-<text transform="matrix(1 0 0 1 394.9438 110.5465)" class="st7 st5">$E_2$</text>
+<text transform="matrix(1 0 0 1 339.544 95.2699)" class="st7 st5">$F_1$</text>
+<text transform="matrix(1 0 0 1 394.9438 110.5465)" class="st7 st5">$F_2$</text>
 <circle cx="326.3" cy="283.2" r="2.9"/>
 <circle cx="379.5" cy="283.2" r="2.9"/>
-<text transform="matrix(1 0 0 1 299.4961 286.8823)" class="st7 st5">$E_1$</text>
-<text transform="matrix(1 0 0 1 386.482 286.8822)" class="st7 st5">$E_2$</text>
+<text transform="matrix(1 0 0 1 299.4961 286.8823)" class="st7 st5">$F_1$</text>
+<text transform="matrix(1 0 0 1 386.482 286.8822)" class="st7 st5">$F_2$</text>
 <text transform="matrix(1 0 0 1 326.3255 241.0277)" class="st7 st5">$\Delta(\mathscr P)$</text>
 <line class="st6" x1="326.3" y1="283.2" x2="379.5" y2="283.2"/>
 <line class="st13" x1="-6.1" y1="213" x2="693.2" y2="213"/>
@@ -84,10 +84,10 @@
 <line class="st6" x1="631" y1="185.9" x2="605.1" y2="159.9"/>
 <line class="st6" x1="636.5" y1="180.4" x2="610.5" y2="154.5"/>
 <line class="st6" x1="606" y1="169.8" x2="631.9" y2="143.8"/>
-<text transform="matrix(1 0 0 1 625.2104 65.9184)" class="st7 st5">$\scriptstyle{E_1}$</text>
-<text transform="matrix(1 0 0 1 638.046 77.1267)" class="st7 st5">$\scriptstyle{E_2}$</text>
-<text transform="matrix(1 0 0 1 638.0461 183.4003)" class="st7 st5">$\scriptstyle{E_3}$</text>
-<text transform="matrix(1 0 0 1 631.578 195.1854)" class="st7 st5">$\scriptstyle{E_4}$</text>
+<text transform="matrix(1 0 0 1 625.2104 65.9184)" class="st7 st5">$\scriptstyle{G_1}$</text>
+<text transform="matrix(1 0 0 1 638.046 77.1267)" class="st7 st5">$\scriptstyle{G_2}$</text>
+<text transform="matrix(1 0 0 1 638.0461 183.4003)" class="st7 st5">$\scriptstyle{G_3}$</text>
+<text transform="matrix(1 0 0 1 631.578 195.1854)" class="st7 st5">$\scriptstyle{G_4}$</text>
 <line class="st13" x1="469.2" y1="12.1" x2="469.2" y2="324.3"/>
 <text transform="matrix(1 0 0 1 623.3583 98.6891)" class="st7 st5">$\scriptstyle{F_1}$</text>
 <text transform="matrix(1 0 0 1 623.4971 125.154)" class="st7 st5">$\scriptstyle{F_2}$</text>
@@ -108,10 +108,10 @@
 <line class="st6" x1="638.6" y1="261.2" x2="618" y2="281.8"/>
 <circle cx="638.8" cy="302.4" r="2.9"/>
 <line class="st6" x1="638.8" y1="302.4" x2="618.2" y2="281.8"/>
-<text transform="matrix(1 0 0 1 507.2748 263.3625)" class="st7 st5">$\scriptstyle{E_1}$</text>
-<text transform="matrix(1 0 0 1 506.5383 305.9944)" class="st7 st5">$\scriptstyle{E_2}$</text>
-<text transform="matrix(1 0 0 1 645.7237 263.9511)" class="st7 st5">$\scriptstyle{E_3}$</text>
-<text transform="matrix(1 0 0 1 645.7236 305.1591)" class="st7 st5">$\scriptstyle{E_4}$</text>
+<text transform="matrix(1 0 0 1 507.2748 263.3625)" class="st7 st5">$\scriptstyle{G_1}$</text>
+<text transform="matrix(1 0 0 1 506.5383 305.9944)" class="st7 st5">$\scriptstyle{G_2}$</text>
+<text transform="matrix(1 0 0 1 645.7237 263.9511)" class="st7 st5">$\scriptstyle{G_3}$</text>
+<text transform="matrix(1 0 0 1 645.7236 305.1591)" class="st7 st5">$\scriptstyle{G_4}$</text>
 <text transform="matrix(1 0 0 1 551.0768 274.2755)" class="st7 st14">$\scriptstyle{F_1}$</text>
 <text transform="matrix(1 0 0 1 572.4069 274.2755)" class="st7 st14">$\scriptstyle{F_2}$</text>
 <text transform="matrix(1 0 0 1 593.7379 274.2755)" class="st7 st14">$\scriptstyle{F_3}$</text>
