@@ -19,7 +19,8 @@
 	.st11{fill:#020203;}
 	.st12{fill:none;stroke:#727070;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st13{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
-	.st14{font-size:2.0113px;}
+	.st14{fill:none;}
+	.st15{font-size:2.0113px;}
 </style>
 <path class="st0" d="M95,286.5c0.7-1.1,10-14.2,26.8-14c16.5,0.1,25.5,12.9,26.3,14"/>
 <path class="st1" d="M95,286.5c0.7,1.1,10,14.2,26.8,14c16.5-0.1,25.5-12.9,26.3-14"/>
@@ -111,10 +112,10 @@
 <text transform="matrix(1 0 0 1 507.2748 263.3625)" class="st7 st5">$\scriptstyle{G_1}$</text>
 <text transform="matrix(1 0 0 1 506.5383 305.9944)" class="st7 st5">$\scriptstyle{G_2}$</text>
 <text transform="matrix(1 0 0 1 645.7237 263.9511)" class="st7 st5">$\scriptstyle{G_3}$</text>
-<text transform="matrix(1 0 0 1 645.7236 305.1591)" class="st7 st5">$\scriptstyle{G_4}$</text>
-<text transform="matrix(1 0 0 1 551.0768 274.2755)" class="st7 st14">$\scriptstyle{F_1}$</text>
-<text transform="matrix(1 0 0 1 572.4069 274.2755)" class="st7 st14">$\scriptstyle{F_2}$</text>
-<text transform="matrix(1 0 0 1 593.7379 274.2755)" class="st7 st14">$\scriptstyle{F_3}$</text>
-<text transform="matrix(1 0 0 1 607.4773 299.6393)" class="st7 st14">$\scriptstyle{F_4}$</text>
+<text transform="matrix(1 0 0 1 645.7236 305.1591)" class="st14 st7 st5">$\scriptstyle{G_4}$</text>
+<text transform="matrix(1 0 0 1 551.0768 274.2755)" class="st7 st15">$\scriptstyle{F_1}$</text>
+<text transform="matrix(1 0 0 1 572.4069 274.2755)" class="st7 st15">$\scriptstyle{F_2}$</text>
+<text transform="matrix(1 0 0 1 593.7379 274.2755)" class="st7 st15">$\scriptstyle{F_3}$</text>
+<text transform="matrix(1 0 0 1 607.4773 299.6393)" class="st7 st15">$\scriptstyle{F_4}$</text>
 <text transform="matrix(1 0 0 1 562.3438 241.0277)" class="st3 st4 st5">$\Delta(\mathscr E’)$</text>
 </svg>

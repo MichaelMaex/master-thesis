@@ -1,5 +1,29 @@
+In the case where $\ch k \ne 2$ we can use \cref{prop:weightfunction_fullback} to compare the skeleton $\sk(\mathscr P)$ with the essential skeleton $\sk(E)$. 
+\begin{lemma}
+	Let $\mathscr P$ be as in \cref{sec:a_weight_function_on_pro_1_k}, and $E$ from \cref{prob:main_problem}. 
+	Then \[
+		\sk(E) = \phi^{-1}(\sk(\mathscr P))
+	.\] 
+\end{lemma}
+\begin{proof}
+	In \cref{prop:model_P_is_KS} we saw that $\sk(\mathscr P) = \sk(P, \omega)$, where $\omega$ is the rational section of $\Omega_{\pro^{1}_K}^{\otimes 2}$ with poles at $0, 1, \lambda, \infty$, which is unique up to multiplication by $K$. 
+	Then $f^* \omega$ is a $2$ pluricanonical form. 
+	Indeed, we can take $\omega$ as a global section of $\Omega_{\pro^{1}_K}^{\otimes 2}(f_* \ram _f)$. 
+	And 
+	\[
+		f^* (\Omega_{\pro^{1}_K / K}^{\otimes 2}(-f_* \ram _f)) = \Omega_{E /K}^{\otimes 2} \otimes \mathcal{O}(2 \ram_f) \otimes f^*f_* \mathcal{O}(-\ram _f) = \Omega_{E / K}
+	.\] 
+	We also have 
+	\[
+		\sk(E, f^*\omega) = \minloc \wt_{f^* \omega} = \minloc \wt_{\omega}\circ \phi = \phi^{-1}(\minloc \wt_\omega) = \phi^{-1} (\sk(\pro^{1}_K, \omega)
+	.\] 
+	Recall that $\Omega_{E / K}$ is trivial as $E$ is an elliptic curve. 
+	So all pluricanonnical forms are the same up to multiplication. 
+	So $\sk(E)$ can be computed using only one pluricanonical form, thus \[
+		\sk(E) = \sk(E, f^*\omega) = \phi^{-1}(\sk(\pro^{1}_K, \omega)) = \phi^{-1}(\mathscr P)
+	.\] 
+\end{proof}
 
-\todo[inline]{argue that $\sk (E) = \phi^{-1}(\sk(\mathscr P))$}
 The following lemma is stated much more generally than we will need it. 
 But it is a neat result, and the proof is neither long, nor complicated. So we put it in. 
 \begin{lemma}\label{lem:number_divisorial_points}
@@ -8,9 +32,10 @@ But it is a neat result, and the proof is neither long, nor complicated. So we p
 	Then \[
 		f(n) = \begin{cases}
 			2 & n = 1 \\
-			\phi(n) & n > 1
+			\varphi(n) & n > 1
 		\end{cases}
-	.\] 
+	,\] 
+	where $\phi$ is the Euler totient function. 
 \end{lemma}
 \begin{proof}
 	As the problem is local, we may assume that $\mathscr C$ is a (not proper) model with just two component of multiplicity $1$ intersecting in one point. 
@@ -80,7 +105,7 @@ We now obtain the result from noting that these multiplicities are exactly the d
 	It follows from the definition of the length on a graph that $|\Delta(\mathscr X_n)| = p$ has the same length as $|\Delta(\mathscr Y_n)| = f\an(p)$. 
 \end{proof}
 
-\begin{remark}
+\begin{remark}\label{rem:length_edge_skeleton_cover}
 	The main context in which the assumptions of \cref{lem:equality_lenghts_preserve_mult} are satisfied is when $f:X \to Y$ is a degree $d$ map of curves, $e$ is an edge in a skeleton of $Y$ such that $e \subset Y\an \setminus B_{f\an}$, and $e'$ is a lift of $e$ in $X\an$. 
 	Here $B_{f\an}$ is the topological branch locus of the map $f\an: X\an \to Y\an$.
 	Indeed, every divisorial point $x \in e$ has $d$ preimages, and by \cref{lem:}\todo{link back to this lemma} $x$ and it's preimages have the same multiplicity. 

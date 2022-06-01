@@ -1,0 +1,153 @@
+A particularly nice class of models, are the semi-stable models.
+In short they are models where all the irreducible components in the special fibre are of multiplicity $1$. 
+Unfortunately, they do not exists for every curve. 
+But a deep theorem about curves states that they do always exist after basechange to a finite extension of the ground field. 
+
+In this section we will assume that the residue field $k$ of $R$ is algebraically closed. 
+
+\begin{definition}\label{def:semi_stable_curve}
+	Let $C $ be curve over an algebraically closed fiel $F$. 
+	Then $C$ is called \emph{semi-stable} if $C$ is reduced and its singular points are ordinary double points. 
+\end{definition}
+
+\todo[inline]{examples?}
+
+Semi-stable curves are nice, because we can very easily determine their genus. 
+\begin{comment}
+	
+\begin{lemma}
+	Let $C$ be a semi-stable curve over an algebraically closed fiel $F$. 
+	Let $C'$ be the normalisation of $C$ and $f: C' \to C$ the induced morphism.  
+	Then there is an exact sequence \[
+	0 \to f_* \omega_{C' / F} \to \omega_{C / F} \to \mathcal{F}  \to 0
+	.\] 
+	where $\mathcal{F} $ is the skyscraper sheaf which vasishes in the smooth locus of $C$ and for $x$ in the singular locus of $C$ we have $\mathcal{F} _x  = F$. 
+\end{lemma}
+\todo{Do we need this lemma???}
+\begin{proof}
+	Intuitively, $C'$ is the disjoint union of the normalisations of the irreducible componets of $C$. 
+	So $C'$ consists of the same irreducible components, but they are no longer connected along the intersection points. 
+	So along the smooth locus of $C$, the map $f_* \omega_{C' / F} \to \omega_{C / F}$ is an isomorphism, and thus $\mathcal{F} $ vanishes on the smooth locus of $C$. 
+
+	Lets now consider a singular point $x$ on $C$. 
+	Then $f^{-1}(x)$ are two smooth points.
+	Hence the morphism on residue fields $(f_* \omega_{C' / F})_x \to (\omega_{C  /F})_x$ is $F \to F^2$ and thus $\mathcal{F} _x \simeq F$ \todo{this does not make sense?}
+	
+	For a more detailed argument see \cite[lem.\ 10.3.12]{liuAlgebraicGeometryArithmetic2002}. 
+\end{proof}
+\end{comment}
+
+\begin{lemma}\label{lem:genus_semi_stable_curve}
+	Let $C$ be a semi-stable curve over $F$. 
+	Let $m$ be the number of singular points on $C$. 
+	Let $F_1, \ldots, F_n$ be the irreducible components of $C$ and $F_1', \ldots, F_n'$ be their respective normalisations.
+	Then \[
+		g(C) = \beta(C) + \sum_{i = 1}^{n} g(F_i')
+	\] 
+	where \[
+		\beta(C) = m - n + 1
+	\]
+	is the \emph{Betti number} of $C$. 
+\end{lemma}
+\begin{proof}
+	Let $C'$ be the normalisation of $C$ and $f: C' \to C$ be the induced morphism. 
+	We see that  $C'$ is the disjoint union of $F_1', \ldots, F_n'$. 
+
+	There is a an exact sequence \[
+	0 \to \mathcal{O}_C \to f_* \mathcal{O}_{C'} \to \mathcal{F} \to 0 
+	.\] 
+	where $\mathcal{F} $ is the skyscraper sheaf vanishing on the smooth points of $C$ and for every singular points $x$ we have $\mathcal{F} _x = k$.  
+	Then by additivity of the euler characteristic we find
+	\begin{align*}
+		\chi(\mathcal O_C) &= \chi(\mathcal O_{C'}) - \chi(\mathcal F) \\
+				   &= \sum_{i = 1}^{n} \chi(\mathcal O_{F_i'}) - m\\
+				   &= n -  \sum_{i = 1}^{n} g(F_i') - m\\
+				   &= -\beta(C) - \sum_{i = 1}^{n} g(F_i') + 1 
+	.\end{align*}
+	We now get the result because \[
+		g(C) = 1 - \chi(\mathcal{O}_C) = \beta(C) + \sum_{i = 1}^{n} g(F_i')  
+	.\] 
+\end{proof}
+\begin{remark}
+	The \emph{Betti number} can be interpreted as the number of ``holes'' in the the dual graph of $C$. 
+	That is the graph where the vertices are the irreducible components $F_1, \ldots, F_n$ and every singular point on $C$ is an edge between the component. 
+	So the genus of $C$ is the sum of the topological genus of the dual graph and the geni of the irreducible components making up $C$.
+	The dual graph will make another appearance in \cref{chap:weight_functions}. 
+\end{remark}
+
+\begin{definition}\label{def:semi_stable_model}
+	Let  $\mathscr C$ be a proper model of a curve $C$. 
+	Then $\mathscr C$ is a \emph{semi-stable model of $C$} if the special fibre $\mathscr C_s$ is a stable curve. 
+\end{definition}
+
+Semi-stable cruves are nice because we can easily read of the genus of $C$ in the special fibre. 
+\begin{lemma}\label{lem:genus_semi_stable_model}
+	Let $\mathscr C$ be a semi-stable model of  $C$. 
+	Let $F_1, \ldots, F_n$ be the irreducible components in the special fibre and  $F_1', \ldots, F_n'$ be their respective normalisation. 
+	Then \[
+		g(C) = \beta(\mathscr C_s) + \sum_{i = 1}^{n} g(F_i')
+	.\] 
+\end{lemma}
+\begin{proof}
+	As $\mathscr C \to \spec R$ is flat we have that $g(C) = g(\mathscr C_\eta) = g(\mathscr C_s)$. 
+	The result now follows from \cref{lem:genus_semi_stable_curve}. 
+\end{proof}
+
+Not every curve has a semistable model.
+As we will see in \cref{chap:kodaira} there are many elliptic curves without semi-stable models. 
+\begin{definition}
+	A curve $C$ over $K$ has \emph{semi-stable} reduction there exists a semi-stable model of $C$. 
+\end{definition}
+To make matters more complicated, a semi-stable model is not necessarily regular. 
+Take for example the model $\mathscr P$ of $\pro^{1}_K$ that on one affine chart is given by $\spec \frac{R[x, y]}{(xy  - \pi^{2})}$. 
+Then $\mathscr P_s$ is two projective lines intersection in an ordinary double.
+But that double point is not regular in the larger scheme $\mathscr P$. 
+Fortunately there are the following results. 
+\begin{proposition}\label{prop:design_ss_model}
+	Let $\mathscr C$ be a semi-stable model of $C$ and let $p:\mathscr C' \to \mathscr C$
+	be its minimal desingularisation. 
+	Then the inverse image $p^{-1}(x)$ of a singular point $x$, consists of a chain of projective lines of multiplicity $1$. 
+	In particular $\mathscr C'$ is semistable. 
+\end{proposition}
+\begin{proof}
+	This is (a consequence of) \cite[cor.\ 10.3.25]{liuAlgebraicGeometryArithmetic2002}.
+\end{proof}
+\begin{corollary}
+	Let $C$ be a curve with  $g(C) > 0$.
+	Then $C$ has semistable reduction if and only if the minimal regular model  $\mathscr C_\text{reg} $ is semistable. 
+\end{corollary}
+\todo{why is there no result like this that states this immediately in Liu? Am I missing something?}
+\begin{proof}
+	\ltr Let $\mathscr C$ be be a semistable model of $C$. 
+	Let $\mathscr C'$ be the minimal desingulariation of $C$. 
+	By \cref{prop:design_ss_model} we know that  $\mathscr C'$ is semistable as well. 
+	By the minimality of $\mathscr C_\text{reg} $ we see that it is a contraction of $\mathscr C'$. 
+	In particular $\mathscr C_{\text{reg}, s}$ is reduced curve, and it also has ordinary double points as intersection as $\mathscr C_\text{reg} $ is regular.
+	\rtl This is immediate. 
+\end{proof}
+
+We can also check whether $C$ as semistable reduction by looking at a nc-model. 
+\begin{lemma}\label{lem:semistable_nc_model}
+	$C$ has semistable reduction if and only if there exists a nc-model of  $C$ has reduced special fibre. 
+\end{lemma}
+\begin{proof}
+	\ltr Let $ \mathscr C$ be a semistable model of $C$, and $\mathscr C'$ be its minimal desingularisation. 
+	Then $\mathscr C'$ has is semistable and nc-crossings as the lines meet transversally by \cite[cor.\ 10.3.25]{liuAlgebraicGeometryArithmetic2002}
+	\rtl Let  $\mathscr C$ be such nc-model. 
+	Then the completion of a local ring at a singluar point in $\mathscr C_s$ looks like $R\llbracket x, y \rrbracket /(xy - \pi)$, and thus is ordinary double points in $\mathscr C_s$.
+\end{proof}
+
+
+
+While not all curves have semistable reduction, we can always basechange to a field such thata given curve  $C$ has semistable reduction. 
+
+\begin{theorem}[Semi-stable reduction theorem]
+	Let $C$ be a curve over $K$. 
+	Then there is a finite extension $L$ be a finite extension of $K$ such that $C_L  = C \times _K \spec L$ has semistable reduction, i.e.\
+	it has a model $\mathscr C$ over $\mathcal{O}(L)$ where $\mathcal{O}(L)$ is the normalisation of $R$ in $L$. 
+\end{theorem}
+\begin{proof}
+	This is a deep result with a long and involved proof. 
+	The first proof was given by Deligne and Mumford in \cite{deligneIrreducibilitySpaceCurves1969}. 
+	A proof using rigid analytic spaces (another theory of $K$-analytic spaces, similar to berkovich spaces) is given in \cite{arzdorfAnotherProofSemistable2012}.
+\end{proof}

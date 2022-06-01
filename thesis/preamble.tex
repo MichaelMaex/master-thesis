@@ -15,9 +15,10 @@
 \usepackage{cleveref}
 \usepackage{stmaryrd}
 \usepackage{mathrsfs}
+\usepackage{comment}
 \usepackage{float}
 
-\usepackage[backend = biber, style = alphabetic]{biblatex}
+\usepackage[backend = biber, style = alphabetic, backref=true]{biblatex}
 \addbibresource{references.bib}
 
 
@@ -45,7 +46,7 @@
 \setlength{\marginparwidth}{2cm}
 \usepackage[textsize=tiny,colorinlistoftodos]{todonotes}
 \newcommand{\question}[1]{\todo[color=green!40]{#1}}
-\newcommand{\comment}[1]{\todo[color=yellow!70]{#1}}
+\newcommand{\sidecomment}[1]{\todo[color=yellow!70]{#1}}
 \newcommand{\todoin}[1]{\todo[inline, noinlinepar]{#1}}
 \usepackage{pdfpages}
 \usepackage{transparent}
@@ -74,6 +75,7 @@
 \newcommand{\aff}{\mathbb{A}}
 \newcommand{\ltr}{\par \noindent \framebox[1\width]{ $\implies$ } \hspace{.2cm}}
 \newcommand{\rtl}{\par \noindent \framebox[1\width]{ $\impliedby$ } \hspace{.2cm} }
+
 
 \DeclareMathOperator{\coker}{coker}
 \DeclareMathOperator{\id}{Id}
