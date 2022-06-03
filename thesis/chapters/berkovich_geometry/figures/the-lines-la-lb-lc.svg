@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="svg8" inkscape:version="0.92.4 (unknown)" sodipodi:docname="figure.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 680.3 193.5"
+	 style="enable-background:new 0 0 680.3 193.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st1{font-family:'MyriadPro-Regular';}
+	.st2{font-size:12px;}
+</style>
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1.0" id="base" inkscape:current-layer="layer1" inkscape:cx="284.27627" inkscape:cy="182.72055" inkscape:document-units="mm" inkscape:guide-bbox="true" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:window-height="995" inkscape:window-maximized="1" inkscape:window-width="2520" inkscape:window-x="20" inkscape:window-y="65" inkscape:zoom="0.99437388" pagecolor="#ffffff" showborder="true" showgrid="false" showguides="true" width="200mm">
+	<inkscape:grid  dotted="false" empspacing="4" id="grid815" spacingx="10" spacingy="10" type="xygrid" units="mm">
+		</inkscape:grid>
+</sodipodi:namedview>
+<g id="layer1" transform="translate(0,-177)" inkscape:groupmode="layer" inkscape:label="Layer 1">
+</g>
+<line class="st0" x1="232.9" y1="176.2" x2="450.7" y2="176.2"/>
+<text transform="matrix(1 0 0 1 454.1912 189.7026)" class="st1 st2">$K$</text>
+<circle cx="396.5" cy="176.2" r="2.5"/>
+<text transform="matrix(1 0 0 1 393.563 193.5013)" class="st1 st2">$b$</text>
+<circle cx="342" cy="176.2" r="2.5"/>
+<text transform="matrix(1 0 0 1 339.1176 193.5013)" class="st1 st2">$a$</text>
+<circle cx="268.1" cy="176.2" r="2.5"/>
+<text transform="matrix(1 0 0 1 265.1902 193.5013)" class="st1 st2">$c$</text>
+<line class="st0" x1="342" y1="176.2" x2="342" y2="7.7"/>
+<text transform="matrix(1 0 0 1 346.0928 167.4054)" class="st1 st2">$\ell_a$</text>
+<line class="st0" x1="396.5" y1="176.2" x2="341.8" y2="84.7"/>
+<text transform="matrix(1 0 0 1 393.9946 165.8598)" class="st1 st2">$\ell_b$</text>
+<text transform="matrix(1 0 0 1 259.9977 157.8559)" class="st1 st2">$\ell_c$</text>
+<line class="st0" x1="268.1" y1="176.2" x2="342" y2="27.1"/>
+<circle cx="342" cy="85" r="2.5"/>
+<text transform="matrix(1 0 0 1 345.7337 84.4062)" class="st1 st2">$\scriptstyle{B(a, |a-b|) = B(b, |a-b|)}$</text>
+<circle cx="342" cy="27.9" r="2.5"/>
+<text transform="matrix(1 0 0 1 345.7337 27.8646)" class="st1 st2">$\scriptstyle{B(a, |a-c|) = B(c, |a-c|)}$</text>
+</svg>

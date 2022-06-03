@@ -1,5 +1,4 @@
-
-In this section we'll describe the category of $K$-analytic spaces, which is where the Berkovich spaces of schemes will live. 
+In this section we will describe the category of $K$-analytic spaces, which is where the Berkovich spaces of schemes will live. 
 The main building blocks of these spaces are affinoid algebras which are a type of complete $K$-algebras. 
 These will also be  crucial for defining the structure sheaf on Berkovich spaces. 
 
@@ -22,7 +21,7 @@ These will also be  crucial for defining the structure sheaf on Berkovich spaces
 \end{definition}
 \begin{definition}
 	Let $A$ be a $K$-algebra. 
-	Two norms $\|\cdot \|_1, \|\cdot \|_2$on $A$ are called equivalent if and only if they induce the same topology. 
+	Two norms $\|\cdot \|_1, \|\cdot \|_2$ on $A$ are called equivalent if and only if they induce the same topology. 
 
 	This means that there are non-zero constants $C, C'$ such that for every $ a\in A$ we have $C\|a\|_1 \le \|a\|_2 \le C'\|a\|_1$. 
 \end{definition}
@@ -41,24 +40,22 @@ To describe the category of $K$-Banach algebras we still need morphisms.
 	Let $A, B$ be $K$-Banach algebras. 
 	A $K$-algebra morphism $\phi: A \to B$ is \emph{admissible} if $\phi$ if the induced map $A / \ker \phi \to \im \phi$ is a homeomorphism, where $A / \ker \phi$ is equipped with the residue norm and $\im \phi$ with subspace norm of $B$. 
 \end{definition}
-\question{is admissible equivalent met bounded/continuous?}
 
 \begin{remark}\label{rem:uniqueness_norm_banach_algebra}
 	Note that the identity  $\id: (A, \|\cdot \|_1) \to (A, \|\cdot \|_2)$ between two Banach $K$-algebras is a isomorphism in the category of $K$-Banach spaces if and only if the norms $\|\cdot \|_1, \|\cdot \|_2$ are equivalent. 
 	So the norm is not intrinsic to an equivalence class of objects in the category of Banach  $K$-algebras, but it is well defined up to equivalence. 
 \end{remark}
 
-There is also a good way to equip the tensor product of Banach $K$-algebras with a submultiplicative norm, turning is again into a Banach $K$-algebra.
+There is also a good way to equip the tensor product of Banach $K$-algebras with a submultiplicative norm, turning it again into a Banach $K$-algebra.
 \begin{definition}
 	Let $A, B, C$ be Banach $K$-algebras with morphisms  $C\to A, C \to B$. Then the \emph{completed tensor product}, written $A \widehat \otimes_C B$, is the completion of the ordinary tensor product $A \otimes_C B$ with norm defined by \[
 		\|x\| = \inf \left\{\max_{i = 1}^{n} |a_i||b_i|  \st n \in \N, a_i \in A, b_i \in B, x = \sum_{i = 1}^{n} a_i \otimes_C b_i\right\} 
 	\] 
 	for any $x \in A \otimes_C B$. 
 \end{definition}
-\question{Is dit tensor product altijd goed gedefinieerd? Of hebben we extra voorwaarden nodig op $A, B, C$?}
 
 \begin{proposition}\label{prop:universal_prop_complete_tensor}
-	The completed tensor product is the pushout of the diagram $A \leftarrow C \to B$ in the category of  $K$-Banach algebras. I.e.\ it satisfies the universal property that for any  $D$ and morphism $A \to D$,  $B \to D$ making the square with $C$ commute there exists a unique map $A \widehat\otimes_C B \to D$ making the diagram commute\[
+	The completed tensor product, like the tensor product for rings, is the pushout of the diagram $A \leftarrow C \to B$ in the category of  $K$-Banach algebras. I.e.\ it satisfies the universal property that for any  $D$ and morphism $A \to D$,  $B \to D$ making the square with $C$ commute there exists a unique map $A \widehat\otimes_C B \to D$ making the diagram commute\[
 	\begin{tikzcd}
 		C \rar \dar & A \dar \ar[bend left]{rdd} \\
 		B \rar \ar[bend right]{drr} &  A \widehat{\otimes}_C B \ar[dashed]{dr}{\exists !} \\
@@ -99,7 +96,11 @@ To an affinoid algebra we can also associate a Berkovich space, which will be sl
 	\] 
 	equipped with the coarsest topology that makes all maps $\mathcal{M} (A) \to [0, \infty): x \mapsto |f|_x$ for any $f \in A$ continuous. 
 \end{definition}
-Note that due to \cref{rem:uniqueness_norm_banach_algebra}, the space $\mathcal{M} (A)$ only depends on the equivalence class of $A$ in the category of Banach $K$-algebras. 
+Note that the space $\mathcal{M} (A)$ is unaffected if we equip $A$ with a different but equivalent norm. 
+So by \cref{rem:uniqueness_norm_banach_algebra}, the functor $\mathcal{M}$ is actually well defined as up to isomorphism $\mathcal{M} (A)$ only depends on the equivalence class of $A$ in the category of Banach $K$-algebras.
+
+It may seem odd that in \cref{def:spectrum_banach_algebra} we do not require $x$ to extend the norm on $K$. 
+This is because it is actually a consequence of the condition that $x$ is bounded. 
 
 \begin{proposition}\label{prop:norm_spectrum_extends_base_field}
 	Every norm in $\mathcal{M} (A)$ extends the norm on $K$. 
@@ -109,7 +110,7 @@ Note that due to \cref{rem:uniqueness_norm_banach_algebra}, the space $\mathcal{
 	Let $x \in \mathcal{M} (A)$ be a norm. 
 	Then for any $\lambda \in K, \lambda \ne 0$ we have $|\lambda|_x \le  \|\lambda\cdot 1\| = |\lambda| \cdot \|1\| = |\lambda|$. 
 	Similarly $|\lambda|_x^{-1} = |\lambda^{-1}|_x  \le |\lambda^{-1}| = |\lambda|^{-1}$. 
-	From this it follows that $|\lambda_x| = |\lambda|$
+	From this it follows that $|\lambda|_x = |\lambda|$
 \end{proof}
 
 
@@ -135,8 +136,7 @@ Note that due to \cref{rem:uniqueness_norm_banach_algebra}, the space $\mathcal{
 	We will see in the next section that this is a Banach algebra. Then $(T - f)^{-1} = f^{-1}\sum_{i = 0}^{\infty} (f^{-1} T)^{i} \not\in B $. So $T - f$ is not invertible, and in particular $(T - f)$ is a closed ideal. 
 	Hence we can define $A' = B / (T - f)$ equipped with the residue norm. 
 	This gives contractive morphisms  $A \to B \to A'$ and we can pull back the norm on $\|\cdot \|$ on $A'$ to $A$. 
-	Note that $\|f\| = \|T\|  \le  r < f$. So $\|\cdot \|$ contradicts the minimity of $|\cdot |_\text{min} $
-	\question{Is er een mannier om te zien dat dit waar is voor de spectrale norm? Er staat iets redelijk uitgebreid in \cite[][thm.\ 1.2.1]{berkovichSpectralTheoryAnalytic2012}, maar het lijkt me alsof het eenvoudiger kan aangezien powermultiplicative ook eenvoudiger kon.}
+	Note that $\|f\| = \|T\|  \le  r < f$. So $\|\cdot \|$ contradicts the minimality of $|\cdot |_\text{min} $
 
 	Now we can easily show that $|\cdot |_\text{min} $ is multiplicative. 
 	Let $f, g \ne 0$ be elements in $A / \mathfrak{m} $, then \[
@@ -164,7 +164,7 @@ Note that due to \cref{rem:uniqueness_norm_banach_algebra}, the space $\mathcal{
 	For compactness see \cite[][thm.\ 1.2.1]{berkovichSpectralTheoryAnalytic2012}.
 \end{proof}
 \subsection{Affinoid algebras} \label{sec:affinoid_algebras}
-We need restrict the category of Banach algebras to those that are ``finitely generated'' in some appropriate sense. 
+To further develop the theory we need restrict the category of Banach algebras to those that are ``finitely generated'' in some appropriate sense. 
 
 \begin{definition}
 	[2.1.2, \cite{conrad2008several}]
@@ -202,8 +202,8 @@ Similarly to polynomial rings, these Tate algebras are \emph{free} in a sense ma
 	Lets first check that the map is well defined. 
 	Let $f: K\left<\underline r^{-1} \underline T \right> \to A$ be such a map. 
 	We need to check that $|f(T_i)| \le r_i$. 
-	Suppose that  $|f(T_i)| > r_i$, then there is some $a \in K$ such that $|f(T_i)| > |a| > r_i$ ( $K$ is algebraically closed so the value group is dense). 
-	We know that $(a^{-1}T_i)^{m} \mapsto 0$ as $m \to 0$, but $|a f(T_i)| \to \infty $, which contradicts the continuity of $f$. 
+	Suppose that  $|f(T_i)| > r_i$, then there is some $a \in K$  and $m \in \N$ such that $|f(T_i)^{m}| > |a| > r_i^{m}$. 
+	We know that $(a^{-1}T_i^{m})^{j} \mapsto 0$ as $j \to \infty$, but $|a^{j} f(T_i^{m})^{j}| \to \infty $, which contradicts the continuity of $f$. 
 
 
 	As $K[\underline T]$ is dense in $K\left<\underline r^{-1} \underline T \right>$, $f$ is uniquely determined by its restriction to $K[\underline T]$. So $\Phi$ is injective, as polynomial rings are free.
@@ -278,16 +278,16 @@ But there are a couple explicit ones that will be ``enough'' to develop the theo
 			.\] 
 			Unlike for polynomial rings, this is not an evaluation map. You should think of this as forcing the $a_i$'s to become powerbounded. 
 		\item [Laurent domains]
-			Let $a_1, \ldots, a_n, b_1, \ldots, b_m \in A$ without common zeroes\footnote{This means that there is no $x \in \mathcal{M} (A)$ that makes two evaluates two or more element to $0$} and $r_1,\ldots, r_n, s_1, \ldots, s_m \in H$ then \[
-				A\left<r_1^{-1}a_1, \ldots, r_n^{-1}a_n, s^{-1}_1b_1^{-1}, \ldots, s^{-1}_mb_m^{-1} \right> := \frac{A\left<r^{-1}_1x_1, \ldots, r^{-1}_nx_n,s^{-1}_1y_1, \ldots,s_m^{-1} y_m  \right>}{(x_1 - a_1, \ldots, x_n - a_n, b_1 y_1 - 1, \ldots, b_m y_m - 1)}
-			.\] 
-			This is the affinoid analogue of localisation. It makes the $r_i^{-1}a_i$ powerbound and $s_i^{-1}b_i$ invertible. 
+			Let $a_1, \ldots, a_n, b_1, \ldots, b_m \in A$ without common zeroes\footnote{This means that there is no $x \in \mathcal{M} (A)$ that makes two evaluates two or more element to $0$} and $r_1,\ldots, r_n$, $s_1, \ldots, s_m \in H$ then 
+			\begin{align*}
+				A\left<r_1^{-1}a_1, \ldots, r_n^{-1}a_n, s^{-1}_1b_1^{-1}, \right. & \left. \ldots, s^{-1}_mb_m^{-1} \right> \\
+				&:= \frac{A\left<r^{-1}_1x_1, \ldots, r^{-1}_nx_n,s^{-1}_1y_1, \ldots,s_m^{-1} y_m  \right>}{(x_1 - a_1, \ldots, x_n - a_n, b_1 y_1 - 1, \ldots, b_m y_m - 1)}
+			.\end{align*} 
+			This is the affinoid analogue of localization. It makes the $r_i^{-1}a_i$ powerbound and $s_i^{-1}b_i$ invertible and powerbound. 
 		\item[Rational domain] With $a_1, \ldots, a_n, a' \in A$ with no common zeros and $r_1, \ldots, r_n \in H$,
-			\[
+			\begin{align*}
 				A \left<r_1^{-1}\frac{a_1}{a'}, \ldots, r_n^{-1}\frac{a_n}{a'} \right> := \frac{A\left<r_1^{-1}x_1, \ldots, r_n^{-1}x_n \right>}{(a' x_1 - a_1, \ldots, a' x_n - a_n)}
-			.\] 
-			But it does more than just make $a'$ invertible. 
-			It also makes $\frac{a_i}{ a'}$ act like it is power bounded in some sense. 
+			.\end{align*}
 	\end{description}
 \end{definition}
 
@@ -322,14 +322,14 @@ These are affinoid domains and the following theorem describes which set $V \sub
 	By construction $a'x_i - a_i \in \ker g$ for every $i$. Hence this defines a map $A \left<\frac{a_1}{a'}, \ldots, \frac{a_n}{a'} \right>$ as desired. 
 \end{proof}
 
-While we don't know what general affinoid domains look like, the following theorem shows that we can get by with just rational domains. 
+While we do not know what general affinoid domains look like, the following theorem shows that we can get by with just rational domains. 
 \begin{proposition}
 	[Gerritzen-Grauert Theorem]
 	A ($H$-strict) affinoid domain $V \subset  \mathcal{M} (A)$ is a finite union of ($H$-strict) rational domains in $X$.
 \end{proposition}
 \begin{proof}
 	There are many very technical proofs that depend on the theory of rigid geometry (a predecessor of Berkovich geometry).
-	The easiest proof and one that is entirely in the language of Berkovich geometry is one by Temkin \cite{temkinNewProofGerritzenGrauert2005}.
+	The easiest proof and one that is entirely in the language of Berkovich geometry is one by M.\ Temkin \cite{temkinNewProofGerritzenGrauert2005}.
 \end{proof}
 
 
@@ -383,11 +383,32 @@ Most definitions for topological spaces carry straight over to $G$-topological s
 	\end{itemize}
 \end{definition}
 
+$G$-topologies contain precisely the right information to define sheafs. 
+\begin{definition}
+	Let $(X, \mathcal{T} )$ be a $G$-topological space.
+	A \emph{presheaf on $X$} with values in a category $\mathcal{C} $ is a functor $\mathcal{F} :S^{\text{op}} \to \mathcal{S} $. 
+
+	A presheaf $\mathcal{F} $ is called a \emph{sheaf} if for any admissible open  $U$ and cover $\{U_i\}_i $ of $U$ the sequence \[
+	\begin{tikzcd}
+		\mathcal{F} (U) \rar & \prod_{i \in I} \mathcal{F} (U_i) \rar[shift left]\rar[shift right] & \prod_{i, j \in I} \mathcal{F} (U_{i} \cap U_j)
+	\end{tikzcd}
+	\] 
+	is exact. 
+\end{definition}
+\begin{remark}\label{rem:g_topology_local}
+	A $G$ topology on $X$ is not determined locally. 
+	For example let $X$ be a topological space and $G_1$ be the ordinary topology and $G_2$ be $G_1$ without the admissible open $X$ and its covers.  
+	Then $G_1, G_2$ are the same when restricted to every non-trivial open  $U \subsetneq X$, but $G_1 \ne G_2$. 
+	One may impose extra axioms a $G$ topology to fix this, but this would take us too far. 
+	The curious reader may consult \cite[sec.\ 9.1.2]{siegfriedboschNonArchimedeanAnalysisSystematic1984}.
+\end{remark}
+
 
 
 \subsection{The structure sheaf on $\mathcal{M} (A)$} \label{sec:the_structure_sheaf_on_ma}
 
-First we need to define a $G$-topology. In this section it doesn't really matter whether we work with strict or $H$-strict or non-strict affinoid algebras. So we will work in the most general case and let all algebras be non-strict unless specified otherwise.  
+First we need to define a $G$-topology $\mathcal{M} (A)$. 
+In this section it does not matter whether we work with strict or $H$-strict or non-strict affinoid algebras. So we will work in the most general case and let all algebras be non-strict unless specified otherwise.  
 
 \begin{definition}
 	Let $A$ be an affinoid algebra. 
@@ -411,7 +432,6 @@ This presheaf turns out to be a sheaf, which will follow from the following theo
 		0 \to A \to A\left<f \right>\times  A\left<f^{-1} \right> \to A\left<f, f^{-1} \right> \to 0
 	.\]  
 	is exact. 
-	\question{Does it make sense to give a proof of this?}
 \end{proof}
 
 
@@ -456,18 +476,26 @@ It is a grave abuse of notation to use $\mathcal{O}_X$ for both the structure sh
 It is important keep in mind that there are two topologies with their respective structure sheaf, namely a locally ringed space $(X, \mathcal{O}_X)$ and a locally ringed $G$-topological space $(X_G, \mathcal{O}_{X_G})$. 
 
 
-\subsection{$K$-analytic spaces} \label{sec:k_analytic_spaces}
+\subsection{Gluing Berkovich spectra to $K$-analytic spaces} \label{sec:gluing_berkovich_spectra_to_k_analytic_spaces}
+
 
 The Berkovich spectra of ($H$-strict) $K$-affinoid algebras can be glued together to obtain ($H$-strict) $K$-analytic spaces, similar to how schemes are made out of spectra of rings. 
-However, the precise construction of this is more subtle than it looks at first glance and is therefore omitted from this document. 
-They will be discussed in the final version of my thesis. 
+However, this is not as straightforward as the definition of a scheme. 
+The culprit is that $G$ topologies do not glue together uniquely by \cref{rem:g_topology_local}. 
+The solution for this to define a general $K$-analytic space with an atlas and then refine this atlas to a maximal atlas, similar to how one might introduce a smooth manifold in a first differential geometry course. 
 
-For now it is important to know the following:
-A \emph{good} $K $-analytic space, is a $K$-analytic space where every point $x$ has a neighbourhood isomorphic to $\mathcal{M} (A)$ for some $K$-affinoid algebra $A$. 
-On good  $K$-analytic spaces we can turn the structure sheaf on the $G$-topology into one on the ordinary topology, as in  \cref{def:structuresheaf_cannonical_topology}. 
+The idea is to define a general  $K$-analytic space, by starting with a locally Hausdorff topological space $X$, and covering it with a suitable set cover $\{V_i\} _{i}$ of compact Hausdorff spaces, each identified with some affinoid domain $\mathcal{M} (A_{V_i})$, such that when $V_j \subset  V_i$, $ \mathcal{M} (A_{V_j})$ is an affinoid subdomain of $\mathcal{M} (A_{V_j})$. 
+Using this description we can obtain a $G$-topology of affinoid domains corresponding structure sheaf $\mathcal{O}_{X, G}$.  
+The details of this construction are very technical and it would be outside the scope of this thesis. 
+A good overview is given in \cite[chap.\ 5]{conrad2008several}.
 
-For ordinary $K$-analytic spaces we only require that some finite union affinoid domains containing $x$ is neighbourhood of $x$. 
+On a special type of $K$-analytic spaces we can also obtain a structure sheaf for the ordinary topology. 
+These spaces are called \emph{good} and are defined as follows. 
+\begin{definition}
+	A $K$-analytic $X$ space is \emph{good} if every point $x \in X$ has neighborhood isomorphic to $\mathcal{M} (A)$ for some affinoid algebra $A$. 
+\end{definition}
+For general $K$-analytic spaces the only requirement that is that a finite union of affinoid domains containing $x$ is a neighborhood of $x$. 
 
-\question{Thuilliers lessen \cite[les 4]{amaurythuillierBrazilFranceSchoolWorkshop}  doen its met pre-analytische ruimten. Hij zegt zijn definitie enken de Haussdorf (dus separated) $K$-analytische ruimten geeft. Enig idee waar hij dit vandaan haalt?}
+
 
 

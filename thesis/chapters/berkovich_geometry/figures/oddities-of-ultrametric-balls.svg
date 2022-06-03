@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="svg8" inkscape:version="0.92.4 (unknown)" sodipodi:docname="figure.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 680.3 240.7"
+	 style="enable-background:new 0 0 680.3 240.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st1{font-family:'MyriadPro-Regular';}
+	.st2{font-size:12px;}
+	.st3{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#000000;stroke-miterlimit:10;stroke-dasharray:11.389,11.389;}
+	.st5{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
+</style>
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1.0" id="base" inkscape:current-layer="layer1" inkscape:cx="284.27627" inkscape:cy="182.72055" inkscape:document-units="mm" inkscape:guide-bbox="true" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:window-height="995" inkscape:window-maximized="1" inkscape:window-width="2520" inkscape:window-x="20" inkscape:window-y="65" inkscape:zoom="0.99437388" pagecolor="#ffffff" showborder="true" showgrid="false" showguides="true" width="200mm">
+	<inkscape:grid  dotted="false" empspacing="4" id="grid815" spacingx="10" spacingy="10" type="xygrid" units="mm">
+		</inkscape:grid>
+</sodipodi:namedview>
+<g id="layer1" transform="translate(0,-177)" inkscape:groupmode="layer" inkscape:label="Layer 1">
+</g>
+<circle class="st0" cx="100.2" cy="127.2" r="66.9"/>
+<text transform="matrix(1 0 0 1 59.1497 45.7038)" class="st1 st2">$B(a, r) = B(b, r)$</text>
+<circle cx="66.1" cy="137.3" r="2.3"/>
+<text transform="matrix(1 0 0 1 59.1499 121.0237)" class="st1 st2">$b$</text>
+<circle cx="100.4" cy="127.6" r="2.3"/>
+<text transform="matrix(1 0 0 1 97.6798 116.3931)" class="st1 st2">$a$</text>
+<circle class="st0" cx="344.9" cy="138.3" r="66.9"/>
+<text transform="matrix(1 0 0 1 341.1428 63.9585)" class="st1 st2">$D_1$</text>
+<circle class="st0" cx="367.1" cy="122.3" r="36.8"/>
+<text transform="matrix(1 0 0 1 311.3449 147.2222)" class="st1 st2">$D_2$</text>
+<text transform="matrix(1 0 0 1 459.3012 32.259)" class="st1 st2">or</text>
+<circle class="st0" cx="526.8" cy="124.3" r="42.7"/>
+<text transform="matrix(1 0 0 1 521.5125 73.3578)" class="st1 st2">$D_1$</text>
+<circle class="st0" cx="615.2" cy="130.2" r="36.8"/>
+<text transform="matrix(1 0 0 1 595.1966 81.5684)" class="st1 st2">$D_2$</text>
+<g>
+	<g>
+		<line class="st3" x1="227.8" y1="4.4" x2="227.8" y2="10.4"/>
+		<line class="st4" x1="227.8" y1="21.7" x2="227.8" y2="221.1"/>
+		<line class="st3" x1="227.8" y1="226.7" x2="227.8" y2="232.7"/>
+	</g>
+</g>
+<path class="st5" d="M69.7,145.7c0.7,6,1.1,14.4-0.8,24c-3.1,15.9-10.5,27.2-15.1,33.1"/>
+<text transform="matrix(1 0 0 1 33.2843 214.9682)" class="st1 st2">also a center</text>
+<text transform="matrix(1 0 0 1 540.0165 32.2591)" class="st1 st2">disjoint</text>
+<text transform="matrix(1 0 0 1 266.7972 32.2592)" class="st1 st2">contained in the other</text>
+</svg>

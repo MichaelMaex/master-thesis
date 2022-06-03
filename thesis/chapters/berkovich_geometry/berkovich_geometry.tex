@@ -1,7 +1,6 @@
-\section{Introduction} \label{sec:introduction}
 
 A powerful tool to study complex varieties is the analytification functor, which turns a  smooth variety over $\C$ into a complex manifold, that can be studied using analytic methods. 
-Other rings that are well suited for analysis are the $p$-adic fields $\Q_p$ or more generally non-archimedean fields. 
+Other rings that are well suited for analysis are the $p$-adic fields $\Q_p$ or more generally complete non-archimedean fields. 
 So the question arises whether a similar analytification functor can be constructed for  varieties over non-archimedean fields. 
 
 Tate's answer was the theory of rigid spaces as suitable analytic spaces. 
@@ -11,16 +10,38 @@ For example they are totally disconnected. To solve these problems Tate restrict
 Berkovich proposed another approach by adding many more points to the rigid space to resolve various problem. 
 The resulting topological spaces are very well behaved. 
 For example, for connected proper schemes they are path connected and compact. 
-Even more, the analytification of a curve has the structure of a profinite real graph. 
+Even better, the analytification of a curve has the structure of a profinite real graph. 
 
-For the thesis the main interest is not to do analysis on Berkovich spaces of varieties, but rather to study the relation between the Berkovich space of a curve and its semi-stable models as outlined in \cite{bakerStructureNonarchimedeanAnalytic2013}.
+For the thesis the main interest is not to do analysis on Berkovich spaces of varieties, but rather to study the relation between the Berkovich analytification of a curve and various kinds of models of the curve. This will be the focus of \cref{chap:weight_functions}. 
+For now we will limit ourselves to giving a brief introduction to the theory of Berkovich geometry. 
 
-This text is a based on various roughly analogous introductory text on Berkovich geometry \cite{bakerarizona,temkinIntroductionBerkovichAnalytic2010,nicaiseNonarchimedeanGeometry2017,boschLecturesFormalRigid2014, wojciechwawrowBerkovicSpaces2020} as well as Vladimir Berkovich's first paper on the subject \cite{berkovichSpectralTheoryAnalytic2012}.
+This chapter is a based on various roughly analogous introductory text on Berkovich geometry \cite{bakerarizona,temkinIntroductionBerkovichAnalytic2010,nicaiseNonarchimedeanGeometry2017,boschLecturesFormalRigid2014, wojciechwawrowBerkovicSpaces2020} as well as Vladimir Berkovich's first paper on the subject \cite{berkovichSpectralTheoryAnalytic2012}.
 When another source is used it will be explicitly pointed out in the text. 
 
+\section{Conventions} \label{sec:introduction}
+In its most general form Berkovich Geometry works over any complete ground field, non only non-archimedean fields, but also trivially valued fields and $\C$, where it actually agrees usual analytification over $\C$. 
+For our purposes we will restict ourselves to the following choises of ground field. 
+In this chapter we will let $K$ be a complete non-archimedean field with non-trivial absolute value. We write 
+\begin{align*}
+	R &:= K^{o} = \{a \in K \st |a| \le 1\} \\
+	\mathfrak{m}  &:= K^{oo} =  \{a \in K \st |a| < 1\}  \text{ the unique maximal ideal of } R\\
+	k &:= \widetilde K = R / \mathfrak{m} \text{ the residue field of } R
+.\end{align*}
+On top of this we impose that either 
+\begin{itemize}
+	\item $K$ is algebraically closed, e.g.\ $\C_p$
+	\item $K$ is discretely valued and has algebraically closed residue fields, 
+		e.g.\ $\C((t))$, $\overline{\F_p}((t))$, $\hat{\Q_{p}^{\text{un}}}$. 
+\end{itemize}
+If $K$ is discretely valued then we let $\pi$ be uniformiser with valuation $v(\pi) = 1$
+
+By a $K$-algebra, we simply mean a ring $A$ together with a ring morphism $K \to A$, i.e.\ all algebras are unital, associative and commutative.  
 
 \section{Berkovich spaces of rings} \label{sec:berkovich_spaces}
 \input{chapters/berkovich_geometry/spectra_of_rings.tex}
+
+\section{The Berkovich affine line} \label{sec:the_berkovich_affine_line}
+\input{affine_line.tex}
 
 
 \section{$K$-analytic spaces} \label{sec:K_analytic_spaces}
@@ -31,16 +52,13 @@ When another source is used it will be explicitly pointed out in the text.
 \input{chapters/berkovich_geometry/analytification.tex}
 
 
-\section{Analytification of Curves if $K$ is algebraically closed} \label{sec:analytification_of_curves}
+\section{Affinoid domains in the affine line} \label{sec:analytification_of_curves}
 \input{chapters/berkovich_geometry/curves.tex}
 
 
-\section{Analytification of Curves if $K$ is discretely valued} \label{sec:analytification_of_curves_discretely_valued}
-\todo{write this section}
 
 \section{Reduction} \label{sec:reduction}
 \input{chapters/berkovich_geometry/reduction.tex}
 
 
-\section{} \label{sec:}
 

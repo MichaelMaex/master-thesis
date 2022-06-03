@@ -1,6 +1,3 @@
-On rings like $\Z$ and $\Q$ and $\C$ the absolute value function gives away of measuring how low \emph{large} each element is. 
-We can axiomatize properties of an absolute value function and look for them on arbitrary rings. 
-These types of functions are called (semi)norms, absolute values or valuations, depending on the specific proprieties and context.  
 \begin{definition}
 	Let $R$ be a ring. A \emph{absolute value on $R$} is a function $|\cdot |: R \to \R^{+} \cup \{0\} $ satisfying for all $a, b \in R$
 	\begin{enumerate}
@@ -9,7 +6,7 @@ These types of functions are called (semi)norms, absolute values or valuations, 
 		\item $|a + b| \le |a| + |b|$
 	\end{enumerate}
 \end{definition}
-Note that $R$ is not the zero ring, then $|1| = 1$ because $|1|^2 = |1| $ and $|1|\ne 0 $. 
+Note that if $R$ is not the zero ring, then $|1| = 1$ because $|1|^2 = |1| $ and $|1|\ne 0 $. 
 \begin{example}
 	The usual definition of absolute value on $\Z, \Q, \R$ is an absolute value. 
 \end{example}
@@ -27,24 +24,25 @@ Note that $R$ is not the zero ring, then $|1| = 1$ because $|1|^2 = |1| $ and $|
 
 
 	This $p$-adic absolute value can be extended to an absolute value on $\Q$ by defining $|a / b|_p = \frac{|a|_p}{|b|_p}$. Let $\frac{a}{b}$ be any fraction. 
-	I like to think about this in the following way. 
+	We can think about this in the following way. 
 	Factor out the largest powers of $p$ out of $a$ and $b$ and write $a = p^{n} a', b = p^{m} b'$. Then $\frac{a}{ b} = p^{n - m} \frac{a'}{ b'}$ and $|a / b|_p = p^{m - n}$. 
 	So the $p$-adic absolute values only cares about what powers of $p$ occur and doesn't care about numbers coprime to $p $.
 \end{example}
 As we will see in \cref{sec:the_berkovich_spectrum_of_z}, we have essentially listed all absolute values on $\Z$ and $\Q$ as examples above.  
-
-\begin{proposition}
+\begin{observation}
 	A ring $R$ with an absolute value is a metric space with metric $d(x, y) = |x - y|$. 
-\end{proposition}
+\end{observation}
 \begin{definition}
-	A ring $R$ with absolute value is \emph{complete} if all Cauchy sequences are convergent. 
+	A ring $R$ with an absolute value is \emph{complete} if all Cauchy sequences are convergent. 
 \end{definition}
 \begin{definition}
-	Any ring $R$ with absolute value can be completed, which is defined as \[
+	Any ring $R$ with an absolute value can be completed, which is defined as \[
 		\widehat{R} = \{(a_n)_n \text{ Cauchy sequence in } R\} / \sim
 	\] 
 	where two sequence $(a_n)_n, (b_n)_n$ are equivalent if $(a_n - b_n)_n \to 0$ as $n \to \infty$.
-	Given  $a, b \in \widehat{R}$ with representatives $(a_n)_n, (b_n)_n$, the addition and multiplication are defined as $a + b = [(a_n + b_n)_n], a\cdot b = [(a_n \cdot b_n)_n]$. 
+	Given  $a, b \in \widehat{R}$ with representatives $(a_n)_n, (b_n)_n$, the addition and multiplication are defined pointwise, i.e.\ \[
+		a + b = [(a_n + b_n)_n], \quad a\cdot b = [(a_n \cdot b_n)_n]
+	.\]
 \end{definition}
 
 Absolute values are a special case of (semi)norms
@@ -60,7 +58,19 @@ Absolute values are a special case of (semi)norms
 		\item [4.]  $|a \cdot  b| = |a| \cdot |b|$.
 	\end{enumerate}
 \end{definition}
+We will use the two notions interchangeably. 
 Sometimes we will stress the fact that a seminorm might not be multiplicative and call it a \emph{submultiplicative norm}. 
+
+
+Later in the thesis, when we work with Berkovich geometry, we will work with with finite type (semi)normed rings over some normed ground field. 
+We need some compatibility between those two norms, i.e.\ we need a relative notion of norm. 
+This is provided by the following definition. 
+\begin{definition}
+	Let $f: A \to B$ be a map of rings and suppose $A$ is equipped with a seminorm $|\cdot |_A$. 
+	Then a seminorm $|\cdot |_B$ on $B$ is said to \emph{extend the seminorm on $A$} if \[
+		|f(a)|_B = |a|_A, \quad \forall a \in A
+	.\] 
+\end{definition}
 
 \begin{lemma}
 	If $|\cdot |$ is a multiplicative seminorm on $R$ then  $|a | = |-a|$ for all $a \in R$. 
@@ -89,14 +99,6 @@ Sometimes we will stress the fact that a seminorm might not be multiplicative an
 	So either  $a \in \ker |\cdot |$ or $b \in \ker |\cdot |$. 
 \end{proof}
 
-In some sense seminorms are analogous to ideals and and multiplicative seminorsm are analogous to prime ideals. This is will be the basis of Berkovich spectra of rings.
-Like the ordinary $\spec$ functor we can define the space of all multiplicative norms on a ring. 
-Unfortunately you can't just copy all constructions we know for $\spec$. 
-For example, we can't define a Zarisky topology on this set. 
-In fact we will need two different topologies on this space for the theory to work. 
-Don't worry, this is a feature, not a bug! 
-One topology will have all the nice properties you can think of: Hausdorff, (locally) compact, path-connected, locally contractible, \ldots while the other one is great for sheaf theory. 
-
 
 \begin{definition}
 	Let $R$ be a ring and $|\cdot |$ a seminorm on $R$. 
@@ -118,14 +120,17 @@ So an absolute value is a multiplicative norm.
 	A (semi)norm $|\cdot |$ on $R$ is called \emph{non-archimedean} if it satisfies the following stronger version of the triangle inequality, \[
 	\forall a, b \in R: |a + b| \le \max \{|a|, |b|\} 
 	.\] 
-	Confusingly a \emph{archimedean (semi)norm} is a norm that is not non-archimedean.
+	A \emph{archimedean (semi)norm} is a norm that is not non-archimedean.
 \end{definition}
 
 \begin{definition}
 	A \emph{non-archimedean ring} (resp.\ \emph{field}) is a ring (resp.\ field) equipped with a multiplicative non-archimedean norm. 
 \end{definition}
 
-\begin{exercise}[\cite{nicaiseNonarchimedeanGeometry2017}]
+One might wonder why there is a negation in the name of non-archimedean norms, as they are defined by having some extra property that archimedean norms do not have. 
+It is related to the archimedean principle that states that for any real value $a$, there is some integer $r$ such that $|r| > |a|$. 
+The following exercise should make clear why non-archimedean rings, are from this perspective really not archimedean.
+\begin{exercise}[{\cite[ex.\ 1.3.1]{nicaiseNonarchimedeanGeometry2017}}]
 	Let $k$ be a field.
 	Show that a multiplicative seminorm $|\cdot |$ on $k$ is non-archimedean if and only if the image of $\Z$ in $k$ is bounded. 
 \end{exercise}
@@ -186,19 +191,26 @@ These are typically called valuations.
 
 \begin{remark}
 	Note that there is essentially no difference between a non-archimedean absolute value and a valuation because because they are in bijective correspondence with one another.  Any absolute value $|\cdot |$ defines a valuation $x \mapsto -\log |x|$ and given a valuation $v$ one defines a non-archimedean absolute value $x\mapsto e^{- v(x)}$. 
+	We will use the two notions interchangeably. 
 \end{remark}
 
 
+\begin{definition}
+	A valuation $v: R \to \R \cup \{\infty\} $ is \emph{discrete} if its image is contained in $\alpha \cdot \Z$ for some $\alpha \in \R$. 
+
+	A norm on  $R$ is \emph{discrete} if its associated valuation is discrete.
+\end{definition}
+If the valuation $v$ on $R$ is non-trivial and discrete, then it is easy to see that $v(R)$ is either $\alpha \cdot \Z$ or $\alpha \cdot \Z_{\ge 0}$ for some $\alpha \in \R_> 0$. 
+Usually, but not always, it is convention to scale $v$ such that $\alpha = 1$. 
 
 
 
 \begin{theorem}\label{thm:norm_finite_field_ext}
-	If $L$ is a finite field extension of a complete non-archimedean field $K$, then there is a unique extension of the norm of $K$ to $L$ and this extension is also non-archimedean.
+	If $L$ is a finite field extension of a complete non-archimedean field $K$, then there is a unique extension of the norm of $K$ to $L$. Moreover, this extension is also non-archimedean.
 \end{theorem}
 \begin{proof}
 	This a very technical result and for the proof we refer to \cite[][appendix A]{boschLecturesFormalRigid2014}. 
 \end{proof}
-\todo{add a result that states that the extension is unique up to galois action}
 \begin{corollary}
 	If $K$ is a complete non-archimedean field then the norm of  $K$ extends uniquely to its algebraic closure $\overline{K}$.
 \end{corollary}
@@ -230,7 +242,8 @@ This shows that we can canonically turn any non-archimedean field $K$ into an al
 	.\] 
 \end{definition}
 
-This is useful because Berkovich geometry works best when the base field is algebraically closed and complete. 
+This is useful because in some contexts Berkovich geometry works best when the base field is algebraically closed and complete. 
+So $\C_p$ is a sort of algebraically closed version of the $p$-adics. 
 
 \begin{definition}
 	Let $R$ be a non-archimedean ring. We write 
@@ -251,32 +264,3 @@ We will usually write $K$ for a non-archimedean field with non-trivial norm, $R 
 	.\] 
 	This is a subgroup of $(\R^{ +}, \cdot )$. 
 \end{definition}
-
-
-\subsection{Ultrametric spaces} \label{sec:ultrametric_spaces}
-
-\begin{definition}
-	A \emph{ultrametric space} is a topological spaces $(X, d)$ where the metric satisfies the non-archimedean triangle inequality. 
-	\[
-		d(x, y) \le \max \{d(x, z) ,d(z, y)\}, \quad \forall x, y ,z \in X
-	.\] 
-\end{definition}
-\begin{lemma}
-	If $d(x,z) \ne d(z,y)$ the inequality is an equality. 
-\end{lemma}
-\begin{proof}
-	Suppose without loss of generality that $d(x, z) \ge d(z,y)$, so $d(x, y) \le \max \{d(x, z), d(z,y)\} = d(x, z) $. 
-	Then $d(x, z) \le \max \{d(x, y), d(y,z)\}$. So $d(x, z) \le d(x, y) \le d(x, z)$. So we find equality.
-\end{proof}
-\begin{corollary}
-	Any point of a ball (open or closed) is a center for that ball. 
-\end{corollary}
-\begin{corollary}
-	If two balls have non-empty intersection that one must be included in the other. 
-\end{corollary}
-\begin{corollary}
-	The topology of $X$ is totally disconnected. 
-\end{corollary}
-
-Non-archimedean fields are ultrametric spaces with the metric $d(x, y) = |x - y|$. 
-

@@ -1,5 +1,5 @@
-There are two kinds of algebro-geometric objects that have Berkovich spaces associated to them. 
-The first one is the analytification of a variety over $K$, analogous to analytification of complex varieties like we discussed in the introduction. 
+We will discuss two kinds of algebro-geometric objects that have Berkovich spaces associated to them. 
+The first one is the analytification of a variety over $K$, analogous to analytification of complex varieties like we discussed at the start of this chapter. 
 The second is that there is a natural interpretation of the formal fibre of a formal scheme over $R = \mathcal{O}_K = \{a \in K \st |a| \le 1\} $ as a Berkovich space. 
 
 
@@ -20,7 +20,7 @@ Suppose $X$ be a scheme, locally of finite type over $K$.  We want define an ana
 \end{definition}
 So $X\an$ represents the functor from $K$-analytic spaces $Y \mapsto \hom(Y, X)$ where the hom-set is in the category of locally ringed spaces. 
 
-This universal property is very useful, but it would be nice to have an more concrete understanding of the analytification of a $K$-variety. 
+This universal property is good for theoretical purposes, but in practice it is nice to have an more concrete understanding of the analytification of a $K$-variety. 
 \begin{definition}\label{def:berkovich_analytification_explicit}
 	The \emph{Berkovich analitification} of a locally finite type scheme $X$ over  $K$, as a set is \[
 		X\an = \{(x, |\cdot |)  \mid x\in X, |\cdot | \text{ a norm on } \kappa(x) \text{ extending the norm on }K \} 
@@ -38,7 +38,6 @@ This universal property is very useful, but it would be nice to have an more con
 	\end{itemize}
 
 \end{definition}
-\question{is there some construction that also gives $G$-topology and structure sheaf?}
 
 \begin{remark}
 	If $X$ is an affine scheme $X = \spec A$ over $K$, then this construction agrees with our adhoc definition from \cref{sec:berkovich_spaces}
@@ -85,13 +84,13 @@ This universal property is very useful, but it would be nice to have an more con
 		\spec A \an = \bigcup_{r= 1} ^{\infty} \mathcal{M} \left(\frac{K \left<r^{-1} T_1, \ldots, r^{-1} T_n \right>}{(f_1, \ldots, f_n)}\right)
 	.\] 
 	For general varieties one can consider an affine cover by finite type algebras and glue their analytification. 
-	For a more detailed exposition of this construction see \cite{berkovichSpectralTheoryAnalytic2012}. 
+	For a more detailed exposition of this construction see \cite[sec.\ 3.4]{berkovichSpectralTheoryAnalytic2012}. 
 \end{example}
 
 \begin{example}
 	[Berkovich Projective line]
-	We can construct the analytification of $\pro^{1}_K$ the same way we construct its spectrum. 
-Describe the analytification on an affine cover $K[T], K[T^{-1}]$ and glue the spaces $\mathcal{M} (K[T]), \mathcal{M} (K[T^{-1})$ along $\mathcal{M} (K[T, T^{-1}])$. 
+	We can construct the analytification of $\pro^{1}_K$ in the same way as one might construct the scheme $\pro^{1}_K$ by gluing together two copies of the affine line. 
+	So we first find analytifications on an affine cover $K[T], K[T^{-1}]$ and glue the spaces $\mathcal{M} (K[T]), \mathcal{M} (K[T^{-1})$ along $\mathcal{M} (K[T, T^{-1}])$. 
 Using the description in \cref{def:berkovich_analytification_explicit} we see that $\mathcal{M} (K[T, T^{-1}]) = \aff^{1, \text{an}}_K \setminus \{0\} $.
 See \cref{fig:berk_projective_line}. 
 \end{example}
@@ -99,7 +98,7 @@ See \cref{fig:berk_projective_line}.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{figures/projective_line}
-	\caption{The Berkovich projective constructed by gluing two copies of $\aff^{1, \text{an}}_K$}
+	\caption{The Berkovich projective line constructed by gluing two copies of $\aff^{1, \text{an}}_K$}
 	\label{fig:berk_projective_line}
 \end{figure}
 
@@ -167,6 +166,7 @@ Given a topologically finitely presented formal schemes $\mathfrak{X} $ we call 
 	\end{itemize}
 \end{definition}
 
+\begin{comment}
 Later we will extend the construction of the generic fibre to the larger class of \emph{special formal schemes}.
 These will be really useful for understanding the relation between formal models of curves and their Berkovich space. 
 \begin{definition}\label{def:special_r_algebra}
@@ -174,9 +174,9 @@ These will be really useful for understanding the relation between formal models
 		\frac{A\left<x_1, \ldots, x_n \right>[[y_1, \ldots, y_m]]}{(f_1, \ldots, f_\ell)}
 	.\] 
 \end{definition}
+\end{comment}
 
 
 
-\todo{say something about the reduction map}
 
 
