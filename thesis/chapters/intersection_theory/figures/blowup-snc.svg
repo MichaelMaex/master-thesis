@@ -12,11 +12,10 @@
 	.st4{fill:none;stroke:#020203;stroke-width:0.5;stroke-miterlimit:10;}
 	.st5{fill:none;stroke:#2F6BB3;stroke-miterlimit:10;}
 	.st6{fill:#2F6BB3;}
-	.st7{font-family:'MyriadPro-Regular';}
-	.st8{fill:#BF1D18;}
-	.st9{fill:none;stroke:#BF1D18;stroke-miterlimit:10;}
-	.st10{fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;}
-	.st11{fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:6.1138,6.1138;}
+	.st7{fill:#BF1D18;}
+	.st8{fill:none;stroke:#BF1D18;stroke-miterlimit:10;}
+	.st9{fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;}
+	.st10{fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:6.1138,6.1138;}
 </style>
 <sodipodi:namedview  bordercolor="#666666" borderopacity="1.0" id="base" inkscape:current-layer="layer1" inkscape:cx="284.27627" inkscape:cy="182.72055" inkscape:document-units="mm" inkscape:guide-bbox="true" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:window-height="995" inkscape:window-maximized="1" inkscape:window-width="2520" inkscape:window-x="20" inkscape:window-y="65" inkscape:zoom="0.99437388" pagecolor="#ffffff" showborder="true" showgrid="false" showguides="true" width="200mm">
 	<inkscape:grid  dotted="false" empspacing="4" id="grid815" spacingx="10" spacingy="10" type="xygrid" units="mm">
@@ -24,19 +23,19 @@
 </sodipodi:namedview>
 <g id="layer1" transform="translate(0,-177)" inkscape:groupmode="layer" inkscape:label="Layer 1">
 </g>
-<text transform="matrix(1 0 0 1 18.7984 27.2431)" class="st0 st1 st2">$\mathscr C’ = \bl_x \mathscr C$</text>
-<text transform="matrix(1 0 0 1 21.4411 71.6533)" class="st0 st1 st2">$\mathscr C’_\eta$</text>
-<text transform="matrix(1 0 0 1 84.0386 54.1705)" class="st0 st1 st2">$\mathscr C’_s$</text>
-<rect x="18.8" y="35.2" class="st3" width="123.3" height="146"/>
+<text transform="matrix(1 0 0 1 17.8281 12.4574)" class="st0 st1 st2">$\mathscr C’ = \bl_x \mathscr C$</text>
+<text transform="matrix(1 0 0 1 36.4041 40.3413)" class="st0 st1 st2">$\mathscr C’_\eta$</text>
+<text transform="matrix(1 0 0 1 85.8044 40.341)" class="st0 st1 st2">$\mathscr C’_s$</text>
+<rect x="18.8" y="20.7" class="st3" width="123.3" height="160.2"/>
 <path class="st4" d="M54.4,52.4C42,75.2,42.7,90.1,46.1,99.7c3.7,10.4,10.1,13.7,13.2,24.7c4.1,14.8-1.9,29.5-8,40.2"/>
 <line class="st4" x1="111.4" y1="124.6" x2="87.4" y2="165"/>
 <line class="st5" x1="106.6" y1="141.1" x2="106.6" y2="71"/>
 <line class="st4" x1="88.9" y1="57.1" x2="111.9" y2="85.8"/>
-<text transform="matrix(1 0 0 1 100.3925 152.1632)" class="st6 st7 st2">$\tilde F,n$</text>
-<text transform="matrix(1 0 0 1 185.5392 28.5925)" class="st0 st1 st2">$\mathscr C$</text>
-<text transform="matrix(1 0 0 1 188.1819 73.0028)" class="st0 st1 st2">$\mathscr C_\eta$</text>
-<text transform="matrix(1 0 0 1 248.4432 54.4086)" class="st0 st1 st2">$\mathscr C_s$</text>
-<rect x="185.5" y="36.6" class="st3" width="119.4" height="146"/>
+<text transform="matrix(1 0 0 1 111.8999 147.1497)" class="st6 st1 st2">$\scriptstyle{\tilde F,n}$</text>
+<text transform="matrix(1 0 0 1 184.5689 13.8068)" class="st0 st1 st2">$\mathscr C$</text>
+<text transform="matrix(1 0 0 1 198.5013 40.3414)" class="st0 st1 st2">$\mathscr C_\eta$</text>
+<text transform="matrix(1 0 0 1 250.2042 40.3413)" class="st0 st1 st2">$\mathscr C_s$</text>
+<rect x="185.5" y="20.7" class="st3" width="119.4" height="161.7"/>
 <path class="st4" d="M221.2,53.7c-12.4,22.8-11.7,37.7-8.3,47.3c3.7,10.4,10.1,13.7,13.2,24.7c4.1,14.8-1.9,29.5-8,40.2"/>
 <line class="st4" x1="275.8" y1="124.8" x2="251.8" y2="165.2"/>
 <g>
@@ -45,43 +44,43 @@
 	</g>
 </g>
 <line class="st4" x1="253.3" y1="57.3" x2="276.3" y2="86.1"/>
-<circle class="st8" cx="271" cy="99.8" r="2.1"/>
-<text transform="matrix(1 0 0 1 275.1143 101.2968)" class="st8 st7 st2">$x$</text>
+<circle class="st7" cx="271" cy="99.8" r="2.1"/>
+<text transform="matrix(1 0 0 1 275.1143 101.2968)" class="st7 st1 st2">$x$</text>
 <g>
-	<text transform="matrix(1 0 0 1 273.0182 141.8941)" class="st6 st7 st2">$F,n$</text>
+	<text transform="matrix(1 0 0 1 273.0182 141.8941)" class="st6 st1 st2">$\scriptstyle{F,n}$</text>
 </g>
-<line class="st9" x1="77" y1="99.5" x2="116.3" y2="99.5"/>
-<text transform="matrix(1 0 0 1 70.2251 115.46)" class="st8 st7 st2">$E,n$</text>
+<line class="st8" x1="77" y1="99.5" x2="116.3" y2="99.5"/>
+<text transform="matrix(1 0 0 1 73.3405 112.9997)" class="st7 st1 st2">$\scriptstyle{E,n}$</text>
 <g>
 	<g>
-		<line class="st10" x1="149.8" y1="108.2" x2="170.8" y2="108.2"/>
+		<line class="st9" x1="149.8" y1="108.2" x2="170.8" y2="108.2"/>
 		<g>
 			<path d="M176.8,108.2c-2.8,1.1-6.4,2.9-8.5,4.8l1.7-4.8l-1.7-4.8C170.5,105.4,174,107.2,176.8,108.2z"/>
 		</g>
 	</g>
 </g>
-<text transform="matrix(1 0 0 1 369.0009 29.6302)" class="st0 st1 st2">$\mathscr C’ = \bl_x \mathscr C$</text>
-<text transform="matrix(1 0 0 1 371.6436 74.0404)" class="st0 st1 st2">$\mathscr C’_\eta$</text>
-<rect x="369" y="37.6" class="st3" width="123.3" height="146"/>
+<text transform="matrix(1 0 0 1 368.0306 14.8444)" class="st0 st1 st2">$\mathscr C’ = \bl_x \mathscr C$</text>
+<text transform="matrix(1 0 0 1 376.2044 40.341)" class="st0 st1 st2">$\mathscr C’_\eta$</text>
+<rect x="369" y="23.3" class="st3" width="123.3" height="160.2"/>
 <path class="st4" d="M404.6,54.8c-12.4,22.8-11.7,37.7-8.3,47.3c3.7,10.4,10.1,13.7,13.2,24.7c4.1,14.8-1.9,29.5-8,40.2"/>
 <line class="st4" x1="461.6" y1="126.9" x2="437.6" y2="167.4"/>
-<line class="st9" x1="456.8" y1="143.5" x2="456.8" y2="73.4"/>
+<line class="st8" x1="456.8" y1="143.5" x2="456.8" y2="73.4"/>
 <line class="st4" x1="439.1" y1="59.5" x2="462.1" y2="88.2"/>
 <g>
-	<text transform="matrix(1 0 0 1 440.4654 168.2602)" class="st0 st1 st2">$\tilde F,m$</text>
+	<text transform="matrix(1 0 0 1 443.0144 171.3756)" class="st0 st1 st2">$\scriptstyle{\tilde F,m}$</text>
 </g>
-<text transform="matrix(1 0 0 1 535.7417 30.9797)" class="st0 st1 st2">$\mathscr C$</text>
-<text transform="matrix(1 0 0 1 538.3844 75.3899)" class="st0 st1 st2">$\mathscr C_\eta$</text>
-<rect x="535.7" y="39" class="st3" width="119.4" height="146"/>
+<text transform="matrix(1 0 0 1 534.7714 16.1939)" class="st0 st1 st2">$\mathscr C$</text>
+<text transform="matrix(1 0 0 1 551.7996 40.3412)" class="st0 st1 st2">$\mathscr C_\eta$</text>
+<rect x="535.7" y="24.8" class="st3" width="119.4" height="160.2"/>
 <path class="st4" d="M571.4,56.1c-12.4,22.8-11.7,37.7-8.3,47.3c3.7,10.4,10.1,13.7,13.2,24.7c4.1,14.8-1.9,29.5-8,40.2"/>
 <line class="st4" x1="598.6" y1="56.8" x2="635.4" y2="137"/>
-<text transform="matrix(1 0 0 1 626.3192 109.9414)" class="st8 st7 st2">$x$</text>
+<text transform="matrix(1 0 0 1 626.3192 109.9414)" class="st7 st1 st2">$x$</text>
 <g>
-	<text transform="matrix(1 0 0 1 604.7459 165.8732)" class="st0 st1 st2">$F,m$</text>
+	<text transform="matrix(1 0 0 1 604.7459 165.8732)" class="st0 st1 st2">$\scriptstyle{F,m}$</text>
 </g>
 <g>
 	<g>
-		<line class="st10" x1="500" y1="110.6" x2="521" y2="110.6"/>
+		<line class="st9" x1="500" y1="110.6" x2="521" y2="110.6"/>
 		<g>
 			<path d="M527,110.6c-2.8,1.1-6.4,2.9-8.5,4.8l1.7-4.8l-1.7-4.8C520.7,107.8,524.2,109.6,527,110.6z"/>
 		</g>
@@ -89,16 +88,18 @@
 </g>
 <g>
 	<g>
-		<line class="st10" x1="342.1" y1="-11.7" x2="342.1" y2="-8.7"/>
-		<line class="st11" x1="342.1" y1="-2.6" x2="342.1" y2="226.7"/>
-		<line class="st10" x1="342.1" y1="229.7" x2="342.1" y2="232.7"/>
+		<line class="st9" x1="342.1" y1="-11.7" x2="342.1" y2="-8.7"/>
+		<line class="st10" x1="342.1" y1="-2.6" x2="342.1" y2="226.7"/>
+		<line class="st9" x1="342.1" y1="229.7" x2="342.1" y2="232.7"/>
 	</g>
 </g>
 <line class="st4" x1="598.6" y1="159.1" x2="631.6" y2="87.5"/>
-<circle class="st8" cx="622.2" cy="108.4" r="2.1"/>
-<text transform="matrix(1 0 0 1 604.7456 60.1403)" class="st1 st2">$G, m$</text>
-<text transform="matrix(1 0 0 1 420.1203 109.5682)" class="st8 st7 st2">$E, m+ n$</text>
+<circle class="st7" cx="622.2" cy="108.4" r="2.1"/>
+<text transform="matrix(1 0 0 1 604.7456 60.1403)" class="st1 st2">$\scriptstyle{G, m}$</text>
+<text transform="matrix(1 0 0 1 412.4733 109.5686)" class="st7 st1 st2">$\scriptstyle{E, m+ n}$</text>
 <g>
-	<text transform="matrix(1 0 0 1 444.211 65.8718)" class="st0 st1 st2">$\tilde G,n$</text>
+	<text transform="matrix(1 0 0 1 450.6001 62.776)" class="st0 st1 st2">$\scriptstyle{\tilde G,n}$</text>
 </g>
+<text transform="matrix(1 0 0 1 439.919 40.3414)" class="st0 st1 st2">$\mathscr C’_s$</text>
+<text transform="matrix(1 0 0 1 612.0044 40.3414)" class="st0 st1 st2">$\mathscr C_s$</text>
 </svg>

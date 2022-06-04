@@ -1,7 +1,6 @@
-\todo{ramble on why we needed properness and how to fix it}
 
 As seen in \cref{prop:intersection_pairing_proper_model} properness is need to have a good intersection theory on surfaces. 
-If not moving a divisor, to a linearly equivant one, might cause one of the intersection points to 
+If not moving a divisor, to a linearly equivalent one, might cause one of the intersection points to ``fall off the scheme'' as illustrated in \cref{ex:fail_intersection_pairing_linear}.
 This is a problem when we want to have a intersection theory on a model or more generally a fibered surface. 
 Let $\mathscr C  / R $ be a proper regular model. 
 The $\mathscr C$ is proper over $\spec R$, but $\spec R$ itself is not proper. 
@@ -14,18 +13,20 @@ So we might, and do run into the problem that the intersection pairing is not in
 	But $D, E'$ do not have any common points, hence $D \cdot E' = 0$. 
 \end{example}
 
-The problem here is that the two divisors span across the two divisors. They are what we will later define to be horizontal divors. Intuitevely they lay in the direction where the scheme is not proper. 
-However the special fibre, and every component in it is a proper divisor. 
-This suggets a fix.
-If we restrict our selves to the case where $D$ lies in the special fibre (is vertical), then we can compute $D\cdot E$ on the restriction do $D$ and once again obtain that the intersection pairing indenpent of linear equivalence. 
+The problem here is that the two divisors span across the two fibers.
+They are what we will later define to be horizontal divisor. 
+Intuitively they lay in the direction where the scheme is not proper. 
+However the special fiber, and every component in it is a proper divisor. 
+This suggests a fix.
+If we restrict our selves to the case where $D$ lies in the special fiber (is vertical), then we can compute $D\cdot E$ on the restriction to $D$ and once again obtain that the intersection pairing independent of linear equivalence. 
 
 \begin{definition}\label{def:vertical_divisor}
-	Let $\mathscr{C}$ a $2$-dimensional, regular, integral scheme proper and flat over $R$.  (i.e.\ a proper regular model of a curve). 
-	Then $\divisor(\mathscr{C})_s$ is the set of divisors that are supported in the special fibre. 
+	Let $\mathscr{C}$ a $2$-dimensional, regular, integral scheme proper and flat over $R$.  (i.e.\ a proper regular model of some curve). 
+	Then $\divisor(\mathscr{C})_s$ is the set of divisors that are supported in the special fiber. 
 	Such a divisor is called a \emph{vertical divisor}.
 \end{definition}
 \begin{definition}\label{def:horizontal_divisor}
-	A divisor on $\mathscr{C} $ is \emph{horizontal} if it is the schemeatic closure of a divisor in the on the generic fibre in $\mathscr C$. 
+	A divisor on $\mathscr{C} $ is \emph{horizontal} if it is the schematic closure of a divisor on the generic fiber in $\mathscr C$. 
 \end{definition}
 \begin{lemma}\label{lem:decomponsition_horizontal_vertical}
 	Any divisor $D$ on $\mathscr{C}$ can be uniquely decomposed in a horizontal and vertical part $D =  D_\text{vert}  + D_\text{hor}$. 
@@ -35,34 +36,33 @@ If we restrict our selves to the case where $D$ lies in the special fibre (is ve
 	It is sufficient to prove that every prime divisor $D$ is either vertical or horizontal.
 	Suppose that $D$ is not vertical. 
 	Then by \cite[prop. 8.3.4]{liuAlgebraicGeometryArithmetic2002} $D = \overline{\{x\} }$ for some point $x \in \mathscr{C} _\eta$.
-	\todo{should I write the proof out here, or is the citation enough?}
 \end{proof}
 
 \begin{definition}
-	Let $\mathscr C$ a $2$-dimensional, regular, integral scheme proper and flat over $R$.  (i.e.\ a proper regular model of a curve). 
+	Let $\mathscr C$ a $2$-dimensional, regular, integral scheme proper and flat over $R$.  (i.e.\ a proper regular model of some curve). 
 	Then we define a map
 	\begin{align*}
 		i: \divisor(\mathscr C) \times \divisor_s(\mathscr C) &\longrightarrow \Z \\
-		(D, E) &\longmapsto \sum_{1 \le i \le r} n_i \deg \mathcal O_X(D)|_{\Gamma_i}
+		(D, E) &\longmapsto \sum_{1 \le i \le r} n_i \deg \mathcal O_X(D)|_{F_i}
 	,\end{align*}
-	where $E = \sum_{i = 1}^{r} n_i \Gamma_i$ is the decomposition of $E$ in prime divisors. 
+	where $E = \sum_{i = 1}^{r} n_i F_i$ is the decomposition of $E$ in prime divisors. 
 \end{definition}
 	
 
 \begin{theorem}\label{thm:defining_properties_intersection_pairing}
 	The map $i: \divisor(\mathscr C) \times \divisor_s(\mathscr C) \rightarrow \Z $ defined above is the unique bilinear map satisfying
 	\begin{enumerate}
-		\item If $D \in \divisor(\mathscr{C} )$ and $E \in \divisor_s(X)$ are divisors with no common compononents then  \[
+		\item If $D \in \divisor(\mathscr{C} )$ and $E \in \divisor_s(X)$ are divisors with no common components then  \[
 				(D\cdot E) = \sum_{x \in \mathscr{C}_\text{cl} }^{} i_x(D, E)[k(x):k]
 			.\] 
-		\item The restiction of the pairing to $\divisor _s (X) \times  \divisor_s(X)$ is symmetric.
+		\item The restriction of the pairing to $\divisor _s (X) \times  \divisor_s(X)$ is symmetric.
 		\item If $D, D' \in \divisor (\mathscr C)$ and $D \sim D'$ then $D\cdot E = D' \cdot E$. 
 		\item If $0 < E \le X_s$ then $D \cdot E = \deg \mathcal{O}_X(D) |_E$. 
 	\end{enumerate}
 \end{theorem}
 \begin{proof}
 	Uniqueness follows from the bilinearity and property 4.
-	So it suffices to show that $i$ satsifies the properties. 
+	So it suffices to show that $i$ satisfies the properties. 
 	\begin{enumerate}
 		\item $i$ is bilinear and so is $i_x$. 
 			So we may assume that $E, D$ are different effective prime divisors.
@@ -77,64 +77,70 @@ If we restrict our selves to the case where $D$ lies in the special fibre (is ve
 			\[
 				D \cdot E = \deg \mathcal{O}_X(D)|_E = \deg \mathcal{O}_X(D') |_E = D' \cdot E
 			.\] 
-		\item \todo{I don't understand this proof}
+		\item Let $E = \sum_{i = 1}^{r} n_i F_i$ and $\xi_i$ be the generic point of $F_i$. 
+			By \cite[prop.\ 7.5.7]{liuAlgebraicGeometryArithmetic2002} we find \[
+				\deg \mathcal{O}_{X}(D)|_E = \sum_{i = 1}^{r} \length \mathcal{O}_{E, \xi_i} \deg(\mathcal{O}_X(D)|_{F_i}) = \sum_{i = 1}^{r} n_i \deg(\mathcal{O}_X(D)|_{F_i}) = D \cdot E
+		.\] 
 	\end{enumerate}
 \end{proof}
 
 \begin{proposition}
 	Let $\mathscr C$ over $R$ as before. 
-	For any $E \in \divisor_s$ we have $E\cdot \mathscr C_s = 0$ where we consider $\mathscr C_s$ as a divisor on $\mathscr C$. 
+	For any $F \in \divisor_s$ we have $F\cdot \mathscr C_s = 0$ where we consider $\mathscr C_s$ as a divisor on $\mathscr C$. 
 \end{proposition}
 \begin{proof}
 	Note that $\mathscr C_s$ is principal as it is equal to $(\pi)$. 
 	Hence $\mathscr C_s \sim 0$ and by \cref{thm:defining_properties_intersection_pairing} part 2, 3 we find \[
-	E\cdot C_s = C_s \cdot E = 0 \cdot E = 0
+	F\cdot \mathscr C_s = \mathscr C_s \cdot F = 0 \cdot F = 0
 	.\] 
 \end{proof}
 This seems like a very minor proposition, but in practice it is very useful as it gives an easy way to compute self intersections. 
 \begin{corollary}
 	Let $\mathscr C$ as before. 
-	Let $\mathscr C_s = \sum_{i =1}^{r} n_i \Gamma_i$ be the decomposition into prime divisors. 
+	Let $\mathscr C_s = \sum_{i =1}^{r} n_i F_i$ be the decomposition into prime divisors. 
 	Then for any $i$ we find \[
-		\Gamma^2_i := \Gamma -\frac{1}{n_i} \sum_{j \ne i} \Gamma_i \cdot \Gamma_j
+		F^2_i := -\frac{1}{n_i} \sum_{j \ne i} F_i \cdot F_j
 	.\] 
 \end{corollary}
 \begin{proof}
 	By the previous proposition we have \[
-	 0 = \Gamma_i \cdot \mathscr C_s = \sum_{j = 1}^{r} n_i \Gamma_i \cdot \Gamma_j
+	 0 = F_i \cdot \mathscr C_s = \sum_{j = 1}^{r} n_i F_i \cdot F_j
 	.\] 
-	Solving this equation to $\Gamma_i\cdot \Gamma_i$ yields the desired result. 
+	Solving this equation to $F_j \cdot F_i$ yields the desired result. 
 \end{proof}
 
 \begin{proposition}\label{prop:intersection_horizontal_point_degree}
 	Let $x \in \mathscr C_\eta$ a closed point. 
 	Then \[
-		\overline{\{x\} }\cdot \mathscr C_s = [K(P): K]
+		\overline{\{x\} }\cdot \mathscr C_s = [\kappa(x): K]
 	,\] 
 	where $\overline{\{x\} }$ is the Zariski closure of $\{x\} $ in $\mathscr C$ with the reduced structure. 
-	\todo{what the hell is $K(P)$?}
 \end{proposition}
 \begin{proof}
 	See \cite[prop.\ 9.1.30]{liuAlgebraicGeometryArithmetic2002}
 \end{proof}
 
 
-\begin{corollary}
+\begin{corollary}\label{cor:closure_K_rational_point}
 	Let $x \in \mathscr C_\eta$ be a $K$-rational point and $D = \overline{\{P\} } $. 
 	Then $D$ intersects $\mathscr C_s$ in a single point $p$, which is smooth in $\mathscr C_s$. 
 	Thus $p$ lies on a unique irreducible component of $X_s$ which is of multiplicity $1$. 
 \end{corollary}
 \begin{proof}
 	By \cref{prop:intersection_horizontal_point_degree} we obtain that \[
-	\sum_{i = 1}^{r}  n_i D\cdot \Gamma_i = D \cdot X_s = 1
+	\sum_{i = 1}^{r}  n_i D\cdot F_i = D \cdot X_s = 1
 	,\] 
-	where $\mathscr C_s = \sum_{i =1}^{r} n_i \Gamma_i$ is the decomposition in irreducible components. 
-	So can be atmost one $i$ such that $D\cdot \Gamma_i \ne  0$ and $n_i = 1$. 
+	where $\mathscr C_s = \sum_{i =1}^{r} n_i F_i$ is the decomposition in irreducible components. 
+	So can be at most one $i$ such that $D\cdot F_i \ne  0$ and $n_i = 1$. 
 \end{proof}
 
-Let $\omega_{\mathscr C / R} $ be the cannonical bundle of $\mathscr C$ (relative to $\spec R$).
+\begin{remark}
+	The point intersection point $\{x\}  \cap \mathscr C_s$ is $\red_{\mathscr C}(x)$ with the reduction map from \cref{sec:the_reduction_map_models}. 
+\end{remark}
+
+Let $\omega_{\mathscr C / R} $ be the canonical bundle of $\mathscr C$ (relative to $\spec R$).
 We now turn to the question how we should compute $K_{\mathscr C / R} \cdot E$ where  $K_{\mathscr C / R}$ is a representative of $\omega_{\mathscr C / R}$ and $E \in \divisor_s \mathscr C$. 
-Note that the result does not depend on the choice of $K_{\mathscr C / R}$ as any two choices are linearly independent. 
+Note that the result does not depend on the choice of $K_{\mathscr C / R}$ as any two choices are linearly equivalent. 
 
 \begin{proposition}
 	Let $\mathscr C$ be as above. 
@@ -146,7 +152,7 @@ Note that the result does not depend on the choice of $K_{\mathscr C / R}$ as an
 	From \cref{thm:defining_properties_intersection_pairing} we see that \[
 		K_{\mathscr C / R} = \deg \omega_{\mathscr C / R}|_{\mathscr C_s} = \deg \omega _{\mathscr C_s / k}
 	.\] 
-	The last equality is holds because the cannonical bundle pulls back under basechange. 
+	The last equality is holds because the canonical bundle pulls back under basechange. 
 	We continue the computation \[
 		\deg \omega_{\mathscr C_s / k} = - 2\chi (\mathcal{O}_{\mathscr C_s}) = -2 \chi (\mathcal{O}_{\mathscr C_\eta}) = 2p_a(\mathscr C_\eta) - 2
 	.\] 
@@ -159,19 +165,18 @@ Note that the result does not depend on the choice of $K_{\mathscr C / R}$ as an
 	.\] 
 \end{theorem}
 \begin{proof}
-	\todo{check this proof}
-	The first equality follows from taking the determinant of the second fundamental SES  \[
-		0 \to \mathcal{O}(-E)|_E \to \Omega_{\mathscr C / R}|_E \to \Omega_{E / k}
-	.\] 
+	It is well known for line bundles that \[
+		\omega_{E / R} \simeq \omega_{E / \mathscr C} \otimes \omega_{\mathscr C / R}|_{E} = \mathcal{O}_{\mathscr c}(E)|_E \otimes \omega_{\mathscr C / R}|_E
+	.\]
+	Similarly we have that $\omega_{E / R} \simeq \omega_{E / k} \otimes  f^*\omega_{k / R}= \omega_{E / k}$, where $f: E \to \spec k$. 
+	Putting these two together proves the first equality.
 	To show the second equality, note that \[
 		p_a(E) = 1 - \chi(\mathcal{O}_E) = 1  + \frac{\deg \omega_{E / k}}{2} = 1 + \frac{1}{2}\left(E^2 + K_{\mathscr C / R} \cdot E\right)
 	\] 
 	where we used the first equality. 
 \end{proof}
 
-\todo[inline]{Should I cover section 9.2.1 of \cite{liuAlgebraicGeometryArithmetic2002} here?}
-
-For the final part of this thesis it will be very important to understand how given a map $f: \mathscr X \to \mathscr Y$ intersection numbers behave under pushforward and pullback of divisors. 
+For the final part of this thesis it will be important to understand how given a map $f: \mathscr X \to \mathscr Y$ intersection numbers behave under pushforward and pullback of divisors. 
 
 \begin{theorem}[projection formula]
 	Let $f:\mathscr X \to \mathscr Y$ be a dominant morphism of 2-dimensional, regular, integral schemes, proper and flat over $R$. 
@@ -192,13 +197,12 @@ For the final part of this thesis it will be very important to understand how gi
 	\begin{enumerate}
 		\item Note that $C$ is necessarily vertical under this assumption. 
 			By linearity we may assume that $C$ is prime and thus $f(C)$ is a single point, $y$. 
-			Let $U$ be a neighboord of  $y$ on which $\mathcal{O}(D)$ is trivial. 
+			Let $U$ be a neighborhood of  $y$ on which $\mathcal{O}(D)$ is trivial. 
 			Then $f^*(\mathcal{O}(D))$ on $f^{-1}(U)$ is trivial as well. 
 			Hence $f^*(\mathcal{O}(D))|_E$ is trivial, from which the result follows.
 		\item By linearity we may assume that $C$ is a prime divisor.
 			If $f(C)$ is a point then by definition $f_*(C) = 0$. Then the equality follows from 1. 
 			For the other case see \cite[thm.\ 9.2.12]{liuAlgebraicGeometryArithmetic2002}. 
-			\todo{understand this proof}
 		\item 
 			We know that $f_* f^* F = [K(\mathscr X): K(\mathscr Y)] F$. Hence  \[
 				f^* F \cdot  f^* D = f_* f^* F \cdot D = [K(\mathscr X) : K(\mathscr Y)] F \cdot  D

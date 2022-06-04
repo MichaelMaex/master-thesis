@@ -1,10 +1,10 @@
-In this section contains results about how models and the intersection theory on them change after blowing up in a closed point of the special fibre.  
+In this section contains results about how models and the intersection pairing on them change after blowing up in a closed point of the special fiber.  
 
 \begin{proposition}\label{prop:E_blowup_properties}
 	Let $\mathscr C$ be a proper regular model of a curve $C$ and $x \in \mathscr C_s$ a closed point. 
 	Let $p: \mathscr C' = \bl_x \mathscr C$ and $E$ be the exceptional divisor of the blowup. 
 	Then $E \simeq \pro^{1}_{\kappa(x)}$ and \[
-		\mathcal{O}(E)|_E = \mathcal{O}_E(-1), \quad E^2 = -[\kappa x: k]
+		\mathcal{O}(E)|_E = \mathcal{O}_E(-1), \quad E^2 = -[\kappa (x): k]
 	.\] 
 \end{proposition}
 \begin{proof}
@@ -15,34 +15,32 @@ In this section contains results about how models and the intersection theory on
 	.\] 
 \end{proof}
 
-These properties also precisely characterise the a blowup, i.e.\ any irreducible components satisfying the conclusion of \cref{prop:E_blowup_properties}, can be ``blown-down'' to a regular model.
+These properties also precisely characterize a blowup, i.e.\ any irreducible components satisfying the conclusion of \cref{prop:E_blowup_properties}, can be ``blown-down'' to a regular model.
 This is made precise in Castelnuovo's criterion. 
 
 \begin{theorem}
 	[Castelnuovo's criterion]
 	Let $\mathscr C$ be a proper regular model of a curve $C$.
 	Let $E$ be a irreducible component of $\mathscr C_s$ and $k' = H^{0}(E, \mathcal{O}_E)$. 
-	There exists a regular projective model $\mathscr C'$ and and a closed point $x \in \mathscr C'$ such that $\mathscr C = \bl_x \mathscr C'$ with exceptional divisor $E$ if and only if $E \simeq \pro_{k'}^{1}$ and $E^2 = -[k': k]$. 
+	There exists a regular projective model $\mathscr C'$ and a closed point $x \in \mathscr C'$ such that $\mathscr C = \bl_x \mathscr C'$ with exceptional divisor $E$ if and only if $E \simeq \pro_{k'}^{1}$ and $E^2 = -[k': k]$. 
 \end{theorem}
 \begin{proof}
 	One direction is exactly \cref{prop:E_blowup_properties}. 
-	The other direction is long and technical so I refer the reader to \cite[sec.\ 9.3.1]{liuAlgebraicGeometryArithmetic2002}.
+	The other direction is long and technical so we refer the reader to \cite[sec.\ 9.3.1]{liuAlgebraicGeometryArithmetic2002}.
 \end{proof}
 
-\todo[inline]{Castelnuovo}
 \subsection{Strict normal crossings models} \label{sec:strict_normal_crossings_models}
-\todo{snc-models}
 
 \begin{definition}
-	Let $D$ be an effective cartier divisor on a regular Noetherian scheme $X$. 	Let $x \in X$ be a closed point. 
+	Let $D$ be an effective Cartier divisor on a regular Noetherian scheme $X$. 	Let $x \in X$ be a closed point. 
 	We say that $D$ has \emph{normal crossings at $x$ } if there are $f_1, \ldots, f_n$ with $n = \dim \mathcal{O}_{X, x}$ such that $\mathfrak{m} _x \mathcal{O}_{X, x} = (f_1, \ldots, f_n)$ and $\mathcal{O}(-D)_{x} = (f_1^{r_1}, \ldots, f_m^{r_m})$ for some $0 \le m \le n$ and $r_i \in \Z_{> 0}$. 
 
 	We say $D$ has \emph{normal crossings} or $D$ is a \emph{normal crossings divisor} if $D$ has normal crossings at every closed point  $x \in X$. 
 
-	Morever  $D$ has \emph{strict normal crossings} or $D$ is a \emph{strict normal crossings divisor} if $D$ has normal crossings and every irreducible component of $D$ is regular. 
+	Moreover  $D$ has \emph{strict normal crossings} or $D$ is a \emph{strict normal crossings divisor} if $D$ has normal crossings and every irreducible component of $D$ is regular. 
 \end{definition}
-Normal crossings and strict normal crossings often get abreviated as \emph{nc} or \emph{snc} respectively.
-You should think of a normal crossings at $x$ as all components of $D$ meeting transversally at $x$. 
+Normal crossings and strict normal crossings often get abbreviated as \emph{nc} or \emph{snc} respectively.
+You should think of a normal crossings at $x$ as all components of $D$ meeting transversely at $x$. 
 Strictness ensures that there are no ``hidden crossings'' which exist étale locally on a component, e.g.\ a node (see \cref{fig:normal_crossings_divisors}).
 
 \begin{figure}[ht]
@@ -55,12 +53,11 @@ Strictness ensures that there are no ``hidden crossings'' which exist étale loc
 	A \emph{(strict) normal crossings model} or \emph{(scn-model) nc-model}  of $X$ is a regular model $\mathscr X$ such that $\mathscr X_s = V(\pi) \subset  \mathscr X$ is a (strict) normal crossings divisor. 
 \end{definition}
 
-Strict normal crossings models are in some sense the least singular models, as they are regular, normal, and the intersection points are as wel behaved as we can hope for. 
-The only step up would be semi-stable models (which we will introduce in \ldots \todo{link forward}) where we require that every component of the special fibre occurs with multiplicity 1. 
+Strict normal crossings models are in some sense the least singular models, as they are regular, normal, and the intersection points are as well behaved as we can hope for. 
+The only step up would be semistable models (which we will introduce in \cref{sec:semistable_curves_and_models}) where we require that the special fiber is reduced, i.e.\ every component of the special fiber occurs with multiplicity 1. 
 However these don't exist for every curve, whereas snc-models do.
-\todo{are semi-stable models even snc? I think they can always be blown up to be, but i need to check this.}
 
-We can recognize whether a model has normal crossings by looking at the intersections of irreducible components of the special fibre. 
+We can recognize whether a model has normal crossings by looking at the intersections of irreducible components of the special fiber. 
 
 \begin{proposition}
 	A proper, regular model $\mathscr C$ of $C$ has strict normal crossings if for every if and only if every non-smooth $x \in \mathscr C_s$, belongs to exactly two irreducible components $F, G$ of $\mathscr C_s$ and $i_x(F, G) = 1$.  
@@ -73,7 +70,7 @@ We can recognize whether a model has normal crossings by looking at the intersec
 	By the definition of normal crossings this means that  $\mathscr C_s$ is locally cut out by the ideal $(f_1^{n_i}\cdots f_r^{n_r})$ with $r \le 3$. Hence  $r = 2$. 
 	As by \cite[prop.\ 9.1.8.(b)]{liuAlgebraicGeometryArithmetic2002} we know that $i_x(F_1, F_2) = 1$. 
 
-	\rtl Let's first agrue that $\mathscr C_s$ is a normal crossings divisor and then argue that it is strict.
+	\rtl Let's first argue that $\mathscr C_s$ is a normal crossings divisor and then argue that it is strict.
 	Let $x \in \mathscr C_s$ a point. If $x$ is smooth in $\mathscr C_s$ then it belongs a single irreducible component, which is regular at $x$. 
 	Hence $\mathscr C_s$ is nc at $s$. 
 	Suppose  $x$ is not smooth. Then it lays on the intersection of exactly two components $F, G$ with $i_x(F, G) = 1$ and the result follows from \cite[prop.\ 9.1.8.(b)]{liuAlgebraicGeometryArithmetic2002}.
@@ -92,9 +89,18 @@ We can recognize whether a model has normal crossings by looking at the intersec
 	See \cite[sec.\ 9.2.4]{liuAlgebraicGeometryArithmetic2002} for more details.
 	That a minimal desingularisation exists is the content of \cite[prop.\ 9.3.32]{liuAlgebraicGeometryArithmetic2002}.
 \end{proof}
-Via the factorisation theorem we also see that this desingularisation can be obtained via finite sequence of blowups in closed points. 
+Via the factorization theorem we also see that this desingularisation can be obtained via finite sequence of blowups in closed points. 
+In \cref{fig:snc_model_curve_type_ii} we illustate this with the minimal regular model of an elliptic curve of reduction type II. 
+The reduction types of elliptic curves will be discussed in \cref{chap:kodaira_neron_classification_of_elliptic_curves}.
 
-\todo[inline]{add example}
+\begin{figure}[ht]
+    \centering
+    \incfig{snc-model-curve-type-ii}
+    \caption{Blowing up points in the special fiber of the minimal regular model of an elliptic curve of type II, until as snc-model is obtained. 
+    For every step the blue point is the point where we blow up, and the red component is the exceptional divisor. }
+    \label{fig:snc_model_curve_type_ii}
+\end{figure}
+
 
 \begin{lemma}\label{lem:blowup_snc}
 	Let $\mathscr C$ be a snc-model of a curve $C$, and $x$ a closed point in $\mathscr C_s$. 
@@ -102,26 +108,25 @@ Via the factorisation theorem we also see that this desingularisation can be obt
 	Moreover 
 	\begin{enumerate}
 		\item if $x$ is a smooth point on $\mathscr C_s$ laying on the irreducible component $F$ with multiplicity $n$, then $E$ is a rational curve of multiplicity $n$ intersecting $\tilde F$ in one point. 
-		\item If $x$ is an intersection point laying on two irreducible components $F, G$ with multiplicty  $m, n$ respectively, then $E$ is a rational curve of multiplicity $n + m$ intesecting $\tilde F, \tilde G$ in 1 point each. 
+		\item If $x$ is an intersection point laying on two irreducible components $F, G$ with multiplicity  $m, n$ respectively, then $E$ is a rational curve of multiplicity $n + m$ intersecting $\tilde F, \tilde G$ in 1 point each. 
 	\end{enumerate}
 	Here $\tilde F$ denotes the strict transform of $F$. 
 	See \cref{fig:blowup-snc}
 \end{lemma}
-\todo{this lemma might only be true if $k$ is algebraiclly closed. Maybe it can be salvaged tho}
+\begin{proof}
+	As the components are smooth we have $\mu_x(F_i) $ is for every closed point $x \in \mathscr C_s$ and irreducible component  $F$ containing $x$. 
+	Then the result is exactly \cite[exercise 9.2.9(a)]{liuAlgebraicGeometryArithmetic2002}.
+\end{proof}
 \begin{figure}[ht]
     \centering
     \incfig{blowup-snc}
     \caption{Blowing up snc-models in a smooth point (left) and intersection point (right)}
     \label{fig:blowup-snc}
 \end{figure}
-\begin{proof}
-	\todo{proof}
-\end{proof}
-\todo{Do we need extra stuff in this sections?}
 
 
 
-\todo[inline]{minimal regular model}
+
 \begin{theorem}\label{thm:minimal_snc_model}
 	Let $C$ be a curve with  $g(C) > 0$, then $C$ has a minimal snc-model $\mathscr C_\text{min} $, i.e.\ any snc-model $\mathscr C$ dominates $\mathscr C_\text{min} $. 
 \end{theorem}

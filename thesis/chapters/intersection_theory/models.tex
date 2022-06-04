@@ -8,9 +8,8 @@
 	We say that $\mathscr X_\eta$ is the \emph{generic fibre of $\mathscr X$} and that $\mathscr X_s$ is the \emph{special fibre of $X$}. 
 \end{definition}
 \begin{definition}
-	Let $X$ be a finite type scheme over $K$.  
+	Let $X$ be a variety over $K$.  
 	A model of $X$ is a flat, separated, finite type $R$-scheme, $\mathscr X$ together with an isomorphism $i: \mathscr X_\eta \simeq X$.
-	\todo{check the details of this definition}
 \end{definition}
 Alternatively we may consider $i$ as open immersion $X\into \mathscr X$. 
 We will almost always omit specifying the isomorphism, as it is usually clear from the context. 
@@ -20,11 +19,11 @@ Depending on the context we will almost always work with specific types models l
 	\begin{enumerate}
 		\item Let $\pro^{1}_K = \proj(K[x, y])$ be the projective line. 
 			Then $\mathscr P = \proj\left(\frac{R[x, y, z]}{(x\cdot z - \pi y^2)}\right)$ is a model of $\pro^{1}_K$. 
-			The special fibre is $\proj\left( \frac{k[x, y, z]}{(xz)} \right) $ which consists of two irreducible components, each isomorphic to $\pro^{1}_k$.  
-		\item Let $E$ be the elliptic curve given by the Weierstrass equation \[
-				y^2 = x (x +1)(x-\pi)
+			The special fiber is $\proj\left( \frac{k[x, y, z]}{(xz)} \right) $ which consists of two irreducible components, each isomorphic to $\pro^{1}_k$.  
+		\item Suppose $\ch k \ne 2$. Let $E$ be the elliptic curve given by the Weierstrass equation \[
+				y^2 = x (x -1)(x-\pi)
 		.\] 
-		Then $\mathscr E = \proj \left( \frac{K[x, y, z]}{(zy^2 - x(x+z)(x-\pi z)} \right) $ is a model of $E$ and the special fibre is given by the Weierstrass equation $y^2 = x^2 (x+1)$, hence it is a node. 
+		Then $\mathscr E = \proj \left( \frac{R[x, y, z]}{(zy^2 - x(x0z)(x-\pi z)} \right) $ is a model of $E$ and the special fiber is given by the Weierstrass equation $y^2 = x^2 (x-1)$, hence it is a node. 
 	\end{enumerate}
 	See \cref{fig:first_examples_of_models}.
 \end{example}
@@ -35,26 +34,25 @@ Depending on the context we will almost always work with specific types models l
     \caption{The models from \cref{ex:first_models}.}
     \label{fig:first_examples_of_models}
 \end{figure}
-\todo{figure out why this is rendering incorrectly}
 
 \begin{definition}
 	Let $i_1: X \into \mathscr X_1$, $i_2: X \into \mathscr X_2$ be two models of $X$. 
 	Then a morphism of models of $X$ is a morphism of $R$-schemes $f: \mathscr X_1 \to \mathscr X_2$ such that \[
 	\begin{tikzcd}
 		\mathscr X_1 \ar{rr}{f} & & \mathscr X_2 \\
-					& X \ar[hookrightarrow]{ul}{i_1}  \ar[hookrightarrow]{ur}{i_2}
+					& X \ar[hookrightarrow]{ul}{i_1}  \ar[hookrightarrow]{ur}[']{i_2}
 	\end{tikzcd}
 	\] 
 	commutes.
 \end{definition}
 
 \begin{example}\label{ex:morphism_models_1}
-	The most common way to construct morphisms of models is by blowing up closed subschemes in the special fibre. 
+	The most common way to construct morphisms of models is by blowing up closed subschemes in the special fiber. 
 	Let $E, \mathscr E$ be the elliptic curve and model from \cref{ex:first_models}. 
 	Suppose that $\ch k \ne 2$. 
 	Let $\xi$ be the singular point of $\mathscr E _s$, with coordinates $(x, y,\pi) = (0,0,0)$. 
 	Then  $\mathscr E' := \bl_\xi \mathscr E $ is another model of $E$ and the morphism $p:\mathscr E' \to \mathscr E $ is a morphism of models. 
-	In this case one can show that the exceptional divisor of $\mathscr E' \to \mathscr E$ is a rational curve of multiplicity $1$ which intersects the strict tranform of $\mathscr E _s$ in two different points. 
+	In this case one can show that the exceptional divisor of $\mathscr E' \to \mathscr E$ is a rational curve of multiplicity $1$ which intersects the strict transform of $\mathscr E _s$ in two different points. 
 	See \cref{fig:morphism_models_blowup_1}.
 \end{example}
 
@@ -65,7 +63,7 @@ Depending on the context we will almost always work with specific types models l
     \label{fig:morphism_models_blowup_1}
 \end{figure}
 
-Morphisms of models are birational morphisms, as they are isomorphisms on the generic fibre. So if $\mathscr C_1, \mathscr C_2$ are models of $C$, then a morphisms of models $f: \mathscr C_1 \to \mathscr C_2$ is necessarily unique, if it exists. 
+Morphisms of models are birational morphisms, as they are isomorphisms on the generic fiber. So if $\mathscr C_1, \mathscr C_2$ are models of $C$, then a morphisms of models $f: \mathscr C_1 \to \mathscr C_2$ is necessarily unique, if it exists. 
 
 \begin{definition}
 	Let $\mathscr C_1, \mathscr C_2$ be models of $C$. 
@@ -86,16 +84,61 @@ Domination induces a partial order on the models of $\mathscr C$.
 	If $\mathscr C_1$ dominates $\mathscr C_2$ then we say $\mathscr C_2 \le \mathscr C_1$
 \end{definition}
 
-\todo[inline]{reduction map}
 
+
+
+
+\subsection{Weil versus Cartier divisors} \label{sec:weil_versus_cartier_divisors}
+
+Recall the following proposition. 
+\begin{proposition}\cref{prop:weil_vs_cartier}
+	Let $X$ be a regular, integral, Noetherian scheme. Then the groups of Weil and Cartier divisors are isomorphic, and so are the Weil and Cartier divisor classgroups. 
+\end{proposition}
+\begin{proof}
+	This is \cite[prop.\ 7.2.16]{liuAlgebraicGeometryArithmetic2002}. 
+\end{proof}
+
+In the next sections we will almost always work with regular models of a curve over $K$, which satisfy the assumptions of \cref{prop:weil_vs_cartier}. So we may freely move between Cartier and Weil divisors. 
+
+\subsection{The reduction map} \label{sec:the_reduction_map_models}
 One can think about models as a way of taking looking at varieties modulo $\pi$. 
+This is made precise by the reduction map. 
+Let $ X\subset \pro^{n}_R$ is some projective variety variety over $R$ and $x \in X$ be a $K$-valued points. 
+We may choose coordinate $[a_0:\ldots:a_n] = x$ such that all $a_0, \ldots, a_n \in R$ and at least one of them is not zero mod $\pi$.  
+Then $[\overline{a_0}: \ldots :\overline{a_n}]$ defines a point in $X_s \subset  \pro^{n}_k$, which we call the $\tilde x$ or the reduction of $x$.  
+The idea of reduction map is to give a more scheme theoretic version of this map. 
 
+\begin{definition}\label{def:reduction_map_R_scheme}
+	Let $X$ be a variety proper over $R$. 
+	Then there is a map 
+	\begin{align*}
+		\red_X: X_{\eta}(K) &\longrightarrow X_{s}(k) \\
+		x &\longmapsto \tilde x
+	,\end{align*}
+	which is defined as follows. 
+	Let $x: \spec K \to X_\eta$ be $K$-rational point.
+	Then by the valuative criterion of properness there is a unique map \[
+	\begin{tikzcd}
+		K \rar{x} \dar & X \dar \\
+		R \rar \ar[dashed]{ur}{x'} & R
+	\end{tikzcd}
+	\] 
+	$x': R \to X$. 
+	The base change to $k$ gives a $k$-rational point on $X_s$, $\tilde x = x' \otimes_R k: k \to X_s $.
+\end{definition}
+\begin{remark}
+If $K$ is a complete field, and $x \in X_{\eta, \text{cl}}$ be any closed point in the special fiber.  Then by \cref{thm:norm_finite_field_ext} $\kappa(x)$ is valued field. 
+So by the same procedure as in \cref{def:reduction_map_R_scheme} we may turn the map $\spec: \kappa(x) \to X_{\eta}$ to a map $\widetilde{\kappa(x)} \to X_s$ and extend the reduction map to all closed points \[
+\red_X: X_{\eta, \text{cl}} \to X_{s, \text{cl}}
+.\] 
+In this case one can also show that $\red_X$ is surjective. 
+\end{remark}
 
-\todo{something on domination and contraction}
+So for any proper model $\mathscr X$ of a proper $K$-variety $X$ (e.g.\ a proper model of a curve) there is a reduction map \[
+	\red_{\mathscr X}: \mathscr X(K) \to \mathscr X(k)
+.\] 
 
-\todo{regular models}
-\todo{minimal models}
-\todo{what types and properties of morphisms do i need to introduce?}
-
-
-
+\begin{remark}
+	This reduction map is just a function between sets. 
+	It is \emph{not} a morphism of schemes. 
+\end{remark}

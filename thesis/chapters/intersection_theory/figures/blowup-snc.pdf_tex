@@ -53,32 +53,34 @@
   \begin{picture}(1,0.29795678)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0.02763252,0.25791107){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C’ = \bl_x \mathscr C$\end{tabular}}}}%
-    \put(0.03151712,0.19263075){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C’_\eta$\end{tabular}}}}%
-    \put(0.12353168,0.21832941){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C’_s$\end{tabular}}}}%
+    \put(0.02620623,0.27964516){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C’ = \bl_x \mathscr C$\end{tabular}}}}%
+    \put(0.05351183,0.2386575){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C’_\eta$\end{tabular}}}}%
+    \put(0.1261273,0.23865795){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C’_s$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{blowup-snc.pdf}}%
-    \put(0.14757092,0.07428605){\color[rgb]{0.18431373,0.41960784,0.70196078}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\tilde F,n$\end{tabular}}}}%
-    \put(0.27273144,0.25592753){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C$\end{tabular}}}}%
-    \put(0.27661605,0.19064707){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C_\eta$\end{tabular}}}}%
-    \put(0.36519653,0.21797942){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C_s$\end{tabular}}}}%
+    \put(0.16448611,0.08165559){\color[rgb]{0.18431373,0.41960784,0.70196078}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{\tilde F,n}$\end{tabular}}}}%
+    \put(0.27130516,0.27766162){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C$\end{tabular}}}}%
+    \put(0.29178495,0.23865736){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C_\eta$\end{tabular}}}}%
+    \put(0.3677851,0.2386575){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C_s$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{blowup-snc.pdf}}%
     \put(0.40440144,0.14905659){\color[rgb]{0.74901961,0.11372549,0.09411765}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$x$\end{tabular}}}}%
-    \put(0.4013203,0.08938101){\color[rgb]{0.18431373,0.41960784,0.70196078}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$F,n$\end{tabular}}}}%
+    \put(0.4013203,0.08938101){\color[rgb]{0.18431373,0.41960784,0.70196078}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{F,n}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{blowup-snc.pdf}}%
-    \put(0.10322666,0.12823754){\color[rgb]{0.74901961,0.11372549,0.09411765}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E,n$\end{tabular}}}}%
+    \put(0.10780612,0.13185404){\color[rgb]{0.74901961,0.11372549,0.09411765}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{E,n}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{blowup-snc.pdf}}%
-    \put(0.54240909,0.25440218){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C’ = \bl_x \mathscr C$\end{tabular}}}}%
-    \put(0.54629369,0.18912186){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C’_\eta$\end{tabular}}}}%
+    \put(0.5409828,0.27613641){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C’ = \bl_x \mathscr C$\end{tabular}}}}%
+    \put(0.5529978,0.23865795){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C’_\eta$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{blowup-snc.pdf}}%
-    \put(0.64745759,0.05062443){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\tilde F,m$\end{tabular}}}}%
-    \put(0.78750801,0.25241849){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C$\end{tabular}}}}%
-    \put(0.79139262,0.18713818){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C_\eta$\end{tabular}}}}%
+    \put(0.65120447,0.04604498){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{\tilde F,m}$\end{tabular}}}}%
+    \put(0.78608173,0.27415273){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C$\end{tabular}}}}%
+    \put(0.81111216,0.23865765){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C_\eta$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{blowup-snc.pdf}}%
     \put(0.92065148,0.13634955){\color[rgb]{0.74901961,0.11372549,0.09411765}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$x$\end{tabular}}}}%
-    \put(0.88894003,0.05413318){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$F,m$\end{tabular}}}}%
+    \put(0.88894003,0.05413318){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{F,m}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{blowup-snc.pdf}}%
-    \put(0.88893959,0.20955417){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$G, m$\end{tabular}}}}%
-    \put(0.61755152,0.13689813){\color[rgb]{0.74901961,0.11372549,0.09411765}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E, m+ n$\end{tabular}}}}%
-    \put(0.6529634,0.20112921){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\tilde G,n$\end{tabular}}}}%
+    \put(0.88893959,0.20955417){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{G, m}$\end{tabular}}}}%
+    \put(0.60631089,0.13689755){\color[rgb]{0.74901961,0.11372549,0.09411765}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{E, m+ n}$\end{tabular}}}}%
+    \put(0.66235499,0.20567985){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{\tilde G,n}$\end{tabular}}}}%
+    \put(0.64665442,0.23865736){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C’_s$\end{tabular}}}}%
+    \put(0.89960959,0.23865736){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr C_s$\end{tabular}}}}%
   \end{picture}%
 \endgroup%
