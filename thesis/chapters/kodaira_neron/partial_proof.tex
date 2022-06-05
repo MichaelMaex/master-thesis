@@ -1,0 +1,126 @@
+
+The proof of the classification is very repetitive as keeps using the same combinatorial techniques to determine all possible. 
+So we will only cover a part of the proof to get a feel of the combinatorics involved. 
+For a full proof, see \cite[sec.\ IV.8]{silvermanAdvancedTopicsArithmetic1994} or \cite[sec.\ 10.2.1]{liuAlgebraicGeometryArithmetic2002}.
+
+\medskip 
+We start with the usual decomposition of the special fiber as in \cref{sec:notation_and_conventions}  \[
+	\mathscr E_s = \sum_{i = 0}^{r} N_i F_i
+.\]  
+By point 1 of \cref{prop:irred_comp_of_prop_model} and reordering the fibers we may assume that $N_1 = 1$ and that $F_1$ contains the image of $0 \in E (K)$ under the reduction map. 
+From now on the proof uses a lot of case distinctions. 
+\subsection{$\mathscr E _s$ is irreducible, i.e. $r = 1$} \label{sec:C_s_is_irreducible,_i.e._r_=_1}
+We have $\mathscr E _s = N_1 F_1 = F_1$. Then by point 4 of \cref{prop:irred_comp_of_prop_model} we see that  $\mathscr E_s$ is a irreducible curve of genus one over $k$. 
+Then from general theory of curves of genus 1 we see that $\mathscr E _s$ is either smooth, has a cusp or has a node, which give type $\text{I}_0, \text{I}_1$ and $\text{II}$ respectively.  
+
+\begin{figure}[ht]
+    \centering
+    \incfig{type-i2-iii}
+    \caption{The special fibers of elliptic curves of type $\text{I}_0 \text{, I}_0$ and $\text{II}$,}
+    \label{fig:type-i2-iii}
+\end{figure}
+
+\bigskip
+In what follows we consider cases where $r \ge 2$. We will make frequent use the formula 
+\begin{equation}\label{eq:sum_intersections}
+	\sum_{1 \le j \le r, j \ne i}^{} N_j F_i \cdot F_j = 2 N_i
+\end{equation}
+The main clue is that all the terms in this sequence are non negative, which will really restrict the how large the $N_j$ 's and intersection numbers  $F_i \cdot  F_j$ can be.
+Recall that we also have that $N_1 = 1$ and that $\mathscr E _s$ is connected. We may relabel such that $F_2$ intersects $F_1$, i.e.\  $F_1 \cdot F_2 > 0$.  
+From now on the proof boils down to using combinatorics to find which cases are possible, similar to proofs of A, (B, C), D, E classifications once one has obtained the right symmetric bilinear form (the intersection pairing in our case).  
+
+
+
+\subsection{$\mathscr E _s$ has two irreducible components, i.e.\ $r  = 2$} \label{sec:C_s_has_two_irreducible_components}
+In this case we have $\mathscr E _s = F_1 + N_2F_2$. 
+Plugging this into \eqref{eq:sum_intersections} with $i = 1$ and  $i = 2$ gives us \[
+N_2 F_1 \cdot F_2 = 2, \qquad F_1 \cdot F_2 = 2 N_2
+.\] 
+From this we easily see that 
+ \[
+F_1 \cdot F_2 = 2, \qquad N_2 = 1
+.\] 
+So $F_1$ intersects $F_2$ twice. Either in two different points or in a single point. This gives Type  $\text{I}_2$ or Type $\text{III}$ respectively. 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{type-i-and-iii}
+    \caption{The special fibers of elliptic curves of type $\text{I}_2$ and $\mathrm{III}$}
+    \label{fig:type-i-and-iii}
+\end{figure}
+
+
+\subsection{$\mathscr E _s$ has more irreducible components, i.e.\ $r \ge 3$} \label{sec:S_s_has_more_irreducible_components}
+
+In this case we claim that curves intersect at most once, i.e. 
+\begin{claim}
+\[
+	F_i \cdot F_j \le 1 \text{ for all }  1 \le i, j \le r, i \ne j
+\]
+\end{claim}
+\begin{proof}
+	$\mathscr E _s$ is connected and has at least three irreducible components. 
+	So there is a third distinct component $F_k$ that intersects $F_i$ or $F_j$. Suppose without loss of generality that  $F_k \cdot F_i \ge 1$. 
+	Using \eqref{eq:sum_intersections} on both  $i, j$ yields \[
+	N_j F_i \cdot F_j < N_j F_i \cdot  F_k + N_k F_i \cdot  F_k \le 2N_i, \qquad N_i F_i \cdot F_j \le 2 N_j
+	.\] 
+	Multiplying both inequalities and canceling $N_i N_j$ from both sides yields $(F_i \cdot  F_j)^2 < 4$, from which we see that $F_i \cdot  F_j = 1$ or $F_i \cdot F_j = 0$. 
+\end{proof}
+
+Recall that we assume that $F_1$ intersects $F_2$. So $F_1 \cdot  F_2 = 1$. 
+Again using  \eqref{eq:sum_intersections} with $i = 1$ we see that \[
+N_2 = N_2 F_1 \cdot F_2 \le 2N_1 = 2
+.\] 
+So $N_2$ is either $1$ or $2$. We split again into two cases. 
+
+\subsubsection{Case $N_2 = 1$} 
+In this case we will find that $\mathscr E_s$ is of type $\text{I}_r$ or $\text{IV}$. This follows if we can show any component $F_j$ has multiplicity $N_j$ and intersects exactly two other components (i.e.\ the dual graph cannot split). 
+
+We already know that $F_1 \cdot F_2 = 1$ so $F_2$ intersects $F_1$ once. Using the same formula with $i = 2$ again gives us \[
+	\underbrace{N_1 F_1\cdot F_2}_{1} + \sum_{j = 3}^{r}  N_j F_j \cdot F_2 = 2
+.\] 
+Hence $F_2$ intersects exactly one new component (not $F_1$). We are free to reorder and call that component $F_3$. Then we also read that $N_3 = 1$.  
+
+Now we continue by induction. Suppose that for a string of components, $F_1, F_2, \ldots, F_m$ we have that all components have multiplicity $1$, i.e.\ $n_1 = \ldots = N_{m} = 1$ and that each inner component ($F_2, \ldots, F_{m -1}$) exactly intersects each of its neighbors once. 
+Then applying the formula \eqref{eq:sum_intersections} to $F_m$ we see that \[
+	\underbrace{N_{m -1} F_{m - 1} \cdot F_m}_1 + \sum_{j= 1, j\ne m}^{r} N_j F_j \cdot F_m  = 2
+.\] 
+So again $F_m$ intersects exactly one component that we are free to call $F_{m + 1}$ and $N_{m + 1} = 1$. 
+
+Eventually we find an $F_m$ that already occurs in the string, and hence the components of the string form a circle. Because $\mathscr E _s$ is connected, this is the whole special fiber.  Hence $\mathscr E _s $ is of type $\text{IV}$ or $\text{I}_{r}$. 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{type-iv-and-ir}
+    \caption{The special fibers of elliptic curves of type $\text{IV}$ and $\mathrm{I}_r$}
+    \label{fig:type-iv-and-ir}
+\end{figure}
+
+\subsubsection{Case $N_2 = 2$} 
+We are getting pretty comfortable with the yoga of this calculation,  using \eqref{eq:sum_intersections} and renaming components as necessary. 
+So from now on we will stop referring the formula explicitly each time and take the liberty to label new components with increasing integers.
+
+This we apply it to $F_1$ and find \[
+	\underbrace{N_1 F_1 \cdot  F_2}_{2} + \sum_{j = 3}^{r} N_j F_j\cdot F_1 = 2
+.\] 
+So we see that $F_1$ cannot intersect any other component. 
+Lets figure out what $F_2$ might intersect. 
+\[
+	\underbrace{N_1 F_1 \cdot F_2}_1 + \sum_{j = 3}^{r} N_j F_j \cdot F_2 = 4
+.\] 
+We find three possibilities
+\begin{itemize}
+	\item $F_2$ intersects three new components once $F_3, F_4, F_5$ with $N_3 = N_4 = N_5 = 1$. 
+		Then the formula gives \[
+			\underbrace{N_2F_2 \cdot  F_3}_{2} + \sum_{j \ne 2,3}^{}n_j F_j \cdot  F_3 = 2 
+		.\] 
+		So $F_3$ and similarly $F_4, F_5$ intersect no new components. 
+		So we find that $E$ has type $I_0^*$.
+	\item  $F_2$ intersects two new components. 
+		In this case one can use similar arguments to find that $E$ is of type $\mathrm I_n^*$ for some $n \ge 1$. 
+	\item $F_2$ intersects one new component. 
+		Then using similar arguments as the rest of the proof one can find that $E$ is of type $\mathrm{II}^*, \mathrm{III}^*, \mathrm{IV}^*$.
+\end{itemize}
+This completes the classification. 
+
+

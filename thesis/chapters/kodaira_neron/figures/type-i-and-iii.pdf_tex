@@ -50,16 +50,16 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.19682492)%
+  \begin{picture}(1,0.18462443)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{type-i-and-iii.pdf}}%
-    \put(0.17865941,0.17376407){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
-    \put(0.19065941,0.06750536){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.19065942,0.15225445){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.19065942,0.06749758){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{type-i-and-iii.pdf}}%
-    \put(0.61598456,0.17371909){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
-    \put(0.6271098,0.07031001){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
-    \put(0.22146788,0.00940732){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Type $\text{I}_2$\end{tabular}}}}%
-    \put(0.64495119,0.00940717){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Type $\text{III}$\end{tabular}}}}%
+    \put(0.62798457,0.15220947){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.62710981,0.07030207){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.22146788,0.00939953){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Type $\text{I}_2$\end{tabular}}}}%
+    \put(0.6449512,0.00939938){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Type $\text{III}$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

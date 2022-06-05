@@ -5,16 +5,18 @@
 \setcounter{page}{0}
 \pagenumbering{roman}
 \newpage
+\chapter*{Preface} \label{chap:preface}
+\chapter*{Contribution Statements} \label{chap:acknowledgements}
+\chapter*{Summary} \label{chap:introduction}
 \tableofcontents
 \listoftodos
-\chapter*{Acknowledgements} \label{chap:acknowledgements}
 
 
 \setcounter{page}{0}
 \pagenumbering{arabic}
 
 \chapter{Introduction} \label{chap:introduction}
-%\input{chapters/introduction.tex}
+\input{chapters/introduction.tex}
 
 \part{Prerequisites from algebraic and arithmetic geometry}
 \chapter{Valuation Theory} \label{chap:valuation_theory}
@@ -41,7 +43,7 @@
 \import{chapters/research/}{research.tex}
 
 \chapter{Conclusion} \label{chap:conclusion}
-%\import{chapters/}{conclusion.tex}
+\import{chapters/}{conclusion.tex}
 
 \pagebreak
 \printbibliography

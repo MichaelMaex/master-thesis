@@ -1,8 +1,8 @@
-In \cref{def:type_points_curve}\todo{link back to the correct part of previous chapter} we made a distinction between four types of points on the analytification of curves. 
+In \cref{sec:types_of_points_in_analytic_curves} we made a distinction between four types of points on the analytification of curves. 
 In our context we can also find related but different types of points for varieties over arbitrary dimension. 
 
 \begin{definition}
-	The \emph{birational points} of $X\an$ is  $X\bir = i ^{-1}(\eta_X)$ where $\eta_X$ is the generic point of $X$. 
+	The \emph{birational points} of $X\an$ are the points of $X\bir = i ^{-1}(\eta_X)$ where $\eta_X$ is the generic point of $X$. 
 \end{definition}
 These are called the birational points of $X\an$ because they are shared by the analytification of all varieties birational to $X$.
 
@@ -20,23 +20,31 @@ The opposite of birational points, are the points in the inverse image of a clos
 	Hence there is a unique extension of the norm on $K$ to $\kappa(x)$ (\cref{thm:norm_finite_field_ext}) from which the claim follows. 
 \end{proof}
 
-In the previous \cref{sec:}\todo{link back to previous chapter}, we constructed the reduction map $X\an \to \mathscr X$. 
+In the \cref{sec:reduction}, we constructed the reduction map $\red_{\mathscr X}: X\an \to \mathscr X$. 
 There it was essential to assume that that $\mathscr X$ is proper, in order make sure that any map $\mathcal{H} (x) \to X$ extends to a map $\mathcal{H} ^{o}(x) \to \mathscr X$. 
 If $\mathscr X$ is not proper, such an extension does not always exist hence the reduction map is only defined on a subset of $X\an$. 
 \begin{definition}
 	Given a model $\mathscr X$ of $X$ a point $x \in X\an $ is called a \emph{center} if the map $\mathcal{H} (x) \to X$ extends to $\mathcal{H}^{o} (x) \to \mathscr X$. 
-	Note that this is unique by the valuative criterion of properness. 
-	We write $\widehat{\mathscr X}_\eta$ for the set of all centres of $X\an$. 
+	Note that this is unique by the valuative criterion of seperatedness. 
+	We write $\widehat{\mathscr X}_\eta$ for the set of all centers of $X\an$. 
 \end{definition}
 
-If $\mathscr X$ is a regular model of $X$ and $\mathscr X_k = \sum_{i \in I} N_i E_i$ be the decomposition of $\mathscr X$ in its irreducible parts, and let $e_i$ be the generic point of $E_i$. 
-As stated in \cite[thm 2.2.4]{berkovichSpectralTheoryAnalytic2012}, we know that the $e_i$ have unique inverses. 
-We call $\pi^{-1}(e_i)$ the \emph{divisorial point} associated to $(\mathscr X, E_i)$.
+If $\mathscr X$ is a normal model of $X$ and $\mathscr X_s = \sum_{i \in I} N_i F_i$ be the decomposition of $\mathscr X_s$ in its irreducible parts, and let $e_i$ be the generic point of $F_i$. 
+As stated in \cite[thm 2.2.4]{berkovichSpectralTheoryAnalytic2012}, we know that the $e_i$ have unique inverses along the reduction map. 
+We call $\red_{\mathscr X}^{-1}(e_i)$ the \emph{divisorial point} associated to $(\mathscr X, F_i)$.
 \begin{definition}
-	The \emph{divisorial points of $X\an$}, denoted by  $X^{\text{div}}$ is the set of all points that are the inverse of a generic point of irreducible component of a model of $X$ under the reduction map. 
+	The \emph{set of divisorial points of $X^\mathrm{an}$}, denoted by  $X^{\text{div}}$ is the set of all points that are the inverse of a generic point of irreducible component of a normal model of $X$ under the reduction map. 
 \end{definition} 
+\begin{definition}
+	Let $x \in X^{\text{div}}$ be divisorial point associated to $(\mathscr X, F)$. 
+	Then we say that $x$ has \emph{multiplicity} $N(x)$ which is the multiplicity of $F$ in $\mathscr X_s$. 
+\end{definition}
+\begin{definition}
+	If $C$ is a curve and $x$ a divisorial point on $C\an$ corresponding to $(\mathscr C, F)$ then $x$ has \emph{genus} $g(x)$ with is $g(F')$ where $F'$ is the normalisation of $F$. 
+	Note that $F'$ is the curve with function field  $\kappa(f)$ where $f$ is the generic point of $F$. 
+\end{definition}
 Alternatively we can think of divisorial points in the following way. 
-As  $\mathscr X$ is regular we know that $\mathcal{O}_{e_i, \mathscr X}$ is a one-dimensional local ring, i.e.\ a discrete valuation ring, where the valuation (up to scaling by a constant $c$) is given by \[
+If  $\mathscr X$ is normal we know that $\mathcal{O}_{e_i, \mathscr X}$ is a one-dimensional local ring, i.e.\ a discrete valuation ring, where the valuation (up to scaling by a constant $c$) is given by \[
 	v_{e_i}\left( f \right)  = c\cdot \ord_{E_i} f
 \] 
 where $\ord_{E_i} f$ is the multiplicity of $E_i$ in $(f)$. 
@@ -52,16 +60,16 @@ We find that $X^{\text{div}} \subset X\bir \subset X\an$.
 	See \cite[prop.\ 2.4.9]{mustataWeightFunctionsNonArchimedean2015}
 \end{proof}
 
-The divisorial points can also be characterised by their valuation without involving models. 
+The divisorial points can also be characterized by their valuation without involving models. 
 \begin{lemma}\label{lem:char_div_point}
 	Let $X\an$ be a $K$-variety of dimension $n$. 
 	The divisorial points of $X\an$ are precisely the discrete valuations $v$ on $K(X)$ that extend the valuation on $K$ and such that the $\trdeg [(K(X),v)^{\sim}, k] = n-1$.
-	Moreover, the ramification of $K$ in $(K(X), v)$ is precisely the multiplicity of the irreducible component corresponding to that valuation.
+	Moreover, the ramification degree of $K$ in $(K(X), v)$ is precisely the multiplicity of $v$ as a divisorial point.  
 \end{lemma}
 \begin{proof}
-	Let $x = (\mathscr X, E)$ be a divisorial point in $X\an$ corresponding to a model $\mathscr X$ with irreducible component $E$ in the special fibre.
+	Let $x = (\mathscr X, E)$ be a divisorial point in $X\an$ corresponding to a model $\mathscr X$ with irreducible component $E$ in the special fiber.
 	Let $\xi$ be the generic point of $E$. 
-	Then clearly $(K(X), v_x)^{\sim} = (\mathcal{O}_{\xi, \mathscr X})^{\sim} = K(E)$ and hence the transcendence degree is going to be  $\dim E = n-1$.
+	Then $(K(X), v_x)^{\sim} = (\mathcal{O}_{\xi, \mathscr X})^{\sim} = K(E)$ and hence the transcendence degree is $\dim E = n-1$.
 
 	The converse is given by \cite[lem 2.45]{kollarBirationalGeometryAlgebraic1998}. 
 \end{proof}
@@ -71,9 +79,17 @@ The divisorial points can also be characterised by their valuation without invol
 \end{remark}
 \begin{proof}
 	This is a consequence of \cref{def:type_points_curve} and \cref{lem:char_div_point}.
-	Let $x$ be a birational point.
-	Then $\trdeg[(K(X),x)^{\sim} ] = n-1 = 0 $ if and only if $F_{\mathcal{H} (x) / k} = 0$. \todo{something is wrong here}
+	Let $x$ be a birational point and $v_x$ the corresponding valuation on $K(X)$.
+	Then $\trdeg[(K(X),x)^{\sim} ] = n-1 = 1 $ if and only if $F_{\mathcal{H} (x) / k} = 1$.
 	Also $v_x$ is discrete if and only if $E_{\mathcal{H} (x) / k}= 0$. 
 \end{proof}
 
-There is one type of point missing, which we will discuss in the next section. 
+
+\begin{remark}
+	From \label{lem:char_div_point} we see that the divisorial points are inherent to the analytic space $X\an$. 
+	I.e.\ we do not need models of $X$ to describe the divisorial points. 
+	As the value group and residue field of a DVR do not change under completion we also see that the multiplicity and genus in the case of curves are inherent. 
+	Indeed for a divisorial $N(x)$ is the ramification degree of $\mathcal{H} (x)$ over $K$ and $g(x)$ is the genus of the curve with function field $\widetilde{\mathcal{H} (x)}$. 
+\end{remark}
+
+In the theory we will distinguish one more type of point, will be the content of the next section.

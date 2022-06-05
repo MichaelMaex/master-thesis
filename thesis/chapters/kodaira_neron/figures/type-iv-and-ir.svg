@@ -5,12 +5,10 @@
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 680.3 198.1"
 	 style="enable-background:new 0 0 680.3 198.1;" xml:space="preserve">
 <style type="text/css">
-	.st0{font-family:'MyriadPro-Regular';}
+	.st0{font-family:'ArialMT';}
 	.st1{font-size:12px;}
-	.st2{stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
-	.st3{fill:#FFFFFF;}
-	.st4{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
-	.st5{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:5.8003,5.8003;}
+	.st2{stroke:#000000;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#000000;stroke-miterlimit:10;stroke-dasharray:6;}
 </style>
 <sodipodi:namedview  bordercolor="#666666" borderopacity="1.0" id="base" inkscape:current-layer="layer1" inkscape:cx="284.27627" inkscape:cy="182.72055" inkscape:document-units="mm" inkscape:guide-bbox="true" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:window-height="995" inkscape:window-maximized="1" inkscape:window-width="2520" inkscape:window-x="20" inkscape:window-y="65" inkscape:zoom="0.99437388" pagecolor="#ffffff" showborder="true" showgrid="false" showguides="true" width="200mm">
 	<inkscape:grid  dotted="false" empspacing="4" id="grid815" spacingx="10" spacingy="10" type="xygrid" units="mm">
@@ -31,17 +29,10 @@
 <path class="st2" d="M413.6,74.8c16.2,29,32.4,58.1,48.6,87.1"/>
 <path class="st2" d="M437.9,146.5c33.2-1,66.5-2,99.7-3"/>
 <path class="st2" d="M495.3,20.7c27,19.3,54.1,38.7,81.1,58"/>
-<g>
-	<path class="st3" d="M513.6,161c21-37.1,41.9-74.2,62.9-111.3"/>
-	<g>
-		<path class="st4" d="M513.6,161c0.5-0.9,1-1.7,1.5-2.6"/>
-		<path class="st5" d="M517.9,153.3c18.5-32.8,37.1-65.6,55.6-98.5"/>
-		<path class="st4" d="M575,52.4c0.5-0.9,1-1.7,1.5-2.6"/>
-	</g>
-</g>
 <text transform="matrix(1 0 0 1 517.0729 19.2699)" class="st0 st1">$F_1$</text>
 <text transform="matrix(1 0 0 1 583.2543 74.7707)" class="st0 st1">$F_r$</text>
 <text transform="matrix(1 0 0 1 437.8524 17.785)" class="st0 st1">$F_2$</text>
 <text transform="matrix(1 0 0 1 377.213 86.4406)" class="st0 st1">$F_3$</text>
 <text transform="matrix(1 0 0 1 403.5868 150.4913)" class="st0 st1">$F_4$</text>
+<line class="st3" x1="521.6" y1="157.4" x2="572.4" y2="57.5"/>
 </svg>

@@ -1,6 +1,6 @@
 %% Creator: Inkscape 1.0beta2 (2b71d25, 2019-12-03), www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'type-i2-iii.pdf' (pdf, eps, ps)
+%% Accompanies image file 'skeleton-projective--line.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -50,15 +50,17 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.22960459)%
+  \begin{picture}(1,0.35998824)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0.15661311,0.03027414){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Type $\mathrm{I}_0$\end{tabular}}}}%
-    \put(0.44308922,0.03027429){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Type $\mathrm{I}_1$\end{tabular}}}}%
-    \put(0.72948758,0.03027385){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Type $\mathrm{II}$\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{type-i2-iii.pdf}}%
-    \put(0.27897854,0.15277966){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
-    \put(0.56087182,0.16926959){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
-    \put(0.83569837,0.17712171){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{skeleton-projective--line.pdf}}%
+    \put(0.37462384,0.18885874){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sk_{\mathscr P}$\end{tabular}}}}%
+    \put(0.1755771,0.25962899){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}${|\Delta(\mathscr P)|}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{skeleton-projective--line.pdf}}%
+    \put(0.71908525,0.33306394){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\pro_K^{1, \text{an}}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{skeleton-projective--line.pdf}}%
+    \put(0.67811642,0.20233485){\color[rgb]{0.68627451,0.10196078,0.07843137}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sk(\mathscr P)$\end{tabular}}}}%
+    \put(0.21751698,0.21076407){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$B(0, 1)$\end{tabular}}}}%
+    \put(0.21751698,0.09614655){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$B(0, |\pi|)$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

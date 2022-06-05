@@ -1,0 +1,57 @@
+Before we start the partial proof of the classification we gather the important results from intersection theory in the following lemma. 
+\begin{lemma}
+	\label{prop:irred_comp_of_prop_model}
+	Let $E, \mathscr E$ be the elliptic curve and model from \cref{sec:notation_and_conventions}. 
+	Let $K_{\mathscr E}$ be a canonical divisor on $E$. 
+	\begin{enumerate}
+		\item At least one irreducible component has multiplicity $N_i = 1$.  
+		\item $\mathscr E_s$ is connected. 
+		\item $K_{\mathcal{C} } \cdot \mathscr E_s = 0 $. 
+			Here $K_{\mathcal{C} }$ is a canonical divisor. 
+		\item If $r = 1$ (i.e.\ the special fiber is irreducible) then $F_1^2 = \mathscr{E} _s^2 = 0$ and $g (F_1) = 1$. 
+		\item If $r \ge 2$ (i.e.\ the special fiber is reducible) then for each irreducible component $F_i$ we have \[
+		F_i^2 = -2,\quad  F_i \simeq \pro^{1}_k \quad \text{ and }\quad \sum_{1 \le j \le r, j \ne i}^{} N_j F_j\cdot  F_i = 2 N_i
+		.\]   
+	\end{enumerate}
+\end{lemma}
+\begin{proof}
+\begin{enumerate}
+	\item As $E$ is an elliptic curve, it has at least one $K$-rational point $x$.
+		Then by \cref{cor:closure_K_rational_point} we know that  $\red_{\mathscr E}(x)$ lies on a irreducible component of $\mathscr E_s$. 
+	\item By \cite[cor.\ 9.1.24]{liuAlgebraicGeometryArithmetic2002} the map $\mathscr E \to R$ is $\mathcal{O}$-connected. 
+		In particular  $\mathscr E_s$ is connected. 
+	\item From \cref{prop:intersection_canonical_special} know that \[
+			K_{\mathscr E} \cdot \mathscr E_{s} = 2g(E) - 2 = 0
+	.\]  
+	\item If $r = 1$ then $\mathscr E_s$ has only one irreducible component, $F_1$. 
+		By the first part this component has multiplicity $N_1 = 1$. 
+		So $\mathscr E_s = F_1$. 
+		Then $\mathscr E_s^2 = F_1^2 = 0$. 
+		As $\mathscr E \to \spec R$ is flat we know that $g(E)  = g(\mathscr E_s) = 1$.
+	\item 	
+		The adjunction formula (\cref{thm:adjunction_formula}) states that \begin{equation}\label{eq:proof_prereqs_1}
+			F_i^2 + K_{\mathscr E} \cdot F_i = 2g(F_i) - 2
+		.\end{equation}
+		Suppose for the sake of contradiction that that $F_i^2 = 0$. 
+		Then $F_i$ does not intersect any other components, and so $F_i$ is the only component of $\mathscr E_s$. 
+		This contradicts $r \ge 2$. 
+		We find that $F_i^2 \le -1$. 
+		
+		Suppose for the sake of contradiction that $K_\mathscr E \cdot F_i < 0$. 
+		Then by \eqref{eq:proof_prereqs_1} this is only possible if $F_i^2 = -1$ and $g(F_i) =0$. 
+		Thus $F_i$ is contractible by Castelnuovo's criterion, which contradicts the minimality of $\mathscr E$. 
+
+		So for every $i$ we find that $F_i^2 \le 1, K_{\mathscr E} \cdot F_i \le 0$. 
+		But \[
+		0 = K_{\mathscr E} \cdot \mathscr E_s = \sum_{i = 1}^{r} K_{\mathscr E} \cdot F_i \le 0
+		.\]  
+		Hence  $K_{\mathscr E} \cdot F_i = 0$ for all $i$. 
+		So \eqref{eq:proof_prereqs_1} becomes \[
+			-1 \ge  F^2_i = 2g(F_i) - 2 \ge -2
+		,\]  
+		which can only hold if $F_i^2 = -2, g(F_i) = 0$. 
+
+		The last equality is \cref{cor:compute_self_intersection}, together with $F_i^2 = -2$. 
+\end{enumerate}	
+\end{proof}
+

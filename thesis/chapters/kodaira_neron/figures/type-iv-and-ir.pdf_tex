@@ -65,5 +65,6 @@
     \put(0.64361666,0.2650522){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$F_2$\end{tabular}}}}%
     \put(0.55448039,0.1641326){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$F_3$\end{tabular}}}}%
     \put(0.59324829,0.06998193){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$F_4$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{type-iv-and-ir.pdf}}%
   \end{picture}%
 \endgroup%

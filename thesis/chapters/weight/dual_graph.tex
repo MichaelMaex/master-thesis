@@ -1,12 +1,12 @@
-In the previous section we saw that given a regular model $\mathscr X$ of $X$, we can find divisorial points in $X\an$ that correspond to the irreducible components on the special fibre.  
+In the previous section we saw that given a normal model $\mathscr X$ of $X$, we can find divisorial points in $X\an$ that correspond to the irreducible components on the special fiber.  
 Moreover, if $\mathscr X$ is an snc-model, then we can find interpolations of these divisorial points along these intersections. 
-These will be the \emph{monomial points}. 
+These will be the \emph{monomial points} and they generalize divisorial points.  
 We will sketch the construction of these monomial points and why they are useful in the context of curves. 
 
 \subsection{The dual graph of a model of a curve} \label{sec:the_dual_graph_of_a_model_of_a_curve}
 \begin{definition}
 	Let $\mathscr C$ be a snc-model of a curve $C$.
-	Let $F_1, \ldots, F_r$ be the irreducible components in the special fibre, occurring with multiplicity $N_1, \ldots, N_r$ respectively. 
+	Let $F_1, \ldots, F_r$ be the irreducible components in the special fiber, occurring with multiplicity $N_1, \ldots, N_r$ respectively. 
 	Then the \emph{dual graph of $\mathscr C$}, written $\Delta(\mathscr C)$, is the graph with vertices $V = \{F_i\}_{i = 1}^{r} $ and the edges between $F_i, F_j$ are the intersection points of $F_i$ with $F_j$. 
 \end{definition}
 As the model is snc, the intersection number in an intersection point is  $1$. 
@@ -33,9 +33,9 @@ So if $i \ne j$ then $F_i$ and $F_j$ are connected by $F_i \cdot F_j$ edges in $
 
 We can equip the dual graph $\Delta(\mathscr C) $ with extra information. 
 To every vertex (i.e.\ irreducible component  $F$ of $\mathscr C_s$) we attach the pair $(N(F), g(F))$ consisting of the multiplicity of $F$ and in $\mathscr C_s$ and the genus of $F$ as a $k$-curve with reduced scheme structure. 
-So in the third example in \cref{fig:example_dual_graph} the points $G_1, \ldots, G_4$ would be labelled with $(1, 0)$ and $F_1, \ldots, F_4$ with $(2, 0)$. 
+So in the third example in \cref{fig:example_dual_graph} the points $G_1, \ldots, G_4$ would be labeled with $(1, 0)$ and $F_1, \ldots, F_4$ with $(2, 0)$. 
 
-We can add even more structure to $\Delta(\mathscr C)$ in the form of a metric. 
+With this extra structure we can define a metric on  $\Delta(\mathscr C)$.
 \begin{definition}
 Let $e$ be an edge connecting $F_i, F_j$, which are irreducible components of multiplicity $N_i, N_j$ respectively. 
 Then we define the \emph{length of $e$ }  \[
@@ -71,12 +71,12 @@ The following theorem is the main reason why snc-models are useful when studying
 	Recall that $e$ corresponds to an intersection $\xi \in \mathscr C_s$ that belongs to both to $F_i$ and $F_j$. 
 	The idea is construct a family of norms/valuations on $\mathscr \mathcal{O}_{\xi, \mathscr C}$ that interpolate between the divisorial points associated to $F_i, F_j$. Then we can extend these norms the faction field $K(C)$. 
 
-	Let $t_i, t_j$ be local equations cutting out $F_i, F_j$ in a neighbourhood of  $\xi$. 
+	Let $t_i, t_j$ be local equations cutting out $F_i, F_j$ in a neighborhood of  $\xi$. 
 	Then $t_i, t_j$ are a regular system generating the maximal ideal of $\mathcal{O}_{\xi, \mathscr C}. $ 
 	They satisfy \[
 		t_i ^{N_i} t _j^{N_j} = u\cdot \pi
 	\] 
-	where $u$ is unit in $\mathcal{O}_{\xi, \mathscr C}$, as $\pi$ (the uniformaiser) cuts out $F_i, F_j$ with multiplicity $N_i, N_j$ respectively.  
+	where $u$ is unit in $\mathcal{O}_{\xi, \mathscr C}$, as $\pi$ (the uniformiser) cuts out $F_i, F_j$ with multiplicity $N_i, N_j$ respectively.  
 	Let $0 \le \alpha_i \le 1 / N_i,   0 \le \alpha_j \le 1 / N_j$ be real numbers such that \begin{equation}\label{eq:barycentic_alphas}
 		N_i\cdot \alpha_i + N_j \cdot \alpha_j = 1
 	.\end{equation}
@@ -100,7 +100,7 @@ The following theorem is the main reason why snc-models are useful when studying
 	.\] 
 \end{definition}
 \begin{definition}
-	The points that are in the skeleton $\sk(\mathscr)$ of some snc-model $\mathscr C$ are called \emph{monomial points}. 
+	The points that are in the skeleton $\sk(\mathscr C)$ of some snc-model $\mathscr C$ are called \emph{monomial points}. 
 	The set of monomial points in $C\an$ is written as  $C^{\text{mon}}$. 
 \end{definition}
 
@@ -114,19 +114,32 @@ C^{\text{div}} \subset C^{\text{mon}} \subset C\bir \subset C\an \supset C_\text
 	This is worked out in detail in \cite{mustataWeightFunctionsNonArchimedean2015}. 
 	However, we will only need the theory for curves. 
 \end{remark}
-\todo[inline]{example of skeleta, mostly elliptic curves}
+
+\begin{example}
+	Let $\mathscr P$ be the model of $\pro^{1}_K$ from \cref{ex:first_model}, whose dual graph we studied in \cref{ex:first_dual_graph}.
+	An explicit calculation shows that the divisorial points correspond to the supremum norms on the disks $B(0, 1), B(0, |\pi|)$ (recall our description of the Berkovich affine/projective line in \cref{sec:the_berkovich_affine_line}).
+	Then the monomial points that interpolate between these norms, are the norms $B(0, r)$ with $|\pi| \le r \le 1$.
+	So the dual graph $|\Delta(\mathscr P)|$ embeds in $\pro_K^{1, \text{an}}$ as part of the line $l_0: r \mapsto B(0, r)$. 
+	See \cref{fig:skeleton_projective_line}. 
+\end{example}
+\begin{figure}[ht]
+    \centering
+    \incfig{skeleton-projective--line}
+    \caption{The dual graph of the model $\mathscr P$ from \cref{ex:first_model} embedding into $\pro_K^{1, \text{an}}$ as a skeleton.}
+    \label{fig:skeleton_projective_line}
+\end{figure}
 
 
 \subsection{Dual graphs, skeleta and blowups} \label{sec:dual_graphs_and_blowups}
-We can study how the dual graphs of models behave under blowing up the points of the special fibre.
+We can study how the dual graphs of models behave under blowing up the points of the special fiber.
 Essentially this is translating \cref{lem:blowup_snc} to the language of dual graphs.
-Let $x$ be a closed point in the special fibre, $\mathscr C' = \bl_{x} \mathscr C$ the blowup, and $E$ be the exceptional divisor in $\mathscr C'$.
+Let $x$ be a closed point in the special fiber, $\mathscr C' = \bl_{x} \mathscr C$ the blowup, and $E$ be the exceptional divisor in $\mathscr C'$.
 
 We first consider what happens if $x $ is a smooth point of $\mathscr C_s$. 
 Let $F$ be the irreducible component of $\mathscr C_s$ that contains $x$ and let $N$ be the multiplicity of $F$. 
 Then $E$ is a rational curve of multiplicity $N$, which only intersects $\tilde F$ in one point. 
 The strict transforms of the components in $\mathscr C$ all intersects each other in the same way in $\mathscr C'$. 
-So in the dual graph we have to add one vertex $E$ labelled $(N, 0)$ (multiplicity and genus) which is connected to $F$ by one edge.
+So in the dual graph we have to add one vertex $E$ labeled $(N, 0)$ (multiplicity and genus) which is connected to $F$ by one edge.
 
 There are two natural maps between $|\Delta(\mathscr C)|$ and $|\Delta(\mathscr C')|$. 
 \[
@@ -141,7 +154,7 @@ See \cref{fig:blowup_smooth_point_skeleton}.
 \begin{figure}[ht]
     \centering
     \incfig{blowup-smooth-point-skeleton}
-    \caption{The dual graph after blowing up in a smooth point on the special fibre of an snc-model. }
+    \caption{The dual graph after blowing up in a smooth point on the special fiber of an snc-model. }
     \label{fig:blowup_smooth_point_skeleton}
 \end{figure}
 
@@ -177,12 +190,12 @@ In this case the retraction is just the inverse as $i$ is actually an isomorphis
 \begin{figure}[ht]
     \centering
     \incfig{blowup-intersection-poins-skeleton}
-    \caption{The dual graph after blowing up in an intersection point on the special fibre of an snc-model. }
+    \caption{The dual graph after blowing up in an intersection point on the special fiber of an snc-model. }
     \label{fig:blowup_intersection_points_skeleton}
 \end{figure}
 
 Now let $f:\mathscr C' \to \mathscr C$ be any dominating map between snc-models of $C$. 
-By the factorisation theorem \cref{thm:factorisation_theorem} we find that $f$ can be decomposed by a sequence of blowups in closed points. 
+By the factorization theorem \cref{thm:factorisation_theorem} we find that $f$ can be decomposed by a sequence of blowups in closed points. 
 \[
 \mathscr C' = \mathscr C_n \to \mathscr C_{n-1} \to \ldots \to \mathscr C_0 = \mathscr C
 .\] 
@@ -245,7 +258,7 @@ This is the case and is made precise in the following proposition.
 		\mathbb H(C) &= \bigcup_{\mathscr C \text{ snc-model}} \sk(\mathscr C) \\
 		C\an &= \varprojlim_{\mathscr C \text{ snc-model}} \sk(\mathscr C)
 	,\end{align*}
-	where $\mathbb{H}(C)$ as a set are the type 2 and 3 points of $C\an$ and the projective limit is taken over the ordered system of snc-models of $C$ and the maps are the deformations retractions from \cref{prop:inclusion_retraction_dual_graph}.
+	where $\mathbb{H}(C)$ as a set are the type 2 and 3 points of $C\an$ and the inverse limit is taken over the ordered system of snc-models of $C$ and the maps are the deformations retractions from \cref{prop:inclusion_retraction_dual_graph}.
 \end{proposition}
 \begin{proof}
 	See \cite[§2.2.2 and  lem.\ 2.3.2]{bakerWeightFunctionsBerkovich2016}
@@ -254,10 +267,10 @@ This is the case and is made precise in the following proposition.
 	While $\mathbb{H}(C)$ and $C\an$ are almost the same set, their topologies are different. 
 	The difference comes down to the following. 
 	Let $x$ be a branch point (i.e.\ divisorial/type 2 point).
-	Then a neighbourhood $U \subset C\an$ of $x$ must entirely contain all but finitely many branches, whereas a neighbourhood $V \subset \mathbb{H}(C)$ must just be an open when restricted to any skeleton $\sk(\mathscr C)$ (a finite graph). 
+	Then a neighborhood $U \subset C\an$ of $x$ must entirely contain all but finitely many branches, whereas a neighborhood $V \subset \mathbb{H}(C)$ must just be an open when restricted to any skeleton $\sk(\mathscr C)$ (a finite graph). 
 \end{remark}
 
-The union in \cref{prop:skeleta_curve_limits} is actually a injective limit over the same ordered system of snc-models, but the maps here are the inclusions. 
+The union in \cref{prop:skeleta_curve_limits} is actually a direct limit over the same ordered system of snc-models, but the maps here are the inclusions. 
 As these inclusions are isometries, the metrics on the skeleta $\sk(\mathscr C)$ induce a metric on $\mathbb{H}(C)$, which is called the \emph{stable metric}. 
 
 \begin{remark}
@@ -268,7 +281,7 @@ As these inclusions are isometries, the metrics on the skeleta $\sk(\mathscr C)$
 \begin{remark}
 	The stable metric does not generalize to analytification of higher dimensional varieties. 
 	On a 1-dimensional topological space, a path metric is equivalent to giving a measure. 
-	So saying that $\mathbb{H}(C)$ is a metric space is slightly misleading as it is in fact the measure that generalises to higher dimensions. 
+	So saying that $\mathbb{H}(C)$ is a metric space is slightly misleading as it is in fact the measure that generalizes to higher dimensions. 
 \end{remark}
 
 Let $C$ be a curve and $\mathscr C$ be a snc-model of $C$. 
@@ -286,9 +299,8 @@ As $C\an$ is a filtered limit of spaces which when large enough retract to $\sk(
 The metric induces a piecewise affine linear structure on $\mathbb{H}(C)$. 
 \begin{definition}
 	Let $f: \mathbb{H}(C) \to \R$ be a function. 
-	Then $f$ is \emph{piecewise linear} if $f \circ \ell$  is a piecewise linear function for every line $\ell: [a, b] \into \mathbb{H}(C)$ parametrised by length. 
-
-	We say that $f$ is \emph{$\Z$-affine linear} (resp.\ \emph{$\Q$-affine linear}) if moreover the slopes $f \circ \ell$ are in $\Z $ (resp.\ $\Q$)
+	Then $f$ is \emph{piecewise linear} $f \circ \sk_{\mathscr C}: |\Delta(\mathscr C)| \to \R$ is piecewise linear on every edge of $ \Delta(\mathscr C)$ for every snc-model $\mathscr C$. 
+	We say that $f$ is \emph{$\Z$-affine linear} (resp.\ \emph{$\Q$-affine linear}) if moreover the slopes $f \circ \sk _{\mathscr C}$ are in $\Z $ (resp.\ $\Q$).
 \end{definition}
 
 
