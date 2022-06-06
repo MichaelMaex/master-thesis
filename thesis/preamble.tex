@@ -17,6 +17,11 @@
 \usepackage{mathrsfs}
 \usepackage{comment}
 \usepackage{float}
+\usepackage{rotating}
+\usepackage[left]{showlabels}
+\renewcommand{\showlabelsetlabel}[1]
+{\begin{turn}{-90}\showlabelfont #1\end{turn}}
+\renewcommand{\showlabelfont}{\scriptsize\ttfamily}
 
 \usepackage[backend = biber, style = alphabetic, backref=true]{biblatex}
 \addbibresource{references.bib}
@@ -60,7 +65,6 @@
 }
 \pdfsuppresswarningpagegroup=1
 
-
 \newcommand{\shorthat}[1]{\hat{#1}}
 \renewcommand{\hat}[1]{\widehat{#1}}
 
@@ -75,6 +79,10 @@
 \newcommand{\aff}{\mathbb{A}}
 \newcommand{\ltr}{\par \noindent \framebox[1\width]{ $\implies$ } \hspace{.2cm}}
 \newcommand{\rtl}{\par \noindent \framebox[1\width]{ $\impliedby$ } \hspace{.2cm} }
+\let\oldphi\phi
+\let\phi\varphi
+\let\varphi\oldphi
+
 
 
 

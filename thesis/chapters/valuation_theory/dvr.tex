@@ -59,6 +59,19 @@ As schemes DVR's consists just of two points, the generic point, and the unique 
 
 It is easy to see that the ramification index of a map between DVRs / discretely valued fields, $f: A \to B$ can be computed as $v_B(f(a)) / v_A(a)$ where $a$ is any element of $A$ with nonzero valuation, if the valuations are scaled such that the valuation of a uniformiser is 1. 
 
+\begin{lemma}\label{lem:multiplicative_ramification_degree}
+	Let $A \xrightarrow f B \xrightarrow g C$ be local maps of DVRs (or discretely valued fields) with respective valuations $v_A, v_B, v_C$. 
+	Then $e_{g \circ f} = e_g \cdot e_f$.
+\end{lemma}
+\begin{proof}
+	Let $\pi_A, \pi_B, \pi_C$ be uniformisers for $A, B, C$ respectively. 
+	For the sake of simplicity we may assume that all valuations are scaled such that the valuations of their uniformisers are $1$.  
+	Then 
+	\[
+		e_{g \circ f} = v_C(g(f(\pi_A)) = e_g \cdot  v_B(f(\pi_A)) = e_g\cdot e_f
+	.\] 
+\end{proof}
+
 \begin{definition}
 	Let $f: A \to B$ be a local map between DVRs. 
 	Let $k, \ell$ be the residue fields of $A, B$ respectively and $p = \ch k$.

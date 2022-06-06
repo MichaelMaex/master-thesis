@@ -1,7 +1,7 @@
 In this section we study how weight functions behave under morphisms, in particular finite covers of curves. 
-The main result of this section \label{prop:weightfunction_fullback} was already known to experts, but it is not stated in the papers we're following \cite{bakerWeightFunctionsBerkovich2016,nicaiseBerkovichSkeletaBirational2016,mustataWeightFunctionsNonArchimedean2015}, and is as far as we know not published elsewhere. 
+The main result of this section, \cref{prop:weightfunction_fullback}, was already known to experts, but it is not stated in the papers we are following \cite{bakerWeightFunctionsBerkovich2016,nicaiseBerkovichSkeletaBirational2016,mustataWeightFunctionsNonArchimedean2015}, and is as far as we know not published elsewhere. 
 
-We first need a couple results on finite maps between analytifications of varieties. 
+We first need a couple results on the analytification of finite maps between of varieties. 
 
 \begin{lemma}
 	Let $f: X \to Y$ be a finite map between varieties over  $K$. 
@@ -17,7 +17,7 @@ Then the map $f\an: X\an \to Y\an$ is finite in the sense that for any $y \in Y\
 \end{proof}
 
 \begin{lemma}\label{lem:im_type_ii}
-	If $f: X \to Y$ is a finite map and $x \in X^{\text{bir}}$. Then
+	If $f: X \to Y$ is a generically finite map between $K$-varieties and $x \in X^{\text{bir}}$. Then
 	\[
 		x \in X^\text{div} \iff f(x) \in Y^\text{div}
 	.\] 
@@ -35,7 +35,7 @@ Then the map $f\an: X\an \to Y\an$ is finite in the sense that for any $y \in Y\
 	where $e$ is the ramification degree of $\mathcal{H} (y) \to \mathcal{H} (x)$. 
 \end{lemma}
 \begin{proof}
-	Recall that \todo{write this proof}
+	This is \cref{lem:multiplicative_ramification_degree} applied to the morphisms $\mathcal{H} (y) \to \mathcal{H} (x) \to K$.
 \end{proof}
 \begin{remark}
 	In the case of curves we can give a more topological argument for \cref{lem:im_type_ii}. 
@@ -43,9 +43,9 @@ Then the map $f\an: X\an \to Y\an$ is finite in the sense that for any $y \in Y\
 	The map $f\an: X\an \to Y\an $ is a finite branched cover. So topologically $f(x)$ is also such a branch point, hence divisorial. 	
 \end{remark}
 
-The following proposition will be very useful for understanding finite maps between Berkovich spaces in general. 
+The following proposition will be very useful for understanding finite maps between Berkovich curves in general. 
 \begin{proposition}\label{prop:balancing_finite_morphism}
-	Let $f: X \to Y$ be a finite map between proper varieties of degree $d$ and $\phi = f\an: X\an \to Y\an$. 
+	Let $g: X \to Y$ be a finite map between proper varieties of degree $d$ and $\phi = g\an: X\an \to Y\an$. 
 	Let $y \in Y^{\text{div}}$. 
 	Then 
 	\[
@@ -53,6 +53,7 @@ The following proposition will be very useful for understanding finite maps betw
 	,\] 
 	where $e_x$ is the ramification degree of the induced map  $\mathcal{H} (y) \to \mathcal{H} (x)$ and $f_x = \left[\widetilde{\mathcal{H} (x)}, \widetilde {\mathcal{H} (y)}\right]$.
 \end{proposition}
+\question{$f$ voor de uitbreidingsgraad gebruiken is verwarrend, want dat is ook het morfisme. Wat is een ander goed symbool?}
 \begin{proof}
 	Let $v_y$ be the discrete valuation on $K(Y)$ associated to $y$. 
 	For every $x \in \phi^{-1}(y)$ we write $v_x$ for the discrete valuation that extends $v_y$ on $K(X)$. 
@@ -60,8 +61,8 @@ The following proposition will be very useful for understanding finite maps betw
 \end{proof}
 
 \begin{corollary}\label{cor:balancing_galois_cover}
-	Suppose that $f: X \to Y$ is a Galois cover of degree $d$ between proper varieties. 
-	We write $\phi = f\an$. 
+	Suppose that $g: X \to Y$ is a Galois cover of degree $d$ between proper varieties. 
+	We write $\phi = g\an$. 
 	Let $x \in X\an$. 
 	Then \[
 		d = |\phi^{-1}(\phi(x))| \cdot e\cdot f
@@ -69,12 +70,12 @@ The following proposition will be very useful for understanding finite maps betw
 	where $e$ is the ramification degree of $\mathcal{H} (\phi(x)) \to \mathcal{H} (x)$ , and  $f = \left[\widetilde{\mathcal{H} (x)}, \widetilde {\mathcal{H} (y)}\right]$.
 \end{corollary}
 \begin{proof}
-	As the cover is galois, the points in $|\phi^{-1}(\phi(x))|$ are unique up to Galois morphism.
+	As the cover is Galois, the points in $|\phi^{-1}(\phi(x))|$ are in the same Galois orbit.
 	So this follows from \cref{prop:balancing_finite_morphism} applied to $\phi(x)$ and the observation that all ramification degrees and degrees of field extensions are equal in every term. 
 \end{proof}
 
 \begin{remark}
-	If the degree  $d$ of $f: X \to Y$ is prime then $f$ is automatically a Galois cover.
+	If the degree  $d$ of $g: X \to Y$ is prime then $g$ is automatically a Galois cover.\question{Is dit waar, of moet ik hier aannemen dat $g$ Galois is?}
 	So for any divisorial points $y \in Y\an$ we have that \[
 		d = |\phi^{-1}(y)| \cdot e \cdot f
 	\] 
@@ -100,21 +101,21 @@ To understand the map $\phi: X\an \to Y\an$ it would best if we could always fin
 	Then there are snc-model $\mathscr X$ of $X$ and $\mathscr Y$ of $Y$, which have irreducible components corresponding to $x, y$ respectively together with a map $\psi: \mathscr X \to \mathscr Y$ that extends $f$. 
 \end{lemma} 
 \begin{proof}
-	Let $\mathscr Y$ be a snc-model of $Y$ with a irreducible component $G$ that corresponds to $y$. 
+	Let $\mathscr Y$ be a snc-model of $Y$ with an irreducible component $G$ that corresponds to $y$. 
 	Let $N(\mathscr Y)$ denote the normalization of $\mathscr Y$ in the function field $K(X)$. 
 	Let $g: N(\mathscr Y) \to Y$ be the normalisation morphisms. 
 	Then we claim that $N(\mathscr Y)$ is a proper model of $\mathscr X$, but is not necessarily regular or snc. 
 	
 	Lets first check the generic fiber.
 	As normalization is local, we see that  $N(\mathscr Y)_\eta$ is the normalization of $Y$ in $K(X)$, which is exactly $X$, as we assume that our curves are projective, connected and smooth. 
-	Recall that $\mathscr Y$ is locally finite type over $R$ which is a complete Noetherian local ring. 
-	So $\mathscr Y$ is nagata (\stacks{0335}), thus the normalisation $N(\mathscr Y) \to \mathscr Y$  is finite (\stacks{0AVK}), thus proper. 
-	So $N(\mathscr Y)$ is proper over $R$, as $N(\mathscr Y) \to \mathscr Y \to \spec R$ is proper. 
+	Recall that $\mathscr Y$ is locally of finite type over $R$ which is a complete Noetherian local ring. 
+	So $\mathscr Y$ is Nagata (\stacks{0335}), thus the normalisation $N(\mathscr Y) \to \mathscr Y$  is finite (\stacks{0AVK}), in particular proper. 
+	So $N(\mathscr Y)$ is proper over $R$, as the composition $N(\mathscr Y) \to \mathscr Y \to \spec R$ is proper. 
 	The last thing to check is that $N(\mathscr Y) \to \spec R$ is flat. It is sufficient to show that $N(\mathscr Y) \to \mathscr Y$ is flat, which follows from \cite[thm.\ 18.H]{matsumuraCommutativeAlgebra1980}. 
 	
 	Let $\xi$ be the generic point of the component $G$. 
 	Then the valuation of $y$ is the valuation of $\mathcal{O}_{\xi, \mathscr Y}$ extended to $K\left( Y \right) $. 
-	As nomalisation is local and \cref{lem:normalisation_extension_norm}, then $g^{-1}(\xi)$ are generic points of components in $N(\mathscr Y)_s$ that correspond to the points the poitns in $\phi^{-1}(y)$. 
+	As nomalisation is local and \cref{lem:normalisation_extension_norm}, then $g^{-1}(\xi)$ are generic points of components in $N(\mathscr Y)_s$ that correspond to the points in $\phi^{-1}(y)$. 
 	In particular, one of the irreducible components $F$ of $N(\mathscr Y)_s$ corresponds to $x$. 
 
 	Let $\mathscr X$ be a snc-desingularisation of $N(\mathscr Y)$ and $\tilde F$ be the strict transform of $F$. 
@@ -125,7 +126,6 @@ To understand the map $\phi: X\an \to Y\an$ it would best if we could always fin
 \begin{theorem}\label{prop:weightfunction_fullback}
 	Let $f: X \to Y$ be a separable Galois cover of curves of degree $d$. 
 	Suppose that $\ch k \nmid d$. 
-	
 	Let $\omega $ be a $m$-pluricannonical form on $Y$. 
 	We can interpret $f^*\omega$ as rational section of $\Omega_{X / K}^{\otimes n}$ with possible poles along the ramification points of $f: X \to Y$. 
 	Then \[
@@ -136,45 +136,48 @@ To understand the map $\phi: X\an \to Y\an$ it would best if we could always fin
 	As weight functions are continuous on $\mathbb{H}(X), \mathbb{H}(Y)$ and the divisiorial points are dense, it is sufficient to show that $\wt_{f^* \omega}(x) = \wt_{\omega}(y)$ 
 	for divisorial points  $x, y$ such that $\phi(x) = y$. 
 	Choose a map of models $\psi: \mathscr X \to \mathscr Y$ as in \cref{lem:snc_models_morphism_curves}.  
-	Let $\omega_X, \omega_Y$ be the extensions of $f_*\omega, \omega$ to the bundles to the $m$-pluricanonincal bundles  respectively. 
-	They are related by \[
-		\omega_{X} = f^* \omega_{Y} \otimes (\omega_{Y / X} \otimes \alpha \otimes f^*\beta ^{-1})^{\otimes m}
-	.\] 
-	where $\omega_{ Y /  X}$ is some section of $\Omega_{\mathscr X / \mathscr Y}$ and $\alpha, \beta$ are equations cutting out $\mathscr X_{s, \text{red}}, \mathscr Y_{s, \text{red}}$. 
-
+	Let $\omega_X, \omega_Y$ be the extensions of $f_*\omega, \omega$ to the bundles to the $m$-pluricanonincal bundles of $\mathscr X, \mathscr Y$ respectively. 
+	Let $\alpha, \beta$ be rational sections of $\mathcal{O}_{\mathscr X}(\mathscr X_{s, \text{red}}), \mathcal{O}_{\mathscr Y}(\mathscr Y_{s, \text{red}} )$ extending $1 \in \mathcal{O}_X(X), 1 \in \mathcal{O}_Y(Y)$ respectively. 
+	Then $(\alpha \pi^{-1})^{-m}\omega_{X}$ is a section of $\Omega^{\text{can}}_{\mathscr X / R}$ and $(\beta\pi^{-1})^{-m} \omega_{Y}$ is a section of $\Omega^{\text{can}}_{\mathscr Y / R}$. 
+	They are related by \begin{align*}
+		((\alpha \pi^{-1})^{-m} \omega_X &= f^*((\beta \pi^{-1})^{-m}\omega_Y) \otimes \omega_{Y / X}^{\otimes m} \\
+		\alpha ^{-m} \omega_X &= f^*(\beta ^{-m}\omega_Y) \otimes \omega_{Y / X}^{\otimes m} \\
+		\omega_{X} &= f^* \omega_{Y} \otimes (\omega_{Y / X} \otimes \alpha \otimes f^*\beta ^{-1})^{\otimes m}
+	,\end{align*} 
+	where $\omega_{ Y /  X}$ is the extension of $\ram_f$ to $\Omega_{\mathscr X / \mathscr Y}$.
 	Let $F, G$ be the irreducible components in $\mathscr X, \mathscr Y$ corresponding to $x, y$ respectively. 
 	Let $a, b$ be the generic points of $F, G$ respecitively. 
 
 	We want to compare $\mult_{F}(\omega_X)$ to $\mult_{G}(\omega_Y)$. 
 	We can do this locally on the map $\spec \mathcal{O}_{a, \mathscr X} \to \spec \mathcal{O}_{b, \mathscr Y}$.
 	Which on the levels of rings is given by $ \mathcal{O}_{b, \mathscr Y}\into  \mathcal{O}_{a, \mathscr X}$.
-	Then $\alpha, \beta$ be uniformisers of $\mathcal{O}_{a, \mathscr X}, \mathcal{O}_{b, \mathscr Y}$ respectively. 
+	Then $\alpha, \beta$ are uniformisers of $\mathcal{O}_{a, \mathscr X}, \mathcal{O}_{b, \mathscr Y}$ respectively. 
 	So we have $\beta = u\cdot \alpha ^{e}$ where $e$ is the ramification degree and $u$ is some unit in $\mathcal{O}_{a, \mathscr X}$. 
 	As the map on fraction fields is separable we have $d(u) = 0$ like in the proof of \cref{lem:generator_canonical_bundle_DVR}. 
-	So we have
+	Thus
 	\begin{align*}
-		\beta &= u \cdot \alpha^e \\
+		\beta &= u \cdot (\alpha)^e \\
 		d(\beta) &= u \alpha^{e-1} d(\alpha)
 	.\end{align*}
-	Then up to multiplication by a unit we have \[
-		\omega_{Y / X} \cdot \alpha \cdot  f^* \beta^{-1} = d(\beta)\cdot \alpha \cdot \beta^{-e} = u \cdot \frac{\alpha}{\beta^{e}} d(\beta)
+	In \cref{lem:normalisation_extension_norm} we showed that $\Omega_{\mathcal{O}_{a, \mathscr X} / \mathcal{O}_{b, \mathscr Y}}$ is generated by $d(\alpha)$. 
+	So we find that $\omega_{X / Y} = u \alpha ^{e-1} d(\alpha)$ and \[
+		\mult_{a} \omega_{X / Y} = v(u \alpha ^{e-1}) / v(\alpha) = e-1
 	.\] 
-	Note that $u \alpha \beta^{-e}$ is a unit and thus $\mult_a(\omega_{X / Y}) = 0$. 
-	So 
+	Then  
 	\begin{align*}
 		\mult_{F} \omega_X &= \mult_{a} \omega _X\\
 				   &=  \mult_{a} f^*\omega_Y +  m \mult_{a} (\omega_{Y / X} \otimes \alpha \otimes f^*\beta ^{-1})^{\otimes m} \\
-				   &= e \mult_b \omega_Y + 0 \\
+				   &= e \mult_b \omega_Y + m(e-1 + 1 -e) \\
 				   &= e\mult_{G}\omega_Y 
 	.\end{align*} 
-	So we see that 
+	Thus we conclude 
 	 \[
 		 \wt_{f^* \omega}(x) = \frac{\mult_{F} \omega_X}{N(x)} = \frac{e\mult_G \omega_Y}{eN(G)} = \wt_{\omega}(y)
 	.\] 
 \end{proof}
 
-\begin{remark}
-	It turns that \label{prop:weightfunction_fullback} can be generalised to case where $\ch k \mid d$. 
+\begin{remark}\label{rem:weightfunction_fullback_art} 
+	It turns that \cref{prop:weightfunction_fullback} can be generalised to case where $\ch k \mid d$. 
 	Then Art Waeterschoot identified a error term. 
 	So the formula becomes \[
 		\wt_{f^* \omega}(x) = \wt_{\omega}(f\an (x)) + m \cdot \delta_{\mathcal{H} (x) / \mathcal{H} (f\an(x))}^{\text{log}}
