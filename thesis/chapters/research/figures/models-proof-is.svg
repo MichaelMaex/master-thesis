@@ -112,13 +112,13 @@
 <text transform="matrix(1 0 0 1 120.0688 156.6165)" class="st2 st3">$\scriptstyle{H_r}$</text>
 <g>
 	<g>
-		<line class="st8" x1="240.5" y1="280.3" x2="512.8" y2="280.3"/>
+		<line class="st8" x1="223.7" y1="280.3" x2="496" y2="280.3"/>
 		<g>
-			<path class="st1" d="M518.9,280.3c-2.8,1.1-6.4,2.9-8.5,4.8l1.7-4.8l-1.7-4.8C512.5,277.4,516,279.2,518.9,280.3z"/>
+			<path class="st1" d="M502.1,280.3c-2.8,1.1-6.4,2.9-8.5,4.8l1.7-4.8l-1.7-4.8C495.7,277.4,499.2,279.2,502.1,280.3z"/>
 		</g>
 	</g>
 </g>
-<text transform="matrix(1 0 0 1 325.4305 274.7112)" class="st2 st3">$\phi|_{\sk(\mathscr E’)}$</text>
+<text transform="matrix(1 0 0 1 325.4305 269.7112)" class="st2 st3">$\phi|_{\sk(\mathscr E’)}$</text>
 <text transform="matrix(0.2812 0 0 1 29.4473 235.3895)" class="st2 st3">$\sk(\mathscr E’)$</text>
 <text transform="matrix(0.3184 0 0 1 527.1748 235.3895)" class="st2 st3">$\sk(\mathscr{P’})$</text>
 </svg>

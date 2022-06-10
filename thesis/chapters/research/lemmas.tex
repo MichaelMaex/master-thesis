@@ -1,0 +1,115 @@
+The following lemma is stated much more generally than we will need it. 
+But it is a neat result, and the proof is neither long, nor complicated. So we put it in. 
+\begin{lemma}\label{lem:number_divisorial_points}
+	Let $\mathscr C$ be a snc-model of  $C$ and suppose that $e$ is an edge between two divisorial points of degree $1$ in $\Delta(\mathscr C)$. 
+	Let $f(n)$ be the number of divisorial points of degree $n$ on the edge  $e$ in $\sk(\mathscr C)$. 
+	Then \[
+		f(n) = \begin{cases}
+			2 & n = 1 \\
+			\varphi(n) & n > 1
+		\end{cases}
+	,\] 
+	where $\varphi$ is the Euler totient function. 
+\end{lemma}
+\begin{proof}
+	As the problem is local, we may assume that $\mathscr C$ is a (not proper) model with just two component of multiplicity $1$ intersecting in one point. 
+	So $\sk(\mathscr C)$ is just the edge $e$. 
+
+	Let $x$ be any divisorial point on $e$. 
+	Then by the factorization theorem $x$ can be obtained as the vertex in the dual graph of a snc-model, which is obtained by repeatedly blowing up in intersection points. 
+
+	We construct a sequence of snc-models \[
+	\ldots \to 	\mathscr C_n \to \mathscr C_{n -1} \to \ldots \to \mathscr C_1 = \mathscr C
+,\]
+each dominating the previous, as follows. 
+The model  $\mathscr C_i$ is the blowup of $\mathscr C_{i-1}$ in all intersection points $\xi$ such that lies on two components with multiplicity $N, M$ and $N + M \le i$. 
+Then $x$ is a vertex on $\Delta(\mathscr C_n)$ for sufficiently large $n$.
+In the dual graph this repeatedly subdivides the edge by adding more vertices of higher multiplicity. 
+\\
+\noindent\incfig{dual-graphs-farey}
+\\
+We now obtain the result from noting that these multiplicities are exactly the denominators from the Farey sequence for which the result folklore. 
+\end{proof}
+
+
+\begin{lemma}\label{lem:equality_lenghts_preserve_mult}
+	Let $f: X \to Y$ be a finite morphism of curves and $p$ a path in $\sk(\mathscr X)\subset X\an $  such that $f\an|_p$ is injective and lands in $\sk(\mathscr Y)$ for some snc-models $\mathscr X, \mathscr Y$ of $X, Y$ respectively. 
+	Suppose further that for every divisorial point $x \in p$  we have $N(x) = N(f\an(x))$. 
+	Then $f\an(p)$ has the same length as $f\an$. 
+\end{lemma}
+\begin{proof}
+	As the divisorial points are dense on the path $p$ we may assume that $p$ is a closed path that starts and ends in a divisorial point, $x, y$ respectively.
+	By repeatedly blowing up in divisorial points we may replace $\mathscr X, \mathscr Y$ by models that such that $p$ and $\phi(p)$ are made up of a number of edges on $\sk(\mathscr X), \sk(\mathscr Y)$, respectively. 
+	As the question is local we may replace $\mathscr X, \mathscr Y$ to opens in them such that $\sk(\mathscr X) = p, \sk(\mathscr Y) = f\an (p)$. (Note that $\mathscr X, \mathscr Y$ are no longer proper, but still have normal crossings).  
+	Then $\Delta(\mathscr X)$ as a graph is a path ending and starting with vertex $x, y$ and $\Delta(\mathscr Y)$ is a path starting and ending with $f\an(x), f\an(y)$. 
+
+	Let \[
+		N = \max \{N(v) \st v \text{ is a vertex in } \Delta(\mathscr X) \text{ or } \Delta(\mathscr Y)\} 
+	.\] 
+	We will now describe how blowup $\mathscr X$ and $\mathscr Y$ repeatedly in intersection points such that the vertices in the dual graphs are precisely the divisorial points of multiplicity less than or equal to $N$. 
+
+	Let \[
+	\mathscr X_N \to \mathscr X_{N - 1} \to \ldots \to \mathscr \mathscr X_1 = \mathscr X
+	\] 
+	be a sequence of locally snc-models of  $X$, where $\mathscr X_i$ is the blowup of $\mathscr X_{i-1}$ in all intersection points of laying on components with multiplicity $N_1, N_2$ such that $N_1 + N_2 \le i$. 
+	Note that all components in the exceptional divisor have multiplicity at most $i$. 
+
+	Note that $\Delta(\mathscr X_1)$ contains all divisorial points in $\sk(\mathscr X)$ of multiplicity 1. If not, let $z$ be such a divisorial points. 
+	Then we can repeatedly blowup $\mathscr X$ in intersection points to obtain $\mathscr X'$ such that $z$ is in $\Delta(\mathscr X')$. 
+	But $z$ is the result of a blowup in an intersection point, and thus has multiplicity at least $2$. 
+
+	By induction we see that $\mathscr X_i$ contains all divisorial points in $\sk(\mathscr X)$ of multiplicity less than or equal to $i$, for $i = 1, \ldots, n$. 
+	Indeed suppose that this is the case for $\mathscr X_{i -1}$ and $z$ is a divisorial point that we obtain by repeatedly blowing up intersection points.
+	Then  $z$ lies between two adjacent vertices $v_1, v_2$ of multiplicity $N_1, N_2$ respectively in $\mathscr X_{i}$. 
+	We easily see that $z$ has at least multiplicity $N_1 + N_2$. 
+	So it is sufficient to show that $N_1 + N_2 > i$. 
+	Suppose for the sake of contradiction that $N_1 + N_2 \le i$.
+	Then both $N_1 \le i -1$ and $N_2 \le i-1$. 
+	So $v_1, v_2$ are vertices that also belong to $\Delta(\mathscr X_{i-1})$, where they are also adjacent. 
+	But as $N_1 + N_2 \le i$ we know that $\Delta(\mathscr X_{i})$ has a vertex in between $v_1, v_2$. This contradicts that $v_1, v_2$ are adjacent in $\Delta(\mathscr X_{i})$. 
+
+	Now we see that $\Delta(\mathscr X_N)$ contains all divisorial points in $\sk(\mathscr X) = p$ of multiplicity less than or equal to $n$. 
+	As in the process no vertices of multiplicity higher than $N$ were added, we see that $\Delta(\mathscr X_N)$ contains exactly the vertices of multiplicity less than or equal to $N$. 
+
+	Similarly we construct a model $\mathscr Y_N$ such that the vertices on  $\Delta(\mathscr Y_N)$ are exactly all divisorial points on $\sk(\mathscr Y) = f\an(p)$ of multiplicity less than or equal to $N$. 
+
+	Let $V$ be the set of vertices on $\Delta(\mathscr X_N)$. 
+	As $f\an $ on $p$ preserves multiplicity we see that $f\an(V)$ are precisely the vertices of $\Delta(\mathscr Y_N)$ and $f\an$ even preserves the order of the vertices. 
+	So $f\an$ induces an isomorphism of graphs $\Delta(\mathscr X_N) \to \Delta(\mathscr Y_N)$ where each vertex is labeled with its multiplicity. 
+	It follows from the definition of the length on a graph that $|\Delta(\mathscr X_N)| = p$ has the same length as $|\Delta(\mathscr Y_N)| = f\an(p)$. 
+\end{proof}
+
+\begin{remark}\label{rem:length_edge_skeleton_cover}
+	The main context in which the assumptions of \cref{lem:equality_lenghts_preserve_mult} are satisfied is when $f:X \to Y$ is a degree $d$ map of curves, $e$ is an edge in a skeleton of $Y$ such that $e \subset Y\an \setminus B_{f\an}$, and $e'$ is a lift of $e$ in $X\an$. 
+	Here $B_{f\an}$ is the topological branch locus of the map $f\an: X\an \to Y\an$.
+	Indeed, every divisorial point $x \in e$ has $d$ preimages, and by \cref{prop:balancing_finite_morphism} $x$ and it's preimages have the same multiplicity. 
+	In this context we find that $e'$ and $e$ have the same length. 
+\end{remark}
+
+\begin{remark}
+	\Cref{lem:number_divisorial_points,lem:equality_lenghts_preserve_mult} suggest that there is a intrinsic definition of the metric on a Berkovich analytic curve that does not depend on an analytification map $ C\an \to C$ or models of $C$, by counting the number of divisorial points of certain multiplicities on edges. 
+	Indeed in \cite{jonssonConvergenceAdicPluricanonical2020a}, the measure on a Berkovich analytification is proven to be the same as a limit of Shilov measures, which is essentially what we described above. 
+	\question{Je zei dat dit is wat je uitwerkte in \cite{jonssonConvergenceAdicPluricanonical2020a}? 
+	Is dat de definitie die ik suggeer een limiet van Shilov measures?}
+\end{remark}
+
+Finally we need a lemma that relates the description of $\pro^{1, \text{an}}_{K}$ from \cref{sec:the_berkovich_affine_line} so the language of models and divisorial points. 
+
+\begin{lemma}\label{lem:model_disk_proj_line}
+	Let $\mathscr P_{a,j}$ with $a \in \pro_K^{1}, j \in \Z$ be the model of $\mathscr \pro_{K}^{1}$ given on an affine chart by $\spec R[b], b = \pi^{-j}(x - a)$.
+	Then the divisorial point associated to the unique component of the special fiber is the valuation corresponding to the disk $B(a, |\pi|^{j})$. 
+\end{lemma}
+\begin{proof}
+	Note that a birational point in $X\an$, as a norm is uniquely determined by its valuation on polynomials. 
+	Let $f \in K[X]$ be a polynomial and $f = \sum_{i = 0}^{n} a_i (x - a)^{i} $ be its Taylor expansion around $a$. 
+	Let $\xi$ be generic point of the irreducible component of $\mathscr P_{a, j}$. 
+	Note that this is the ideal $(\pi)$.
+	Similarly the maximal ideal of $\mathcal{O}_{\xi}$ is generated by $(\pi)$ and let $v_{\xi}$ be a associated valuation.
+	Note that a polynomial is only divisible by $\pi$ if all its coefficients are.
+	So \[
+		v_\xi(f) = v_\xi\left( \sum_{i = 0}^{n} a_{i} (x-a)^{i} \right) = v_\xi\left( \sum_{i = 0}^{n} a_i\pi^{ij}b^{i} \right) = \min_{i} v_{\xi}(a_i \pi^{ij}) 
+	,\]
+	which is the norm we constructed in \cref{sec:the_berkovich_affine_line} corresponding to the disk $B(a, |\pi|^{j})$.
+\end{proof}
+
+

@@ -1,7 +1,7 @@
 In this section we study how weight functions behave under morphisms, in particular finite covers of curves. 
 The main result of this section, \cref{prop:weightfunction_fullback}, was already known to experts, but it is not stated in the papers we are following \cite{bakerWeightFunctionsBerkovich2016,nicaiseBerkovichSkeletaBirational2016,mustataWeightFunctionsNonArchimedean2015}, and is as far as we know not published elsewhere. 
 
-We first need a couple results on the analytification of finite maps between of varieties. 
+We first need a couple results on the analytification of finite maps between varieties. 
 
 \begin{lemma}
 	Let $f: X \to Y$ be a finite map between varieties over  $K$. 
@@ -23,7 +23,7 @@ Then the map $f\an: X\an \to Y\an$ is finite in the sense that for any $y \in Y\
 	.\] 
 \end{lemma}
 \begin{proof}
-	The map being finite means that $K(X)$ is a finite extension of $K(Y)$ and that $v_{f(x)}$ is the restriction of $v_x$ to $K(Y)$. 
+	The map being generically finite means that $K(X)$ is a finite extension of $K(Y)$ and that $v_{f(x)}$ is the restriction of $v_x$ to $K(Y)$. 
 	Then the residue fields of $K(X), K(Y)$ wrt.\ $v_x, v_{f(x)}$ are a finite extension \stacks{09E5}, hence of the same transcendence degree over $k$. 
 	The claim now follows from \cref{lem:char_div_point}.
 \end{proof}
@@ -40,12 +40,13 @@ Then the map $f\an: X\an \to Y\an$ is finite in the sense that for any $y \in Y\
 \begin{remark}
 	In the case of curves we can give a more topological argument for \cref{lem:im_type_ii}. 
 	A divisorial point $x \in X\an$ is precisely a point with an infinite number of tangent directions, i.e.\ a branch point.
-	The map $f\an: X\an \to Y\an $ is a finite branched cover. So topologically $f(x)$ is also such a branch point, hence divisorial. 	
+	The map $f\an: X\an \to Y\an $ is topologically finite.
+	So here are also infinitely many branches at $f(x)$, i.e.\ $f(x)$ is also such a branch point, hence divisorial. 	
 \end{remark}
 
 The following proposition will be very useful for understanding finite maps between Berkovich curves in general. 
 \begin{proposition}\label{prop:balancing_finite_morphism}
-	Let $g: X \to Y$ be a finite map between proper varieties of degree $d$ and $\phi = g\an: X\an \to Y\an$. 
+	Let $g: X \to Y$ be a generically finite map between proper varieties of degree $d$ and $\phi = g\an: X\an \to Y\an$. 
 	Let $y \in Y^{\text{div}}$. 
 	Then 
 	\[
@@ -75,24 +76,32 @@ The following proposition will be very useful for understanding finite maps betw
 \end{proof}
 
 \begin{remark}\label{rem:balancing_galois_cover}
-	If the degree  $d$ of $g: X \to Y$ is prime then $g$ is automatically a Galois cover.\question{Is dit waar, of moet ik hier aannemen dat $g$ Galois is?}
-	So for any divisorial points $y \in Y\an$ we have that \[
+	Suppose $g:X \to Y$ is a Galois cover of curves of degree $d$ and $d$ is prime.
+	Then for any divisorial points $y \in Y\an$ we have that \[
 		d = |\phi^{-1}(y)| \cdot e \cdot f
 	\] 
 	with $e, f$ as above. 
-	Let $F$ be the irreducible component associated to $y$ in some model $\mathscr Y$ of $Y$. 
+	Let $x \in \phi^{-1}(y)$ and $\mathscr X \to \mathscr Y$ an extension of $g$ between snc-models (we will see that this exists in \cref{lem:snc_models_morphism_curves}).
+	Let $F$ be the irreducible component associated to $y$ in $\mathscr Y$ and $G$ be the irreducible component associated to $x$ in  $\mathscr X$. 
+	We consider $G, F$ as $k$-curves with reduced scheme structure. 
+
 	As $d$ is prime there are 3 possible cases. 
 	\begin{itemize}
-		\item $|\phi^{-1}(y)| = d$, then $e = f = 1$. Let $G$ be a irreducible component of associated to a point in $\phi^{-1}(y)$. 
-			Then $G \to F$ is a birational map. 
-		\item $e = d$, then $|\phi^{-1}(y)| = 1, f = 1$. Let $G$ be a irreducible component of associated to a point in $\phi^{-1}(y)$. 
-			Then $G \to F$ is a birational map. 
-		\item $f = d$, then $e = |\phi^{-1}(y)| = 1$. Let $G$ be a irreducible component of associated to a point in $\phi^{-1}(y)$. 
+		\item $|\phi^{-1}(y)| = d$, then $e = f = 1$.  
+			Then $G \to F$ is an isomorphism. 
+		\item $e = d$, then $|\phi^{-1}(y)| = 1, f = 1$. 
+			Then $G \to F$ is an isomorphism. 
+		\item $f = d$, then $e = |\phi^{-1}(y)| = 1$. 
 			Then the map $G \to F$ is of degree $d$. 
 	\end{itemize}
 	If $d = \ch k$ then the last case splits in to two cases. 
 	Either the extension $\left[\widetilde{\mathcal{H} (x)}, \widetilde {\mathcal{H} (y)}\right]$ is purely inseparable, in which case $G \to F$ is a inseperable extension of curves, or the extension is seperable, in which case $G \to F$ is a degree $d$ cover of curves.
 \end{remark}
+\begin{proof}
+	Let $a, b$ be the generic points of $F, G$ respectively. 
+	This follows from the observation that $\kappa(a) = \widetilde{\mathcal{H} (x)}$ and likewise $\kappa(b) = \widetilde{\mathcal{H} (y)}$.
+	So the map $\mathcal{H} (y) \to \mathcal{H} (x)$ is the map of function fields between the regular proper curves $F, G$. 
+\end{proof}
 
 To understand the map $\phi: X\an \to Y\an$ it would best if we could always find suitable map $\psi: \mathscr X \to \mathscr Y$ of snc-model of $X, Y$ resp.\ such that $\psi_\eta = f$. This is what the following lemma allows us to do for curves. 
 \begin{lemma}\label{lem:snc_models_morphism_curves}
@@ -115,19 +124,19 @@ To understand the map $\phi: X\an \to Y\an$ it would best if we could always fin
 	
 	Let $\xi$ be the generic point of the component $G$. 
 	Then the valuation of $y$ is the valuation of $\mathcal{O}_{\xi, \mathscr Y}$ extended to $K\left( Y \right) $. 
-	As nomalisation is local and \cref{lem:normalisation_extension_norm}, then $g^{-1}(\xi)$ are generic points of components in $N(\mathscr Y)_s$ that correspond to the points in $\phi^{-1}(y)$. 
+	As normalisation is local and by \cref{lem:normalisation_extension_norm}, $g^{-1}(\xi)$ are generic points of components in $N(\mathscr Y)_s$ that correspond to the points in $\phi^{-1}(y)$. 
 	In particular, one of the irreducible components $F$ of $N(\mathscr Y)_s$ corresponds to $x$. 
 
 	Let $\mathscr X$ be a snc-desingularisation of $N(\mathscr Y)$ and $\tilde F$ be the strict transform of $F$. 
-	Then there is a composition domination of models  $\mathscr X \to  N(\mathscr Y) \to \mathscr Y$.
-	And the component $\tilde F$ to $G$ and we are done. 
+	Then there is a composition of dominating maps $\mathscr X \to  N(\mathscr Y) \to \mathscr Y$.
+	The component $\tilde F$ maps to $G$. So we are done. 
 \end{proof}
 
 \begin{theorem}\label{prop:weightfunction_fullback}
 	Let $f: X \to Y$ be a separable Galois cover of curves of degree $d$. 
 	Suppose that $\ch k \nmid d$. 
 	Let $\omega $ be a $m$-pluricannonical form on $Y$. 
-	We can interpret $f^*\omega$ as rational section of $\Omega_{X / K}^{\otimes n}$ with possible poles along the ramification points of $f: X \to Y$. 
+	We can interpret $f^*\omega$ as a rational section of $\Omega_{X / K}^{\otimes n}$ with possible poles along the ramification points of $f: X \to Y$. 
 	Then \[
 		\wt_{f^*\omega} = \wt_{\omega} \circ f\an
 	.\] 
@@ -136,7 +145,7 @@ To understand the map $\phi: X\an \to Y\an$ it would best if we could always fin
 	As weight functions are continuous on $\mathbb{H}(X), \mathbb{H}(Y)$ and the divisorial points are dense, it is sufficient to show that $\wt_{f^* \omega}(x) = \wt_{\omega}(y)$ 
 	for divisorial points  $x, y$ such that $\phi(x) = y$. 
 	Choose a map of models $\psi: \mathscr X \to \mathscr Y$ as in \cref{lem:snc_models_morphism_curves}.  
-	Let $\omega_X, \omega_Y$ be the extensions of $f_*\omega, \omega$ to the bundles to the $m$-pluricanonical bundles of $\mathscr X, \mathscr Y$ respectively. 
+	Let $\omega_X, \omega_Y$ be the extensions of $f_*\omega, \omega$ to $\Omega^{\text{log}}_{\mathscr X}, \Omega^{\text{log}}_{\mathscr Y}$ respectively. 
 	Let $\alpha, \beta$ be rational sections of $\mathcal{O}_{\mathscr X}(\mathscr X_{s, \text{red}}), \mathcal{O}_{\mathscr Y}(\mathscr Y_{s, \text{red}} )$ extending $1 \in \mathcal{O}_X(X), 1 \in \mathcal{O}_Y(Y)$ respectively. 
 	Then $(\alpha \pi^{-1})^{-m}\omega_{X}$ is a section of $\Omega^{\text{can}}_{\mathscr X / R}$ and $(\beta\pi^{-1})^{-m} \omega_{Y}$ is a section of $\Omega^{\text{can}}_{\mathscr Y / R}$. 
 	They are related by \begin{align*}
@@ -149,8 +158,8 @@ To understand the map $\phi: X\an \to Y\an$ it would best if we could always fin
 	Let $a, b$ be the generic points of $F, G$ respectively. 
 
 	We want to compare $\mult_{F}(\omega_X)$ to $\mult_{G}(\omega_Y)$. 
-	We can do this locally on the map $\spec \mathcal{O}_{a, \mathscr X} \to \spec \mathcal{O}_{b, \mathscr Y}$.
-	Which on the levels of rings is given by $ \mathcal{O}_{b, \mathscr Y}\into  \mathcal{O}_{a, \mathscr X}$.
+	We can do this locally on the map $\spec \mathcal{O}_{a, \mathscr X} \to \spec \mathcal{O}_{b, \mathscr Y}$,
+	which on the levels of rings is given by $ \mathcal{O}_{b, \mathscr Y}\into  \mathcal{O}_{a, \mathscr X}$.
 	Then $\alpha, \beta$ are uniformiser of $\mathcal{O}_{a, \mathscr X}, \mathcal{O}_{b, \mathscr Y}$ respectively. 
 	So we have $\beta = u\cdot \alpha ^{e}$ where $e$ is the ramification degree and $u$ is some unit in $\mathcal{O}_{a, \mathscr X}$. 
 	As the map on fraction fields is separable we have $d(u) = 0$ like in the proof of \cref{lem:generator_canonical_bundle_DVR}. 
@@ -178,11 +187,12 @@ To understand the map $\phi: X\an \to Y\an$ it would best if we could always fin
 
 \begin{remark}\label{rem:weightfunction_fullback_art} 
 	It turns that \cref{prop:weightfunction_fullback} can be generalized to case where $\ch k \mid d$. 
-	Then Art Waeterschoot identified a error term. 
-	So the formula becomes \[
+	In this setting Art Waeterschoot identified an error term. 
+	The relation becomes \[
 		\wt_{f^* \omega}(x) = \wt_{\omega}(f\an (x)) + \frac{m}{N(x)} \cdot \delta_{\mathcal{H} (x) / \mathcal{H} (f\an(x))}^{\text{log}}
 	,\] 
 	where $\delta_{\mathcal{H} (x) / \mathcal{H} (f\an(x))}^{\text{log}}$ is the \emph{log different} which also makes an appearance in an alternative definition of weight functions in \cite{temkinMetrizationDifferentialPluriforms2016a}.
+	We write $\mathfrak{d}_f $ for the continuation of $\frac{m}{N(x)} \delta_{\mathcal{H} (x) / \mathcal{H} (f\an(x))}^{\text{log}}$ to the whole of $X\an$. 
 	Unfortunately giving a proof here would be outside the scope of thesis.
 	We will not be using this result moving forward in the thesis. 
 \end{remark}

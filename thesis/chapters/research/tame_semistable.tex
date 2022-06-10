@@ -1,33 +1,37 @@
 In this section we answer \cref{prob:main_problem} when $k$ has characteristic different from $2$, under the assumption that $E$ has semi-simple reduction, i.e.\  $E$ is of type $\mathrm I_m$ for some $m \ge 0$. 
 
 \begin{remark}\label{rem:justification_semistable}
-	The assumption that $E$ has semi-stable reduction is valid as this is what we have found \cref{sec:char_k_is_2} by means of Tate's algorithm. 
-	However assumption also isn't valid for in the case where we choose $|\lambda| > 1$ (see \cref{fig:configurations_of_gamma_lambda}).
+	The assumption that $E$ has semi-stable reduction is valid as this is what we found \cref{sec:char_k_is_2} by means of Tate's algorithm. 
+	However this assumption isn't valid for in the case where we choose $|\lambda| > 1$ (see \cref{fig:configurations_of_gamma_lambda}).
 	If $|\lambda| > 1$, i.e.\ $v(\lambda) < 0$ then
-	explicit computations of examples suggest that  $E$ has semistable reduction if $v(\lambda)$ is even and $E$ is of type $I^*_n$ if $n$ is odd. 
-	I do not know of an explanation via Berkovich geometry of this. 
+	explicit computations of examples Sagemath suggest that  $E$ has semistable reduction if $n = v(\lambda)$ is even and $E$ is of type $\mathrm I^*_n$ if $n$ is odd. 
+	When we have gained a bit more understanding we will sketch a partially Berkovich geometric, partially model theoretic explanation for why this is the case in \cref{sec:distinguishing_between_im_and_ims}. 
 \end{remark}
 
 \begin{lemma}\label{lem:semistable_skeleton}
-	Let $\mathscr C$ be minimal snc-model of curve $C$ with semistable reduction.
+	Let $\mathscr C$ be the minimal snc-model of a curve $C$ with semistable reduction.
 	Then $\mathscr C$ has no inessential components. 
 \end{lemma}
 \begin{proof}
 	Recall that $\mathscr C$ the minimal resolution of the minimal regular model $\mathscr C_\text{reg} $ of $C$. 
 	Suppose for the sake of contradiction that  $C$ has inessential components.
 	Then there is ``leaf''  $F$ which is a rational curve in $\mathscr C_s$. 
-	If $F$ dominates a component $F'$ in $\mathscr C_\text{reg} $ then $F'$ is also a rational curve of multiplicity $1$ which intersects has self intersection $-1$,  which would contradict the minimality of  $\mathscr C _\text{reg} $ by Castelnouovo's criterion \cref{thm:castelnuovo}. 
+	If $F$ dominates a component $F'$ in $\mathscr C_\text{reg} $ then $F'$ is also a rational curve of multiplicity $1$ which has self intersection $-1$.
+	This contradicts the minimality of  $\mathscr C _\text{reg} $ by Castelnouovo's criterion (\cref{thm:castelnuovo}). 
 
 	Suppose now that $F$ does not dominate a component in $\mathscr C_\text{reg} $.
 	Then it is the $F$ is the exceptional divisor of a blowup in a smooth point of a intermediate model $\mathscr C \to \mathscr C' \to \mathscr C_\text{reg} $. 
 	Then $\mathscr C'$ is also snc, which contradicts the minimality of $\mathscr C$. 
 \end{proof}
 \begin{corollary}
-	Let $\mathscr C$ be ithe minimal snc-model of $C$. 
+	Let $\mathscr C$ be the minimal snc-model of $C$. 
 	Then the leaves of the dual graph  $\Delta (\mathscr C)$ have genus greater than $0$. 
 \end{corollary}
 
-Recall \cref{lemma:genus_semistable} which states that the Betti-number of $\Delta(C)$ plus the genus of vertices equals $g(C)$. 
+Recall \cref{lem:genus_semi_stable_curve,rem:genus_semi_stable_curve} which state that the Betti-number of $\Delta(C)$ plus the genera of vertices equals $g(C)$, when $\mathscr C$ is semistable.  
+Desingularizing $\mathscr C$ to an snc-model only add chains of projective lines between components that are already connected in the dual graph (\cite[cor.\ 10.3.25]{liuAlgebraicGeometryArithmetic2002}). 
+So this does not change the Betti number, or the sum of genera. 
+So the result remains true for snc-models if $C$ has semistable reduction. 
 In the case of $E$ this leaves two options. 
 \begin{lemma}\label{lem:point_or_circle}
 	Let $E$ be an elliptic curve with semi-stable reduction and $\mathscr E$ be its minimal semistable model. 
@@ -39,8 +43,8 @@ In the case of $E$ this leaves two options.
 \end{lemma}
 \begin{proof}
 	The fact $\sk(\mathscr E) = \sk(E)$ follows from \cref{lem:semistable_skeleton}. 
-	We know that $\Delta(E)$ is homotopic to either a circle, or a point of genus $1$. 
-	As it has no leaves of genus $0$ and is finite, this means that $\Delta(E)$ is either a circle or a point of genus 1, which proofs the claim.
+	We know that $\Delta(\mathscr E)$ is homotopic to either a circle, or a point of genus $1$. 
+	As it has no leaves of genus $0$ and is finite, this means that $\sk(E)$ is either a circle or a point of genus 1, which proofs the claim.
 \end{proof}
 
 \begin{lemma}
@@ -57,9 +61,9 @@ In the case of $E$ this leaves two options.
 \end{proof}
 
 The only thing left to do is determine the length of the circle $\sk(E)$ when $n \ge 1$.
-We know that $\phi|_{\sk(E)}:\sk (E) \to \sk(\mathscr P)$ is surjective map from a circle to a line, such that every point $x \in \sk(\mathscr P)$ has precisely 1 or 2 preimages. 
-From this we see that $\phi|_{\sk(E)}$ is a branched cover with branch points in $a, b$, the end points of the line $\sk(\mathscr P)$ (see \cref{fig:skeleton_projective_line}).
-\todo{topologically this is obvious, but how would you make this rigorous?}
+We know that $\phi|_{\sk(E)}:\sk (E) \to \sk(\mathscr P)$ is a surjective map from a circle to a line, such that every point $x \in \sk(\mathscr P)$ has precisely 1 or 2 preimages (\cref{rem:balancing_galois_cover}). 
+From this we see that $\phi|_{\sk(E)}: \sk(E) \to \sk(\mathscr P)$ is a branched cover with branch points in $a, b$, the end points of the line $\sk(\mathscr P)$ (see \cref{fig:skeleton_projective_line}).
+\todo{Topological intuition says that this is obvious, but how would you make this rigorous?}
 Then the interior of $\sk(\mathscr P)$ lifts to two lines in $\mathscr  \sk(E)$ along the map $\phi$.
 By \cref{rem:length_edge_skeleton_cover} each of these lifts has length $n$. 
 So we find that whole circle has length $2n$. 
@@ -83,30 +87,30 @@ By \cref{prop:balancing_finite_morphism} we see that $\phi$ maps divisorial poin
 Recall from \cref{sec:finding_a_minimal_snc_model} that $\mathscr P$ consist of a chain of $n+1$ rational curves of multiplicity 1. 
 From this we see that $(a, b)$ contains exactly $n -1$ points of multiplicity 1. 
 Hence each of the lines $\ell_1, \ell_2$ also contains $n-1$ points of multiplicity 1.
-Together these are $2n - 2$ of the  $2n$ irreduducible components of $\mathscr E_\text{min} $ (the minimal regular/snc model). 
+Together these are $2n - 2$ of the  $2n$ irreducible components of $\mathscr E_\text{min} $ (the minimal regular/snc model). 
 
 From \cref{prop:balancing_finite_morphism} we cannot see whether $\phi^{-1}(a), \phi^{-1}(b)$ are points of multiplicity 1 one 2. 
 But as $\mathscr E_\text{min} $ has $2n$ components with multiplicity $1$, we find that  $\phi^{-1}(a), \phi^{-1}(b)$ must be the 2 missing degree 1 points. 
-A more Berkovich theoric argument for this is the following. 
+A more Berkovich theoretic argument for this is the following. 
 As $E$ has semistable reduction, we know that $\mathscr E_\text{min} $ is semistable, or the blowup of a semistable nc-model. 
 As a result all the edges between two multiplicity 1 components are as described in \cref{lem:number_divisorial_points}.
 So if $\phi ^{-1}(a)$ has degree 2 it must lay on an edge $e$ with ends points $x, y$ (possibly $x = y$) of multiplicity $1$ with no other multiplicity 1 points in between $x, \phi^{-1}(a)$ and $y, \phi^{-1}(a)$. 
 By \cref{lem:number_divisorial_points} $\phi^{-1}(a)$ is the only multiplicity 2 point on $e$. 
 But between every multiplicity one point on $\ell_1 \cup \{\phi^{-1}(b)\} $ and $\phi^{-1}(a)$ there is a multiplicity two point. 
 This is a contradiction. 
-So $\phi^{-1}(a)$ is a multiplicity 1 point, and similiarly $\phi^{-1}(b)$ is a multiplicity 1 point.  
+So $\phi^{-1}(a)$ is a multiplicity 1 point, and similarly $\phi^{-1}(b)$ is a multiplicity 1 point.  
 
 
 From \cref{rem:balancing_galois_cover} we see that the map between components corresponding to $\phi^{-1}(a)$ and $a$ is a double cover of $\pro^{1}_k$ onto $\pro^{1}_k$.
 Likewise for $\phi^{-1}(b)$ and $b$. 
-This shows that there is the following morphism of models $\psi: \mathscr E_\text{min} \to \mathscr P$ extending the map $f: E \to \pro^{1}_K$, which we have illustrated in \cref{fig:morphism_models_semistable_tame}.
+This shows that there is the following morphism of models $\psi: \mathscr E_\text{min} \to \mathscr P$ extending the map $f: E \to \pro^{1}_K$ (\cite[thm.\ 8.3.20]{liuAlgebraicGeometryArithmetic2002}), which we have illustrated in \cref{fig:morphism_models_semistable_tame}.
 
 \begin{figure}[ht]
     \centering
     \incfig{morphism-models-semistable-tame}
-    \caption{A morphimss }
+    \caption{The morphism of $\mathscr E_\text{min} $ to  $\mathscr P$ when $E$ has semistable reduction and $n > 0$.}
     \label{fig:morphism_models_semistable_tame}
 \end{figure}
 From this we also see that $\mathscr E_\text{min} $ is actually the normalisation of $\mathscr P$ in $K(E)$. 
-Such pair of models is sometimes referred to as a simultanious resolution of singularities \cite[sec.\ 6]{liuModelsCurvesFinitea}.
+Such pair of models is sometimes referred to as a \emph{simultanious resolution of singularities} \cite[sec.\ 6]{liuModelsCurvesFinitea}.
 

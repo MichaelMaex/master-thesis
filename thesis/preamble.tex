@@ -7,7 +7,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
 \usepackage{amsmath, amssymb, amsthm}
-\usepackage{MnSymbol}
+%\usepackage{MnSymbol}
 \usepackage{tikz-cd}
 \usepackage{mdframed}
 \usepackage{longtable}
@@ -19,7 +19,7 @@
 \usepackage{comment}
 \usepackage{float}
 \usepackage{rotating}
-\usepackage[left]{showlabels}
+\usepackage[left,final]{showlabels}
 \renewcommand{\showlabelsetlabel}[1]
 {\begin{turn}{-100}\showlabelfont #1\end{turn}}
 \renewcommand{\showlabelfont}{\scriptsize\ttfamily}
@@ -40,7 +40,7 @@
   \cleardoublepage%
   \printglossary[title=\glossname]
   \chaptermark{\glossname}
-  \addcontentsline{toc}{chapter}{\glossname} %% comment to exclude from TOC
+  %\addcontentsline{toc}{chapter}{\glossname} %% comment to exclude from TOC
 }
 \makeglossaries%
 
@@ -106,7 +106,7 @@
 \let\oldeps\epsilon
 \let\epsilon\varepsilon
 \let\varepsilon\epsilon
-\newcommand{\birat}{\dashedrightarrow}
+\newcommand{\birat}{\dashrightarrow}
 
 
 
