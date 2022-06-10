@@ -50,9 +50,10 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.96135272)%
+  \begin{picture}(1,0.70945485)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{ii-sk.pdf}}%
+    \put(0.60813736,0.53023469){\color[rgb]{0.16470588,0.2745098,0.58039216}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}6\end{tabular}}}}%
   \end{picture}%
 \endgroup%

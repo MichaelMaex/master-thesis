@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="svg8" inkscape:version="0.92.4 (unknown)" sodipodi:docname="figure.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 680.3 219.2"
+	 style="enable-background:new 0 0 680.3 219.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#BF120D;stroke-miterlimit:10;}
+	.st1{fill:#BF120D;}
+	.st2{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st3{font-family:'MyriadPro-Regular';}
+	.st4{font-size:12px;}
+	.st5{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
+	.st6{font-size:15.9843px;}
+	.st7{fill:none;stroke:#000000;stroke-miterlimit:10;stroke-dasharray:4.2648,4.2648;}
+</style>
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1.0" id="base" inkscape:current-layer="layer1" inkscape:cx="284.27627" inkscape:cy="182.72055" inkscape:document-units="mm" inkscape:guide-bbox="true" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:window-height="995" inkscape:window-maximized="1" inkscape:window-width="2520" inkscape:window-x="20" inkscape:window-y="65" inkscape:zoom="0.99437388" pagecolor="#ffffff" showborder="true" showgrid="false" showguides="true" width="200mm">
+	<inkscape:grid  dotted="false" empspacing="4" id="grid815" spacingx="10" spacingy="10" type="xygrid" units="mm">
+		</inkscape:grid>
+</sodipodi:namedview>
+<g id="layer1" transform="translate(0,-177)" inkscape:groupmode="layer" inkscape:label="Layer 1">
+</g>
+<g>
+	<g>
+		<line class="st0" x1="161.8" y1="40.6" x2="161.8" y2="88.3"/>
+		<g>
+			<g>
+				<line class="st0" x1="162" y1="88.3" x2="161.8" y2="63.7"/>
+				<g>
+					<path class="st1" d="M155.2,64.8c2.8-1.7,4.9-4.2,6.6-6.9c1.7,2.7,3.9,5.1,6.7,6.8l0,1.6c-2.6-1.7-4.9-3.7-6.7-6.3
+						c-1.7,2.6-4,4.7-6.6,6.4L155.2,64.8z"/>
+					<path class="st1" d="M155.2,68.7c2.8-1.7,4.9-4.2,6.6-6.9c1.7,2.7,3.9,5.1,6.7,6.8l0,1.6c-2.6-1.7-4.9-3.7-6.7-6.3
+						c-1.7,2.6-4,4.7-6.6,6.4L155.2,68.7z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+	<g>
+		<line class="st0" x1="161.9" y1="211.3" x2="161.9" y2="163.6"/>
+		<g>
+			<g>
+				<line class="st0" x1="162.1" y1="163.6" x2="161.9" y2="188.2"/>
+				<g>
+					<path class="st1" d="M168.6,187.2c-2.8,1.6-5,4.2-6.7,6.8c-1.6-2.7-3.9-5.2-6.6-6.9l0-1.6c2.6,1.7,4.9,3.8,6.6,6.4
+						c1.8-2.5,4.1-4.7,6.7-6.3L168.6,187.2z"/>
+					<path class="st1" d="M168.6,183.2c-2.8,1.6-5,4.2-6.7,6.8c-1.6-2.7-3.9-5.2-6.6-6.9l0-1.6c2.6,1.7,4.9,3.8,6.6,6.4
+						c1.8-2.5,4.1-4.7,6.7-6.3L168.6,183.2z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+	<line class="st2" x1="162" y1="88.3" x2="162" y2="163.6"/>
+	<circle cx="162" cy="40.6" r="2.3"/>
+	<text transform="matrix(1 0 0 1 169.3531 38.2817)" class="st3 st4">$b$</text>
+	<circle cx="161.8" cy="88.3" r="2.3"/>
+	<text transform="matrix(1 0 0 1 169.3529 90.5194)" class="st3 st4">$\beta_{-1}$</text>
+	<circle cx="162.1" cy="163.6" r="2.3"/>
+	<text transform="matrix(1 0 0 1 172.4456 165.9638)" class="st3 st4">$\beta_{2n-4v(2)}$</text>
+	<circle cx="161.9" cy="211.3" r="2.3"/>
+	<text transform="matrix(1 0 0 1 169.4519 211.3147)" class="st3 st4">$a$</text>
+	<g>
+		<g>
+			<line class="st5" x1="150.1" y1="164.2" x2="150.1" y2="210.8"/>
+			<g>
+				<polygon points="148,165.8 148.4,166.2 150.1,164.4 151.7,166.2 152.1,165.8 150.1,163.6 				"/>
+			</g>
+			<g>
+				<polygon points="148,209.1 148.4,208.8 150.1,210.6 151.7,208.8 152.1,209.1 150.1,211.3 				"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line class="st5" x1="150.1" y1="41.1" x2="150.1" y2="87.7"/>
+			<g>
+				<polygon points="148,42.8 148.4,43.1 150.1,41.3 151.7,43.1 152.1,42.8 150.1,40.6 				"/>
+			</g>
+			<g>
+				<polygon points="148,86.1 148.4,85.7 150.1,87.5 151.7,85.7 152.1,86.1 150.1,88.3 				"/>
+			</g>
+		</g>
+	</g>
+	<text transform="matrix(0.3348 0 0 1 125.0852 67.1484)" class="st3 st4">$\scriptstyle v(2)$</text>
+	<text transform="matrix(0.3348 0 0 1 125.0848 187.4643)" class="st3 st4">$\scriptstyle v(2)$</text>
+</g>
+<text transform="matrix(1 0 0 1 96.4654 14.9757)" class="st3 st4">If $n &gt; 2v(2)$ and $2 \nmid v(2)$</text>
+<g>
+	<g>
+		<line class="st0" x1="519.2" y1="52.4" x2="519.2" y2="108.4"/>
+		<g>
+			<g>
+				<line class="st0" x1="519.3" y1="108.4" x2="519.2" y2="78.5"/>
+				<g>
+					<path class="st1" d="M512.6,79.6c2.8-1.6,4.9-4.2,6.6-6.9c1.7,2.7,3.9,5.2,6.7,6.9l0,1.6c-2.6-1.7-4.9-3.8-6.7-6.3
+						c-1.7,2.6-4,4.7-6.6,6.4L512.6,79.6z"/>
+					<path class="st1" d="M512.6,83.5c2.8-1.6,4.9-4.2,6.6-6.9c1.7,2.7,3.9,5.2,6.7,6.9l0,1.6c-2.6-1.7-4.9-3.8-6.7-6.3
+						c-1.7,2.6-4,4.7-6.6,6.4L512.6,83.5z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+	<g>
+		<line class="st0" x1="519.3" y1="170" x2="519.3" y2="108.7"/>
+		<g>
+			<g>
+				<line class="st0" x1="519.5" y1="108.7" x2="519.3" y2="141.9"/>
+				<g>
+					<path class="st1" d="M526,140.9c-2.8,1.6-5,4.2-6.7,6.9c-1.6-2.7-3.9-5.2-6.6-6.9l0-1.6c2.6,1.7,4.9,3.8,6.6,6.4
+						c1.8-2.5,4.1-4.7,6.7-6.3L526,140.9z"/>
+					<path class="st1" d="M526,137c-2.8,1.6-5,4.2-6.7,6.9c-1.6-2.7-3.9-5.2-6.6-6.9l0-1.6c2.6,1.7,4.9,3.8,6.6,6.4
+						c1.8-2.5,4.1-4.7,6.7-6.3L526,137z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+	<circle cx="519.5" cy="52.5" r="3.1"/>
+	<text transform="matrix(1 0 0 1 529.2955 49.3633)" class="st3 st6">$b$</text>
+	<circle cx="519.2" cy="108.4" r="3.1"/>
+	<text transform="matrix(1 0 0 1 481.2965 97.5191)" class="st3 st6">$c$</text>
+	<circle cx="519.2" cy="170" r="3.1"/>
+	<text transform="matrix(1 0 0 1 516.1304 190.2264)" class="st3 st6">$a$</text>
+	<g>
+		<g>
+			<line class="st5" x1="532.8" y1="99.9" x2="532.8" y2="170.5"/>
+			<g>
+				<polygon points="530.7,101.5 531.1,101.9 532.8,100.1 534.4,101.9 534.8,101.5 532.8,99.3 				"/>
+			</g>
+			<g>
+				<polygon points="530.7,168.9 531.1,168.5 532.8,170.3 534.4,168.5 534.8,168.9 532.8,171.1 				"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line class="st5" x1="541.3" y1="53" x2="541.3" y2="120"/>
+			<g>
+				<polygon points="539.2,54.6 539.6,55 541.3,53.2 543,55 543.3,54.6 541.3,52.4 				"/>
+			</g>
+			<g>
+				<polygon points="539.2,118.3 539.6,118 541.3,119.8 543,118 543.3,118.3 541.3,120.5 				"/>
+			</g>
+		</g>
+	</g>
+	<text transform="matrix(0.3348 0 0 1 549.4323 83.6514)" class="st3 st6">$\scriptstyle v(2)$</text>
+	<text transform="matrix(0.3348 0 0 1 543.3981 141.0947)" class="st3 st6">$\scriptstyle v(2)$</text>
+	<g>
+		<line class="st0" x1="519.5" y1="108.6" x2="463.7" y2="108.8"/>
+		<g>
+			<g>
+				<line class="st0" x1="463.7" y1="108.8" x2="491.5" y2="108.6"/>
+				<g>
+					<path class="st1" d="M490.4,102c1.7,2.8,4.2,4.9,6.9,6.6c-2.7,1.7-5.2,3.9-6.9,6.7l-1.6,0c1.7-2.6,3.7-4.9,6.3-6.7
+						c-2.6-1.7-4.7-4-6.4-6.6L490.4,102z"/>
+					<path class="st1" d="M486.4,102c1.7,2.8,4.2,4.9,6.9,6.6c-2.7,1.7-5.2,3.9-6.9,6.7l-1.6,0c1.7-2.6,3.8-4.9,6.3-6.7
+						c-2.6-1.7-4.7-4-6.4-6.6L486.4,102z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+	<line class="st2" x1="464.4" y1="108.8" x2="449.7" y2="108.7"/>
+	<g>
+		<g>
+			<line class="st2" x1="449.7" y1="108.7" x2="447.7" y2="108.7"/>
+			<line class="st7" x1="443.5" y1="108.7" x2="428.5" y2="108.7"/>
+			<line class="st2" x1="426.4" y1="108.7" x2="424.4" y2="108.7"/>
+		</g>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 427.6212 14.9755)" class="st3 st4">If $n &gt; 2v(2)$ and $2 \nmid v(2)$</text>
+<text transform="matrix(8.799613e-02 0 0 1 399.0772 108.7486)" class="st3 st6">$\scriptstyle \sqrt{\lambda}$</text>
+<line class="st5" x1="328.9" y1="0" x2="328.9" y2="222.4"/>
+</svg>

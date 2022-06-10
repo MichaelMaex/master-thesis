@@ -56,4 +56,57 @@ In the case of $E$ this leaves two options.
 	Then $\phi(\sk(E)) = \sk(\mathscr P)$ is a point, and thus $n  = 0$. 
 \end{proof}
 
-The only left to do is determine the length of the circle $\sk(C)$ when 
+The only thing left to do is determine the length of the circle $\sk(E)$ when $n \ge 1$.
+We know that $\phi|_{\sk(E)}:\sk (E) \to \sk(\mathscr P)$ is surjective map from a circle to a line, such that every point $x \in \sk(\mathscr P)$ has precisely 1 or 2 preimages. 
+From this we see that $\phi|_{\sk(E)}$ is a branched cover with branch points in $a, b$, the end points of the line $\sk(\mathscr P)$ (see \cref{fig:skeleton_projective_line}).
+\todo{topologically this is obvious, but how would you make this rigorous?}
+Then the interior of $\sk(\mathscr P)$ lifts to two lines in $\mathscr  \sk(E)$ along the map $\phi$.
+By \cref{rem:length_edge_skeleton_cover} each of these lifts has length $n$. 
+So we find that whole circle has length $2n$. 
+See \cref{fig:map_circle_line}
+\begin{figure}[ht]
+    \centering
+    \incfig{map-circle-line}
+    \caption{The map from $\sk(E)$ to $\sk(\mathscr P)$ inside $\pro^{1, \text{an}}_K$, with each of the lifts of $(a, b)$ in a different color.}
+    \label{fig:map_circle_line}
+\end{figure}
+This gives gives us the following proposition.
+\begin{proposition}
+	Let $E$ be the curve from \cref{prob:main_problem}. 
+	Suppose that $\ch k \ne 2$ and that $E$ has semistable reduction. 
+	Then $E$ has reduction type $\mathrm I_{2n}$ with $n = v(\lambda)$. 
+\end{proposition}
+
+The picture we sketched above also helps us to understand what happens purely model theoretically. 
+Let $\ell_1, \ell_2$ be the two lifts of $(a, b)$ along $\phi$. 
+By \cref{prop:balancing_finite_morphism} we see that $\phi$ maps divisorial points in $\ell_1, \ell_2$ to divisorial points in $(a, b)$ of the same degree. 
+Recall from \cref{sec:finding_a_minimal_snc_model} that $\mathscr P$ consist of a chain of $n+1$ rational curves of multiplicity 1. 
+From this we see that $(a, b)$ contains exactly $n -1$ points of multiplicity 1. 
+Hence each of the lines $\ell_1, \ell_2$ also contains $n-1$ points of multiplicity 1.
+Together these are $2n - 2$ of the  $2n$ irreduducible components of $\mathscr E_\text{min} $ (the minimal regular/snc model). 
+
+From \cref{prop:balancing_finite_morphism} we cannot see whether $\phi^{-1}(a), \phi^{-1}(b)$ are points of multiplicity 1 one 2. 
+But as $\mathscr E_\text{min} $ has $2n$ components with multiplicity $1$, we find that  $\phi^{-1}(a), \phi^{-1}(b)$ must be the 2 missing degree 1 points. 
+A more Berkovich theoric argument for this is the following. 
+As $E$ has semistable reduction, we know that $\mathscr E_\text{min} $ is semistable, or the blowup of a semistable nc-model. 
+As a result all the edges between two multiplicity 1 components are as described in \cref{lem:number_divisorial_points}.
+So if $\phi ^{-1}(a)$ has degree 2 it must lay on an edge $e$ with ends points $x, y$ (possibly $x = y$) of multiplicity $1$ with no other multiplicity 1 points in between $x, \phi^{-1}(a)$ and $y, \phi^{-1}(a)$. 
+By \cref{lem:number_divisorial_points} $\phi^{-1}(a)$ is the only multiplicity 2 point on $e$. 
+But between every multiplicity one point on $\ell_1 \cup \{\phi^{-1}(b)\} $ and $\phi^{-1}(a)$ there is a multiplicity two point. 
+This is a contradiction. 
+So $\phi^{-1}(a)$ is a multiplicity 1 point, and similiarly $\phi^{-1}(b)$ is a multiplicity 1 point.  
+
+
+From \cref{rem:balancing_galois_cover} we see that the map between components corresponding to $\phi^{-1}(a)$ and $a$ is a double cover of $\pro^{1}_k$ onto $\pro^{1}_k$.
+Likewise for $\phi^{-1}(b)$ and $b$. 
+This shows that there is the following morphism of models $\psi: \mathscr E_\text{min} \to \mathscr P$ extending the map $f: E \to \pro^{1}_K$, which we have illustrated in \cref{fig:morphism_models_semistable_tame}.
+
+\begin{figure}[ht]
+    \centering
+    \incfig{morphism-models-semistable-tame}
+    \caption{A morphimss }
+    \label{fig:morphism_models_semistable_tame}
+\end{figure}
+From this we also see that $\mathscr E_\text{min} $ is actually the normalisation of $\mathscr P$ in $K(E)$. 
+Such pair of models is sometimes referred to as a simultanious resolution of singularities \cite[sec.\ 6]{liuModelsCurvesFinitea}.
+

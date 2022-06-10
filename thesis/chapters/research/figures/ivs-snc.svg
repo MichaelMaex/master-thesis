@@ -18,7 +18,7 @@
 <g id="layer1" transform="translate(0,-177)" inkscape:groupmode="layer" inkscape:label="Layer 1">
 </g>
 <line class="st0" x1="9.3" y1="54" x2="166.3" y2="54"/>
-<line class="st0" x1="34.7" y1="64.1" x2="34.7" y2="13.3"/>
+<line class="st1" x1="34.7" y1="64.1" x2="34.7" y2="13.3"/>
 <line class="st1" x1="24.2" y1="21.7" x2="60.4" y2="21.7"/>
 <g>
 	<text transform="matrix(1 0 0 1 168.6186 57.6268)" class="st2 st3 st4">$\scriptstyle 3$</text>
@@ -26,12 +26,12 @@
 <g>
 	<text transform="matrix(1 0 0 1 39.9189 43.904)" class="st2 st3 st4">$\scriptstyle 2$</text>
 </g>
-<line class="st0" x1="87" y1="64.1" x2="87" y2="13.3"/>
+<line class="st1" x1="87" y1="64.1" x2="87" y2="13.3"/>
 <line class="st1" x1="76.5" y1="21.7" x2="112.7" y2="21.7"/>
 <g>
 	<text transform="matrix(1 0 0 1 92.1883 43.904)" class="st2 st3 st4">$\scriptstyle 2$</text>
 </g>
-<line class="st0" x1="138.7" y1="64.1" x2="138.7" y2="13.3"/>
+<line class="st1" x1="138.7" y1="64.1" x2="138.7" y2="13.3"/>
 <line class="st1" x1="128.2" y1="21.7" x2="164.4" y2="21.7"/>
 <g>
 	<text transform="matrix(1 0 0 1 143.898 43.904)" class="st2 st3 st4">$\scriptstyle 2$</text>

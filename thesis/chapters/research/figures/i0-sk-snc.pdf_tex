@@ -54,6 +54,6 @@
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{i0-sk-snc.pdf}}%
-    \put(0.48112347,0.42497226){\color[rgb]{0.18823529,0.2745098,0.59215686}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.48112347,0.42497226){\color[rgb]{0.69803922,0.05882353,0.04313725}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
   \end{picture}%
 \endgroup%

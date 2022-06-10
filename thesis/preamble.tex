@@ -7,6 +7,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
 \usepackage{amsmath, amssymb, amsthm}
+\usepackage{MnSymbol}
 \usepackage{tikz-cd}
 \usepackage{mdframed}
 \usepackage{longtable}
@@ -20,8 +21,28 @@
 \usepackage{rotating}
 \usepackage[left]{showlabels}
 \renewcommand{\showlabelsetlabel}[1]
-{\begin{turn}{-90}\showlabelfont #1\end{turn}}
+{\begin{turn}{-100}\showlabelfont #1\end{turn}}
 \renewcommand{\showlabelfont}{\scriptsize\ttfamily}
+\usepackage{nomencl} 
+\renewcommand{\nomname}{List of Symbols}
+\newcommand{\myprintnomenclature}{%
+  \cleardoublepage%
+  \printnomenclature%
+  \chaptermark{\nomname}
+  %\addcontentsline{toc}{chapter}{\nomname} %% comment to exclude from TOC
+}
+\makenomenclature
+
+\usepackage{glossaries} % For list of abbreviations
+\newcommand{\glossname}{List of Abbreviations}
+\newcommand{\myprintglossary}{%
+  \renewcommand{\glossaryname}{\glossname}
+  \cleardoublepage%
+  \printglossary[title=\glossname]
+  \chaptermark{\glossname}
+  \addcontentsline{toc}{chapter}{\glossname} %% comment to exclude from TOC
+}
+\makeglossaries%
 
 \usepackage[backend = biber, style = alphabetic, backref=true]{biblatex}
 \addbibresource{references.bib}
@@ -82,6 +103,10 @@
 \let\oldphi\phi
 \let\phi\varphi
 \let\varphi\oldphi
+\let\oldeps\epsilon
+\let\epsilon\varepsilon
+\let\varepsilon\epsilon
+\newcommand{\birat}{\dashedrightarrow}
 
 
 
@@ -121,8 +146,6 @@
 
 \newcommand{\into}{\hookrightarrow}
 \newcommand{\onto}{\twoheadrightarrow}
-\newcommand{\divides}{\mid}
-\newcommand{\notdivides}{\nmid}
 \newcommand{\Gan}{\ensuremath{\mathbb{G} _m ^{\mathrm{an}}}}
 \newcommand{\an}{{}^{\text{an}}}
 \newcommand{\bir}{{}^{\text{bir}}}

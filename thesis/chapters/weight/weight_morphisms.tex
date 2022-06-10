@@ -74,7 +74,7 @@ The following proposition will be very useful for understanding finite maps betw
 	So this follows from \cref{prop:balancing_finite_morphism} applied to $\phi(x)$ and the observation that all ramification degrees and degrees of field extensions are equal in every term. 
 \end{proof}
 
-\begin{remark}
+\begin{remark}\label{rem:balancing_galois_cover}
 	If the degree  $d$ of $g: X \to Y$ is prime then $g$ is automatically a Galois cover.\question{Is dit waar, of moet ik hier aannemen dat $g$ Galois is?}
 	So for any divisorial points $y \in Y\an$ we have that \[
 		d = |\phi^{-1}(y)| \cdot e \cdot f
@@ -133,10 +133,10 @@ To understand the map $\phi: X\an \to Y\an$ it would best if we could always fin
 	.\] 
 \end{theorem}
 \begin{proof}
-	As weight functions are continuous on $\mathbb{H}(X), \mathbb{H}(Y)$ and the divisiorial points are dense, it is sufficient to show that $\wt_{f^* \omega}(x) = \wt_{\omega}(y)$ 
+	As weight functions are continuous on $\mathbb{H}(X), \mathbb{H}(Y)$ and the divisorial points are dense, it is sufficient to show that $\wt_{f^* \omega}(x) = \wt_{\omega}(y)$ 
 	for divisorial points  $x, y$ such that $\phi(x) = y$. 
 	Choose a map of models $\psi: \mathscr X \to \mathscr Y$ as in \cref{lem:snc_models_morphism_curves}.  
-	Let $\omega_X, \omega_Y$ be the extensions of $f_*\omega, \omega$ to the bundles to the $m$-pluricanonincal bundles of $\mathscr X, \mathscr Y$ respectively. 
+	Let $\omega_X, \omega_Y$ be the extensions of $f_*\omega, \omega$ to the bundles to the $m$-pluricanonical bundles of $\mathscr X, \mathscr Y$ respectively. 
 	Let $\alpha, \beta$ be rational sections of $\mathcal{O}_{\mathscr X}(\mathscr X_{s, \text{red}}), \mathcal{O}_{\mathscr Y}(\mathscr Y_{s, \text{red}} )$ extending $1 \in \mathcal{O}_X(X), 1 \in \mathcal{O}_Y(Y)$ respectively. 
 	Then $(\alpha \pi^{-1})^{-m}\omega_{X}$ is a section of $\Omega^{\text{can}}_{\mathscr X / R}$ and $(\beta\pi^{-1})^{-m} \omega_{Y}$ is a section of $\Omega^{\text{can}}_{\mathscr Y / R}$. 
 	They are related by \begin{align*}
@@ -146,12 +146,12 @@ To understand the map $\phi: X\an \to Y\an$ it would best if we could always fin
 	,\end{align*} 
 	where $\omega_{ Y /  X}$ is the extension of $\ram_f$ to $\Omega_{\mathscr X / \mathscr Y}$.
 	Let $F, G$ be the irreducible components in $\mathscr X, \mathscr Y$ corresponding to $x, y$ respectively. 
-	Let $a, b$ be the generic points of $F, G$ respecitively. 
+	Let $a, b$ be the generic points of $F, G$ respectively. 
 
 	We want to compare $\mult_{F}(\omega_X)$ to $\mult_{G}(\omega_Y)$. 
 	We can do this locally on the map $\spec \mathcal{O}_{a, \mathscr X} \to \spec \mathcal{O}_{b, \mathscr Y}$.
 	Which on the levels of rings is given by $ \mathcal{O}_{b, \mathscr Y}\into  \mathcal{O}_{a, \mathscr X}$.
-	Then $\alpha, \beta$ are uniformisers of $\mathcal{O}_{a, \mathscr X}, \mathcal{O}_{b, \mathscr Y}$ respectively. 
+	Then $\alpha, \beta$ are uniformiser of $\mathcal{O}_{a, \mathscr X}, \mathcal{O}_{b, \mathscr Y}$ respectively. 
 	So we have $\beta = u\cdot \alpha ^{e}$ where $e$ is the ramification degree and $u$ is some unit in $\mathcal{O}_{a, \mathscr X}$. 
 	As the map on fraction fields is separable we have $d(u) = 0$ like in the proof of \cref{lem:generator_canonical_bundle_DVR}. 
 	Thus
@@ -177,14 +177,14 @@ To understand the map $\phi: X\an \to Y\an$ it would best if we could always fin
 \end{proof}
 
 \begin{remark}\label{rem:weightfunction_fullback_art} 
-	It turns that \cref{prop:weightfunction_fullback} can be generalised to case where $\ch k \mid d$. 
+	It turns that \cref{prop:weightfunction_fullback} can be generalized to case where $\ch k \mid d$. 
 	Then Art Waeterschoot identified a error term. 
 	So the formula becomes \[
-		\wt_{f^* \omega}(x) = \wt_{\omega}(f\an (x)) + m \cdot \delta_{\mathcal{H} (x) / \mathcal{H} (f\an(x))}^{\text{log}}
+		\wt_{f^* \omega}(x) = \wt_{\omega}(f\an (x)) + \frac{m}{N(x)} \cdot \delta_{\mathcal{H} (x) / \mathcal{H} (f\an(x))}^{\text{log}}
 	,\] 
 	where $\delta_{\mathcal{H} (x) / \mathcal{H} (f\an(x))}^{\text{log}}$ is the \emph{log different} which also makes an appearance in an alternative definition of weight functions in \cite{temkinMetrizationDifferentialPluriforms2016a}.
 	Unfortunately giving a proof here would be outside the scope of thesis.
-	We will not be using this result moving foward in the thesis. 
+	We will not be using this result moving forward in the thesis. 
 \end{remark}
 
 

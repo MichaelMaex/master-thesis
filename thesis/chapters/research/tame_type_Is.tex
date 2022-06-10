@@ -31,6 +31,13 @@ In this case we can construct a similar model to $\mathscr P$, whose dual graph 
 	From this we also see that $\phi^{-1}(x)$ is a point. 
 	Similarly $\phi^{-1}(y)$ is a point of multiplicity 2 corresponding to an essential component in $\mathscr E$. 
 
+\begin{figure}[ht]
+    \centering
+    \incfig{models-proof-is}
+    \caption{The models and skeleta in the proof of \cref{prop:m_when_E_type_Is}.}
+    \label{fig:models_proof_is}
+\end{figure}
+
 	Let $g: N(\mathscr P') \to \mathscr P'$ be the normalisation of $\mathscr P'$ in $K(E)$.
 	From the computations above we see that $N(\mathscr P')_s$ contains two irreducible components, the strict transforms of $F, G$, both of multiplicity $2$. 
 	We can see that $N(\mathscr P')$ is not regular. 
@@ -42,12 +49,6 @@ In this case we can construct a similar model to $\mathscr P$, whose dual graph 
 	Let $H_1, \ldots, H_r$ be the missing components between $\tilde F, \tilde G$ of $\mathscr E_\text{min} $. 
 	Let $\mathscr E'$ be the (non-proper) model of $E$ containig $\tilde F, H_1, \ldots, H_r, \tilde G$. See \cref{fig:models_proof_is}.
 	
-\begin{figure}[ht]
-    \centering
-    \incfig{models-proof-is}
-    \caption{The models and skeleta in the proof of \cref{prop:m_when_E_type_Is}.}
-    \label{fig:models_proof_is}
-\end{figure}
 Then the images of $\phi(H_1), \ldots, \phi(H_r)$ are distinct divisorial points of multiplicity $1$ or $2$.
 By \cref{lem:number_divisorial_points} we know that $\sk(\mathscr P')$ has only 3 points such points, two of which are $x, y$. 
 Hence $r = 1$. 
@@ -55,8 +56,22 @@ Hence $r = 1$.
 This concludes the local computation. Globally this means the following. 
 So we see that there is one component of degree 2 in $\mathscr E_\text{min} $ for every irreducible component of $\mathscr P$, and one for every intersection point. 
 Hence there are $n + 1 + n = 2n + 1$ components of multiplicity $2$ in $\mathscr E_\text{min} $ from which it follows that $m = 2n$.  
-
-
-	 
 \end{proof}
+
+
+We can actually sketch a similar picture of a map of models as we did at the end of \cref{sec:the_semistable_case} of a map between models. 
+Let $\mathscr E_\text{min} $ be the minimal snc model of $E$. 
+Let $\mathscr E'_{\text{min}}$ the (singular) model of we obtain by contracting the four multiplicity 1 components in  $\mathscr E_\text{min} $. 
+So $\mathscr E'_{\text{min}, s} $ is a chain of rational curves of multiplicity 2. 
+Let $\mathscr P'$ be the model we obtain by blowing up each intresection point in $\mathscr P$. 
+So between each two reduced rational cruves in $\mathscr P_s$ we place a multiplicity 2 rational curve.
+
+By from our argument in the proof \cref{prop:m_when_E_type_Is}, we see that there is a morphism $\psi: \mathscr E'_\text{min}  \to \mathscr P'$ visualised in \cref{fig:dualgraphs_is_models} and that $\mathscr E'_\text{min} $ is the normalisation of $\mathscr P'$ in  $K(E)$. 
+\todo{what happens to the weierstrass component? I suspect the image lays on on the lines $[a, 0]$, $[a, \lambda]$, $[b, \infty]$, $[b, 1]$}
+\begin{figure}[ht]
+    \centering
+    \incfig{dualgraphs-is-models}
+    \caption{Dualgraphs of the models $\mathscr E_\text{min} , \mathscr E_\text{min} ', \mathscr P', \mathscr P$ and the relations between them.}
+    \label{fig:dualgraphs_is_models}
+\end{figure}
 

@@ -54,10 +54,10 @@
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{ins-sk-snc.pdf}}%
-    \put(0.87274675,0.21161543){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{1/2}$\end{tabular}}}}%
-    \put(0.4314099,0.18922216){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{n / 2}$\end{tabular}}}}%
-    \put(0.87274751,0.05356887){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{1/2}$\end{tabular}}}}%
-    \put(-0.00000016,0.09381339){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{1/2}$\end{tabular}}}}%
-    \put(-0.00000091,0.21516804){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{1/2}$\end{tabular}}}}%
+    \put(0.92021231,0.21218318){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{1/2}$\end{tabular}}}}%
+    \put(0.47887546,0.18978992){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{n / 2}$\end{tabular}}}}%
+    \put(0.92021269,0.05413663){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{1/2}$\end{tabular}}}}%
+    \put(-0.00000017,0.09381339){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{1/2}$\end{tabular}}}}%
+    \put(-0.00000092,0.21516804){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{1/2}$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

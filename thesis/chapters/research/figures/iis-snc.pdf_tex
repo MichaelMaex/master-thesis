@@ -54,14 +54,14 @@
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{iis-snc.pdf}}%
-    \put(0.08108256,0.11210906){\color[rgb]{0.16470588,0.28235294,0.58823529}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle 2$\end{tabular}}}}%
-    \put(0.27512569,0.29624769){\color[rgb]{0.16470588,0.28235294,0.58823529}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle 3$\end{tabular}}}}%
-    \put(0.30662785,0.53979298){\color[rgb]{0.16470588,0.28235294,0.58823529}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle 4$\end{tabular}}}}%
-    \put(0.47944239,0.34074985){\color[rgb]{0.16470588,0.28235294,0.58823529}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle 5$\end{tabular}}}}%
-    \put(0.71076402,0.1121029){\color[rgb]{0.16470588,0.28235294,0.58823529}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle 6$\end{tabular}}}}%
-    \put(0.69005915,0.30134135){\color[rgb]{0.16470588,0.28235294,0.58823529}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle 3$\end{tabular}}}}%
+    \put(0.08108256,0.11210845){\color[rgb]{0.16470588,0.28235294,0.58823529}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle 2$\end{tabular}}}}%
+    \put(0.27512508,0.29624708){\color[rgb]{0.16470588,0.28235294,0.58823529}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle 3$\end{tabular}}}}%
+    \put(0.30662724,0.53979175){\color[rgb]{0.16470588,0.28235294,0.58823529}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle 4$\end{tabular}}}}%
+    \put(0.47944239,0.34074924){\color[rgb]{0.16470588,0.28235294,0.58823529}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle 5$\end{tabular}}}}%
+    \put(0.7107634,0.11210228){\color[rgb]{0.16470588,0.28235294,0.58823529}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle 6$\end{tabular}}}}%
+    \put(0.69005915,0.30134073){\color[rgb]{0.16470588,0.28235294,0.58823529}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle 3$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{iis-snc.pdf}}%
-    \put(0.9058626,0.30134443){\color[rgb]{0.16470588,0.28235294,0.58823529}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle 2$\end{tabular}}}}%
-    \put(0.91254159,0.54689465){\color[rgb]{0.16470588,0.28235294,0.58823529}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle 2$\end{tabular}}}}%
+    \put(0.9058626,0.3013432){\color[rgb]{0.16470588,0.28235294,0.58823529}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle 2$\end{tabular}}}}%
+    \put(0.91254159,0.54689526){\color[rgb]{0.16470588,0.28235294,0.58823529}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle 2$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="svg8" inkscape:version="0.92.4 (unknown)" sodipodi:docname="figure.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 680.3 340.2"
+	 style="enable-background:new 0 0 680.3 340.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st1{font-family:'MyriadPro-Regular';}
+	.st2{font-size:12px;}
+	.st3{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#C60C0E;stroke-miterlimit:10;}
+	.st5{fill:#C60C0E;}
+</style>
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1.0" id="base" inkscape:current-layer="layer1" inkscape:cx="284.27627" inkscape:cy="182.72055" inkscape:document-units="mm" inkscape:guide-bbox="true" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:window-height="995" inkscape:window-maximized="1" inkscape:window-width="2520" inkscape:window-x="20" inkscape:window-y="65" inkscape:zoom="0.99437388" pagecolor="#ffffff" showborder="true" showgrid="false" showguides="true" width="200mm">
+	<inkscape:grid  dotted="false" empspacing="4" id="grid815" spacingx="10" spacingy="10" type="xygrid" units="mm">
+		</inkscape:grid>
+</sodipodi:namedview>
+<g id="layer1" transform="translate(0,-177)" inkscape:groupmode="layer" inkscape:label="Layer 1">
+</g>
+<g>
+	<line class="st0" x1="468.5" y1="48.7" x2="468.5" y2="305.9"/>
+	<circle cx="468.5" cy="48.7" r="2.3"/>
+	<text transform="matrix(1 0 0 1 475.8396 46.3687)" class="st1 st2">$b$</text>
+	<circle cx="468.3" cy="96.4" r="2.3"/>
+	<text transform="matrix(1 0 0 1 475.9386 90.6698)" class="st1 st2">$\beta_{-1}$</text>
+	<circle cx="468.6" cy="258.2" r="2.3"/>
+	<text transform="matrix(1 0 0 1 478.9327 274.3458)" class="st1 st2">$\beta_{2n-4v(2)}$</text>
+	<circle cx="468.4" cy="305.9" r="2.3"/>
+	<text transform="matrix(1 0 0 1 475.9387 305.888)" class="st1 st2">$a$</text>
+	<g>
+		<g>
+			<line class="st3" x1="456.6" y1="258.7" x2="456.6" y2="305.3"/>
+			<g>
+				<polygon points="454.5,260.4 454.9,260.7 456.6,258.9 458.2,260.7 458.6,260.4 456.6,258.2 				"/>
+			</g>
+			<g>
+				<polygon points="454.5,303.7 454.9,303.3 456.6,305.1 458.2,303.3 458.6,303.7 456.6,305.9 				"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line class="st3" x1="456.6" y1="49.2" x2="456.6" y2="95.8"/>
+			<g>
+				<polygon points="454.5,50.9 454.9,51.2 456.6,49.4 458.2,51.2 458.6,50.9 456.6,48.7 				"/>
+			</g>
+			<g>
+				<polygon points="454.5,94.1 454.9,93.8 456.6,95.6 458.2,93.8 458.6,94.1 456.6,96.3 				"/>
+			</g>
+		</g>
+	</g>
+	<text transform="matrix(0.3348 0 0 1 431.5717 75.2354)" class="st1 st2">$\scriptstyle v(2)$</text>
+	<g>
+		<g>
+			<line class="st3" x1="481.1" y1="96.9" x2="481.1" y2="257.7"/>
+			<g>
+				<polygon points="479,98.5 479.4,98.9 481.1,97.1 482.8,98.9 483.1,98.5 481.1,96.3 				"/>
+			</g>
+			<g>
+				<polygon points="479,256 479.4,255.7 481.1,257.5 482.8,255.7 483.1,256 481.1,258.2 				"/>
+			</g>
+		</g>
+	</g>
+	<text transform="matrix(0.4918 0 0 1 485.3734 173.2417)" class="st1 st2">$\scriptstyle n - 2v(2)$</text>
+	<text transform="matrix(0.3348 0 0 1 431.5717 282.0376)" class="st1 st2">$\scriptstyle v(2)$</text>
+</g>
+<text transform="matrix(1 0 0 1 448.1479 22.7428)" class="st1 st2">$\sk(\mathscr P)$</text>
+<circle cx="192.4" cy="96.3" r="2.3"/>
+<circle cx="192.7" cy="258.2" r="2.3"/>
+<line class="st0" x1="192.4" y1="96.3" x2="192.7" y2="258.2"/>
+<text transform="matrix(1 0 0 1 186.3285 89.6035)" class="st1 st2">$\alpha_{-1}$</text>
+<text transform="matrix(1 0 0 1 186.3285 274.3463)" class="st1 st2">$\alpha_{2n - 4v(2)-2}$</text>
+<text transform="matrix(1 0 0 1 176.0716 22.7428)" class="st1 st2">$\sk(E)$</text>
+<g>
+	<g>
+		<line class="st0" x1="265.5" y1="173.2" x2="363.1" y2="173.2"/>
+		<g>
+			<path d="M369.1,173.2c-2.8,1.1-6.4,2.9-8.5,4.8l1.7-4.8l-1.7-4.8C362.7,170.4,366.3,172.2,369.1,173.2z"/>
+		</g>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 294.7571 163.578)" class="st1 st2">$\phi$</text>
+<line class="st4" x1="468.1" y1="96.3" x2="468.4" y2="258.2"/>
+<text transform="matrix(1 0 0 1 382.3174 148.3647)" class="st5 st1 st2">$\phi(\sk(E))$</text>
+</svg>

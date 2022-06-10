@@ -1,0 +1,82 @@
+%% Creator: Inkscape 1.0beta2 (2b71d25, 2019-12-03), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'slope-log-different.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{510.22499084bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.32221079)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{slope-log-different.pdf}}%
+    \put(0.24893885,0.265939){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$b$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{slope-log-different.pdf}}%
+    \put(0.24893856,0.18915273){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\beta_{-1}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{slope-log-different.pdf}}%
+    \put(0.25348464,0.07825401){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\beta_{2n-4v(2)}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{slope-log-different.pdf}}%
+    \put(0.24908408,0.01159092){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$a$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{slope-log-different.pdf}}%
+    \put(0.18386771,0.22350669){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle v(2)$\end{tabular}}}}%
+    \put(0.18386712,0.04664957){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle v(2)$\end{tabular}}}}%
+    \put(0.14179832,0.30019741){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}If $n > 2v(2)$ and $2 \nmid v(2)$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{slope-log-different.pdf}}%
+    \put(0.77803249,0.24964971){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$b$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{slope-log-different.pdf}}%
+    \put(0.70747685,0.17886359){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$c$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{slope-log-different.pdf}}%
+    \put(0.75868058,0.04258945){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$a$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{slope-log-different.pdf}}%
+    \put(0.80763237,0.19924827){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle v(2)$\end{tabular}}}}%
+    \put(0.79876246,0.11481008){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle v(2)$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{slope-log-different.pdf}}%
+    \put(0.62857739,0.30019771){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}If $n > 2v(2)$ and $2 \nmid v(2)$\end{tabular}}}}%
+    \put(0.58661943,0.1623569){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle \sqrt{\lambda}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{slope-log-different.pdf}}%
+  \end{picture}%
+\endgroup%

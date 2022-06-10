@@ -15,3 +15,11 @@
 *.pdf
 *.tdo
 videos/*
+*.gls
+*.glg
+*.glo
+*.nls
+*.nlg
+*.nlo
+*.ilg
+*.ist

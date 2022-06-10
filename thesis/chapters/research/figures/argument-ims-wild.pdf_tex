@@ -1,0 +1,86 @@
+%% Creator: Inkscape 1.0beta2 (2b71d25, 2019-12-03), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'argument-ims-wild.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{434.625bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.42467646)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{argument-ims-wild.pdf}}%
+    \put(0.64710251,0.38673892){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\beta_{-1}$\end{tabular}}}}%
+    \put(0.63767732,0.00972425){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\beta_{1}$\end{tabular}}}}%
+    \put(0.65865609,0.17184556){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\gamma = \phi(\delta)$\end{tabular}}}}%
+    \put(0.65865609,0.03989405){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.65786403,0.19984815){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0.65865609,0.35983004){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{argument-ims-wild.pdf}}%
+    \put(0.57181882,0.2323089){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0.50356894,0.20978223){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\beta_0$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{argument-ims-wild.pdf}}%
+    \put(0.65465885,0.1143101){\color[rgb]{0.90196078,0.16470588,0.14901961}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle\phi(\alpha_1,\delta)$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{argument-ims-wild.pdf}}%
+    \put(0.55085333,0.17452494){\color[rgb]{0.30196078,0.69019608,0.33333333}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle\phi(\delta, \gamma)$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{argument-ims-wild.pdf}}%
+    \put(0.56120329,0.26928733){\color[rgb]{0.20784314,0.41568627,0.69803922}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle\phi(\gamma, \alpha_{-1})$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{argument-ims-wild.pdf}}%
+    \put(0.17432252,0.36576947){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\alpha_{-1}$\end{tabular}}}}%
+    \put(0.19019034,0.04268404){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\alpha_{1}$\end{tabular}}}}%
+    \put(0.19019034,0.20251666){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\alpha_0$\end{tabular}}}}%
+    \put(0.26060052,0.04181105){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0.25981018,0.20176515){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0.26060225,0.36174703){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{argument-ims-wild.pdf}}%
+    \put(0.25620052,0.12780087){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4\end{tabular}}}}%
+    \put(0.19018861,0.11839759){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\delta$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{argument-ims-wild.pdf}}%
+    \put(0.36725091,0.21949837){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\phi$\end{tabular}}}}%
+    \put(0.85230148,0.37996843){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$A$\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

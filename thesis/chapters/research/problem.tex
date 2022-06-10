@@ -7,35 +7,35 @@ So we may wonder whether we can determine the reduction type of $E$ by studying 
 \Cref{tab:skeleton_by_kodaira_neron} gives the essential skeleton of $E$ by reduction type. 
 Only considering the topology of $\sk E$ we can distinguish three sets of reduction types 
 \begin{description}
-	\item[point] $\mathrm I_0, \mathrm{II}, \mathrm{III},\mathrm{IV}, \mathrm{I}_0^*$ 
-	\item[line] $\mathrm{II}^*, \mathrm{III}^*, \mathrm{I}_n^*$ for some $n > 0$
-	\item[circle]  $\mathrm{I}_1, \mathrm{I}_n$ for some  $n > 0$
-	\item[three fan] $\mathrm {IV}^*$
+	\item[point] $\mathrm I_0, \mathrm{II}, \mathrm{III},\mathrm{IV}, \mathrm{I}_0^*, \mathrm{II}^*, \mathrm{III}^*$ 
+	\item[line] $\mathrm{I}_n^*$ for some $n > 0$
+	\item[circle]  $\mathrm{I}_n$ for some  $n > 0$
 \end{description}
-By taking account more information of the skeleton like the lengths, the genus of points, or the multiplicity of points, it is possible we can make a distinction between more types.
-In particular the length of $\sk(E)$ is known, it is possible to find the $n$ in the reduction types $\mathrm I_n$ and $\mathrm I_n^*$. 
+If we know the \emph{combinatorical type of $\sk(E)$}, i.e.\ know all the multiplicities and genera of the divisorial points, then we can distuinguish between all types except $\mathrm{II}, \mathrm{II}^*$ and $\mathrm{III}, \mathrm{III}^*$ and  $\mathrm{IV}, \mathrm{IV}^*$.
+In particular if the length of $\sk(E)$ is known, it is possible to find the $n$ in the reduction types $\mathrm I_n$ and $\mathrm I_n^*$. 
 
 
-So the question becomes the following. Given an elliptic curve $E$ over $K$, can we get information of $\sk(E)$ like, the topology, lengths, geni,\ldots without computing an snc-model of  $E$?
-There is only one curve, of which we know how to understand its Berkovich analytification without using models, $\pro^{1}_K$.
+So the question becomes the following. Given an elliptic curve $E$ over $K$, can we get information about $\sk(E)$ like, the topology, lengths, genera,\ldots without computing a snc-model of  $E$?
+The projective line $\pro^{1}_K$ is the only curve of which we know how to describe its Berkovich analytification without using models. 
 As elliptic curves are hyper elliptic, there is a degree $2$ morphism $f: E \to \pro^{1}_K$. 
-So our hope is that by studying the analytification of this morphism $\phi: E\an \to \pro^{1, \text{an}}_K$ we can recover information on the essential skeleton of $E\an$. 
+Our hope is that by studying the analytification of this morphism $\phi: E\an \to \pro^{1, \text{an}}_K$ we can recover information on the essential skeleton of $E\an$. 
 We will limit ourselves to the following setting.
 \begin{problem}\label{prob:main_problem}
 	Let $E$ be the elliptic curve given by the Weierstrass equation 
 	\begin{equation}\label{eq:weierstrass_problem}
-		y^2 = x(x-1)(x-\lambda) = x^3 + (-1 - \lambda) x^2 + \lambda x
+		E: y^2 = x(x-1)(x-\lambda) = x^3 + (-1 - \lambda) x^2 + \lambda x
 	,\end{equation}
 	for some $\lambda \in K^\times $ such that $|\lambda| \le 1, |\lambda - 1| = 1$. 
 	Let $f: E \to \pro^{1}_K$ given by projection to the $x$-axis, which a degree 2 morphism ramified over $4$ points. 
-	What is $\sk E$? What is the reduction type of $E$?
+	What is $\sk (E)$? What is the reduction type of $E$?
 \end{problem}
 \setlength{\LTcapwidth}{5.7in}
 \begin{longtable}{c|c|c|c|c}
 		\caption{The minimal regular model, minimal snc-model $\mathscr E_\text{min} $, skeleton induced by $\mathscr E_\text{min} $ and the essential skeleton.
-	Inessential components of the $\mathscr E_\text{min} $ are coloured green. Components with multiplicity greater than one have their multiplicities labelled in blue. 
-Points in the skeleton with genus greater than 0 are also labelled in blue. 
-Lengths of line segments and circles in the skeleta are labelled in black.}
+	Inessential components of the $\mathscr E_\text{min} $ are colored green. Components with multiplicity greater than one have their multiplicities labeled in blue. 
+Points in the skeleton with genus greater than 0 are labeled in red. 
+Lengths of line segments and circles in the skeleta are labeled in black.
+If $\sk(E)$ is a point $x$, then it will be labeled with its multiplicity $N(x)$ in blue.}
 	\label{tab:skeleton_by_kodaira_neron}
 	\\
 	type & minimal regular model	& minimal snc-model &  $\sk(\mathscr E_\text{min} )$ & $\sk(E)$ \\
@@ -51,21 +51,21 @@ Lengths of line segments and circles in the skeleta are labelled in black.}
 	$\mathrm{II}$ &  \incfigsmall{ii-reg} & \incfigsmall{ii-snc} & \incfigsmall{ii-sk-snc} & \incfigsmall{ii-sk}
  \\ 
 	\hline 
-	$\mathrm{III}$ &  \incfigsmall{iii-reg} & \incfigsmall{iii-snc}   & \incfigsmall{iii-sk-snc}  &  \incfigsmall{ii-sk}
+	$\mathrm{III}$ &  \incfigsmall{iii-reg} & \incfigsmall{iii-snc}   & \incfigsmall{iii-sk-snc}  &  \incfigsmall{iii-sk}
 \\
 	\hline 
-	$\mathrm{IV}$ &  \incfigsmall{iv-reg} & \incfigsmall{iv-snc}   & \incfigsmall{iv-sk-snc}  &  \incfigsmall{ii-sk}
+	$\mathrm{IV}$ &  \incfigsmall{iv-reg} & \incfigsmall{iv-snc}   & \incfigsmall{iv-sk-snc}  &  \incfigsmall{iv-sk}
 \\
 	\hline 
-	$\mathrm{I}_0^*$ &  \incfigsmall{i0s-reg}&  \incfigsmall{i0s-snc} & \incfigsmall{i0s-sk-snc} & \incfigsmall{ii-sk} \\
+	$\mathrm{I}_0^*$ &  \incfigsmall{i0s-reg}&  \incfigsmall{i0s-snc} & \incfigsmall{i0s-sk-snc} & \incfigsmall{i0s-sk} \\
 	\hline 
 	$\mathrm{I}_n^*$ & \incfigsmall{ins-reg} &\incfigsmall{ins-snc}  &\incfigsmall{ins-sk-snc} &\incfigsmall{ins-sk}\\
 	\hline 
-	$\mathrm{IV}^*$ & \incfigsmall{ivs-reg} & \incfigsmall{ivs-snc}  & \incfigsmall{ivs-sk-snc} & \incfigsmall{ii-sk-snc} \\
+	$\mathrm{IV}^*$ & \incfigsmall{ivs-reg} & \incfigsmall{ivs-snc}  & \incfigsmall{ivs-sk-snc} & \incfigsmall{iv-sk} \\
 	\hline 
-	$\mathrm{III}^*$ & \incfigsmall{iiis-reg} & \incfigsmall{iiis-snc} &\incfigsmall{iiis-sk-snc} &\incfigsmall{iiis-sk}\\
+	$\mathrm{III}^*$ & \incfigsmall{iiis-reg} & \incfigsmall{iiis-snc} &\incfigsmall{iiis-sk-snc} &\incfigsmall{iii-sk}\\
 	\hline 
-	$\mathrm{II}^*$ & \incfigsmall{iis-snc} & \incfigsmall{iiis-snc} &\incfigsmall{iis-sk-snc} &\incfigsmall{iis-sk}\\
+	$\mathrm{II}^*$ & \incfigsmall{iis-reg} & \incfigsmall{iis-snc} &\incfigsmall{iis-sk-snc} &\incfigsmall{ii-sk}\\
 	\hline 
 \end{longtable}
 
@@ -74,7 +74,7 @@ Lengths of line segments and circles in the skeleta are labelled in black.}
 Requiring that $E$ is of the from in \eqref{eq:weierstrass_problem} puts some implicit assumptions on $E$ and the map $f: E \to \pro^{1}_K$.
 In particular it forces the ramification points of $f$ to be defined over $K$, which as we will see in \cref{sec:expectations} limits the reduction types that can occur. 
 
-The assumption that $|\lambda| \le 1, |1 - \lambda| = 1$ has the following Berkovich geometry interpretation.
+The assumption that $|\lambda| \le 1, |1 - \lambda| = 1$ has the following Berkovich geometric interpretation.
 We can consider $0, 1, \lambda, \infty$ as closed points of $\pro^{1}_K$, and thus also as type 1 points in $\pro^{1, \text{an}}_K$.
 Let  $\Gamma_\lambda$ be the convex hull of the points $0, 1, \lambda, \infty$ in $\pro^{1, \text{an}}_K$. 
 Then  $\Gamma_\lambda$ can have 4 different configurations depending on $|\lambda|$ and $|1-\lambda|$. 
@@ -87,13 +87,16 @@ Our assumptions enforce that $\Gamma_\lambda$ is of one of the first two configu
 \end{figure}
 If  $\Gamma_\lambda$ is not of the second configuration (as in \cref{fig:configurations_of_gamma_lambda}) then we may move to any other of the 3 remaining configurations by a Möbius transformation on $\pro^{1}_K$, taking $\lambda$ to $\lambda'$. 
 This will induce an isomorphism $E_L \to E'_L$ where $E'$ is the elliptic curve defined by $y^2 = x(x-1)(x-\lambda')$ and $L$ is a finite extension of $K$. 
-Note  that $L$ cannot always be taking to be $K$ itself
+Note  that $L$ cannot always be taken to be $K$ itself
 \footnote{Take the curves $E: y^2 = x(x -1)(x-3)$ and $E': y^2 = x(x-1)(x-1 /3)$ defined over $K = \hat{\Q_3^{\text{un}}}$.
-An isomorphism is given by the coordinate transformation $y\mapsto 3\sqrt{3} y, x\mapsto 3x$, and hence is defined over $K(\sqrt{3} )$. The curves $E, E'$ are not isomorphic over $K$ however as they have different reduction type.}.
+An isomorphism is given by the coordinate transformation $y\mapsto 3\sqrt{3} y, x\mapsto 3x$, and hence is defined over $K(\sqrt{3} )$. However the curves $E, E'$ are not isomorphic over $K$ as they have different reduction type.}.
 
-
-\todo{do I need to expand on this more?}
-
+\begin{remark}
+	\Cref{prob:main_problem} can be considered as the discretely valued analogue of a classical excercise in the setting where $K$ is algebraically closed.
+	See for exampele \cite[exericise 6.1.3.3]{temkinIntroductionBerkovichAnalytic2010}.  
+	In this exercise they compute $\mathscr E\an$ by determining the topological branch locus of $f\an$ in $\pro^{1, \text{an}}_K$, using analytic tools that only work when $K$ is algebraically closed. 
+	As we will see the problem is much more involved in our discretely valued setting. 
+\end{remark}
 
 
 

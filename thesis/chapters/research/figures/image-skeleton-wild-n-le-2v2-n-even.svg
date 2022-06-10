@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="svg8" inkscape:version="0.92.4 (unknown)" sodipodi:docname="figure.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 680.3 258.1"
+	 style="enable-background:new 0 0 680.3 258.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{font-family:'MyriadPro-Regular';}
+	.st1{font-size:12px;}
+	.st2{fill:none;stroke:#0080A7;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#000000;stroke-miterlimit:10;stroke-dasharray:3.4399,3.4399;}
+	.st5{fill:#0080A7;}
+	.st6{fill:#B30F0B;}
+	.st7{fill:none;stroke:#B30F0B;stroke-width:2;stroke-miterlimit:10;}
+	.st8{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
+</style>
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1.0" id="base" inkscape:current-layer="layer1" inkscape:cx="284.27627" inkscape:cy="182.72055" inkscape:document-units="mm" inkscape:guide-bbox="true" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:window-height="995" inkscape:window-maximized="1" inkscape:window-width="2520" inkscape:window-x="20" inkscape:window-y="65" inkscape:zoom="0.99437388" pagecolor="#ffffff" showborder="true" showgrid="false" showguides="true" width="200mm">
+	<inkscape:grid  dotted="false" empspacing="4" id="grid815" spacingx="10" spacingy="10" type="xygrid" units="mm">
+		</inkscape:grid>
+</sodipodi:namedview>
+<g id="layer1" transform="translate(0,-177)" inkscape:groupmode="layer" inkscape:label="Layer 1">
+</g>
+<text transform="matrix(1 0 0 1 115.3298 15.9066)" class="st0 st1">If $n \equiv 0 \mod 4$</text>
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1.0" id="base" inkscape:current-layer="layer1" inkscape:cx="284.27627" inkscape:cy="182.72055" inkscape:document-units="mm" inkscape:guide-bbox="true" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:window-height="995" inkscape:window-maximized="1" inkscape:window-width="2520" inkscape:window-x="20" inkscape:window-y="65" inkscape:zoom="0.99437388" pagecolor="#ffffff" showborder="true" showgrid="false" showguides="true" width="200mm">
+	<inkscape:grid  dotted="false" empspacing="4" id="grid815" spacingx="10" spacingy="10" type="xygrid" units="mm">
+		</inkscape:grid>
+</sodipodi:namedview>
+<g id="layer1_1_" transform="translate(0,-177)" inkscape:groupmode="layer" inkscape:label="Layer 1">
+</g>
+<text transform="matrix(1 0 0 1 434.9258 15.9066)" class="st0 st1">If $n \equiv 2 \mod 4$</text>
+<line class="st2" x1="261.8" y1="97.6" x2="261.8" y2="238.9"/>
+<circle cx="261.8" cy="97.6" r="2.4"/>
+<circle cx="261.8" cy="238.9" r="2.4"/>
+<circle cx="261.8" cy="168.2" r="2.4"/>
+<text transform="matrix(1 0 0 1 270.8918 97.6298)" class="st0 st1">$b$</text>
+<text transform="matrix(1 0 0 1 275.6707 243.5671)" class="st0 st1">$a$</text>
+<text transform="matrix(0.2474 0 0 1 264.5129 69.3874)" class="st0 st1">$\pro^{1, \text{an}}_K$</text>
+<line class="st3" x1="214.3" y1="168.2" x2="261.8" y2="168.2"/>
+<g>
+	<g>
+		<line class="st3" x1="193.1" y1="168.2" x2="195.1" y2="168.2"/>
+		<line class="st4" x1="198.5" y1="168.2" x2="210.5" y2="168.2"/>
+		<line class="st3" x1="212.3" y1="168.2" x2="214.3" y2="168.2"/>
+	</g>
+</g>
+<text transform="matrix(0.213 0 0 1 161.6114 170.6564)" class="st0 st1">$\scriptstyle \sqrt{\lambda}$</text>
+<circle cx="35.8" cy="168.2" r="2.4"/>
+<text transform="matrix(1 0 0 1 272.5125 170.6563)" class="st0 st1">$c$</text>
+<text transform="matrix(1 0 0 1 43.0351 165.8262)" class="st0 st1">6</text>
+<text transform="matrix(1 0 0 1 16.9422 69.3873)" class="st0 st1">$\sk(E)$</text>
+<text transform="matrix(0.1798 0 0 1 274.1511 141.9053)" class="st5 st0 st1">$\sk(\mathscr P)$</text>
+<circle class="st6" cx="219" cy="168.2" r="2.4"/>
+<text transform="matrix(1 0 0 1 209.4639 160.4521)" class="st6 st0 st1">3 or 6</text>
+<g>
+	<text transform="matrix(0.1667 0 0 1 206.2578 184.5976)" class="st6 st0 st1">$\scriptstyle\phi(\sk(E))$</text>
+</g>
+<g>
+	<g>
+		<line class="st3" x1="66.1" y1="166.9" x2="126.3" y2="166.9"/>
+		<g>
+			<path d="M132.4,166.9c-2.8,1.1-6.4,2.9-8.5,4.8l1.7-4.8l-1.7-4.8C126,164,129.5,165.8,132.4,166.9z"/>
+		</g>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 91.525 160.2542)" class="st0 st1">$\phi$</text>
+<line class="st2" x1="630.3" y1="97.6" x2="630.3" y2="238.9"/>
+<circle cx="630.3" cy="97.6" r="2.4"/>
+<circle cx="630.3" cy="238.9" r="2.4"/>
+<circle cx="630.3" cy="168.2" r="2.4"/>
+<text transform="matrix(1 0 0 1 639.4023 97.6299)" class="st0 st1">$b$</text>
+<text transform="matrix(1 0 0 1 644.1812 243.5672)" class="st0 st1">$a$</text>
+<text transform="matrix(0.2474 0 0 1 633.0234 69.3875)" class="st0 st1">$\pro^{1, \text{an}}_K$</text>
+<line class="st3" x1="582.8" y1="168.2" x2="630.3" y2="168.2"/>
+<g>
+	<g>
+		<line class="st3" x1="561.6" y1="168.2" x2="563.6" y2="168.2"/>
+		<line class="st4" x1="567" y1="168.2" x2="579.1" y2="168.2"/>
+		<line class="st3" x1="580.8" y1="168.2" x2="582.8" y2="168.2"/>
+	</g>
+</g>
+<text transform="matrix(0.213 0 0 1 530.1218 170.6565)" class="st0 st1">$\scriptstyle \sqrt{\lambda}$</text>
+<text transform="matrix(1 0 0 1 641.0229 170.6564)" class="st0 st1">$c$</text>
+<text transform="matrix(1 0 0 1 385.4527 69.3873)" class="st0 st1">$\sk(E)$</text>
+<text transform="matrix(0.1798 0 0 1 642.6616 141.9054)" class="st5 st0 st1">$\sk(\mathscr P)$</text>
+<g>
+	<text transform="matrix(0.1667 0 0 1 575.7726 189.9448)" class="st6 st0 st1">$\scriptstyle \phi(\sk(E))$</text>
+</g>
+<g>
+	<g>
+		<line class="st3" x1="434.6" y1="166.9" x2="494.8" y2="166.9"/>
+		<g>
+			<path d="M500.9,166.9c-2.8,1.1-6.4,2.9-8.5,4.8l1.7-4.8l-1.7-4.8C494.5,164,498,165.8,500.9,166.9z"/>
+		</g>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 460.0354 160.2542)" class="st0 st1">$\phi$</text>
+<line class="st3" x1="398.5" y1="125.9" x2="398.5" y2="200.3"/>
+<line class="st7" x1="588" y1="168.2" x2="630.3" y2="168.2"/>
+<line class="st8" x1="343.9" y1="0" x2="343.9" y2="302"/>
+</svg>

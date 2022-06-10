@@ -15,7 +15,6 @@
 	.st7{fill:#020203;}
 	.st8{fill:none;stroke:#030304;stroke-miterlimit:10;}
 	.st9{fill:none;stroke:#000000;stroke-miterlimit:10;}
-	.st10{font-family:'MyriadPro-Regular';}
 </style>
 <sodipodi:namedview  bordercolor="#666666" borderopacity="1.0" id="base" inkscape:current-layer="layer1" inkscape:cx="284.27627" inkscape:cy="182.72055" inkscape:document-units="mm" inkscape:guide-bbox="true" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:window-height="995" inkscape:window-maximized="1" inkscape:window-width="2520" inkscape:window-x="20" inkscape:window-y="65" inkscape:zoom="0.99437388" pagecolor="#ffffff" showborder="true" showgrid="false" showguides="true" width="200mm">
 	<inkscape:grid  dotted="false" empspacing="4" id="grid815" spacingx="10" spacingy="10" type="xygrid" units="mm">
@@ -40,7 +39,7 @@
 <rect x="24.3" y="33.8" class="st6" width="127.1" height="165.9"/>
 <text transform="matrix(1 0 0 1 106.2723 77.2839)" class="st7 st2 st3">$\tilde G$</text>
 <text transform="matrix(1 0 0 1 98.6489 185.4053)" class="st7 st2 st3">$\tilde F$</text>
-<text transform="matrix(0.5811 0 0 1 431.9778 119.3982)" class="st7 st2 st3">\tiny{normalisation}</text>
+<text transform="matrix(0.5811 0 0 1 431.9775 119.3983)" class="st7 st2 st3">\tiny{normalisation}</text>
 <line class="st0" x1="96.4" y1="110.6" x2="116" y2="90.5"/>
 <line class="st0" x1="116" y1="155.5" x2="96.4" y2="135.4"/>
 <line class="st0" x1="96.4" y1="148.1" x2="116" y2="127.9"/>
@@ -53,7 +52,7 @@
 		</g>
 	</g>
 </g>
-<text transform="matrix(0.5811 0 0 1 167.4478 124.6916)" class="st7 st2 st3">\tiny{desingularisation}</text>
+<text transform="matrix(0.5811 0 0 1 167.4473 124.6918)" class="st7 st2 st3">\tiny{desingularisation}</text>
 <g>
 	<g>
 		<line class="st8" x1="163.2" y1="135.3" x2="226.4" y2="135.3"/>
@@ -68,12 +67,12 @@
 	c0,6.1,0.3,12.4,1.7,18.4c0.6,2.7,1.4,6.2,3.5,7.9c2,1.7,4.3-0.1,5.8-1.8c1.8-1.9,3.2-4.7,5.4-6.1c2.5-1.6,4.1,1.8,5,4
 	c2.4,5.6,3.7,11.8,5.1,17.8c1.4,6,2.6,12,3.8,18.1c0.2,0.8,0.3,1.6,0.5,2.4"/>
 <text transform="matrix(1 0 0 1 286.3336 55.3013)" class="st1 st2 st4">$E$</text>
-<text transform="matrix(1 0 0 1 344.1822 54.9939)" class="st1 st2 st5">$N(\mathscr P’)_s$</text>
+<text transform="matrix(1 0 0 1 336.2496 55.3011)" class="st1 st2 st5">$N(\mathscr P’)_s$</text>
 <rect x="272.7" y="36.4" class="st6" width="127.1" height="165.9"/>
 <path class="st9" d="M286.3,131c0-6.1,0.3-12.3,1.6-18.2c0.6-2.7,1.3-5.8,3-7.8c1.9-2.2,4.2-0.9,6,0.9c1.9,2,3.4,4.7,5.5,6.3
 	c2.5,1.9,4.2-1.4,5.2-3.7c2.3-5.3,3.6-11.2,5-16.9c1.4-6,2.7-12.1,3.9-18.2c0.1-0.7,0.3-1.5,0.4-2.2 M286.3,131
 	c0,6.1,0.3,12.4,1.7,18.4c0.6,2.7,1.4,6.2,3.5,7.9c2,1.7,4.3-0.1,5.8-1.8c1.8-1.9,3.2-4.7,5.4-6.1c2.5-1.6,4.1,1.8,5,4
-	c2.4,5.6,3.7,11.8,5.1,17.8c1.4,6,2.6,12,3.8,18.1c0.2,0.8,0.3,1.6,0.5,2.4"/>
+	c2.4,5.6,3.7,11.8,5.1,17.8s2.6,12,3.8,18.1c0.2,0.8,0.3,1.6,0.5,2.4"/>
 <line class="st0" x1="348.9" y1="72.6" x2="386.9" y2="139.3"/>
 <line class="st0" x1="337.4" y1="187.3" x2="386.9" y2="117.6"/>
 <text transform="matrix(1 0 0 1 359.4615 81.3855)" class="st7 st2 st3">$\tilde G$</text>
@@ -81,36 +80,36 @@
 <line class="st9" x1="597.8" y1="229.5" x2="597.8" y2="331"/>
 <circle cx="597.8" cy="229.5" r="2.9"/>
 <circle cx="597.8" cy="331" r="2.9"/>
-<text transform="matrix(1 0 0 1 604.0775 229.5265)" class="st10 st3">$\scriptstyle{x}$</text>
-<text transform="matrix(1 0 0 1 605.7026 332.4125)" class="st10 st3">$\scriptstyle{y}$</text>
+<text transform="matrix(1 0 0 1 604.0775 229.5265)" class="st2 st3">$\scriptstyle{x}$</text>
+<text transform="matrix(1 0 0 1 605.7026 332.4125)" class="st2 st3">$\scriptstyle{y}$</text>
 <line class="st9" x1="116.6" y1="229.5" x2="116.6" y2="331"/>
 <circle cx="116.6" cy="229.5" r="2.9"/>
 <circle cx="116.6" cy="331" r="2.9"/>
-<text transform="matrix(1 0 0 1 122.8901 229.5265)" class="st10 st3">$\scriptstyle{\phi^{-1}(x)}$</text>
-<text transform="matrix(1 0 0 1 122.8902 333.8745)" class="st10 st3">$\scriptstyle{\phi^{-1}(y)}$</text>
+<text transform="matrix(1 0 0 1 122.8901 229.5265)" class="st2 st3">$\scriptstyle{\phi^{-1}(x)}$</text>
+<text transform="matrix(1 0 0 1 122.8902 333.8745)" class="st2 st3">$\scriptstyle{\phi^{-1}(y)}$</text>
 <circle cx="116.6" cy="247.6" r="2.9"/>
 <circle cx="116.6" cy="262.4" r="2.9"/>
-<text transform="matrix(1 0 0 1 122.89 252.0017)" class="st10 st3">$\scriptstyle{H_1}$</text>
-<text transform="matrix(1 0 0 1 121.5909 265.2769)" class="st10 st3">$\scriptstyle{H_2}$</text>
+<text transform="matrix(1 0 0 1 122.89 252.0017)" class="st2 st3">$\scriptstyle{H_1}$</text>
+<text transform="matrix(1 0 0 1 121.5909 265.2769)" class="st2 st3">$\scriptstyle{H_2}$</text>
 <circle cx="116.6" cy="311.1" r="2.9"/>
-<text transform="matrix(1 0 0 1 121.5909 313.9168)" class="st10 st3">$\scriptstyle{H_r}$</text>
-<text transform="matrix(1 0 0 1 122.8901 292.6423)" class="st10 st3">$\vdots$</text>
-<text transform="matrix(0.1401 0 0 1 98.6492 229.5268)" class="st10 st3">$\scriptstyle 2$</text>
-<text transform="matrix(0.1401 0 0 1 98.6491 252.0015)" class="st10 st3">$\scriptstyle 2$</text>
-<text transform="matrix(0.1401 0 0 1 98.6492 265.2776)" class="st10 st3">$\scriptstyle 2$</text>
-<text transform="matrix(0.1401 0 0 1 98.6494 313.917)" class="st10 st3">$\scriptstyle 2$</text>
-<text transform="matrix(0.1401 0 0 1 98.6489 333.875)" class="st10 st3">$\scriptstyle 2$</text>
+<text transform="matrix(1 0 0 1 121.5909 313.9168)" class="st2 st3">$\scriptstyle{H_r}$</text>
+<text transform="matrix(1 0 0 1 122.8901 292.6423)" class="st2 st3">$\vdots$</text>
+<text transform="matrix(0.1401 0 0 1 98.6494 229.5267)" class="st2 st3">$\scriptstyle 2$</text>
+<text transform="matrix(0.1401 0 0 1 98.6494 252.0013)" class="st2 st3">$\scriptstyle 2$</text>
+<text transform="matrix(0.1401 0 0 1 98.6494 265.2777)" class="st2 st3">$\scriptstyle 2$</text>
+<text transform="matrix(0.1401 0 0 1 98.6494 313.9169)" class="st2 st3">$\scriptstyle 2$</text>
+<text transform="matrix(0.1401 0 0 1 98.6494 333.8749)" class="st2 st3">$\scriptstyle 2$</text>
 <circle cx="597.8" cy="244.7" r="2.9"/>
 <circle cx="597.8" cy="259.6" r="2.9"/>
-<text transform="matrix(1 0 0 1 604.0774 249.1409)" class="st10 st3">$\scriptstyle{\phi(H_1)}$</text>
-<text transform="matrix(1 0 0 1 602.7783 262.4161)" class="st10 st3">$\scriptstyle{\phi(H_2)}$</text>
+<text transform="matrix(1 0 0 1 604.0774 249.1409)" class="st2 st3">$\scriptstyle{\phi(H_1)}$</text>
+<text transform="matrix(1 0 0 1 602.7783 262.4161)" class="st2 st3">$\scriptstyle{\phi(H_2)}$</text>
 <circle cx="597.8" cy="308.2" r="2.9"/>
-<text transform="matrix(1 0 0 1 602.7783 311.0559)" class="st10 st3">$\scriptstyle{\phi(H_r)}$</text>
-<text transform="matrix(1 0 0 1 604.0775 289.7814)" class="st10 st3">$\vdots$</text>
-<text transform="matrix(1 0 0 1 120.0686 98.4595)" class="st10 st3">$\scriptstyle{H_1}$</text>
-<text transform="matrix(1 0 0 1 120.0688 113.5171)" class="st10 st3">$\scriptstyle{H_2}$</text>
-<text transform="matrix(1 0 0 1 115.5493 136.5034)" class="st10 st3">$\scriptstyle{H_{r-1}}$</text>
-<text transform="matrix(1 0 0 1 120.0688 156.6165)" class="st10 st3">$\scriptstyle{H_r}$</text>
+<text transform="matrix(1 0 0 1 602.7783 311.0559)" class="st2 st3">$\scriptstyle{\phi(H_r)}$</text>
+<text transform="matrix(1 0 0 1 604.0775 289.7814)" class="st2 st3">$\vdots$</text>
+<text transform="matrix(1 0 0 1 120.0686 98.4595)" class="st2 st3">$\scriptstyle{H_1}$</text>
+<text transform="matrix(1 0 0 1 120.0688 113.5171)" class="st2 st3">$\scriptstyle{H_2}$</text>
+<text transform="matrix(1 0 0 1 115.5493 136.5034)" class="st2 st3">$\scriptstyle{H_{r-1}}$</text>
+<text transform="matrix(1 0 0 1 120.0688 156.6165)" class="st2 st3">$\scriptstyle{H_r}$</text>
 <g>
 	<g>
 		<line class="st8" x1="240.5" y1="280.3" x2="512.8" y2="280.3"/>
@@ -119,7 +118,7 @@
 		</g>
 	</g>
 </g>
-<text transform="matrix(1 0 0 1 325.4305 274.7112)" class="st10 st3">$\phi|_{\sk(\mathscr E’)}$</text>
-<text transform="matrix(0.2812 0 0 1 29.4474 235.3895)" class="st10 st3">$\sk(\mathscr E’)$</text>
-<text transform="matrix(0.3184 0 0 1 527.1749 235.3894)" class="st10 st3">$\sk(\mathscr{P’})$</text>
+<text transform="matrix(1 0 0 1 325.4305 274.7112)" class="st2 st3">$\phi|_{\sk(\mathscr E’)}$</text>
+<text transform="matrix(0.2812 0 0 1 29.4473 235.3895)" class="st2 st3">$\sk(\mathscr E’)$</text>
+<text transform="matrix(0.3184 0 0 1 527.1748 235.3895)" class="st2 st3">$\sk(\mathscr{P’})$</text>
 </svg>

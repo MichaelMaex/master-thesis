@@ -1,11 +1,13 @@
 \begin{definition}
-	Let $R$ be a ring. A \emph{absolute value on $R$} is a function $|\cdot |: R \to \R^{+} \cup \{0\} $ satisfying for all $a, b \in R$
+	Let $R$ be a ring. A \emph{absolute value on $R$} is a function
+	$|\cdot |: R \to \R^{+} \cup \{0\} $ satisfying for all $a, b \in R$
 	\begin{enumerate}
 		\item $|a| = 0 \iff a = 0$ 
 		\item $|a \cdot b| = |a| \cdot |b|$ 
 		\item $|a + b| \le |a| + |b|$
 	\end{enumerate}
 \end{definition}
+\nomenclature[no]{$\mid \cdot\mid, \mid\mid \cdot \mid\mid $}{Norm or seminorm on a ring}
 Note that if $R$ is not the zero ring, then $|1| = 1$ because $|1|^2 = |1| $ and $|1|\ne 0 $. 
 \begin{example}
 	The usual definition of absolute value on $\Z, \Q, \R$ is an absolute value. 
@@ -32,6 +34,7 @@ As we will see in \cref{sec:the_berkovich_spectrum_of_z}, we have essentially li
 \begin{observation}
 	A ring $R$ with an absolute value is a metric space with metric $d(x, y) = |x - y|$. 
 \end{observation}
+\nomenclature[d]{$d(x, y)$}{The metric on a metric space}
 \begin{definition}
 	A ring $R$ with an absolute value is \emph{complete} if all Cauchy sequences are convergent. 
 \end{definition}
@@ -44,6 +47,7 @@ As we will see in \cref{sec:the_berkovich_spectrum_of_z}, we have essentially li
 		a + b = [(a_n + b_n)_n], \quad a\cdot b = [(a_n \cdot b_n)_n]
 	.\]
 \end{definition}
+\nomenclature{$\widehat R$}{The completion of the ring $R$}
 
 Absolute values are a special case of (semi)norms
 \begin{definition}
@@ -188,6 +192,7 @@ These are typically called valuations.
 		\item $v(a + b) \le \min\{v(a), v(b)\}$
 	\end{itemize}
 \end{definition}
+\nomenclature[v]{$v$}{Valuation on a ring}
 
 \begin{remark}
 	Note that there is essentially no difference between a non-archimedean absolute value and a valuation because because they are in bijective correspondence with one another.  Any absolute value $|\cdot |$ defines a valuation $x \mapsto -\log |x|$ and given a valuation $v$ one defines a non-archimedean absolute value $x\mapsto e^{- v(x)}$. 
@@ -214,6 +219,7 @@ Usually, but not always, it is convention to scale $v$ such that $\alpha = 1$.
 \begin{corollary}
 	If $K$ is a complete non-archimedean field then the norm of  $K$ extends uniquely to its algebraic closure $\overline{K}$.
 \end{corollary}
+\nomenclature[bar]{$\overline{k}$}{Algebraic closure of $k$}
 \begin{proof}
 	Recall that \[
 	\overline{K} = \varinjlim_{L \supset K} L
@@ -241,6 +247,7 @@ This shows that we can canonically turn any non-archimedean field $K$ into an al
 	\C_p = \widehat{\overline{\Q_p}}
 	.\] 
 \end{definition}
+\nomenclature[Cp]{$\C_p$}{$p$-adic complex numbers}
 
 This is useful because in some contexts Berkovich geometry works best when the base field is algebraically closed and complete. 
 So $\C_p$ is a sort of algebraically closed version of the $p$-adics. 
@@ -264,3 +271,4 @@ We will usually write $K$ for a non-archimedean field with non-trivial norm, $R 
 	.\] 
 	This is a subgroup of $(\R^{ +}, \cdot )$. 
 \end{definition}
+\nomenclature[vg]{$\mid K^{\times }\mid$}{Value group of $K$}

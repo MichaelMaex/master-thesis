@@ -1,0 +1,88 @@
+%% Creator: Inkscape 1.0beta2 (2b71d25, 2019-12-03), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'image-skeleton-wild-n-le-2v2-n-even.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{510.22499084bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.37939146)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0.16952786,0.35600972){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}If $n \equiv 0 \mod 4$\end{tabular}}}}%
+    \put(0.63931473,0.35600972){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}If $n \equiv 2 \mod 4$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{image-skeleton-wild-n-le-2v2-n-even.pdf}}%
+    \put(0.39819463,0.23588154){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$b$\end{tabular}}}}%
+    \put(0.40521932,0.0213625){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$a$\end{tabular}}}}%
+    \put(0.38881803,0.27739616){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\pro^{1, \text{an}}_K$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{image-skeleton-wild-n-le-2v2-n-even.pdf}}%
+    \put(0.23755902,0.12853683){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle \sqrt{\lambda}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{image-skeleton-wild-n-le-2v2-n-even.pdf}}%
+    \put(0.40057696,0.12853698){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$c$\end{tabular}}}}%
+    \put(0.063259,0.13563694){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}6\end{tabular}}}}%
+    \put(0.02490401,0.27739631){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sk(E)$\end{tabular}}}}%
+    \put(0.4029856,0.17079922){\color[rgb]{0,0.50196078,0.65490196}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sk(\mathscr P)$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{image-skeleton-wild-n-le-2v2-n-even.pdf}}%
+    \put(0.30789932,0.14353654){\color[rgb]{0.70196078,0.05882353,0.04313725}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3 or 6\end{tabular}}}}%
+    \put(0.30318654,0.10804411){\color[rgb]{0.70196078,0.05882353,0.04313725}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle\phi(\sk(E))$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{image-skeleton-wild-n-le-2v2-n-even.pdf}}%
+    \put(0.13453624,0.14382744){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\phi$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{image-skeleton-wild-n-le-2v2-n-even.pdf}}%
+    \put(0.93988287,0.23588139){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$b$\end{tabular}}}}%
+    \put(0.94690756,0.02136235){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$a$\end{tabular}}}}%
+    \put(0.93050627,0.27739602){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\pro^{1, \text{an}}_K$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{image-skeleton-wild-n-le-2v2-n-even.pdf}}%
+    \put(0.77924711,0.12853669){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle \sqrt{\lambda}$\end{tabular}}}}%
+    \put(0.94226505,0.12853683){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$c$\end{tabular}}}}%
+    \put(0.56659225,0.27739631){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sk(E)$\end{tabular}}}}%
+    \put(0.94467384,0.17079907){\color[rgb]{0,0.50196078,0.65490196}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sk(\mathscr P)$\end{tabular}}}}%
+    \put(0.84635104,0.10018405){\color[rgb]{0.70196078,0.05882353,0.04313725}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle \phi(\sk(E))$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{image-skeleton-wild-n-le-2v2-n-even.pdf}}%
+    \put(0.67622433,0.14382744){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\phi$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{image-skeleton-wild-n-le-2v2-n-even.pdf}}%
+  \end{picture}%
+\endgroup%

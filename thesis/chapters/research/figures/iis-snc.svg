@@ -18,20 +18,20 @@
 <g id="layer1" transform="translate(0,-177)" inkscape:groupmode="layer" inkscape:label="Layer 1">
 </g>
 <line class="st0" x1="5.9" y1="17.9" x2="5.9" y2="74.9"/>
-<line class="st1" x1="0" y1="67.4" x2="43" y2="67.4"/>
-<line class="st1" x1="39.8" y1="17.9" x2="39.8" y2="74.9"/>
-<line class="st1" x1="73.7" y1="17.9" x2="73.7" y2="74.9"/>
+<line class="st0" x1="0" y1="67.4" x2="43" y2="67.4"/>
+<line class="st0" x1="39.8" y1="17.9" x2="39.8" y2="74.9"/>
+<line class="st0" x1="73.7" y1="17.9" x2="73.7" y2="74.9"/>
 <line class="st0" x1="107.6" y1="17.9" x2="107.6" y2="74.9"/>
-<line class="st1" x1="141.5" y1="17.9" x2="141.5" y2="74.9"/>
-<line class="st1" x1="35.7" y1="22.1" x2="76.8" y2="22.1"/>
+<line class="st0" x1="141.5" y1="17.9" x2="141.5" y2="74.9"/>
+<line class="st0" x1="35.7" y1="22.1" x2="76.8" y2="22.1"/>
 <line class="st1" x1="71.4" y1="67.4" x2="147" y2="67.4"/>
-<text transform="matrix(0.8679 0 0 1 13.1597 85.6047)" class="st2 st3 st4">$\scriptstyle 2$</text>
-<text transform="matrix(0.8679 0 0 1 44.6529 55.719)" class="st2 st3 st4">$\scriptstyle 3$</text>
-<text transform="matrix(0.8679 0 0 1 49.7657 16.1916)" class="st2 st3 st4">$\scriptstyle 4$</text>
-<text transform="matrix(0.8679 0 0 1 77.8135 48.4963)" class="st2 st3 st4">$\scriptstyle 5$</text>
-<text transform="matrix(0.8679 0 0 1 115.357 85.6057)" class="st2 st3 st4">$\scriptstyle 6$</text>
-<text transform="matrix(0.8679 0 0 1 111.9966 54.8923)" class="st2 st3 st4">$\scriptstyle 3$</text>
+<text transform="matrix(0.8679 0 0 1 13.1597 85.6048)" class="st2 st3 st4">$\scriptstyle 2$</text>
+<text transform="matrix(0.8679 0 0 1 44.6528 55.7191)" class="st2 st3 st4">$\scriptstyle 3$</text>
+<text transform="matrix(0.8679 0 0 1 49.7656 16.1918)" class="st2 st3 st4">$\scriptstyle 4$</text>
+<text transform="matrix(0.8679 0 0 1 77.8135 48.4964)" class="st2 st3 st4">$\scriptstyle 5$</text>
+<text transform="matrix(0.8679 0 0 1 115.3569 85.6058)" class="st2 st3 st4">$\scriptstyle 6$</text>
+<text transform="matrix(0.8679 0 0 1 111.9966 54.8924)" class="st2 st3 st4">$\scriptstyle 3$</text>
 <line class="st0" x1="135.7" y1="22.1" x2="162.3" y2="22.1"/>
-<text transform="matrix(0.8679 0 0 1 147.0215 54.8918)" class="st2 st3 st4">$\scriptstyle 2$</text>
-<text transform="matrix(0.8679 0 0 1 148.1055 15.039)" class="st2 st3 st4">$\scriptstyle 2$</text>
+<text transform="matrix(0.8679 0 0 1 147.0215 54.892)" class="st2 st3 st4">$\scriptstyle 2$</text>
+<text transform="matrix(0.8679 0 0 1 148.1055 15.0389)" class="st2 st3 st4">$\scriptstyle 2$</text>
 </svg>
