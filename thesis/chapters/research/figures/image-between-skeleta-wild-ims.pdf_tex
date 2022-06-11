@@ -50,30 +50,30 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.50007352)%
+  \begin{picture}(1,0.45597533)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{image-between-skeleta-wild-ims.pdf}}%
-    \put(0.69945555,0.43191433){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$b$\end{tabular}}}}%
+    \put(0.69945555,0.40298959){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$b$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{image-between-skeleta-wild-ims.pdf}}%
-    \put(0.69960108,0.36679438){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\beta_{-1}$\end{tabular}}}}%
+    \put(0.69960108,0.33786964){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\beta_{-1}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{image-between-skeleta-wild-ims.pdf}}%
-    \put(0.70400222,0.09680172){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\beta_{2n-4v(2)}$\end{tabular}}}}%
+    \put(0.70400223,0.06787698){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\beta_{2n-4v(2)-1}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{image-between-skeleta-wild-ims.pdf}}%
-    \put(0.69960122,0.05043659){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$a$\end{tabular}}}}%
+    \put(0.69960123,0.02151185){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$a$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{image-between-skeleta-wild-ims.pdf}}%
-    \put(0.63438441,0.38948202){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle v(2)$\end{tabular}}}}%
+    \put(0.63438441,0.36055742){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle v(2)$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{image-between-skeleta-wild-ims.pdf}}%
-    \put(0.71346966,0.24541866){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle n - 2v(2)$\end{tabular}}}}%
-    \put(0.63438441,0.08549524){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle v(2)$\end{tabular}}}}%
-    \put(0.65875042,0.46664298){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sk(\mathscr P)$\end{tabular}}}}%
+    \put(0.71346967,0.21649392){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle n - 2v(2)$\end{tabular}}}}%
+    \put(0.63438441,0.0565705){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle v(2)$\end{tabular}}}}%
+    \put(0.65875042,0.43771824){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sk(\mathscr P)$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{image-between-skeleta-wild-ims.pdf}}%
-    \put(0.27389167,0.36836178){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\alpha_{-1}$\end{tabular}}}}%
-    \put(0.27389167,0.09680099){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\alpha_{2n - 4v(2)-2}$\end{tabular}}}}%
-    \put(0.25881465,0.46664298){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sk(E)$\end{tabular}}}}%
+    \put(0.27389167,0.33943704){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\alpha_{-1}$\end{tabular}}}}%
+    \put(0.27389167,0.06787625){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\alpha_{2n - 4v(2)-2}$\end{tabular}}}}%
+    \put(0.25881465,0.43771824){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sk(E)$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=8]{image-between-skeleta-wild-ims.pdf}}%
-    \put(0.43327518,0.25962372){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\phi$\end{tabular}}}}%
+    \put(0.43327519,0.23069898){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\phi$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=9]{image-between-skeleta-wild-ims.pdf}}%
-    \put(0.56198355,0.28198635){\color[rgb]{0.77647059,0.04705882,0.05490196}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\phi(\sk(E))$\end{tabular}}}}%
+    \put(0.56198355,0.25306161){\color[rgb]{0.77647059,0.04705882,0.05490196}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\phi(\sk(E))$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

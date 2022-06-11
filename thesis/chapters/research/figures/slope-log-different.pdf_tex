@@ -58,7 +58,7 @@
     \put(0,0){\includegraphics[width=\unitlength,page=2]{slope-log-different.pdf}}%
     \put(0.24893856,0.18915273){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\beta_{-1}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{slope-log-different.pdf}}%
-    \put(0.25348464,0.07825401){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\beta_{2n-4v(2)}$\end{tabular}}}}%
+    \put(0.25348464,0.07825401){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\beta_{2n-4v(2)-1}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{slope-log-different.pdf}}%
     \put(0.24908408,0.01159092){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$a$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{slope-log-different.pdf}}%
