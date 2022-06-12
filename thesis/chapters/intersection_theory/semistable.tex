@@ -48,6 +48,7 @@ Semistable curves are nice, because we can very easily determine their genus.
 	\]
 	is the \emph{Betti number} of $C$. 
 \end{lemma}
+\nomenclature[beta]{$\beta(C)$}{The Betti number of the dual graph of a semistable curve or snc-model}
 \begin{proof}
 	Let $C'$ be the normalisation of $C$ and $f: C' \to C$ be the induced morphism. 
 	We see that  $C'$ is the disjoint union of $F_1', \ldots, F_n'$. 
@@ -55,7 +56,7 @@ Semistable curves are nice, because we can very easily determine their genus.
 	There is  an exact sequence \[
 	0 \to \mathcal{O}_C \to f_* \mathcal{O}_{C'} \to \mathcal{F} \to 0 
 	.\] 
-	where $\mathcal{F} $ is the skyscraper sheaf vanishing on the smooth points of $C$ and for every singular points $x$ we have $\mathcal{F} _x = k$.  
+	where $\mathcal{F} $ is the skyscraper sheaf vanishing on the smooth points of $C$ and for every singular point $x$ we have $\mathcal{F} _x = k$.  
 	Then by additivity of the Euler characteristic we find
 	\begin{align*}
 		\chi(\mathcal O_C) &= \chi(\mathcal O_{C'}) - \chi(\mathcal F) \\
@@ -67,6 +68,8 @@ Semistable curves are nice, because we can very easily determine their genus.
 		g(C) = 1 - \chi(\mathcal{O}_C) = \beta(C) + \sum_{i = 1}^{n} g(F_i')  
 	.\] 
 \end{proof}
+\nomenclature[genus]{$g(C)$}{The genus of the curve $C$ }
+%\nomenclature[g][$g(C)$]{The genus of the curve $C$}
 \begin{remark}\label{rem:genus_semi_stable_curve}
 	The \emph{Betti number} can be interpreted as the number of ``holes'' in the dual graph of $C$. 
 	That is the graph where the vertices are the irreducible components $F_1, \ldots, F_n$ and every singular point $x$ on $C$ is an edge between the components that contain $x$.
@@ -96,7 +99,7 @@ Semistable curves are nice because we can easily read of the genus of $C$ in the
 Not every curve has a semistable model.
 As we will see in \cref{chap:kodaira_neron_classification_of_elliptic_curves} there are many elliptic curves without semistable models. 
 \begin{definition}
-	A curve $C$ over $K$ has \emph{semistable} reduction there exists a semistable model of $C$. 
+	A curve $C$ over $K$ has \emph{semistable reduction} if there exists a semistable model of $C$. 
 \end{definition}
 To make matters more complicated, a semistable model is not necessarily regular. 
 Take for example the model $\mathscr P$ of $\pro^{1}_K$ that on one affine chart is given by $\spec \frac{R[x, y]}{(xy  - \pi^{2})}$. 

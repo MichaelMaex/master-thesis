@@ -1,27 +1,31 @@
 \input{preamble.tex}
 \begin{document}
-\input{chapters/coverpage.tex}
+\input{frontmatter/coverpage.tex}
 \rmfamily
 \setcounter{page}{0}
 \pagenumbering{roman}
 \newpage
+\import{frontmatter/}{front_page.tex}
 \chapter*{Preface} \label{chap:preface}
-\chapter*{Contribution Statements} \label{chap:acknowledgements}
+\import{frontmatter/}{preface.tex}
+\chapter*{Contribution statement} \label{chap:acknowledgements}
+\import{frontmatter/}{contribution_statement.tex}
 \chapter*{Summary} \label{chap:summary}
+\import{frontmatter/}{summary.tex}
 
 \myprintglossary
 \myprintnomenclature
-\tableofcontents
 \listoftodos
+\tableofcontents
 
 
 \setcounter{page}{0}
 \pagenumbering{arabic}
 
 \chapter{Introduction} \label{chap:introduction}
-%\input{chapters/introduction.tex}
+\input{chapters/introduction.tex}
 
-\part{Prerequisites from Algebraic and Arithmetic Geometry}
+\part{Prerequisites from Algebraic and Arithmetic Geometry}\label{part:AG}
 \chapter{Valuation Theory} \label{chap:valuation_theory}
 \import{chapters/valuation_theory/}{valuation_theory.tex}
 
@@ -33,7 +37,7 @@
 \chapter{Kodaira-Neron Classification of Elliptic curves} \label{chap:kodaira_neron_classification_of_elliptic_curves}
 \import{chapters/kodaira_neron/}{kodaira_neron.tex}
 
-\part{Berkovich Geometry}
+\part{Berkovich Geometry}\label{part:berkovich}
 \chapter{Introduction to Berkovich Geometry} \label{chap:intro_berkovich}
 \import{chapters/berkovich_geometry/}{berkovich_geometry.tex}
 
@@ -41,10 +45,12 @@
 \chapter{Skeleta, Metrics, and Weight Functions} \label{chap:weight_functions}
 \import{chapters/weight/}{weight.tex}
 
-\part{Applications}
+\part{Applications}\label{part:research}
 \chapter[Berkovich Approach to Elliptic Curves]{A Berkovich Approach to Classifying Elliptic Curves} \label{chap:a_berkovich_approach_to_classifying_elliptic_curves}
 \import{chapters/research/}{research.tex}
 
+\chapter{Loose ends} \label{chap:loose_ends}
+\import{chapters/}{loose_ends.tex}
 \chapter{Conclusion} \label{chap:conclusion}
 \import{chapters/}{conclusion.tex}
 

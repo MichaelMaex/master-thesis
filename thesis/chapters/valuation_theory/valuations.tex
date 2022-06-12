@@ -22,13 +22,13 @@ Note that if $R$ is not the zero ring, then $|1| = 1$ because $|1|^2 = |1| $ and
 \end{example}
 \begin{example}
 	A weirder absolute value on $\Z$ is the \emph{$p$-adic absolute value}, where $p$ is a prime. 
-	Its defined as $|a|_p = p^{-n}$ where $n$ is the largest integers such that $p^{n} \mid a$, if $a \ne 0$ and $|0|_p = 0$. 
+	It is defined as $|a|_p = p^{-n}$ where $n$ is the largest integer such that $p^{n} \mid a$, if $a \ne 0$ and $|0|_p = 0$. 
 
 
 	This $p$-adic absolute value can be extended to an absolute value on $\Q$ by defining $|a / b|_p = \frac{|a|_p}{|b|_p}$. Let $\frac{a}{b}$ be any fraction. 
 	We can think about this in the following way. 
 	Factor out the largest powers of $p$ out of $a$ and $b$ and write $a = p^{n} a', b = p^{m} b'$. Then $\frac{a}{ b} = p^{n - m} \frac{a'}{ b'}$ and $|a / b|_p = p^{m - n}$. 
-	So the $p$-adic absolute values only cares about what powers of $p$ occur and doesn't care about numbers coprime to $p $.
+	So the $p$-adic absolute value only cares about what powers of $p$ occur and doesn't care about numbers coprime to $p $.
 \end{example}
 As we will see in \cref{sec:the_berkovich_spectrum_of_z}, we have essentially listed all absolute values on $\Z$ and $\Q$ as examples above.  
 \begin{observation}
@@ -39,7 +39,7 @@ As we will see in \cref{sec:the_berkovich_spectrum_of_z}, we have essentially li
 	A ring $R$ with an absolute value is \emph{complete} if all Cauchy sequences are convergent. 
 \end{definition}
 \begin{definition}
-	Any ring $R$ with an absolute value can be completed, which is defined as \[
+	Any ring $R$ with an absolute value can be completed. Which is defined as \[
 		\widehat{R} = \{(a_n)_n \text{ Cauchy sequence in } R\} / \sim
 	\] 
 	where two sequence $(a_n)_n, (b_n)_n$ are equivalent if $(a_n - b_n)_n \to 0$ as $n \to \infty$.
@@ -62,11 +62,10 @@ Absolute values are a special case of (semi)norms
 		\item [4.]  $|a \cdot  b| = |a| \cdot |b|$.
 	\end{enumerate}
 \end{definition}
-We will use the two notions interchangeably. 
-Sometimes we will stress the fact that a seminorm might not be multiplicative and call it a \emph{submultiplicative norm}. 
+Sometimes we will stress the fact that a seminorm might not be multiplicative and call it a \emph{submultiplicative seminorm}. 
 
 
-Later in the thesis, when we work with Berkovich geometry, we will work with with finite type (semi)normed rings over some normed ground field. 
+Later in the thesis, when we work with Berkovich geometry, we will work with finite type (semi)normed rings over some normed ground field. 
 We need some compatibility between those two norms, i.e.\ we need a relative notion of norm. 
 This is provided by the following definition. 
 \begin{definition}
@@ -90,7 +89,7 @@ This is provided by the following definition.
 	.\] 
 \end{definition}
 \begin{remark}\label{rem:ker_norm_ideal}
-	Let $ |\cdot |$ be a norm on $R$. Then $\ker |\cdot |$ is an ideal of $R$. If $|\cdot |$ is multiplicative then $\ker |\cdot |$ is even a prime ideal!
+	Let $ |\cdot |$ be a seminorm on $R$. Then $\ker |\cdot |$ is an ideal of $R$. If $|\cdot |$ is multiplicative then $\ker |\cdot |$ is even a prime ideal!
 \end{remark}
 \begin{proof}
 	Let $a, b \in \ker |\cdot |, c \in R$. Then $0 \le |a + b| \le |a|+|b| = 0$. So  $a + b \in \ker |\cdot |$. 
@@ -116,7 +115,7 @@ So an absolute value is a multiplicative norm.
 \end{lemma}
 \begin{proof}
 	We have that $|1| = 1$. So $1 \not\in \ker |\cdot |$ and thus $\ker |\cdot |$ is an ideal of $F$ different from $F$. 
-	As $F$ is a field this means that $\ker |\cdot | = (0)$. So $|\cdot |$ is norm. 
+	As $F$ is a field this means that $\ker |\cdot | = (0)$. So $|\cdot |$ is a norm. 
 \end{proof}
 
 \subsection{Non-Archimedean rings and fields} \label{sec:non-archimedean_rings_and_fields}
@@ -124,7 +123,7 @@ So an absolute value is a multiplicative norm.
 	A (semi)norm $|\cdot |$ on $R$ is called \emph{non-archimedean} if it satisfies the following stronger version of the triangle inequality, \[
 	\forall a, b \in R: |a + b| \le \max \{|a|, |b|\} 
 	.\] 
-	A \emph{archimedean (semi)norm} is a norm that is not non-archimedean.
+	A \emph{archimedean (semi)norm} is a (semi)norm that is not non-archimedean.
 \end{definition}
 
 \begin{definition}
@@ -134,12 +133,12 @@ So an absolute value is a multiplicative norm.
 One might wonder why there is a negation in the name of non-archimedean norms, as they are defined by having some extra property that archimedean norms do not have. 
 It is related to the archimedean principle that states that for any real value $a$, there is some integer $r$ such that $|r| > |a|$. 
 The following exercise should make clear why non-archimedean rings, are from this perspective really not archimedean.
-\begin{exercise}[{\cite[ex.\ 1.3.1]{nicaiseNonarchimedeanGeometry2017}}]
+\begin{exercise}[{\cite[ex.\ 1.3.1]{nicaiseNonarchimedeanGeometry2017}}]\label{exercise:archimedean}
 	Let $k$ be a field.
 	Show that a multiplicative seminorm $|\cdot |$ on $k$ is non-archimedean if and only if the image of $\Z$ in $k$ is bounded. 
 \end{exercise}
 \begin{proof}
-	Suppose $|\cdot |$ is non-archimedean. Then for any positive integers $n$ we have \[
+	Suppose $|\cdot |$ is non-archimedean. Then for any positive integer $n$ we have \[
 	|n| = \left|\sum_{i = 1}^{n} 1 \right| \le \max \{1, 1, \ldots, 1\}  = 1
 	.\] 
 	And for negative integers we have $|n| = |-n| \le 1$. So $\|\cdot \|$ is bounded on the image of $\Z$ by $1$. 
@@ -150,22 +149,22 @@ The following exercise should make clear why non-archimedean rings, are from thi
 		|(x + y)^{n}| = \left| \sum_{i = 0}^{n} \binom{i}{n} x ^{i} y ^{n-i}\right| \le (n + 1)\cdot c \max(x, y)^{n}
 	.\] 
 	So \[
-		|x + y| \le \sqrt[n]{c\cdot (n + 1)}  \max(x, y)
+		|x + y| \le \sqrt[n]{c\cdot (n + 1)}  \max(|x|, |y|)
 	.\] 
 	Taking $n \to \infty$ yields the non-archimedean triangle inequality. 
 \end{proof}
 
 \begin{corollary}
-	Let $A \subset  B$ an inclusion of rings  equipped with multiplicative norms such that the norm on $B$ extends the norm on $A$. 
+	Let $A \subset  B$ be an inclusion of rings  equipped with multiplicative norms such that the norm on $B$ extends the norm on $A$. 
 	Then $A$ is non-archimedean if and only if $B$ is non-archimedean. 
 \end{corollary}
 
-\begin{remark}
-	Suppose $R$ is a multiplicative non-archimedean norm and we have $a, b \in R$ such that $|a| \ne |b|$ then the triangle inequality is an equality \[
+\begin{lemma}
+	Suppose $R$ is a non-archimedean seminorm and we have $a, b \in R$ such that $|a| \ne |b|$ then the triangle inequality is an equality \[
 	|a + b| = \max \{|a|, |b|\} 
 	.\] 
 	So in some sense equality is the generic case. 
-\end{remark}
+\end{lemma}
 \begin{proof}
 	Suppose without loss of generality that  $|a| > |b|$, and assume by contradiction that $|a + b| < \max \{|a|, |b|\}  = |a|$. 
 	Then \[
@@ -175,12 +174,12 @@ The following exercise should make clear why non-archimedean rings, are from thi
 \end{proof}
 The non-archimedean triangle inequality sounds like a really strong property and thus it might seem that not many norms will be non-archimedean. 
 But as you will see in this thesis, most norms that pop up are non-archimedean. 
-In fact the only complete valued fields with archimedean norms are $\R$ and $\C$.\footnote{This is a consequence of Gel'fand-Mazur theorem and Ostrowki's classification (see \cref{thm:ostrowksi}) of norms on $\Q$.}
+In fact the only complete valued fields with archimedean norms are $\R$ and $\C$.\footnote{This is a consequence of Gel'fand-Mazur theorem, Ostrowki's classification (see \cref{thm:ostrowksi}) of norms on $\Q$ and the observation that there are no archimedean norms on fields of positive characteristic (\cref{exercise:archimedean}).}
 
 
 
 Note that the definition a non-archimedean norm only depends on the multiplicative structure on $\R^{+}$ and no longer depends on the additive structure. 
-Sometimes it is more natural define norms in terms the isomorphic group $\R, +$ (and add $\infty$ instead of $0$ to the group). 
+Sometimes it is more natural to define norms in terms the isomorphic group $\R, +$ (and add $\infty$ instead of $0$ to the group). 
 These are typically called valuations. 
 
 
@@ -201,9 +200,15 @@ These are typically called valuations.
 
 
 \begin{definition}
-	A valuation $v: R \to \R \cup \{\infty\} $ is \emph{discrete} if its image is contained in $\alpha \cdot \Z$ for some $\alpha \in \R$. 
-
-	A norm on  $R$ is \emph{discrete} if its associated valuation is discrete.
+	Let $R$ be a ring equipped with a non-archimedean absolute value. 
+	The \emph{value group of $R$} is the subgroup of $(\R^{+}, \cdot )$ generated by the norms of non-zero the elements of $R$, i.e.\ \[
+	|R^{\times }| =\left<|a| \st a \in R^{\times } \right> 
+	.\] 
+\end{definition}
+\nomenclature[vg]{$\mid K^{\times }\mid$}{Value group of $K$}
+\begin{definition}
+	A norm $|\cdot |: R \to \R^{+} \cup \{0\} $ is \emph{discrete} if its value group is isomorphic to $\Z$. 
+	A valuation on  $R$ is \emph{discrete} if its associated norm is discrete.
 \end{definition}
 If the valuation $v$ on $R$ is non-trivial and discrete, then it is easy to see that $v(R)$ is either $\alpha \cdot \Z$ or $\alpha \cdot \Z_{\ge 0}$ for some $\alpha \in \R_> 0$. 
 Usually, but not always, it is convention to scale $v$ such that $\alpha = 1$. 
@@ -222,9 +227,9 @@ Usually, but not always, it is convention to scale $v$ such that $\alpha = 1$.
 \nomenclature[bar]{$\overline{k}$}{Algebraic closure of $k$}
 \begin{proof}
 	Recall that \[
-	\overline{K} = \varinjlim_{L \supset K} L
+	\overline{K} = \bigcup_{L \supset K} L
 	,\] 
-	where $L$ ranges over all algebraic extensions of $K$. 
+	where $L$ ranges over all finite extensions of $K$. 
 	As all these algebraic extensions have unique norms extending  the norm on $K$ and for $L_1 \supset L_2 \supset K$ the norm on  $L_1$ must restrict to norm on $L_2$ by uniqueness. 
 	It is clear that the norm functions $L \to \R^{+} \cup \{0\} $ glue to a map $\|\cdot \|: \overline{K} \to \R^{+} \cup \{0\} $. 
 
@@ -255,20 +260,12 @@ So $\C_p$ is a sort of algebraically closed version of the $p$-adics.
 \begin{definition}
 	Let $R$ be a non-archimedean ring. We write 
 	\begin{align*}
-		R^{o} &= \{a \in k \st |k| \le 1\}  \\
-		R^{oo} &=  \{a \in k \st |k| < 1\}  \\
-		\widetilde R &= R^{o} / R^{oo}
+		R^{\circ} &= \{a \in k \st |k| \le 1\}  \\
+		R^{\circ\circ} &=  \{a \in k \st |k| < 1\}  \\
+		\widetilde R &= R^{\circ\circ} / R^{\circ\circ}
 	.\end{align*}
 \end{definition}
 
-If $k$ is a field then $k^{0}$ is a valuation ring and $ k^{00}$ is its maximal ideal. 
+If $K$ is a non-archimedaen valued field then $K^{\circ}$ is a valuation ring and $ K^{\circ\circ}$ is its maximal ideal. 
 We will usually write $K$ for a non-archimedean field with non-trivial norm, $R = K^{0}$ for its valuation ring, $k = \widetilde K$ for its residue field. 
 
-\begin{definition}
-	Let $K$ be a non-archimedean field. 
-	The \emph{value group of $K$} is \[
-	|K^{\times }| = \{|a| \st  a \in K^{\times }  \} 
-	.\] 
-	This is a subgroup of $(\R^{ +}, \cdot )$. 
-\end{definition}
-\nomenclature[vg]{$\mid K^{\times }\mid$}{Value group of $K$}

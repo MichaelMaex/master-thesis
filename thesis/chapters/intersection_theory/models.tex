@@ -5,8 +5,12 @@
 		\mathscr X_\eta &:= \mathscr X_K = \mathscr X \times_R \spec K \\
 		\mathscr X_s &:= \mathscr X_k = \mathscr X \times_R \spec k 
 	.\end{align*}
-	We say that $\mathscr X_\eta$ is the \emph{generic fibre of $\mathscr X$} and that $\mathscr X_s$ is the \emph{special fibre of $X$}. 
+	We say that $\mathscr X_\eta$ is the \emph{generic fiber of $\mathscr X$} and that $\mathscr X_s$ is the \emph{special fiber of $X$}. 
 \end{definition}
+\nomenclature[m]{$\mathscr X, \mathscr Y, \mathscr C, \mathscr E$}{Models of $X, Y, C, E$ respectively}
+\nomenclature[mfg]{$\mathscr X_\eta$}{The generic fiber of a model}
+\nomenclature[mfs]{$\mathscr X_s$}{The special fiber of a model}
+
 \begin{definition}
 	Let $X$ be a variety over $K$.  
 	A model of $X$ is a flat, separated, finite type $R$-scheme, $\mathscr X$ together with an isomorphism $i: \mathscr X_\eta \simeq X$.
@@ -28,6 +32,7 @@ Depending on the context we will almost always work with specific types models l
 	See \cref{fig:first_examples_of_models}.
 \end{example}
 
+\nomenclature[kappa]{$\kappa(x)$}{The residue field at $x$ in a scheme $X$}
 \begin{figure}[h]
     \centering
     \incfig{first-examples-of-models}
@@ -55,6 +60,7 @@ Depending on the context we will almost always work with specific types models l
 	In this case one can show that the exceptional divisor of $\mathscr E' \to \mathscr E$ is a rational curve of multiplicity $1$ which intersects the strict transform of $\mathscr E _s$ in two different points. 
 	See \cref{fig:morphism_models_blowup_1}.
 \end{example}
+\nomenclature[bl]{$\bl_x (X)$}{The blowup of $X$ in $x$}
 
 \begin{figure}[h]
     \centering
@@ -63,7 +69,7 @@ Depending on the context we will almost always work with specific types models l
     \label{fig:morphism_models_blowup_1}
 \end{figure}
 
-Morphisms of models are birational morphisms, as they are isomorphisms on the generic fiber. So if $\mathscr C_1, \mathscr C_2$ are models of $C$, then a morphisms of models $f: \mathscr C_1 \to \mathscr C_2$ is necessarily unique, if it exists. 
+Morphisms of models are birational morphisms, as they are isomorphisms on the generic fiber. So if $\mathscr C_1, \mathscr C_2$ are models of $C$, then a morphism of models $f: \mathscr C_1 \to \mathscr C_2$ is necessarily unique, if it exists. 
 
 \begin{definition}
 	Let $\mathscr C_1, \mathscr C_2$ be models of $C$. 
@@ -74,14 +80,14 @@ If $\mathscr C_1 $ dominates $\mathscr C_2$, and both are proper then we can blo
 Repeating this operation we eventually get the whole of $\mathscr C_1$. 
 This leads to the following theorem. The details of this construction can be found in \cite[sec.\ 9.1.2]{liuAlgebraicGeometryArithmetic2002}.
 \begin{theorem}[factorisation theorem]\label{thm:factorisation_theorem}
-	Let $\mathscr C_1, \mathscr C_2$ be two proper models a curve $C$ such that $f: \mathscr C_1 \to \mathscr C_2$ dominates. 
+	Let $\mathscr C_1, \mathscr C_2$ be two proper models of a curve $C$ such that $f: \mathscr C_1 \to \mathscr C_2$ dominates. 
 	Then $f$ can be decomposed into a sequence of blowups in closed points. 
 \end{theorem}
 
 Domination induces a partial order on the models of $\mathscr C$. 
 \begin{definition}
 	Let $C$ be a curve and $\mathscr C_1, \mathscr C_2$ be two models of $C$. 
-	If $\mathscr C_1$ dominates $\mathscr C_2$ then we say $\mathscr C_2 \le \mathscr C_1$
+	If $\mathscr C_1$ dominates $\mathscr C_2$ then we say $\mathscr C_2 \le \mathscr C_1$.
 \end{definition}
 
 
@@ -127,7 +133,7 @@ The idea of reduction map is to give a more scheme theoretic version of this map
 	The base change to $k$ gives a $k$-rational point on $X_s$, $\tilde x = x' \otimes_R k: k \to X_s $.
 \end{definition}
 \begin{remark}
-If $K$ is a complete field, and $x \in X_{\eta, \text{cl}}$ be any closed point in the special fiber.  Then by \cref{thm:norm_finite_field_ext} $\kappa(x)$ is valued field. 
+Let $K$ be a complete field, and $x \in X_{\eta, \text{cl}}$ be any closed point in the special fiber.  Then by \cref{thm:norm_finite_field_ext} $\kappa(x)$ is valued field. 
 So by the same procedure as in \cref{def:reduction_map_R_scheme} we may turn the map $\spec: \kappa(x) \to X_{\eta}$ to a map $\widetilde{\kappa(x)} \to X_s$ and extend the reduction map to all closed points \[
 \red_X: X_{\eta, \text{cl}} \to X_{s, \text{cl}}
 .\] 
@@ -137,6 +143,7 @@ In this case one can also show that $\red_X$ is surjective.
 So for any proper model $\mathscr X$ of a proper $K$-variety $X$ (e.g.\ a proper model of a curve) there is a reduction map \[
 	\red_{\mathscr X}: \mathscr X(K) \to \mathscr X(k)
 .\] 
+\nomenclature[red]{$\red_{\mathscr X}$}{The reduction map from $\mathscr X_\eta$ or $X\an$ to  $\mathscr X_s$}
 
 \begin{remark}
 	This reduction map is just a function between sets. 

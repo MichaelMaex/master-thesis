@@ -1,10 +1,11 @@
 
-As seen in \cref{prop:intersection_pairing_proper_model} properness is need to have a good intersection theory on surfaces. 
+As seen in \cref{prop:intersection_pairing_proper_model} properness is needed to have a good intersection theory on surfaces. 
 If not moving a divisor, to a linearly equivalent one, might cause one of the intersection points to ``fall off the scheme'' as illustrated in \cref{ex:fail_intersection_pairing_linear}.
 This is a problem when we want to have a intersection theory on a model or more generally a fibered surface. 
 Let $\mathscr C  / R $ be a proper regular model. 
 The $\mathscr C$ is proper over $\spec R$, but $\spec R$ itself is not proper. 
 So we might, and do run into the problem that the intersection pairing is not invariant under linear equivalence. Consider the following example.
+\nomenclature[P]{$\pro^{1}_A$}{The projective line over $A$}
 
 \begin{example}\label{ex:first_model}
 	Consider $\pro^{1}_R = \proj K[x, y]$ as a model of $\pro^{1}_K$. 
@@ -47,7 +48,7 @@ If we restrict our selves to the case where $D$ lies in the special fiber (is ve
 	,\end{align*}
 	where $E = \sum_{i = 1}^{r} n_i F_i$ is the decomposition of $E$ in prime divisors. 
 \end{definition}
-	
+\nomenclature[divisor]{$\divisor_s(\mathscr C)$}{The group of divisors on $\mathscr C$ with support in $\mathscr C_s$}	
 
 \begin{theorem}\label{thm:defining_properties_intersection_pairing}
 	The map $i: \divisor(\mathscr C) \times \divisor_s(\mathscr C) \rightarrow \Z $ defined above is the unique bilinear map satisfying
@@ -69,7 +70,7 @@ If we restrict our selves to the case where $D$ lies in the special fiber (is ve
 			We have \[
 				\deg \mathcal{O}_X(D)|_E = \deg [D|_E] = \sum i_x (D, E) [k(x):k]
 			.\] 
-		\item By bilinearity it is enough to show this in the case when $D, E$ are prime divisors. 
+		\item By bilinearity it is enough to show this when $D, E$ are prime divisors. 
 			Then either $D = E$ in which case it's trivial. 
 			Or $D \ne E$, in which case it follows from 1.
 		\item By linearity we may assume that $E$ is prime. 
@@ -110,7 +111,7 @@ This seems like a very minor proposition, but in practice it is very useful as i
 \end{proof}
 
 \begin{proposition}\label{prop:intersection_horizontal_point_degree}
-	Let $x \in \mathscr C_\eta$ a closed point. 
+	Let $x \in \mathscr C_\eta$ be a closed point. 
 	Then \[
 		\overline{\{x\} }\cdot \mathscr C_s = [\kappa(x): K]
 	,\] 
@@ -158,6 +159,8 @@ Note that the result does not depend on the choice of $K_{\mathscr C / R}$ as an
 	.\] 
 	The middle equality holds because $\mathscr C \to \spec R$ is flat. 
 \end{proof}
+\nomenclature[pa]{$p_a(X)$}{The arithmetic genus of $X$}
+\nomenclature[chi]{$\chi(\mathcal{L} )$}{The Euler characteristic of the line bundle $\mathcal{L} $}
 
 \begin{theorem}[Adjunction formula]\label{thm:adjunction_formula}
 	Let $\mathscr C$ be as above and $0 < E \le \mathscr C_s$, then \[
@@ -210,10 +213,12 @@ For the final part of this thesis it will be important to understand how given a
 
 	\end{enumerate}
 \end{proof}
+\nomenclature[fpullback]{$f^*$}{The pullback of a sheaf or divisor}
+\nomenclature[fpushforward]{$f_*$}{The pushforward of a sheaf or divisor}
 
 \begin{remark}
 	If $f: \mathscr X \to \mathscr Y$ is projective and surjective suppose that $f^{-1}D$ does not contain any components of $C$ then we even have the identity  \[
-		f_*(C . f^*D) = (f_*C \cdot f^* D)
+		f_*(C . f^*D) = (f_*C . f^* D)
 	.\] 
 	See \cite[rem.\ 9.2.13]{liuAlgebraicGeometryArithmetic2002} for more details. 
 \end{remark}

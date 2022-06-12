@@ -19,7 +19,7 @@
 \usepackage{comment}
 \usepackage{float}
 \usepackage{rotating}
-\usepackage[left]{showlabels}
+\usepackage[left,final]{showlabels}
 \renewcommand{\showlabelsetlabel}[1]
 {\begin{turn}{-100}\showlabelfont #1\end{turn}}
 \renewcommand{\showlabelfont}{\scriptsize\ttfamily}
@@ -182,4 +182,18 @@
 \newcommand{\stacks}[1]{\cite[\href{https://stacks.math.columbia.edu/tag/#1}{Tag #1}]{stacks-project}}
 
 
-
+\newglossaryentry{DVR}
+{
+name={DVR},
+description={discrete valuation ring}
+}
+\newglossaryentry{nc}
+{
+name={nc},
+description={normal crossings}
+}
+\newglossaryentry{snc}
+{
+name={snc},
+description={strict normal crossings}
+}
