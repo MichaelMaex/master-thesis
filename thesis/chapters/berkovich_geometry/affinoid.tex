@@ -38,7 +38,7 @@ These will also be  crucial for defining the structure sheaf on Berkovich spaces
 To describe the category of $K$-Banach algebras we still need morphisms.
 \begin{definition}
 	Let $A, B$ be $K$-Banach algebras. 
-	A $K$-algebra morphism $\phi: A \to B$ is \emph{admissible} if $\phi$ if the induced map $A / \ker \phi \to \im \phi$ is a homeomorphism, where $A / \ker \phi$ is equipped with the residue norm and $\im \phi$ with subspace norm of $B$. 
+	A $K$-algebra morphism $\phi: A \to B$ is \emph{admissible}  if the induced map $A / \ker \phi \to \im \phi$ is a homeomorphism, where $A / \ker \phi$ is equipped with the residue norm and $\im \phi$ with subspace norm of $B$. 
 \end{definition}
 
 \begin{remark}\label{rem:uniqueness_norm_banach_algebra}
@@ -53,6 +53,7 @@ There is also a good way to equip the tensor product of Banach $K$-algebras with
 	\] 
 	for any $x \in A \otimes_C B$. 
 \end{definition}
+\nomenclature[Ox]{$A \widehat \otimes_C B$}{The completed tensor product of $A$ and $B$ over $C$}
 
 \begin{proposition}\label{prop:universal_prop_complete_tensor}
 	The completed tensor product, like the tensor product for rings, is the pushout of the diagram $A \leftarrow C \to B$ in the category of  $K$-Banach algebras. I.e.\ it satisfies the universal property that for any  $D$ and morphism $A \to D$,  $B \to D$ making the square with $C$ commute there exists a unique map $A \widehat\otimes_C B \to D$ making the diagram commute\[
@@ -164,7 +165,7 @@ This is because it is actually a consequence of the condition that $x$ is bounde
 	For compactness see \cite[][thm.\ 1.2.1]{berkovichSpectralTheoryAnalytic2012}.
 \end{proof}
 \subsection{Affinoid algebras} \label{sec:affinoid_algebras}
-To further develop the theory we need restrict the category of Banach algebras to those that are ``finitely generated'' in some appropriate sense. 
+To further develop the theory we need to restrict the category of Banach algebras to those that are ``finitely generated'' in some appropriate sense. 
 
 \begin{definition}
 	[2.1.2, \cite{conrad2008several}]
@@ -186,6 +187,8 @@ This gives a similarly defined norm on $A\left<y_1, \ldots, y_n \right>$, but th
 	,\]
 	equipped with the norm as in \eqref{eq:norm_tate}.
 \end{definition}
+\nomenclature[affinoid]{$A\left<\overline{r}^{-1} \overline{T} \right>$}{The affinoid extension of $A$}
+\nomenclature[Tate]{$T_n(K)$}{The tate algebra over $K$ in $n$ variables}
 
 Similarly to polynomial rings, these Tate algebras are \emph{free} in a sense made precise by the following proposition. 
 \begin{proposition}\label{prop:universal_property_tate_algebars}
@@ -199,7 +202,7 @@ Similarly to polynomial rings, these Tate algebras are \emph{free} in a sense ma
 	Here the hom-set is in the category of $K$-Banach algebras and $A_{\le r} = \{a \in A \st (r^{-n}|a^{n}|)_n \text{ is bounded}\} $
 \end{proposition}
 \begin{proof}
-	Lets first check that the map is well defined. 
+	Let's first check that the map is well defined. 
 	Let $f: K\left<\underline r^{-1} \underline T \right> \to A$ be such a map. 
 	We need to check that $|f(T_i)| \le r_i$. 
 	Suppose that  $|f(T_i)| > r_i$, then there is some $a \in K$  and $m \in \N$ such that $|f(T_i)^{m}| > |a| > r_i^{m}$. 
@@ -278,7 +281,7 @@ But there are a couple explicit ones that will be ``enough'' to develop the theo
 			.\] 
 			Unlike for polynomial rings, this is not an evaluation map. You should think of this as forcing the $a_i$'s to become powerbounded. 
 		\item [Laurent domains]
-			Let $a_1, \ldots, a_n, b_1, \ldots, b_m \in A$ without common zeroes\footnote{This means that there is no $x \in \mathcal{M} (A)$ that makes two evaluates two or more element to $0$} and $r_1,\ldots, r_n$, $s_1, \ldots, s_m \in H$ then 
+			Let $a_1, \ldots, a_n, b_1, \ldots, b_m \in A$ without common zeroes\footnote{This means that there is no $x \in \mathcal{M} (A)$ that evaluates two or more elements to $0$.} and $r_1,\ldots, r_n$, $s_1, \ldots, s_m \in H$ then 
 			\begin{align*}
 				A\left<r_1^{-1}a_1, \ldots, r_n^{-1}a_n, s^{-1}_1b_1^{-1}, \right. & \left. \ldots, s^{-1}_mb_m^{-1} \right> \\
 				&:= \frac{A\left<r^{-1}_1x_1, \ldots, r^{-1}_nx_n,s^{-1}_1y_1, \ldots,s_m^{-1} y_m  \right>}{(x_1 - a_1, \ldots, x_n - a_n, b_1 y_1 - 1, \ldots, b_m y_m - 1)}
@@ -300,7 +303,7 @@ These are affinoid domains and the following theorem describes which set $V \sub
 	.\] 
 \end{proposition}
 \begin{proof}
-	Lets denote the domain as above by $V$. 
+	Let's denote the domain as above by $V$. 
 	Let $f:A \to B$ be an admissible morphism such that for the reduced morphism $\phi: \mathcal{M} (B) \to \mathcal{M} (A)$ the image $\im \phi \subset  V$.
 	Note that because there are no common zeroes, this means that $|a'|_x \ne 0$ for all $x \in V$. 
 	So $|f(a')|_{y} \ne 0$ for all $y \in \mathcal{M} (B)$. 
@@ -361,7 +364,9 @@ In this section we will follow \cite[][sec. 9.1.]{siegfriedboschNonArchimedeanAn
 		\item If  $U, V$ are admissible opens with $V \subset  U$ and given an admissible cover $\{U_i\}_{i \in I} $ of $U$, then $\{V \cap U_i\} _{i \in I}$ is an admissible cover of $V$. 
 	\end{enumerate}
 \end{definition}
+\nomenclature[cov]{$\cov U$}{The set of admissible covers of $U$}
 \begin{example}
+	The following are some exampels of $G $-topological spaces. 
 	\begin{itemize}
 		\item Any topological space is a $G$-topological space by letting $S$ be the set of opens and for any open  $U$ define $\cov U$ to be all the set theoretic covers. 
 		\item A less obvious $G$-topological space is the following. 
@@ -420,8 +425,8 @@ The restiction maps are given by the defining property of affinoid domains.
 
 This presheaf turns out to be a sheaf, which will follow from the following theorem. 
 \begin{theorem}[Tate's acyclicity theorem]\label{thm:tate_acyclicity}
-	Let $X = \mathcal{M} (A)$ and $\{V_i\} $ be a admissible cover of $X$. 
-	Then for any finite finite banach $A$ module, $M$ the Čech complex \[
+	Let $X = \mathcal{M} (A)$ and $\{V_i\} $ be an admissible cover of $X$. 
+	Then for any finite banach $A$ module, $M$ the Čech complex \[
 		0 \to M \to \prod_{i} M \cox_A A_{V_i} \to \prod_{i, j} M \cox_A A_{V_i} \cox_A A_{V_j} \to \ldots
 	\] 
 	is exact. 
@@ -475,6 +480,9 @@ This turns $X$ into a locally ringed topological space.
 It is a grave abuse of notation to use $\mathcal{O}_X$ for both the structure sheaf on the $G$-topology of $X$ as well as the canonical topology. 
 It is important keep in mind that there are two topologies with their respective structure sheaf, namely a locally ringed space $(X, \mathcal{O}_X)$ and a locally ringed $G$-topological space $(X_G, \mathcal{O}_{X_G})$. 
 
+\nomenclature[OX]{$\mathcal{O}_X$}{The structure sheaf on $X$}
+\nomenclature[OXG]{$\mathcal{O}_{X, G}$}{The structure sheaf on the $G$-topology of $X$}
+
 
 \subsection{Gluing Berkovich spectra to $K$-analytic spaces} \label{sec:gluing_berkovich_spectra_to_k_analytic_spaces}
 
@@ -494,7 +502,7 @@ These spaces are called \emph{good} and are defined as follows.
 \begin{definition}
 	A $K$-analytic $X$ space is \emph{good} if every point $x \in X$ has neighborhood isomorphic to $\mathcal{M} (A)$ for some affinoid algebra $A$. 
 \end{definition}
-For general $K$-analytic spaces the only requirement that is that a finite union of affinoid domains containing $x$ is a neighborhood of $x$. 
+For general $K$-analytic spaces the only requirement is that a finite union of affinoid domains containing $x$ is a neighborhood of $x$. 
 
 
 

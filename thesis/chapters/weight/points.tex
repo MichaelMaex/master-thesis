@@ -4,6 +4,7 @@ In our context we can also find related but different types of points for variet
 \begin{definition}
 	The \emph{birational points} of $X\an$ are the points of $X\bir = i ^{-1}(\eta_X)$ where $\eta_X$ is the generic point of $X$. 
 \end{definition}
+\nomenclature[bir]{$X\bir$}{The birational points of $X\an$}
 These are called the birational points of $X\an$ because they are shared by the analytification of all varieties birational to $X$.
 
 The opposite of birational points, are the points in the inverse image of a closed points. 
@@ -14,6 +15,7 @@ The opposite of birational points, are the points in the inverse image of a clos
 	where $X_\text{cl} $ are the closed points of $X$, such that $i \circ j = \id _{X_\text{cl} }$. 
 	We will often implicitly identify points of $X_\text{cl} $ with points in $X\an$. 
 \end{lemma}
+\nomenclature[cl]{$X_\text{cl} $}{The closed points of $X$}
 \begin{proof}
 	It is sufficient show that for $x \in X_\text{cl} $, the preimage $i^{-1}(x)$ contains exactly one point. 
 	Note that $[\kappa(x):K]$ is finite. 
@@ -28,6 +30,7 @@ If $\mathscr X$ is not proper, such an extension does not always exist hence the
 	Note that this is unique by the valuative criterion of seperatedness. 
 	We write $\widehat{\mathscr X}_\eta$ for the set of all centers of $X\an$. 
 \end{definition}
+\nomenclature[hat]{$\widehat{\mathscr X}_\eta$}{The centers of $X\an$}
 
 If $\mathscr X$ is a normal model of $X$ and $\mathscr X_s = \sum_{i \in I} N_i F_i$ be the decomposition of $\mathscr X_s$ in its irreducible parts, and let $e_i$ be the generic point of $F_i$. 
 As stated in \cite[thm 2.2.4]{berkovichSpectralTheoryAnalytic2012}, we know that the $e_i$ have unique inverses along the reduction map. 
@@ -35,14 +38,17 @@ We call $\red_{\mathscr X}^{-1}(e_i)$ the \emph{divisorial point} associated to 
 \begin{definition}
 	The \emph{set of divisorial points of $X^\mathrm{an}$}, denoted by  $X^{\text{div}}$ is the set of all points that are the inverse of a generic point of irreducible component of a normal model of $X$ under the reduction map. 
 \end{definition} 
+\nomenclature[div]{$X^{\text{div}}$}{The divisorial points in $X\an$}
 \begin{definition}
 	Let $x \in X^{\text{div}}$ be divisorial point associated to $(\mathscr X, F)$. 
 	Then we say that $x$ has \emph{multiplicity} $N(x)$ which is the multiplicity of $F$ in $\mathscr X_s$. 
 \end{definition}
+\nomenclature[Nx]{$N(x)$}{The multiplicity of the divisorial points $x$}
 \begin{definition}
 	If $C$ is a curve and $x$ a divisorial point on $C\an$ corresponding to $(\mathscr C, F)$ then $x$ has \emph{genus} $g(x)$ with is $g(F')$ where $F'$ is the normalisation of $F$. 
 	Note that $F'$ is the curve with function field  $\kappa(f)$ where $f$ is the generic point of $F$. 
 \end{definition}
+\nomenclature[gx]{$g(x)$}{The genus of the divisorial points $x$}
 Alternatively we can think of divisorial points in the following way. 
 If  $\mathscr X$ is normal we know that $\mathcal{O}_{e_i, \mathscr X}$ is a one-dimensional local ring, i.e.\ a discrete valuation ring, where the valuation (up to scaling by a constant $c$) is given by \[
 	v_{e_i}\left( f \right)  = c\cdot \ord_{E_i} f
@@ -67,9 +73,9 @@ The divisorial points can also be characterized by their valuation without invol
 	Moreover, the ramification degree of $K$ in $(K(X), v)$ is precisely the multiplicity of $v$ as a divisorial point.  
 \end{lemma}
 \begin{proof}
-	Let $x = (\mathscr X, E)$ be a divisorial point in $X\an$ corresponding to a model $\mathscr X$ with irreducible component $E$ in the special fiber.
-	Let $\xi$ be the generic point of $E$. 
-	Then $(K(X), v_x)^{\sim} = (\mathcal{O}_{\xi, \mathscr X})^{\sim} = K(E)$ and hence the transcendence degree is $\dim E = n-1$.
+	Let $x = (\mathscr X, F)$ be a divisorial point in $X\an$ corresponding to a model $\mathscr X$ with irreducible component $F$ in the special fiber.
+	Let $\xi$ be the generic point of $F$. 
+	Then $(K(X), v_x)^{\sim} = \ff(\mathcal{O}_{\xi, \mathscr X})^{\sim} = K(F)$ and hence the transcendence degree is $\dim F = n-1$.
 
 	The converse is given by \cite[lem 2.45]{kollarBirationalGeometryAlgebraic1998}. 
 \end{proof}

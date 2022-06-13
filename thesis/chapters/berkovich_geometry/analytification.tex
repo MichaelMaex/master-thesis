@@ -1,6 +1,6 @@
 We will discuss two kinds of algebro-geometric objects that have Berkovich spaces associated to them. 
 The first one is the analytification of a variety over $K$, analogous to analytification of complex varieties like we discussed at the start of this chapter. 
-The second is that there is a natural interpretation of the formal fibre of a formal scheme over $R = \mathcal{O}_K = \{a \in K \st |a| \le 1\} $ as a Berkovich space. 
+The second is that there is a natural interpretation of the formal fiber of a formal scheme over $R = \mathcal{O}_K = \{a \in K \st |a| \le 1\} $ as a Berkovich space. 
 
 
 \subsection{Analytification of Varieties} \label{sec:analytfication_of_varieties}
@@ -19,6 +19,7 @@ Suppose $X$ be a scheme, locally of finite type over $K$.  We want define an ana
 	.\] 
 \end{definition}
 So $X\an$ represents the functor from $K$-analytic spaces $Y \mapsto \hom(Y, X)$ where the hom-set is in the category of locally ringed spaces. 
+\nomenclature[an]{$X\an$}{The Berkovich analytification of $X$}
 
 This universal property is good for theoretical purposes, but in practice it is nice to have an more concrete understanding of the analytification of a $K$-variety. 
 \begin{definition}\label{def:berkovich_analytification_explicit}
@@ -51,7 +52,7 @@ This universal property is good for theoretical purposes, but in practice it is 
 
 
 
-\begin{example}[The Berkovich Affine line $\aff^{1, \text{an}}_K$]\label{ex:affine_line_union_disks}
+\begin{example}[The Berkovich affine line $\aff^{1, \text{an}}_K$]\label{ex:affine_line_union_disks}
 	We already discussed the topology of $\aff^{1, \text{an}}_K$ in \cref{sec:the_berkovich_spectrum_of_z}. 
 	But we can now discuss how $\aff^{1, \text{an}}$ behaves as a $K$-analytic space as well. 
 
@@ -75,7 +76,7 @@ This universal property is good for theoretical purposes, but in practice it is 
 \begin{example}
 	\Cref{ex:affine_line_union_disks} can actually be extended to see how any variety might be analytified. 
 	Lets start with affine varieties. 
-	First note that for higher dimensional ($\dim X = d$) affine space $\aff_K^{d}$ can be analitified by an increasing union of disks \[
+	First note that for higher dimensional ($\dim X = d$) affine space $\aff_K^{d}$ can be analytified by an increasing union of disks \[
 		\aff_K^{d, \text{an}} = \bigcup_{r = 1} ^{\infty} \mathcal{M} \left(K \left<r^{-1} T_1, \ldots, r^{-1} T_d \right>\right)
 	.\] 
 	Let $A = K[T_1,\ldots, T_n] / (f_1, \ldots, f_m)$ be any finite type scheme, and consider the closed immersion $f: \spec A \to \aff_K^{n} = \spec (K[T_1, \ldots, T_n]) $. 
@@ -90,7 +91,7 @@ This universal property is good for theoretical purposes, but in practice it is 
 \begin{example}
 	[Berkovich Projective line]
 	We can construct the analytification of $\pro^{1}_K$ in the same way as one might construct the scheme $\pro^{1}_K$ by gluing together two copies of the affine line. 
-	So we first find analytifications on an affine cover $K[T], K[T^{-1}]$ and glue the spaces $\mathcal{M} (K[T]), \mathcal{M} (K[T^{-1})$ along $\mathcal{M} (K[T, T^{-1}])$. 
+	So we first find analytification on an affine cover $K[T], K[T^{-1}]$ and glue the spaces $\mathcal{M} (K[T]), \mathcal{M} (K[T^{-1})$ along $\mathcal{M} (K[T, T^{-1}])$. 
 Using the description in \cref{def:berkovich_analytification_explicit} we see that $\mathcal{M} (K[T, T^{-1}]) = \aff^{1, \text{an}}_K \setminus \{0\} $.
 See \cref{fig:berk_projective_line}. 
 \end{example}
@@ -103,7 +104,7 @@ See \cref{fig:berk_projective_line}.
 \end{figure}
 
 
-Like the analytification of complex varieties there are certain GAGA results, which shows that under specific conditions all information is preserved by passing to the Berkovich analytification. 
+Like the analytification of complex varieties there are certain GAGA results, which show that under specific conditions all information is preserved by passing to the Berkovich analytification. 
 Once one has setup the right definitions of smooth, flat, unramified, étale and open immersion for $K$-analytic spaces (see \cite[][sec. 3.1]{berkovichSpectralTheoryAnalytic2012} for definitions) one can show the following:
 \begin{theorem}
 	Let $f: Y \to X$  be a morphism of $K$-varieties. Then $f\an: Y \an \to X\an$ has any of the following properties if and only $\phi$ has: flat, unramified, étale, smooth, separated, injective, surjective, open immersion, isomorphism and monomorphism. 
@@ -132,8 +133,8 @@ For more on the GAGA results see \cite[][sec.\ 3.4]{berkovichSpectralTheoryAnaly
 \subsection{Generic fiber of a formal scheme} \label{sec:generic_fiber_of_a_formal_scheme}
 
 Recall that $R = \mathcal{O}_K = \{a \in K \mid |a| \le 1\} $, which is a topological ring with the metric induced by the norm. 
-Let $\pi$ be a pseudo-uniformizer for $R$ and $I = (\pi)$. 
-Then $\{I^{n}\}_n$ gives a system of neighbourhoods around zero, and $R$ is complete with respect to this topology. 
+Let $\pi$ be a pseudo-uniformiser for $R$ and $I = (\pi)$. 
+Then $\{I^{n}\}_n$ gives a system of neighborhoods around zero, and $R$ is complete with respect to this topology. 
 This means that $R$ is an adic ring, which is useful if we want to use the language of formal schemes. 
 
 We first need to restrict the class of rings and formal schemes we consider. 
@@ -162,12 +163,12 @@ Given a topologically finitely presented formal schemes $\mathfrak{X} $ we call 
 	Let $X$ be a $K$-variety. 
 	\begin{itemize}
 		\item A formal model of $X$ is a locally finite type formal $R$-scheme together with an isomorphism $X\an \cong \mathfrak{X}_{\eta}$.
-		\item A formal model $\mathfrak{X}  $ of $X$ is \emph{semistable} if its special fibre $\mathfrak{X} _s = \mathfrak{X} \times_R \spec k$ is a connected reduced curve whose singularities are ordinary double points. 
+		\item A formal model $\mathfrak{X}  $ of $X$ is \emph{semistable} if its special fiber $\mathfrak{X} _s = \mathfrak{X} \times_R \spec k$ is a connected reduced curve whose singularities are ordinary double points. 
 	\end{itemize}
 \end{definition}
 
 \begin{comment}
-Later we will extend the construction of the generic fibre to the larger class of \emph{special formal schemes}.
+Later we will extend the construction of the generic fiber to the larger class of \emph{special formal schemes}.
 These will be really useful for understanding the relation between formal models of curves and their Berkovich space. 
 \begin{definition}\label{def:special_r_algebra}
 	A \emph{special} $R$-algebra is a $R$-algebra of the form \[

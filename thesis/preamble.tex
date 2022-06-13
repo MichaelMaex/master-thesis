@@ -18,6 +18,7 @@
 \usepackage{mathrsfs}
 \usepackage{comment}
 \usepackage{float}
+\usepackage{multicol}
 \usepackage{rotating}
 \usepackage[left,final]{showlabels}
 \renewcommand{\showlabelsetlabel}[1]
@@ -100,6 +101,7 @@
 \newcommand{\aff}{\mathbb{A}}
 \newcommand{\ltr}{\par \noindent \framebox[1\width]{ $\implies$ } \hspace{.2cm}}
 \newcommand{\rtl}{\par \noindent \framebox[1\width]{ $\impliedby$ } \hspace{.2cm} }
+\newcommand{\abs}[1]{|#1|}
 \let\oldphi\phi
 \let\phi\varphi
 \let\varphi\oldphi
@@ -197,3 +199,8 @@ description={normal crossings}
 name={snc},
 description={strict normal crossings}
 }
+
+\renewcommand*{\nompreamble}{\begin{multicols}{2}}
+\renewcommand*{\nompostamble}{\end{multicols}}
+\setlength{\columnsep}{3em}
+\setlength{\nomlabelwidth}{2cm}

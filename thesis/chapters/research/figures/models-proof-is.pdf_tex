@@ -107,8 +107,8 @@
     \put(0.16985051,0.29942175){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{H_{r-1}}$\end{tabular}}}}%
     \put(0.1764939,0.2698567){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{H_r}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=16]{models-proof-is.pdf}}%
-    \put(0.47836323,0.1036143){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\phi|_{\sk(\mathscr E’)}$\end{tabular}}}}%
     \put(0.04328576,0.15406514){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sk(\mathscr E’)$\end{tabular}}}}%
     \put(0.77491521,0.15406514){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sk(\mathscr{P’})$\end{tabular}}}}%
+    \put(0.48990329,0.1100985){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\phi|_{\sk(\mathscr E’)}$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

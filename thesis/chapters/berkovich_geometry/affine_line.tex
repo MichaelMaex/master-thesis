@@ -5,7 +5,7 @@ Recall that $K$ is a metric space with the metric $d(a, b) = |a - b|$.
 This metric satisfies a stronger version of the triangle inequality. 
 Such metrics are known as ultrametrics. 
 \begin{definition}
-	A \emph{ultrametric space} is a topological spaces $(X, d)$ where the metric satisfies the non-archimedean triangle inequality. 
+	An \emph{ultrametric space} is a metric space $(X, d)$ where the metric satisfies the non-archimedean triangle inequality. 
 	\[
 		d(x, y) \le \max \{d(x, z) ,d(z, y)\}, \quad \forall x, y ,z \in X
 	.\] 
@@ -34,6 +34,7 @@ Such metrics are known as ultrametrics.
     \caption{Oddities of disks in ultrametric spaces}
     \label{fig:oddities_of_ultrametric_balls}
 \end{figure}
+\nomenclature[Bar]{$B(a, r)$}{The closed ball with center $a$ and radius $r$}
 \begin{corollary}
 	The topology of $X$ is totally disconnected. 
 \end{corollary}
@@ -41,8 +42,10 @@ Such metrics are known as ultrametrics.
 \subsection{The Berkovich affine line when $K$ is algebraically closed} \label{sec:the_berkovich_affine_line_K_alg_closed}
 
 We will describe the Berkovich space of the polynomials in one variable  $\mathcal{M} (K[T])$.
-We first do this for $K$ algebraically closed, and the explain how to expand to the case where $K$ is discretely valued.
+We first do this for $K$ algebraically closed, and then explain how to expand to the case where $K$ is discretely valued.
 We call the resulting space $\aff_K^{1, \text{an}}$, the \emph{analytification of the affine line}, or sometimes the \emph{Berkovich affine line}. 
+\nomenclature[Ak]{$\aff^{1, \text{an}}_K$}{The Berkovich affine line over $K$}
+\nomenclature[Pk]{$\pro^{1, \text{an}}_K$}{The Berkovich projective line over $K$}
 
 \medskip
 
@@ -106,7 +109,7 @@ The Berkovich classification theorem gives all points.
 \begin{theorem}
 	[Berkovich classification theorem, \cite{bakerarizona}] \label{thm:berkovich_classification}
 	Assume that $K$ is algebraically closed. 
-	Any point $x \in \aff_K^{1,\text{an}}$ is given by a decreasing sequences of closed disks $B_n = B(a_n, r_n)$ in $K$ by the formula \begin{equation}\label{eq:norm_disk_polynomial}
+	Any point $x \in \aff_K^{1,\text{an}}$ is given by a decreasing sequence of closed disks $B_n = B(a_n, r_n)$ in $K$ by the formula \begin{equation}\label{eq:norm_disk_polynomial}
 	|f|_x = \lim_{n \to \infty} |f|_{B_n}
 	.\end{equation}
 	Moreover, two such sequences $B_n, B'_n$ define the same norm if and only if:
@@ -158,7 +161,7 @@ As we can see our previous discussion has excluded type four points. We will see
 \end{proof}
 
 Using the Berkovich classification theorem, the properties about ultrametric spaces from \cref{sec:ultrametric_spaces} and a little imagination we can see that the $\mathcal{M} (K[T])$ looks something like \cref{fig:affine_line}. 
-Points of type I-IV are highlighted in green. Note that the closed points of the curve $\spec K[T]$ are contained in  $\aff_K^{1,\text{an}}$ as exactly the type I points. 
+Points of type 1-4 are highlighted in green. Note that the closed points of the curve $\spec K[T]$ are contained in  $\aff_K^{1,\text{an}}$ as exactly the type 1 points. 
 
 \begin{figure}[h]
     \centering
@@ -167,10 +170,10 @@ Points of type I-IV are highlighted in green. Note that the closed points of the
 	Examples of points of type 1-4 are highlighted in green.}
 	\label{fig:affine_line}
 \end{figure}
-Type IV points are not rare. It might be counter intuitive that in a complete ring there exists a decreasing sequence of closed disks that has empty intersection. 
+Type 4 points are not rare. It might be counter intuitive that in a complete ring there exists a decreasing sequence of closed disks that has empty intersection. 
 But in practice almost all fields have type  IV points. 
 The trick is that the radii of these disks do not converge to $0$. 
-\begin{example}[type IV point]\label{ex:type4point}
+\begin{example}[type 4 point]\label{ex:type4point}
 	Let $K = (\Q_p[\sqrt[2]{p} ,\sqrt[3]{p}, \sqrt[4]{p},\ldots])^{\wedge}  $ for some prime $p$. 
 	Define 
 	\begin{align*}
@@ -193,8 +196,8 @@ The algebraically closed field $\C_p$ also has type IV points, but the proof is 
 \subsection{The Berkovich affine line when $K$ is discretely valued.} \label{sec:the_berkovich_affine_line_when_k_is_discretely_valued.}
 The Berkovich classification theorem unfortunately requires that $K$ is algebraically closed. 
 However, if $K$ is discretely valued there is a trick, which is to pass to the field $K' = \hat{\overline{K}}$. 
-There is a inclusion $K[T] \in K'[T]$. 
-So any norm on $K'[T]$ extending the norm on $K'$, resticts to a norm on $K[T]$. 
+There is an inclusion $K[T] \subset  K'[T]$. 
+So any norm on $K'[T]$ extending the norm on $K'$, restricts to a norm on $K[T]$. 
 One can easily sees that the obtained norm on $K[T]$ extends the norm on  $K$, as the norm on $K'$ extends the norm one $K$. 
 This means that there is a map $\mathcal{M} \left(K'[T]\right) \to \mathcal{M} (K[T])$. 
 It turns out that this map is surjective.\question{Is er een snelle mannier om te zien dat deze map surjectief is?} 
@@ -217,7 +220,7 @@ This gives the following description of $\mathcal{M} (K[T])$.
 
 This does not really change our intuitive understanding of $\aff_{K}^{1}$ or the picture \cref{fig:affine_line}. 
 The type 2 points are still the branch points, type 1 and 4 points are still ``leaves''.
-The main differences to keep in mind is that type two points can have a radious in $\sqrt{|K^{\times }|} $, not just $|K^{\times }|$ and that type $1$ points are not necessarily points in of $K$, but Galois orbits of $\hat{\overline{K}} / K$. 
+The main differences to keep in mind is that type 2 points can have a radius in $\sqrt{|K^{\times }|} $, not just $|K^{\times }|$ and that type $1$ points are not necessarily points in of $K$, but Galois orbits of $\hat{\overline{K}} / K$. 
 
 
 
@@ -230,10 +233,10 @@ One is topological and the other one is purely algebraic.
 	Let $x \in \aff_K^{1,\text{an}}$. 
 	Let $C = \pi_0(\aff_K^{1, \an}\setminus \{ x\} )$ be the set of connected components of the punctured affine line. 
 	\begin{itemize}
-		\item If $x$ is of type I  or IV then $C$ has only one element.
-		\item If $x$ is of type II then there a natural morphism $C \simeq k \cup \{\infty\} $. Recall that $k = \tilde K = K^{o} / K^{oo} $. 
+		\item If $x$ is of type 1  or 4 then $C$ has only one element.
+		\item If $x$ is of type 2 then there is a natural morphism $C \simeq k \cup \{\infty\} $. Recall that $k = \tilde K = K^{o} / K^{oo} $. 
 			So $x$ is an branch point where infinitely many branches connect. 
-		\item If $x = |\cdot |_{B(a, r)}$ is of type III then $|C| = 2$. One component consists of all disks contained in $B(a, r)$, (and type IV points corresponding to decreasing sequences of disks in $B(a,r)$) and the other one are all the leftover points. 
+		\item If $x = |\cdot |_{B(a, r)}$ is of type 3 then $|C| = 2$. One component consists of all disks contained in $B(a, r)$, (and type IV points corresponding to decreasing sequences of disks in $B(a,r)$) and the other one are all the leftover points. 
 	\end{itemize}
 \end{proposition}
 \begin{remark}
@@ -255,7 +258,7 @@ It is a sort of trancendental analogue of \cref{prop:balancing_valuations}.
 \begin{definition}
 	Let $K \subset L$ be a non-archimedean field extension. 
 	Then we define \[
-		E_{\frac{L}{ K}} = \dim \frac{|L^{\times }|}{|K^{\times }|} \otimes_\Z \Q, \qquad F_{L / K} = \trdeg(\tilde L / \tilde K)
+		E_{ L / K} = \dim \frac{|L^{\times }|}{|K^{\times }|} \otimes_\Z \Q, \qquad F_{L / K} = \trdeg(\tilde L / \tilde K)
 	.\] 
 \end{definition}
 
@@ -272,10 +275,10 @@ This also allows us to classify points, because either both $E_{\mathcal{H} (x) 
 \begin{proposition}[2.3.3.3 in \cite{temkinIntroductionBerkovichAnalytic2010}]\label{def:type_points_curve}
 	Let $x \in \aff_K^{1, \text{an}}$, then 
 	\begin{itemize}
-		\item $x$ is of type I if $\mathcal{H} (x) = K$
-		\item $x$ is of type II if $F_{\mathcal{H} (x) / K} = 1$ and $E_{\mathcal{H} (x) / K} = 0$. 
-		\item $x$ is of type III if $F_{\mathcal{H} (x) / K} = 0$ and $E_{\mathcal{H} (x) / K} = 1$.
-		\item $x$ is of type IV if $\mathcal{H} (x) \subsetneq K$ and  $F_{\mathcal{H} (x) / K} = E_{\mathcal{H} (x) / K} = 0$.
+		\item $x$ is of type 1 if $\mathcal{H} (x) = K$
+		\item $x$ is of type 2 if $F_{\mathcal{H} (x) / K} = 1$ and $E_{\mathcal{H} (x) / K} = 0$. 
+		\item $x$ is of type 3 if $F_{\mathcal{H} (x) / K} = 0$ and $E_{\mathcal{H} (x) / K} = 1$.
+		\item $x$ is of type 4 if $\mathcal{H} (x) \subsetneq K$ and  $F_{\mathcal{H} (x) / K} = E_{\mathcal{H} (x) / K} = 0$.
 	\end{itemize}
 \end{proposition}
 

@@ -24,6 +24,7 @@ So the minimal locus $\minloc \wt_\omega$ has to be contained in every skeleton 
 This gives us a way of identifying pieces of a skeleton. 
 Taking all these pieces together is the essential skeleton. 
 We will only work in the context of curves. 
+\nomenclature[minloc]{$\minloc f$}{The minimal locus of the function $f$}
 
 \begin{definition}\label{def:log_cannonical_bundle}
 	Let  $\mathscr C$ be a normal proper model of a curve $C $. 
@@ -32,6 +33,7 @@ We will only work in the context of curves.
 	,\] 
 	where $\Omega_{\mathscr C} ^{\text{can}}$ is the canonical bundle of $\mathscr C$ and $\mathscr C_{s, \text{red}}$ is the divisor on $\mathscr C$ that contains every irreducible component of $\mathscr C_s$ with multiplicity $1$.  
 \end{definition}
+\nomenclature[log]{$\Omega^{\text{log}}_{\mathscr C}$}{The log-canonical bundle on $\mathscr C$}
 
 Note that the restriction of $\Omega_{\mathscr C}^{\log}$ to the generic fiber is the canonical bundle on $C$. 
 
@@ -46,6 +48,7 @@ Note that the restriction of $\Omega_{\mathscr C}^{\log}$ to the generic fiber i
 	A \emph{$m$-pluricanonical form}  is a non-zero global section of $\Omega_{C / K}^{\otimes m }$. 
 	A \emph{$m$-pluricanonical section} is a non-zero rational section of $\Omega_{C / K}^{\otimes m }$.
 \end{definition}
+\nomenclature[mp]{$\Omega_{C / K}^{\otimes m }$}{The $m$-pluricanonical linebundle on $C$}
 \begin{notation}
 	Let $D$ be a Cartier divisor on a scheme $X$, and let $F$ be a prime divisor on $D$. 
 	Then we write $\mult_{F}(D)$ for the coefficient of $F$ in $D$. 
@@ -60,6 +63,7 @@ We first define the weight function on a divisorial point and then use a sort of
 		\wt_\omega(x) = \frac{\mult_F(\divisor(\omega'))}{N}
 	.\] 
 \end{definition}
+\nomenclature[wt]{$\wt_{\omega}$}{The weight function of the pluricanonical section $\omega$ on $X$}
 
 \begin{remark}
 	If one does not like to work with the log-canonical bundle, we can use an alternative definition that puts a minor error term in the definition of the weight. 
@@ -74,7 +78,7 @@ We extend the weight function to $\mathbb{H}(C)$ as follows
 	Then we define the \emph{weight function} $\wt_{\omega}: \mathbb{H}(C) \to \R$ to be the unique function such that 
 	\begin{itemize}
 		\item The restriction $\wt_{\omega}|_{\sk(\mathscr C)}$ is continuous with respect to the metric topology on $\sk(\mathscr C)$ for any snc-model $\mathscr C$, 
-		\item on divisorial points $x$ the $\wt_{\omega}(x)$ agrees with \cref{def:weight_function_divisorial_point}.
+		\item on divisorial points $x$ the value of $\wt_{\omega}(x)$ agrees with \cref{def:weight_function_divisorial_point}.
 	\end{itemize}
 \end{definition}
 
@@ -108,6 +112,7 @@ This is made precise in the following theorem.
 	.\]  
 	Here $\minloc f$ (the minimal locus) is the set where the function $f$ attains its infimum.
 \end{definition}
+\nomenclature[skcw]{$\sk(C, \omega)$}{The Kontsevich-Soibelman skeleton on $C$ of $\omega$}
 \begin{lemma}
 	Let $\omega$ be a $m$-pluricanonical form and $\mathscr C$ a snc-model of $C$. 
 	Then $\sk(C, \omega) \subset  \sk(\mathscr C)$
@@ -130,6 +135,7 @@ The solution to this is to take the union of many Kontsevich-Soibelman skeleta.
 	\] 
 	where $\omega$ runs over all $m$-pluricanonical forms of $C$ for all $m > 1$. 
 \end{definition}
+\nomenclature[sk]{$\sk(C)$}{The essential skeleton of $C$}
 \begin{remark}\label{rem:sufficiently_divisible_pluriconanonical}
 	Note that in the definition of the essential skeleton, it is sufficient to let $\omega$ range over all $m$-pluricanonical forms with $m$ sufficiently divisible. 
 	This is because if $\omega$ is a $m$-pluricanonical form, then $\omega^{\otimes d}$ is a $md$-pluricanonical form and $\wt_{\omega^{\otimes d}} = d\cdot \wt_{\omega}$. 

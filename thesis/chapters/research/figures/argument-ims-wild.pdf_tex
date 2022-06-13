@@ -68,7 +68,7 @@
     \put(0,0){\includegraphics[width=\unitlength,page=4]{argument-ims-wild.pdf}}%
     \put(0.55085333,0.17452494){\color[rgb]{0.30196078,0.69019608,0.33333333}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle\phi(\delta, \gamma)$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{argument-ims-wild.pdf}}%
-    \put(0.56120329,0.26928733){\color[rgb]{0.20784314,0.41568627,0.69803922}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle\phi(\gamma, \alpha_{-1})$\end{tabular}}}}%
+    \put(0.55539932,0.26928733){\color[rgb]{0.20784314,0.41568627,0.69803922}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle\phi(\gamma, \alpha_{-1})$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{argument-ims-wild.pdf}}%
     \put(0.17432252,0.36576947){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\alpha_{-1}$\end{tabular}}}}%
     \put(0.19019034,0.04268404){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\alpha_{1}$\end{tabular}}}}%

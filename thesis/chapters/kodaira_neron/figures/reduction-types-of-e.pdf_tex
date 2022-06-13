@@ -54,7 +54,7 @@
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{reduction-types-of-e.pdf}}%
-    \put(0.76347201,0.48423961){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0.76347289,0.48423976){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{reduction-types-of-e.pdf}}%
     \put(0.69108512,0.40356388){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
     \put(0.71014833,0.40356388){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
@@ -84,7 +84,7 @@
     \put(0.89601986,0.07758827){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
     \put(0.88658314,0.04374188){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4\end{tabular}}}}%
     \put(0.08727797,1.16028151){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}reduction type\end{tabular}}}}%
-    \put(0.29192666,1.16028151){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$r =$ number of compenents\end{tabular}}}}%
+    \put(0.29192666,1.16028151){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$r =$ number of components\end{tabular}}}}%
     \put(0.63668059,1.16028122){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Special fiber $\mathscr{E}_s$\end{tabular}}}}%
     \put(0.10971924,1.10821037){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathrm{I}_0$\end{tabular}}}}%
     \put(0.10971924,1.01239029){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathrm{I}_1$\end{tabular}}}}%
