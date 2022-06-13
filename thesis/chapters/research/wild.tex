@@ -17,7 +17,7 @@ We will have to split up differerent cases.
 In this case we have $i = (v(2) - 1) / 2$ and we computed that $E$ is of type $\mathrm I_{2n - 4v(2)}^*$ (\cref{prop:tate_char_is_2}).
 Let $\mathscr E_\text{min} $ be the minimal regular model of $E$ (which for curves of type $\mathrm I_m^*$ coincides with the minimal snc-model).
 The idea is to look at the proof of Tate's algorithm where they compute each component of $\mathscr E_\text{min} $ explicitly by repeatedly blowing up the Weierstrass equation \eqref{eq:wild_minimal_weierstrass}. 
-Then for each component, we can look for corresponding model of $\pro^{1}_K$ with a single component and a domininating map between the components. 
+Then for each component, we can look for a corresponding model of $\pro^{1}_K$ with a single component and a dominating map between the components. 
 That way we can find the image of every divisorial point in $\Delta(\mathscr E_\text{min} )$ in $\pro^{1, \text{an}}_K$. 
 Fortunately the necessary blowups are computed very clearly in the proof of Tate's algorithm in \cite[p.\ 369-379]{silvermanAdvancedTopicsArithmetic1994}
 
@@ -48,7 +48,7 @@ Then he blows up $\mathcal{V}_{-1} $ in $(0, 0, 0)$ to obtain the scheme
 where we used the notation \[
 	n_j = 2i + 1 + \left\lfloor \frac{j + 1}{2} \right\rfloor,\quad  m_j = 3i + 2 + \left\lfloor \frac{j }{2} \right\rfloor
 .\]
-Let $a, b \in R$ be such the roots $0, a, b$ are the roots of $x_{n_0}^3 +  a_{2,1} x_{n_0}^2 + \lambda_{4i + 2} x_{n_0}^2$ and $\overline{a} = 0, \overline{b} = \overline{a_{2,1}} = \overline{v}$.  
+Let $a, b \in R$ be such that $0, a, b$ are the roots of $x_{n_0}^3 +  a_{2,1} x_{n_0}^2 + \lambda_{4i + 2} x_{n_0}^2$ and $\overline{a} = 0, \overline{b} = \overline{a_{2,1}} = \overline{v}$.  
 These exist because over $k$ the polynomial looks like $x_{n_0}^3 + \overline{v} x_{n_0}^2$ and by Hensel's lemma the roots lift. 
 
 We can define a birational map of schemes \[
@@ -84,7 +84,7 @@ where the birational map is given by $x_{n_j} \mapsto  x_{n_j}, z \mapsto (y^2_{
 On the level of special fibers this is given by \[
 	\mathcal{V} _{j, s} = \spec \frac{k[x_{n_j}, y_{n_j}]}{(\overline{v}x^2_{n_j})} \birat \spec \frac{k[x_{n_j}, z_j]}{(z_j \cdot  x^2_{n_j})}
 ,\]
-where we see that the double line cout out by  $x_{n_j} = 0$ in the source dominates the double line $x_{n_j} = 0$ in the image. 
+where we see that the double line cut out by  $x_{n_j} = 0$ in the source dominates the double line $x_{n_j} = 0$ in the image. 
 
 
 \bigskip
@@ -153,7 +153,7 @@ If we will make the simplifying assumption that $\sqrt{\lambda} $ exists.
 \begin{remark}
 	This is equivalent to saying that $\sqrt{u} $ exists.
 	This is not guaranteed to be the case as we cannot use Hensel's lemma to lift the root $\sqrt{\overline{u}} $ from $k$ to $R$, because the derivative vanishes $(x^2 - u)' = 2x = 0$. 
-	I'm fairly sure that if $\sqrt{u} $ does not exits in $ K$, the argument can be salvaged by passing to the field extension $K(\sqrt{u} )$. 
+	I am fairly sure that if $\sqrt{u} $ does not exist in $ K$, the argument can be salvaged by passing to the field extension $K(\sqrt{u} )$. 
 	This is an immediate extension, i.e.\ it is unramified and isomorphism on the residue fields. 
 	But to show that the argument is still valid needs to be checked.
 \end{remark}
@@ -197,7 +197,7 @@ See \cref{fig:image_skeleton_wild_n_le_2v2_n_even}.
 If $n \equiv 2 \mod 4$ then $E$ is of type $\mathrm I_{m}^*$ for some $m$. 
 Note that at at step 7 we had to change coordinates $x_{i+1}' = x_{i + 1}  + s$ where $\overline{s} = \sqrt{\overline{u}} $. 
 Following the same argument as in \cref{sec:case_v_lambda_>_2_v_2_and_v_2_is_even} we see that degree two components of $\mathscr E_\text{min} $ lie in a branch of $c$. 
-But by as we changed coordinates, they lay in the branch of $c$ with the same tangent direction as $\sqrt{\lambda} $. 
+But as we changed coordinates, they lay in the branch of $c$ with the same tangent direction as $\sqrt{\lambda} $. 
 As the map $\phi|_{\mathscr E}$ is injective by the same argument as in \cref{sec:case_v_lambda_>_2_v_2_and_v_2_is_even} we further see that the $\phi(\sk(E))$ must lay on the line $[\sqrt{\lambda}, c] $ or $[-\sqrt{\lambda} , c]$
 So again we find that $\phi(\sk (E))$ is not contained in $\sk(\mathscr P)$. 
 

@@ -8,19 +8,19 @@ So we might, and do run into the problem that the intersection pairing is not in
 \nomenclature[P]{$\pro^{1}_A$}{The projective line over $A$}
 
 \begin{example}\label{ex:first_model}
-	Consider $\pro^{1}_R = \proj K[x, y]$ as a model of $\pro^{1}_K$. 
+	Consider $\pro^{1}_R = \proj R[x, y]$ as a model of $\pro^{1}_K$. 
 	Take $D = (x), E = (x-\pi y )$, and $E' = E + (\frac{x-y}{x-\pi y})= (x - y)$.
 	Then  $D, E$ intersect in origin of special fiber, hence $D\cdot E \ge 1$. 
 	But $D, E'$ do not have any common points, hence $D \cdot E' = 0$. 
 \end{example}
 
 The problem here is that the two divisors span across the two fibers.
-They are what we will later define to be horizontal divisor. 
+They are what we will later define to be horizontal divisors. 
 Intuitively they lay in the direction where the scheme is not proper. 
 However the special fiber, and every component in it is a proper divisor. 
-This suggests a fix.
-If we restrict our selves to the case where $D$ lies in the special fiber (is vertical), then we can compute $D\cdot E$ on the restriction to $D$ and once again obtain that the intersection pairing independent of linear equivalence. 
-
+This suggests a partial fix.
+If we restrict ourselves to the case where $D$ lies in the special fiber (is vertical), then we can compute $D\cdot E$ on the restriction to $D$.  
+Thus we obtain for fixed $D$ with support in the special fiber, the intersection pairing is indepent of linear equivalence in $E$. 
 \begin{definition}\label{def:vertical_divisor}
 	Let $\mathscr{C}$ a $2$-dimensional, regular, integral scheme proper and flat over $R$.  (i.e.\ a proper regular model of some curve). 
 	Then $\divisor(\mathscr{C})_s$ is the set of divisors that are supported in the special fiber. 
@@ -123,7 +123,7 @@ This seems like a very minor proposition, but in practice it is very useful as i
 
 
 \begin{corollary}\label{cor:closure_K_rational_point}
-	Let $x \in \mathscr C_\eta$ be a $K$-rational point and $D = \overline{\{P\} } $. 
+	Let $\mathscr C$ be a regular model of some curve $C$ and $x \in \mathscr C_\eta$ be a $K$-rational point and $D = \overline{\{P\} } $. 
 	Then $D$ intersects $\mathscr C_s$ in a single point $p$, which is smooth in $\mathscr C_s$. 
 	Thus $p$ lies on a unique irreducible component of $X_s$ which is of multiplicity $1$. 
 \end{corollary}
@@ -133,14 +133,15 @@ This seems like a very minor proposition, but in practice it is very useful as i
 	,\] 
 	where $\mathscr C_s = \sum_{i =1}^{r} n_i F_i$ is the decomposition in irreducible components. 
 	So can be at most one $i$ such that $D\cdot F_i \ne  0$ and $n_i = 1$. 
+	To see that this intersection point is smooth, see \cite[cor.\ 9.1.31]{liuAlgebraicGeometryArithmetic2002}.
 \end{proof}
 
 \begin{remark}
-	The point intersection point $\{x\}  \cap \mathscr C_s$ is $\red_{\mathscr C}(x)$ with the reduction map from \cref{sec:the_reduction_map_models}. 
+	The point intersection $\{x\}  \cap \mathscr C_s$ is $\red_{\mathscr C}(x)$ with the reduction map from \cref{sec:the_reduction_map_models}. 
 \end{remark}
 
 Let $\omega_{\mathscr C / R} $ be the canonical bundle of $\mathscr C$ (relative to $\spec R$).
-We now turn to the question how we should compute $K_{\mathscr C / R} \cdot E$ where  $K_{\mathscr C / R}$ is a representative of $\omega_{\mathscr C / R}$ and $E \in \divisor_s \mathscr C$. 
+We now turn to the question how we should compute $K_{\mathscr C / R} \cdot E$ where  $K_{\mathscr C / R}$ is a representative of $\omega_{\mathscr C / R}$ in $\div \mathscr C$ and $E \in \divisor_s \mathscr C$. 
 Note that the result does not depend on the choice of $K_{\mathscr C / R}$ as any two choices are linearly equivalent. 
 
 \begin{proposition}\label{prop:intersection_canonical_special}
@@ -153,10 +154,11 @@ Note that the result does not depend on the choice of $K_{\mathscr C / R}$ as an
 	From \cref{thm:defining_properties_intersection_pairing} we see that \[
 		K_{\mathscr C / R} = \deg \omega_{\mathscr C / R}|_{\mathscr C_s} = \deg \omega _{\mathscr C_s / k}
 	.\] 
-	The last equality is holds because the canonical bundle pulls back under basechange. 
+	The last equality holds because the canonical bundle pulls back under basechange and $\mathscr C \to \spec R$ is flat. 
 	We continue the computation \[
 		\deg \omega_{\mathscr C_s / k} = - 2\chi (\mathcal{O}_{\mathscr C_s}) = -2 \chi (\mathcal{O}_{\mathscr C_\eta}) = 2p_a(\mathscr C_\eta) - 2
 	.\] 
+	The first equality is a consequence of Riemann-Roch and Serre duality (\cite[cor.\ 7.3.31]{liuAlgebraicGeometryArithmetic2002}).
 	The middle equality holds because $\mathscr C \to \spec R$ is flat. 
 \end{proof}
 \nomenclature[pa]{$p_a(X)$}{The arithmetic genus of $X$}
@@ -190,7 +192,7 @@ For the final part of this thesis it will be important to understand how given a
 		\item If either $C$ or $D$ is vertical then \begin{equation}\label{eq:projection_formula}
 				C\cdot f^* D = f_* C \cdot D
 			.\end{equation}
-		\item The extension $K(X) / K(Y)$ is finite. 
+		\item The extension $K(\mathscr X) / K(\mathscr Y)$ is finite. 
 			If $F$ is a vertical divisor on $\mathscr Y$ then $f^* F$ is also vertical and \[
 				f^* F \cdot f^* D = [K(X): K(Y)] F \cdot D
 			.\] 
@@ -216,8 +218,8 @@ For the final part of this thesis it will be important to understand how given a
 \nomenclature[fpullback]{$f^*$}{The pullback of a sheaf or divisor}
 \nomenclature[fpushforward]{$f_*$}{The pushforward of a sheaf or divisor}
 
-\begin{remark}
-	If $f: \mathscr X \to \mathscr Y$ is projective and surjective suppose that $f^{-1}D$ does not contain any components of $C$ then we even have the identity  \[
+\begin{remark}\label{rem:local_projection_formula}
+	If $f: \mathscr X \to \mathscr Y$ is projective and surjective and that $f^{-1}D$ does not contain any components of $C$ then we even have the identity  \[
 		f_*(C . f^*D) = (f_*C . f^* D)
 	.\] 
 	See \cite[rem.\ 9.2.13]{liuAlgebraicGeometryArithmetic2002} for more details. 

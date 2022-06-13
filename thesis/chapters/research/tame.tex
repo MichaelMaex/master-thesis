@@ -6,21 +6,21 @@ In the case where $\ch k \ne 2$ we can use \cref{prop:weightfunction_fullback} t
 	.\] 
 \end{lemma}
 \begin{proof}
-	In \cref{prop:model_P_is_KS} we saw that $\sk(\mathscr P) = \sk(\pro^{1}_K, \omega)$, where $\omega$ is the rational section of $\Omega_{\pro^{1}_K}^{\otimes 2}$ with poles at $0, 1, \lambda, \infty$, which is unique up to multiplication by $K$. 
-	Then $f^* \omega$ is a $2$-pluricanonical form. 
-	Indeed, we can take $\omega$ as a global section of $\Omega_{\pro^{1}_K}^{\otimes 2}(f_* \ram _f)$. 
+	In \cref{prop:model_P_is_KS} we saw that $\sk(\mathscr P) = \sk(\pro^{1}_K, \sigma)$, where $\sigma$ is the rational section of $\omega_{\pro^{1}_K}^{\otimes 2}$ with poles at $0, 1, \lambda, \infty$, which is unique up to multiplication by $K$. 
+	Then $f^* \sigma$ is a $2$-pluricanonical form. 
+	Indeed, we can take $\sigma$ as a global section of $\omega_{\pro^{1}_K}^{\otimes 2}(f_* \ram _f)$. 
 	And 
 	\[
-		f^* (\Omega_{\pro^{1}_K / K}^{\otimes 2}(-f_* \ram _f)) = \Omega_{E /K}^{\otimes 2} \otimes \mathcal{O}(2 \ram_f) \otimes f^*f_* \mathcal{O}(-\ram _f) = \Omega_{E / K}
+		f^* (\omega_{\pro^{1}_K / K}^{\otimes 2}(-f_* \ram _f)) = \omega_{E /K}^{\otimes 2} \otimes \mathcal{O}(2 \ram_f) \otimes f^*f_* \mathcal{O}(-\ram _f) = \omega_{E / K}
 	.\] 
 	We also have 
 	\[
-		\sk(E, f^*\omega) = \minloc \wt_{f^* \omega} = \minloc \wt_{\omega}\circ \phi = \phi^{-1}(\minloc \wt_\omega) = \phi^{-1} (\sk(\pro^{1}_K, \omega))
+		\sk(E, f^*\sigma) = \minloc \wt_{f^* \sigma} = \minloc \wt_{\sigma}\circ \phi = \phi^{-1}(\minloc \wt_\sigma) = \phi^{-1} (\sk(\pro^{1}_K, \sigma))
 	.\] 
-	Recall that $\Omega_{E / K}$ is trivial as $E$ is an elliptic curve. 
+	Recall that $\omega_{E / K}$ is trivial as $E$ is an elliptic curve. 
 	So all pluricanonical forms are the same up to multiplication. 
 	So $\sk(E)$ can be computed using only one pluricanonical form, thus \[
-		\sk(E) = \sk(E, f^*\omega) = \phi^{-1}(\sk(\pro^{1}_K, \omega)) = \phi^{-1}(\mathscr P)
+		\sk(E) = \sk(E, f^*\sigma) = \phi^{-1}(\sk(\pro^{1}_K, \sigma)) = \phi^{-1}(\mathscr P)
 	.\] 
 \end{proof}
 
@@ -37,7 +37,7 @@ Recall that $E$ is given by the Weierstrass equation
 	E: y^2 = x(x-1)(x-\lambda)
 ,\end{equation}
 with $\lambda = u \cdot \pi^{n}$ and $u$ some unit in $R$. 
-If $n \ge 0$ \cref{sec:char_k_is_not_2} we found that this Weierstrass equation is minimal.
+If $n \ge 0$ we found that this Weierstrass equation is minimal in  \cref{sec:char_k_is_not_2}.
 So the component of the Weierstrass model is a multiplicity 1 component of $\mathscr E_\text{min} $, the minimal snc-model. 
 Let $w$ be the divisorial point associated to component.
 If we consider the morphism of models (on affine charts) \[

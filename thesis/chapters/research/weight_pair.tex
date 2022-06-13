@@ -1,4 +1,3 @@
-\todo{proof that $l_0: r \mapsto B(0, |\pi|^{-r})$ is an isometry}
 Recall $\Gamma_\lambda$ from \cref{fig:configurations_of_gamma_lambda}. 
 Let $\delta = f_* (\ram_f)$ which as a divisor on $\pro^{1}_K$ is the sum of the points on $\pro^{1}_K$ corresponding to $0, 1, \lambda, \infty$. 
 \subsection{Finding a minimal snc-model} \label{sec:finding_a_minimal_snc_model}
@@ -22,7 +21,7 @@ Let
 	&=  \spec \frac{R[x, y]}{(xy - \pi^{n})} \cup \spec R\left[ \frac{1}{x} \right] \cup \spec R\left[ \frac{1}{y}\right] \nonumber 
  \end{align} 
 This is a projective model of $\pro^{1}_K$. 
-The special fiber on one the first affine chart is \[
+The special fiber on the first affine chart is \[
 	\spec k \times _{R} \spec \frac{R[x, y]}{(xy -\pi^{n})}=\spec  \frac{k[x, y]}{(xy)}
 .\] 
 Hence $\mathscr P'_s$ are two rational curves intersecting in one point. 
@@ -60,7 +59,7 @@ As they reduce to different points, the paths to $\sk(\mathscr P)$ come in at $b
 Similarly the paths from $0$ and $\infty$ to $\sk(\mathscr P)$ come together at $a$.
 
 
-So $\sk(\mathscr P, \delta)$ consists of the paths running running between every pair of $0, 1, \lambda, \infty$. Thus $\Gamma_\lambda \subset \sk(\mathscr P, \delta)$ as $\Gamma_\lambda$ is the convex hull of $0, 1, \lambda, \infty$.
+So $\sk(\mathscr P, \delta)$ consists of the paths running between every pair of $0, 1, \lambda, \infty$. Thus $\Gamma_\lambda \subset \sk(\mathscr P, \delta)$ as $\Gamma_\lambda$ is the convex hull of $0, 1, \lambda, \infty$.
 As  the only leaves of $\sk(\mathscr P, \delta)$ are $0, 1, \lambda, \infty$ we also get the converse $\Gamma_\lambda \subset  \sk(\mathscr P, \delta)$. 
 We found a snc-model $\mathscr P$ of $(\pro^{1}_K, \delta)$ such the associated skeleton equals $\Gamma_\lambda$. 
 See \cref{fig:skeleton_of_the_pair}
@@ -80,29 +79,29 @@ By \cref{lem:model_disk_proj_line} we see that the points corresponding to the d
 \subsection{$\sk(\mathscr P)$ is a Kontsevich-Soibelman skeleton} \label{sec:sk_P_is_a_kontsevich-soibelman_skeleton}
 
 \begin{lemma}\label{lem:unique_form_pair}
-	There is a rational section $\omega$ of $\Omega_{\pro^{1}_K}^{\otimes 2}$ with poles at  $0, 1, \lambda, \infty$ and no other zeros or other poles. 
+	There is a rational section $\sigma$ of $\omega_{\pro^{1}_K}^{\otimes 2}$ with poles at  $0, 1, \lambda, \infty$ and no other zeros or other poles. 
 	Moreover this rational section is unique up to multiplication by $K$ and the poles are of order 1. 
 \end{lemma}
 \begin{proof}
-	The statement is equivalent to showing that $\dim_K H^{0}\left(\Omega_{\pro^{1}_K}^{\otimes 2}(\delta)\right)  = 1$.
-	We have that $\Omega_{\pro^{1}_K} \simeq \mathcal{O}(-2)$ and $\mathcal{O}(\delta) \simeq \mathcal{O}(\deg \delta) = \mathcal{O}(4)$.
+	The statement is equivalent to showing that $\dim_K H^{0}\left(\omega_{\pro^{1}_K}^{\otimes 2}(\delta)\right)  = 1$.
+	We have that $\omega_{\pro^{1}_K} \simeq \mathcal{O}(-2)$ and $\mathcal{O}(\delta) \simeq \mathcal{O}(\deg \delta) = \mathcal{O}(4)$.
 	So \[
-		\Omega_{\pro^{1}_K} (\delta) \simeq \mathcal{O}(-1)^{\otimes 2} \otimes \mathcal{O}(4) \simeq \mathcal{O}\left(0 \right)  = \mathcal{O}_X
+		\omega_{\pro^{1}_K} (\delta) \simeq \mathcal{O}(-1)^{\otimes 2} \otimes \mathcal{O}(4) \simeq \mathcal{O}\left(0 \right)  = \mathcal{O}_X
 	.\] 
-	Hence $H^{0}\left(\Omega_{\pro^{1}_K}^{\otimes 2}(\delta)\right)$ is a $1$-dimensional $K$-vector space. 
+	Hence $H^{0}\left(\omega_{\pro^{1}_K}^{\otimes 2}(\delta)\right)$ is a $1$-dimensional $K$-vector space. 
 \end{proof}
 
-The proof of the following two results depend heavily on \cite[thm.\ 3.2.3]{bakerWeightFunctionsBerkovich2016}. 
-	The metric on $\mathbb{H}(\pro^{1}_K)$ we defined in \cref{def:metric_dual_graph} (the stable metric) differs from the metric in used in \cite{bakerWeightFunctionsBerkovich2016} (the potential metric). 
-	However in our specific application the difference does not matter as we are interested in computing the minimal locus of $\wt_\omega$ by looking at its slopes, for which only the sign is important.
+The proofs of the following two results depend heavily on \cite[thm.\ 3.2.3]{bakerWeightFunctionsBerkovich2016}. 
+	The metric on $\mathbb{H}(\pro^{1}_K)$ we defined in \cref{def:metric_dual_graph} (the stable metric) differs from the metric used in \cite{bakerWeightFunctionsBerkovich2016} (the potential metric). 
+	However in our specific application the difference does not matter as we are interested in computing the minimal locus of $\wt_\sigma$ by looking at its slopes, for which only the sign is important.
 	In the next two proof I'll use the potential metric instead of rescaling the slopes.
 
 	The first lemma is a slight refinement of \cite[prop.\ 4.4.4]{mustataWeightFunctionsNonArchimedean2015} in the context of curves.
 	\begin{lemma}\label{lem:well_behaved_pole_weight}
-	Let $C$ be a curve over $K$ and $\omega$ be a $m$-pluricanonical form.
-	Let $K_C^{-}$ be the divisor that contains all points of $\omega$ and $\mathscr C$ a snc-model of the pair $(\mathscr C, K_C^{-})$.  
-	If all the poles of $\omega$ are of degree less than $m$, then for all $x \in \pro^{1, \text{an}}_K$ \[
-		\wt_\omega(x) \ge \wt_\omega(\rho_{\mathscr C}(x))
+	Let $C$ be a curve over $K$ and $\sigma$ be a $m$-pluricanonical form.
+	Let $K_C^{-}$ be the divisor that contains all poles of $\sigma$ and $\mathscr C$ a snc-model of the pair $(\mathscr C, K_C^{-})$.  
+	If all the poles of $\sigma$ are of degree less than $m$, then for all $x \in \pro^{1, \text{an}}_K$ \[
+		\wt_\sigma(x) \ge \wt_\sigma(\rho_{\mathscr C}(x))
 	\] 
 	with equality if and only if $x \in \sk(\mathscr C)$. 
 	Here $\rho_{\mathscr C}(x): C\an \to \sk(\mathscr C)$ is the retraction to the skeleton.
@@ -110,27 +109,27 @@ The proof of the following two results depend heavily on \cite[thm.\ 3.2.3]{bake
 \begin{proof}
 	If $\red_{\mathscr C}(x)$ does not lie in the closure of $K_C^{-}$ then the result follows from \cite[prop.\ 4.4.4.(2)]{mustataWeightFunctionsNonArchimedean2015} and the denseness of divisorial points. 
 
-	If $\red_{\mathscr C}(x)$ lies in the closure of some pole $z \in \mathrm{Pole}_\omega$ and $x \not\in \sk(\mathscr C)$. 
+	If $\red_{\mathscr C}(x)$ lies in the closure of some pole $z \in K_C^{-}$ and $x \not\in \sk(\mathscr C)$. 
 	Let $\ell: [0, a] \to X\an$ be the path running from $\sk \mathscr C$ to $x$, parametrized by length. 
 	By assumption this path coincides with the path $m: [0, \infty) \to X\an$ from $\mathscr C$ to $z$, also parametrized by $\length$.
 	Let $\epsilon$ be the length where $m, \ell$ branch. 
-	The slope on  $\ell|_{[0, \epsilon]}$ is positive by \cite[thm.\ 3.2.3.(2)]{bakerWeightFunctionsBerkovich2016} , hence $\wt_\omega \ell(\epsilon) > \wt_\omega \red_{\mathscr C}(x)$.
+	The slope on  $\ell|_{[0, \epsilon]}$ is positive by \cite[thm.\ 3.2.3.(2)]{bakerWeightFunctionsBerkovich2016} , hence $\wt_\sigma \ell(\epsilon) > \wt_\sigma \red_{\mathscr C}(x)$.
 	If $\epsilon = a$ we are done. 
 	If $\epsilon < a$ then repeatedly blowing up $\mathscr C$ in the reduction of $z$ yields a model $\mathscr C'$ whose dual graph contains $\ell(\epsilon)$, but does not contain $x$.
 	So the result now follows from applying \cite[prop.\ 4.4.4.(2)]{mustataWeightFunctionsNonArchimedean2015} to the model $\mathscr C'$. 
 \end{proof}
 
 \begin{proposition}\label{prop:model_P_is_KS}
-	Let $\omega$ be as in \cref{lem:unique_form_pair} and $\mathscr P$ the model constructed in \cref{sec:finding_a_minimal_snc_model}.
-	Then $\sk(\pro^{1}_K, \omega) = \sk(\mathscr P)$. 
+	Let $\sigma$ be as in \cref{lem:unique_form_pair} and $\mathscr P$ the model constructed in \cref{sec:finding_a_minimal_snc_model}.
+	Then $\sk(\pro^{1}_K, \sigma) = \sk(\mathscr P)$. 
 \end{proposition}
 \begin{proof}
-	\Cref{lem:well_behaved_pole_weight} implies that $\minloc \wt_{w} = \sk(C, \omega) \subset \sk(\mathscr P) $. 
+	\Cref{lem:well_behaved_pole_weight} implies that $\minloc \wt_{w} = \sk(C, \sigma) \subset \sk(\mathscr P) $. 
 	If $n = 0$ we are done as $\sk(\mathscr P) $ is a point. 
 	Suppose that $n > 1$ ($\sk(\mathscr P)$ is a line), then 
-	it suffices to show that $\wt_\omega$ is constant on $\sk(\mathscr P)$, i.e.\ constant on the line segment $[ab]$ in \cref{fig:skeleton_of_the_pair}. 
-	By \cite[thm.\ 3.2.3.(3)]{bakerWeightFunctionsBerkovich2016} we know that the laplacian of $\wt_\omega$ restricted to $\sk(\mathscr P, \delta)$ is given by \[
-		\Delta\left(\wt_\omega|_{\sk(\mathscr P, \delta)}\right) = 2\cdot \sum_{v \in \sk(\mathscr P, \delta)} N(v)(\val (g) - 2g(v) - 2)v = 2a + 2b
+	it suffices to show that $\wt_\sigma$ is constant on $\sk(\mathscr P)$, i.e.\ constant on the line segment $[ab]$ in \cref{fig:skeleton_of_the_pair}. 
+	By \cite[thm.\ 3.2.3.(3)]{bakerWeightFunctionsBerkovich2016} we know that the laplacian of $\wt_\sigma$ restricted to $\sk(\mathscr P, \delta)$ is given by \[
+		\Delta\left(\wt_\sigma|_{\sk(\mathscr P, \delta)}\right) = 2\cdot \sum_{v \in \sk(\mathscr P, \delta)} N(v)(\val (g) - 2g(v) - 2)v = 2a + 2b
 	.\] 
 	At $a$ the lines $[0, a],[\lambda, a]$ and  $[a, b]$ meet. 
 	The outgoing slopes of  $[0, a], [\lambda, a]$ are both $1$ by \cite[3.2.3.(2)]{bakerWeightFunctionsBerkovich2016}. 

@@ -39,8 +39,8 @@ Sometimes it makes sense to keep track in which points the components intersect 
 \end{definition}
 Note that in the definition above we used a lower dot, and not a central dot as in \cref{def:intersection_number_effective}.
 \begin{example}
-	Let $F$ be any field and $X = \spec K[x, y]$. 
-	Let  $D = V(y)$ and $E = V(y - x^r)$ for some $r \ge 1$
+	Let $F$ be any field and $X = \spec F[x, y]$. 
+	Let  $D = V(y)$ and $E = V(y - x^r)$ for some $r \ge 1$.
 	Then  $\supp D \cap \supp E = \{(0, 0)\} $ and $\mathcal{I} _{D, (0,0)} + \mathcal{I} _{E, (0,0)} = (y, y-x^r) = (y, x^r)$.
 	So \[
 		i_{(0,0)}(D, E) = \length \frac{K[x, y]_{(0, 0)}}{(y, x^{r})} = r
@@ -49,7 +49,7 @@ Note that in the definition above we used a lower dot, and not a central dot as 
 \end{example}
 
 \begin{lemma}\label{lem:intersection_surfaces_restriction_mult_1}
-	Let $D, B$ be effective Cartier divisors with no common components. And let $i: D \into X, j: E \into X$ be the corresponding closed immersions in $X$. 
+	Let $D, E$ be effective Cartier divisors with no common components. And let $i: D \into X, j: E \into X$ be the corresponding closed immersions in $X$. 
 	Let $x \in E$. Then  
 	\begin{align*}
 		i_x(D, E) &= \mult_x D|_E   \\
@@ -91,9 +91,9 @@ Note that in the definition above we used a lower dot, and not a central dot as 
 	The map $(D, E )\mapsto D\cdot E$ is bilinear where it is defined and is called the \emph{intersection pairing}.
 \end{definition}
 
-To extend the set of pairs of divisors on which the intersection pairing is defined, as well as prove nice properties of it, we need to put extra assumptions to the scheme $X$. 
+To extend the set of pairs of divisors on which the intersection pairing is defined, as well as prove nice properties of it, we need to put extra assumptions on the scheme $X$. 
 \begin{example}\label{ex:fail_intersection_pairing_linear}
-	It is would be favorable if the intersection pairing was invariant under linear equivalence of divisors, i.e.\ $E\cdot D = E\cdot D$ for $D \sim D'$, both with no components common to $E$. 
+	It would be favorable if the intersection pairing was invariant under linear equivalence of divisors, i.e.\ $E\cdot D = E\cdot D'$ for $D \sim D'$, both with no components common to $E$. 
 	Alas, this is not the case for general $X$. 
 	Let $X = \aff_K^{2}$ and led $D = V(x), D' = V(y), E = V(y-1)$. 
 	Then $D\cdot E = 1$ as they intersect once in $(0, 1)$, but $D' \cdot E = 0$ as they are parallel lines. 
@@ -104,7 +104,7 @@ To extend the set of pairs of divisors on which the intersection pairing is defi
 
 
 \begin{lemma}[moving lemma]\label{lem:moving_lemma}
-	Let $X$ be a connected, normal, separated, Noetherian scheme, and $D, E$ a divisor on $X$. 
+	Let $X$ be a connected, normal, separated, Noetherian scheme, and $D, E$ divisors on $X$. 
 	Then there is a $f \in K(X)$ such that $D + (f)$ and $E$ do not share any components. 
 \end{lemma}
 \begin{proof}
@@ -123,6 +123,11 @@ To extend the set of pairs of divisors on which the intersection pairing is defi
 	.\] 
 	As $i^* f \in K(D)$ and $D$ is proper. 
 \end{proof}
+\begin{definition}
+	Let $X$ be a scheme. Then we write $\divisor X$ for the group of Weil divisors on $X$.
+	If  $X$ is an $R$-scheme then we write $\divisor_s X$ for the group of Weil divisors on $X$ with support in $X_s$. 
+\end{definition}
+\nomenclature[div]{$\div X$}{The group of divisors on $X$}
 
 \begin{proposition}\label{prop:intersection_pairing_proper_model}
 	If $X$ is proper, connected, normal, Noetherian then the intersection pairing extends to a symmetric bilinear map $\divisor X \times  \divisor X \to \Z$. 

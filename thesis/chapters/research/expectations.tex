@@ -39,7 +39,7 @@ So $E$ has reduction type $\mathrm I_m$ with \[
 \begin{tateconclusion}
 	If $n > 1$ then $E$ is of type $\mathrm I_{2n}$.
 \end{tateconclusion}
-This concludes Tate's algorithm and we summarise our findings in the following proposition. 
+This concludes Tate's algorithm and we summarize our findings in the following proposition. 
 
 \begin{proposition}\label{prop:conclusion_tate_tame}
 	Suppose $\ch k \ne 2$ and $E$ be as in \cref{prob:main_problem}. 
@@ -68,7 +68,7 @@ We easily see that \[
 We will assume that $v(\lambda + 2) = \min(v(\lambda), v(2))$ (e.g.\ when $n \ne v(2)$), then we further see that \[
 	i = \min\left(v(2), \left\lfloor \frac{\min (v(2), n)}{2} \right\rfloor,  \left\lfloor \frac{n}{4} \right\rfloor\right)  = \min\left(\left\lfloor \frac{v(2)}{2}\right\rfloor, \left\lfloor \frac{n}{4} \right\rfloor \right)
 .\] 
-From now on we'll assume that that $n \ne 2v(2)$. 
+From now on we'll assume that $n \ne 2v(2)$. 
 Tate's algorithm requires a more complex coordinate change if $n = v(2)$ and there was insufficient time to work out this case. 
 
 So the equation becomes (omitting the double primes after $x, y$) \[
@@ -154,13 +154,13 @@ Finally \[
 	\end{cases}
 .\] 
 Recall that assumed that $n \ge 2v(2) + 2$ if $2 \mid v(2)$. 
-So we find that $\pi^2 \mid a_4$ eitherway. 
+So we find that $\pi^2 \mid a_4$ either way. 
 Trivially $\pi^3 \mid a_6 = 0$. 
 So there is no need to change coordinates in this step if $2\nmid v(2)$. 
 
 
-From now on we assume that $2\nmid v(2)$ as for $2 \mid v(2) $ the algorithm leads to a lot of case distinctions and explicit computations in Sagemath result in in some odd behaviour. 
-I strongly suspect that our Weierstrass equation might not be reduced in general if $2\mid v(2) $. 
+From now on we assume that $2\nmid v(2)$ as for $2 \mid v(2) $ the algorithm leads to a lot of case distinctions and explicit computations in Sagemath result in some odd behavior. 
+I strongly suspect that our Weierstrass equation is not be reduced in general if $2\mid v(2) $. 
 
 For now assume that $2 \nmid v(2)$. 
 Then the polynomial is given by \[
@@ -182,7 +182,7 @@ As long as $3 + j + 4i \le n$ we find that $G_i(X)$ has coefficients in $R$.
 If $j + 3 + 4i <  n$ we obtain that $G_i(X) \equiv v X^2 \mod \pi$ has double root in $0$. 
 If $3 + j + 4i = n$ we obtain that $G_i(X) \equiv v X^2 + uX$. Recall that $\lambda = u \cdot \pi^{n}$. 
 So $G_j$ has distinct roots. 
-This occurs is exactly when $j = n - 3 - 4i = n - 1 - 2v(2)$. 
+This is exactly when $j = n - 3 - 4i = n - 1 - 2v(2)$. 
 At this point we are $2(j + 1)$ steps into the subprocedure. 
 So we find that 
 \begin{tateconclusion}
@@ -205,7 +205,7 @@ The reduction of $E$ is
 .\] 
 If $n \equiv 0 \mod 4$ then $v(\lambda_{4i}) = 0$ and $\overline{\lambda_{4i}} = \overline{u}$. 
 Then $\tilde E$ is singular at $(0, \sqrt{\overline{u}})$. 
-So we must perform the translation $y' = y + s $ where $s \in R$ such that $\overline{s}^2 = u$ this results in $\overline{a_6} = \overline{u}$.
+So we must perform the translation $y' = y + s $ where $s \in R$ such that $\overline{s}^2 = u$. This results in $\overline{a_6} = \overline{u}$.
 So briefly going into step $3$ we see that $\pi^2 \nmid a_6$ and find 
 \begin{tateconclusion}
 	If $n < 2v(2)$ and $n \equiv 0 \mod 4$ then $E$ is of type $\mathrm{II}$. 
@@ -257,7 +257,7 @@ As computed in step 6 we find the following.
 	If $n \equiv 2 \mod 4$ or $n \equiv 3 \mod 4 \wedge n = 2v(2) - 1$ then $E$ is of type $I_m^*$ for some $m$. 
 \end{tateconclusion}
 
-Note that if we want to follow the subprocedure to find $m$ in the where $n \equiv 2 \mod 4$ then we first have to perform a coordinate transformation $x' = x + s$ where $s \in R$ is some inverse image of $\sqrt{u} $ in $k$
+Note that if we want to follow the subprocedure to find $m$ when $n \equiv 2 \mod 4$ we first have to perform a coordinate transformation $x' = x + s$, where $s \in R$ is some inverse image of $\sqrt{\overline{u}} $ in $k$
 
 \todo{compute $m$ in this case}
 If  $n \equiv 3 \mod 4$ and $n > 2v(2) - 1$ then $P(T)$ has triple root $0$ and we continue to step 8.
