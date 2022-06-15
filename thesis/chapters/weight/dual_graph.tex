@@ -154,7 +154,7 @@ There are two natural maps between $|\Delta(\mathscr C)|$ and $|\Delta(\mathscr 
 	{|\Delta(\mathscr C')|} \rar[hookleftarrow, shift left]{i} \rar[twoheadrightarrow, shift right, ']{r} & {|\Delta(\mathscr C)|} 
 \end{tikzcd}
 .\] 
-An isometric inclusion $i$ and a deformation retraction $r$ that retracts the edge between  $E$ and $F$. 
+An isometric inclusion $i$ and a strong deformation retraction $r$ that retracts the edge between  $E$ and $F$. 
 Note that $r \circ i = \id_{|\Delta(\mathscr C)|}$ and that the maps are a homotopy equivalence. 
 See \cref{fig:blowup_smooth_point_skeleton}. 
 
@@ -215,7 +215,7 @@ With corresponding isometric inclusions and retractions
 Composing these inclusions and retractions we find the following proposition.
 \begin{proposition}\label{prop:inclusion_retraction_dual_graph}
 	Let $f:\mathscr C' \to \mathscr C$ be any dominating map between snc-models of a curve $C$. 
-	Then there is a natural isometric inclusion $i$ and deformation retraction $r$
+	Then there is a natural isometric inclusion $i$ and a strong deformation retraction $r$
 \[
 \begin{tikzcd}
 	{|\Delta(\mathscr C')|} \rar[hookleftarrow, shift left]{i} \rar[twoheadrightarrow, shift right, ']{r} & {|\Delta(\mathscr C)|} 
@@ -234,7 +234,7 @@ The inclusion $i: |\Delta(\mathscr C)| \into |\Delta(\mathscr C')|$ is compatibl
 \ar[hookrightarrow]{rr}{i} & & {|\Delta(\mathscr C')|} \ar[hookrightarrow]{ul}[']{\sk_{\mathscr C'}}
 	\end{tikzcd}
 	.\] 
-	In particular there is an inclusion of skeleta $\sk(\mathscr C) \subset  \sk(\mathscr C')$, which is compatible with the metrics and $\sk(\mathscr C)$ is a deformation retract of  $\sk(\mathscr C')$. 
+	In particular there is an inclusion of skeleta $\sk(\mathscr C) \subset  \sk(\mathscr C')$, which is compatible with the metrics and $\sk(\mathscr C)$ is a strong deformation retract of  $\sk(\mathscr C')$. 
 \end{proposition}
 
 By the previous proposition all the results we have about $|\Delta(\mathscr C)|$ actually also work with  $\sk(\mathscr C)$. 
@@ -296,7 +296,7 @@ Let $C$ be a curve and $\mathscr C$ be a snc-model of $C$.
 As $C\an$ is a filtered limit of spaces which when large enough retract to $\sk(\mathscr C)$ (\cref{prop:skeleta_curve_limits,prop:inclusion_retraction_dual_graph}), the following theorem is believable, albeit not entirely trivial to prove. 
 \begin{proposition}\label{prop:retract_analytification_skeleton}
 	Let $\mathscr C$ be a snc-model of a curve $C$. 
-	Then there is a deformation retract $\rho_{\mathscr C}: C\an \to \sk(\mathscr C)$. 
+	Then there is a strong deformation retract $\rho_{\mathscr C}: C\an \to \sk(\mathscr C)$. 
 	\question{is this actually a deformation retraction, or just a retraction? 
 	It must be a deformation retract, otherwise the inclusion would not be a homotopy equivalence. }
 \end{proposition}

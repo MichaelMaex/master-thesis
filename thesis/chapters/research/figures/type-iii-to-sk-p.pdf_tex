@@ -1,0 +1,86 @@
+%% Creator: Inkscape 1.0beta2 (2b71d25, 2019-12-03), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'type-iii-to-sk-p.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{510.22499084bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.43289726)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{type-iii-to-sk-p.pdf}}%
+    \put(0.22169043,0.34895385){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$w$\end{tabular}}}}%
+    \put(0.18285492,0.07479348){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$h\an(w)$\end{tabular}}}}%
+    \put(0.28532706,0.07299618){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.28465383,0.20924975){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4\end{tabular}}}}%
+    \put(0.28532853,0.34552727){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.78935573,0.36104881){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\pro^{1, \text{an}}_K$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{type-iii-to-sk-p.pdf}}%
+    \put(0.18186344,0.22794973){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0.22351125,0.41441923){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sk(\mathscr E_\text{min})$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{type-iii-to-sk-p.pdf}}%
+    \put(0.76484361,0.26676423){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle \pm \sqrt \lambda$\end{tabular}}}}%
+    \put(0.28180406,0.17620888){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\gamma$\end{tabular}}}}%
+    \put(0.70209761,0.26914538){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
+    \put(0.13648332,0.20936337){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\delta$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{type-iii-to-sk-p.pdf}}%
+    \put(0.19125518,0.17437896){\color[rgb]{0.76862745,0.05098039,0.05490196}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr \sk(E)$\end{tabular}}}}%
+    \put(0.61984743,0.17620844){\color[rgb]{0.76862745,0.05098039,0.05490196}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\phi(\mathscr \sk(E))$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{type-iii-to-sk-p.pdf}}%
+    \put(0.63144863,0.04328914){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$g\an(\phi(w))$\end{tabular}}}}%
+    \put(0.62440277,0.07136323){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.63372013,0.20048141){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0.62440277,0.34389432){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.61993842,0.37013318){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\phi(w)$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{type-iii-to-sk-p.pdf}}%
+    \put(0.59692166,0.41113363){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$b$\end{tabular}}}}%
+    \put(0.59692107,0.00678863){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$a$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{type-iii-to-sk-p.pdf}}%
+    \put(0.61984743,0.23884948){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$c$\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

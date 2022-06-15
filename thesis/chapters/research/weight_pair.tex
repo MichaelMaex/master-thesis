@@ -1,5 +1,10 @@
+In this section we will construct a snc-model $\mathscr P$ of $\pro^{1}_K$ that is minimal with the property that $0, 1, \lambda, \infty$ reduce to distinct points. 
+We then show that $\sk(\mathscr P)$ is a Kontsevich-Soibelman skeleton for particular pluricanonical section $\sigma$.
+This is useful because in \cref{sec:if_mk} we use this to compare  $\sk(E)$ with $\sk(\mathscr P)$. 
+
 Recall $\Gamma_\lambda$ from \cref{fig:configurations_of_gamma_lambda}. 
 Let $\delta = f_* (\ram_f)$ which as a divisor on $\pro^{1}_K$ is the sum of the points on $\pro^{1}_K$ corresponding to $0, 1, \lambda, \infty$. 
+
 \subsection{Finding a minimal snc-model} \label{sec:finding_a_minimal_snc_model}
 We can build a snc-model $\mathscr P$ of the pair $(\pro^{1}_K, \delta)$, i.e.\ $\mathscr P_s + \overline{\delta}$ is a strict normal crossings divisor, such that the associated skeleton $\sk(\mathscr P, \delta)$ in $\pro^{1}_K$ is exactly $\Gamma_\lambda$. 
 The skeleton associated to a pair is defined in \cite[§3.2.1]{bakerWeightFunctionsBerkovich2016}.
@@ -15,7 +20,7 @@ See \cref{fig:model_pair_n_1}.
     \label{fig:model_pair_n_1}
 \end{figure}
 
-Let 
+From now on we assume that $n > 0$. Let 
 \begin{align}\label{eq:singular_model_pair}
 	\mathscr P' &= \spec \frac{R[x, y]}{(xy - \pi^{n})} \cup \spec \frac{R\left[ \frac{1}{x},y \right]}{\left(y-\frac{\pi^{n}}{x}\right)} \cup \spec \frac{R\left[x, \frac{1}{y}\right]}{\left(x - \frac{\pi^{n}}{y}\right)} \\
 	&=  \spec \frac{R[x, y]}{(xy - \pi^{n})} \cup \spec R\left[ \frac{1}{x} \right] \cup \spec R\left[ \frac{1}{y}\right] \nonumber 
@@ -26,18 +31,19 @@ The special fiber on the first affine chart is \[
 .\] 
 Hence $\mathscr P'_s$ are two rational curves intersecting in one point. 
 Let $F, G$ be the irreducible components cut out by $x, y$ respectively, which are given by the third and second chart in \eqref{eq:singular_model_pair} respectively. 
-Note that $\mathscr P'$ is not regular at the intersection point.
+Note that $\mathscr P'$ is not regular at the intersection point if $n > 1$.
 
 The reduction of $0$ is the Zariksi closure of $V(x) = V(\pi ^{n} x ) = V(\frac{1}{y})$. 
 So we see that $0$ reduces to the origin of the 3'rd affine chart in \eqref{eq:singular_model_pair}, i.e.\ a smooth point on $F$. 
 Likewise  $V(x - \lambda) = V(\pi^{-n} x - \pi^{-n}\lambda) = V(\frac{1}{y} - \pi^{-n}\lambda)$. 
 So $\lambda$ reduces to a point on $F$ as well, different from $\overline{0}$.
 The reduction of $1$ is the Zariski closure of $V(x-1) = V(\frac{1}{x} - 1)$. 
-So it lays on $G$. The reduction of $0$ is cut out by $V(\frac{1}{x})$ so it also lays on $G$. 
+So it lays on $G$. The reduction of $\infty$ is cut out by $V(\frac{1}{x})$. 
+Therefore it also lays on $G$. 
 
 So we find that $0, \lambda$ reduce to distinct points on $F$ and $1, \infty$ reduce to distinct points on $G$. 
 Let $\mathscr P$ be the minimal desingularisation of $\mathscr P'$. 
-By \cite[cor.\ 9.3.25]{liuAlgebraicGeometryArithmetic2002} we find that $\mathscr P$ is $\mathscr P'$ where the intersection point is replaced by a chain of $n-1$ rational curves of multiplicity 1 and self intersection $-2$.  
+By \cite[cor.\ 9.3.25]{liuAlgebraicGeometryArithmetic2002} we find that $\mathscr P'$ is obtained from $\mathscr P$ by replacing the intersection point by a chain of $n-1$ rational curves of multiplicity 1 and self intersection $-2$.  
 So $\mathscr P$ is a chain of $n + 1$ rational curves. See \cref{fig:model_of_the_pair}. 
 
 This is in fact the minimal snc-model of $(\pro^{1}_K, \delta)$ as the middle components can't be contracted and contracting $\tilde F$ or $\tilde G$ to get $\mathscr P''$, would cause either $0, \lambda$ or $1, \infty$ to be reduced to the same point. Hence $\delta + \mathscr P''_s$ would no longer be an snc-divisor. 
@@ -52,7 +58,7 @@ This is in fact the minimal snc-model of $(\pro^{1}_K, \delta)$ as the middle co
 
 The dual graph of $\mathscr P$ is a path of $n + 1$ vertices, where each edge has length $1$. 
 So geometrically $\sk(\mathscr P)$ is a line of length $n$ if $n > 0$ and a point if $n = 0$.
-Let $a, b$ the start and end points of the line, corresponding to the components $\tilde F$ and $\tilde G$ respectively. If $n = 0$ (i.e. $\sk(\mathscr P)$ is a point) then we let $a = b = \sk(\mathscr P)$. 
+Let $a, b$ be the start and end points of the line, corresponding to the components $\tilde F$ and $\tilde G$ respectively. If $n = 0$ (i.e. $\sk(\mathscr P)$ is a point) then we let $a = b = \sk(\mathscr P)$. 
 
 The paths from $0$ and  $\lambda$ to $\sk(\mathscr P)$ come together at $b$. We see this because $0$ and $\lambda$ both reduce to points on $\tilde G$. 
 As they reduce to different points, the paths to $\sk(\mathscr P)$ come in at $b$ from different tangent directions. 
@@ -60,7 +66,7 @@ Similarly the paths from $0$ and $\infty$ to $\sk(\mathscr P)$ come together at 
 
 
 So $\sk(\mathscr P, \delta)$ consists of the paths running between every pair of $0, 1, \lambda, \infty$. Thus $\Gamma_\lambda \subset \sk(\mathscr P, \delta)$ as $\Gamma_\lambda$ is the convex hull of $0, 1, \lambda, \infty$.
-As  the only leaves of $\sk(\mathscr P, \delta)$ are $0, 1, \lambda, \infty$ we also get the converse $\Gamma_\lambda \subset  \sk(\mathscr P, \delta)$. 
+As  the only leafs of $\sk(\mathscr P, \delta)$ are $0, 1, \lambda, \infty$ we also get the converse $\Gamma_\lambda \subset  \sk(\mathscr P, \delta)$. 
 We found a snc-model $\mathscr P$ of $(\pro^{1}_K, \delta)$ such the associated skeleton equals $\Gamma_\lambda$. 
 See \cref{fig:skeleton_of_the_pair}
 
@@ -74,7 +80,7 @@ See \cref{fig:skeleton_of_the_pair}
 From this description we see that $b$ is the point corresponding to the disk $B(0, 1)$ and $a$ is the point corresponding to the disk $B(0, |\pi|^{n})$. 
 Alternatively one can look at the second and third chart of \cref{eq:singular_model_pair} and \cref{lem:model_disk_proj_line} to obtain the same result. 
 By \cref{lem:number_divisorial_points} we know that there are exactly $n + 1$ multiplicity 1 points on $\sk(\mathscr P)$, one for every irreducible component.
-By \cref{lem:model_disk_proj_line} we see that the points corresponding to the disks $B(0, |\pi|^{-1}, \ldots, B(0, |\pi|^{n})$ are precisely the $n + 1$ multiplicity 1 points on the line $[a, b]$. 
+By \cref{lem:model_disk_proj_line} we see that the points corresponding to the disks $B(0, |\pi|^{0}), \ldots, B(0, |\pi|^{n})$ are precisely the $n + 1$ multiplicity 1 points on the line $[a, b]$. 
 
 \subsection{$\sk(\mathscr P)$ is a Kontsevich-Soibelman skeleton} \label{sec:sk_P_is_a_kontsevich-soibelman_skeleton}
 
@@ -83,12 +89,12 @@ By \cref{lem:model_disk_proj_line} we see that the points corresponding to the d
 	Moreover this rational section is unique up to multiplication by $K$ and the poles are of order 1. 
 \end{lemma}
 \begin{proof}
-	The statement is equivalent to showing that $\dim_K H^{0}\left(\omega_{\pro^{1}_K}^{\otimes 2}(\delta)\right)  = 1$.
 	We have that $\omega_{\pro^{1}_K} \simeq \mathcal{O}(-2)$ and $\mathcal{O}(\delta) \simeq \mathcal{O}(\deg \delta) = \mathcal{O}(4)$.
 	So \[
-		\omega_{\pro^{1}_K} (\delta) \simeq \mathcal{O}(-1)^{\otimes 2} \otimes \mathcal{O}(4) \simeq \mathcal{O}\left(0 \right)  = \mathcal{O}_X
+		\omega_{\pro^{1}_K}^{\otimes 2} (\delta) \simeq \mathcal{O}(-1)^{\otimes 2} \otimes \mathcal{O}(4) \simeq \mathcal{O}\left(0 \right)  = \mathcal{O}_X
 	.\] 
-	Hence $H^{0}\left(\omega_{\pro^{1}_K}^{\otimes 2}(\delta)\right)$ is a $1$-dimensional $K$-vector space. 
+	As all non-zero global sections of $\mathcal{O}_X$ are nowhere vanishing and the same up to multiplication by $K$,  the same is true for $\omega^{\otimes}_{\pro^{1}_K}(\delta)$.
+	Then untwisting by $\mathcal{O}(-\delta)$ proves the claim. 
 \end{proof}
 
 The proofs of the following two results depend heavily on \cite[thm.\ 3.2.3]{bakerWeightFunctionsBerkovich2016}. 
@@ -98,8 +104,7 @@ The proofs of the following two results depend heavily on \cite[thm.\ 3.2.3]{bak
 
 	The first lemma is a slight refinement of \cite[prop.\ 4.4.4]{mustataWeightFunctionsNonArchimedean2015} in the context of curves.
 	\begin{lemma}\label{lem:well_behaved_pole_weight}
-	Let $C$ be a curve over $K$ and $\sigma$ be a $m$-pluricanonical form.
-	Let $K_C^{-}$ be the divisor that contains all poles of $\sigma$ and $\mathscr C$ a snc-model of the pair $(\mathscr C, K_C^{-})$.  
+		Let $C$ be a curve over $K$ and $\sigma$ be a $m$-pluricanonical form and $\mathscr C$ a snc-model of the pair $(\mathscr C, \divisor(\sigma))$.  
 	If all the poles of $\sigma$ are of degree less than $m$, then for all $x \in \pro^{1, \text{an}}_K$ \[
 		\wt_\sigma(x) \ge \wt_\sigma(\rho_{\mathscr C}(x))
 	\] 
@@ -107,13 +112,13 @@ The proofs of the following two results depend heavily on \cite[thm.\ 3.2.3]{bak
 	Here $\rho_{\mathscr C}(x): C\an \to \sk(\mathscr C)$ is the retraction to the skeleton.
 \end{lemma}
 \begin{proof}
-	If $\red_{\mathscr C}(x)$ does not lie in the closure of $K_C^{-}$ then the result follows from \cite[prop.\ 4.4.4.(2)]{mustataWeightFunctionsNonArchimedean2015} and the denseness of divisorial points. 
+	If $\red_{\mathscr C}(x)$ does not lie in the closure of $\divisor(\sigma)^{-}$ then the result follows from \cite[prop.\ 4.4.4.(2)]{mustataWeightFunctionsNonArchimedean2015} and the denseness of divisorial points. 
 
-	If $\red_{\mathscr C}(x)$ lies in the closure of some pole $z \in K_C^{-}$ and $x \not\in \sk(\mathscr C)$. 
+	If $\red_{\mathscr C}(x)$ lies in the closure of some pole $z \in \divisor(\sigma)^{-}$ and $x \not\in \sk(\mathscr C)$. 
 	Let $\ell: [0, a] \to X\an$ be the path running from $\sk \mathscr C$ to $x$, parametrized by length. 
-	By assumption this path coincides with the path $m: [0, \infty) \to X\an$ from $\mathscr C$ to $z$, also parametrized by $\length$.
+	By assumption this path coincides with the path $m: [0, \infty) \to X\an$ from $\mathscr C$ to $z$, also parametrized by length.
 	Let $\epsilon$ be the length where $m, \ell$ branch. 
-	The slope on  $\ell|_{[0, \epsilon]}$ is positive by \cite[thm.\ 3.2.3.(2)]{bakerWeightFunctionsBerkovich2016} , hence $\wt_\sigma \ell(\epsilon) > \wt_\sigma \red_{\mathscr C}(x)$.
+	The slope on  $\ell|_{[0, \epsilon]}$ is positive by \cite[thm.\ 3.2.3.(2)]{bakerWeightFunctionsBerkovich2016}, hence $\wt_\sigma \ell(\epsilon) > \wt_\sigma \red_{\mathscr C}(x)$.
 	If $\epsilon = a$ we are done. 
 	If $\epsilon < a$ then repeatedly blowing up $\mathscr C$ in the reduction of $z$ yields a model $\mathscr C'$ whose dual graph contains $\ell(\epsilon)$, but does not contain $x$.
 	So the result now follows from applying \cite[prop.\ 4.4.4.(2)]{mustataWeightFunctionsNonArchimedean2015} to the model $\mathscr C'$. 
@@ -124,10 +129,10 @@ The proofs of the following two results depend heavily on \cite[thm.\ 3.2.3]{bak
 	Then $\sk(\pro^{1}_K, \sigma) = \sk(\mathscr P)$. 
 \end{proposition}
 \begin{proof}
-	\Cref{lem:well_behaved_pole_weight} implies that $\minloc \wt_{w} = \sk(C, \sigma) \subset \sk(\mathscr P) $. 
+	\Cref{lem:well_behaved_pole_weight} implies that $\minloc \wt_{\sigma} = \sk(C, \sigma) \subset \sk(\mathscr P) $. 
 	If $n = 0$ we are done as $\sk(\mathscr P) $ is a point. 
 	Suppose that $n > 1$ ($\sk(\mathscr P)$ is a line), then 
-	it suffices to show that $\wt_\sigma$ is constant on $\sk(\mathscr P)$, i.e.\ constant on the line segment $[ab]$ in \cref{fig:skeleton_of_the_pair}. 
+	it suffices to show that $\wt_\sigma$ is constant on $\sk(\mathscr P)$, i.e.\ constant on the line segment $[a,b]$ in \cref{fig:skeleton_of_the_pair}. 
 	By \cite[thm.\ 3.2.3.(3)]{bakerWeightFunctionsBerkovich2016} we know that the laplacian of $\wt_\sigma$ restricted to $\sk(\mathscr P, \delta)$ is given by \[
 		\Delta\left(\wt_\sigma|_{\sk(\mathscr P, \delta)}\right) = 2\cdot \sum_{v \in \sk(\mathscr P, \delta)} N(v)(\val (g) - 2g(v) - 2)v = 2a + 2b
 	.\] 

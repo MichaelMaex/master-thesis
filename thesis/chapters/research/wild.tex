@@ -1,11 +1,11 @@
 If $\ch k =2$ we can no longer use \cref{prop:weightfunction_fullback} to show that  $\sk(E) = \phi^{-1}(\sk(\mathscr P))$. 
-In fact, as we will see in this section, the conclusion $\sk(E) = \phi^{-1}(\sk(\mathscr P))$ will even be false in all cases that we work out.  
+In fact, as we will see in this section, the conclusion $\sk(E) = \phi^{-1}(\sk(\mathscr P))$ is false in many cases that we work out.  
 But by a closer examination of Tate's algorithm we can still identify $\phi(\sk(E))$ as a subbset of $ \pro_K^{1, \text{an}}$. 
-This allows us to make some conjectures about the behaviour of error term $\mathfrak{d} ^{\text{log}}$ from \cref{rem:weightfunction_fullback_art}. 
+This allows us to make some conjectures about the behavior of the error term $\mathfrak{d}_f$ from \cref{rem:weightfunction_fullback_art}. 
 
 
 Recall that in \cref{sec:char_k_is_2} we found that \begin{equation}\label{eq:wild_minimal_weierstrass}
-y_{3i}^2 - 2_i x_{2i} y_{3i} = x_{2i}^3 + (-2_{2i} - \lambda_{2i}) x_{2i}^2 + \lambda_{4i} x_{2i}
+E: y_{3i}^2 - 2_i x_{2i} y_{3i} = x_{2i}^3 + (-2_{2i} - \lambda_{2i}) x_{2i}^2 + \lambda_{4i} x_{2i}
 ,\end{equation} 
 with \[
 	y_{3i} = \pi^{-3i} y,\quad x_{2i} = \pi^{-2i} x, \quad i = \min\left( \left\lfloor \frac{v(2)}{2}\right\rfloor, \left\lfloor \frac{n}{4} \right\rfloor  \right), \quad 2 = v\cdot \pi^{v(2)},\quad  \lambda = u \cdot \pi^{n}
@@ -22,7 +22,7 @@ That way we can find the image of every divisorial point in $\Delta(\mathscr E_\
 Fortunately the necessary blowups are computed very clearly in the proof of Tate's algorithm in \cite[p.\ 369-379]{silvermanAdvancedTopicsArithmetic1994}
 
 Note that in \cref{sec:char_k_is_2}, in the case where $n > 2v(2)$ and $v(2)$ is odd, we did not perform any coordinate translations by the time we reached step 7 of the algorithm. 
-At the end of p.\ 372 Silverman writes that in his notation $x_{r} = \pi^{-r}x, y_{r} = \pi^{-r}y$, where $x, y$ are the original coordinates of the Weierstrass equation. 
+At the end of p.\ 372 Silverman writes that in his notation $x_{r} = \pi^{-r}x, y_{r} = \pi^{-r}y$, where $x, y$ are the original coordinates of the Weierstrass equation after translation.
 We started the algorithm with a Weierstrass equation with variables $x_{2i}, y_{3i}$. 
 So where Silverman writes $(x_r, y_r)$ in our notation that becomes $(x_{2i+ r}, y_{3i + r})$. 
 In the proof of step 5, he starts with the model $\mathcal{V} $ which we will call $\mathcal{V} _{-1}$ and (on an affine chart) looks like 
@@ -32,13 +32,13 @@ In the proof of step 5, he starts with the model $\mathcal{V} $ which we will ca
 	\longrightarrow \mathcal{P} _{-1} = \spec R[x_{2i + 1}]
 	\end{aligned}
 ,\] 
-Note that we added the projection to the $x$-axis, which resulted in a model $\mathscr P_{-1}$ of $\pro^{1}_K$.  
+Note that we added the projection to the $x$-axis, which resulted in a model $\mathcal P_{-1}$ of $\pro^{1}_K$.  
 On the special fibers this looks like 
 \[
-	\mathcal{V}_s = \spec \frac{k[x_{2i + 1}, y_{3i + 3}]}{(y_{3i+3}^2)} \to \spec k[x_{2i + 1}]
+	\mathcal{V}_{-1,s} = \spec \frac{k[x_{2i + 1}, y_{3i + 3}]}{(y_{3i+3}^2)} \to \spec k[x_{2i + 1}]
 .\] 
 We see that the double line $y_{3i + 3}^2 = 0$ maps surjectively on $k[x _{2i + 1}]$. 
-So the image of this component in $\pro^{1, \text{an}}_K$ is the point given by the disk $B(0, |\pi|^{2i + 1}|$ (\cref{lem:model_disk_proj_line}).
+So the image of this component in $\pro^{1, \text{an}}_K$ is the point given by the disk $B(0, |\pi|^{2i + 1})$ (\cref{lem:model_disk_proj_line}).
 
 
 Then he blows up $\mathcal{V}_{-1} $ in $(0, 0, 0)$ to obtain the scheme
@@ -58,7 +58,7 @@ We can define a birational map of schemes \[
 The morphism on the special fibre is given by \[
 	\mathcal{V} _{0, s} = \spec \frac{k[x_{n_0}, y_{m_0}]}{(x^3_{n_0} + \overline{v} x^2_{n_0})} \birat \frac{k[x_{n_1}, z_0]}{(z_0 \cdot x_{n_0}^2)}
 .\] 
-So we see that the double line cute out by $x_{n_0}^2$ in the source maps to the double line cut out by $(x_{n_0})^2$ in the image. 
+So we see that the double line cute out by $x_{n_0}^2 = 0$ in the source maps to the double line cut out by $x_{n_0}^2 = 0$ in the image. 
 
 In the proof of step 6 and 7 he continues with the models $\mathcal{V} _j$ which for our coefficients and $2 \nmid j, j\le 2n - 4v(2) - 1$ looks like . 
 \[
@@ -71,7 +71,7 @@ Note that we again added the projection to the $x_{n_j}$-axis.
 Then the map on special fibers looks like \[
 	\mathcal{V} _{j, s} = \spec \frac{R[x_{n_j}, y_{m_j}]}{(y_{m_j}^2)} \to \spec k[x_{n_j}]
 .\] 
-Thus the double line given by $y_{m_j} = 0$ maps surjectively onto the line $\spec k[x_{n_j}]$. 
+Thus the double line given by $y_{m_j}^2 = 0$ maps surjectively onto the line $\spec k[x_{n_j}]$. 
 So the image of the divisorial point of $\mathcal{V} _j$ in $\pro^{1, \text{an}}_K$ is the point corresponding to the disk $B(0, |\pi|^{2i + 1 + \frac{j + 1}{2}})$. 
 
 For $2 \mid j, j \le 2n - 4v(2) - 1$, the schemes $\mathcal{V} _j$ look like. 
@@ -80,11 +80,11 @@ For $2 \mid j, j \le 2n - 4v(2) - 1$, the schemes $\mathcal{V} _j$ look like.
 		\mathcal{V}_j = \spec \frac{R[x_{n_j},y_{m_j}]}{(\pi y^2_{m_j} + \pi 2_{{i + 1}}x_{2i}y_{n_j} = \pi x_{n_j}^3 + a_{2,1}x_{n_j}^2 + \lambda_{4i + 2 + \left\lfloor j / 2 \right\rfloor} x_{n_j})} \\ \dashrightarrow  \mathcal{P} _{j} =  \spec \frac{R[ x_{n_j}, z_j]}{(z_j(a_{2,1} x_{n_j}^2 + \lambda_{4i + 2 + \left\lfloor j / 2 \right\rfloor})- \pi)} 
 	\end{aligned}
 ,\]
-where the birational map is given by $x_{n_j} \mapsto  x_{n_j}, z \mapsto (y^2_{m_j} + 2_{i + 1 }x_{m_j}y_{n_j} - \pi x_{n_j}^3)^{-1}$. 
+where the birational map is given by $x_{n_j} \mapsto  x_{n_j}, z \mapsto (y^2_{m_j} + 2_{i + 1 }x_{m_j}y_{n_j} -  x_{n_j}^3)^{-1}$. 
 On the level of special fibers this is given by \[
 	\mathcal{V} _{j, s} = \spec \frac{k[x_{n_j}, y_{n_j}]}{(\overline{v}x^2_{n_j})} \birat \spec \frac{k[x_{n_j}, z_j]}{(z_j \cdot  x^2_{n_j})}
 ,\]
-where we see that the double line cut out by  $x_{n_j} = 0$ in the source dominates the double line $x_{n_j} = 0$ in the image. 
+where we see that the double line cut out by  $x_{n_j}^2 = 0$ in the source dominates the double line $x_{n_j}^2 = 0$ in the image. 
 
 
 \bigskip
@@ -97,15 +97,15 @@ For odd $j$ we use d this to identify $\beta_j$ as the point corresponding to th
 So $\beta_{-1}, \beta_1, \beta_{3}, \ldots, \beta_{2n - 4v(2) - 1}$ adjacent vertices in $\Delta(\mathscr P)$, starting at length $v(2)$ below $b$, and ending at $v(2)$ above $a$ (recall \cref{fig:skeleton_of_the_pair}).
 
 It should be possible to give a similar algebraic argument for $\beta_{j}$ when $j$ is even.
-But instead of trying to determine the norm from the model $\mathcal{P} _j$, we can find $\beta_j$ entirely from a Berkovich theoretic argument. 
-Again we will use an argument that uses the number and distribution of divisorial points of a given degree on a line in $\sk(E)$ and $\pro^{1, \text{an}}_K$.
-We do this to show that even in the wildly ramified case, we can use some Berkovich geometric arguments. 
-The argument is quite topological, so it is best to follow along on \cref{fig:argument_ims_wild}
+But instead of computing the divisorial points associated to the double line $x_{n_j} = 0^2$ in $\mathcal{P} _j$, we can find $\beta_j$ entirely from a Berkovich geometric argument. 
+This argument again uses the number and distribution of divisorial points of a given degree on a line in $\sk(E)$ and $\pro^{1, \text{an}}_K$.
+We do this to show that even in this the wildly ramified setting, we can use Berkovich geometric arguments. 
+The argument is very topological, so it is best to follow along on \cref{fig:argument_ims_wild}.
 
 \medskip
 
 Without loss of generality we will determine $\beta_0$ using what we know about $\beta_{-1}$ and $\beta_1$. 
-As we've seen $\beta_{-1}, \beta_{1}$ are adjacent vetrices in $\Delta(\mathscr P)$. 
+As we've seen $\beta_{-1}, \beta_{1}$ are adjacent vertices in $\Delta(\mathscr P)$. 
 There is a unique point $\gamma$ on $(\beta_{-1}, \beta_1)$ such that $N(\gamma) = 2$.  
 We expect that like in \cref{sec:determining_m_when_e_is_of_type_ims} $\phi(\alpha_0) = \beta_0 = \gamma$. 
 Suppose for the sake of contradiction that $\beta_0 \ne \gamma$.
@@ -116,7 +116,7 @@ As $\pro^{1, \text{an}}_K$ is a uniquely geodesic space, we know that $\phi((\al
 Further more, as $\alpha_{-1}$ is a multiplicity 2 point, mapping to the multiplicity 1 point $\beta_{-1}$, \cref{rem:balancing_galois_cover} tells us that $\alpha_{-1}$ is the unique preimage of $\beta_{-1}$. 
 Likewise $\alpha_1$ is the unique preimage of $\beta_1$. 
 So the $\phi((\alpha_{-1}, \alpha_{1}))$ is contained in the open annulus $A$ bounded by $\beta_{-1}, \beta_1$.
-Note that the only divisorial points of multplicity 2 in $A$ are $\gamma$ and in horizontal branches originating in $\gamma$. There are no multiplicity 1 points in  $A$. 
+Note that the only divisorial points of multiplicity 2 in $A$ are $\gamma$ and in horizontal branches originating in $\gamma$. There are no multiplicity 1 points in  $A$. 
 \begin{figure}[ht]
     \centering
     \incfig{argument-ims-wild}
@@ -125,12 +125,12 @@ Note that the only divisorial points of multplicity 2 in $A$ are $\gamma$ and in
     \label{fig:argument_ims_wild}
 \end{figure}
 As $\phi((\alpha_{-1}, \alpha_{1}))$ contains the entire line $(\beta_{-1}, \beta_1)$ we know that $\gamma$ has a preimage in that line, which by \cref{rem:balancing_galois_cover} is either of multiplicity $2$ or $4$. 
-We've assumed it is not $\beta_0$, the only point of multiplity 2 in  $(\beta_{-1}, \beta_1)$.
+We've assumed it is not $\beta_0$, the only point of multiplicity 2 in  $(\beta_{-1}, \beta_1)$.
 So one of the two multiplicity 4 points must map to $\gamma$. 
 Let $\delta$ be the multiplicity 4 point on $(\alpha_0, \alpha_1)$ and suppose without loss of generality that $\phi(\delta) = \gamma$. 
 By \cref{rem:balancing_galois_cover} we know that $\delta$ is the unique preimage of $\gamma$. 
 
-So $\phi(\alpha_0)$ must be a point of multiplicity 1 or 2. As there are no points of multiplicity $1$ in $A$ and we asummed $\phi(\alpha_0)\ne \gamma$ we find that that $\phi(\alpha_0) = \beta_0$ must be on one of the branches coming of $\gamma$. 
+So $\phi(\alpha_0)$ must be a point of multiplicity 1 or 2. As there are no points of multiplicity $1$ in $A$ and we assumed $\phi(\alpha_0)\ne \gamma$ we find that that $\phi(\alpha_0) = \beta_0$ must be on one of the branches coming of $\gamma$. 
 Again using the fact that $\pro^{1, \text{an}}_K$ is uniquely geodesic we know that $(\beta_0, \gamma] \cup [\gamma, \beta_{-1}) \subset  \phi((\gamma, \alpha_{-1}))$. 
 So $\gamma$ has a preimage different from $\delta$ on $(\gamma, \alpha_{-1})$. 
 This is a contradiction. 
@@ -147,42 +147,53 @@ See \cref{fig:image_between_skeleta_wild_ims}.
 
 \subsection{The case where $n < 2 v(2)$} \label{sec:the_case_where_n_<_2_v2}
 
-\subsubsection{If $n$ is even} \label{sec:if_$n$_is_even}
-
-If we will make the simplifying assumption that $\sqrt{\lambda} $ exists. 
-\begin{remark}
-	This is equivalent to saying that $\sqrt{u} $ exists.
-	This is not guaranteed to be the case as we cannot use Hensel's lemma to lift the root $\sqrt{\overline{u}} $ from $k$ to $R$, because the derivative vanishes $(x^2 - u)' = 2x = 0$. 
-	I am fairly sure that if $\sqrt{u} $ does not exist in $ K$, the argument can be salvaged by passing to the field extension $K(\sqrt{u} )$. 
-	This is an immediate extension, i.e.\ it is unramified and isomorphism on the residue fields. 
-	But to show that the argument is still valid needs to be checked.
-\end{remark}
 
 Let $g: \pro^{1}_K \to \pro^{1}_K$ be the automorphism induced by $x \mapsto \lambda / x$. 
-This extends to an automorphism $h: E \to E$ induced by the coordinate transformation $x \mapsto  \lambda / x, y\mapsto \sqrt{\lambda ^3} x y$. 
-So we have the following commutative diagram.
+Consider the Weierstrass equation of $E$ and multiply both sides by $\lambda^2 x^{-4}$.
+Then 
+\[
+\begin{aligned}
+	y^2 &=  x(x-1)(x-\lambda) \\
+	\left(\lambda x^{-2}y\right)^2 &= \frac{\lambda}{x}\left(\lambda - \frac{\lambda}{x} \right)\left(1 - \frac{\lambda}{x}\right)
+\end{aligned}
+,\] 
+which is the Weierstrass equation of an isomorphic elliptic curve. 
+So  $g$ extends to an automorphism of $h: E \to E$ given by the coordinate transform $x \mapsto \frac{\lambda}{x}, y\mapsto \lambda x^{-2}y$. 
+Thus we have the following commutative diagram.
 \[
 \begin{tikzcd}
+	E \rar{h} \dar{f} & E \dar{f} & & 
 	E\an \rar{h\an} \dar{\phi} & E\an \dar{\phi} \\
-	\pro^{1, \text{an }}_K \rar{g\an} & \pro^{1, \text{an}}_K
+	\pro^{1}_K \rar{g} & \pro^{1}_K & & \pro^{1, \text{an }}_K \rar{g\an} & \pro^{1, \text{an}}_K
 \end{tikzcd}
 .\] 
 
 On $\pro^{1}_K$, $g$ is the map that maps $0 \leftrightarrow \infty, 1 \leftrightarrow \lambda$. 
-Its fixed points are $\sqrt{\lambda}, -\sqrt{\lambda}$. 
+Its fixed points are $\sqrt{\lambda}, -\sqrt{\lambda}$ (which are not necessarily $K$-points).
 So we see that $g\an$ leaves $\Gamma_\lambda$ invariant. In particular $\sk(\mathscr P)$ is a fixed set of $g\an$, but $g\an$ flips the orientation of $\sk(\mathscr P)$, i.e. $g\an(a) = b, g\an(b) = a$. 
 As $h$ is an automorphism and the essential skeleton is canonical, $\sk(E)$ a fixed set of $h\an$. 
-Thus $\phi(\sk(E))$ is a fixed set of $g\an$.
-Let $c$ be the mid point of $\sk(\mathscr P)$. 
-As $n$ is even we see that $c$ is a multiplicity 1 point. 
+The minimal snc-model of $E$ must also be invariant under $h$. 
+So $\sk(\mathscr E_\text{min} )$ is also a fixed set under $h$. 
+Thus $\phi(\sk(E)), \phi(\sk(\mathscr E_\text{min} )$ are fixed sets of $g\an$.
 
-\medskip
+
+Let $c$ be the mid point of $\sk(\mathscr P)$. 
+If $n$ is even we see that $c$ is a multiplicity 1 point. 
+If $n$ is odd then $c$ is a multiplicity $2$ point. 
+
+Then fixed points of $g\an$ are the lines  $[\sqrt{\lambda}, c] \cup [-\sqrt{\lambda} , c]$ where $\sqrt{\lambda}, -\sqrt{\lambda}$ are the closed points in $\pro^{1}_K$ (they are possibly the same point). 
+Note that these lines branch off in the same tangent direction at $c$ as the reduction map at that point maps both directions to  $\sqrt{\overline{u}} $ in $k$. 
+
+Let $w$ be the divisorial points associated to the Weierstrass component of $\mathscr E_\text{min} $. 
+Then by projecting the model from \cref{eq:wild_minimal_weierstrass} to the $x$-axis we see that $\phi(x)$ is given by the disk $B(0, |\pi|^{2i})$. 
+Note that $w$ is not a fixed point of $h\an$ as the reduced Weierstrass equation is not unique and we always let $w$ be the point given by the model in \cref{eq:wild_minimal_weierstrass}. 
+The image $h(w)$ is still given by a multiplicity one component on $\mathscr E_\text{min} $.
+
+\subsubsection{If $n$ is even} \label{sec:if_$n$_is_even}
 
 If  $n \equiv 0 \mod 4$ then $E$ is of type $\mathrm{II}$.  
 So $\sk(E)$ is a single point of multiplicity 6. 
 Therefore  $\phi(\sk(E))$ is a fixed point of $g\an$. 
-Then fixed points of $g\an$ are the lines  $[\sqrt{\lambda}, c] \cup [-\sqrt{\lambda} , c]$ where $\sqrt{\lambda}, -\sqrt{\lambda}$ are the closed point in $\pro^{1}_K$. 
-Note that these lines branch off in the same tangent direction at $c$ as the reduction map at that point maps both directions to  $\sqrt{\overline{u}} $ in $k$. 
 So $\sk(E) \in [\sqrt{\lambda}, c] \cup [-\sqrt{\lambda}, c] $, but $\phi(\sk(E)) \ne c$ as a multiplicity 6 point must map to a multiplicity 3 or 6 point, under a degree 2 Galois cover. 
 So $\phi(\sk(E))$ is a point off the line $\sk(\mathscr P)$. 
 See \cref{fig:image_skeleton_wild_n_le_2v2_n_even}. 
@@ -202,20 +213,47 @@ As the map $\phi|_{\mathscr E}$ is injective by the same argument as in \cref{se
 So again we find that $\phi(\sk (E))$ is not contained in $\sk(\mathscr P)$. 
 
 
+
 \subsubsection{If $n \equiv 1 \mod 4$} \label{sec:if_n_equiv_1_mod_4$}
 
-Let $c$ again be the mid point of $\sk(\mathscr P)$. 
-As $n$ is odd we see that $c$ is a multiplicity 2 point. 
-In this case we found that $E$ has reduction type $\mathrm{IV}$. 
-So $\sk(E)$ is a multiplicity 3 point. 
-Thus $\phi(\sk(E))$ is a multiplicity 3 point as well. 
-Note that there are no multiplicity 3 points branching of $c$ away from $\sk(\mathscr P)$. 
-So in this case  $\phi(\sk(E))$ is not a fixed point of $g\an$.  
-Curiously the symmetry is broken. 
+In this case we found that $E$ has reduction type $\mathrm{III}$. 
+So $\sk(E)$ is a multiplicity 4 point. 
+We see that $\phi(w)$ is the point on $[a, b]$ laying at distance $1 /2$ above $c$. 
+Likewise  $g\an(\phi(w))$ lays at distance $1 / 2$ below $c$. 
+So the line $\phi((w, h\an(w)))$ must contain the line $(\phi(w), g\an(\phi(w)))$ as  $\pro^{1, \text{an}}_K$ is uniquely geodesic. 
+Then the preimage of $c$ must be a multiplicity 2 or 4 point. Thus it can only be the point $\gamma$ (see \cref{fig:type_iii_to_sk_p}), as all other points on $(w, h\an(w))$ have multiplicity strictly greater than  $4$. 
+Then the image of $\delta$ must be a multiplicity 2  point in a vertical branch of $c$.
+As $\delta$ is a fixed point of $h\an$, $\phi(\delta)$ is a fixed point of $g\an$ and lays on the line $[\sqrt{\lambda} , c] \cup [-\sqrt{\lambda} , c]$.
+
+\begin{figure}[ht]
+    \centering
+    \incfig{type-iii-to-sk-p}
+    \caption{The embedding of $\sk(\mathscr E_\text{min}) $ and $\sk(E)$ in $\pro^{1, \text{an}}_K$ if $n < 2v(2)$ and $n \equiv 1 \mod 4 $.}
+    \label{fig:type_iii_to_sk_p}
+\end{figure}
+
 
 
 \subsubsection{If $n \equiv 3 \mod 4$ } \label{sec:if_n_equiv_3_mod_4}
-In this case it seems more difficult to determine $\phi(\sk(E))$ Berkovich geometrically. 
-It should be possible by tracing the blowups in the proof of steps 8,9 of Tate's algorithm \cite[p. 374-376]{silvermanAdvancedTopicsArithmetic1994}.
-But there was not sufficient time to work out this case. 
+In this case we found that $E$ has reduction type $\mathrm{III}^*$ if $n < 2v(2) -1$. 
+We restrict ourselves to this case. 
+We see that $\phi(w)$ is the point on $[a, b]$ laying at distance $3 /2$ above $c$. 
+Likewise  $g\an(\phi(w))$ lays at distance $3/ 2$ below $c$. 
+So in between $\phi(w)$ and $c$ there is a unique multiplicity 1 point $d$. 
+Likewise in between $c$ and $g\an(\phi(w))$ the unique multiplicity 1 point is $g\an(d)$. 
+
+So the line $\phi((w, h\an(w)))$ must contain the line $(\phi(w), g\an(\phi(w)))$ as  $\pro^{1, \text{an}}_K$ is uniquely geodesic. 
+The preimages of $d, g\an (d$) must be the only two multiplicity 2 points on the line $(w, h\an(w))$. 
+Then the preimage of $c$ must be the multiplicity 4 point, which is the only essential component of $\Delta(\mathscr E_\text{min} )$. 
+So we see that $\phi(\sk(E)) = \{c\} $. 
+Like the previous case we see that $\phi(\delta)$ must be a multiplicity 2 point in one of the lines $[\sqrt{\lambda} , c] \cup [-\sqrt{\lambda} , c]$. 
+See \cref{fig:type_iiis_to_sk_p}.
+\begin{figure}[ht]
+    \centering
+    \incfig{type-iiis-to-sk-p}
+    \caption{The embedding of $\sk(\mathscr E_\text{min}) $ and $\sk(E)$ in $\pro^{1, \text{an}}_K$ if $n < 2v(2)-1$ and $n \equiv 3 \mod 4 $.}
+    \label{fig:type_iiis_to_sk_p}
+\end{figure}
+
+
 

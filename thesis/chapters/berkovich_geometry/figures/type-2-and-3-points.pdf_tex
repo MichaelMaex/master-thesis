@@ -1,6 +1,6 @@
 %% Creator: Inkscape 1.0beta2 (2b71d25, 2019-12-03), www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'affine-line-as-union-of-disks.pdf' (pdf, eps, ps)
+%% Accompanies image file 'type-2-and-3-points.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{510.22499084bp}%
+    \setlength{\unitlength}{478.5bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,14 +50,11 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.34969866)%
+  \begin{picture}(1,0.34200626)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{affine-line-as-union-of-disks.pdf}}%
-    \put(0.47157416,0.33323916){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\aff^1 \an$\end{tabular}}}}%
-    \put(0.51597765,0.00587638){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$B(1)$\end{tabular}}}}%
-    \put(0.58428267,0.00587564){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$B(2)$\end{tabular}}}}%
-    \put(0.67342834,0.00587638){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$B(3)$\end{tabular}}}}%
-    \put(0.75027061,0.00587638){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$B(4)$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{type-2-and-3-points.pdf}}%
+    \put(0.28615925,0.29170031){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Type 2\end{tabular}}}}%
+    \put(0.70185909,0.29170015){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Type 3\end{tabular}}}}%
   \end{picture}%
 \endgroup%

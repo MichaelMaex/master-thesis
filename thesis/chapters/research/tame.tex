@@ -8,10 +8,10 @@ In the case where $\ch k \ne 2$ we can use \cref{prop:weightfunction_fullback} t
 \begin{proof}
 	In \cref{prop:model_P_is_KS} we saw that $\sk(\mathscr P) = \sk(\pro^{1}_K, \sigma)$, where $\sigma$ is the rational section of $\omega_{\pro^{1}_K}^{\otimes 2}$ with poles at $0, 1, \lambda, \infty$, which is unique up to multiplication by $K$. 
 	Then $f^* \sigma$ is a $2$-pluricanonical form. 
-	Indeed, we can take $\sigma$ as a global section of $\omega_{\pro^{1}_K}^{\otimes 2}(f_* \ram _f)$. 
+	Indeed, we can take $\sigma$ as a global section of $\omega_{\pro^{1}_K}^{\otimes 2}(-f_* \ram _f)$. 
 	And 
 	\[
-		f^* (\omega_{\pro^{1}_K / K}^{\otimes 2}(-f_* \ram _f)) = \omega_{E /K}^{\otimes 2} \otimes \mathcal{O}(2 \ram_f) \otimes f^*f_* \mathcal{O}(-\ram _f) = \omega_{E / K}
+		f^* (\omega_{\pro^{1}_K / K}^{\otimes 2}(-f_* \ram _f)) = \omega_{E /K}^{\otimes 2} \otimes \mathcal{O}(2 \ram_f) \otimes f^*f_* \mathcal{O}(-\ram _f) = \omega_{E / K}^{\otimes 2}
 	.\] 
 	We also have 
 	\[
@@ -20,7 +20,7 @@ In the case where $\ch k \ne 2$ we can use \cref{prop:weightfunction_fullback} t
 	Recall that $\omega_{E / K}$ is trivial as $E$ is an elliptic curve. 
 	So all pluricanonical forms are the same up to multiplication. 
 	So $\sk(E)$ can be computed using only one pluricanonical form, thus \[
-		\sk(E) = \sk(E, f^*\sigma) = \phi^{-1}(\sk(\pro^{1}_K, \sigma)) = \phi^{-1}(\mathscr P)
+		\sk(E) = \sk(E, f^*\sigma) = \phi^{-1}(\sk(\pro^{1}_K, \sigma)) = \phi^{-1}(\sk(\mathscr P))
 	.\] 
 \end{proof}
 
@@ -37,23 +37,23 @@ Recall that $E$ is given by the Weierstrass equation
 	E: y^2 = x(x-1)(x-\lambda)
 ,\end{equation}
 with $\lambda = u \cdot \pi^{n}$ and $u$ some unit in $R$. 
-If $n \ge 0$ we found that this Weierstrass equation is minimal in  \cref{sec:char_k_is_not_2}.
+If $n \ge 0$ we found that this Weierstrass equation is minimal in  \cref{sec:char_k_is_not_2} as Tate's algorithm ended after only one iteration. 
 So the component of the Weierstrass model is a multiplicity 1 component of $\mathscr E_\text{min} $, the minimal snc-model. 
 Let $w$ be the divisorial point associated to component.
 If we consider the morphism of models (on affine charts) \[
-	\spec \frac{R[x, y]}{(y^2 - x(x-1)(x-\lambda)} \to \spec R[x]
+	\spec \frac{R[x, y]}{(y^2 - x(x-1)(x-\lambda))} \to \spec R[x]
 \]
 we see that the map dominates on the special fiber. 
 So $\phi(w)$ is the point corresponding to the disk $B(0, 1)$ (\cref{lem:model_disk_proj_line})
-But this exactly the point $b$. So $\phi(w) = b$ and in particular $w \in \phi^{-1}(\mathscr P) \in \sk(E)$. 
+But this exactly the point $b$. So $\phi(w) = b$ and in particular $w \in \phi^{-1}(\mathscr P) = \sk(E)$. 
 So $w$ is a multiplicity 1 essential component of $\mathscr E_\text{min} $.
 This can only be the case if $E$ is of type $\mathrm I_{m}$ for some $m \ge 0$. 
-As a bonus we also see that when $n = 0$,  $E$ is of type $I_0$ and not of some other reduction type with $\sk(E)$ a point. 
+As a bonus we also see that when $n = 0$,  $E$ is of type $\mathrm I_0$ and not of some other reduction type with $\sk(E)$ a point. 
 
-Putting all information in this section together we have reached obtained an alternative and almost purely Berkovich geometric proof for \cref{prop:conclusion_tate_tame}, the conclusion of Tate's algorithm. 
+Putting all information in this section together we have obtained an alternative and almost purely Berkovich geometric proof for \cref{prop:conclusion_tate_tame}, the conclusion of Tate's algorithm. 
 \medskip
 
-In \cref{rem:justification_semistable} we said that when $n < 0$ we that whether $E$ is semistable depends on the parity of $n$. 
+In \cref{rem:justification_semistable} we said that when $n < 0$ calculations in Sagemath suggest that whether $E$ is semistable depends on the parity of $n$. 
 Here is a (conjectural) explanation for this. 
 When $n < 0$, the Weierstrass equation \eqref{eq:weierstrass_dist} is no longer defined over $R$. 
 After performing a coordinate transformation $(x_{2i}, y_{3i}) = (\pi^{-2i}x, \pi^{-3i}y)$ with $i = \left\lceil \frac{n}{2} \right\rceil $, the Weierstrass equation becomes \[

@@ -1,6 +1,6 @@
 We now consider what happens in the hypothetical case that $E$ has reduction of type $\mathrm I_m^*$ for some $m$. 
 As we've discussed in \cref{rem:justification_semistable}, this does not happen in the context of \cref{prob:main_problem}, but it does happen when $n < 0$, i.e. $|\lambda| > 1$.  
-In this case we can construct a similar model to $\mathscr P$, whose dual graph is the middle line in the case in the case $|\lambda| > 1$ from \cref{fig:configurations_of_gamma_lambda}. 
+In this case we can construct a similar model to $\mathscr P$, whose dual graph is the middle line in the case $|\lambda| > 1$ from \cref{fig:configurations_of_gamma_lambda}. 
 
 
 \begin{lemma}\label{lem:divisorial_points_Is}
@@ -21,59 +21,67 @@ In this case we can construct a similar model to $\mathscr P$, whose dual graph 
 \end{proof}
 
 \begin{proposition}\label{prop:m_when_E_type_Is}
-	Suppose that $|v(\lambda)| = n$ and $E$ is of type $I_m^*$, then $m = 2n$. 
+	Suppose that $|v(\lambda)| = n > 0$ and $E$ is of type $\mathrm I_m^*$, then $m = 2n$. 
 \end{proposition}
+
 \begin{proof}
-	We start of locally so let $\mathscr P'$ be non-proper model of $\pro^{1}_K$ that only contains two adjacent irreducible components $F, G$ of  $\mathscr P$.
-	Let $x, y $ be the corresponding divisorial points in $\pro^{1, \text{an}}_K$. 
-	Then $x, y$ are of multiplicity $1$, hence $\phi^{-1}(x), \phi^{-1}(y) \subset  \sk(E)$ are finite sets of points of multiplicity $1$ or $2$. 
-	\Cref{lem:divisorial_points_Is} tells us that the points in $\phi^{-1}(x)$ are exactly of multiplicity 2, thus correspond to essential components in $\mathscr E_\text{min} $.
-	From this we also see that $\phi^{-1}(x)$ is a point. 
-	Similarly $\phi^{-1}(y)$ is a point of multiplicity 2 corresponding to an essential component in $\mathscr E$. 
+	Let $\mathscr Y$ be the normalisation of $\mathscr P$ in $K(E)$.  
+	From the arguments in the proof of \cref{lem:snc_models_morphism_curves} we see that $\mathscr Y$ is a proper but not necessarily regular model of $E$. 
+	Moreover the divisorial points of the components in $\sY$ are the preimages from the divisorial points in $\sX$, which are of multiplicity 1.
+	By \cref{rem:balancing_galois_cover} we know that the components of $\sY_s$ are of multiplicity 1 or 2. 
+	Then \cref{lem:divisorial_points_Is} shows that the components of $\sY_s$ are of multiplicity exactly two, and thus belong to $\mathscr E_\text{min} $ (the minimal snc model). 
+	So $\mathscr E_\text{min}  \to \sY$ is the minimal desingularisation of $\sY$. 
+
+	We move on to show that the intersection points between the components are not regular.
+	Indeed, suppose that $\tilde G, \tilde F$ are adjacent components in $\sY_s$, which are given by the strict transforms of adjacent components  $G, F$ in $\mathscr P_s$.
+	As $\sY$ is a contraction of a chain of rational curves, we see that  $\tilde G, \tilde F$ intersect in only one point. 
+	Suppose for the sake of contradiction that $\sY$ is regular in that intersection point. 
+	Then the map $\mathscr E_\text{min} \to \sY$ is an isomorphism locally around the intersection point.  
+	Let $F', G'$ be the strict transforms of $\tilde F, \tilde G$ in $\mathscr E_\text{min} $. 
+	Then $F', G'$ are adjacent in $\mathscr E_\text{min} $ and intersect in one point. 
+	Let $g: \mathscr E_\text{min}  \to \mathscr P$. 
+	Then by the projection formula we have \[
+		2 = 2 \cdot  F\cdot  G = g^* F \cdot g^* G = (2  F')\cdot (2 G') \ge 4
+	.\] 
+	This is a contradiction, which tells us that $ F',  G'$ are not adjacent in $\mathscr E_\text{min} $. 
 
 \begin{figure}[ht]
     \centering
     \incfig{models-proof-is}
-    \caption{The models and skeleta in the proof of \cref{prop:m_when_E_type_Is}.}
+    \caption{The models and skeleta in the proof of \cref{prop:m_when_E_type_Is}. 
+    Note that this illustrates the reasoning in the proof, not final determined model. In actuality $r = 1$, i.e.\ there is only one component between $G', F'$ in $\mathscr E_{\text{min},s}$. }
     \label{fig:models_proof_is}
 \end{figure}
 
-	Let $g: N(\mathscr P') \to \mathscr P'$ be the normalisation of $\mathscr P'$ in $K(E)$.
-	From the computations above we see that $N(\mathscr P')_s$ contains two irreducible components, the strict transforms of $F, G$, both of multiplicity $2$. 
-	We can see that $N(\mathscr P')$ is not regular. 
-	Indeed if it was regular, by the adjunction formula we find that \[
-		2 = 2i_x(F, G) =  i_{g^{-1}(x)}(g^* F, g^* G) =  i_{g^{-1}(x)}(2 \tilde F,   2 \tilde G)  \ge 4
-	,\] 
-	where $x$ is the intersection point of $F$ and $G$. 
-	This is a contradiction. 
-	This tells us that $\tilde F, \tilde G$ are not adjacent in $\mathscr E_\text{min} $. 
 	Let $H_1, \ldots, H_r$ be the missing components between $\tilde F, \tilde G$ of $\mathscr E_\text{min} $. 
-	These are all multiplicity 2 rational curves. 
-	Let $\mathscr E'$ be the (non-proper) model of $E$ containing $\tilde F, H_1, \ldots, H_r, \tilde G$. See \cref{fig:models_proof_is}.
-	
-Then the images of $\phi(H_1), \ldots, \phi(H_r)$ are distinct divisorial points of multiplicity $1$ or $2$.
-By \cref{lem:number_divisorial_points} we know that $\sk(\mathscr P')$ has only 3 such points, two of which are $x, y$. 
+	These are all multiplicity 2 rational curves.
+	The images of $\phi(H_1), \ldots, \phi(H_r)$ are distinct divisorial points of multiplicity $1$ or $2$ on the edge $e$ between $G, F$ in $\sk(\mathscr P)$.
+By \cref{lem:number_divisorial_points} we know that $e$ has only 3 such points, two of which are $x, y$. 
 Hence $r = 1$. 
 
-This concludes the local computation. Globally this means the following. 
-There is one component of degree 2 in $\mathscr E_\text{min} $ for every irreducible component of $\mathscr P$, and one for every intersection point. 
+ Globally this means the following. 
+There is one component of degree 2 in $\mathscr E_\text{min} $ for every irreducible component of $\mathscr P$, and one for every intersection point in $\mathscr P$. 
 Hence there are $n + 1 + n = 2n + 1$ components of multiplicity $2$ in $\mathscr E_\text{min} $ from which it follows that $m = 2n$.  
+
+
+
+
 \end{proof}
 
 
-We can actually sketch a similar picture of a map of models as we did at the end of \cref{sec:the_semistable_case} of a map between models. 
+We can actually sketch a similar picture of a map of models as we did at the end of \cref{sec:the_semistable_case}. 
 Let $\mathscr E_\text{min} $ be the minimal snc model of $E$. 
 Let $\mathscr E'_{\text{min}}$ the (singular) model of we obtain by contracting the four multiplicity 1 components in  $\mathscr E_\text{min} $. 
 So $\mathscr E'_{\text{min}, s} $ is a chain of rational curves of multiplicity 2. 
 Let $\mathscr P'$ be the model we obtain by blowing up each intersection point in $\mathscr P$. 
 So between each two reduced rational curves in $\mathscr P_s$ we place a multiplicity 2 rational curve.
 
-By from our argument in the proof \cref{prop:m_when_E_type_Is}, we see that there is a morphism $\psi: \mathscr E'_\text{min}  \to \mathscr P'$ visualized in \cref{fig:dualgraphs_is_models} and that $\mathscr E'_\text{min} $ is the normalisation of $\mathscr P'$ in  $K(E)$. 
+From our arguments in the proof of \cref{prop:m_when_E_type_Is}, we see that there is a morphism $\psi: \mathscr E'_\text{min}  \to \mathscr P'$ visualized in \cref{fig:dualgraphs_is_models} and that $\mathscr E'_\text{min} $ is the normalisation of $\mathscr P'$ in  $K(E)$. 
 \todo{what happens to the Weierstrass component? I suspect the image lays on on the lines $[a, 0]$, $[a, \lambda]$, $[b, \infty]$, $[b, 1]$}
 \begin{figure}[ht]
     \centering
     \incfig{dualgraphs-is-models}
-    \caption{Dualgraphs of the models $\mathscr E_\text{min} , \mathscr E_\text{min} ', \mathscr P', \mathscr P$ and the relations between them.}
+    \caption{Dual graphs of the models $\mathscr E_\text{min} , \mathscr E_\text{min} ', \mathscr P', \mathscr P$ and the relations between them.}
     \label{fig:dualgraphs_is_models}
 \end{figure}
 

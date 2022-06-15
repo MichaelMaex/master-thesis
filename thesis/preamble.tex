@@ -20,7 +20,7 @@
 \usepackage{float}
 \usepackage{multicol}
 \usepackage{rotating}
-\usepackage[left]{showlabels}
+\usepackage[left,final]{showlabels}
 \renewcommand{\showlabelsetlabel}[1]
 {\begin{turn}{-100}\showlabelfont #1\end{turn}}
 \renewcommand{\showlabelfont}{\scriptsize\ttfamily}
@@ -71,7 +71,7 @@
 \usepackage{import}
 \usepackage{xifthen}
 \setlength{\marginparwidth}{2cm}
-\usepackage[textsize=tiny,colorinlistoftodos]{todonotes}
+\usepackage[textsize=tiny,colorinlistoftodos,disable]{todonotes}
 \newcommand{\question}[1]{\todo[color=green!40]{#1}}
 \newcommand{\sidecomment}[1]{\todo[color=yellow!70]{#1}}
 \newcommand{\todoin}[1]{\todo[inline, noinlinepar]{#1}}

@@ -42,14 +42,14 @@ Such metrics are known as ultrametrics.
 \subsection{The Berkovich affine line when $K$ is algebraically closed} \label{sec:the_berkovich_affine_line_K_alg_closed}
 
 We will describe the Berkovich space of the polynomials in one variable  $\mathcal{M} (K[T])$.
-We first do this for $K$ algebraically closed, and then explain how to expand to the case where $K$ is discretely valued.
+We first do this first under the assumption that $K$ is algebraically closed, and then explain how to expand to the case where $K$ is discretely valued.
 We call the resulting space $\aff_K^{1, \text{an}}$, the \emph{analytification of the affine line}, or sometimes the \emph{Berkovich affine line}. 
 \nomenclature[Ak]{$\aff^{1, \text{an}}_K$}{The Berkovich affine line over $K$}
 \nomenclature[Pk]{$\pro^{1, \text{an}}_K$}{The Berkovich projective line over $K$}
 
 \medskip
 
-One way to find norms on $K[T]$ would taking a point $a \in K$ and define $|f|_a = |f(a)|_K$ where $|\cdot |_K$ is the norm on $K$. 
+One way to find norms on $K[T]$ would to take a point $a \in K$ and define $|f|_a = |f(a)|_K$ where $|\cdot |_K$ is the norm on $K$. 
 So there is a natural embedding $K \into \mathcal{M}(K[T])$ and we will implicitly identify these points.  
 
 Another way to define a norm is by choosing a closed disk $B(a, r) = \{x \in K \st |x - a| \le r\} $ with center $a$, and radius $r$ and define \[
@@ -57,7 +57,7 @@ Another way to define a norm is by choosing a closed disk $B(a, r) = \{x \in K \
 .\] 
 \begin{claim}
 	The norm $|f|_{B(a, r)}$ as defined above is a well defined multiplicative seminorm extending the norm on $K$. 
-	If $r \in |K|$ then the supremum is a maximum and the maximum is obtained for some point on the boundary of $B(a, r)$.
+	If $r \in |K^{\times }|$ then the supremum is a maximum and the maximum is obtained for some point on the boundary of $B(a, r)$.
 	Moreover, if  $f = \sum_{i = 0}^{n} b_i (T-a)^{i}$ is the Taylor expansion of $f$ around $a$ then for any $r \in [0, \infty)$ the norm can be computed as \begin{equation}\label{eq:norm_disk_taylor}
 		|f|_{B(a, r)} = \max_{i}\{  |b_i|r^{i}\}
 	.\end{equation} 
@@ -68,8 +68,8 @@ Another way to define a norm is by choosing a closed disk $B(a, r) = \{x \in K \
 	So  $|f(x)| \le  \sum_{i = 0}^{n} |a_i| |x|^{i} \le \sum_{i = 0}^{n}|a_i| (|a| + r)^{i} $. 
 	This last bound is independent of $x$. Hence the supremum exists. 
 
-	Non-archimedean triangle inequality and extending the norm on $K$ is easily checked. 
-	The multiplicatively is a little bit more subtle. 
+	The non-archimedean triangle inequality and extending the norm on $K$ is easily checked. 
+	The multiplicativity is a little bit more subtle. 
 
 	Without loss of generality we may translate the disk such that $a = 0$. 
 	Lets assume for now that $r \in |K|$.
@@ -80,7 +80,7 @@ Another way to define a norm is by choosing a closed disk $B(a, r) = \{x \in K \
 	So $\overline{f}, \overline{g}$ have only a finite number of roots. In particular these is some $\overline{a} \in k$, represented by $a \in R$ such that $\overline{f}(\overline{a}) \ne 0, \overline{f}(\overline{a})\ne 0$. 
 	So $f(a), g(a) \in R = B(0, 1)$ and $|f(a)| = |g(a)| = 1$. 
 	In particular \cref{eq:norm_disk_taylor} holds. 
-	So the supremum is obtained in $a$ for both polynomials and the norm is multiplicative as the supremem for $f\cdot g$ will also be obtained in $a$. 
+	So the supremum is obtained in $a$ for both polynomials and the norm is multiplicative as the supremum for $f\cdot g$ will also be obtained in $a$. 
 
 
 	To obtain the result also holds for $r \not\in |K^{\times }|$, we use that any such disk $B(a, r)$ can be written as an increasing union of closed disks with radii in the value group. The result now follows from the continuity of \cref{eq:norm_disk_taylor} and the continuity of multiplication. 
@@ -94,20 +94,20 @@ If we ignore these missing points for a moment, this means that $\mathcal{M}(K[T
 Indeed, let $a \in K$ be any point. Then we can define a line \begin{equation}\label{eq:line_in_A_1}
 	\ell_a: [0, \infty) \to  \aff_K^{1, \text{an}}: r\mapsto B(a, r)
 \end{equation}
-Because in an ultrametric space any point in a ball is a centre of ball, we see that for any two points $a, b$ the lines $\ell_a, \ell_b$ coincide for any $r \ge |a - b|$. 
+Because in an ultrametric space any point in a ball is a center of ball, we see that for any two points $a, b$ the lines $\ell_a, \ell_b$ coincide precisely when $r \ge |a - b|$. 
 So $\aff_K^{1,\text{an}}$ is not only connected, it is path connected!
 This is illustrated in \cref{fig:the_lines_la_lb_lc}. 
 \begin{figure}[h]
     \centering
     \incfig{the-lines-la-lb-lc}
-    \caption{The lines $\ell_a, \ell_b, \ell_c$ join up (i.e.\ define the same disk) when the radious $r$ is greater than the distance between the points.}
+    \caption{The lines $\ell_a, \ell_b, \ell_c$ join up (i.e.\ define the same disk) when the radius $r$ is greater than the distance between the points.}
     \label{fig:the_lines_la_lb_lc}
 \end{figure}
 
 We have been missing a few points on $\aff_K^{1, \text{an}}$. 
 The Berkovich classification theorem gives all points. 
 \begin{theorem}
-	[Berkovich classification theorem, \cite{bakerarizona}] \label{thm:berkovich_classification}
+	[Berkovich classification theorem] \label{thm:berkovich_classification}
 	Assume that $K$ is algebraically closed. 
 	Any point $x \in \aff_K^{1,\text{an}}$ is given by a decreasing sequence of closed disks $B_n = B(a_n, r_n)$ in $K$ by the formula \begin{equation}\label{eq:norm_disk_polynomial}
 	|f|_x = \lim_{n \to \infty} |f|_{B_n}
@@ -171,7 +171,7 @@ Points of type 1-4 are highlighted in green. Note that the closed points of the 
 	\label{fig:affine_line}
 \end{figure}
 Type 4 points are not rare. It might be counter intuitive that in a complete ring there exists a decreasing sequence of closed disks that has empty intersection. 
-But in practice almost all fields have type  IV points. 
+But in practice almost all fields have type  4 points. 
 The trick is that the radii of these disks do not converge to $0$. 
 \begin{example}[type 4 point]\label{ex:type4point}
 	Let $K = (\Q_p[\sqrt[2]{p} ,\sqrt[3]{p}, \sqrt[4]{p},\ldots])^{\wedge}  $ for some prime $p$. 
@@ -190,7 +190,7 @@ But this contradicts that $b_i$ is unbounded.
 \todo{do we need to look at this again?}
 
 This example is not algebraically closed.  
-The algebraically closed field $\C_p$ also has type IV points, but the proof is a bit more subtle. See \cite[][sec. 3.4]{robertCoursePadicAnalysis2000}.
+The algebraically closed field $\C_p$ also has type 4 points, but the proof is a bit more subtle. See \cite[][sec. 3.4]{robertCoursePadicAnalysis2000}.
 \end{example}
 
 \subsection{The Berkovich affine line when $K$ is discretely valued.} \label{sec:the_berkovich_affine_line_when_k_is_discretely_valued.}
@@ -219,8 +219,8 @@ This gives the following description of $\mathcal{M} (K[T])$.
 \end{proposition}
 
 This does not really change our intuitive understanding of $\aff_{K}^{1}$ or the picture \cref{fig:affine_line}. 
-The type 2 points are still the branch points, type 1 and 4 points are still ``leaves''.
-The main differences to keep in mind is that type 2 points can have a radius in $\sqrt{|K^{\times }|} $, not just $|K^{\times }|$ and that type $1$ points are not necessarily points in of $K$, but Galois orbits of $\hat{\overline{K}} / K$. 
+The type 2 points are still the branch points, type 1 and 4 points are still ``leafs''.
+The main differences to keep in mind is that type 2 points can have a radius in $\sqrt{|K^{\times }|} := |\overline{K}^{\times }|$, not just $|K^{\times }|$ and that type $1$ points are not necessarily points in of $K$, but Galois orbits of $\hat{\overline{K}} / K$. 
 
 
 
@@ -236,7 +236,7 @@ One is topological and the other one is purely algebraic.
 		\item If $x$ is of type 1  or 4 then $C$ has only one element.
 		\item If $x$ is of type 2 then there is a natural morphism $C \simeq k \cup \{\infty\} $. Recall that $k = \tilde K = K^{o} / K^{oo} $. 
 			So $x$ is an branch point where infinitely many branches connect. 
-		\item If $x = |\cdot |_{B(a, r)}$ is of type 3 then $|C| = 2$. One component consists of all disks contained in $B(a, r)$, (and type IV points corresponding to decreasing sequences of disks in $B(a,r)$) and the other one are all the leftover points. 
+		\item If $x = |\cdot |_{B(a, r)}$ is of type 3 then $|C| = 2$. One component consists of all disks contained in $B(a, r)$, (and type 4 points corresponding to decreasing sequences of disks in $B(a,r)$) and the other one are all the leftover points. 
 	\end{itemize}
 \end{proposition}
 \begin{remark}
@@ -244,11 +244,11 @@ One is topological and the other one is purely algebraic.
 	So it actually better to think about the number of \emph{tangent directions} at $x$. 
 	One way to make the notion of tangent directions precise is to consider each direction as an equivalence class of paths originating at $x$.
 \end{remark}
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.7\textwidth]{figures/type2_type3.pdf}
-	\caption{Recognizing type II and type III points by connected components/tangent directions}
-	\label{fig:type2_type3}
+\begin{figure}[ht]
+    \centering
+    \incfig{type-2-and-3-points}
+    \caption{Recognizing type 2 and type 3 points by connected components/tangent directions.}
+    \label{fig:type2_type3}
 \end{figure}
 \todo{if there is time left, remake \cref{fig:type2_type3}}
 

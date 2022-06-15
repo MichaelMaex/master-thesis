@@ -1,8 +1,9 @@
 This thesis is about Berkovich geometry and in particular its relation to arithmetic properties of curves over complete discretely valued fields. 
-Berkovich geometry and more generally non-archimedean geometry are a relatively recent and very active area of research. \todo{where for example?}
+Berkovich geometry and more generally non-archimedean geometry are a relatively recent and very active area of research. 
 In particular it is closely related to tropical geometry, and adic spaces which for example feature prominently in P.\ Scholze's theory of perfectoid spaces. 
 
-We will focus our attention to applying the theory of weight functions and essential skeleta, recently developed by Johannes Nicaise, Mircae Mustaţă and Matthew Baker \todo{and others?}in \cite{mustataWeightFunctionsNonArchimedean2015,nicaiseBerkovichSkeletaBirational2016,bakerWeightFunctionsBerkovich2016} generalizing an idea by Maxim Kontsevich and Yan Soilbelman, to obtain a more geometric understanding of the reduction type of elliptic curves. 
+We will focus our attention to applying the theory of weight functions and essential skeleta, recently developed by Johannes Nicaise, Mircae Mustaţă and Matthew Baker in \cite{mustataWeightFunctionsNonArchimedean2015,nicaiseBerkovichSkeletaBirational2016,bakerWeightFunctionsBerkovich2016} generalizing an idea by Maxim Kontsevich and Yan Soibelman, to obtain a more geometric understanding of the reduction type of elliptic curves. 
+Weight functions and Kontsevich-Soibelman skeleta have applications in non-archimedean mirror symmetry. For example see \cite{nicaiseNonarchimedeanSYZFibration2019,kontsevichAffineStructuresNonArchimedean2006,brownEssentialSkeletonProduct2019}.
 
 Elliptic curves are the ideal playground to test our knowledge of these new tools, as they are very well studied objects.
 So in the cases where our knowledge of weight functions is insufficient we can fill in the gaps using classical tools, and conversely learn more about weight functions. 
@@ -10,7 +11,7 @@ So in the cases where our knowledge of weight functions is insufficient we can f
 \medskip
 \section{Prerequisites} \label{sec:prerequisites}
 
-The majority of the text is spent introducing the many prerequisites necessary to under stand the research.  
+The majority of the text is spent introducing the many prerequisites necessary to understand the research.  
 This is done in two parts. 
 In \cref{part:AG} we give all the prerequisites from classical algebraic and arithmetic geometry that go beyond basic scheme theory, and \cref{part:berkovich} covers the prerequisites from Berkovich geometry. 
 
@@ -32,17 +33,18 @@ These different \emph{reduction types} determine many arithmetic properties of t
 \subsection{Berkovich geometry} \label{sec:berkovich_geometry}
 What makes algebraic geometry over $\C$ different from algebraic geometry over other fields is that there is an analytification functor that turns $\C$-varieties into $\C$-analytic spaces, i.e.\ complex manifolds with possible singularities. 
 If we restrict this functor to the category of proper  $\C$-varieties, it even is fully faithful. 
-This fact and a collection of results that act as a dictionary between the algebraic and analytic world are collectively known as the GAGA principles. 
+This fact and a collection of results that act as a dictionary between the algebraic and analytic world are known as the GAGA principles. 
+The word GAGA is an abreviation of \emph{Géométrie Algebrique et Géométrie Analytique} (algebraic geometry and analytic geometry). 
 They lead to an interesting interplay between complex analysis and algebraic geometry, which gives rise to topics like Hodge theory. 
 
 Analysis is not limited to $\C$. 
 In fact the only thing we need to work out a theory of analysis is a normed field, preferably a complete normed field. 
-If this field is not $\C$ or $\R$ then it has to be either trivially valued or non-archimedean. 
+If this field is not $\C$ or $\R$ then it has to be non-archimedean. 
 The best known examples of these are the $p$-adic rationals $\Q_p$. 
 There is an entire field of $p$-adic analysis.  
 
-Varieties over $p$-adic fields and rings lay at the heart of arithmetic geometry. 
-So it is a natural question to ask whether $p$-adic varieties, or more generally varieties over complete non-archimedean fields can be ``analytified'' in a suitable way, resulting in a similar interplay between algebraic geometry and analysis that has been very fruitful in complex geometry. 
+Varieties over $p$-adic fields and rings lie at the heart of arithmetic geometry. 
+So it is a natural question to ask whether $p$-adic varieties, or more generally varieties over complete non-archimedean fields, can be ``analytified'' in a suitable way, resulting in a similar interplay between algebraic geometry and analysis that has been very fruitful in complex geometry. 
 
 The first question that needs to be resolved, is what such an analytic space might be.
 Over $\C$ we already had a theory of complex manifolds.
@@ -51,21 +53,23 @@ The topology of $\Q_p$ or any non-archimedean field, is totally disconnected.
 This means that $p$-adic manifolds are very non-rigid and in particular the principle of analytic continuation fails. 
 We will use $K$ to mean any complete non-archimedean field. Think $K = \Q_p$ or $K = \C((t))$. 
 
-In 1960\todo{source} Tate was the first to propose a solution. 
-His idea was to still work with the closed points of a variety $X$, but replace the topology by a $G$-topology, notion somewhere between a side and an ordinary topology. 
-Like an ordinary topology the opens are subsets of a larger set, but not all set theoretic covers of these opens are topological covers. 
+In 1960 Tate was the first to propose a solution. 
+His idea was to still work with the closed points of a variety $X$, but replace the topology by a $G$-topology, a notion somewhere between a site and an ordinary topology. 
+Like an ordinary topology the opens are subsets of a larger set, but not all set theoretic covers by these opens are considered to be topological covers. 
 The topological covers are called admissible.
-This works, but it hides a lot of the topology of the space in set of covers, which makes them difficult to study using tools from classical topology.
+This works, but it hides a lot of the topology of the space in the set of covers, which makes them difficult to study using tools from classical topology.
 
-In 1980's Berkovich developed his theory of $K$-analytic spaces - often called Berkovich spaces - which solves the disconnectedness problem by adding many extra points to the space. 
+In the 1980s Berkovich developed his theory of $K$-analytic spaces - often called Berkovich spaces - which solves the disconnectedness problem by adding many extra points to the space. 
 The resulting space actually is a very nice topological space - Hausdorff, locally compact, locally path-connected, \ldots - which is in stark contrast to the topology of $K$ itself.  
 
 \medskip 
-In \cref{chap:intro_berkovich} we give a general introduction to Berkovich geometry with no particular goal in mind. 
-We introduce the notion of the analytification of a variety and most importantly study the analytification of the affine projective line. 
+In \cref{chap:intro_berkovich} we give a general introduction to Berkovich geometry.
+We introduce the theory of affinoid algebras and use them to construc $K$-analytic spaces. 
+We discuss examples of $K$-anlytic spaces that arise from algebro-geometric spaces, in particular the analytification of a variety. 
+We study the analytification of the affine and projective line and classify their points. 
  
 In \cref{chap:weight_functions} we specialize to the context where the ground field $K$ is discretely valued and the varieties are curves, $C$.  
-We study how snc-models give skeleta, a special type finite graph that embeds in $C\an$ and contains most topological information. 
+We study how snc-models give skeleta, a special type of finite graph that embeds in $C\an$ and contains most topological information. 
 As a result this gives a natural definition of a metric on $C\an$. 
 We then introduce a special class of piecewise linear functions on $C\an$, the \emph{weight functions}, which are used to define the \emph{essential skeleton} of $C\an$, a sort of minimal skeleton for non-rational curves. 
 
@@ -88,7 +92,7 @@ In this context we can compare the weight functions on source and image.
 
 When the characteristic of the residue field is $2$ we are in the \emph{wildly ramified} case. 
 Here the behavior of weight functions over $f$ is currently poorly understood. 
-So we use a mix of classical tools to and some Berkovich geometric arguments to identify the image of  $\sk(E)$ in $\pro^{1, \text{an}}_K$ and use this to gain information about how the weight functions on source and image differ. 
+So we use a mix of classical tools and some Berkovich geometric arguments to identify the image of  $\sk(E)$ in $\pro^{1, \text{an}}_K$ and use this to gain information about how the weight functions on source and image differ. 
 
-This research led to some new avenues for future research which we gather in \cref{chap:loose_ends}.
+This research led to some new avenues for future research which we gather in \cref{sec:loose_ends}.
 

@@ -1,4 +1,4 @@
-Let $R$ be a complete discretely valued field with fraction field $K$ and algebraically closed residue field $k$. Suppose that  $\ch R = 0$ and $\ch k = p$ with $p$ possibly $0$. 
+Let $R$ be a complete discretely valued ring with fraction field $K$ and algebraically closed residue field $k$. Suppose that  $\ch R = 0$ and $\ch k = p$ with $p$ possibly $0$. 
 Let $E$ be an elliptic curve over $K$.
 
 The minimal regular model determines the reduction type of $E$. 
@@ -7,12 +7,13 @@ So we may wonder whether we can determine the reduction type of $E$ by studying 
 \Cref{tab:skeleton_by_kodaira_neron} gives the essential skeleton of $E$ by reduction type. 
 Only considering the topology of $\sk E$ we can distinguish three sets of reduction types 
 \begin{description}
-	\item[point] $\mathrm I_0, \mathrm{II}, \mathrm{III},\mathrm{IV}, \mathrm{I}_0^*, \mathrm{II}^*, \mathrm{III}^*$ 
+	\item[point] $\mathrm I_0, \mathrm{II}, \mathrm{III},\mathrm{IV}, \mathrm{I}_0^*, \mathrm{II}^*, \mathrm{III}^*, \mathrm{IV}^*$ 
 	\item[line] $\mathrm{I}_n^*$ for some $n > 0$
 	\item[circle]  $\mathrm{I}_n$ for some  $n > 0$
 \end{description}
-If we know the \emph{combinatorical type of $\sk(E)$}, i.e.\ know all the multiplicities and genera of the divisorial points, then we can distuinguish between all types except $\mathrm{II}, \mathrm{II}^*$ and $\mathrm{III}, \mathrm{III}^*$ and  $\mathrm{IV}, \mathrm{IV}^*$.
+If we know the \emph{combinatorial type of $\sk(E)$}, i.e.\ know all the multiplicities and genera of the divisorial points, then we can distuinguish between all types except $\mathrm{II}, \mathrm{II}^*$ and $\mathrm{III}, \mathrm{III}^*$ and  $\mathrm{IV}, \mathrm{IV}^*$.
 In particular if the length of $\sk(E)$ is known, it is possible to find the $n$ in the reduction types $\mathrm I_n$ and $\mathrm I_n^*$. 
+As we will see later the length of $\sk(E)$ is determined by its combinatorial type.
 
 
 So the question becomes the following. Given an elliptic curve $E$ over $K$, can we get information about $\sk(E)$ like, the topology, lengths, genera,\ldots without computing a snc-model of  $E$?
@@ -26,8 +27,8 @@ We will limit ourselves to the following setting.
 		E: y^2 = x(x-1)(x-\lambda) = x^3 + (-1 - \lambda) x^2 + \lambda x
 	,\end{equation}
 	for some $\lambda \in K^\times $ such that $|\lambda| \le 1, |\lambda - 1| = 1$. 
-	Let $f: E \to \pro^{1}_K$ given by projection to the $x$-axis, which a degree 2 morphism ramified over $4$ points. 
-	What is $\sk (E)$? What is the reduction type of $E$?
+	Let $f: E \to \pro^{1}_K$ be the projection to the $x$-axis, which is a degree 2 morphism ramified over $4$ points.
+	Can we use a Berkovich geometric argument to determine $\sk(E)$ and the reduction type of $E $?
 \end{problem}
 \setlength{\LTcapwidth}{5.7in}
 \begin{longtable}{c|c|c|c|c}
@@ -92,8 +93,8 @@ Note  that $L$ cannot always be taken to be $K$ itself
 An isomorphism is given by the coordinate transformation $y\mapsto 3\sqrt{3} y, x\mapsto 3x$, and hence is defined over $K(\sqrt{3} )$. However the curves $E, E'$ are not isomorphic over $K$ as they have a different reduction type.}.
 
 \begin{remark}
-	\Cref{prob:main_problem} can be considered as the discretely valued analogue of a classical excercise in the setting where $K$ is algebraically closed.
-	See for exampele \cite[exericise 6.1.3.3]{temkinIntroductionBerkovichAnalytic2010}.  
+	\Cref{prob:main_problem} can be considered as the discretely valued analogue of a classical exercise in the setting where $K$ is algebraically closed.
+	See for example \cite[exericise 6.1.3.3]{temkinIntroductionBerkovichAnalytic2010}.  
 	In this exercise they compute $\mathscr E\an$ by determining the topological branch locus of $f\an$ in $\pro^{1, \text{an}}_K$, using analytic tools that only work when $K$ is algebraically closed. 
 	As we will see the problem is much more involved in our discretely valued setting. 
 \end{remark}

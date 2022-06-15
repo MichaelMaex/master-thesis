@@ -1,0 +1,21 @@
+The goal of this thesis is to study the reduction type elliptic curves (EC) over complete discretely valued fields using Berkovich geometry (BG). To do this we introduce the prerequisites that go beyond basic scheme theory. This is split up in two parts. First we cover all the prerequisites from algebraic geometry in chapter 2-4. Then we introduce BG in chapter 5 and 6. 
+
+In chapter 2 we cover valuation theory: the definition of norms and valuations on rings, non-archimedean norms, discretely valued fields (DVR) and morphisms, the relation between normalisation of rings, and basic theorems about these objects.
+
+Chapter 3 covers intersection theory on arithmetic surfaces. In particular we use this to define different types of models of curves, which will be useful for studying BG later. We discuss minimal regular and strict normal crossings models.
+
+Chapter 4 describes the Kodaira-Neron classification of ECs, which classifies ECs by the combinatorial properties of the special fiber of their minimal regular model. Our end goal is to understand the relation between the Kodaira-Neron type of an EC and its Berkovich analytification.
+
+In chapter 5 we aim to give a general introduction to BG without fixating on a specific goal. We start by motivating BG as a good theory to analytify varieties over other fields than ℝ and ℂ. Then we get comfortable with the notion of a Berkovich analytification using a topological definition of the Berkovich spectrum of a ring. 
+We work this out for ℤ and the polynomial ring K[T], which gives the analytification of 𝔸^1 and a good opportunity to understand the classification of points on a curve. 
+We introduce the theory of affinoid algebras to define a structure sheaf on the Berkovich spaces and introduce the full notion of Berkovich analytic spaces. 
+We then study the Berkovich analytification of a variety and the generic fiber of a formal scheme as particular analytic spaces coming from algebraic spaces.
+
+In chapter 6 we specialize to BG in the context to that of curves over complete DVRs. In particular we describe the analytification of a curve as a limit of dual graphs of snc-model. Doing so we obtain a metric on the analytification and a first type of skeleta. We then introduce weight functions and the essential skeleton, which are some of the main objects of study in this thesis.
+
+
+Finally we report on our new research in chapter 7. The main question is to determine the reduction type of an EC, given by the Weierstrass equation
+	E: y^2 = x(x-1)(x-λ)
+where v(λ) ≥ 0 and v(1 + λ) = 0 using BG. We first use Tate's algorithm to obtain the reduction, which is useful to compare our results to. Then we study the degree two cover f: E → ℙ^1 using weight functions and skeleta to solve the problem when the residue characteristic of the ground field is not 2. We call this case the tamely ramified case. When the residue characteristic of the ground field is 2, we say that we are in the wildly ramified case. In this case the behavior of the weight functions over the map f are not well understood. So we attempt to solve the converse problem. We use the explicit blowups in the proof of Tate's algorithm to determine the image of the skeleton of E in the Berkovich projective line. We then use this to pose some questions about the behavior of the weight functions over the wildly ramified map f.
+
+In the conclusion we gather some loose ends and unanswered questions that came up, that are worth studying further.

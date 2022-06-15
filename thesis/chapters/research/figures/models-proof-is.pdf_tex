@@ -50,65 +50,66 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.50007352)%
+  \begin{picture}(1,0.53094226)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{models-proof-is.pdf}}%
-    \put(0.76609571,0.46297989){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr P’$\end{tabular}}}}%
+    \put(0.76609571,0.49384862){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr P$\end{tabular}}}}%
+    \put(0.77851376,0.45330724){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr P_\eta$\end{tabular}}}}%
+    \put(0.85906543,0.4537594){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr P_s$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{models-proof-is.pdf}}%
-    \put(0.77851376,0.42243836){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr P’_\eta$\end{tabular}}}}%
-    \put(0.85906529,0.42289051){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr P’_s$\end{tabular}}}}%
+    \put(0.40085258,0.49384833){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sY$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{models-proof-is.pdf}}%
-    \put(0.87452714,0.37731518){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$G$\end{tabular}}}}%
-    \put(0.87452758,0.227309){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$F$\end{tabular}}}}%
-    \put(0.42311599,0.4632092){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$N(\mathscr P’)$\end{tabular}}}}%
+    \put(0.05571689,0.4533068){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr E$\end{tabular}}}}%
+    \put(0.140751,0.45398929){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr E_{\text{min},s}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{models-proof-is.pdf}}%
-    \put(0.05571689,0.42243807){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr E’_\eta$\end{tabular}}}}%
-    \put(0.140751,0.42312041){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr E’_s$\end{tabular}}}}%
+    \put(0.15338263,0.39834781){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle G’$\end{tabular}}}}%
+    \put(0.15194062,0.27384068){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle F’$\end{tabular}}}}%
+    \put(0.63498091,0.35543395){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\tiny{normalisation}\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{models-proof-is.pdf}}%
-    \put(0.15621388,0.38647085){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\tilde G$\end{tabular}}}}%
-    \put(0.14500794,0.2275389){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\tilde F$\end{tabular}}}}%
-    \put(0.63498091,0.32456521){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\tiny{normalisation}\end{tabular}}}}%
+    \put(0.24613745,0.34765282){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\tiny{desingularisation}\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{models-proof-is.pdf}}%
-    \put(0.24613745,0.31678409){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\tiny{desingularisation}\end{tabular}}}}%
+    \put(0.03574364,0.49384862){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr E_\text{min}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{models-proof-is.pdf}}%
-    \put(0.03574364,0.46298048){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr E’$\end{tabular}}}}%
+    \put(0.42089315,0.44965283){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E$\end{tabular}}}}%
+    \put(0.49426666,0.44965312){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sY_s$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=8]{models-proof-is.pdf}}%
-    \put(0.42089315,0.41878394){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E$\end{tabular}}}}%
-    \put(0.49426666,0.41878424){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$N(\mathscr P’)_s$\end{tabular}}}}%
+    \put(0.53182245,0.38757595){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\tilde G$\end{tabular}}}}%
+    \put(0.53182245,0.27751994){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\tilde F$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=9]{models-proof-is.pdf}}%
-    \put(0.52838676,0.38044174){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\tilde G$\end{tabular}}}}%
-    \put(0.52838734,0.23043556){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\tilde F$\end{tabular}}}}%
+    \put(0.88795769,0.18032267){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{x}$\end{tabular}}}}%
+    \put(0.89034634,0.02908645){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{y}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=10]{models-proof-is.pdf}}%
-    \put(0.88795754,0.16268339){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{x}$\end{tabular}}}}%
-    \put(0.89034634,0.01144717){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{y}$\end{tabular}}}}%
+    \put(0.18064105,0.18032267){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{\phi^{-1}(x)}$\end{tabular}}}}%
+    \put(0.18064119,0.02693739){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{\phi^{-1}(y)}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=11]{models-proof-is.pdf}}%
-    \put(0.18064105,0.16268339){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{\phi^{-1}(x)}$\end{tabular}}}}%
-    \put(0.18064119,0.00929812){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{\phi^{-1}(y)}$\end{tabular}}}}%
+    \put(0.1806409,0.14728548){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{H_1}$\end{tabular}}}}%
+    \put(0.1787313,0.12777188){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{H_2}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=12]{models-proof-is.pdf}}%
-    \put(0.1806409,0.1296462){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{H_1}$\end{tabular}}}}%
-    \put(0.1787313,0.11013246){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{H_2}$\end{tabular}}}}%
+    \put(0.1787313,0.05627401){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{H_r}$\end{tabular}}}}%
+    \put(0.18064105,0.08754625){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\vdots$\end{tabular}}}}%
+    \put(0.14500868,0.18032238){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle 2$\end{tabular}}}}%
+    \put(0.14500868,0.14728607){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle 2$\end{tabular}}}}%
+    \put(0.14500868,0.12777056){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle 2$\end{tabular}}}}%
+    \put(0.14500868,0.05627386){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle 2$\end{tabular}}}}%
+    \put(0.14500868,0.02693681){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle 2$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=13]{models-proof-is.pdf}}%
-    \put(0.1787313,0.03863473){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{H_r}$\end{tabular}}}}%
-    \put(0.18064105,0.06990697){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\vdots$\end{tabular}}}}%
-    \put(0.14500868,0.1626831){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle 2$\end{tabular}}}}%
-    \put(0.14500868,0.12964679){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle 2$\end{tabular}}}}%
-    \put(0.14500868,0.11013128){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle 2$\end{tabular}}}}%
-    \put(0.14500868,0.03863459){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle 2$\end{tabular}}}}%
-    \put(0.14500868,0.00929753){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle 2$\end{tabular}}}}%
+    \put(0.88795754,0.15149083){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{\phi(H_1)}$\end{tabular}}}}%
+    \put(0.88604794,0.13197694){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{\phi(H_2)}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=14]{models-proof-is.pdf}}%
-    \put(0.8879574,0.13385141){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{\phi(H_1)}$\end{tabular}}}}%
-    \put(0.8860478,0.11433766){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{\phi(H_2)}$\end{tabular}}}}%
+    \put(0.88604794,0.06047936){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{\phi(H_r)}$\end{tabular}}}}%
+    \put(0.88795769,0.09175174){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\vdots$\end{tabular}}}}%
+    \put(0.17138866,0.37308895){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{H_1}$\end{tabular}}}}%
+    \put(0.17138866,0.35512805){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{H_2}$\end{tabular}}}}%
+    \put(0.16899133,0.32770883){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{H_{r-1}}$\end{tabular}}}}%
+    \put(0.17138866,0.3037175){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{H_r}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=15]{models-proof-is.pdf}}%
-    \put(0.8860478,0.04284009){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{\phi(H_r)}$\end{tabular}}}}%
-    \put(0.88795754,0.07411232){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\vdots$\end{tabular}}}}%
-    \put(0.17649361,0.35534399){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{H_1}$\end{tabular}}}}%
-    \put(0.1764939,0.33321022){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{H_2}$\end{tabular}}}}%
-    \put(0.16985051,0.29942175){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{H_{r-1}}$\end{tabular}}}}%
-    \put(0.1764939,0.2698567){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle{H_r}$\end{tabular}}}}%
+    \put(0.04328576,0.18493387){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sk(\mathscr E’)$\end{tabular}}}}%
+    \put(0.7749152,0.18493387){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sk(\mathscr{P’})$\end{tabular}}}}%
+    \put(0.48990329,0.14096724){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\phi|_{\sk(\mathscr E’)}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=16]{models-proof-is.pdf}}%
-    \put(0.04328576,0.15406514){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sk(\mathscr E’)$\end{tabular}}}}%
-    \put(0.77491521,0.15406514){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sk(\mathscr{P’})$\end{tabular}}}}%
-    \put(0.48990329,0.1100985){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\phi|_{\sk(\mathscr E’)}$\end{tabular}}}}%
+    \put(0.87707896,0.38758168){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$G$\end{tabular}}}}%
+    \put(0.87707896,0.28465003){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$F$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{models-proof-is.pdf}}%
   \end{picture}%
 \endgroup%

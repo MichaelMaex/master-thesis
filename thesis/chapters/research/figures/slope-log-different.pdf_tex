@@ -62,8 +62,8 @@
     \put(0,0){\includegraphics[width=\unitlength,page=4]{slope-log-different.pdf}}%
     \put(0.24908408,0.01159092){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$a$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{slope-log-different.pdf}}%
-    \put(0.18386771,0.22350669){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle v(2)$\end{tabular}}}}%
-    \put(0.18386712,0.04664957){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle v(2)$\end{tabular}}}}%
+    \put(0.18386741,0.22350684){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle v(2)$\end{tabular}}}}%
+    \put(0.18386668,0.04664971){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle v(2)$\end{tabular}}}}%
     \put(0.14179832,0.30019741){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}If $n > 2v(2)$ and $2 \nmid v(2)$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{slope-log-different.pdf}}%
     \put(0.77803249,0.24964971){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$b$\end{tabular}}}}%
@@ -72,11 +72,11 @@
     \put(0,0){\includegraphics[width=\unitlength,page=8]{slope-log-different.pdf}}%
     \put(0.75868058,0.04258945){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$a$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=9]{slope-log-different.pdf}}%
-    \put(0.80763237,0.19924827){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle v(2)$\end{tabular}}}}%
-    \put(0.79876246,0.11481008){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle v(2)$\end{tabular}}}}%
+    \put(0.80763134,0.19924857){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle v(2)$\end{tabular}}}}%
+    \put(0.7987629,0.11481023){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle v(2)$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=10]{slope-log-different.pdf}}%
-    \put(0.62857739,0.30019771){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}If $n > 2v(2)$ and $2 \nmid v(2)$\end{tabular}}}}%
-    \put(0.58661943,0.1623569){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle \sqrt{\lambda}$\end{tabular}}}}%
+    \put(0.62857739,0.30019771){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}If $n < 2v(2)$ and $2 \nmid n$\end{tabular}}}}%
+    \put(0.58514935,0.1623572){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\scriptstyle \pm \sqrt{\lambda}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=11]{slope-log-different.pdf}}%
   \end{picture}%
 \endgroup%

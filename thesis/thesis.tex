@@ -2,10 +2,11 @@
 \begin{document}
 \input{frontmatter/coverpage.tex}
 \rmfamily
-\setcounter{page}{0}
-\pagenumbering{roman}
+
 \newpage
 \import{frontmatter/}{front_page.tex}
+\setcounter{page}{0}
+\pagenumbering{roman}
 \chapter*{Preface} \label{chap:preface}
 \import{frontmatter/}{preface.tex}
 \chapter*{Contribution statement} \label{chap:acknowledgements}
@@ -17,8 +18,7 @@
 \myprintnomenclature
 \listoftodos
 \tableofcontents
-
-
+\pagebreak
 \setcounter{page}{0}
 \pagenumbering{arabic}
 
@@ -56,5 +56,8 @@
 
 \pagebreak
 \printbibliography[heading=bibintoc]
+
+\pagebreak
+\input{frontmatter/back_page.tex}
 
 \end{document}

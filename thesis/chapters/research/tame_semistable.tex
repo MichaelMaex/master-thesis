@@ -1,11 +1,11 @@
-In this section we answer \cref{prob:main_problem} when $k$ has characteristic different from $2$, under the assumption that $E$ has semi-simple reduction, i.e.\  $E$ is of type $\mathrm I_m$ for some $m \ge 0$. 
+In this section we answer \cref{prob:main_problem} when $k$ has characteristic different from $2$, under the assumption that $E$ has semistable reduction, i.e.\  $E$ is of type $\mathrm I_m$ for some $m \ge 0$. 
 
 \begin{remark}\label{rem:justification_semistable}
-	The assumption that $E$ has semi-stable reduction is valid as this is what we found in \cref{sec:char_k_is_2} by means of Tate's algorithm. 
+	The assumption that $E$ has semistable reduction is valid as this is what we found in \cref{sec:char_k_is_2} by means of Tate's algorithm. 
 	However this assumption isn't valid for in the case where we choose $|\lambda| > 1$ (see \cref{fig:configurations_of_gamma_lambda}).
 	If $|\lambda| > 1$, i.e.\ $v(\lambda) < 0$ then
-	explicit computations of examples Sagemath suggest that  $E$ has semistable reduction if $n = v(\lambda)$ is even and $E$ is of type $\mathrm I^*_n$ if $n$ is odd. 
-	When we have gained a bit more understanding we will sketch a partially Berkovich geometric, partially model theoretic explanation for why this is the case in \cref{sec:distinguishing_between_im_and_ims}. 
+	explicit computations of examples in Sagemath suggest that  $E$ has semistable reduction if $n = v(\lambda)$ is even and $E$ is of type $\mathrm I^*_n$ if $n$ is odd. 
+	At the end of this section, when we have gained a bit more understanding we will sketch a partially Berkovich geometric, partially model theoretic explanation for why this is the case in \cref{sec:distinguishing_between_im_and_ims}. 
 \end{remark}
 
 \begin{lemma}\label{lem:semistable_skeleton}
@@ -15,7 +15,7 @@ In this section we answer \cref{prob:main_problem} when $k$ has characteristic d
 \begin{proof}
 	Recall that $\mathscr C$ is the minimal resolution of the minimal regular model $\mathscr C_\text{reg} $ of $C$. 
 	Suppose for the sake of contradiction that  $C$ has inessential components.
-	Then there is ``leaf''  $F$ which is a rational curve in $\mathscr C_s$. 
+	Then there is an end point of an chain of inessential components $F$ which is a rational curve in $\mathscr C_s$ and intersects only one other component (a ``leaf in the dual graph''). 
 	If $F$ dominates a component $F'$ in $\mathscr C_\text{reg} $ then $F'$ is also a rational curve of multiplicity $1$ which has self intersection $-1$.
 	This contradicts the minimality of  $\mathscr C _\text{reg} $ by Castelnouovo's criterion (\cref{thm:castelnuovo}). 
 
@@ -24,8 +24,8 @@ In this section we answer \cref{prob:main_problem} when $k$ has characteristic d
 	Then $\mathscr C'$ is also snc, which contradicts the minimality of $\mathscr C$. 
 \end{proof}
 \begin{corollary}
-	Let $\mathscr C$ be the minimal snc-model of $C$. 
-	Then the leaves of the dual graph  $\Delta (\mathscr C)$ have genus greater than $0$. 
+	Let $\mathscr C$ be the minimal snc-model of a curve $C$ with semistable reduction. 
+	Then the leafs of the dual graph  $\Delta (\mathscr C)$ have genus greater than $0$. 
 \end{corollary}
 
 Recall \cref{lem:genus_semi_stable_curve,rem:genus_semi_stable_curve} which state that the Betti-number of $\Delta(C)$ plus the genera of vertices equals $g(C)$, when $\mathscr C$ is semistable.  
@@ -44,7 +44,7 @@ In the case of $E$ this leaves two options.
 \begin{proof}
 	The fact $\sk(\mathscr E) = \sk(E)$ follows from \cref{lem:semistable_skeleton}. 
 	We know that $\Delta(\mathscr E)$ is homotopic to either a circle, or a point of genus $1$. 
-	As it has no leaves of genus $0$ and is finite, this means that $\sk(E)$ is either a circle or a point of genus 1, which proofs the claim.
+	As it has no leafs of genus $0$ and is finite, this means that $\sk(E)$ is either a circle or a point of genus 1, which proofs the claim.
 \end{proof}
 
 \begin{lemma}
@@ -81,6 +81,12 @@ This gives gives us the following proposition.
 	Then $E$ has reduction type $\mathrm I_{2n}$ with $n = v(\lambda)$. 
 \end{proposition}
 
+\begin{remark}
+	There are many other ways to determine $m$ in $\mathrm I_m$, the reduction type of  $E$. 
+	For example the valuation of the  discriminant $\Delta$,  or $j$-invariant of $E$. 
+	But our argument under the assumption that $E$ is semistable is purely Berkovich geometric and does not require any prior knowledge about the arithmetic of elliptic curves.
+\end{remark}
+
 The picture we sketched above also helps us to understand what happens purely model theoretically. 
 Let $\ell_1, \ell_2$ be the two lifts of $(a, b)$ along $\phi$. 
 By \cref{prop:balancing_finite_morphism} we see that $\phi$ maps divisorial points in $\ell_1, \ell_2$ to divisorial points in $(a, b)$ of the same degree. 
@@ -90,7 +96,7 @@ Hence each of the lines $\ell_1, \ell_2$ also contains $n-1$ points of multiplic
 Together these are $2n - 2$ of the  $2n$ irreducible components of $\mathscr E_\text{min} $ (the minimal regular/snc model). 
 
 From \cref{prop:balancing_finite_morphism} we cannot see whether $\phi^{-1}(a), \phi^{-1}(b)$ are points of multiplicity 1 one 2. 
-But as $\mathscr E_\text{min} $ has $2n$ components with multiplicity $1$, we find that  $\phi^{-1}(a), \phi^{-1}(b)$ must be the 2 missing degree 1 points. 
+But as $\mathscr E_\text{min} $ has $2n$ components with multiplicity $1$, we find that  $\phi^{-1}(a), \phi^{-1}(b)$ must be the two missing degree 1 points. 
 A more Berkovich theoretic argument for this is the following. 
 As $E$ has semistable reduction, we know that $\mathscr E_\text{min} $ is semistable, or the blowup of a semistable nc-model. 
 As a result all the edges between two multiplicity 1 components are as described in \cref{lem:number_divisorial_points}.

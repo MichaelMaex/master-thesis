@@ -65,11 +65,12 @@ Now we want to reduce the Weierstrass equation by substituting $(x, y') = (\pi^{
 We easily see that \[
 	i =  \min\left(v(2), \left\lfloor \frac{v(2 + \lambda)}{2} \right\rfloor,  \left\lfloor \frac{v(\lambda)}{4} \right\rfloor\right) = \min\left(v(2), \left\lfloor \frac{v(2 + \lambda)}{2} \right\rfloor,  \left\lfloor \frac{n}{4} \right\rfloor\right) 
 \]
-We will assume that $v(\lambda + 2) = \min(v(\lambda), v(2))$ (e.g.\ when $n \ne v(2)$), then we further see that \[
+We will assume that $v(\lambda + 2) = \min(v(\lambda), v(2))$ (e.g.\ when $n \ne v(2)$). 
+Then we further see that \[
 	i = \min\left(v(2), \left\lfloor \frac{\min (v(2), n)}{2} \right\rfloor,  \left\lfloor \frac{n}{4} \right\rfloor\right)  = \min\left(\left\lfloor \frac{v(2)}{2}\right\rfloor, \left\lfloor \frac{n}{4} \right\rfloor \right)
 .\] 
 From now on we'll assume that $n \ne 2v(2)$. 
-Tate's algorithm requires a more complex coordinate change if $n = v(2)$ and there was insufficient time to work out this case. 
+Tate's algorithm requires a more complex coordinate change if $n = 2 v(2)$ and there was insufficient time to work out this case. 
 
 So the equation becomes (omitting the double primes after $x, y$) \[
 	E: y^2 - 2_i xy = x^3 + (-2_{2i} - \lambda_{2i})x^2 + \lambda_{4i}x
@@ -219,16 +220,18 @@ So $\tilde E$ is singular at $(0, 0)$. And we do not need to do a coordinate tra
 \step 3
 Recall that $a_6 = 0$. So trivially $\pi^3 \mid a_6$ and we move on to step 4.
 
-\step 4
-Trivially $\pi^3 \mid b_6 = 0$ so we continue with step 5.
 
-\step 5
+\step 4
 If $n \equiv 1$ then $v(\lambda_{4i}) = 1$. So $\pi^3 \nmid b_8 = - \lambda_{4i}^2$. 
 The algorithm terminates and states the following. 
 \begin{tateconclusion}
-	If $n < 2v(2)$ and $n \equiv 1 \mod 4$ then $E$ is of type  $\mathrm {IV}$. 
+	If $n < 2v(2)$ and $n \equiv 1 \mod 4$ then $E$ is of type  $\mathrm {III}$. 
 \end{tateconclusion}
 We continue under the assumption that $n \equiv 2$ or $n \equiv 3 \mod 4$. 
+
+\step 5
+Trivially $\pi^3 \mid b_6 = 0$. 
+So we continue with step 6.
 
 \step 6
 We easily see that $\pi \mid a_1, a_2$ and trivially $\pi^2 \mid a_3, \pi^3 \mid a_6$ as $a_3 = a_6 = 0$. 
@@ -284,7 +287,7 @@ We recap our findings in the following proposition.
 		\item if $n < 2v(2)$ 
 			\begin{itemize}
 				\item and $n \equiv 0 \mod 4$:  $\mathrm {II}$
-				\item and  $n \equiv 1 \mod 4$:  $\mathrm {IV}$
+				\item and  $n \equiv 1 \mod 4$:  $\mathrm {III}$
 				\item and $n \equiv 2 \mod 4$:  $\mathrm I^*_m$ for some $m > 0$
 				\item and $n\equiv 3 \mod 3$: 
 					\begin{itemize}
