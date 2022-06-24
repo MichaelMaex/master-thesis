@@ -1,0 +1,126 @@
+%% Creator: Inkscape 1.0beta2 (2b71d25, 2019-12-03), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'kn-dual-graphs.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{510.22499084bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.35543144)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{kn-dual-graphs.pdf}}%
+    \put(0.01866926,0.17766178){\color[rgb]{0.94509804,0.54901961,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.00770572,0.02446892){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathrm I_0$\end{tabular}}}}%
+    \put(0.07327444,0.02446892){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathrm I_1$\end{tabular}}}}%
+    \put(0.15091857,0.02446818){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathrm I_n$\end{tabular}}}}%
+    \put(0.22774659,0.02446892){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathrm{II}$\end{tabular}}}}%
+    \put(0.30204028,0.02446892){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathrm{III}$\end{tabular}}}}%
+    \put(0.37900118,0.02446818){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathrm{IV}$\end{tabular}}}}%
+    \put(0.48856887,0.02446848){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathrm I_0^*$\end{tabular}}}}%
+    \put(0.57065075,0.02446803){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathrm I_n^*$\end{tabular}}}}%
+    \put(0.69179407,0.02446877){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathrm{II}^*$\end{tabular}}}}%
+    \put(0.81581818,0.02446877){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathrm{III}^*$\end{tabular}}}}%
+    \put(0.9356806,0.02446818){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathrm{IV}^*$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{kn-dual-graphs.pdf}}%
+    \put(0.06445495,0.1183306){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{kn-dual-graphs.pdf}}%
+    \put(0.26443775,0.17054888){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$6$\end{tabular}}}}%
+    \put(0.26443775,0.21565222){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$3$\end{tabular}}}}%
+    \put(0.26443761,0.1251276){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{kn-dual-graphs.pdf}}%
+    \put(0.34310834,0.17171308){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$4$\end{tabular}}}}%
+    \put(0.34310819,0.21681656){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{kn-dual-graphs.pdf}}%
+    \put(0.4128314,0.17171308){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$3$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{kn-dual-graphs.pdf}}%
+    \put(0.50089755,0.17685037){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{kn-dual-graphs.pdf}}%
+    \put(0.58991181,0.10757652){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{kn-dual-graphs.pdf}}%
+    \put(0.58981347,0.1455089){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
+    \put(0.58991181,0.19569088){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
+    \put(0.58991152,0.23174938){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{kn-dual-graphs.pdf}}%
+    \put(0.72360724,0.25927018){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$6$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{kn-dual-graphs.pdf}}%
+    \put(0.72360724,0.22330399){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$5$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{kn-dual-graphs.pdf}}%
+    \put(0.72360724,0.18841732){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$4$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{kn-dual-graphs.pdf}}%
+    \put(0.72360724,0.1496118){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$3$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{kn-dual-graphs.pdf}}%
+    \put(0.72360724,0.10996502){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{kn-dual-graphs.pdf}}%
+    \put(0.72360724,0.29363223){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$4$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{kn-dual-graphs.pdf}}%
+    \put(0.72360724,0.32573763){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{kn-dual-graphs.pdf}}%
+    \put(0.66086639,0.27474983){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$3$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{kn-dual-graphs.pdf}}%
+    \put(0.84763282,0.28048274){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{kn-dual-graphs.pdf}}%
+    \put(0.84763282,0.24451655){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$3$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{kn-dual-graphs.pdf}}%
+    \put(0.84763282,0.20962988){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$4$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{kn-dual-graphs.pdf}}%
+    \put(0.84763282,0.17082435){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$3$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{kn-dual-graphs.pdf}}%
+    \put(0.84763282,0.13117758){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{kn-dual-graphs.pdf}}%
+    \put(0.78489197,0.22511658){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{kn-dual-graphs.pdf}}%
+    \put(0.96679172,0.21668103){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{kn-dual-graphs.pdf}}%
+    \put(0.96679172,0.18179436){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$3$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{kn-dual-graphs.pdf}}%
+    \put(0.98149112,0.14298884){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{kn-dual-graphs.pdf}}%
+    \put(0.90324197,0.14298884){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{kn-dual-graphs.pdf}}%
+  \end{picture}%
+\endgroup%

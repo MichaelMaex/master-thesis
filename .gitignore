@@ -24,3 +24,6 @@ videos/*
 *.ilg
 *.ist
 *.glsdefs
+*.nav
+*.vrb
+*.snm

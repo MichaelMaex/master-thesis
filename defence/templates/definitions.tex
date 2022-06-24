@@ -1,0 +1,80 @@
+\ifluatex\else
+% textcomp defines 00B1 wrong, so fix it here
+\DeclareUnicodeCharacter{2192}{\ensuremath{\rightarrow}}
+\DeclareUnicodeCharacter{2194}{\ensuremath{\leftrightarrow}}
+\DeclareUnicodeCharacter{2212}{\ensuremath{-}}
+\DeclareUnicodeCharacter{22EE}{\ensuremath{\vdots}}
+\DeclareUnicodeCharacter{22EF}{\ensuremath{\cdots}}
+\DeclareUnicodeCharacter{00B1}{\ensuremath{\pm}}
+\DeclareUnicodeCharacter{00D7}{\ensuremath{\times}}
+\DeclareUnicodeCharacter{221E}{\ensuremath{\infty}}
+\DeclareUnicodeCharacter{2248}{\ensuremath{\approx}}
+\DeclareUnicodeCharacter{2264}{\ensuremath{\leq}}
+\DeclareUnicodeCharacter{2265}{\ensuremath{\geq}}
+\DeclareUnicodeCharacter{03BC}{\micro}
+\DeclareUnicodeCharacter{2206}{\ensuremath{\Delta}}
+\fi
+
+\makeatletter
+\@ifpackageloaded{xcolor}{%
+    \definecolor{kuldefault}{HTML}{00407a}%
+    \definecolor{kulbright}{HTML}{52bdec}%
+    \definecolor{kulleft}{HTML}{1d8db0}%
+    \definecolor{kulright}{HTML}{116e8a}%
+    \definecolor{kuldark}{HTML}{123C75}% heading background
+    \definecolor{kullight}{HTML}{F0F7FA}% block background
+    \definecolor{kulbg}{RGB}{29,141,176}% background fill
+    \definecolor{kulyellow}{HTML}{BC8F00}%
+    \definecolor{kulorange}{HTML}{BC6E00}%
+    \definecolor{kulgreen}{HTML}{007F4F}%
+    \definecolor{kulred}{HTML}{FF4422}%
+}{}
+\makeatother
+
+\newcommand{\m}[1]{\todo[noline,bordercolor=orange!20,backgroundcolor=orange!20]{#1}}
+
+\newcommand{\eg}{e.\,g.\xspace}
+\newcommand{\ie}{i.\,e.\xspace}
+
+\addunit{\octave}{octave}
+\addunit{\pbdrunit}{\%BDR}
+\addunit{\plbdrunit}{\%LBDR}
+\addunit{\currentunit}{cu}
+\addunit{\pulsespersecondunit}{pps}
+
+\newcommand{\pps}[1]{\unit{#1}{\pulsespersecondunit}}
+\newcommand{\hz}[1]{\unit{#1}{\hertz}}
+\newcommand{\khz}[1]{\unit{#1}{\kilo\hertz}}
+\newcommand{\mhz}[1]{\unit{#1}{\mega\hertz}}
+\newcommand{\db}[1]{\unit{#1}{\deci\bel}}
+\newcommand{\us}[1]{\unit{#1}{\micro\second}}
+\newcommand{\ms}[1]{\unit{#1}{\milli\second}}
+\newcommand{\s}[1]{\unit{#1}{\second}}
+\newcommand{\pc}[1]{\unit{#1}{\%}}
+\newcommand{\pmil}[1]{\unit{#1}{\permil}}
+\newcommand{\pcdb}[1]{\unit{#1}{\%\per\deci\bel}}
+\newcommand{\de}[1]{\unit{#1}{\degree}}
+\newcommand{\uv}[1]{\unit{#1}{\micro\volt}}
+\newcommand{\nv}[1]{\unit{#1}{\nano\volt}}
+\newcommand{\bdr}[1]{\unit{#1}{\pbdrunit}}
+\newcommand{\lbdr}[1]{\unit{#1}{\plbdrunit}}
+\newcommand{\cu}[1]{\unit{#1}{\currentunit}}
+\newcommand{\nhl}[1]{\unit{#1}{\deci\bel{}\textnormal{nHL}}}
+\newcommand{\hl}[1]{\unit{#1}{\deci\bel{}\textnormal{HL}}}
+\newcommand{\spl}[1]{\unit{#1}{\deci\bel{}\textnormal{SPL}}}
+\newcommand{\spla}[1]{\unit{#1}{\deci\bel{}\textnormal{SPL(A)}}}
+\newcommand{\dbfs}[1]{\unit{#1}{\deci\bel{}\textnormal{FS}}}
+\newcommand{\pespl}[1]{\unit{#1}{\deci\bel{}\textnormal{peSPL}}}
+\newcommand{\pespla}[1]{\unit{#1}{\deci\bel{}\textnormal{peSPL(A)}}}
+\newcommand{\sd}[1]{\ensuremath{\textnormal{SD}=#1}}
+\newcommand{\se}[1]{\ensuremath{\textnormal{SE}=#1}}
+\newcommand{\ir}[1]{\ensuremath{\textnormal{IR}=#1}}
+\newcommand{\el}[2]{\ensuremath{\textnormal{#1}_{\textnormal{#2}}}}
+
+% pandoc >=1.14
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\newcommand{\deflen}[2]{%
+    \expandafter\newlength\csname #1\endcsname
+    \expandafter\setlength\csname #1\endcsname{#2}%
+}

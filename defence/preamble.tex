@@ -1,0 +1,99 @@
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage[nohyperlinks]{acronym}
+\usepackage{babel,lmodern,graphicx,mathptmx,xspace,wasysym,microtype,booktabs,tabularx,relsize,textcomp,longtable,lipsum,colortbl,eurosym,url,multicol,etoolbox,multimedia,pdfpages,fixltx2e,ifluatex,epstopdf}
+\usepackage[olditem,oldenum]{paralist}
+\usepackage[babel=true]{csquotes}
+\usepackage[thinqspace,amssymb,textstyle]{SIunits}
+\usepackage[textsize=tiny]{todonotes}
+\usepackage[symbol]{footmisc}
+\usepackage[notquote]{hanging}
+\usepackage[normalem]{ulem}
+\usepackage{stmaryrd}
+\usepackage{mathrsfs}
+\usepackage{import}
+\usepackage{tikz-cd}
+
+\input{template.tex}
+
+\newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\F}{\mathbb F}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\N}{\mathbb N}
+\newcommand{\pro}{\mathbb P}
+\newcommand{\aff}{\mathbb A}
+
+\DeclareMathOperator{\coker}{coker}
+\DeclareMathOperator{\id}{Id}
+
+\DeclareMathOperator{\im}{Im}
+\DeclareMathOperator{\spec}{Spec}
+\DeclareMathOperator{\maxspec}{MaxSpec}
+\DeclareMathOperator{\spf}{Spf}
+\DeclareMathOperator{\proj}{Proj}
+\DeclareMathOperator{\red}{red}
+\DeclareMathOperator{\trop}{trop}
+\DeclareMathOperator{\trdeg}{TrDeg}
+\DeclareMathOperator{\divisor}{div}
+\DeclareMathOperator{\Divisor}{Div}
+\DeclareMathOperator{\cov}{Cov}
+\DeclareMathOperator{\eval}{eval}
+\DeclareMathOperator{\wt}{wt}
+\DeclareMathOperator{\sk}{Sk}
+\DeclareMathOperator{\ch}{char}
+\DeclareMathOperator{\ra	m}{Ram}
+\DeclareMathOperator{\mult}{mult}
+\DeclareMathOperator{\bl}{Bl}
+\DeclareMathOperator{\length}{length}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\ram}{Ram}
+\DeclareMathOperator{\val}{val}
+\DeclareMathOperator{\minloc}{minloc}
+\DeclareMathOperator{\ord}{ord}
+\DeclareMathOperator{\lcm}{lcm}
+\DeclareMathOperator{\ff}{Frac}
+
+\newcommand{\into}{\hookrightarrow}
+\newcommand{\onto}{\twoheadrightarrow}
+\newcommand{\Gan}{\ensuremath{\mathbb{G} _m ^{\mathrm{an}}}}
+\newcommand{\an}{{}^{\text{an}}}
+\newcommand{\bir}{{}^{\text{bir}}}
+\newcommand{\act}{\curvearrowright}
+
+\newcommand{\sC}{\mathscr C}
+\newcommand{\sE}{\mathscr E}
+
+\newcommand{\cox}{\widehat{\otimes}}
+
+\newcommand{\st}{%
+  \nonscript\;
+  \ifnum\currentgrouptype=16
+    \,\middle|\,
+  \else
+    \,|\,
+  \fi
+  \nonscript\;}
+
+\newtheorem{notation}{Notation}
+
+\usepackage{pdfpages}
+\usepackage{transparent}
+\newcommand{\incfig}[1]{%
+	\color{black}
+	\def\svgwidth{\columnwidth}
+	\import{./figures/}{#1.pdf_tex}
+	\color{kuldefault}
+}
+\newcommand{\incfigsmall}[1]{%
+	\def\svgwidth{.15\columnwidth}
+	\import{./figures/}{#1.pdf_tex}
+}
+\pdfsuppresswarningpagegroup=1
+
+\newcommand\redout{\bgroup\markoverwith
+{\textcolor{red}{\rule[0.5ex]{2pt}{0.8pt}}}\ULon}
+
+\newcommand{\ts}{\scriptstyle}

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="svg8" inkscape:version="0.92.4 (unknown)" sodipodi:docname="figure.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 680.3 241.8"
+	 style="enable-background:new 0 0 680.3 241.8;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F18C00;}
+	.st1{font-family:'MyriadPro-Regular';}
+	.st2{font-size:12px;}
+	.st3{fill:#020203;}
+	.st4{font-family:'ArialMT';}
+	.st5{fill:#007BC4;}
+	.st6{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st7{fill:none;stroke:#000000;stroke-width:0.75;stroke-miterlimit:10;}
+	.st8{fill:none;stroke:#000000;stroke-width:0.75;stroke-miterlimit:10;stroke-dasharray:4;}
+	.st9{fill:none;stroke:#000000;stroke-miterlimit:10;stroke-dasharray:4;}
+	.st10{font-size:18px;}
+</style>
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1.0" id="base" inkscape:current-layer="layer1" inkscape:cx="284.27627" inkscape:cy="182.72055" inkscape:document-units="mm" inkscape:guide-bbox="true" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:window-height="995" inkscape:window-maximized="1" inkscape:window-width="2520" inkscape:window-x="20" inkscape:window-y="65" inkscape:zoom="0.99437388" pagecolor="#ffffff" showborder="true" showgrid="false" showguides="true" width="200mm">
+	<inkscape:grid  dotted="false" empspacing="4" id="grid815" spacingx="10" spacingy="10" type="xygrid" units="mm">
+		</inkscape:grid>
+</sodipodi:namedview>
+<g id="layer1" transform="translate(0,-177)" inkscape:groupmode="layer" inkscape:label="Layer 1">
+</g>
+<circle cx="14.7" cy="130.3" r="2"/>
+<text transform="matrix(1 0 0 1 12.7007 120.9367)" class="st0 st1 st2">1</text>
+<text transform="matrix(0.2689 0 0 1 5.2422 225.1538)" class="st3 st4 st2">$\mathrm I_0$</text>
+<text transform="matrix(0.2689 0 0 1 49.8486 225.1538)" class="st3 st4 st2">$\mathrm I_1$</text>
+<text transform="matrix(0.2689 0 0 1 102.6699 225.1543)" class="st3 st4 st2">$\mathrm I_n$</text>
+<text transform="matrix(0.4648 0 0 1 154.936 225.1538)" class="st3 st4 st2">$\mathrm{II}$</text>
+<text transform="matrix(0.4648 0 0 1 205.478 225.1538)" class="st3 st4 st2">$\mathrm{III}$</text>
+<text transform="matrix(0.4648 0 0 1 257.8345 225.1543)" class="st3 st4 st2">$\mathrm{IV}$</text>
+<text transform="matrix(0.2689 0 0 1 332.3734 225.1541)" class="st3 st4 st2">$\mathrm I_0^*$</text>
+<text transform="matrix(0.2689 0 0 1 388.2137 225.1544)" class="st3 st4 st2">$\mathrm I_n^*$</text>
+<text transform="matrix(0.4648 0 0 1 470.6275 225.1539)" class="st3 st4 st2">$\mathrm{II}^*$</text>
+<text transform="matrix(0.4648 0 0 1 555.0011 225.1539)" class="st3 st4 st2">$\mathrm{III}^*$</text>
+<text transform="matrix(0.4648 0 0 1 636.5435 225.1543)" class="st3 st4 st2">$\mathrm{IV}^*$</text>
+<circle cx="54.6" cy="91.9" r="2"/>
+<text transform="matrix(1 0 0 1 43.8487 161.2997)" class="st5 st1 st2">$2$</text>
+<ellipse transform="matrix(0.1602 -0.9871 0.9871 0.1602 -97.0276 175.5086)" cx="54.6" cy="144.8" rx="2" ry="2"/>
+<path class="st6" d="M54.6,91.9c-1.6,1.2-12.4,9.8-13.1,24.8c-0.8,16.9,11.9,27.1,13.1,28.1"/>
+<path class="st6" d="M54.6,91.9c1.6,1.2,12.4,9.8,13.1,24.8c0.8,16.9-11.9,27.1-13.1,28.1"/>
+<g>
+	<circle cx="99.9" cy="99.5" r="2"/>
+	<line class="st7" x1="99.9" y1="99.5" x2="124.6" y2="99.5"/>
+	<circle cx="87.6" cy="120.9" r="2"/>
+	<line class="st7" x1="87.6" y1="120.9" x2="99.9" y2="99.5"/>
+	<circle cx="99.9" cy="142.5" r="2"/>
+	<line class="st7" x1="99.9" y1="142.5" x2="87.6" y2="121.1"/>
+	<circle cx="125.2" cy="142.4" r="2"/>
+	<line class="st7" x1="125.2" y1="142.4" x2="100.5" y2="142.4"/>
+	<circle cx="137.5" cy="121" r="2"/>
+	<line class="st8" x1="137.5" y1="121" x2="125.2" y2="142.4"/>
+	<circle cx="125.2" cy="99.4" r="2"/>
+	<line class="st7" x1="125.2" y1="99.4" x2="137.5" y2="120.7"/>
+</g>
+<g>
+	<circle cx="174.4" cy="122.1" r="2"/>
+	<circle cx="174.4" cy="91.1" r="2"/>
+	<circle cx="174.4" cy="153.1" r="2"/>
+	<circle cx="154.9" cy="122.1" r="2"/>
+	<line class="st6" x1="174.4" y1="91.1" x2="174.4" y2="153.1"/>
+	<line class="st6" x1="154.9" y1="122.1" x2="174.4" y2="122.1"/>
+	<text transform="matrix(1 0 0 1 179.897 125.7756)" class="st5 st1 st2">$6$</text>
+	<text transform="matrix(1 0 0 1 179.897 95.0918)" class="st5 st1 st2">$3$</text>
+	<text transform="matrix(1 0 0 1 179.8969 156.6757)" class="st5 st1 st2">$2$</text>
+</g>
+<g>
+	<circle cx="227.9" cy="121.3" r="2"/>
+	<circle cx="227.9" cy="90.3" r="2"/>
+	<circle cx="227.9" cy="152.3" r="2"/>
+	<circle cx="208.5" cy="121.3" r="2"/>
+	<line class="st6" x1="227.9" y1="90.3" x2="227.9" y2="152.3"/>
+	<line class="st6" x1="208.5" y1="121.3" x2="227.9" y2="121.3"/>
+	<text transform="matrix(1 0 0 1 233.4166 124.9836)" class="st5 st1 st2">$4$</text>
+	<text transform="matrix(1 0 0 1 233.4165 94.2997)" class="st5 st1 st2">$2$</text>
+</g>
+<g>
+	<circle cx="275.3" cy="121.3" r="2"/>
+	<circle cx="275.3" cy="90.3" r="2"/>
+	<circle cx="275.3" cy="152.3" r="2"/>
+	<circle cx="255.9" cy="121.3" r="2"/>
+	<line class="st6" x1="275.3" y1="90.3" x2="275.3" y2="152.3"/>
+	<line class="st6" x1="255.9" y1="121.3" x2="275.3" y2="121.3"/>
+	<text transform="matrix(1 0 0 1 280.8492 124.9836)" class="st5 st1 st2">$3$</text>
+</g>
+<g>
+	<line class="st6" x1="321.3" y1="92.8" x2="334.2" y2="118.6"/>
+	<circle cx="321.3" cy="92.7" r="2"/>
+	<line class="st6" x1="347.2" y1="92.8" x2="334.3" y2="118.6"/>
+	<circle cx="347.2" cy="92.8" r="2"/>
+	<line class="st6" x1="321.3" y1="144.1" x2="334.2" y2="118.3"/>
+	<circle cx="321.3" cy="144.1" r="2"/>
+	<line class="st6" x1="347.2" y1="144.1" x2="334.3" y2="118.3"/>
+	<circle cx="347.2" cy="144.1" r="2"/>
+	<circle cx="334.4" cy="118.4" r="2"/>
+	<text transform="matrix(1 0 0 1 340.7606 121.4887)" class="st5 st1 st2">$2$</text>
+</g>
+<g>
+	<line class="st6" x1="381.8" y1="65.4" x2="394.7" y2="78.3"/>
+	<circle cx="381.8" cy="65.4" r="2"/>
+	<line class="st6" x1="407.7" y1="65.4" x2="394.8" y2="78.3"/>
+	<circle cx="407.7" cy="65.4" r="2"/>
+	<line class="st6" x1="381.8" y1="178.4" x2="394.7" y2="165.5"/>
+	<circle cx="381.8" cy="178.4" r="2"/>
+	<line class="st6" x1="407.8" y1="178.4" x2="394.9" y2="165.5"/>
+	<circle cx="407.8" cy="178.4" r="2"/>
+	<circle cx="394.9" cy="165.6" r="2"/>
+	<text transform="matrix(1 0 0 1 401.317 168.6157)" class="st5 st1 st2">$2$</text>
+	<circle cx="394.9" cy="78.5" r="2"/>
+	<line class="st6" x1="394.7" y1="165.5" x2="394.7" y2="139"/>
+	<circle cx="394.7" cy="139" r="2"/>
+	<text transform="matrix(1 0 0 1 401.2501 142.8103)" class="st5 st1 st2">$2$</text>
+	<text transform="matrix(1 0 0 1 401.317 108.6715)" class="st5 st1 st2">$2$</text>
+	<text transform="matrix(1 0 0 1 401.3168 84.1409)" class="st5 st1 st2">$2$</text>
+	<line class="st6" x1="394.9" y1="78.5" x2="394.9" y2="105"/>
+	<circle cx="394.9" cy="105" r="2"/>
+	<line class="st9" x1="394.7" y1="139" x2="394.9" y2="105"/>
+</g>
+<g>
+	<circle cx="483" cy="62.4" r="2"/>
+	<text transform="matrix(1 0 0 1 492.27 65.4185)" class="st5 st1 st10">$6$</text>
+	<circle cx="483" cy="86.9" r="2"/>
+	<text transform="matrix(1 0 0 1 492.27 89.8863)" class="st5 st1 st10">$5$</text>
+	<circle cx="483" cy="110.6" r="2"/>
+	<text transform="matrix(1 0 0 1 492.27 113.6197)" class="st5 st1 st10">$4$</text>
+	<circle cx="483" cy="137" r="2"/>
+	<text transform="matrix(1 0 0 1 492.27 140.0191)" class="st5 st1 st10">$3$</text>
+	<circle cx="483" cy="164" r="2"/>
+	<text transform="matrix(1 0 0 1 492.27 166.9908)" class="st5 st1 st10">$2$</text>
+	<circle cx="483" cy="188.8" r="2"/>
+	<circle cx="483" cy="39" r="2"/>
+	<text transform="matrix(1 0 0 1 492.27 42.042)" class="st5 st1 st10">$4$</text>
+	<circle cx="483" cy="17.2" r="2"/>
+	<text transform="matrix(1 0 0 1 492.27 20.2007)" class="st5 st1 st10">$2$</text>
+	<line class="st6" x1="483" y1="17.2" x2="483" y2="188.8"/>
+	<circle cx="458.3" cy="62.7" r="2"/>
+	<text transform="matrix(1 0 0 1 449.5874 54.8877)" class="st5 st1 st10">$3$</text>
+	<line class="st6" x1="483" y1="62.4" x2="458.3" y2="62.4"/>
+</g>
+<g>
+	<circle cx="567.4" cy="48" r="2"/>
+	<text transform="matrix(1 0 0 1 576.6446 50.9876)" class="st5 st1 st10">$2$</text>
+	<circle cx="567.4" cy="72.4" r="2"/>
+	<text transform="matrix(1 0 0 1 576.6446 75.4554)" class="st5 st1 st10">$3$</text>
+	<circle cx="567.4" cy="96.2" r="2"/>
+	<text transform="matrix(1 0 0 1 576.6446 99.1888)" class="st5 st1 st10">$4$</text>
+	<circle cx="567.4" cy="122.6" r="2"/>
+	<text transform="matrix(1 0 0 1 576.6446 125.5882)" class="st5 st1 st10">$3$</text>
+	<circle cx="567.4" cy="149.6" r="2"/>
+	<text transform="matrix(1 0 0 1 576.6446 152.5599)" class="st5 st1 st10">$2$</text>
+	<circle cx="567.4" cy="174.4" r="2"/>
+	<circle cx="567.4" cy="24.6" r="2"/>
+	<line class="st6" x1="567.4" y1="24.6" x2="567.4" y2="174.4"/>
+	<circle cx="542.6" cy="96.5" r="2"/>
+	<text transform="matrix(1 0 0 1 533.962 88.6532)" class="st5 st1 st10">$2$</text>
+	<line class="st6" x1="567.4" y1="96.2" x2="542.6" y2="96.2"/>
+</g>
+<g>
+	<circle cx="648.4" cy="66.9" r="2"/>
+	<circle cx="648.4" cy="91.4" r="2"/>
+	<text transform="matrix(1 0 0 1 657.7084 94.3919)" class="st5 st1 st10">$2$</text>
+	<circle cx="648.4" cy="115.1" r="2"/>
+	<text transform="matrix(1 0 0 1 657.7084 118.1253)" class="st5 st1 st10">$3$</text>
+	<circle cx="658.4" cy="141.5" r="2"/>
+	<text transform="matrix(1 0 0 1 667.7084 144.5247)" class="st5 st1 st10">$2$</text>
+	<circle cx="658.4" cy="168.5" r="2"/>
+	<circle cx="638.3" cy="141.5" r="2"/>
+	<circle cx="638.3" cy="168.5" r="2"/>
+	<text transform="matrix(1 0 0 1 614.4755 144.5247)" class="st5 st1 st10">$2$</text>
+	<line class="st6" x1="648.4" y1="66.9" x2="648.4" y2="115.1"/>
+	<line class="st6" x1="658.4" y1="168.5" x2="658.4" y2="141.5"/>
+	<line class="st6" x1="648.4" y1="115.1" x2="658.4" y2="141.5"/>
+	<line class="st6" x1="638.3" y1="168.5" x2="638.3" y2="141.5"/>
+	<line class="st6" x1="648.4" y1="115.1" x2="638.3" y2="141.5"/>
+</g>
+</svg>

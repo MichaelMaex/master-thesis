@@ -1,0 +1,57 @@
+% KU Leuven latex presentation template
+%
+% © 2012 Michael Hofmann
+%
+% This work is licensed under the Creative Commons Attribution 3.0 Unported License.
+% To view a copy of this license, visit
+% http://creativecommons.org/licenses/by/3.0/ or send a letter to Creative
+% Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
+
+\documentclass[t,12pt,english,aspectratio=169]{beamer}
+%\setbeameroption{show notes}
+%\setbeameroption{show only notes}
+\input{preamble.tex}
+
+
+
+\title{Berkovich geometry, weight functions and reduction of elliptic curves}
+\author{\mbox{Michaël Maex}}
+\date{30/07/2022}
+\institute{Supervised by J.\ Nicaise}
+
+
+\begin{document}
+
+\setbeamertemplate{background canvas}[title]
+
+\begin{frame}[plain,noframenumbering]
+    \titlepage
+\end{frame}
+
+\usedefaultcanvas
+
+
+\emptyfooter
+\begin{frame}[noframenumbering]{Outline}
+        \tableofcontents
+    \end{frame}
+\largefooter
+
+
+\section{Model and valuation theory} \label{sec:model_and_valuation_theory}
+\import{sections/models/}{models.tex}
+
+\begin{frame}
+	\tableofcontents[ 
+currentsection, 
+hideothersubsections, 
+sectionstyle=show/shaded, 
+subsectionstyle=show/shaded, 
+]
+\end{frame}
+\section{Berkovich geometry} \label{sec:berkovich_geometry}
+\import{sections/berkovich/}{berkovich.tex}
+
+\section{Research} \label{sec:research}
+\import{sections/research/}{research.tex}
+\end{document}

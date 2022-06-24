@@ -1,0 +1,456 @@
+% KU Leuven latex presentation template
+%
+% © 2012 Michael Hofmann
+%
+% This work is licensed under the Creative Commons Attribution 3.0 Unported License.
+% To view a copy of this license, visit
+% http://creativecommons.org/licenses/by/3.0/ or send a letter to Creative
+% Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
+
+\documentclass[t,12pt,english
+\ifx\beamermode\undefined\else,\beamermode\fi
+$if(classoptions)$
+    ,$classoptions$
+$endif$
+]{beamer}
+%\setbeameroption{show notes}
+%\setbeameroption{show only notes}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage[nohyperlinks]{acronym}
+\usepackage{babel,lmodern,graphicx,mathptmx,xspace,wasysym,microtype,booktabs,tabularx,relsize,textcomp,longtable,lipsum,colortbl,eurosym,url,multicol,etoolbox,multimedia,pdfpages,fixltx2e,ifluatex,epstopdf}
+$if(show-total-number-of-slides)$
+\usepackage{appendixnumberbeamer}  % don't include appendix slides in slide count, restart numbering for appendix
+$endif$
+\usepackage[olditem,oldenum]{paralist}
+\usepackage[babel=true]{csquotes}
+\usepackage[thinqspace,amssymb,textstyle]{SIunits}
+\usepackage[textsize=tiny]{todonotes}
+\usepackage[symbol]{footmisc}
+\usepackage[notquote]{hanging}
+\usepackage[normalem]{ulem}
+%\usepackage{lua-visual-debug}
+
+\pdfstringdefDisableCommands{\renewcommand{\sout}{}}
+\graphicspath{{figures/}}
+% Fix sort order in case the same file exists with multiple extensions
+\DeclareGraphicsExtensions{.pdf,.png,.jpeg,.jpg,.eps}
+\frenchspacing
+
+\input{templates/definitions.tex}
+
+$if(biblatex)$
+\usepackage[style=authoryear-comp,natbib=true,backend=bibtex]{biblatex}
+\ExecuteBibliographyOptions{
+    bibencoding=ascii,
+    texencoding=utf8,
+    backref=false,
+    dashed=false,                                    % no dash instead of recurring author and editor names
+    maxnames=2,
+    maxbibnames=99,
+    uniquename=init,firstinits=true,terseinits=true, % only care about initials
+    useprefix=true,                                  % sort van Wieringen correctly
+    sortcites=false,                                 % do not sort multiple citations
+    doi=false,
+    url=false,
+$if(biboptions)$
+    ,$biboptions$
+$endif$
+}
+\AtEveryBibitem{\clearfield{month}}
+\DeclareFieldFormat{eprint:pubmed}{\iffootnote{}{\mkbibacro{PMID}\addcolon\space
+  \ifhyperref
+    {\href{http://www.ncbi.nlm.nih.gov/pubmed/#1}{\nolinkurl{#1}}}
+    {\nolinkurl{#1}}}}
+\DeclareFieldFormat{isbn}{\iffootnote{}{\mkbibacro{ISBN}\addcolon\space
+  \ifhyperref{\href{http://amzn.com/#1}{\nolinkurl{#1}}}{\nolinkurl{#1}}}}
+\DeclareFieldFormat{issn}{}
+\setlength\bibhang{2em}
+$endif$
+
+$if(biblio-files)$
+\addbibresource{$biblio-files$}
+$endif$
+
+%% From pandoc default template
+$if(highlighting-macros)$
+% Note: removed highlighting-macros from pandoc to change fontsize
+%% Custom code highlighting
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\},fontsize=\footnotesize}
+% Add ',fontsize=\small' for more characters per line
+\newenvironment{Shaded}{}{}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+\newcommand{\RegionMarkerTok}[1]{{#1}}
+%\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+\newcommand{\NormalTok}[1]{{#1}}
+\newcommand{\ErrorTok}[1]{\NormalTok{#1}}
+%% End pandoc
+
+$endif$
+$if(verbatim-in-note)$
+\usepackage{fancyvrb}
+$endif$
+$if(fancy-enums)$
+\usepackage{enumerate}
+$endif$
+$if(tables)$
+\usepackage{ctable}
+\usepackage{float} % provides the H option for float placement
+$endif$
+%% End pandoc
+
+\mode<presentation>
+
+%\hypersetup{pdfpagemode=FullScreen}
+
+\setbeamercolor{structure}{fg=kulbright}
+\setbeamercolor{title}{fg=white}
+\setbeamercolor{footline}{parent=title}
+\setbeamercolor{normal text}{fg=kuldefault}
+\setbeamercolor{item}{parent=normal text}
+\setbeamercolor{section in toc}{parent=normal text}
+\setbeamercolor{footline extra}{fg=white}
+\setbeamerfont{title}{size=\Large}
+\setbeamerfont{tiny structure}{series=\bfseries}
+\setbeamerfont{caption}{$captionfont$}
+
+\setbeamersize{text margin left=0.8cm}
+\setbeamersize{text margin right=0.8cm}
+\setbeamersize{sidebar width left=0cm}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize item}{\footnotesize\raise1pt\hbox{\textbullet}}
+\setbeamertemplate{itemize subitem}{--}
+\setbeamertemplate{itemize subsubitem}{\tiny\raise1.5pt\hbox{\textbullet}}
+
+\setlength\leftmargini{1em}
+\setlength\leftmarginii{1em}
+\setlength\leftmarginiii{1em}
+
+\defbeamertemplate{background canvas}{title}
+{%
+    \pgfdeclarehorizontalshading{bgshading}{8.70cm}{color(0cm)=(kulleft); color(\the\paperwidth)=(kulright)}%
+    \vbox to 8.70cm{%
+        \pgfuseshading{bgshading}\hspace*{-1.6cm}%
+    }%
+    \hskip-\paperwidth%
+    \hskip1.6cm%
+    \vbox to \paperheight{%
+        \vskip0.5cm\hskip0.5cm\includegraphics[width=2.83cm]{templates/kuleuven}%
+        \vskip0.99cm\hskip0.76cm\includegraphics[width=2.84cm]{templates/key}%
+        \vskip-0.57cm\hskip11.61cm\includegraphics[width=0.58cm]{templates/sedes}\hspace*{-1cm}%
+        \vfill
+    }%
+}
+
+\defbeamertemplate{background canvas}{grid}
+{%
+    \begin{tikzpicture}[remember picture,overlay,every node/.style={anchor=center}]
+        \foreach \d in {0,...,20} {
+            \draw[gray] (\d,0) -- (\d,-20);
+            \draw[gray] (0,-\d) -- (20,-\d);
+            \draw[lightgray] (\d+0.5,0) -- (\d+0.5,-20);
+            \draw[lightgray] (0,-\d-0.5) -- (20,-\d-0.5);
+            \node[anchor=north,red,font=\tiny] at (\d,0) {\d};
+            \node[anchor=west,red,font=\tiny] at (0,-\d) {\d};
+        }
+    \end{tikzpicture}
+}
+
+
+
+% add a macro that saves its argument
+\newcommand{\footlineextra}[1]{\gdef\insertfootlineextra{#1}}
+\newbox\footlineextrabox
+
+
+% add a beamer template that sets the saved argument in a box.
+% The * means that the beamer font and color "footline extra" are automatically added.
+\defbeamertemplate*{footline extra}{default}{
+    %\begin{beamercolorbox}[ht=2.25ex,dp=1ex,leftskip=\Gm@lmargin]{footline extra}
+    \begin{beamercolorbox}[ht=0.37cm,dp=0.25cm,wd=0.4\paperwidth,left,leftskip=2ex]{footline extra}
+    \insertfootlineextra
+    %\par\vspace{2.5pt}
+    \end{beamercolorbox}
+}
+
+\defbeamertemplate{background canvas}{plain}{}
+
+\defbeamertemplate{footline}{large}
+{%
+    \pgfdeclarehorizontalshading{bgshading}{0.62cm}{color(0cm)=(kulleft); color(\the\paperwidth)=(kulright)}%
+    \vskip.3cm% make room for the logo
+    \parbox[t][0.62cm]{\paperwidth}{\pgfuseshading{bgshading}}\par%
+    \vskip-0.62cm%
+    \begin{beamercolorbox}[ht=0.37cm,dp=0.25cm,center]{page number in head/foot}%
+    \insertframenumber$if(show-total-number-of-slides)$~/ \inserttotalframenumber$endif$%
+    \end{beamercolorbox}%
+    \vskip-0.92cm%
+    \parbox[t][0.92cm]{\paperwidth}{\hskip10.33cm\includegraphics[width=2.10cm]{templates/kuleuven}}\par%
+
+    % set the box with the extra footline material but make it add no vertical space
+    \setbox\footlineextrabox=\vbox{\usebeamertemplate*{footline extra}}
+    \vskip -\ht\footlineextrabox
+    \vskip -\dp\footlineextrabox
+    \box\footlineextrabox%
+}
+
+% patch \begin{frame} to reset the footline extra material
+\makeatletter
+\let\beamer@original@frame=\frame
+\def\frame{\gdef\insertfootlineextra{}\beamer@original@frame}
+\footlineextra{}
+\makeatother
+
+
+\defbeamertemplate{footline}{nopagenumber}
+{%
+    \pgfdeclarehorizontalshading{bgshading}{0.62cm}{color(0cm)=(kulleft); color(\the\paperwidth)=(kulright)}%
+    \vskip.3cm% make room for the logo
+    \parbox[t][0.62cm]{\paperwidth}{\pgfuseshading{bgshading}}\par%
+    \vskip-0.62cm%
+    \begin{beamercolorbox}[ht=0.37cm,dp=0.25cm,center,ignorebg]{page number in head/foot}%
+    %
+    \end{beamercolorbox}%
+    \vskip-0.92cm%
+    \parbox[t][0.92cm]{\paperwidth}{\hskip10.33cm\includegraphics[width=2.10cm]{templates/kuleuven}}\par%
+}
+
+\defbeamertemplate{footline}{small}
+{%
+    \vskip.3cm% make room for the logo
+    \begin{beamercolorbox}[ht=0.37cm,dp=0.25cm,center,ignorebg]{normal text}%
+    \mdseries\insertframenumber$if(show-total-number-of-slides)$~/ \inserttotalframenumber$endif$%
+    \end{beamercolorbox}%
+}
+
+\setbeamertemplate{footline}[large]
+
+\setbeamertemplate{frametitle}
+{%
+    \nointerlineskip%
+    \vskip.28cm%
+    {\usebeamercolor[fg]{framesubtitle}\usebeamerfont{framesubtitle}\insertsupertitle\strut\par}%
+    \vskip-.2cm%
+    {\usebeamercolor[fg]{frametitle}\usebeamerfont{frametitle}\insertframetitle\strut\par}%
+    \vskip-.3cm%
+}
+
+\setbeamertemplate{title page}
+{
+    \vbox{}%
+    \vskip2.8cm%
+    \vbox to 6.5cm{%
+        \hskip2.8cm%
+        \begin{minipage}{7.9cm}
+            \begin{beamercolorbox}{title}
+                \usebeamerfont{title}%
+                \inserttitle\par%
+                \ifx\insertsubtitle\undefined%
+                \else%
+                    \vskip0.25em%
+                    {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
+                \fi%
+            \end{beamercolorbox}%
+            \vskip1em\par
+            \begin{beamercolorbox}{author}
+                \usebeamerfont{author}\usebeamercolor[fg]{subtitle}%
+                \insertauthor
+            \end{beamercolorbox}
+            \begin{beamercolorbox}{institute}
+                \usebeamerfont{institute}\usebeamercolor[fg]{subtitle}%
+                \insertinstitute
+                \end{beamercolorbox}
+            \begin{beamercolorbox}{date}
+                \usebeamerfont{date}\usebeamercolor[fg]{subtitle}%
+                \insertdate
+            \end{beamercolorbox}%
+        \end{minipage}%
+        \vfill
+    }
+}
+
+\mode<all>
+
+\newcommand{\inlinesound}[2]{\movie[inlinesound,encoding=Signed,samplingrate=44100]{#1}{#2}}
+
+% disable for now as otherwise all commands that go between frames generated by
+% the filter will result in duplicate toc lines
+\renewcommand{\addcontentsline}[3]{}
+
+\newcommand{\largefooter}{\setbeamertemplate{footline}[large]}
+\newcommand{\emptyfooter}{\setbeamertemplate{footline}[nopagenumber]}
+\newcommand{\smallfooter}{\setbeamertemplate{footline}[small]}
+\newcommand{\nofooter}{\setbeamertemplate{footline}[nofooter]}
+
+\newcommand{\sectiontoc}{\AtBeginSection[]{{
+    \nosupertitle
+    \emptyfooter
+    \begin{frame}[noframenumbering]{Outline}
+        $if(multicolstoc)$
+        \begin{multicols}{2}
+        $endif$
+        \tableofcontents[currentsection]
+        $if(multicolstoc)$
+        \end{multicols}
+        $endif$
+    \end{frame}
+    \largefooter
+}}}
+
+\newcommand{\subsectiontoc}{\AtBeginSubsection[]{{
+    \nosupertitle
+    \emptyfooter
+    \begin{frame}[noframenumbering]{Outline}
+        $if(multicolstoc)$
+        \begin{multicols}{2}
+        $endif$
+        \tableofcontents[currentsection,currentsubsection]
+        $if(multicolstoc)$
+        \end{multicols}
+        $endif$
+   \end{frame}
+    \largefooter
+}}}
+
+\newcommand{\notoc}{\AtBeginSection[]{}\AtBeginSubsection[]{}}
+
+\newcommand{\nosupertitle}{\renewcommand{\insertsupertitle}{}}
+\newcommand{\sectiontitle}{\renewcommand{\insertsupertitle}{\insertsectionhead}}
+\newcommand{\subsectiontitle}{\renewcommand{\insertsupertitle}{\insertsectionhead\ifx\insertsubsectionhead\empty\else{} -- \insertsubsectionhead\fi}}
+
+% animations do not work atm as figures are set on independent frames
+\newcommand{\slidefig}[2]{\usebackgroundtemplate{\parbox[c][\paperheight][c]{\paperwidth}{\centering\includegraphics#1[height=\paperheight,width=\paperwidth,keepaspectratio]{#2}}}\begin{frame}[plain]\end{frame}\usedefaultcanvas}
+
+\newcommand{\usedefaultcanvas}{\setbeamertemplate{background canvas}[\defaultcanvas]}
+\newcommand{\gridcanvas}{\renewcommand{\defaultcanvas}{grid}\usedefaultcanvas}
+\newcommand{\plaincanvas}{\renewcommand{\defaultcanvas}{plain}\usedefaultcanvas}
+
+\newcommand{\insertsupertitle}{}
+$if(sectiontitle)$\sectiontitle$endif$
+$if(subsectiontitle)$\subsectiontitle$endif$
+
+$if(sectiontoc)$\sectiontoc$endif$
+$if(subsectiontoc)$\subsectiontoc$endif$
+
+\newcommand{\defaultcanvas}{plain}
+$if(gridcanvas)$\gridcanvas$endif$
+
+% Defining a new coordinate system for the page:
+%
+% ----------------
+% |(0,1)    (1,1)|
+% |              |
+% |(0,0)    (1,0)|
+% ----------------
+\makeatletter
+\def\parsecomma#1,#2\endparsecomma{\def\page@x{#1}\def\page@y{#2}}
+\tikzdeclarecoordinatesystem{page}{
+    \parsecomma#1\endparsecomma
+    \pgfpointanchor{current page}{north east}
+    % Save the upper right corner
+    \pgf@xc=\pgf@x%
+    \pgf@yc=\pgf@y%
+    % save the lower left corner
+    \pgfpointanchor{current page}{south west}
+    \pgf@xb=\pgf@x%
+    \pgf@yb=\pgf@y%
+    % Transform to the correct placement
+    \pgfmathparse{(\pgf@xc-\pgf@xb)*\page@x+(\pgf@xb)}
+    \expandafter\pgf@x\expandafter=\pgfmathresult pt
+    \pgfmathparse{(\pgf@yc-\pgf@yb)*\page@y+(\pgf@yb)}
+    \expandafter\pgf@y\expandafter=\pgfmathresult pt
+}
+\makeatother
+
+% Example:
+%\begin{tikzpicture}[remember picture,overlay,every node/.style={anchor=center}]
+%  \node at (page cs:0.5,0.3) {0.5,0.3};
+%  \node at (page cs:0,0) {0,0};
+%  \draw(page cs:0,0) -- (page cs:1,1);
+%  \draw[thick,red] (page cs:0,0) rectangle (page cs:1,1);
+%  \draw[thick,green] (page cs:0.2,0.2) rectangle (page cs:0.8,0.8);
+%\end{tikzpicture}
+
+$if(numbersections)$
+\setcounter{secnumdepth}{5}
+$else$
+\setcounter{secnumdepth}{0}
+$endif$
+
+$if(title)$
+\title{$title$}
+$endif$
+$if(subtitle)$
+\subtitle{$subtitle$}
+$endif$
+$if(author)$
+\author{$for(author)$\mbox{$author$}$sep$ \and $endfor$}
+$endif$
+$if(date)$
+\date{$date$}
+$endif$
+\institute{$institute$}
+
+$for(header-includes)$
+$header-includes$
+$endfor$
+
+\begin{document}
+
+\setbeamertemplate{background canvas}[title]
+
+\begin{frame}[plain,noframenumbering]
+    \titlepage
+\end{frame}
+
+\usedefaultcanvas
+
+$for(include-before)$
+$include-before$
+$endfor$
+
+$if(toc)$
+\emptyfooter
+\begin{frame}[noframenumbering]{Outline}
+    $if(multicolstoc)$
+    \begin{multicols}{2}
+    $endif$
+    \tableofcontents
+    $if(multicolstoc)$
+    \end{multicols}
+    $endif$
+\end{frame}
+\largefooter
+$endif$
+
+$body$
+
+$if(biblatex)$
+\nosupertitle
+\begin{frame}[allowframebreaks]{Bibliography}
+    \printbibliography
+\end{frame}
+$endif$
+
+$for(include-after)$
+$include-after$
+$endfor$
+
+\end{document}

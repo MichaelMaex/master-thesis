@@ -1,0 +1,85 @@
+%% Creator: Inkscape 1.0beta2 (2b71d25, 2019-12-03), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'type-in-and-ins.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{510.22499084bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.33602824)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{type-in-and-ins.pdf}}%
+    \put(0.25330487,0.19917685){\color[rgb]{0.94509804,0.54901961,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.24954065,0.28375468){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathrm I_0$\end{tabular}}}}%
+    \put(0.34087477,0.28375424){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathrm I_1$\end{tabular}}}}%
+    \put(0.46580495,0.28375424){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathrm I_n$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{type-in-and-ins.pdf}}%
+    \put(0.31640395,0.10193607){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{type-in-and-ins.pdf}}%
+    \put(0.91446011,0.2071007){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{type-in-and-ins.pdf}}%
+    \put(0.87041645,0.20698722){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
+    \put(0.80479878,0.2071007){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
+    \put(0.7702796,0.20710144){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{type-in-and-ins.pdf}}%
+    \put(0.62427871,0.2070447){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
+    \put(0.06188814,0.28105514){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Type\end{tabular}}}}%
+    \put(0.62027871,0.28375468){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathrm I_0^*$\end{tabular}}}}%
+    \put(0.82030959,0.28375453){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathrm I_n^*$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{type-in-and-ins.pdf}}%
+    \put(0.06188814,0.17438102){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Dual graph\end{tabular}}}}%
+    \put(0.0610857,0.05550934){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Length\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{type-in-and-ins.pdf}}%
+    \put(0.24954065,0.05844996){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0$\end{tabular}}}}%
+    \put(0.3335971,0.05844996){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$1$\end{tabular}}}}%
+    \put(0.46415186,0.05844966){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$n$\end{tabular}}}}%
+    \put(0.62475674,0.05845069){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0$\end{tabular}}}}%
+    \put(0.83057623,0.05844981){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$n / 2$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{type-in-and-ins.pdf}}%
+  \end{picture}%
+\endgroup%

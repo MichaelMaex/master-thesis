@@ -1,0 +1,71 @@
+%% Creator: Inkscape 1.0beta2 (2b71d25, 2019-12-03), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'terminology.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{510.22499084bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.34749375)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0.41887314,0.3161245){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sC$\end{tabular}}}}%
+    \put(0.32472879,0.05268969){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\spec R$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{terminology.pdf}}%
+    \put(0.44032779,0.28056343){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sC_\eta$\end{tabular}}}}%
+    \put(0.53008084,0.28056372){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sC_s$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{terminology.pdf}}%
+    \put(0.44447758,0.03457621){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\eta$\end{tabular}}}}%
+    \put(0.54268675,0.0345771){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathfrak m$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{terminology.pdf}}%
+    \put(0.12848082,0.21548317){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}generic fiber $\sC_\eta = \sC_K$\end{tabular}}}}%
+    \put(0.64754726,0.23610363){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}special fiber $\sC_s = \sC_k$\end{tabular}}}}%
+    \put(0.64754755,0.19101837){\color[rgb]{0.94117647,0.51372549,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}irreducible component of $\sC_s$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{terminology.pdf}}%
+    \put(0.64505233,0.14428487){\color[rgb]{0.16470588,0.6,0.83921569}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}intersection point\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

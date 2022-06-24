@@ -1,0 +1,303 @@
+% KU Leuven latex poster template
+%
+% © 2017 Benjamin Dieudonné
+%
+% This work is licensed under the Creative Commons Attribution 3.0 Unported License.
+% To view a copy of this license, visit
+% http://creativecommons.org/licenses/by/3.0/ or send a letter to Creative
+% Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
+
+\documentclass[english,xcolor=table,t
+$if(classoptions)$
+    ,$classoptions$
+$endif$
+]{beamer}
+
+\usepackage[size=custom,width=100,height=100
+$if(posteroptions)$
+    ,$posteroptions$
+$endif$
+]{templates/beamerposter}
+
+% PACKAGES
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage[nolist,nohyperlinks]{acronym}
+\usepackage{babel,lmodern,graphicx,mathptmx,xspace,wasysym,microtype,booktabs,tabularx,relsize,textcomp,longtable,lipsum,colortbl,eurosym,url,multicol,etoolbox,multimedia,pdfpages,fixltx2e,ifluatex,epstopdf}
+\usepackage[olditem,oldenum]{paralist}
+\usepackage[babel=true]{csquotes}
+\usepackage[thinqspace,amssymb,textstyle]{SIunits}
+\usepackage[textsize=tiny]{todonotes}
+\usepackage[symbol]{footmisc}
+\usepackage[notquote]{hanging}
+\usepackage[normalem]{ulem}
+\usepackage{changepage}
+
+\pdfstringdefDisableCommands{\renewcommand{\sout}{}}
+\graphicspath{{figures/}}
+% Fix sort order in case the same file exists with multiple extensions
+\DeclareGraphicsExtensions{.pdf,.png,.jpeg,.jpg,.eps}
+\frenchspacing
+
+\input{templates/definitions.tex}
+
+$if(biblatex)$
+\usepackage[style=authoryear-comp,natbib=true,backend=bibtex]{biblatex}
+\ExecuteBibliographyOptions{
+    bibencoding=ascii,
+    texencoding=utf8,
+    backref=false,
+    dashed=false,                                    % no dash instead of recurring author and editor names
+    maxnames=2,
+    maxbibnames=99,
+    uniquename=init,firstinits=true,terseinits=true, % only care about initials
+    useprefix=true,                                  % sort van Wieringen correctly
+    sortcites=false,                                 % do not sort multiple citations
+    doi=false,
+    url=false,
+$if(biboptions)$
+    ,$biboptions$
+$endif$
+}
+\AtEveryBibitem{\clearfield{month}}
+\DeclareFieldFormat{eprint:pubmed}{\iffootnote{}{\mkbibacro{PMID}\addcolon\space
+  \ifhyperref
+    {\href{http://www.ncbi.nlm.nih.gov/pubmed/#1}{\nolinkurl{#1}}}
+    {\nolinkurl{#1}}}}
+\DeclareFieldFormat{isbn}{\iffootnote{}{\mkbibacro{ISBN}\addcolon\space
+  \ifhyperref{\href{http://amzn.com/#1}{\nolinkurl{#1}}}{\nolinkurl{#1}}}}
+\DeclareFieldFormat{issn}{}
+\setlength\bibhang{2em}
+$endif$
+
+$if(biblio-files)$
+\addbibresource{$biblio-files$}
+$endif$
+
+
+% blocks
+\newcommand\ncol{2} % for margins
+\newcommand\marginfactor{1} % for larger/smaller margin (default: 1, 0 means no margins between blocks)
+\newcommand\paddingfactor{1} % for larger/smaller padding (default: 1, 0 means no padding within)
+
+% font sizes: large, Large, LARGE, huge, Huge, veryHuge, VeryHuge, VERYHuge
+
+\setbeamerfont{title in headline}{$if(titlefont)$$titlefont$$else$size=\VERYHuge,series=\bfseries$endif$}
+\setbeamerfont{author in headline}{$if(authorfont)$$authorfont$$else$size=\veryHuge$endif$}
+\setbeamerfont{institute in headline}{$if(institutefont)$$institutefont$$else$size=\huge$endif$}
+
+\setbeamerfont{block title}{size=\huge,series=\bfseries}
+\setbeamerfont{block body}{$if(bodyfont)$$bodyfont$$else$size=\normalsize$endif$}
+
+\setbeamerfont{structure}{size=\LARGE} % subtitles
+\setbeamerfont*{item}{parent=normal text}
+\setbeamerfont{caption}{$if(bodyfont)$$bodyfont$$else$size=\normalsize$endif$}
+
+\setbeamerfont{itemize/enumerate subbody}{$if(bodyfont)$$bodyfont$$else$size=\normalsize$endif$} %to set the body size
+
+% POSTER INFO
+$if(title)$
+\title{$title$}
+$endif$
+$if(author)$
+\author{$for(author)$$author$$sep$ \and $endfor$}
+$endif$
+\institute{$institute$}
+
+\newcommand\posterurl{$web$}
+\newcommand\posterlonginstitute{$longinstitute$}
+\newcommand\posteremail{$email$}
+
+
+
+\pdfstringdefDisableCommands{\renewcommand{\sout}{}}
+\graphicspath{{figures/}}
+% Fix sort order in case the same file exists with multiple extensions
+\DeclareGraphicsExtensions{.pdf,.png,.jpeg,.jpg,.eps}
+\frenchspacing
+
+% beamer
+\mode<presentation>
+
+% POSTER DIMENSIONS
+% header
+\newlength{\headerheight}
+\setlength\headerheight{$if(headerheight)$$headerheight$$else$15cm$endif$}
+\deflen{titlemargin}{1.5cm} % margin under title
+\deflen{authormargin}{1cm} % margin under authors
+
+
+% derived dimensions (logo size, margins, ...)
+\newbox{\layoutbox}
+\deflen{logowidth}{\headerheight}
+\deflen{logoheight}{\logowidth*\ratio{236px}{661px}}
+\deflen{margin}{\marginfactor\logoheight*\ratio{1px}{2px}}
+\deflen{keyheight}{0.9\headerheight}
+\deflen{keywidth}{\keyheight*\ratio{269px}{576px}}
+\deflen{colwidth}{\paperwidth*\ratio{1px}{\ncol px}-\margin-\margin*\ratio{1px}{\ncol px}}
+
+\deflen{padding}{\paddingfactor\logoheight*\ratio{1px}{3px}}
+
+% some useful commands
+\newcommand{\blocksubtitle}[1]{ \structure{ \textbf{#1} } \\}
+\newcommand{\blockhrule}{ \vskip -1.3cm \rule{\textwidth-2\padding}{1pt} \vskip -0.8cm}
+\newenvironment{vfillcolumn}[1]{%
+\begin{column}{#1}
+\minipage[c][\textheight][s]{#1}
+\vskip \margin
+}{%
+\endminipage
+\end{column}
+}
+
+% beamer colors
+\setbeamercolor{background canvas}{bg=kulbg}
+
+\setbeamercolor{headline}{fg=white,bg=kulbg}
+\setbeamercolor{whitespace}{fg=white,bg=white}
+
+\setbeamercolor{footline}{fg=white,bg=kulbg}
+\setbeamerfont{footline}{size=\normalsize}
+
+\setbeamercolor*{normal text}{fg=kullight}
+
+\setbeamercolor*{block body}{bg=kullight,fg=kuldark}
+\setbeamercolor*{block title}{bg=kullight,fg=kuldark}
+\setbeamercolor*{block title example}{bg=kullight,fg=kuldark}
+\setbeamercolor*{block body example}{bg=kullight,fg=kuldark}
+
+\setbeamercolor{structure}{fg=kuldark}
+\setbeamercolor*{item}{fg=kuldark}
+\setbeamercolor{caption}{fg=kuldark}
+
+\setbeamercolor{}{fg=kuldark} % e.g. figure caption
+
+
+% beamer templates
+\setbeamertemplate{navigation symbols}{} % no navigation on a poster
+
+\setbeamertemplate{headline}{%
+  \begin{beamercolorbox}[ht=0.9\logoheight,wd=\paperwidth]{whitespace}%
+
+  \end{beamercolorbox}
+    \vskip-0.4\logoheight
+    \leftskip0.5\logoheight
+    \begin{beamercolorbox}[ht=\logoheight,wd=\logowidth]{whitespace}%
+    	\includegraphics[height=\logoheight]{templates/kuleuven}
+    \end{beamercolorbox}
+
+    \leftskip0ex
+    \begin{beamercolorbox}[wd=\paperwidth]{headline}%
+      \begin{columns}[T,totalwidth=\paperwidth]
+        \begin{column}{0.9\logoheight} \end{column} % margin
+
+        \begin{column}{\paperwidth-1.4\logoheight-\keywidth}
+          \vskip0.5\logoheight
+          {\usebeamerfont{title in headline}\inserttitle \\[\titlemargin]}
+          {\usebeamerfont{author in headline}\insertauthor \\[\authormargin]}
+          {\usebeamerfont{institute in headline}\insertinstitute }
+        \end{column}
+
+        \begin{column}{\keywidth}
+          \vskip-0.3\logoheight
+          \raggedleft\includegraphics[height=\keyheight]{templates/key}
+        \end{column}
+        \begin{column}{0.5\logoheight} \end{column} % margin
+      \end{columns}
+    \end{beamercolorbox}
+}
+
+\setbeamertemplate{footline}{
+  \begin{beamercolorbox}[ht=0.6\logoheight,leftskip=1.6\margin,rightskip=1.6\margin]{footline}%
+    \url{\posterurl} \hfill \posterlonginstitute \hfill \texttt{\posteremail}
+    \vskip 0.25\logoheight
+  \end{beamercolorbox}
+}
+
+\setbeamertemplate{block begin}{%
+\begin{beamercolorbox}[rounded=false,shadow=false]{block body}%
+  \begin{beamercolorbox}[ht=0.5\logoheight,dp=0.9ex,rounded=false,shadow=false]{block title}%
+     \begin{adjustwidth}{\padding}{\padding}
+	     \usebeamerfont*{block title}\insertblocktitle
+     \end{adjustwidth}
+  \end{beamercolorbox}%
+
+  \begin{beamercolorbox}[ht=6pt,rounded=false,shadow=false]{block title}%
+    \leftskip0.3\padding \rule{\textwidth-0.6\padding}{6pt}
+  \end{beamercolorbox}%
+
+  \usebeamerfont{block body}%
+  \begin{beamercolorbox}[rounded=false,shadow=false,leftskip=0cm,vmode,rightskip=0cm]{block body}%
+  \begin{adjustwidth}{\padding}{\padding}
+    \parskip1em
+}
+
+\setbeamertemplate{block end}{
+	\vskip0.1em
+	\end{adjustwidth}
+	\end{beamercolorbox}
+\end{beamercolorbox}
+	  \vskip\margin
+}
+
+\setbeamertemplate{block example begin}{%
+  \usebeamerfont{block body}%
+  \begin{beamercolorbox}[rounded=false,shadow=false,leftskip=0cm,vmode,rightskip=0cm]{block body example}%
+  \begin{adjustwidth}{\padding}{\padding}
+    \parskip1em
+}
+
+\setbeamertemplate{block example end}{
+	\vskip0.1em
+	\end{adjustwidth}
+	\end{beamercolorbox}
+	  \vskip\margin
+}
+
+%\setbeamertemplate{structure text begin}{\vskip.4em}
+
+\setbeamertemplate{itemize/enumerate body begin}{
+\begin{minipage}{\dimexpr\textwidth-0.3\logoheight}
+\begin{adjustwidth}{0px}{0.3\logoheight}
+}
+
+\setbeamertemplate{itemize/enumerate body end}{
+\end{adjustwidth}
+\end{minipage}
+}
+
+\setbeamertemplate{itemize items}[square]
+
+\setbeamertemplate{bibliography item}{\hskip\dimexpr0.5em+0.8cm\relax}
+
+\setbeamertemplate{caption}{%
+	\usebeamercolor[fg]{caption name}%
+	\usebeamerfont*{caption name}%
+	\insertcaptionname~\insertcaptionnumber:~%
+	\insertcaption\par
+}
+
+$for(header-includes)$
+$header-includes$
+$endfor$
+
+\begin{document}
+
+$for(include-before)$
+$include-before$
+$endfor$
+
+\begin{frame}
+
+$body$
+
+\end{frame}
+
+$for(include-after)$
+$include-after$
+$endfor$
+
+\end{document}
+
+%\begin{vfillcolumn}{\colwidth}

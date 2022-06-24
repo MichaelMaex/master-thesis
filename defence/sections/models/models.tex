@@ -1,0 +1,166 @@
+\subsection{Normed fields} \label{sec:normed_fields}
+
+\begin{frame}
+	\begin{minipage}[t]{.60\textwidth}
+	\begin{definition}
+		A \emph{normed ring} is a ring  $A$ with a function \[ 
+			|\cdot |:A  \longrightarrow \R_{\ge 0}
+		.\]
+	such that 
+	\begin{itemize}
+		\item $|1| = 1, |0| = 0$
+		\item $|a \cdot b| = |a | \cdot |b|$ 
+		\item $|a + b| \le |a| + |b|$
+	\end{itemize}
+	\end{definition}
+	\end{minipage}
+	\;
+	\begin{minipage}[t]{.35\textwidth}
+		\begin{examples}
+			\[
+			\C,\quad \R,\quad \Z,\quad \Q
+			.\] 
+		\end{examples}	
+	\end{minipage}
+
+	\medskip 
+	\pause
+
+	\begin{minipage}{.60\textwidth}
+		$A$ is \emph{non-archimedean} if moreover 
+	\begin{itemize}
+		\item $|a + b| \le \max(|a|, |b|)$
+	\end{itemize}
+	\end{minipage}
+	\;
+	\begin{minipage}{.35\textwidth}
+		\begin{examples}
+			\begin{itemize}
+				\item $\Z_p \leadsto \Q_p$
+				\item $\C\llbracket t \rrbracket \leadsto \C((t))$
+			\end{itemize}
+		\end{examples}
+	\end{minipage}
+\end{frame}
+\begin{frame}
+	\begin{minipage}[t]{.70 \textwidth}
+	\begin{notation}
+	\begin{itemize}
+		\item $K$ non-archimedean discretely valued complete normed field with $\ch K = 0$
+		\item $R = \{a \in K \st |a| \le 1\} $. 
+		\item $\mathfrak{m} = \{a \st |a| < 1\} $
+		\item $k = \frac{R}{\mathfrak{m} }$ is algebraically closed
+	\end{itemize}
+	\end{notation}
+	\end{minipage}
+	\pause
+	\;\;
+	\begin{minipage}[t]{.2\textwidth}
+		\begin{example}
+			\begin{itemize}
+				\item $K = \C((t))$ 
+				\item $R = \C\llbracket t \rrbracket $ 
+				\item $\mathfrak{m}  = t\cdot \C\llbracket t \rrbracket $ 
+				\item $k = \C$
+			\end{itemize}
+		\end{example}
+		
+	\end{minipage}
+	\pause
+	\bigskip
+
+	Geometrically:
+\begin{figure}
+    \centering
+    \incfig{inclusion-of-k-in-r}
+\end{figure}
+
+\end{frame}
+
+\subsection{Models of curves} \label{sec:models_of_curves}
+\begin{frame}
+	\begin{definition}
+		A \emph{curve} is a geometrically connected smooth projective $1$-dimensional $K$-variety.\\
+		\only<1>{\phantom{A \emph{model} of a curve $C$  is a normal proper flat $R$-scheme $\sC$ such that $\sC_\eta \simeq C$.}}
+		\only<2>{A \emph{model} of a curve $C$  is a normal proper flat $R$-scheme $\sC$ such that $\sC_\eta \simeq C$.}
+	\end{definition}
+	
+	\only<1>{\incfig{first-model_1}}
+	\only<2>{\incfig{first-model}}
+\end{frame}
+
+
+\begin{frame}{terminology}
+\begin{figure}[ht]
+    \centering
+    \incfig{terminology}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}
+	What kinds of models exist?\[
+		C = \proj \frac{K[X_1, \ldots, X_n]}{(f_1, \ldots, f_n)}
+		\leadsto \sC = N\left(\proj \frac{R[X_1, \ldots, X_n]}{(f_1, \ldots, f_n)}\right)
+	.\] 
+	\pause
+	Resolution of singularities $\leadsto $ regular model 
+	\[
+	\sC _\text{reg}  \longrightarrow \sC 
+	.\] \pause
+	\begin{definition}
+		A an \emph{snc-model} is regular, each component of $\sC_s$ and at every intersection points exactly two components intersect with multiplicity 1. 
+	\end{definition}
+	\pause
+	Further blowups \[
+	\mathscr \sC_\text{snc} \longrightarrow \mathscr \sC_\text{reg} \longrightarrow \mathscr \sC
+	.\] 
+\end{frame}
+
+\begin{frame}
+	If $\sC_1, \sC_2$ are regular models of $C$, $f: \sC_1 \to \sC_2$.
+\incfig{contraction}
+	$\leadsto$ partial order the set of models of $C$. 
+	\[
+	\mathscr C_2 \ge \mathscr C_1
+	.\] 
+\begin{theorem}
+		If $C$ is a curve with $g(C) \ge 1$ then $C$ has a minimal regular model and minimal snc-model.
+\end{theorem}
+\end{frame}
+
+\begin{frame}
+\begin{figure}[ht]
+    \centering
+    \incfig{dual-graphs}
+    \caption{dual graphs}
+    \label{fig:dual-graphs}
+\end{figure}
+\end{frame}
+
+
+
+\subsection{Kodaira-Neron classification} \label{sec:kodaira-neron_classification}
+
+\begin{frame}{Kodaira-Neron Classification of Elliptic Curves}
+	Classification of elliptic curves by the dual graphs of their minimal snc model
+		\pause
+	\begin{figure}[ht]
+    \centering
+    \incfig{kn-dual-graphs}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+	Each edge in the dual graph has a length
+\begin{figure}[ht]
+    \centering
+    \incfig{type-in-and-ins}
+\end{figure}
+\end{frame}
+
+
+
+
+
