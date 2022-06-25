@@ -1,23 +1,135 @@
-\begin{frame}{Question}
+\begin{frame}
 	\begin{minipage}[t]{.7\textwidth}
 	Elliptic curve $E$	
 	\[
-		E: y^2 = x(x-1)(x-\lambda)
+		E: y^2 = x(x-1)(x-\lambda), \quad \lambda = u\cdot \pi^{n}
 	.\] 
 	Consider the projection to $x$-axis 
 	\[
 	f: E \to \pro^{1}_K
 	.\] 
-	This is ramified over 4 points 
 	\end{minipage}
 	\begin{minipage}[t]{.29\textwidth}
     \incfig{ramified-map}
 	\end{minipage}
 
 
-	Question: 
-	Find type of $E$ via \[
-	f\an : E\an \to \pro^{1, \text{an}}_K
+	\begin{question}
+	Find reduction type of $E$/understand $E\an$ via \[
+	\phi = f\an : E\an \to \pro^{1, \text{an}}_K
 	.\] 
+	\end{question}
 
+\end{frame}
+\begin{frame}
+	${\color{orange} \Gamma_\lambda} = $ convex hull of $0, \lambda, 1, \infty$.
+\begin{figure}[ht]
+    \centering
+    \incfig{gamma-lambda}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}
+\begin{figure}[ht]
+    \centering
+    \incfig{skeleton-pair}
+\end{figure}
+Line $[a, b] = \sk(\mathscr P)$ has length  $n$. 
+\end{frame}
+\begin{frame}{Two options}
+	\begin{minipage}[t]{.48\textwidth}
+		\begin{enumerate}
+		\item If $\ch k \ne 2$, \emph{tame ramification}: \begin{align*}
+				\underbrace{\wt_{f^*\omega}}_{\text{on }E\an} &= \underbrace{\wt_{\omega}}_{\text{on }\pro^{1, \text{an}}_K} \mathbin{\circ} \phi
+			\end{align*}
+			\pause
+			\[
+				\implies \sk(E) = \phi^{-1}(\sk(\sP))
+			\]
+	\end{enumerate}
+	\pause
+
+	\end{minipage}
+	\;
+	\begin{minipage}[t]{.48\textwidth}
+	\begin{enumerate}
+		\setcounter{enumi}{1}
+		\item If $\ch k = 2$, \emph{wild ramification}:
+			\[
+				\wt_{f^* \omega} = \wt_{\omega} \circ \phi + \underbrace{\mathfrak{d} _f}_{\text{error}}
+			.\] 
+			\pause
+			\[
+				\redout{\text{$\implies \sk(E) = \phi^{-1}(\sk(\sP))$}}
+			.\] 
+	\end{enumerate}
+	\end{minipage}
+	\pause
+	\medskip
+	\begin{block}{Assumption}
+		For now $\ch k \ne 2$
+	\end{block}
+
+\end{frame}
+
+\begin{frame}[t]
+	\begin{minipage}[t]{.7\textwidth}
+		
+		\begin{block}{Fact}
+			$|\phi^{-1}(y)| = 1 \text{ or } 2$
+		\end{block}
+		\begin{minipage}[t]{.49\textwidth}
+			$\sk(E)$ is either
+			\begin{itemize}
+				\item circle if $\mathrm I_m, m >0$
+				\item line if $\mathrm I_{m}^*, m > 0$
+				\item point otherwise
+			\end{itemize}
+		\end{minipage}
+		\begin{minipage}[t]{.49\textwidth}
+			$\sk(\mathscr P)$ is either
+			\begin{itemize}
+				\item line if $n > 0$ 
+				\item point if $n = 0$
+			\end{itemize}
+		\end{minipage}
+		
+		\only<2>{
+		\begin{align*}
+			n > 0 &\iff E \text{ has type } \mathrm I_m \text{ or } \mathrm I_{m}^*, m > 0 \\
+			n = 0 &\iff E \text{ has type } \mathrm{I}_0, \mathrm I_0^*, \mathrm{II}, \mathrm{II}^*,\mathrm{III}, \mathrm{III}^*, \mathrm{IV}, \mathrm{IV}^*
+	.\end{align*}}
+		\only<3>{
+		\begin{align*}
+			n > 0 &\iff E \text{ has type } \mathrm I_{2n}  \\
+			n = 0 &\iff E \text{ has type } \mathrm{I}_0
+	.\end{align*}}
+	\end{minipage}
+	\begin{minipage}[t]{.29\textwidth}
+    \incfig{sk-e-to-p}
+	\end{minipage}
+\end{frame}
+\begin{frame}
+	If $E$ has type $I_m$, i.e. $\sk(E)$ is a circle.
+	\begin{figure}
+		\incfig{argument-in}
+	\end{figure}
+	\pause
+    $\leadsto$ $E$ is of type $\mathrm I_{2n}$.
+\end{frame}
+\begin{frame}
+	In thesis we distinguish between $\mathrm I_m$ and $\mathrm I_m^*$
+	\begin{block}
+		{Conlusion}
+		If $\ch K \ne 2$ then is of type $I_{2n}$ when $\lambda = u \cdot \pi^{n}$ and $n \ge 0$. 
+	\end{block}
+\end{frame}
+\begin{frame}
+	{Wild ramification, $\ch k = 2$}
+
+	\begin{block}{Assumptions}
+
+	\end{block}
 \end{frame}

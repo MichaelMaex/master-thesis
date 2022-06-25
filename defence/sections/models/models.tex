@@ -1,6 +1,6 @@
 \subsection{Normed fields} \label{sec:normed_fields}
 
-\begin{frame}
+\begin{frame}[fragile]
 	\begin{minipage}[t]{.60\textwidth}
 	\begin{definition}
 		A \emph{normed ring} is a ring  $A$ with a function \[ 
@@ -12,34 +12,37 @@
 		\item $|a \cdot b| = |a | \cdot |b|$ 
 		\item $|a + b| \le |a| + |b|$
 	\end{itemize}
+
+	\medskip
+
+	\only<2>{ $A$ is \emph{non-archimedean} if moreover}
+	\only<1>{\phantom{ $A$ is \emph{non-archimedean} if moreover}}
+	\begin{itemize}
+		\item<2-> $|a + b| \le \max(|a|, |b|)$
+\end{itemize}
 	\end{definition}
 	\end{minipage}
 	\;
 	\begin{minipage}[t]{.35\textwidth}
 		\begin{examples}
+		\only<1>{\phantom{archimedean:}}
+		\only<2>{archimedean:}
 			\[
-			\C,\quad \R,\quad \Z,\quad \Q
-			.\] 
-		\end{examples}	
-	\end{minipage}
+				\begin{aligned}
+			\C,\quad \R,\quad \Z,\quad \Q\\
+			\mathrm{abs}:a \mapsto |a|
+				\end{aligned}
+		\]
 
-	\medskip 
-	\pause
+		\bigskip
 
-	\begin{minipage}{.60\textwidth}
-		$A$ is \emph{non-archimedean} if moreover 
-	\begin{itemize}
-		\item $|a + b| \le \max(|a|, |b|)$
-	\end{itemize}
-	\end{minipage}
-	\;
-	\begin{minipage}{.35\textwidth}
-		\begin{examples}
-			\begin{itemize}
-				\item $\Z_p \leadsto \Q_p$
-				\item $\C\llbracket t \rrbracket \leadsto \C((t))$
-			\end{itemize}
-		\end{examples}
+		\only<1>{\phantom{non-archimedean:}}
+		\only<2>{non-archimedean:}
+		\begin{itemize}
+				\item<2-> $\Z_p,\quad |a\cdot p^{n}| = p^{-n}$ $\leadsto \Q_p$
+				\item<2-> $\C\llbracket t \rrbracket,\quad |a\cdot t ^{n}| = e^{-n}$ $\leadsto \C((t))$
+		\end{itemize}	
+	\end{examples}
 	\end{minipage}
 \end{frame}
 \begin{frame}
@@ -99,23 +102,33 @@
 
 
 
-\begin{frame}
+
+\begin{frame}[t]
 	What kinds of models exist?\[
 		C = \proj \frac{K[X_1, \ldots, X_n]}{(f_1, \ldots, f_n)}
 		\leadsto \sC = N\left(\proj \frac{R[X_1, \ldots, X_n]}{(f_1, \ldots, f_n)}\right)
 	.\] 
-	\pause
+	\begin{minipage}{.49\textwidth}
 	Resolution of singularities $\leadsto $ regular model 
 	\[
-	\sC _\text{reg}  \longrightarrow \sC 
-	.\] \pause
-	\begin{definition}
-		A an \emph{snc-model} is regular, each component of $\sC_s$ and at every intersection points exactly two components intersect with multiplicity 1. 
-	\end{definition}
+		\sC _\text{reg}  \longrightarrow \sC 
+	.\]
 	\pause
 	Further blowups \[
 	\mathscr \sC_\text{snc} \longrightarrow \mathscr \sC_\text{reg} \longrightarrow \mathscr \sC
-	.\] 
+	.\]
+	\end{minipage}\;\;
+	\begin{minipage}{.48\textwidth}
+	\begin{definition}
+		A strict normal crossing moddel (\emph{snc-model}) is
+		\begin{itemize}
+			\item regular
+			\item each irreducible component of $\sC_s$ is smooth over $k$
+			\item in each intersection point, exactly 2 components meet transversally
+		\end{itemize}
+	\end{definition}
+	\end{minipage}
+
 \end{frame}
 
 \begin{frame}

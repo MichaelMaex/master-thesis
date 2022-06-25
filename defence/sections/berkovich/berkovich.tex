@@ -17,14 +17,12 @@ subsectionstyle=show/shaded,
 	\pause
 
 	$K$ is complete normed field $\leadsto$ analysis over $K$ 
-	\only<2>{
-	\begin{align*}
+	\only<1,2>{\begin{align*}
 		(\cdot )\an: K\text{-variety} \longrightarrow& K\text{-analytic space} \\
 		C \longmapsto& \text{$C\an =$ closed points ? }\\
-			     &\text{\phantom{$C\an =$ closed points $\cup$ norms on  $K(C)$}}
+			     &\text{ }
   .\end{align*}}
-	\only<3>{
-	\begin{align*}
+	\only<3>{\begin{align*}
 		(\cdot )\an: K\text{-variety} \longrightarrow& K\text{-analytic space} \\
 		C \longmapsto& \text{\redout{$C\an =$ closed points }}\\
 		  &\text{$C\an =$ closed points } \cup \text{ norms on } K(C)
@@ -36,10 +34,52 @@ subsectionstyle=show/shaded,
 \end{frame}
 
 \begin{frame}{Skeleta}
-	snc-models of $C$ $\longleftrightarrow C\an$.
-
+	\begin{minipage}{.49\textwidth}
 	 $\sC$ an snc model of  $C$. 
 	 \begin{align*}
-		 \sk_{\sC}: \Delta(C) &\longrightarrow C\an \\
+		 \sk_{\sC}: \Delta(C) \into C\an
 	 .\end{align*}
+	\end{minipage}\;\;
+	\begin{minipage}{.48\textwidth}
+	 \begin{definition}
+		 The \emph{skeleton} of $\mathscr C$
+	 	\[
+			\sk(\mathscr C) = \im (\sk_{\mathscr C})
+	 	.\] 
+	 \end{definition}
+	\end{minipage}
+
+	\bigskip
+	\pause
+
+	 Conversely \[
+		 C\an = \varprojlim_{\mathscr C \text{ snc-model}} \Delta(\mathscr C)
+	 .\] 
+	 Bonus: metrics glue $\leadsto$ ``$C\an$ is a metric space''
+\end{frame}
+
+
+\begin{frame}
+\begin{figure}[ht]
+    \centering
+    \incfig{embedding-skeleta}
+\end{figure}
+\pause
+$\sk_{\mathscr C}, r_{\sC}$ are homotopy inverses.
+\begin{block}{Slogan}
+	$\sk(C)$ controls the homotopy tye of $C\an$
+\end{block}
+\end{frame}
+\begin{frame}
+	Weight functions $\wt_{\sigma}: C\an \to \left(-\infty, \infty\right]$, $\sigma \in \omega_{C}(C), \sigma \ne 0$
+	\begin{block}{Slogan}
+		$\wt_{\sigma}$ increases away from $\sk(\sC)$ for every $\sC$.
+	\end{block}
+	$\leadsto \sk(E, \sigma) = \minloc(\wt_{\sigma})$ is a piece of every skeleton. 
+	
+	\begin{definition}
+		The \emph{essential skeleton of $C$} is \[
+			\sk(C) = \bigcup_{\sigma }  \sk(C, \sigma)
+		.\] 
+	\end{definition}
 \end{frame}

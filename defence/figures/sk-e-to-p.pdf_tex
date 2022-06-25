@@ -1,6 +1,6 @@
 %% Creator: Inkscape 1.0beta2 (2b71d25, 2019-12-03), www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'ramified-map.pdf' (pdf, eps, ps)
+%% Accompanies image file 'sk-e-to-p.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{176.77499771bp}%
+    \setlength{\unitlength}{188.32500458bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,21 +50,19 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.83156556)%
+  \begin{picture}(1,1.6101154)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{ramified-map.pdf}}%
-    \put(0.41593721,0.4047586){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}f\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{ramified-map.pdf}}%
-    \put(0.68048537,0.673395){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\infty$\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=3]{ramified-map.pdf}}%
-    \put(0.7287972,0.49874121){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$1$\end{tabular}}}}%
-    \put(0.74566992,0.32887103){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\lambda$\end{tabular}}}}%
-    \put(0.72879805,0.20905007){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0$\end{tabular}}}}%
-    \put(0.17999661,0.75076369){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E$\end{tabular}}}}%
-    \put(0.5970331,0.75965423){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\pro^1_K$\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=4]{ramified-map.pdf}}%
-    \put(0.13049809,0.02837718){\color[rgb]{0.94509804,0.54901961,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\ram_f$\end{tabular}}}}%
-    \put(0.55094273,0.02837676){\color[rgb]{0.94509804,0.54901961,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\delta = f_* \ram_f$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{sk-e-to-p.pdf}}%
+    \put(0.28992632,1.5091166){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\ts \sk(E)$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{sk-e-to-p.pdf}}%
+    \put(0.86736397,1.39897483){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\ts\sk(\sP)$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{sk-e-to-p.pdf}}%
+    \put(0.3083166,0.9622795){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\ts \sk(E)$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{sk-e-to-p.pdf}}%
+    \put(0.69666346,0.20874428){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sk(\sP)$\end{tabular}}}}%
+    \put(0.32218956,0.20874467){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sk(E)$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{sk-e-to-p.pdf}}%
+    \put(0.86829667,0.85500352){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\ts\sk(\sP)$\end{tabular}}}}%
   \end{picture}%
 \endgroup%
