@@ -1,13 +1,5 @@
-\begin{frame}
-	\tableofcontents[ 
-currentsubsection, 
-hideothersubsections, 
-sectionstyle=show/hide, 
-subsectionstyle=show/shaded, 
-] 
-\end{frame}
 
-
+\subsection{Motivation}\label{sec:motivation}
 \begin{frame}{Berkovich geometry}
 	Complex geometry: interplay algebra over $\C$ \& analysis over $\C$. 
 	\begin{align*}
@@ -33,6 +25,7 @@ subsectionstyle=show/shaded,
     \incfig{projective-line}
 \end{frame}
 
+\subsection{Dual graphs and skeleta} \label{sec:dual_graphs_and_skeleta}
 \begin{frame}{Skeleta}
 	\begin{minipage}{.49\textwidth}
 	 $\sC$ an snc model of  $C$. 
@@ -70,16 +63,50 @@ $\sk_{\mathscr C}, r_{\sC}$ are homotopy inverses.
 	$\sk(C)$ controls the homotopy tye of $C\an$
 \end{block}
 \end{frame}
+\subsection{Weight functions and Essential Skeleton} \label{sec:weight_functions_and_essential_skeleta}
+
 \begin{frame}
-	Weight functions $\wt_{\sigma}: C\an \to \left(-\infty, \infty\right]$, $\sigma \in \omega_{C}(C), \sigma \ne 0$
+	\begin{minipage}{.68\textwidth}
+		
+		Weight functions [JN, MM, 2015]: $\sigma \in \omega_{C}(C), \sigma \ne 0$ \[
+		\wt_{\sigma}: C\an \to \left(-\infty, \infty\right]	
+	.\]
+	\vspace{-.7cm}
 	\begin{block}{Slogan}
 		$\wt_{\sigma}$ increases away from $\sk(\sC)$ for every $\sC$.
 	\end{block}
+	\pause
 	$\leadsto \sk(E, \sigma) = \minloc(\wt_{\sigma})$ is a piece of every skeleton. 
 	
-	\begin{definition}
-		The \emph{essential skeleton of $C$} is \[
+	\begin{definition}[JN, MM]
+		If $g(C) > 0$ the \emph{essential skeleton of $C$} is \[
 			\sk(C) = \bigcup_{\sigma }  \sk(C, \sigma)
 		.\] 
+		\vspace{-.4cm}
 	\end{definition}
+	\end{minipage}
+	\;
+	\begin{minipage}{.29\textwidth}
+\begin{figure}[ht]
+    \centering
+    \incfig{essential-skeleton}
+    \vspace{-.5cm}
+    \caption{$\sk(C)$ from  $\sC_\text{min}$ [JN, MB, 2016]}
+    \label{fig:essential-skeleton}
+\end{figure}
+
+	\end{minipage}
+\end{frame}
+
+\begin{frame}
+	\begin{table}[htpb]
+		\centering
+		\caption{The essential skeleton $\sk(E)$ for elliptic curves by reduction type }
+		\label{tab:label}
+		\begin{tabular}{l|c|c|c}
+		type & $\mathrm I_{n}$ & $\mathrm I_{n}^*$ & others \\
+		\hline
+		$\sk(E)$ & \incfigsmall{circle} & \incfigsmall{line}&\incfigsmall{point}
+		\end{tabular}
+	\end{table}
 \end{frame}

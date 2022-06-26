@@ -120,7 +120,7 @@
     \put(0,0){\includegraphics[width=\unitlength,page=25]{kn-dual-graphs.pdf}}%
     \put(0.98149112,0.14298884){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=26]{kn-dual-graphs.pdf}}%
-    \put(0.90324197,0.14298884){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
+    \put(0.90912172,0.14298884){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=27]{kn-dual-graphs.pdf}}%
   \end{picture}%
 \endgroup%

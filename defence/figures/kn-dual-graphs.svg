@@ -168,7 +168,7 @@
 	<circle cx="658.4" cy="168.5" r="2"/>
 	<circle cx="638.3" cy="141.5" r="2"/>
 	<circle cx="638.3" cy="168.5" r="2"/>
-	<text transform="matrix(1 0 0 1 614.4755 144.5247)" class="st5 st1 st10">$2$</text>
+	<text transform="matrix(1 0 0 1 618.4755 144.5247)" class="st5 st1 st10">$2$</text>
 	<line class="st6" x1="648.4" y1="66.9" x2="648.4" y2="115.1"/>
 	<line class="st6" x1="658.4" y1="168.5" x2="658.4" y2="141.5"/>
 	<line class="st6" x1="648.4" y1="115.1" x2="658.4" y2="141.5"/>

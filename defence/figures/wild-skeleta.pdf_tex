@@ -1,0 +1,89 @@
+%% Creator: Inkscape 1.0beta2 (2b71d25, 2019-12-03), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'wild-skeleta.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{510.22499084bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.44068792)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{wild-skeleta.pdf}}%
+    \put(0.01632236,0.23897794){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sk(\sP)$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{wild-skeleta.pdf}}%
+    \put(0.19433985,0.19715272){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$v(2)$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{wild-skeleta.pdf}}%
+    \put(0.15332221,0.2699678){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$a$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{wild-skeleta.pdf}}%
+    \put(0.50550345,0.19715272){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$v(2)$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{wild-skeleta.pdf}}%
+    \put(0.57395604,0.2699678){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$b$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{wild-skeleta.pdf}}%
+    \put(0.33202895,0.27924385){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$n-2v(2)$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{wild-skeleta.pdf}}%
+    \put(0.15332192,0.39555592){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}If $n > 2v(2)$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{wild-skeleta.pdf}}%
+    \put(0.01632206,0.11785579){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sk(E)$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{wild-skeleta.pdf}}%
+    \put(0.8673078,0.19198191){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$v(2)$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{wild-skeleta.pdf}}%
+    \put(0.94967396,0.25858958){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$b$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{wild-skeleta.pdf}}%
+    \put(0.76288431,0.28154578){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$v(2)$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{wild-skeleta.pdf}}%
+    \put(0.68832411,0.25525635){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$a$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{wild-skeleta.pdf}}%
+    \put(0.68244362,0.39555592){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}If $n < 2v(2)$, $2\nmid v(2)$\end{tabular}}}}%
+    \put(0.68244436,0.3671633){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ extra assumptions\end{tabular}}}}%
+    \put(0.01632221,0.03545171){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Type\end{tabular}}}}%
+    \put(0.25737762,0.03545171){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathrm I_{2n - 4v(2)}^*$\end{tabular}}}}%
+    \put(0.71267822,0.03545053){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathrm I_{m}^*,\mathrm{II}, \mathrm{III}$ or $\mathrm{III^*}$\end{tabular}}}}%
+    \put(0.03046465,0.39555592){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$n$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{wild-skeleta.pdf}}%
+  \end{picture}%
+\endgroup%

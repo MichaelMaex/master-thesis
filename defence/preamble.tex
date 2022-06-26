@@ -89,8 +89,16 @@
 	\color{kuldefault}
 }
 \newcommand{\incfigsmall}[1]{%
+	\color{black}
 	\def\svgwidth{.15\columnwidth}
 	\import{./figures/}{#1.pdf_tex}
+	\color{kuldefault}
+}
+\newcommand{\incfigwidth}[2]{%
+	\color{black}
+	\def\svgwidth{#2}
+	\import{./figures/}{#1.pdf_tex}
+	\color{kuldefault}
 }
 \pdfsuppresswarningpagegroup=1
 
