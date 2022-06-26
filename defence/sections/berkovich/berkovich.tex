@@ -4,20 +4,20 @@
 	Complex geometry: interplay algebra over $\C$ \& analysis over $\C$. 
 	\begin{align*}
 		(\cdot )\an : \C\text{-variety} &\longrightarrow \C\text{-manifold} \\
-		X &\longmapsto X\an = \text{closed points} 
+		X &\longmapsto X\an = \text{closed points of }X 
 	.\end{align*}
 	\pause
 
 	$K$ is complete normed field $\leadsto$ analysis over $K$ 
 	\only<1,2>{\begin{align*}
-		(\cdot )\an: K\text{-variety} \longrightarrow& K\text{-analytic space} \\
-		C \longmapsto& \text{$C\an =$ closed points ? }\\
-			     &\text{ }
+		(\cdot )\an: K\text{-curve} \longrightarrow& K\text{-analytic space} \\
+		C \longmapsto& \text{$C\an =$ closed points of $C$? }\\
+			     &\text{\phantom{$C\an = $ closed points of $C \cup $ norms on $K(C)$}}
   .\end{align*}}
 	\only<3>{\begin{align*}
-		(\cdot )\an: K\text{-variety} \longrightarrow& K\text{-analytic space} \\
-		C \longmapsto& \text{\redout{$C\an =$ closed points }}\\
-		  &\text{$C\an =$ closed points } \cup \text{ norms on } K(C)
+		(\cdot )\an: K\text{-curve} \longrightarrow& K\text{-analytic space} \\
+		C \longmapsto& \text{\redout{$C\an =$ closed points of $C$}}\\
+		  &\text{$C\an =$ closed points of }C \cup \text{ norms on } K(C)
   .\end{align*}}
 \end{frame}
 
@@ -30,7 +30,7 @@
 	\begin{minipage}{.49\textwidth}
 	 $\sC$ an snc model of  $C$. 
 	 \begin{align*}
-		 \sk_{\sC}: \Delta(C) \into C\an
+		 \sk_{\sC}: \Delta(\sC) \into C\an
 	 .\end{align*}
 	\end{minipage}\;\;
 	\begin{minipage}{.48\textwidth}
@@ -45,10 +45,12 @@
 	\bigskip
 	\pause
 
-	 Conversely \[
-		 C\an = \varprojlim_{\mathscr C \text{ snc-model}} \Delta(\mathscr C)
+	 Conversely, \[
+		 C\an = \varprojlim_{\mathscr C \text{ snc-model}} \sk(\mathscr C)
 	 .\] 
-	 Bonus: metrics glue $\leadsto$ ``$C\an$ is a metric space''
+
+	 \medskip 
+	 Bonus: ``$C\an$ is a metric space''
 \end{frame}
 
 
@@ -60,10 +62,10 @@
 \pause
 $\sk_{\mathscr C}, r_{\sC}$ are homotopy inverses.
 \begin{block}{Slogan}
-	$\sk(C)$ controls the homotopy tye of $C\an$
+	$\sk(\sC)$ controls the homotopy tye of $C\an$
 \end{block}
 \end{frame}
-\subsection{Weight functions and Essential Skeleton} \label{sec:weight_functions_and_essential_skeleta}
+\subsection{Weight functions and the essential skeleton} \label{sec:weight_functions_and_essential_skeleta}
 
 \begin{frame}
 	\begin{minipage}{.68\textwidth}
@@ -77,6 +79,8 @@ $\sk_{\mathscr C}, r_{\sC}$ are homotopy inverses.
 	\end{block}
 	\pause
 	$\leadsto \sk(E, \sigma) = \minloc(\wt_{\sigma})$ is a piece of every skeleton. 
+
+	\pause
 	
 	\begin{definition}[JN, MM]
 		If $g(C) > 0$ the \emph{essential skeleton of $C$} is \[

@@ -43,7 +43,7 @@
 \defbeamertemplate{background canvas}{title}
 {%
     \pgfdeclarehorizontalshading{bgshading}{8.70cm}{color(0cm)=(kulleft); color(\the\paperwidth)=(kulright)}%
-    \vbox to 8.70cm{%
+    \vbox to 8.10cm{%
         \pgfuseshading{bgshading}\hspace*{-1.6cm}%
     }%
     \hskip-\paperwidth%
@@ -51,7 +51,7 @@
     \vbox to \paperheight{%
         \vskip0.5cm\hskip0.5cm\includegraphics[width=2.83cm]{templates/kuleuven}%
         \vskip0.99cm\hskip0.76cm\includegraphics[width=2.84cm]{templates/key}%
-        \vskip-0.57cm\hskip14.61cm\includegraphics[width=0.58cm]{templates/sedes}\hspace*{-1cm}%
+        \vskip-1.07cm\hskip14.81cm\includegraphics[width=0.58cm]{templates/sedes}\hspace*{-1cm}%
         \vfill
     }%
 }
@@ -95,11 +95,11 @@
     \vskip.3cm% make room for the logo
     \parbox[t][0.62cm]{\paperwidth}{\pgfuseshading{bgshading}}\par%
     \vskip-0.62cm%
-    \begin{beamercolorbox}[ht=0.37cm,dp=0.25cm,center]{page number in head/foot}%
-    \insertframenumber%
+    \begin{beamercolorbox}[ht=0.37cm,dp=0.25cm,leftskip=.3cm,rightskip=3cm]{page number in head/foot}%
+	    \insertsectionhead:\; \insertsubsection\hfill\insertpagenumber
     \end{beamercolorbox}%
     \vskip-0.92cm%
-    \parbox[t][0.92cm]{\paperwidth}{\hskip13.33cm\includegraphics[width=2.10cm]{templates/kuleuven}}\par%
+    \parbox[t][0.92cm]{\paperwidth}{\hskip13.53cm\includegraphics[width=2.10cm]{templates/kuleuven}}\par%
 
     % set the box with the extra footline material but make it add no vertical space
     \setbox\footlineextrabox=\vbox{\usebeamertemplate*{footline extra}}
@@ -126,7 +126,7 @@
     %
     \end{beamercolorbox}%
     \vskip-0.92cm%
-    \parbox[t][0.92cm]{\paperwidth}{\hskip13.33cm\includegraphics[width=2.10cm]{templates/kuleuven}}\par%
+    \parbox[t][0.92cm]{\paperwidth}{\hskip13.53cm\includegraphics[width=2.10cm]{templates/kuleuven}}\par%
 }
 
 \defbeamertemplate{footline}{small}
@@ -155,7 +155,7 @@
     \vskip2.8cm%
     \vbox to 6.5cm{%
         \hskip2.8cm%
-        \begin{minipage}{9.9cm}
+        \begin{minipage}{10.9cm}
             \begin{beamercolorbox}{title}
                 \usebeamerfont{title}%
                 \inserttitle\par%

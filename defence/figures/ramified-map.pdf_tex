@@ -50,21 +50,21 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.83156556)%
+  \begin{picture}(1,0.84896058)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{ramified-map.pdf}}%
-    \put(0.41593721,0.4047586){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}f\end{tabular}}}}%
+    \put(0.41593722,0.42215361){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}f\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{ramified-map.pdf}}%
-    \put(0.68048537,0.673395){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\infty$\end{tabular}}}}%
+    \put(0.68048538,0.69079002){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\infty$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{ramified-map.pdf}}%
-    \put(0.7287972,0.49874121){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$1$\end{tabular}}}}%
-    \put(0.74566992,0.32887103){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\lambda$\end{tabular}}}}%
-    \put(0.72879805,0.20905007){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0$\end{tabular}}}}%
-    \put(0.17999661,0.75076369){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E$\end{tabular}}}}%
-    \put(0.5970331,0.75965423){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\pro^1_K$\end{tabular}}}}%
+    \put(0.72879722,0.51613622){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$1$\end{tabular}}}}%
+    \put(0.74566994,0.34626604){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\lambda$\end{tabular}}}}%
+    \put(0.72879806,0.22644508){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0$\end{tabular}}}}%
+    \put(0.17999661,0.76815871){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E$\end{tabular}}}}%
+    \put(0.59703311,0.77704925){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\pro^1_K$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{ramified-map.pdf}}%
-    \put(0.13049809,0.02837718){\color[rgb]{0.94509804,0.54901961,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\ram_f$\end{tabular}}}}%
-    \put(0.55094273,0.02837676){\color[rgb]{0.94509804,0.54901961,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\delta = f_* \ram_f$\end{tabular}}}}%
+    \put(0.13049767,0.0245592){\color[rgb]{0.94117647,0.52156863,0.20392157}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\ram_f$\end{tabular}}}}%
+    \put(0.55094146,0.0245592){\color[rgb]{0.94117647,0.52156863,0.20392157}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\delta = f_* \ram_f$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

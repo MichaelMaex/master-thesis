@@ -2,15 +2,15 @@
 <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1"
 	 id="svg8" inkscape:version="0.92.4 (unknown)" sodipodi:docname="figure.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 235.7 196"
-	 style="enable-background:new 0 0 235.7 196;" xml:space="preserve">
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 235.7 200.1"
+	 style="enable-background:new 0 0 235.7 200.1;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
 	.st1{fill:none;stroke:#000000;stroke-miterlimit:10;}
-	.st2{font-family:'MyriadPro-Regular';}
+	.st2{font-family:'ArialMT';}
 	.st3{font-size:12px;}
 	.st4{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;stroke-dasharray:4;}
-	.st5{fill:#F18C00;}
+	.st5{fill:#F08534;}
 	.st6{font-size:12.6771px;}
 </style>
 <sodipodi:namedview  bordercolor="#666666" borderopacity="1.0" id="base" inkscape:current-layer="layer1" inkscape:cx="284.27627" inkscape:cy="182.72055" inkscape:document-units="mm" inkscape:guide-bbox="true" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:window-height="995" inkscape:window-maximized="1" inkscape:window-width="2520" inkscape:window-x="20" inkscape:window-y="65" inkscape:zoom="0.99437388" pagecolor="#ffffff" showborder="true" showgrid="false" showguides="true" width="200mm">
@@ -28,8 +28,8 @@
 <path class="st0" d="M46.2,23.3c1.1,8.9,4,14.8,6.4,18.6c3.9,6.1,7.1,7.2,9.2,13.1c0.4,1.2,3,8.8,0,16.5c-3.6,9.2-10.9,8-15.7,17.5
 	c-0.4,0.8-5.5,11.1-1.4,20c3.4,7.3,9.6,6.1,13.1,13.7c2.7,5.8,2.3,13.2-0.6,18.6c-3.6,6.7-8.9,6.3-14,12.8
 	c-4.4,5.6-5.5,12.5-5.5,18.6"/>
-<path class="st1" d="M59.3,23.3c-1.1,8.9-4,14.8-6.4,18.6c-3.9,6.1-7.1,7.2-9.2,13.1c-0.4,1.2-3,8.8,0,16.5
-	c3.6,9.2,10.9,8,15.7,17.5c0.4,0.8,5.5,11.1,1.4,20c-3.4,7.3-9.6,6.1-13.1,13.7c-2.7,5.8-2.3,13.2,0.6,18.6c3.6,6.7,8.9,6.3,14,12.8
+<path class="st1" d="M59.3,23.3c-1.1,8.9-4,14.8-6.4,18.6C49,48,45.8,49.1,43.7,55c-0.4,1.2-3,8.8,0,16.5c3.6,9.2,10.9,8,15.7,17.5
+	c0.4,0.8,5.5,11.1,1.4,20c-3.4,7.3-9.6,6.1-13.1,13.7c-2.7,5.8-2.3,13.2,0.6,18.6c3.6,6.7,8.9,6.3,14,12.8
 	c4.4,5.6,5.5,12.5,5.5,18.6"/>
 <g>
 	<g>
@@ -60,9 +60,9 @@
 <circle class="st5" cx="52.9" cy="116.6" r="3"/>
 <circle class="st5" cx="52.9" cy="146.7" r="3"/>
 <g>
-	<text transform="matrix(0.7223 0 0 1 30.7584 189.3115)" class="st5 st2 st6">$\ram_f$</text>
+	<text transform="matrix(0.7223 0 0 1 30.7583 194.3114)" class="st5 st2 st6">$\ram_f$</text>
 </g>
 <g>
-	<text transform="matrix(0.7223 0 0 1 129.8572 189.3116)" class="st5 st2 st6">$\delta = f_* \ram_f$</text>
+	<text transform="matrix(0.7223 0 0 1 129.8569 194.3114)" class="st5 st2 st6">$\delta = f_* \ram_f$</text>
 </g>
 </svg>

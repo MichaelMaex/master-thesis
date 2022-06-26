@@ -57,7 +57,7 @@
     \put(0.48854902,0.46157386){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\infty$\end{tabular}}}}%
     \put(0.61121946,0.44940408){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\pro^{1, \text{an}}_K$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{projective-line.pdf}}%
-    \put(0.69710554,0.14252226){\color[rgb]{0.70980392,0.09411765,0.09019608}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}closed points\end{tabular}}}}%
+    \put(0.69710554,0.14252226){\color[rgb]{0.94117647,0.52156863,0.20392157}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}closed points\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{projective-line.pdf}}%
     \put(0.73616918,0.35512655){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}norms on $K(\pro^1_K)$\end{tabular}}}}%
     \put(0.49107864,0.0317479){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0$\end{tabular}}}}%
