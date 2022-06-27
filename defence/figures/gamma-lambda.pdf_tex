@@ -50,13 +50,13 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.41150101)%
+  \begin{picture}(1,0.32617096)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{gamma-lambda.pdf}}%
-    \put(0.04476271,0.06134519){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$|\lambda| < 1$\end{tabular}}}}%
-    \put(0.25288066,0.06134519){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$|\lambda| = 1, |1-\lambda| =1$\end{tabular}}}}%
-    \put(0.53756238,0.06134519){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$|\lambda| = 1, |1-\lambda| < 1$\end{tabular}}}}%
-    \put(0.85342032,0.06134519){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$|\lambda| >1$\end{tabular}}}}%
+    \put(0.04476271,0.01758262){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$|\lambda| < 1$\end{tabular}}}}%
+    \put(0.25288066,0.01758262){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$|\lambda| = 1, |1-\lambda| =1$\end{tabular}}}}%
+    \put(0.53756236,0.01758262){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$|\lambda| = 1, |1-\lambda| < 1$\end{tabular}}}}%
+    \put(0.8534203,0.01758262){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$|\lambda| >1$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

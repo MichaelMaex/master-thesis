@@ -54,25 +54,31 @@
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{skeleton-pair.pdf}}%
-    \put(0.6378226,0.35923742){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr P$\end{tabular}}}}%
+    \put(0.06694914,0.35449951){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr P$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{skeleton-pair.pdf}}%
-    \put(0.68045982,0.31869619){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr P_\eta$\end{tabular}}}}%
-    \put(0.77792506,0.31914834){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr P_s$\end{tabular}}}}%
+    \put(0.10958636,0.31395828){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr P_\eta$\end{tabular}}}}%
+    \put(0.2070516,0.31441058){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr P_s$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{skeleton-pair.pdf}}%
-    \put(0.66106661,0.27672955){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\infty$\end{tabular}}}}%
-    \put(0.66106661,0.24880217){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$1$\end{tabular}}}}%
-    \put(0.79338853,0.28448407){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$b$\end{tabular}}}}%
-    \put(0.79338853,0.05263415){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$a$\end{tabular}}}}%
+    \put(0.09019315,0.27199179){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\infty$\end{tabular}}}}%
+    \put(0.09019315,0.2440644){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$1$\end{tabular}}}}%
+    \put(0.22251493,0.27974631){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$b$\end{tabular}}}}%
+    \put(0.22251493,0.04789638){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$a$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{skeleton-pair.pdf}}%
-    \put(0.66106808,0.10883626){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\lambda$\end{tabular}}}}%
-    \put(0.66106661,0.07908439){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0$\end{tabular}}}}%
+    \put(0.09019448,0.10409865){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\lambda$\end{tabular}}}}%
+    \put(0.09019315,0.07434663){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{skeleton-pair.pdf}}%
-    \put(0.72587464,0.28008293){\color[rgb]{0.94117647,0.52156863,0.20392157}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\overline{\delta}$\end{tabular}}}}%
+    \put(0.15500103,0.27534516){\color[rgb]{0.94117647,0.52156863,0.20392157}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\overline{\delta}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{skeleton-pair.pdf}}%
-    \put(0.7868226,0.1735855){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\vdots$\end{tabular}}}}%
+    \put(0.215949,0.16884773){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\vdots$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{skeleton-pair.pdf}}%
-    \put(0.20522432,0.2417247){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$b$\end{tabular}}}}%
-    \put(0.24713759,0.12522918){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$a$\end{tabular}}}}%
-    \put(0.01022093,0.1990669){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sk(\sP)$\end{tabular}}}}%
+    \put(0.80648452,0.25529004){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$b$\end{tabular}}}}%
+    \put(0.85171383,0.12957932){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$a$\end{tabular}}}}%
+    \put(0.59606058,0.20925814){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sk(\sP)$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{skeleton-pair.pdf}}%
+    \put(0.42122521,0.30225109){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Delta(\sP)$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{skeleton-pair.pdf}}%
+    \put(0.3823525,0.16342321){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$n$\end{tabular}}}}%
+    \put(0.4543356,0.26726652){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$b$\end{tabular}}}}%
+    \put(0.45433575,0.05980098){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$a$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

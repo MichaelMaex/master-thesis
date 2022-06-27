@@ -81,8 +81,8 @@
     \put(0.68244362,0.39555592){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}If $n < 2v(2)$, $2\nmid v(2)$\end{tabular}}}}%
     \put(0.68244436,0.3671633){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ extra assumptions\end{tabular}}}}%
     \put(0.01632221,0.03545171){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Type\end{tabular}}}}%
-    \put(0.25737762,0.03545171){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathrm I_{2n - 4v(2)}^*$\end{tabular}}}}%
-    \put(0.71267822,0.03545053){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathrm I_{m}^*,\mathrm{II}, \mathrm{III}$ or $\mathrm{III^*}$\end{tabular}}}}%
+    \put(0.31176539,0.03545171){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathrm I_{2n - 4v(2)}^*$\end{tabular}}}}%
+    \put(0.73746876,0.03545053){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathrm I_{m}^*,\mathrm{II}, \mathrm{III}$ or $\mathrm{III^*}$\end{tabular}}}}%
     \put(0.03046465,0.39555592){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$n$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=14]{wild-skeleta.pdf}}%
   \end{picture}%

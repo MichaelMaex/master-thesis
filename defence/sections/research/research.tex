@@ -24,7 +24,7 @@
 
 \end{frame}
 \begin{frame}
-	${\color{orange} \Gamma_\lambda} = $ convex hull of $0, \lambda, 1, \infty$.
+	${\color{orange} \Gamma_\lambda} = $ convex hull of $0, \lambda, 1, \infty$ in $\pro^{1, \text{an}}_K$.
 \begin{figure}[ht]
     \centering
     \incfig{gamma-lambda}
@@ -44,7 +44,7 @@ Line $[a, b] = \sk(\mathscr P)$ has length  $n$.
 	\begin{minipage}[t]{.48\textwidth}
 		\begin{enumerate}
 		\item If $\ch k \ne 2$, \emph{tame ramification}: \begin{align*}
-				\underbrace{\wt_{f^*\omega}}_{\text{on }E\an} &= \underbrace{\wt_{\omega}}_{\text{on }\pro^{1, \text{an}}_K} \mathbin{\circ} \phi
+				\underbrace{\wt_{f^*\sigma}}_{\text{on }E\an} &= \underbrace{\wt_{\sigma}}_{\text{on }\pro^{1, \text{an}}_K} \mathbin{\circ} \phi
 			\end{align*}
 			\pause
 			\[
@@ -60,11 +60,11 @@ Line $[a, b] = \sk(\mathscr P)$ has length  $n$.
 		\setcounter{enumi}{1}
 		\item If $\ch k = 2$, \emph{wild ramification}:
 			\[
-				\wt_{f^* \omega} = \wt_{\omega} \circ \phi + \underbrace{\mathfrak{d} _f}_{\text{error}}
+				\wt_{f^* \sigma} = \wt_{\sigma} \circ \phi + \underbrace{\mathfrak{d} _f}_{\text{error}}
 			.\] 
 			\pause
 			\[
-				\redout{\text{$\implies \sk(E) = \phi^{-1}(\sk(\sP))$}}
+				\redoutb{\text{$\implies \sk(E) = \phi^{-1}(\sk(\sP))$}}
 			.\] 
 	\end{enumerate}
 	\end{minipage}
@@ -116,7 +116,7 @@ Line $[a, b] = \sk(\mathscr P)$ has length  $n$.
 	\end{minipage}
 \end{frame}
 \begin{frame}
-	If $E$ has type $I_m$, i.e. $\sk(E)$ is a circle.
+	If $E$ has type $\mathrm I_m$, i.e. $\sk(E)$ is a circle.
 	\begin{figure}
 		\incfig{argument-in}
 	\end{figure}
@@ -128,6 +128,29 @@ Line $[a, b] = \sk(\mathscr P)$ has length  $n$.
 
 \begin{frame}
 	{Wild ramification, $\ch k = 2$}
+
+	Problem: \[
+		\wt_{f^*\sigma} = \wt_{\sigma} \circ \phi {\color{orange} +  \mathfrak{d} _f}
+	.\] 
+	\medskip
+
+	\pause
+
+	Approach:
+	\begin{itemize}
+		\item Determine reduction type of $E $ using Tate's algorithm.
+		\item Carefully analyse proof of Tate's algorithm to determine $\sk(E) \to \pro^{1, \text{an}}_{K}$
+	\end{itemize}
+	\pause 
+	\bigskip
+
+	Goal (longterm):
+	\begin{itemize}
+		\item Understand $\mathfrak{d} _f$.
+	\end{itemize}
+\end{frame}
+\begin{frame}
+	$v(2) =$ maximal $n$ such that $\pi^{n} \mid 2$.  
 
 \begin{figure}[ht]
     \centering
