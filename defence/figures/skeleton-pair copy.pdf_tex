@@ -1,6 +1,6 @@
 %% Creator: Inkscape 1.0beta2 (2b71d25, 2019-12-03), www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'skeleton-pair.pdf' (pdf, eps, ps)
+%% Accompanies image file 'skeleton-pair copy.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -53,31 +53,31 @@
   \begin{picture}(1,0.41746289)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{skeleton-pair.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{skeleton-pair copy.pdf}}%
     \put(0.06694914,0.35447215){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr P$\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{skeleton-pair.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{skeleton-pair copy.pdf}}%
     \put(0.10958636,0.31393107){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr P_\eta$\end{tabular}}}}%
     \put(0.2070516,0.31438322){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathscr P_s$\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=3]{skeleton-pair.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{skeleton-pair copy.pdf}}%
     \put(0.09019315,0.27196458){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\infty$\end{tabular}}}}%
     \put(0.09019315,0.24403705){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$1$\end{tabular}}}}%
     \put(0.22251492,0.27971895){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$b$\end{tabular}}}}%
     \put(0.22251492,0.04786903){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$a$\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=4]{skeleton-pair.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{skeleton-pair copy.pdf}}%
     \put(0.09019447,0.1040713){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\lambda$\end{tabular}}}}%
     \put(0.09019315,0.07431928){\color[rgb]{0.00784314,0.00784314,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0$\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=5]{skeleton-pair.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{skeleton-pair copy.pdf}}%
     \put(0.15500103,0.27531781){\color[rgb]{0.94117647,0.52156863,0.20392157}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\overline{\delta}$\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=6]{skeleton-pair.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{skeleton-pair copy.pdf}}%
     \put(0.215949,0.16882038){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\vdots$\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=7]{skeleton-pair.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{skeleton-pair copy.pdf}}%
     \put(0.8064845,0.25526268){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$b$\end{tabular}}}}%
     \put(0.85171381,0.12955197){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$a$\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=8]{skeleton-pair.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{skeleton-pair copy.pdf}}%
     \put(0.84930473,0.18785874){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sk(\sP)$\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=9]{skeleton-pair.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{skeleton-pair copy.pdf}}%
     \put(0.4212252,0.30222373){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Delta(\sP)$\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=10]{skeleton-pair.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{skeleton-pair copy.pdf}}%
     \put(0.38235249,0.16339586){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$n$\end{tabular}}}}%
     \put(0.45433559,0.26723917){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$b$\end{tabular}}}}%
     \put(0.45433574,0.05977363){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$a$\end{tabular}}}}%

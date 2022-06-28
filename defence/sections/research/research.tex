@@ -17,13 +17,13 @@
 	\pause
 
 	\begin{question}
-	Find reduction type of $E$/understand $E\an$ via \[
+	Find KN type of $E$/understand $E\an$ via \[
 	\phi = f\an : E\an \to \pro^{1, \text{an}}_K
 	.\] 
 	\end{question}
 
 \end{frame}
-\begin{frame}
+\begin{frame}<presentation:0>[t,noframenumbering]
 	${\color{orange} \Gamma_\lambda} = $ convex hull of $0, \lambda, 1, \infty$ in $\pro^{1, \text{an}}_K$.
 \begin{figure}[ht]
     \centering
@@ -34,10 +34,9 @@
 
 
 \begin{frame}
-\begin{figure}[ht]
-    \centering
-    \incfig{skeleton-pair}
-\end{figure}
+	\only<1>{\incfig{skeleton-pair-0}}
+	\only<2>{\incfig{skeleton-pair}}
+	\pause
 Line $[a, b] = \sk(\mathscr P)$ has length  $n$. 
 \end{frame}
 \begin{frame}{Two options}
@@ -78,7 +77,26 @@ Line $[a, b] = \sk(\mathscr P)$ has length  $n$.
 
 \subsection{Tame ramification} \label{sec:tame_ramification}
 
-\begin{frame}[t]
+\begin{frame}
+	\begin{block}{Fact}
+			$|\phi^{-1}(y)| = 1 \text{ or } 2$
+		\end{block}
+
+    \incfig{sk-e-to-p-2}
+
+    \pause
+		\only<1,2>{
+		\begin{align*}
+			n > 0 &\iff E \text{ has type } \mathrm I_m \text{ or } \mathrm I_{m}^*, m > 0 \\
+			n = 0 &\iff E \text{ has type } \mathrm{I}_0, \mathrm I_0^*, \mathrm{II}, \mathrm{II}^*,\mathrm{III}, \mathrm{III}^*, \mathrm{IV}, \mathrm{IV}^*
+	.\end{align*}}
+		\only<3>{
+		\begin{align*}
+			n > 0 &\iff E \text{ has type } \mathrm I_{2n}  \\
+			n = 0 &\iff E \text{ has type } \mathrm{I}_0
+	.\end{align*}}
+\end{frame}
+\begin{frame}<presentation:0>[t,noframenumbering]
 	\begin{minipage}[t]{.7\textwidth}
 		
 		\begin{block}{Fact}
@@ -115,7 +133,7 @@ Line $[a, b] = \sk(\mathscr P)$ has length  $n$.
     \incfig{sk-e-to-p}
 	\end{minipage}
 \end{frame}
-\begin{frame}
+\begin{frame}<presentation:0>[t,noframenumbering]
 	If $E$ has type $\mathrm I_m$, i.e. $\sk(E)$ is a circle.
 	\begin{figure}
 		\incfig{argument-in}
@@ -164,4 +182,29 @@ Line $[a, b] = \sk(\mathscr P)$ has length  $n$.
     \centering
     \incfig{wild-skeleta-2}
 \end{figure}
+\end{frame}
+
+\begin{frame}
+	{Questions \& main references}
+
+
+
+	
+	Model theory:
+	\begin{itemize}
+		\item \emph{Algebraic Geometry and Arithmetic geometry}, by {Q.\ Liu}
+		\item \emph{Advanced topics in the Advanced topics in the arithmetic of elliptic curves}, by {J.\ Silverman}
+	\end{itemize}
+
+	Berkovich geometry:
+	\begin{itemize}
+		\item \emph{An introduction to Berkovich analytic spaces and non-archimedean potential theory on curves}, by  {M.\ Baker}
+		\item \emph{Introduction to Berkovich Analytic Spaces}, by {M. Temkin}
+	\end{itemize}
+
+	Weight functions:
+	\begin{itemize}
+		\item \emph{Weight functions on non-Archimedean analytic spaces and the Kontsevich-Soibelman skeleton}, by {J.\ Nicaise, M.\ Mustaţă}
+		\item \emph{Weight functions on Berkovich curves}, by {M.\ Baker, J.\ Nicaise}
+	\end{itemize}
 \end{frame}

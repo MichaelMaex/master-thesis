@@ -62,7 +62,7 @@
 			\begin{itemize}
 				\item $K = \C((t))$ 
 				\item $R = \C\llbracket t \rrbracket $ 
-				\item $\mathfrak{m}  = t\cdot \C\llbracket t \rrbracket $ 
+				\item $\mathfrak{m}  = (t)$ 
 				\item $k = \C$
 			\end{itemize}
 		\end{example}
@@ -70,6 +70,8 @@
 	\end{minipage}
 	\pause
 	\bigskip
+
+	\note{In language of algebraic geometry\ldots}
 
 	Geometrically:
 \begin{figure}
@@ -84,7 +86,7 @@
 	\begin{definition}
 		A \emph{curve} is a geometrically connected smooth projective $1$-dimensional $K$-variety.\\
 		\only<1>{\phantom{A \emph{model} of a curve $C$  is a normal proper flat $R$-scheme $\sC$ such that $\sC_\eta \simeq C$.}}
-		\only<2>{A \emph{model} of a curve $C$  is a normal proper flat $R$-scheme $\sC$ such that $\sC_\eta \simeq C$.}
+		\only<2>{A \emph{model} of a curve $C$  is a proper flat $R$-scheme $\sC$ such that $\sC_\eta \simeq C$.}
 	\end{definition}
 	
 	\only<1>{\incfig{first-model_1}}
@@ -100,39 +102,45 @@
 \end{frame}
 
 
-
-
-\begin{frame}[t]
+\begin{frame}
 	What kinds of models exist?\[
-		C = \proj \frac{K[X_1, \ldots, X_n]}{(f_1, \ldots, f_n)}
-		\leadsto \sC = N\left(\proj \frac{R[X_1, \ldots, X_n]}{(f_1, \ldots, f_n)}\right)
+		C = \proj \frac{K[X_1, \ldots, X_n]}{(f_1, \ldots, f_r)}
+		\leadsto \sC = \proj \frac{R[X_1, \ldots, X_n]}{(f_1, \ldots, f_r)}
 	.\] 
-	\begin{minipage}{.49\textwidth}
+
+	\pause
 	Resolution of singularities $\leadsto $ regular model 
 	\[
 		\sC _\text{reg}  \longrightarrow \sC 
 	.\]
-	\pause
-	Further blowups \[
-	\mathscr \sC_\text{snc} \longrightarrow \mathscr \sC_\text{reg} \longrightarrow \mathscr \sC
-	.\]
-	\end{minipage}\;\;
-	\begin{minipage}{.48\textwidth}
+
+	\note{Choose equations for C.
+
+	Classical result of AG.
+
+Regular is a nice class, but}
+
+
+
+\end{frame}
+\begin{frame}
 	\begin{definition}
-		A strict normal crossing moddel (\emph{snc-model}) is
+		A strict normal crossing moddel (\emph{snc-model}) is 
 		\begin{itemize}
 			\item regular
-			\item each irreducible component of $\sC_s$ is smooth over $k$
+			\item each irreducible component of $\sC_s$ with reduced scheme structure is smooth over $k$
 			\item in each intersection point, exactly 2 components meet transversally
 		\end{itemize}
 	\end{definition}
-	\end{minipage}
+	Further blowups: $\mathscr \sC_\text{snc} \longrightarrow \mathscr \sC_\text{reg} \longrightarrow \mathscr \sC$
 
+    \incfig{snc-models}
 \end{frame}
+
 
 \begin{frame}
     \incfig{dual-graphs}
-    Edges of $\Delta(C)$ have a lenght $\leadsto$ metric 
+    Edges of $\Delta(C)$ have a length $\leadsto$ metric 
 \end{frame}
 \begin{frame}
 	If $\sC_1, \sC_2$ are regular models of $C$, $f: \sC_1 \to \sC_2$.
@@ -141,6 +149,8 @@
 	\[
 	\mathscr C_2 \ge \mathscr C_1
 	.\] 
+
+	\pause
 \begin{theorem}
 		If $C$ is a curve with $g(C) \ge 1$ then $C$ has a minimal regular model and minimal snc-model.
 \end{theorem}

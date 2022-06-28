@@ -1,0 +1,73 @@
+%% Creator: Inkscape 1.0beta2 (2b71d25, 2019-12-03), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'snc-models.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{510.22499084bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.26164928)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0.06032206,0.20075217){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sC_\eta$\end{tabular}}}}%
+    \put(0.15007526,0.20075217){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sC_s$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{snc-models.pdf}}%
+    \put(0.3036969,0.20075217){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sC_\eta$\end{tabular}}}}%
+    \put(0.39344936,0.20075217){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sC_s$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{snc-models.pdf}}%
+    \put(0.54707174,0.20075217){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sC_\eta$\end{tabular}}}}%
+    \put(0.63682405,0.20075217){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sC_s$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{snc-models.pdf}}%
+    \put(0.79044569,0.20075217){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sC_\eta$\end{tabular}}}}%
+    \put(0.88019816,0.20075217){\color[rgb]{0.01176471,0.01176471,0.01568627}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sC_s$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{snc-models.pdf}}%
+    \put(0.09295223,0.01583258){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}not snc\end{tabular}}}}%
+    \put(0.33976775,0.01583258){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}not snc\end{tabular}}}}%
+    \put(0.59094738,0.01583258){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}not snc\end{tabular}}}}%
+    \put(0.83432148,0.01583258){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}snc\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

@@ -63,7 +63,7 @@
     \put(0.65192214,0.28080607){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E$ of type $\mathrm{I}_3^*$\end{tabular}}}}%
     \put(0.61394021,0.23142618){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Delta(\sE)$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{embedding-skeleta.pdf}}%
-    \put(0.68482748,0.14501375){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sk_\sE$\end{tabular}}}}%
+    \put(0.70289809,0.14501375){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$i_\sE$\end{tabular}}}}%
     \put(0.90339989,0.24811828){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E\an$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{embedding-skeleta.pdf}}%
     \put(0.06115415,0.19564664){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Delta(\sE)$\end{tabular}}}}%
@@ -73,10 +73,10 @@
     \put(0,0){\includegraphics[width=\unitlength,page=6]{embedding-skeleta.pdf}}%
     \put(0.17728885,0.28080607){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E$ of type $\mathrm{I}_5$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{embedding-skeleta.pdf}}%
-    \put(0.69662133,0.07758965){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$r_\sE$\end{tabular}}}}%
+    \put(0.70289823,0.07758965){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$r_\sE$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=8]{embedding-skeleta.pdf}}%
-    \put(0.18444189,0.15384055){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sk_\sE$\end{tabular}}}}%
+    \put(0.20251251,0.15384055){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$i_\sE$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=9]{embedding-skeleta.pdf}}%
-    \put(0.19623575,0.08641645){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$r_\sE$\end{tabular}}}}%
+    \put(0.20251264,0.08641645){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$r_\sE$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

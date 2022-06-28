@@ -1,6 +1,6 @@
 %% Creator: Inkscape 1.0beta2 (2b71d25, 2019-12-03), www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'projective-line.pdf' (pdf, eps, ps)
+%% Accompanies image file 'skeleton-pair-0.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -50,16 +50,13 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.49287078)%
+  \begin{picture}(1,0.41746289)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{projective-line.pdf}}%
-    \put(0.48854902,0.46157386){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\infty$\end{tabular}}}}%
-    \put(0.61121946,0.44940408){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\pro^{1, \text{an}}_K$\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{projective-line.pdf}}%
-    \put(0.69710554,0.14252226){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}closed points\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=3]{projective-line.pdf}}%
-    \put(0.73616918,0.35512655){\color[rgb]{0.94117647,0.52156863,0.20392157}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}norms on $K(\pro^1_K)$\end{tabular}}}}%
-    \put(0.49107864,0.0317479){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{skeleton-pair-0.pdf}}%
+    \put(0.8064845,0.25526268){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$b$\end{tabular}}}}%
+    \put(0.85171381,0.12955197){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$a$\end{tabular}}}}%
+    \put(0.67940218,0.3985921){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}If $n \ge 0, |1-\lambda| = 1$\end{tabular}}}}%
+    \put(0.9271717,0.32945554){\color[rgb]{0.94117647,0.52156863,0.20392157}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Gamma_\lambda$\end{tabular}}}}%
   \end{picture}%
 \endgroup%
