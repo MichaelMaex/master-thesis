@@ -49,7 +49,7 @@
 <text transform="matrix(1 0 0 1 225.8793 109.8304)" class="st2 st3">$n-2v(2)$</text>
 <circle cx="188.5" cy="131.5" r="3.4"/>
 <circle cx="321" cy="131.5" r="3.4"/>
-<text transform="matrix(1 0 0 1 104.3049 30.7033)" class="st2 st4">If $n &gt; 2v(2)$</text>
+<text transform="matrix(1 0 0 1 104.3049 30.7033)" class="st2 st4">If $n &gt; 2v(2)$, $2\nmid v(2)$</text>
 <line class="st1" x1="186.7" y1="219.6" x2="315.8" y2="219.6"/>
 <text transform="matrix(1 0 0 1 11.1039 219.6227)" class="st5 st2 st3">$\sk(E)$</text>
 <g>
@@ -82,7 +82,7 @@
 <circle cx="505.1" cy="133.8" r="3.4"/>
 <circle cx="562.1" cy="133.8" r="3.4"/>
 <g>
-	<text transform="matrix(1 0 0 1 464.2664 30.7033)" class="st2 st4">If $n &lt; 2v(2)$, $2\nmid v(2)$</text>
+	<text transform="matrix(1 0 0 1 464.2664 30.7033)" class="st2 st4">If $n &lt; 2v(2)$</text>
 	<text transform="matrix(1 0 0 1 464.2669 50.0188)" class="st2 st4">+ extra assumptions</text>
 </g>
 <text transform="matrix(1 0 0 1 11.104 275.6822)" class="st2 st4">Type</text>

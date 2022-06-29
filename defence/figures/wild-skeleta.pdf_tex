@@ -66,7 +66,7 @@
     \put(0,0){\includegraphics[width=\unitlength,page=6]{wild-skeleta.pdf}}%
     \put(0.33202895,0.27924385){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$n-2v(2)$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{wild-skeleta.pdf}}%
-    \put(0.15332192,0.39555592){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}If $n > 2v(2)$\end{tabular}}}}%
+    \put(0.15332192,0.39555592){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}If $n > 2v(2)$, $2\nmid v(2)$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=8]{wild-skeleta.pdf}}%
     \put(0.01632206,0.11785579){\color[rgb]{0,0.48235294,0.76862745}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sk(E)$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=9]{wild-skeleta.pdf}}%
@@ -78,7 +78,7 @@
     \put(0,0){\includegraphics[width=\unitlength,page=12]{wild-skeleta.pdf}}%
     \put(0.68832411,0.25525635){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$a$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=13]{wild-skeleta.pdf}}%
-    \put(0.68244362,0.39555592){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}If $n < 2v(2)$, $2\nmid v(2)$\end{tabular}}}}%
+    \put(0.68244362,0.39555592){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}If $n < 2v(2)$\end{tabular}}}}%
     \put(0.68244436,0.3671633){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ extra assumptions\end{tabular}}}}%
     \put(0.01632221,0.03545171){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Type\end{tabular}}}}%
     \put(0.31176539,0.03545171){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\mathrm I_{2n - 4v(2)}^*$\end{tabular}}}}%
